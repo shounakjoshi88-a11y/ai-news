@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T16:22:58Z",
+  "generatedAt": "2026-10-18T16:40:17Z",
   "sources": [
     {
       "id": "hn",
@@ -123,9 +123,9 @@
     {
       "id": "importai",
       "name": "Import AI",
-      "status": "error",
-      "count": 0,
-      "error": "HTTP 403"
+      "status": "ok",
+      "count": 10,
+      "error": null
     },
     {
       "id": "interconnects",
@@ -143,10 +143,10 @@
       "blurb": "FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it'll throw up a questionnaire that checks if you understand how the code you're pushing…",
       "url": "https://sphinx-six-theta.vercel.app/",
       "publishedAt": "2026-10-18T04:33:49.000Z",
-      "score": 207,
+      "score": 209,
       "scoreLabel": "points",
       "meta": {
-        "comments": 66
+        "comments": 68
       },
       "alsoOn": [],
       "image": null
@@ -165,6 +165,21 @@
       "alsoOn": []
     },
     {
+      "id": "hn:50141429",
+      "source": "hn",
+      "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
+      "blurb": "Would this be enough to keep an AI model from going out of control?",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+      "publishedAt": "2026-10-18T14:30:27.000Z",
+      "score": 89,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 93
+      },
+      "alsoOn": [],
+      "image": "https://cdn.mos.cms.futurecdn.net/SVPa8KkaDwkeyAtLnMhyKW-1920-80.png"
+    },
+    {
       "id": "tc:https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
       "source": "tc",
       "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
@@ -178,19 +193,21 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50141429",
+      "id": "hn:50141657",
       "source": "hn",
-      "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
-      "blurb": "Would this be enough to keep an AI model from going out of control?",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
-      "publishedAt": "2026-10-18T14:30:27.000Z",
-      "score": 84,
+      "title": "Websites are closing their doors to AI agents",
+      "blurb": "Online roadblocks are undermining the narrative behind AI agents.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "publishedAt": "2026-10-18T14:58:10.000Z",
+      "score": 81,
       "scoreLabel": "points",
       "meta": {
-        "comments": 84
+        "comments": 57
       },
-      "alsoOn": [],
-      "image": "https://cdn.mos.cms.futurecdn.net/SVPa8KkaDwkeyAtLnMhyKW-1920-80.png"
+      "alsoOn": [
+        "verge:https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+      ],
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK414_AI_CVIRGINIA_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
     },
     {
       "id": "hn:50129045",
@@ -211,6 +228,19 @@
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/deepseek-ai/DeepSeek-V4.1-Flash-1017.png"
     },
     {
+      "id": "ars:https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+      "source": "ars",
+      "title": "OpenAI models hacked a crypto wallet and breached more websites",
+      "blurb": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-1152x648.jpg",
+      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+      "publishedAt": "2026-10-16T20:59:01.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "mit:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
       "source": "mit",
       "title": "Giving AI a “crystal clear” view of the materials world",
@@ -223,36 +253,6 @@
       "meta": {
         "category": "Research"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "hn:50141657",
-      "source": "hn",
-      "title": "Websites are closing their doors to AI agents",
-      "blurb": "Online roadblocks are undermining the narrative behind AI agents.",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-      "publishedAt": "2026-10-18T14:58:10.000Z",
-      "score": 71,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 48
-      },
-      "alsoOn": [
-        "verge:https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
-      ],
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK414_AI_CVIRGINIA_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
-    },
-    {
-      "id": "ars:https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-      "source": "ars",
-      "title": "OpenAI models hacked a crypto wallet and breached more websites",
-      "blurb": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-1152x648.jpg",
-      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-      "publishedAt": "2026-10-16T20:59:01.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -292,7 +292,7 @@
       "blurb": null,
       "url": "https://alexwang.ai/posts/associative-memory/",
       "publishedAt": "2026-10-16T19:01:17.000Z",
-      "score": 606,
+      "score": 608,
       "scoreLabel": "points",
       "meta": {
         "comments": 136
@@ -335,10 +335,10 @@
       "blurb": "Summary Codex Desktop is continuously adding paired .dmp and _sidecar.json files under: ~/Library/Application Support/com.openai.codex/web/Crashpad/pending On my machine this directory grew…",
       "url": "https://github.com/openai/codex/issues/25921",
       "publishedAt": "2026-10-17T17:45:08.000Z",
-      "score": 158,
+      "score": 159,
       "scoreLabel": "points",
       "meta": {
-        "comments": 78
+        "comments": 80
       },
       "alsoOn": [],
       "image": "https://opengraph.githubassets.com/ca36cd0881ef0455269ae28027ff6686ed2bae99e1f24dc416de1a72bc590b3c/openai/codex/issues/25921"
@@ -353,7 +353,7 @@
       "score": 169,
       "scoreLabel": "points",
       "meta": {
-        "comments": 58
+        "comments": 59
       },
       "alsoOn": [],
       "image": "https://storage.ghost.io/c/3f/80/3f804bea-4b2d-4ddf-9ff0-6ec7d0afa5fa/content/images/size/w1200/2026/10/Amazon-AI-question-openDemocracy-edit.jpg"
@@ -502,19 +502,6 @@
       "alsoOn": []
     },
     {
-      "id": "tc:https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-      "source": "tc",
-      "title": "India becomes the latest country to report rogue AI agent activity",
-      "blurb": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/india-cyber-attack.jpg?w=612",
-      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-      "publishedAt": "2026-10-16T17:52:24.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "arxiv:2610.22355v1",
       "source": "arxiv",
       "title": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
@@ -531,6 +518,19 @@
       "alsoOn": [
         "papers:2610.22355"
       ]
+    },
+    {
+      "id": "tc:https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+      "source": "tc",
+      "title": "India becomes the latest country to report rogue AI agent activity",
+      "blurb": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/india-cyber-attack.jpg?w=612",
+      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+      "publishedAt": "2026-10-16T17:52:24.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "msr:https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/",
@@ -552,7 +552,7 @@
       "blurb": null,
       "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
       "publishedAt": "2026-10-16T18:11:42.000Z",
-      "score": 292,
+      "score": 293,
       "scoreLabel": "points",
       "meta": {
         "comments": 87
@@ -852,6 +852,21 @@
       "alsoOn": []
     },
     {
+      "id": "hn:50140462",
+      "source": "hn",
+      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
+      "blurb": "Six AI assistants pursued an impossible £350 train refund in a simulated world, escalating to government officials, legal clinics and bank chargebacks.",
+      "url": "https://www.vals.ai/blogs/impossible-refund",
+      "publishedAt": "2026-10-18T12:22:58.000Z",
+      "score": 28,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 11
+      },
+      "alsoOn": [],
+      "image": "https://www.vals.ai/blogs/2026-10-15-impossible-refund/hero-vals.webp"
+    },
+    {
       "id": "openai:https://openai.com/index/introducing-the-rosalind-academic-plan",
       "source": "openai",
       "title": "Bringing GPT-Rosalind to academic research labs",
@@ -859,6 +874,19 @@
       "image": null,
       "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
       "publishedAt": "2026-10-15T19:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "importai:https://jack-clark.net/2026/10/12/import-ai-476-creativity-and-rsi-worse-than-china-open-weight-models-ai-goes-to-space/",
+      "source": "importai",
+      "title": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+      "blurb": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now New…",
+      "image": "https://s0.wp.com/_si/?t=eyJpbWciOiJodHRwczpcL1wvczAud3AuY29tXC9pXC9ibGFuay5qcGciLCJ0eHQiOiJJbXBvcnQgQUkgIiwidGVtcGxhdGUiOiJoaWdod2F5IiwiZm9udCI6IiIsImJsb2dfaWQiOjEwNzM4NzM3fQ.5lSAiEzyUNRFqGNJt0fHiWtUevhr506J_0PofiEO9WIMQ",
+      "url": "https://jack-clark.net/2026/10/12/import-ai-476-creativity-and-rsi-worse-than-china-open-weight-models-ai-goes-to-space/",
+      "publishedAt": "2026-10-12T12:30:39.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -930,7 +958,7 @@
       "blurb": "Core devs revert up to 10 features, push release to November, and blame better tooling rather than vibe coding",
       "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
       "publishedAt": "2026-10-16T15:55:40.000Z",
-      "score": 215,
+      "score": 216,
       "scoreLabel": "points",
       "meta": {
         "comments": 91
@@ -946,19 +974,6 @@
       "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/FIRST-agentic-ai-nemotron-3.5-super-vl-blog-1920x1080-5783765.jpeg",
       "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
       "publishedAt": "2026-10-15T15:00:24.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "tc:https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
-      "source": "tc",
-      "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
-      "blurb": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like…",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/unitree-robots.jpg?resize=1200,800",
-      "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
-      "publishedAt": "2026-10-16T16:30:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -1012,6 +1027,19 @@
       "image": null
     },
     {
+      "id": "tc:https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
+      "source": "tc",
+      "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
+      "blurb": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like…",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/unitree-robots.jpg?resize=1200,800",
+      "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
+      "publishedAt": "2026-10-16T16:30:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "gh:LiCinCan/blender-ai-mcp-addon",
       "source": "gh",
       "title": "LiCinCan/blender-ai-mcp-addon",
@@ -1019,27 +1047,11 @@
       "image": "https://opengraph.githubassets.com/1/LiCinCan/blender-ai-mcp-addon",
       "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
       "publishedAt": "2026-10-15T22:30:47.000Z",
-      "score": 754,
+      "score": 763,
       "scoreLabel": "stars",
       "meta": {
         "repo": "LiCinCan/blender-ai-mcp-addon",
         "language": "Python"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "arxiv:2610.22336v1",
-      "source": "arxiv",
-      "title": "Robust Reinforcement Learning for Dynamic Treatment Regimes under Model and Measurement Uncertainty",
-      "blurb": "We develop a robust reinforcement learning (RL) framework for learning adaptive treatment policies that generalize across patients and remain reliable under errors in the measured biomarker…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22336v1",
-      "publishedAt": "2026-10-15T17:54:13.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.LG",
-        "authors": 5
       },
       "alsoOn": []
     },
@@ -1059,6 +1071,22 @@
       "image": null
     },
     {
+      "id": "arxiv:2610.22336v1",
+      "source": "arxiv",
+      "title": "Robust Reinforcement Learning for Dynamic Treatment Regimes under Model and Measurement Uncertainty",
+      "blurb": "We develop a robust reinforcement learning (RL) framework for learning adaptive treatment policies that generalize across patients and remain reliable under errors in the measured biomarker…",
+      "image": null,
+      "url": "http://arxiv.org/abs/2610.22336v1",
+      "publishedAt": "2026-10-15T17:54:13.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.LG",
+        "authors": 5
+      },
+      "alsoOn": []
+    },
+    {
       "id": "gh:onehumanbeing/esp32-iphone-agent",
       "source": "gh",
       "title": "onehumanbeing/esp32-iphone-agent",
@@ -1066,7 +1094,7 @@
       "image": "https://opengraph.githubassets.com/1/onehumanbeing/esp32-iphone-agent",
       "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
       "publishedAt": "2026-10-11T19:10:25.000Z",
-      "score": 3093,
+      "score": 3094,
       "scoreLabel": "stars",
       "meta": {
         "repo": "onehumanbeing/esp32-iphone-agent",
@@ -1140,7 +1168,7 @@
       "image": "https://opengraph.githubassets.com/1/deeplethe/solid-glass",
       "url": "https://github.com/deeplethe/solid-glass",
       "publishedAt": "2026-10-12T09:19:02.000Z",
-      "score": 2007,
+      "score": 2008,
       "scoreLabel": "stars",
       "meta": {
         "repo": "deeplethe/solid-glass",
@@ -1149,19 +1177,17 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50059115",
-      "source": "hn",
-      "title": "Muse Wonder",
-      "blurb": "Muse Wonder is Meta's frontier AI model that keeps track of what matters to you with Active Memory & Active Focus to work towards your goals at work & life.",
-      "url": "https://research.meta.ai/blog/muse-wonder",
-      "publishedAt": "2026-10-12T16:48:01.000Z",
-      "score": 672,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 382
-      },
-      "alsoOn": [],
-      "image": "https://research.meta.ai/articles/introducing-muse-wonder/social/muse-wonder-social-v1.webp"
+      "id": "openai:https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+      "source": "openai",
+      "title": "Teaching students to think and learn through questions",
+      "blurb": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
+      "image": null,
+      "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+      "publishedAt": "2026-10-15T13:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "arxiv:2610.22333v1",
@@ -1180,17 +1206,19 @@
       "alsoOn": []
     },
     {
-      "id": "openai:https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
-      "source": "openai",
-      "title": "Teaching students to think and learn through questions",
-      "blurb": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
-      "image": null,
-      "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
-      "publishedAt": "2026-10-15T13:00:00.000Z",
+      "id": "hfblog:https://huggingface.co/blog/flux-3",
+      "source": "hfblog",
+      "title": "Welcome FLUX.3 Image Klein in Diffusers",
+      "blurb": "Welcome FLUX.3 Image Klein in Diffusers: The latest open image generation model from Black Forest Labs",
+      "image": "https://huggingface.co/blog/assets/flux3/thumbnail.png",
+      "url": "https://huggingface.co/blog/flux-3",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
-      "alsoOn": []
+      "alsoOn": [
+        "hn:50123580"
+      ]
     },
     {
       "id": "hf:Qwen/Qwen-Image-2.1-Turbo",
@@ -1254,19 +1282,17 @@
       "alsoOn": []
     },
     {
-      "id": "hfblog:https://huggingface.co/blog/flux-3",
-      "source": "hfblog",
-      "title": "Welcome FLUX.3 Image Klein in Diffusers",
-      "blurb": "Welcome FLUX.3 Image Klein in Diffusers: The latest open image generation model from Black Forest Labs",
-      "image": "https://huggingface.co/blog/assets/flux3/thumbnail.png",
-      "url": "https://huggingface.co/blog/flux-3",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "id": "deepmind:https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "source": "deepmind",
+      "title": "Gemini 4 Argon for Robotics",
+      "blurb": "Discover Gemini 4 Argon for robotics: leading the ERQA benchmark with physical reasoning, zero-shot control, Real2Sim, and agentic workflows.",
+      "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/argon__robotics__hero.2e16d0ba.fill-1200x600.png",
+      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "publishedAt": "2026-10-13T16:01:58.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
-      "alsoOn": [
-        "hn:50123580"
-      ]
+      "alsoOn": []
     },
     {
       "id": "googleai:https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
@@ -1284,17 +1310,19 @@
       "alsoOn": []
     },
     {
-      "id": "deepmind:https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-      "source": "deepmind",
-      "title": "Gemini 4 Argon for Robotics",
-      "blurb": "Discover Gemini 4 Argon for robotics: leading the ERQA benchmark with physical reasoning, zero-shot control, Real2Sim, and agentic workflows.",
-      "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/argon__robotics__hero.2e16d0ba.fill-1200x600.png",
-      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-      "publishedAt": "2026-10-13T16:01:58.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
+      "id": "hn:50059115",
+      "source": "hn",
+      "title": "Muse Wonder",
+      "blurb": "Muse Wonder is Meta's frontier AI model that keeps track of what matters to you with Active Memory & Active Focus to work towards your goals at work & life.",
+      "url": "https://research.meta.ai/blog/muse-wonder",
+      "publishedAt": "2026-10-12T16:48:01.000Z",
+      "score": 672,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 382
+      },
+      "alsoOn": [],
+      "image": "https://research.meta.ai/articles/introducing-muse-wonder/social/muse-wonder-social-v1.webp"
     },
     {
       "id": "hf:black-forest-labs/flux-3-image-klein-comfy",
@@ -1302,7 +1330,7 @@
       "title": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "publishedAt": "2026-10-14T12:00:13.000Z",
-      "score": 759,
+      "score": 761,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 338036,
@@ -1333,7 +1361,7 @@
       "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "publishedAt": "2026-10-07T07:07:30.000Z",
-      "score": 963,
+      "score": 966,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 57935,
@@ -1359,22 +1387,6 @@
       "alsoOn": []
     },
     {
-      "id": "arxiv:2610.22331v1",
-      "source": "arxiv",
-      "title": "KnowGPO: Knowledge-Grouped Policy Optimization for Search Agents",
-      "blurb": "Deep search agents solve knowledge-intensive tasks through long-horizon, multi-turn interactions, where assigning credit to individual search decisions is fundamentally difficult…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22331v1",
-      "publishedAt": "2026-10-15T17:52:33.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.AI",
-        "authors": 13
-      },
-      "alsoOn": []
-    },
-    {
       "id": "gh:trhhubsd/ARTEX",
       "source": "gh",
       "title": "trhhubsd/ARTEX",
@@ -1391,6 +1403,22 @@
       "alsoOn": []
     },
     {
+      "id": "arxiv:2610.22331v1",
+      "source": "arxiv",
+      "title": "KnowGPO: Knowledge-Grouped Policy Optimization for Search Agents",
+      "blurb": "Deep search agents solve knowledge-intensive tasks through long-horizon, multi-turn interactions, where assigning credit to individual search decisions is fundamentally difficult…",
+      "image": null,
+      "url": "http://arxiv.org/abs/2610.22331v1",
+      "publishedAt": "2026-10-15T17:52:33.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.AI",
+        "authors": 13
+      },
+      "alsoOn": []
+    },
+    {
       "id": "nvidia:https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update/",
       "source": "nvidia",
       "title": "Dial Up the Cloud: NVIDIA DLSS 4.5 Controls Arrive on GeForce NOW",
@@ -1402,21 +1430,6 @@
       "scoreLabel": null,
       "meta": {},
       "alsoOn": []
-    },
-    {
-      "id": "hn:50108131",
-      "source": "hn",
-      "title": "Why We're Banning AI",
-      "blurb": "We urgently need to protect human thought and creativity. Our magazine is committing itself to remaining handmade. Ensure every publication you support does the same.",
-      "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
-      "publishedAt": "2026-10-15T18:32:29.000Z",
-      "score": 261,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 203
-      },
-      "alsoOn": [],
-      "image": "https://www.currentaffairs.org/hubfs/smash1.png"
     },
     {
       "id": "openai:https://openai.com/index/sullivan-cromwell",
@@ -1494,21 +1507,6 @@
       "blurb": "Kolibri is Aleph Alpha's mixture-of-experts (MoE) reasoning model, with a focus on German and English. The model supports an explicit reasoning mode and tool calling. It is optimized for…"
     },
     {
-      "id": "simonw:https://simonwillison.net/2026/Oct/15/latex/",
-      "source": "simonw",
-      "title": "LaTeX renderer",
-      "blurb": "Tool: LaTeX renderer Inspired by Paul Ford and Aboard Foundary's new web app Tiny Little Office , which provides a suite of web app content editors (a Word Processor, Outliner, Presentation…",
-      "image": null,
-      "url": "https://simonwillison.net/2026/Oct/15/latex/",
-      "publishedAt": "2026-10-15T02:07:28.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "latex"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "papers:2610.18813",
       "source": "papers",
       "title": "Self-Evolving Agent Harness",
@@ -1520,6 +1518,21 @@
       "scoreLabel": "upvotes",
       "meta": {
         "comments": 7
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "simonw:https://simonwillison.net/2026/Oct/15/latex/",
+      "source": "simonw",
+      "title": "LaTeX renderer",
+      "blurb": "Tool: LaTeX renderer Inspired by Paul Ford and Aboard Foundary's new web app Tiny Little Office , which provides a suite of web app content editors (a Word Processor, Outliner, Presentation…",
+      "image": null,
+      "url": "https://simonwillison.net/2026/Oct/15/latex/",
+      "publishedAt": "2026-10-15T02:07:28.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "latex"
       },
       "alsoOn": []
     },
@@ -1663,7 +1676,7 @@
       "image": "https://opengraph.githubassets.com/1/mw00/project-maya",
       "url": "https://github.com/mw00/project-maya",
       "publishedAt": "2026-10-06T22:55:13.000Z",
-      "score": 1024,
+      "score": 1025,
       "scoreLabel": "stars",
       "meta": {
         "repo": "mw00/project-maya",
@@ -1744,6 +1757,19 @@
       "alsoOn": []
     },
     {
+      "id": "importai:https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/",
+      "source": "importai",
+      "title": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
+      "blurb": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now When…",
+      "image": "https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/10/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-icWL54.png?resize=150%2C150&ssl=1",
+      "url": "https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/",
+      "publishedAt": "2026-10-05T12:32:30.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "tc:https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
       "source": "tc",
       "title": "Jev is Vercel’s fastest-adopted AI model ever",
@@ -1757,19 +1783,19 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50095353",
+      "id": "hn:50108131",
       "source": "hn",
-      "title": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
-      "blurb": "TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access.",
-      "url": "https://typesafe.ai/blog/jev-1-14",
-      "publishedAt": "2026-10-14T21:11:03.000Z",
-      "score": 333,
+      "title": "Why We're Banning AI",
+      "blurb": "We urgently need to protect human thought and creativity. Our magazine is committing itself to remaining handmade. Ensure every publication you support does the same.",
+      "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
+      "publishedAt": "2026-10-15T18:32:29.000Z",
+      "score": 261,
       "scoreLabel": "points",
       "meta": {
-        "comments": 122
+        "comments": 203
       },
       "alsoOn": [],
-      "image": "https://framerusercontent.com/images/KBTvCTXoQaZeABcI7te5PTQw7Q.png?width=1574&height=996"
+      "image": "https://www.currentaffairs.org/hubfs/smash1.png"
     },
     {
       "id": "lobsters:qcgjpu",
@@ -1817,22 +1843,6 @@
       "alsoOn": []
     },
     {
-      "id": "arxiv:2610.22324v1",
-      "source": "arxiv",
-      "title": "Training Reasoning Models to Generate Diverse Scientific Ideas",
-      "blurb": "One of the first steps of a research pipeline is generating ideas. Large Language Models (LLMs) are increasingly used to automate this step, but most of this work optimizes the quality of…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22324v1",
-      "publishedAt": "2026-10-15T17:52:12.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.CL",
-        "authors": 6
-      },
-      "alsoOn": []
-    },
-    {
       "id": "hf:fishaudio/drama-3",
       "source": "hf",
       "title": "fishaudio/drama-3",
@@ -1847,6 +1857,22 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/fishaudio/drama-3.png",
       "blurb": "Drama 3 runs on SGLang-Omni from launch day. For installation, deployment, and streaming API examples, see the Drama 3 Cookbook. Launch with vLLM-Omni"
+    },
+    {
+      "id": "arxiv:2610.22324v1",
+      "source": "arxiv",
+      "title": "Training Reasoning Models to Generate Diverse Scientific Ideas",
+      "blurb": "One of the first steps of a research pipeline is generating ideas. Large Language Models (LLMs) are increasingly used to automate this step, but most of this work optimizes the quality of…",
+      "image": null,
+      "url": "http://arxiv.org/abs/2610.22324v1",
+      "publishedAt": "2026-10-15T17:52:12.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.CL",
+        "authors": 6
+      },
+      "alsoOn": []
     },
     {
       "id": "gh:Tejashmakwana/motionmaxxing",
@@ -1952,6 +1978,22 @@
       "alsoOn": []
     },
     {
+      "id": "hf:ConwayResearch/Underdog-Saluki-27B-1.0",
+      "source": "hf",
+      "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
+      "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
+      "publishedAt": "2026-10-08T01:47:26.000Z",
+      "score": 537,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 410558,
+        "task": "text-generation"
+      },
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ConwayResearch/Underdog-Saluki-27B-1.0.png",
+      "blurb": "Qwen3.8-27B in under 8 GB, tuned to keep tool calling intact. A standard GGUF for stock llama.cpp. Read more: underdog.ai/saluki"
+    },
+    {
       "id": "interconnects:https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
       "source": "interconnects",
       "title": "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI",
@@ -1979,22 +2021,6 @@
         "authors": 3
       },
       "alsoOn": []
-    },
-    {
-      "id": "hf:ConwayResearch/Underdog-Saluki-27B-1.0",
-      "source": "hf",
-      "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
-      "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
-      "publishedAt": "2026-10-08T01:47:26.000Z",
-      "score": 537,
-      "scoreLabel": "likes",
-      "meta": {
-        "downloads": 410558,
-        "task": "text-generation"
-      },
-      "alsoOn": [],
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ConwayResearch/Underdog-Saluki-27B-1.0.png",
-      "blurb": "Qwen3.8-27B in under 8 GB, tuned to keep tool calling intact. A standard GGUF for stock llama.cpp. Read more: underdog.ai/saluki"
     },
     {
       "id": "tc:https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
@@ -2039,6 +2065,22 @@
       "blurb": "LFM2.5-24B-A2B is a 24B-parameter reasoning model with only 2B active parameters, built for fast, private agents on-device. It is the largest and final model in the LFM2.5 family, which now…"
     },
     {
+      "id": "gh:thesysdev/open-intelligent-ui",
+      "source": "gh",
+      "title": "thesysdev/open-intelligent-ui",
+      "blurb": "An open-source take on ChatGPT's Intelligent UI: answers stream as interactive UI (maps, photos, charts, drawings and working tools). Built with OpenUI.",
+      "image": "https://opengraph.githubassets.com/1/thesysdev/open-intelligent-ui",
+      "url": "https://github.com/thesysdev/open-intelligent-ui",
+      "publishedAt": "2026-10-08T05:37:45.000Z",
+      "score": 534,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "thesysdev/open-intelligent-ui",
+        "language": "TypeScript"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "gh:repoboost-hq/github-star-benchmarks",
       "source": "gh",
       "title": "repoboost-hq/github-star-benchmarks",
@@ -2051,22 +2093,6 @@
       "meta": {
         "repo": "repoboost-hq/github-star-benchmarks",
         "language": "Python"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "gh:thesysdev/open-intelligent-ui",
-      "source": "gh",
-      "title": "thesysdev/open-intelligent-ui",
-      "blurb": "An open-source take on ChatGPT's Intelligent UI: answers stream as interactive UI (maps, photos, charts, drawings and working tools). Built with OpenUI.",
-      "image": "https://opengraph.githubassets.com/1/thesysdev/open-intelligent-ui",
-      "url": "https://github.com/thesysdev/open-intelligent-ui",
-      "publishedAt": "2026-10-08T05:37:45.000Z",
-      "score": 533,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "thesysdev/open-intelligent-ui",
-        "language": "TypeScript"
       },
       "alsoOn": []
     },
@@ -2121,7 +2147,7 @@
       "image": "https://opengraph.githubassets.com/1/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
       "url": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
       "publishedAt": "2026-10-13T10:13:21.000Z",
-      "score": 384,
+      "score": 385,
       "scoreLabel": "stars",
       "meta": {
         "repo": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
@@ -2159,6 +2185,19 @@
       "alsoOn": []
     },
     {
+      "id": "importai:https://jack-clark.net/2026/09/28/import-ai-474-platonic-mindspace-tpus-in-space-zhipu-starts-an-outer-rsi-loop/",
+      "source": "importai",
+      "title": "Import AI 474: Platonic mindspace; TPUs in space; Zhipu starts an outer RSI loop",
+      "blurb": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now Are…",
+      "image": "https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/09/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-owL1ku.png?resize=150%2C150&ssl=1",
+      "url": "https://jack-clark.net/2026/09/28/import-ai-474-platonic-mindspace-tpus-in-space-zhipu-starts-an-outer-rsi-loop/",
+      "publishedAt": "2026-09-28T12:32:03.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "deepmind:https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
       "source": "deepmind",
       "title": "Gemini 4 Argon: our next era of frontier intelligence",
@@ -2172,19 +2211,19 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50140462",
+      "id": "hn:50095353",
       "source": "hn",
-      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
-      "blurb": "Six AI assistants pursued an impossible £350 train refund in a simulated world, escalating to government officials, legal clinics and bank chargebacks.",
-      "url": "https://www.vals.ai/blogs/impossible-refund",
-      "publishedAt": "2026-10-18T12:22:58.000Z",
-      "score": 22,
+      "title": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
+      "blurb": "TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access.",
+      "url": "https://typesafe.ai/blog/jev-1-14",
+      "publishedAt": "2026-10-14T21:11:03.000Z",
+      "score": 333,
       "scoreLabel": "points",
       "meta": {
-        "comments": 6
+        "comments": 122
       },
       "alsoOn": [],
-      "image": "https://www.vals.ai/blogs/2026-10-15-impossible-refund/hero-vals.webp"
+      "image": "https://framerusercontent.com/images/KBTvCTXoQaZeABcI7te5PTQw7Q.png?width=1574&height=996"
     },
     {
       "id": "hf:LiquidAI/d1-3B",
@@ -2364,6 +2403,19 @@
       "alsoOn": []
     },
     {
+      "id": "importai:https://jack-clark.net/2026/09/21/import-ai-473-the-uss-superintelligence-strategy-human-brain-in-a-mouse-skull-and-machine-hermeneutics/",
+      "source": "importai",
+      "title": "Import AI 473: The US’s superintelligence strategy; human brain in a mouse skull; and machine hermeneutics",
+      "blurb": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now RAND…",
+      "image": "https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/09/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-L4yH52.png?resize=150%2C150&ssl=1",
+      "url": "https://jack-clark.net/2026/09/21/import-ai-473-the-uss-superintelligence-strategy-human-brain-in-a-mouse-skull-and-machine-hermeneutics/",
+      "publishedAt": "2026-09-21T12:31:04.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "ars:https://arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools-and-flooded-it-with-traffic/",
       "source": "ars",
       "title": "OpenAI agents tried to hack Wikipedia tools and flooded it with traffic",
@@ -2446,21 +2498,6 @@
       "alsoOn": []
     },
     {
-      "id": "verge:https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
-      "source": "verge",
-      "title": "The tech backlash is now in theaters",
-      "blurb": "Though movies about disruptive tech founders are nothing new, 2026 has been unusually stacked with features that take a much more critical look at how Silicon Valley is reshaping our…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Screenshot-2026-10-15-at-5.28.21-PM.png?quality=90&strip=all&crop=0%2C15.21666481007%2C100%2C69.56667037986&w=1200",
-      "url": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
-      "publishedAt": "2026-10-15T21:39:52.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "AI"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "papers:2610.20731",
       "source": "papers",
       "title": "WorldCast: Exploring Intelligent Visual Generation in World State Prediction",
@@ -2476,13 +2513,13 @@
       "alsoOn": []
     },
     {
-      "id": "verge:https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
+      "id": "verge:https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
       "source": "verge",
-      "title": "Trump posts AI-edited photo to brag about White House restoration work",
-      "blurb": "President Donald Trump posted a series of photos on Truth Social showing off renovations to the White House - but one of them appears to be modified with AI. The picture, which compares an…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/27a4ed6e86bbf2cf-1.jpg?quality=90&strip=all&crop=0%2C10.71715720101%2C100%2C78.565685597979&w=1200",
-      "url": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
-      "publishedAt": "2026-10-15T21:09:33.000Z",
+      "title": "The tech backlash is now in theaters",
+      "blurb": "Though movies about disruptive tech founders are nothing new, 2026 has been unusually stacked with features that take a much more critical look at how Silicon Valley is reshaping our…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Screenshot-2026-10-15-at-5.28.21-PM.png?quality=90&strip=all&crop=0%2C15.21666481007%2C100%2C69.56667037986&w=1200",
+      "url": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
+      "publishedAt": "2026-10-15T21:39:52.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {
@@ -2504,12 +2541,27 @@
       "alsoOn": []
     },
     {
+      "id": "verge:https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
+      "source": "verge",
+      "title": "Trump posts AI-edited photo to brag about White House restoration work",
+      "blurb": "President Donald Trump posted a series of photos on Truth Social showing off renovations to the White House - but one of them appears to be modified with AI. The picture, which compares an…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/27a4ed6e86bbf2cf-1.jpg?quality=90&strip=all&crop=0%2C10.71715720101%2C100%2C78.565685597979&w=1200",
+      "url": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
+      "publishedAt": "2026-10-15T21:09:33.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "AI"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "hf:Cactus-Compute/whistle",
       "source": "hf",
       "title": "Cactus-Compute/whistle",
       "url": "https://huggingface.co/Cactus-Compute/whistle",
       "publishedAt": "2026-09-30T17:13:26.000Z",
-      "score": 432,
+      "score": 433,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 42186,
@@ -2558,6 +2610,19 @@
       "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/GettyImages-1934095718-1152x648.jpg",
       "url": "https://arstechnica.com/information-technology/2026/10/operational-complexity-a-top-barrier-for-vmware-migrations-survey/",
       "publishedAt": "2026-10-06T12:00:31.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "importai:https://jack-clark.net/2026/09/07/import-ai-472-deepminds-cheating-math-agents-populist-ai-policies-and-forethought-theorizes-a-nightwatchman/",
+      "source": "importai",
+      "title": "Import AI 472: DeepMind’s cheating math agents; populist AI policies; and Forethought theorizes a nightwatchman",
+      "blurb": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now…",
+      "image": "https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/09/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-0Ig6P5.png?resize=150%2C150&ssl=1",
+      "url": "https://jack-clark.net/2026/09/07/import-ai-472-deepminds-cheating-math-agents-populist-ai-policies-and-forethought-theorizes-a-nightwatchman/",
+      "publishedAt": "2026-09-07T12:26:31.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
