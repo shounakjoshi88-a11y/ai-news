@@ -32,11 +32,14 @@ const MIN_HERO_WIDTH = 400;
 const HALF_LIFE_HOURS = 36;
 const WEIGHT_ENGAGEMENT = 0.5;
 /**
- * The wire's ceiling. The per-source caps add up to far more than this, so the
- * ranking — not the caps — is what decides what the page holds when everything
- * is busy, and a quiet hour simply has fewer cards rather than a padded wire.
+ * A guard rail, not a display budget. It sits well above what the windows and
+ * per-source caps can produce together (~800 on a busy hour), so all it can do
+ * is stop a pathological feed from writing a megabyte of JSON — it never trims
+ * a good wire. It was `700` for one edition, which quietly made the page say
+ * "700 dispatches" while 797 had actually been gathered; the count on the page
+ * has to be the number of dispatches, so the ceiling moved out of the way.
  */
-const TOTAL_CAP = 700;
+const TOTAL_CAP = 1200;
 
 /**
  * The ordinary RSS and Atom sources, as data rather than eighty near-identical

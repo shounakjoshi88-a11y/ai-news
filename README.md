@@ -204,8 +204,14 @@ limit. Neither fixes reason 2.
 - Each source gets a **window** (14 days for arXiv and Hacker News, up to 180 for a lab that
   announces quarterly) and a **cap** (3 to 34), so no single source can flood the wire and a
   slow-moving source cannot pad it. The caps add up to far more than the wire holds, so it is
-  the ranking — not the caps — that decides what a busy hour looks like, and a quiet hour has
-  fewer cards rather than a padded wire.
+  the ranking — not the caps — that decides what a busy hour looks like.
+- **The dispatch count is the real count.** There is a wire-wide ceiling above that ranking,
+  but it is set well past anything the windows and caps can produce, so it never trims an
+  edition — it only stops a pathological feed from writing a megabyte of JSON. That matters
+  because the number is shown to the reader: an earlier ceiling of `700` was hit *exactly*,
+  which is what a silently trimmed wire looks like. Lifting it showed 797 had been gathered,
+  so the page had been understating itself by 97. A count that the code can quietly cut is a
+  count that can be wrong; this one moves hour to hour because it is measured, not budgeted.
 - Within a source, engagement is a **percentile** of that source's own signal, which is
   what makes points, likes, stars and upvotes comparable. A source with no engagement
   metric at all — arXiv, the labs, the press — is ranked by its own recency instead, so a
