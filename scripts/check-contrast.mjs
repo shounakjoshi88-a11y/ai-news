@@ -96,6 +96,12 @@ const PAIRS = [
   ["hero title", "hero-text", "hero-bg", MIN_BODY],
   ["hero lede", "hero-muted", "hero-bg", MIN_BODY],
   ["tile mark", "tile-ink", "tile", MIN_BODY],
+  // The plate's label is 11px, so it needs the body minimum, and it is the only
+  // place accent-ink sits on the tile rather than on the page.
+  ["tile kind", "accent-ink", "tile", MIN_BODY],
+  // The monogram on a card with no picture is 1.75rem and bold, so it is large
+  // text; the detail under it is not, and keeps the body minimum.
+  ["tile monogram", "text-2", "tile", MIN_LARGE],
   ["warning", "warning", "bg", MIN_BODY],
   ["danger", "danger", "bg", MIN_BODY],
 ];

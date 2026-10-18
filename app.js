@@ -18,30 +18,31 @@ const PAGE_SIZE = 24;
 /**
  * Every source the collector can produce. `code` is what a card shows, in a small
  * chip, so it is short; `name` is what the filter tab and the card's meta line
- * show, so it is spelled out. The order below is the order of the tabs, and it is
- * fixed on purpose — sorting by volume would make a source jump around the strip
- * every hour as the news changed.
+ * show, so it is spelled out; `kind` is what the source publishes, and is what a
+ * card with no picture says instead of a picture. The order below is the order of
+ * the tabs, and it is fixed on purpose — sorting by volume would make a source
+ * jump around the strip every hour as the news changed.
  */
 const SOURCES = {
-  hn: { name: "Hacker News", code: "HN" },
-  lobsters: { name: "Lobsters", code: "LOB" },
-  papers: { name: "Daily Papers", code: "DP" },
-  arxiv: { name: "arXiv", code: "arXiv" },
-  hf: { name: "Hugging Face", code: "HF" },
-  gh: { name: "GitHub", code: "GH" },
-  openai: { name: "OpenAI", code: "OAI" },
-  deepmind: { name: "DeepMind", code: "DM" },
-  googleai: { name: "Google AI", code: "GAI" },
-  msr: { name: "Microsoft Research", code: "MSR" },
-  nvidia: { name: "NVIDIA", code: "NV" },
-  hfblog: { name: "Hugging Face Blog", code: "HFB" },
-  tc: { name: "TechCrunch", code: "TC" },
-  verge: { name: "The Verge", code: "VZ" },
-  ars: { name: "Ars Technica", code: "ARS" },
-  mit: { name: "MIT News", code: "MIT" },
-  simonw: { name: "Simon Willison", code: "SW" },
-  importai: { name: "Import AI", code: "IA" },
-  interconnects: { name: "Interconnects", code: "IC" },
+  hn: { name: "Hacker News", code: "HN", kind: "Discussion" },
+  lobsters: { name: "Lobsters", code: "LOB", kind: "Discussion" },
+  papers: { name: "Daily Papers", code: "DP", kind: "Paper" },
+  arxiv: { name: "arXiv", code: "arXiv", kind: "Paper" },
+  hf: { name: "Hugging Face", code: "HF", kind: "Model" },
+  gh: { name: "GitHub", code: "GH", kind: "Repository" },
+  openai: { name: "OpenAI", code: "OAI", kind: "Announcement" },
+  deepmind: { name: "DeepMind", code: "DM", kind: "Announcement" },
+  googleai: { name: "Google AI", code: "GAI", kind: "Announcement" },
+  msr: { name: "Microsoft Research", code: "MSR", kind: "Announcement" },
+  nvidia: { name: "NVIDIA", code: "NV", kind: "Announcement" },
+  hfblog: { name: "Hugging Face Blog", code: "HFB", kind: "Announcement" },
+  tc: { name: "TechCrunch", code: "TC", kind: "Report" },
+  verge: { name: "The Verge", code: "VZ", kind: "Report" },
+  ars: { name: "Ars Technica", code: "ARS", kind: "Report" },
+  mit: { name: "MIT News", code: "MIT", kind: "Report" },
+  simonw: { name: "Simon Willison", code: "SW", kind: "Post" },
+  importai: { name: "Import AI", code: "IA", kind: "Post" },
+  interconnects: { name: "Interconnects", code: "IC", kind: "Post" },
 };
 const ORDER = Object.keys(SOURCES);
 
@@ -150,23 +151,52 @@ const timeNode = (item, className) =>
     text: relTime(item.publishedAt),
   });
 
-/** A second line for the designed tile, from what the source actually records. */
+/**
+ * The tile's caption: the kind of thing the item is, plus one real attribute the
+ * card does not already show. The meta line under the headline carries the score,
+ * or the category when there is no score, so this deliberately names the attribute
+ * that line leaves out — comments for a thread, authors for a paper.
+ */
 function tileSub(item) {
-  return item.meta?.category || item.meta?.task || item.meta?.language || "";
+  const meta = item.meta || {};
+  const shown = scoreText(item);
+  const candidates = [
+    meta.category,
+    meta.task,
+    meta.language,
+    typeof meta.comments === "number" ? `${nf.format(meta.comments)} comments` : "",
+    typeof meta.authors === "number" ? `${meta.authors} authors` : "",
+  ].filter(Boolean);
+  return candidates.find((candidate) => candidate !== shown) || "";
 }
 
 /**
- * Artwork when the source has any, and a designed tile when it does not — the
- * grid keeps its rhythm either way, and a dead preview link degrades to the tile
- * rather than to a broken image.
+ * Artwork when the source has any, and a designed plate when it does not — the
+ * grid keeps its rhythm either way, and a dead preview link degrades to the plate
+ * rather than to a broken image. The plate is marked `is-tile` so it can be styled
+ * as a surface in its own right: a card with no picture must not read as a
+ * photograph that failed to load.
  */
 function media(item, isLead) {
-  const wrap = el("div", { class: isLead ? "lead__media" : "story__media" });
+  const source = sourceOf(item);
+  const wrap = el("div", {
+    class: (isLead ? "lead__media" : "story__media") + (item.image ? "" : " is-tile"),
+  });
+  // Three separate marks rather than one dotted string: this project's own rules
+  // forbid joining meta with middle dots, and the plate reads better as a stamp
+  // anyway — a label, a mark, and a detail.
+  wrap.append(
+    el("span", {
+      class: isLead ? "lead__kind" : "story__kind",
+      "aria-hidden": "true",
+      text: source.kind,
+    }),
+  );
   wrap.append(
     el("span", {
       class: isLead ? "lead__mark" : "story__mark",
       "aria-hidden": "true",
-      text: sourceOf(item).code,
+      text: source.code,
     }),
   );
   const sub = tileSub(item);
@@ -188,7 +218,15 @@ function media(item, isLead) {
       decoding: "async",
       referrerpolicy: "no-referrer",
     });
-    img.addEventListener("error", () => img.remove(), { once: true });
+    img.addEventListener(
+      "error",
+      () => {
+        // A preview link that has gone dead degrades to the plate, not to a hole.
+        img.remove();
+        wrap.classList.add("is-tile");
+      },
+      { once: true },
+    );
     wrap.append(img);
   }
   return wrap;

@@ -475,28 +475,62 @@ main {
   transform: scale(1.035);
 }
 
-/* Stands in for the artwork when a source has none, so the grid keeps its rhythm. */
+/* A card whose source published no picture gets a plate rather than an empty
+   frame: a hairline edge, a bar of the accent along the top, then a label, a mark
+   and a detail. The card has to read as deliberate — an unmarked grey rectangle
+   with a two-letter chip in it reads as a photograph that failed to load, which
+   is what this replaces. */
+.story__media.is-tile {
+  gap: 8px;
+  border: 1px solid var(--rule);
+}
+
+.story__media.is-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: var(--accent);
+}
+
+/* What the source publishes: the piece of information the missing picture was
+   silently failing to carry. */
+.story__kind,
+.lead__kind {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--accent-ink);
+}
+
+.lead__kind {
+  font-size: 0.8125rem;
+}
+
 .story__mark,
 .lead__mark {
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  color: var(--tile-ink);
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--text-2);
 }
 
 .lead__mark {
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
 .story__mark-sub,
 .lead__mark-sub {
-  font-size: 0.6875rem;
-  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+  letter-spacing: 0.01em;
   color: var(--tile-ink);
+  text-align: center;
+  padding: 0 14px;
 }
 
 .lead__mark-sub {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
 }
 
 .story__time {

@@ -40,7 +40,10 @@ jobs:
   refresh:
     name: Rebuild the data
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # Fifteen minutes of slack over the collector's worst case. The optional
+    # artwork step paces itself to its generator's per-IP limit (one image per
+    # 45s) and is the only reason this needs to be generous.
+    timeout-minutes: 20
 
     steps:
       - uses: actions/checkout@v4
@@ -60,19 +63,44 @@ jobs:
           FORCE: ${{ github.event_name != 'schedule' }}
         run: node scripts/fetch-news.mjs --out data/news.json
 
+      # Off unless someone deliberately turns it on. Two measured reasons, both
+      # in the README's "Pictures, and why they are not generated" section: the
+      # free generator stamps its own mark on every image, and given a headline
+      # with no visual subject — which is exactly what the bare cards are; arXiv
+      # titles, Show HN posts — it answers with an unrelated portrait, which on a
+      # news page reads as a claim about who the story is about.
+      #
+      # Set the repository variable ARTWORK_MAX to a non-zero number to enable
+      # it. `continue-on-error` stays regardless: if it ever does run, a rate
+      # limit must cost pictures, never news.
+      - name: Generate artwork for the cards without a picture
+        if: ${{ vars.ARTWORK_MAX != '' && vars.ARTWORK_MAX != '0' }}
+        continue-on-error: true
+        env:
+          ARTWORK_MAX: ${{ vars.ARTWORK_MAX }}
+          ARTWORK_BUDGET_MS: "900000"
+        run: node scripts/generate-artwork.mjs
+
       # Skipped when collection failed: if every source is down the step above
       # exits 1, so the last good data stays live and unchanged.
       - name: Commit if the data changed
         run: |
-          if git diff --quiet -- data/news.json; then
+          # `images/` does not exist at all while generation is off, and may not
+          # exist on a run where it failed before writing anything; a bare
+          # `git add images` would fail the step and cost the hour's news.
+          git add -- data/news.json
+          if [ -d images ]; then git add -- images; fi
+
+          if git diff --cached --quiet; then
             echo "No change since the last run."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/news.json
-          git commit -m "data: refresh dispatches ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+
+          changed=$(git diff --cached --name-only | wc -l)
+          git commit -m "data: refresh dispatches ($(date -u +'%Y-%m-%d %H:%M UTC'), $changed files)"
 
           # main can move while this job is collecting (someone pushes a fix).
           # Replay on top of whatever landed rather than failing the run.

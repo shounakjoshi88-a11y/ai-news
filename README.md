@@ -27,12 +27,13 @@ A scheduled workflow runs `scripts/fetch-news.mjs`, which writes `data/news.json
 commits it if it changed. Because the page is served from the same origin as that file,
 the browser reads it directly. There is no API to call and no process to keep alive.
 
-Each card carries artwork and a summary. Neither is invented: both are taken from the
+Each card carries artwork and a summary, and neither is invented: both are taken from the
 item's own page or feed, and each source has its own strategy (below). Most feeds publish
 their own image, so those cards cost nothing beyond the single request that read the feed;
 only items still missing artwork have their page fetched, and only after ranking and
-deduping — so the pages read are the pages shown. An item with no usable picture gets a
-designed tile instead.
+deduping — so the pages read are the pages shown. Where there is no picture to be had at
+all, the card gets a designed tile instead of a fake one. See
+[Pictures](#pictures-and-why-they-are-not-generated).
 
 The repository is linked to Vercel, so that same commit is also what republishes the page.
 The hourly job deploys nothing itself and holds no hosting credential — it only commits,
@@ -56,13 +57,13 @@ tier, and each is read from its publisher rather than through an intermediary.
 | Community | **Hacker News** | points, comments | the linked page's own preview; Ask/Show HN posts carry their text already |
 | Community | **Lobsters** (AI tag) | points, comments | the linked page's preview |
 | Research | **Daily Papers** (Hugging Face) | upvotes, comments | the paper's own thumbnail; the abstract |
-| Research | **arXiv** `cs.AI` `cs.LG` `cs.CL` | recency | no meaningful picture, so a designed tile carrying the category; the abstract |
+| Research | **arXiv** `cs.AI` `cs.LG` `cs.CL` | recency | no picture from the source at all, so the card gets a tile; the abstract is the summary |
 | Models | **Hugging Face** models | likes, downloads | the model page's preview; the summary comes from the model card, because the page's own description is the site tagline on every model |
 | Code | **GitHub** | stars, language | GitHub renders one preview card per repository; the description is the summary |
-| Labs | **OpenAI** | recency | answers every scraper with 403, so its cards are tiles by design |
+| Labs | **OpenAI** | recency | answers every scraper with `403`, so the card gets a tile |
 | Labs | **DeepMind**, **Google AI**, **Microsoft Research**, **NVIDIA**, **Hugging Face Blog** | recency | the image each publisher puts in its own feed, so no second request is needed |
 | Press | **TechCrunch**, **The Verge**, **Ars Technica**, **MIT News** | recency | the press write the headline, and most publish their own artwork |
-| Writing | **Simon Willison**, **Import AI**, **Interconnects** | recency | the newsletter's own enclosure image, or a tile |
+| Writing | **Simon Willison**, **Import AI**, **Interconnects** | recency | the newsletter's own enclosure image where there is one, a tile where there is not |
 
 ## What was left out, and why
 
@@ -78,6 +79,67 @@ plausible candidates were measured and rejected:
 
 AI News (`news.smol.ai`) was wired in, measured, and then removed: its newest post was
 five weeks old, so it is not news.
+
+## Pictures, and why they are not generated
+
+A card shows the artwork its source published. Where no source has one, the card gets a
+designed plate instead: the source's monogram, what the item actually is — a discussion, a
+paper, a report, an announcement — and one real attribute the card does not already show
+(the comments on a thread, the authors on a paper, a repository's language). Two tiers, and
+nothing invented.
+
+The obvious third tier — *generate* whatever is still missing — was built, run against the
+real wire, and switched off. `scripts/generate-artwork.mjs` exists and works; the workflow
+skips it unless the repository variable `ARTWORK_MAX` is set to a non-zero number. Two
+measured reasons, both of which would have shipped a defect:
+
+**1. It marks every image.** The service is keyless and free, and the price of that is a
+small `pollinations.ai` mark in the corner of every image it returns. Their own documentation
+states it as a property of the tier, not a parameter, and asking for it to be removed does
+not remove it. Cropping it off would be taking the free tier's output and hiding its term, so
+it is not done.
+
+**2. It answers a headline with a face.** This is the one that actually decided it. Given the
+titles that have no picture — which is exactly the set that arrives bare — it produced this:
+
+| The card | What came back |
+| --- | --- |
+| *PathFM: Fast Generative Forecasting of Multivariate Trajectories* | a blurred portrait of a person |
+| *Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang* | a portrait of a young woman |
+| *How Itaú is building generative AI for its entire customer base* | a portrait of a young woman |
+| *web-edit 0.1a2* | a portrait of a young woman |
+
+Four of the first six were faces, and none of them had anything to do with the story. The
+cause is structural rather than a bad prompt: a card only has no picture when its headline has
+no visual subject — an arXiv title, a `Show HN` post, a quote round-up — so the generator is
+being asked for a photograph of something that is not a photograph of anything. A face beside
+a headline is read as "this is who the story is about", which is a claim the page cannot
+support and must not make. A flat tile is honest about having nothing; a portrait is a
+fabrication.
+
+**Perchance.org was the first choice and is not possible**, and that was measured too:
+
+| Attempt | Result |
+| --- | --- |
+| `GET https://perchance.org/api/...` | `403` to any non-browser client |
+| `image-generation.perchance.org/api/verifyUser` | `{"status":"failed_verification","reason":"token_required"}` |
+| A headless browser, driven with Playwright | `400`, `424 Failed Dependency`, `ERR_TOO_MANY_REDIRECTS` |
+| Its own page's JavaScript | reads `navigator.webdriver`, and gates generation behind an ad-powered access code from `/api/getAccessCodeForAdPoweredStuff` |
+| Our own `perchance-image-mcp`, headed Chrome, cleared profile | `no image after 180s (queue may be busy)` — repeatedly |
+
+Generation there is gated behind a Cloudflare Turnstile token, which is precisely the thing a
+script cannot obtain. It can be made to work by hand in a real browser; it cannot back an
+hourly job.
+
+**If it is ever wanted anyway**, one repository variable turns it on: set `ARTWORK_MAX` to a
+number, and the workflow runs the generator capped to that many new pictures per hour. Its
+design is sound and worth keeping — pictures are keyed by a hash of the normalised title and
+recorded in `images/index.json`, so a story is generated once and never again, and the
+collector can rebuild `data/news.json` from nothing without losing them; requests are paced to
+the service's one-image-per-45-seconds limit; a run is capped and budgeted; and every failure
+is fail-soft, so a rate limit costs pictures, never news. A key from
+[gen.pollinations.ai](https://gen.pollinations.ai) would also remove the mark and the per-IP
+limit. Neither fixes reason 2.
 
 ## How items are chosen and ordered
 
@@ -102,6 +164,7 @@ five weeks old, so it is not news.
 | --- | --- |
 | One source is down | The rest still publish, and the page names the source that failed. |
 | Every source is down | The script exits non-zero, commits nothing, and the last good data stays live. |
+| Image generation, if it is switched on, fails or is rate-limited | The step gives up politely, the affected cards keep their designed tiles, and the news is committed regardless. |
 | The browser is offline, or the file is missing | The page says so and keeps retrying on refocus and on a timer, rather than showing an empty page. |
 
 Nothing here overwrites good data with bad. A failed run leaves the previous
@@ -113,6 +176,12 @@ Nothing here overwrites good data with bad. A failed run leaves the previous
 node scripts/fetch-news.mjs --out data/news.json   # rebuild the data
 python -m http.server 8123                         # open http://localhost:8123
 ```
+
+`scripts/generate-artwork.mjs` is the switched-off generator described above. It takes
+`--max`, `--gap`, `--budget`, `--dry-run` and `--verbose`, and reads the same settings from
+`ARTWORK_MAX`, `ARTWORK_GAP_MS` and `ARTWORK_BUDGET_MS`. `--dry-run` prints exactly which
+cards it would make a picture for and writes nothing, which is a cheap way to see what a
+headline with no picture turns into before committing to it.
 
 Node 20 or newer. There is nothing to install — the collector uses only `fetch` and the
 Node standard library, which is also why the workflow has no install step and no lockfile.
@@ -129,10 +198,15 @@ off-black headings over muted grey body text, generous leading, and a single viv
 accent. The accent is used as a **fill with dark text** (9.4:1) rather than as coloured text
 on white, which is the one place the reference this is modelled on fails contrast.
 
-Where a source has no artwork the card gets a designed tile carrying the source and a real
-attribute of the item — an arXiv category, a repository language, a model task — so the grid
-keeps its rhythm without inventing a picture. The top story, if it has no image, drops the
-artwork entirely and becomes a wide text lead rather than a large empty panel.
+Where a source has no artwork the card gets a designed plate: the source's monogram, a
+caption naming what the item is and one real attribute of it, and a bar of the accent along
+the top edge. It is deliberately a *plate* rather than an empty frame — an unmarked grey
+rectangle with a two-letter chip in it is read as a photograph that has failed to load, which
+is exactly what the first version of this looked like. It keeps the grid's rhythm without
+inventing a picture, and a preview link that dies mid-flight degrades to the same plate: the
+`<img>` removes itself on `error` and the card takes the tile class. The top story, if it has
+no image, drops the artwork entirely and becomes a wide text lead rather than a large empty
+panel.
 
 Cards are filtered by source through the tabs, which write `#source=<id>` so a view can be
 linked to and survives a reload, and paged in with **Show more**. Nineteen tabs is more than
@@ -154,7 +228,7 @@ node scripts/check-contrast.mjs
 ```
 
 It converts the `oklch()` tokens in `styles.css` to sRGB directly and fails if any pairing
-that actually renders on the page drops below WCAG AA in either theme — 22 pairings, light
+that actually renders on the page drops below WCAG AA in either theme — 24 pairings, light
 and dark. It also prints the palette as hex, which is where the sRGB fallbacks come from.
 
 ## Notes and limits
@@ -172,3 +246,6 @@ and dark. It also prints the palette as hex, which is where the sRGB fallbacks c
   and `loading="lazy"`; a link that goes dead falls back to the designed tile.
 - Some `og:image` previews carry the page's own title text, so a card can echo itself. That
   is the trade for real imagery from the source instead of a placeholder on every card.
+- About a quarter of the cards have no picture to show, and they are the ones whose headline
+  has no visual subject. They get tiles rather than a generated face, for the reasons in
+  [Pictures](#pictures-and-why-they-are-not-generated).
