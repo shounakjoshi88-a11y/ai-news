@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T17:04:35Z",
+  "generatedAt": "2026-10-18T17:23:13Z",
   "sources": [
     {
       "id": "hn",
@@ -25,9 +25,9 @@
     {
       "id": "arxiv",
       "name": "arXiv",
-      "status": "ok",
-      "count": 41,
-      "error": null
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 429"
     },
     {
       "id": "hf",
@@ -150,36 +150,36 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50141657",
-      "source": "hn",
-      "title": "Websites are closing their doors to AI agents",
-      "blurb": "Online roadblocks are undermining the narrative behind AI agents.",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-      "publishedAt": "2026-10-18T14:58:10.000Z",
-      "score": 96,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 74
-      },
-      "alsoOn": [
-        "verge:https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
-      ],
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK414_AI_CVIRGINIA_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
-    },
-    {
       "id": "hn:50141429",
       "source": "hn",
       "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
       "blurb": "Would this be enough to keep an AI model from going out of control?",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
       "publishedAt": "2026-10-18T14:30:27.000Z",
-      "score": 106,
+      "score": 114,
       "scoreLabel": "points",
       "meta": {
-        "comments": 113
+        "comments": 127
       },
       "alsoOn": [],
       "image": "https://cdn.mos.cms.futurecdn.net/SVPa8KkaDwkeyAtLnMhyKW-1920-80.png"
+    },
+    {
+      "id": "hn:50141657",
+      "source": "hn",
+      "title": "Websites are closing their doors to AI agents",
+      "blurb": "Online roadblocks are undermining the narrative behind AI agents.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "publishedAt": "2026-10-18T14:58:10.000Z",
+      "score": 105,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 85
+      },
+      "alsoOn": [
+        "verge:https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+      ],
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK414_AI_CVIRGINIA_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
     },
     {
       "id": "tc:https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
@@ -204,7 +204,7 @@
       "score": 210,
       "scoreLabel": "points",
       "meta": {
-        "comments": 69
+        "comments": 71
       },
       "alsoOn": [],
       "image": null
@@ -216,14 +216,14 @@
       "blurb": null,
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "publishedAt": "2026-10-17T08:21:25.000Z",
-      "score": 923,
+      "score": 924,
       "scoreLabel": "points",
       "meta": {
-        "comments": 683
+        "comments": 686
       },
       "alsoOn": [
-        "hn:50129121",
-        "hf:deepseek-ai/DeepSeek-V4.1-Flash-1017"
+        "hf:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+        "hn:50129121"
       ],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/deepseek-ai/DeepSeek-V4.1-Flash-1017.png"
     },
@@ -271,6 +271,21 @@
       "alsoOn": []
     },
     {
+      "id": "hn:50140462",
+      "source": "hn",
+      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
+      "blurb": "Six AI assistants pursued an impossible £350 train refund in a simulated world, escalating to government officials, legal clinics and bank chargebacks.",
+      "url": "https://www.vals.ai/blogs/impossible-refund",
+      "publishedAt": "2026-10-18T12:22:58.000Z",
+      "score": 51,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 36
+      },
+      "alsoOn": [],
+      "image": "https://www.vals.ai/blogs/2026-10-15-impossible-refund/hero-vals.webp"
+    },
+    {
       "id": "verge:https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
       "source": "verge",
       "title": "Meta removes language that may have allowed it to scrape news sites",
@@ -305,7 +320,7 @@
       "blurb": null,
       "url": "https://alexwang.ai/posts/associative-memory/",
       "publishedAt": "2026-10-16T19:01:17.000Z",
-      "score": 611,
+      "score": 612,
       "scoreLabel": "points",
       "meta": {
         "comments": 136
@@ -344,21 +359,6 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50140462",
-      "source": "hn",
-      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
-      "blurb": "Six AI assistants pursued an impossible £350 train refund in a simulated world, escalating to government officials, legal clinics and bank chargebacks.",
-      "url": "https://www.vals.ai/blogs/impossible-refund",
-      "publishedAt": "2026-10-18T12:22:58.000Z",
-      "score": 43,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 21
-      },
-      "alsoOn": [],
-      "image": "https://www.vals.ai/blogs/2026-10-15-impossible-refund/hero-vals.webp"
-    },
-    {
       "id": "hn:50133231",
       "source": "hn",
       "title": "Codex Desktop continuously generates Crashpad pending dumps",
@@ -374,19 +374,6 @@
       "image": "https://opengraph.githubassets.com/ca36cd0881ef0455269ae28027ff6686ed2bae99e1f24dc416de1a72bc590b3c/openai/codex/issues/25921"
     },
     {
-      "id": "tc:https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "source": "tc",
-      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
-      "blurb": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/replit-ceo-masad.jpg?resize=1200,800",
-      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "publishedAt": "2026-10-17T18:48:08.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hn:50132278",
       "source": "hn",
       "title": "Amazon uses AI to monitor union risk in UK warehouses",
@@ -400,6 +387,19 @@
       },
       "alsoOn": [],
       "image": "https://storage.ghost.io/c/3f/80/3f804bea-4b2d-4ddf-9ff0-6ec7d0afa5fa/content/images/size/w1200/2026/10/Amazon-AI-question-openDemocracy-edit.jpg"
+    },
+    {
+      "id": "tc:https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "source": "tc",
+      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+      "blurb": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/replit-ceo-masad.jpg?resize=1200,800",
+      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "publishedAt": "2026-10-17T18:48:08.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "openai:https://openai.com/index/itau-generative-ai",
@@ -458,22 +458,6 @@
       "alsoOn": []
     },
     {
-      "id": "arxiv:2610.22358v1",
-      "source": "arxiv",
-      "title": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
-      "blurb": "Time series foundation models are becoming increasingly popular for general-purpose forecasting. However, most leading models predict marginal quantiles, leaving the dependence structure of…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22358v1",
-      "publishedAt": "2026-10-15T17:58:45.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.LG",
-        "authors": 8
-      },
-      "alsoOn": []
-    },
-    {
       "id": "hfblog:https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
       "source": "hfblog",
       "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
@@ -500,23 +484,6 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50107379",
-      "source": "hn",
-      "title": "Muse Spark Open",
-      "blurb": null,
-      "url": "https://research.meta.ai/blog/muse-spark-open",
-      "publishedAt": "2026-10-15T17:47:39.000Z",
-      "score": 914,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 477
-      },
-      "alsoOn": [
-        "hfblog:https://huggingface.co/blog/meta-muse-spark-open"
-      ],
-      "image": "https://research.meta.ai/articles/muse-spark-open/social/muse-spark-1-2-open-weights-social-v2.webp"
-    },
-    {
       "id": "deepmind:https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
       "source": "deepmind",
       "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
@@ -530,22 +497,21 @@
       "alsoOn": []
     },
     {
-      "id": "arxiv:2610.22355v1",
-      "source": "arxiv",
-      "title": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
-      "blurb": "Generative visual verifiers play a crucial role in advancing multimodal intelligence. To enhance the robustness of visual verifiers in complex multimodal scenarios involving compositional…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22355v1",
-      "publishedAt": "2026-10-15T17:58:04.000Z",
-      "score": null,
-      "scoreLabel": null,
+      "id": "hn:50107379",
+      "source": "hn",
+      "title": "Muse Spark Open",
+      "blurb": null,
+      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "publishedAt": "2026-10-15T17:47:39.000Z",
+      "score": 915,
+      "scoreLabel": "points",
       "meta": {
-        "category": "cs.CL",
-        "authors": 13
+        "comments": 477
       },
       "alsoOn": [
-        "papers:2610.22355"
-      ]
+        "hfblog:https://huggingface.co/blog/meta-muse-spark-open"
+      ],
+      "image": "https://research.meta.ai/articles/muse-spark-open/social/muse-spark-1-2-open-weights-social-v2.webp"
     },
     {
       "id": "msr:https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/",
@@ -567,7 +533,7 @@
       "blurb": null,
       "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
       "publishedAt": "2026-10-16T18:11:42.000Z",
-      "score": 294,
+      "score": 295,
       "scoreLabel": "points",
       "meta": {
         "comments": 87
@@ -600,22 +566,6 @@
       "scoreLabel": null,
       "meta": {
         "category": "Research"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "arxiv:2610.22353v1",
-      "source": "arxiv",
-      "title": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
-      "blurb": "Mixture-of-experts (MoE) models have become an important approach for scaling model parameters. Modern MoE architectures increasingly combine two design choices: fine-grained expert…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22353v1",
-      "publishedAt": "2026-10-15T17:58:02.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.LG",
-        "authors": 5
       },
       "alsoOn": []
     },
@@ -689,24 +639,6 @@
       "image": "https://www.csoonline.com/wp-content/uploads/2026/10/4234854-0-28632700-1792004597-shutterstock_2472843149.jpg?quality=50&strip=all&w=1024"
     },
     {
-      "id": "arxiv:2610.22350v1",
-      "source": "arxiv",
-      "title": "FDE-Gym: The Last Mile of AI Delivery",
-      "blurb": "Existing agent benchmarks typically evaluate agents on well-specified tasks defined by issue reports, specifications, or task tickets. Real-world customer delivery is different…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22350v1",
-      "publishedAt": "2026-10-15T17:57:23.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.AI",
-        "authors": 26
-      },
-      "alsoOn": [
-        "papers:2610.22350"
-      ]
-    },
-    {
       "id": "mit:https://news.mit.edu/2026/ai-model-decodes-language-cells-use-communicate-1015",
       "source": "mit",
       "title": "AI model decodes the language cells use to communicate",
@@ -774,22 +706,6 @@
       "scoreLabel": null,
       "meta": {
         "category": "game-design"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "arxiv:2610.22344v1",
-      "source": "arxiv",
-      "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
-      "blurb": "Large language models (LLMs) are expanding from assisting scientific research and engineering to autonomously developing and improving AI systems, advancing AI for AI (AI4AI) as a pathway…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22344v1",
-      "publishedAt": "2026-10-15T17:56:32.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.AI",
-        "authors": 10
       },
       "alsoOn": []
     },
@@ -893,18 +809,17 @@
       "alsoOn": []
     },
     {
-      "id": "arxiv:2610.22339v1",
-      "source": "arxiv",
-      "title": "Lean Graph Search for Formal Theorem Proving",
-      "blurb": "Retrieving relevant lemmas is crucial for formal theorem proving, enabling provers to build machine-checkable proofs from established mathematical results. Recent retrieval systems match…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22339v1",
-      "publishedAt": "2026-10-15T17:55:21.000Z",
-      "score": null,
-      "scoreLabel": null,
+      "id": "papers:2610.22350",
+      "source": "papers",
+      "title": "FDE-Gym: The Last Mile of AI Delivery",
+      "blurb": "Existing agent benchmarks typically evaluate agents on well-specified tasks defined by issue reports, specifications, or task tickets. Real-world customer delivery is different: forward-deployed engineers (FDEs) must clarify ambiguous requirements, work in live systems, and uncover unstated constraints. We introduce FDE-Gym, a benchmark of 95 end-to-end delivery tasks from 20 customer scenarios across 18 sectors, each adapted by industry experts from real-world delivery projects. In simulated customer environments with scripted stakeholders and modifiable customer systems, agents interact with stakeholders and operate on production-like systems to deliver working solutions. FDE-Gym scores a delivery by how much it improves the customer's own success metric, normalized between 0 (unchanged system) and 1 (reference solution), with penalties for stakeholder interactions (messages, trial runs, and waiting time). An online platform lets humans practice FDE skills under the same grading criteria. We evaluate 13 model configurations from seven providers. In the realistic setting, where unstated constraints must be discovered, the best configuration achieves a mean FDE-Gym score of 0.56 and resolves only 14 of the 95 tasks (a score of at least 0.8 with no incident). Discovering unstated constraints is the primary bottleneck: performance drops sharply when models must uncover them without explicit guidance. Yet information discovery alone does not account for the gap: even on the 23 tasks where the best configuration obtains every key fact from stakeholders, it reaches a normalized business uplift of 0.8 or above on only 10. These results reveal a substantial gap between solving well-specified tasks and delivering effective AI systems for real customers.",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.22350.png",
+      "url": "https://huggingface.co/papers/2610.22350",
+      "publishedAt": "2026-10-14T20:00:00.000Z",
+      "score": 285,
+      "scoreLabel": "upvotes",
       "meta": {
-        "category": "cs.LG",
-        "authors": 10
+        "comments": 2
       },
       "alsoOn": []
     },
@@ -1047,7 +962,7 @@
       "image": "https://opengraph.githubassets.com/1/LiCinCan/blender-ai-mcp-addon",
       "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
       "publishedAt": "2026-10-15T22:30:47.000Z",
-      "score": 773,
+      "score": 776,
       "scoreLabel": "stars",
       "meta": {
         "repo": "LiCinCan/blender-ai-mcp-addon",
@@ -1083,22 +998,6 @@
       "meta": {
         "repo": "onehumanbeing/esp32-iphone-agent",
         "language": "C"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "arxiv:2610.22336v1",
-      "source": "arxiv",
-      "title": "Robust Reinforcement Learning for Dynamic Treatment Regimes under Model and Measurement Uncertainty",
-      "blurb": "We develop a robust reinforcement learning (RL) framework for learning adaptive treatment policies that generalize across patients and remain reliable under errors in the measured biomarker…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22336v1",
-      "publishedAt": "2026-10-15T17:54:13.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.LG",
-        "authors": 5
       },
       "alsoOn": []
     },
@@ -1155,7 +1054,7 @@
       "image": "https://opengraph.githubassets.com/1/deeplethe/solid-glass",
       "url": "https://github.com/deeplethe/solid-glass",
       "publishedAt": "2026-10-12T09:19:02.000Z",
-      "score": 2008,
+      "score": 2009,
       "scoreLabel": "stars",
       "meta": {
         "repo": "deeplethe/solid-glass",
@@ -1190,37 +1089,6 @@
       "alsoOn": []
     },
     {
-      "id": "hfblog:https://huggingface.co/blog/flux-3",
-      "source": "hfblog",
-      "title": "Welcome FLUX.3 Image Klein in Diffusers",
-      "blurb": "Welcome FLUX.3 Image Klein in Diffusers: The latest open image generation model from Black Forest Labs",
-      "image": "https://huggingface.co/blog/assets/flux3/thumbnail.png",
-      "url": "https://huggingface.co/blog/flux-3",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": [
-        "hn:50123580"
-      ]
-    },
-    {
-      "id": "arxiv:2610.22333v1",
-      "source": "arxiv",
-      "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
-      "blurb": "Large language models (LLMs) can often tell when they are being tested. This ability, known as evaluation awareness, can lead models to act more cautiously during safety evaluations than in…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22333v1",
-      "publishedAt": "2026-10-15T17:53:33.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.AI",
-        "authors": 9
-      },
-      "alsoOn": []
-    },
-    {
       "id": "hf:Qwen/Qwen-Image-2.1-Turbo",
       "source": "hf",
       "title": "Qwen/Qwen-Image-2.1-Turbo",
@@ -1237,6 +1105,21 @@
       ],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Qwen/Qwen-Image-2.1-Turbo.png",
       "blurb": "The checkpoint includes its recommended sampling schedule, so it is ready to use without manually configuring the scheduler. Generation uses CFG=1 by default, and prefix KV caching reuses…"
+    },
+    {
+      "id": "hfblog:https://huggingface.co/blog/flux-3",
+      "source": "hfblog",
+      "title": "Welcome FLUX.3 Image Klein in Diffusers",
+      "blurb": "Welcome FLUX.3 Image Klein in Diffusers: The latest open image generation model from Black Forest Labs",
+      "image": "https://huggingface.co/blog/assets/flux3/thumbnail.png",
+      "url": "https://huggingface.co/blog/flux-3",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": [
+        "hn:50123580"
+      ]
     },
     {
       "id": "lobsters:kaqsr5",
@@ -1315,7 +1198,7 @@
       "title": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "publishedAt": "2026-10-14T12:00:13.000Z",
-      "score": 765,
+      "score": 766,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 338036,
@@ -1343,6 +1226,22 @@
       "image": "https://research.meta.ai/articles/introducing-muse-wonder/social/muse-wonder-social-v1.webp"
     },
     {
+      "id": "hf:openbmb/MiniCPM-V-4.7-35B-A3B",
+      "source": "hf",
+      "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+      "publishedAt": "2026-10-07T07:07:30.000Z",
+      "score": 972,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 57935,
+        "task": "image-text-to-text"
+      },
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/openbmb/MiniCPM-V-4.7-35B-A3B.png",
+      "blurb": "An MoE model can have far more total parameters than it activates for a single token, but its on-device storage requirements are not limited to those active parameters. Different tokens can…"
+    },
+    {
       "id": "tc:https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
       "source": "tc",
       "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
@@ -1354,22 +1253,6 @@
       "scoreLabel": null,
       "meta": {},
       "alsoOn": []
-    },
-    {
-      "id": "hf:openbmb/MiniCPM-V-4.7-35B-A3B",
-      "source": "hf",
-      "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
-      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
-      "publishedAt": "2026-10-07T07:07:30.000Z",
-      "score": 969,
-      "scoreLabel": "likes",
-      "meta": {
-        "downloads": 57935,
-        "task": "image-text-to-text"
-      },
-      "alsoOn": [],
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/openbmb/MiniCPM-V-4.7-35B-A3B.png",
-      "blurb": "An MoE model can have far more total parameters than it activates for a single token, but its on-device storage requirements are not limited to those active parameters. Different tokens can…"
     },
     {
       "id": "gh:trhhubsd/ARTEX",
@@ -1416,22 +1299,6 @@
       "alsoOn": []
     },
     {
-      "id": "arxiv:2610.22331v1",
-      "source": "arxiv",
-      "title": "KnowGPO: Knowledge-Grouped Policy Optimization for Search Agents",
-      "blurb": "Deep search agents solve knowledge-intensive tasks through long-horizon, multi-turn interactions, where assigning credit to individual search decisions is fundamentally difficult…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22331v1",
-      "publishedAt": "2026-10-15T17:52:33.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.AI",
-        "authors": 13
-      },
-      "alsoOn": []
-    },
-    {
       "id": "openai:https://openai.com/index/sullivan-cromwell",
       "source": "openai",
       "title": "Sullivan & Cromwell brings legal expertise into agreement review",
@@ -1442,21 +1309,6 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "papers:2610.21261",
-      "source": "papers",
-      "title": "Behavioral Compositionality of Sparse Autoencoder Representations",
-      "blurb": "Sparse autoencoders (SAEs) represent model activations with sparse, linearly decoded features, but the downstream effects of those features need not compose additively. We introduce SAE Additivity Residuals (SAR), which measure the behavioral variation left unexplained above a chosen interaction order. Under independent feature subset sampling, population SAR is exactly the normalized energy of interactions above that order and bounds coalition ordering error for the optimal low order approximation. To distinguish compositionality associated with the SAE representation from that induced by downstream computation, we compare learned SAE coordinates with sum preserving random rotations of the same selected subspace and find lower first order residuals for the learned coordinates across all 18 model and behavior settings. The coordinates are nevertheless not fully additive: pairwise terms improve held out coalition ordering in every setting and outperform parameter matched models using randomly selected third order terms. In a combined steering experiment, pairwise modeling raises rank fidelity from 0.5874 to 0.7790 and reduces ordering error from 0.1444 to 0.0606. Together, these results show that SAE coordinates support comparatively compositional behavioral descriptions while faithful joint explanations and interventions still require interactions beyond individual feature effects. Code is available at",
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.21261.png",
-      "url": "https://huggingface.co/papers/2610.21261",
-      "publishedAt": "2026-10-14T20:00:00.000Z",
-      "score": 106,
-      "scoreLabel": "upvotes",
-      "meta": {
-        "comments": 2
-      },
       "alsoOn": []
     },
     {
@@ -1472,6 +1324,21 @@
       "meta": {
         "repo": "zhuyansen/new-term-radar",
         "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "papers:2610.21261",
+      "source": "papers",
+      "title": "Behavioral Compositionality of Sparse Autoencoder Representations",
+      "blurb": "Sparse autoencoders (SAEs) represent model activations with sparse, linearly decoded features, but the downstream effects of those features need not compose additively. We introduce SAE Additivity Residuals (SAR), which measure the behavioral variation left unexplained above a chosen interaction order. Under independent feature subset sampling, population SAR is exactly the normalized energy of interactions above that order and bounds coalition ordering error for the optimal low order approximation. To distinguish compositionality associated with the SAE representation from that induced by downstream computation, we compare learned SAE coordinates with sum preserving random rotations of the same selected subspace and find lower first order residuals for the learned coordinates across all 18 model and behavior settings. The coordinates are nevertheless not fully additive: pairwise terms improve held out coalition ordering in every setting and outperform parameter matched models using randomly selected third order terms. In a combined steering experiment, pairwise modeling raises rank fidelity from 0.5874 to 0.7790 and reduces ordering error from 0.1444 to 0.0606. Together, these results show that SAE coordinates support comparatively compositional behavioral descriptions while faithful joint explanations and interventions still require interactions beyond individual feature effects. Code is available at",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.21261.png",
+      "url": "https://huggingface.co/papers/2610.21261",
+      "publishedAt": "2026-10-14T20:00:00.000Z",
+      "score": 106,
+      "scoreLabel": "upvotes",
+      "meta": {
+        "comments": 2
       },
       "alsoOn": []
     },
@@ -1535,21 +1402,6 @@
       "alsoOn": []
     },
     {
-      "id": "simonw:https://simonwillison.net/2026/Oct/15/latex/",
-      "source": "simonw",
-      "title": "LaTeX renderer",
-      "blurb": "Tool: LaTeX renderer Inspired by Paul Ford and Aboard Foundary's new web app Tiny Little Office , which provides a suite of web app content editors (a Word Processor, Outliner, Presentation…",
-      "image": null,
-      "url": "https://simonwillison.net/2026/Oct/15/latex/",
-      "publishedAt": "2026-10-15T02:07:28.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "latex"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "lobsters:jbnmj9",
       "source": "lobsters",
       "title": "ChatGPT now knows what you do on other websites via ad collector",
@@ -1565,6 +1417,21 @@
       "image": null
     },
     {
+      "id": "simonw:https://simonwillison.net/2026/Oct/15/latex/",
+      "source": "simonw",
+      "title": "LaTeX renderer",
+      "blurb": "Tool: LaTeX renderer Inspired by Paul Ford and Aboard Foundary's new web app Tiny Little Office , which provides a suite of web app content editors (a Word Processor, Outliner, Presentation…",
+      "image": null,
+      "url": "https://simonwillison.net/2026/Oct/15/latex/",
+      "publishedAt": "2026-10-15T02:07:28.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "latex"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "papers:2610.20939",
       "source": "papers",
       "title": "MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments",
@@ -1576,22 +1443,6 @@
       "scoreLabel": "upvotes",
       "meta": {
         "comments": 2
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "arxiv:2610.22330v1",
-      "source": "arxiv",
-      "title": "Designing Transformers for Continuous Diffusion Language Models",
-      "blurb": "Continuous diffusion language models (CDLMs) offer an alternative approach to parallel language generation; however, most existing studies directly use transformer architectures from either…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22330v1",
-      "publishedAt": "2026-10-15T17:52:31.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.AI",
-        "authors": 5
       },
       "alsoOn": []
     },
@@ -1640,19 +1491,6 @@
       "alsoOn": []
     },
     {
-      "id": "ars:https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
-      "source": "ars",
-      "title": "Anthropic warns small AI models could self-replicate through IoT devices",
-      "blurb": "\"Small weight-based replicators\" could usher in a new generation of computer worms.",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-caution-threat-1152x648.jpg",
-      "url": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
-      "publishedAt": "2026-10-14T12:55:06.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hf:Cloudflare/clef-flash",
       "source": "hf",
       "title": "Cloudflare/clef-flash",
@@ -1667,6 +1505,19 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Cloudflare/clef-flash.png",
       "blurb": "Clef-Flash Announcement: Clef decision models on the Cloudflare blog Decision Index leaderboard: clef-evals.workers-ai-mle.workers.dev"
+    },
+    {
+      "id": "ars:https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
+      "source": "ars",
+      "title": "Anthropic warns small AI models could self-replicate through IoT devices",
+      "blurb": "\"Small weight-based replicators\" could usher in a new generation of computer worms.",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-caution-threat-1152x648.jpg",
+      "url": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
+      "publishedAt": "2026-10-14T12:55:06.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "gh:mw00/project-maya",
@@ -1754,22 +1605,6 @@
       "alsoOn": []
     },
     {
-      "id": "arxiv:2610.22327v1",
-      "source": "arxiv",
-      "title": "Twice Upon a Time: Complementary Representations for Time-Series Reasoning",
-      "blurb": "Time Series Language Models (TSLMs) enable language-based understanding and reasoning over temporal data, yet a fundamental question remains: what information should their time-series…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22327v1",
-      "publishedAt": "2026-10-15T17:52:18.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.LG",
-        "authors": 5
-      },
-      "alsoOn": []
-    },
-    {
       "id": "tc:https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
       "source": "tc",
       "title": "Elorian’s first AI model wants to reason with images, not just about them",
@@ -1781,21 +1616,6 @@
       "scoreLabel": null,
       "meta": {},
       "alsoOn": []
-    },
-    {
-      "id": "hn:50108131",
-      "source": "hn",
-      "title": "Why We're Banning AI",
-      "blurb": "We urgently need to protect human thought and creativity. Our magazine is committing itself to remaining handmade. Ensure every publication you support does the same.",
-      "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
-      "publishedAt": "2026-10-15T18:32:29.000Z",
-      "score": 261,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 203
-      },
-      "alsoOn": [],
-      "image": "https://www.currentaffairs.org/hubfs/smash1.png"
     },
     {
       "id": "lobsters:qcgjpu",
@@ -1811,6 +1631,21 @@
       },
       "alsoOn": [],
       "image": "https://aleph-alpha.com/_astro/00-cover.DUwFlxIO_ZzchVg.jpeg"
+    },
+    {
+      "id": "hn:50108131",
+      "source": "hn",
+      "title": "Why We're Banning AI",
+      "blurb": "We urgently need to protect human thought and creativity. Our magazine is committing itself to remaining handmade. Ensure every publication you support does the same.",
+      "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
+      "publishedAt": "2026-10-15T18:32:29.000Z",
+      "score": 261,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 203
+      },
+      "alsoOn": [],
+      "image": "https://www.currentaffairs.org/hubfs/smash1.png"
     },
     {
       "id": "mit:https://news.mit.edu/2026/how-artificial-neural-networks-build-their-own-learning-machinery-1013",
@@ -1848,7 +1683,7 @@
       "title": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "publishedAt": "2026-10-01T04:34:57.000Z",
-      "score": 671,
+      "score": 672,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 9620,
@@ -1857,22 +1692,6 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/fishaudio/drama-3.png",
       "blurb": "Drama 3 runs on SGLang-Omni from launch day. For installation, deployment, and streaming API examples, see the Drama 3 Cookbook. Launch with vLLM-Omni"
-    },
-    {
-      "id": "arxiv:2610.22324v1",
-      "source": "arxiv",
-      "title": "Training Reasoning Models to Generate Diverse Scientific Ideas",
-      "blurb": "One of the first steps of a research pipeline is generating ideas. Large Language Models (LLMs) are increasingly used to automate this step, but most of this work optimizes the quality of…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22324v1",
-      "publishedAt": "2026-10-15T17:52:12.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.CL",
-        "authors": 6
-      },
-      "alsoOn": []
     },
     {
       "id": "gh:Tejashmakwana/motionmaxxing",
@@ -1913,7 +1732,7 @@
       "image": "https://opengraph.githubassets.com/1/datalab-to/indra",
       "url": "https://github.com/datalab-to/indra",
       "publishedAt": "2026-10-13T11:07:11.000Z",
-      "score": 615,
+      "score": 617,
       "scoreLabel": "stars",
       "meta": {
         "repo": "datalab-to/indra",
@@ -1950,31 +1769,18 @@
       "alsoOn": []
     },
     {
-      "id": "simonw:https://simonwillison.net/2026/Oct/14/tree-appreciator/",
-      "source": "simonw",
-      "title": "Tree Appreciator",
-      "blurb": "Tool: Tree Appreciator Another game experiment with Claude. This one used the default Claude iPhone app (chat mode, not Claude Code mode), where I prompted Claude Opus 5.5 Max with: Build a…",
-      "image": null,
-      "url": "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
-      "publishedAt": "2026-10-14T21:23:01.000Z",
-      "score": null,
-      "scoreLabel": null,
+      "id": "papers:2610.22355",
+      "source": "papers",
+      "title": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
+      "blurb": "Generative visual verifiers play a crucial role in advancing multimodal intelligence. To enhance the robustness of visual verifiers in complex multimodal scenarios involving compositional requirements, we move beyond conventional binary verifiers that produce only True/False discrete judgments and introduce a verifier that automatically decomposes complex prompts or environmental rules into fine-grained components and assigns pointwise scores to provide a continuous and more informative critique signal. Our experiments further demonstrate that these structured and interpretable outputs improve the verifier's generalization to out-of-domain multimodal critic tasks. To train this verifier, we introduce a Decoupled RL training strategy that jointly optimizes sub-question-level binary judgment and global alignment scoring, using precise local feedback to develop fine-grained verification capabilities that provide a foundation for reliable continuous scoring at the global level. Under a general reinforcement learning framework, we first empirically demonstrate that the proposed pointwise graded verifier significantly outperforms binary verifiers in traditional text-to-image scenarios. We then extend our investigation to rule-governed generative world modeling where generative models are leveraged for world simulation and world reasoning under explicit rules. From a theoretical standpoint, we further show that a pairwise verification paradigm yields more accurate critiques than the pointwise formulation when ground-truth images are available, with empirical results on diverse structured world-modeling tasks such as Maze and Sudoku further validating the effectiveness of our approach. Overall, our findings suggest a key insight: the transition from generative models to structured world-modeling agents critically hinges on the availability of accurate pairwise graded visual verifiers.",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.22355.png",
+      "url": "https://huggingface.co/papers/2610.22355",
+      "publishedAt": "2026-10-14T20:00:00.000Z",
+      "score": 32,
+      "scoreLabel": "upvotes",
       "meta": {
-        "category": "game-design"
+        "comments": 2
       },
-      "alsoOn": []
-    },
-    {
-      "id": "interconnects:https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
-      "source": "interconnects",
-      "title": "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI",
-      "blurb": null,
-      "image": "https://substackcdn.com/image/fetch/$s_!7ykn!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F216367194%2Fb86a80c9-fb77-4876-8e6b-44c6c7eb26c0%2Ftranscoded-1790019629.png",
-      "url": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
-      "publishedAt": "2026-09-22T13:37:45.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -1991,12 +1797,27 @@
       "alsoOn": []
     },
     {
+      "id": "simonw:https://simonwillison.net/2026/Oct/14/tree-appreciator/",
+      "source": "simonw",
+      "title": "Tree Appreciator",
+      "blurb": "Tool: Tree Appreciator Another game experiment with Claude. This one used the default Claude iPhone app (chat mode, not Claude Code mode), where I prompted Claude Opus 5.5 Max with: Build a…",
+      "image": null,
+      "url": "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
+      "publishedAt": "2026-10-14T21:23:01.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "game-design"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "hf:ConwayResearch/Underdog-Saluki-27B-1.0",
       "source": "hf",
       "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
       "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
       "publishedAt": "2026-10-08T01:47:26.000Z",
-      "score": 539,
+      "score": 540,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 410558,
@@ -2007,19 +1828,16 @@
       "blurb": "Qwen3.8-27B in under 8 GB, tuned to keep tool calling intact. A standard GGUF for stock llama.cpp. Read more: underdog.ai/saluki"
     },
     {
-      "id": "arxiv:2610.22319v1",
-      "source": "arxiv",
-      "title": "A team of Gemini 4 Argon agents beats Minecraft",
-      "blurb": "We placed four Gemini 4 Argon agents in a sandboxed Minecraft survival world and gave them one goal: defeat the Ender Dragon. Each agent controlled a player via an open-source library…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22319v1",
-      "publishedAt": "2026-10-15T17:51:32.000Z",
+      "id": "interconnects:https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
+      "source": "interconnects",
+      "title": "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI",
+      "blurb": null,
+      "image": "https://substackcdn.com/image/fetch/$s_!7ykn!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F216367194%2Fb86a80c9-fb77-4876-8e6b-44c6c7eb26c0%2Ftranscoded-1790019629.png",
+      "url": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
+      "publishedAt": "2026-09-22T13:37:45.000Z",
       "score": null,
       "scoreLabel": null,
-      "meta": {
-        "category": "cs.AI",
-        "authors": 3
-      },
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -2030,19 +1848,6 @@
       "image": "https://techcrunch.com/wp-content/uploads/2026/04/vercel-2249343327-smaller.jpg?resize=1200,800",
       "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
       "publishedAt": "2026-10-16T15:33:49.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "openai:https://openai.com/index/sentinelone",
-      "source": "openai",
-      "title": "SentinelOne cuts malware analysis from weeks to hours",
-      "blurb": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
-      "image": null,
-      "url": "https://openai.com/index/sentinelone",
-      "publishedAt": "2026-10-14T12:00:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2081,21 +1886,6 @@
       "alsoOn": []
     },
     {
-      "id": "papers:2610.21656",
-      "source": "papers",
-      "title": "Data World: Scaling Data Environments from Scratch",
-      "blurb": "Data agents use code to process heterogeneous files and derive analytical insights. Scaling their training faces costly environment curation, privacy and intellectual-property restrictions, and difficulty verifying open-ended findings without known generative truth. Our core insight is to specify the world behind the files before generating the files themselves. We introduce Data World, a multi-agent engine that synthesizes environments, tasks, and rubrics from explicit mechanisms. Independent audits check target recoverability from observed files; rubrics support evaluation and RL rewards. Human preference-based curation for question realism selects 100 tasks across 50 held-out worlds and 16 domains for DataWorld-Bench. The engine also yields 2,135 training tasks from 1,037 disjoint worlds. Evaluation of ten frontier models shows that the benchmark remains challenging, particularly for insight discovery, with a consistent computation-insight gap. RL-zero training on the synthesized tasks produces DataWorld-35B-A3B from Qwen3.6-35B-A3B without trajectory distillation. Under matched evaluation, it improves over its base by 7.06 points on DataWorld-Bench, 14.28 on DAComp, 20.90 on DABstep-Hard, and 12.13 on JobBench, a broader occupational benchmark.",
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.21656.png",
-      "url": "https://huggingface.co/papers/2610.21656",
-      "publishedAt": "2026-10-14T20:00:00.000Z",
-      "score": 28,
-      "scoreLabel": "upvotes",
-      "meta": {
-        "comments": 3
-      },
-      "alsoOn": []
-    },
-    {
       "id": "googleai:https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
       "source": "googleai",
       "title": "Google Beam expands with new regions, partners, and customers",
@@ -2111,16 +1901,31 @@
       "alsoOn": []
     },
     {
-      "id": "hfblog:https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
-      "source": "hfblog",
-      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
-      "blurb": "A Blog post by Liquid AI on Hugging Face",
-      "image": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/YxGx9U6yV6_mumklCyMsE.png",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
-      "publishedAt": "2026-10-13T17:05:48.000Z",
+      "id": "openai:https://openai.com/index/sentinelone",
+      "source": "openai",
+      "title": "SentinelOne cuts malware analysis from weeks to hours",
+      "blurb": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
+      "image": null,
+      "url": "https://openai.com/index/sentinelone",
+      "publishedAt": "2026-10-14T12:00:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "papers:2610.21656",
+      "source": "papers",
+      "title": "Data World: Scaling Data Environments from Scratch",
+      "blurb": "Data agents use code to process heterogeneous files and derive analytical insights. Scaling their training faces costly environment curation, privacy and intellectual-property restrictions, and difficulty verifying open-ended findings without known generative truth. Our core insight is to specify the world behind the files before generating the files themselves. We introduce Data World, a multi-agent engine that synthesizes environments, tasks, and rubrics from explicit mechanisms. Independent audits check target recoverability from observed files; rubrics support evaluation and RL rewards. Human preference-based curation for question realism selects 100 tasks across 50 held-out worlds and 16 domains for DataWorld-Bench. The engine also yields 2,135 training tasks from 1,037 disjoint worlds. Evaluation of ten frontier models shows that the benchmark remains challenging, particularly for insight discovery, with a consistent computation-insight gap. RL-zero training on the synthesized tasks produces DataWorld-35B-A3B from Qwen3.6-35B-A3B without trajectory distillation. Under matched evaluation, it improves over its base by 7.06 points on DataWorld-Bench, 14.28 on DAComp, 20.90 on DABstep-Hard, and 12.13 on JobBench, a broader occupational benchmark.",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.21656.png",
+      "url": "https://huggingface.co/papers/2610.21656",
+      "publishedAt": "2026-10-14T20:00:00.000Z",
+      "score": 28,
+      "scoreLabel": "upvotes",
+      "meta": {
+        "comments": 3
+      },
       "alsoOn": []
     },
     {
@@ -2140,48 +1945,6 @@
       "alsoOn": []
     },
     {
-      "id": "gh:repoboost-hq/github-star-benchmarks",
-      "source": "gh",
-      "title": "repoboost-hq/github-star-benchmarks",
-      "blurb": "AI research dataset on GitHub stars: 32.6M starred repositories, star thresholds (100/1k/10k/100k), language and age cohorts, plus star-buying and fake-star research context from ICSE 2026…",
-      "image": "https://opengraph.githubassets.com/1/repoboost-hq/github-star-benchmarks",
-      "url": "https://github.com/repoboost-hq/github-star-benchmarks",
-      "publishedAt": "2026-10-18T06:19:48.000Z",
-      "score": 73,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "repoboost-hq/github-star-benchmarks",
-        "language": "Python"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "deepmind:https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-      "source": "deepmind",
-      "title": "Gemini 4 Argon: our next era of frontier intelligence",
-      "blurb": "Announcing Gemini 4 Argon, our frontier model for real-world coding, enterprise knowledge work, and cyber defense, rolling out soon.",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-1300.png",
-      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-      "publishedAt": "2026-09-30T20:01:45.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "msr:https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
-      "source": "msr",
-      "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
-      "blurb": "Training AI agents with reinforcement learning can be challenging because their tools, context, and decision-making are managed by complex frameworks. Agent Lightning connects existing…",
-      "image": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/10/AgentLightning-TWLIFB-1200x627-1.jpg",
-      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
-      "publishedAt": "2026-10-07T16:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "gh:Ayzzz123/mcd-coupon-strategist",
       "source": "gh",
       "title": "Ayzzz123/mcd-coupon-strategist",
@@ -2198,6 +1961,19 @@
       "alsoOn": []
     },
     {
+      "id": "msr:https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "source": "msr",
+      "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
+      "blurb": "Training AI agents with reinforcement learning can be challenging because their tools, context, and decision-making are managed by complex frameworks. Agent Lightning connects existing…",
+      "image": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/10/AgentLightning-TWLIFB-1200x627-1.jpg",
+      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "publishedAt": "2026-10-07T16:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "importai:https://jack-clark.net/2026/09/28/import-ai-474-platonic-mindspace-tpus-in-space-zhipu-starts-an-outer-rsi-loop/",
       "source": "importai",
       "title": "Import AI 474: Platonic mindspace; TPUs in space; Zhipu starts an outer RSI loop",
@@ -2211,19 +1987,33 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50095353",
-      "source": "hn",
-      "title": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
-      "blurb": "TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access.",
-      "url": "https://typesafe.ai/blog/jev-1-14",
-      "publishedAt": "2026-10-14T21:11:03.000Z",
-      "score": 333,
-      "scoreLabel": "points",
+      "id": "gh:repoboost-hq/github-star-benchmarks",
+      "source": "gh",
+      "title": "repoboost-hq/github-star-benchmarks",
+      "blurb": "AI research dataset on GitHub stars: 32.6M starred repositories, star thresholds (100/1k/10k/100k), language and age cohorts, plus star-buying and fake-star research context from ICSE 2026…",
+      "image": "https://opengraph.githubassets.com/1/repoboost-hq/github-star-benchmarks",
+      "url": "https://github.com/repoboost-hq/github-star-benchmarks",
+      "publishedAt": "2026-10-18T06:19:48.000Z",
+      "score": 73,
+      "scoreLabel": "stars",
       "meta": {
-        "comments": 122
+        "repo": "repoboost-hq/github-star-benchmarks",
+        "language": "Python"
       },
-      "alsoOn": [],
-      "image": "https://framerusercontent.com/images/KBTvCTXoQaZeABcI7te5PTQw7Q.png?width=1574&height=996"
+      "alsoOn": []
+    },
+    {
+      "id": "hfblog:https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "source": "hfblog",
+      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+      "blurb": "A Blog post by Liquid AI on Hugging Face",
+      "image": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/YxGx9U6yV6_mumklCyMsE.png",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "publishedAt": "2026-10-13T17:05:48.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "hf:LiquidAI/d1-3B",
@@ -2242,6 +2032,19 @@
       "blurb": "d1-3B is a 3B parameter decision model built on LFM2.5-VL-3B. You give it a state (text, JSON, images, or a mix) and a set of questions. It returns calibrated, typed answers in one forward…"
     },
     {
+      "id": "deepmind:https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "source": "deepmind",
+      "title": "Gemini 4 Argon: our next era of frontier intelligence",
+      "blurb": "Announcing Gemini 4 Argon, our frontier model for real-world coding, enterprise knowledge work, and cyber defense, rolling out soon.",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-1300.png",
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "publishedAt": "2026-09-30T20:01:45.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "lobsters:rhy5zp",
       "source": "lobsters",
       "title": "Consistency is not a localized property",
@@ -2257,19 +2060,19 @@
       "image": null
     },
     {
-      "id": "mit:https://news.mit.edu/2026/mit-lincoln-laboratory-hosts-national-security-commission-emerging-biotechnology-1013",
-      "source": "mit",
-      "title": "MIT Lincoln Laboratory hosts National Security Commission on Emerging Biotechnology",
-      "blurb": "Roadshow event highlights Massachusetts' defense-biotechnology ecosystem.",
-      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202609/mit-lincolnlab-biosecurity.jpg?itok=XhKBx43q",
-      "url": "https://news.mit.edu/2026/mit-lincoln-laboratory-hosts-national-security-commission-emerging-biotechnology-1013",
-      "publishedAt": "2026-10-13T20:40:00.000Z",
-      "score": null,
-      "scoreLabel": null,
+      "id": "hn:50095353",
+      "source": "hn",
+      "title": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
+      "blurb": "TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access.",
+      "url": "https://typesafe.ai/blog/jev-1-14",
+      "publishedAt": "2026-10-14T21:11:03.000Z",
+      "score": 333,
+      "scoreLabel": "points",
       "meta": {
-        "category": "Artificial intelligence"
+        "comments": 122
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://framerusercontent.com/images/KBTvCTXoQaZeABcI7te5PTQw7Q.png?width=1574&height=996"
     },
     {
       "id": "ars:https://arstechnica.com/information-technology/2026/10/pc-shipments-fall-20-1-percent-in-sharpest-decline-since-q1-2023/",
@@ -2307,7 +2110,7 @@
       "image": "https://opengraph.githubassets.com/1/hanzohanzhe/Grandet",
       "url": "https://github.com/hanzohanzhe/Grandet",
       "publishedAt": "2026-10-05T06:50:33.000Z",
-      "score": 357,
+      "score": 358,
       "scoreLabel": "stars",
       "meta": {
         "repo": "hanzohanzhe/Grandet",
@@ -2316,17 +2119,17 @@
       "alsoOn": []
     },
     {
-      "id": "simonw:https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
-      "source": "simonw",
-      "title": "AI is mass decompiling games. That's both awesome and scary.",
-      "blurb": "AI is mass decompiling games. That's both awesome and scary. Indie game developer Popcar talks about the recent wave of AI-powered decompilation of existing games, enabling weird mashups…",
-      "image": null,
-      "url": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
-      "publishedAt": "2026-10-14T16:26:53.000Z",
+      "id": "mit:https://news.mit.edu/2026/mit-lincoln-laboratory-hosts-national-security-commission-emerging-biotechnology-1013",
+      "source": "mit",
+      "title": "MIT Lincoln Laboratory hosts National Security Commission on Emerging Biotechnology",
+      "blurb": "Roadshow event highlights Massachusetts' defense-biotechnology ecosystem.",
+      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202609/mit-lincolnlab-biosecurity.jpg?itok=XhKBx43q",
+      "url": "https://news.mit.edu/2026/mit-lincoln-laboratory-hosts-national-security-commission-emerging-biotechnology-1013",
+      "publishedAt": "2026-10-13T20:40:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {
-        "category": "computer-history"
+        "category": "Artificial intelligence"
       },
       "alsoOn": []
     },
@@ -2359,18 +2162,17 @@
       "alsoOn": []
     },
     {
-      "id": "arxiv:2610.22316v1",
-      "source": "arxiv",
-      "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
-      "blurb": "Large language model (LLM)-based agents and multi-agent systems increasingly tackle complex tasks through long-horizon tool use and inter-agent collaboration. However, these systems are…",
+      "id": "simonw:https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
+      "source": "simonw",
+      "title": "AI is mass decompiling games. That's both awesome and scary.",
+      "blurb": "AI is mass decompiling games. That's both awesome and scary. Indie game developer Popcar talks about the recent wave of AI-powered decompilation of existing games, enabling weird mashups…",
       "image": null,
-      "url": "http://arxiv.org/abs/2610.22316v1",
-      "publishedAt": "2026-10-15T17:51:17.000Z",
+      "url": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
+      "publishedAt": "2026-10-14T16:26:53.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {
-        "category": "cs.LG",
-        "authors": 10
+        "category": "computer-history"
       },
       "alsoOn": []
     },
