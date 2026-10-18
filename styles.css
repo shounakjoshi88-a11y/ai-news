@@ -1,0 +1,618 @@
+/* ==========================================================================
+   AI Wire — dispatch tape
+   Tokens first, then components. Every value below comes from the scale;
+   nothing is invented per-component.
+   ========================================================================== */
+
+:root {
+  color-scheme: light dark;
+
+  /* --- colour roles (7 values, no more) --------------------------------- */
+  --bg: oklch(0.972 0.004 250);
+  --surface: oklch(0.995 0.002 250);
+  --text: oklch(0.235 0.012 250);
+  --text-2: oklch(0.48 0.012 250);
+  --text-muted: oklch(0.545 0.012 250);
+  --border: oklch(0.235 0.012 250 / 0.1);
+  --accent: oklch(0.52 0.1 232);
+  --warning: oklch(0.54 0.11 62);
+  --danger: oklch(0.5 0.15 27);
+
+  /* --- type ------------------------------------------------------------- */
+  --font-body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 19px;
+  --fs-xl: 23px;
+
+  --lh-tight: 1.25;
+  --lh-body: 1.5;
+
+  /* --- space (4px base) -------------------------------------------------- */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+
+  /* --- shape: sharp by choice, not by accident --------------------------- */
+  --r-line: 0;
+  --r-sm: 2px;
+  --r-md: 4px;
+
+  /* --- motion ------------------------------------------------------------ */
+  --dur-fast: 140ms;
+  --dur-base: 240ms;
+  --dur-enter: 360ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* --- layout ------------------------------------------------------------ */
+  --rail: 96px;
+  --shell: 48rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: oklch(0.19 0.008 250);
+    --surface: oklch(0.23 0.008 250);
+    --text: oklch(0.93 0.006 250);
+    --text-2: oklch(0.74 0.01 250);
+    --text-muted: oklch(0.66 0.01 250);
+    --border: oklch(1 0 0 / 0.12);
+    --accent: oklch(0.74 0.09 232);
+    --warning: oklch(0.76 0.11 70);
+    --danger: oklch(0.72 0.13 27);
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* A component that sets `display` will otherwise defeat the hidden attribute. */
+[hidden] {
+  display: none !important;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  list-style: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--fs-md);
+  line-height: var(--lh-body);
+  font-synthesis-weight: none;
+  -webkit-font-smoothing: antialiased;
+  padding: var(--s-6) var(--s-5) var(--s-8);
+  margin: 0 auto;
+  max-width: var(--shell);
+}
+
+::selection {
+  background: color-mix(in oklab, var(--accent) 24%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--r-sm);
+}
+
+a {
+  color: var(--accent);
+}
+
+/* ---------------------------------------------------------------- utilities */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--s-5);
+  top: var(--s-5);
+  z-index: 10;
+  padding: var(--s-2) var(--s-3);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  font-size: var(--fs-sm);
+  text-decoration: none;
+  transform: translateY(calc(-100% - var(--s-5)));
+}
+
+.skip-link:focus-visible {
+  transform: none;
+}
+
+/* ---------------------------------------------------------------- masthead */
+
+.masthead {
+  padding-bottom: var(--s-5);
+}
+
+.masthead__line {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-4);
+  flex-wrap: wrap;
+}
+
+.masthead__name {
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.01em;
+}
+
+.masthead__note {
+  margin-top: var(--s-1);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-body);
+  color: var(--text-2);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-family: var(--font-data);
+  font-size: var(--fs-xs);
+  line-height: 1.5;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* The dot only appears when something is wrong, so colour always means something. */
+.status__dot {
+  display: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex: none;
+}
+
+.status[data-tone="warning"] {
+  color: var(--warning);
+}
+
+.status[data-tone="danger"] {
+  color: var(--danger);
+}
+
+.status[data-tone="warning"] .status__dot,
+.status[data-tone="danger"] .status__dot {
+  display: block;
+}
+
+.alert {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-2);
+  margin-top: var(--s-3);
+  font-size: var(--fs-sm);
+  color: var(--danger);
+}
+
+.alert::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex: none;
+  transform: translateY(-2px);
+}
+
+/* ----------------------------------------------------------------- filters */
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-5);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--s-2);
+}
+
+.filters__tab {
+  appearance: none;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: var(--s-3) 0 var(--s-2);
+  min-height: 44px;
+  font-family: inherit;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  line-height: var(--lh-body);
+  color: var(--text-2);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.filters__tab:hover {
+  color: var(--text);
+}
+
+.filters__tab[aria-pressed="true"] {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+}
+
+/* -------------------------------------------------------------------- tape */
+
+/* Day groups and rows are separate grids with identical columns, so the rail
+   and the reading column stay aligned down the whole page. */
+.row {
+  display: grid;
+  grid-template-columns: var(--rail) 1fr;
+  column-gap: var(--s-5);
+  align-items: baseline;
+  margin-top: var(--s-5);
+}
+
+.tape > .row:first-child {
+  margin-top: 0;
+}
+
+.row__rail {
+  font-family: var(--font-data);
+  font-size: var(--fs-xs);
+  line-height: 1.5;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.row__title {
+  font-size: var(--fs-lg);
+  font-weight: 500;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.005em;
+  text-wrap: pretty;
+  color: var(--text-2);
+}
+
+.row__meta {
+  margin-top: var(--s-1);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-body);
+  color: var(--text-muted);
+  max-width: 68ch;
+}
+
+.row__source {
+  font-weight: 500;
+  color: var(--text-2);
+}
+
+.row__link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: color-mix(in oklab, currentColor 22%, transparent);
+  text-underline-offset: 3px;
+  transition:
+    color var(--dur-fast) var(--ease-out),
+    text-decoration-color var(--dur-fast) var(--ease-out);
+}
+
+.row__link:hover,
+.row__link:focus-visible {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+/* Rank is typographic: the head of the wire is inked, everything else stays
+   quiet, so there is one focal band rather than a page of competing headlines. */
+.row--lead .row__title {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ------------------------------------------------------------- empty states */
+
+.state {
+  max-width: 46ch;
+  padding: var(--s-7) 0 var(--s-6);
+}
+
+.state--static {
+  padding: var(--s-5) var(--s-5) var(--s-5) 0;
+}
+
+.state__title {
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.005em;
+}
+
+.state__line {
+  margin-top: var(--s-2);
+  font-size: var(--fs-sm);
+  color: var(--text-2);
+}
+
+.state__action {
+  margin-top: var(--s-5);
+}
+
+/* The rail itself, before the tape has printed anything along it: a line that
+   runs out, with the cursor still at the top. */
+.state__art {
+  position: relative;
+  width: 1px;
+  height: var(--s-7);
+  margin: var(--s-2) 0 var(--s-6);
+  background: color-mix(in oklab, var(--text) 26%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 35%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 35%, transparent 100%);
+  transform-origin: top;
+  animation: rail-draw var(--dur-enter) var(--ease-out) both;
+}
+
+.state__art::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  width: 5px;
+  height: 5px;
+  background: var(--accent);
+  animation: caret 1.2s steps(1, end) infinite;
+}
+
+/* ---------------------------------------------------------------- controls */
+
+.btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 var(--s-4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  font-family: inherit;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  line-height: 1;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color var(--dur-fast) var(--ease-out);
+}
+
+.btn:hover {
+  border-color: color-mix(in oklab, var(--text) 32%, transparent);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ----------------------------------------------------------------- skeleton */
+
+.skeleton__bar {
+  height: 10px;
+  border-radius: var(--r-sm);
+  background: color-mix(in oklab, var(--text) 9%, transparent);
+  animation: fade-in var(--dur-base) var(--ease-out) both;
+}
+
+.skeleton__bar--rail {
+  width: 40px;
+}
+
+.skeleton__bar--title {
+  width: 78%;
+}
+
+.skeleton__bar--meta {
+  width: 38%;
+  margin-top: var(--s-2);
+}
+
+/* -------------------------------------------------------------------- foot */
+
+.foot {
+  margin-top: var(--s-8);
+  padding-top: var(--s-5);
+  border-top: 1px solid var(--border);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+.foot p {
+  /* Wider than the reading measure: this is one short line of provenance, and
+     capping it at 68ch split the link across two lines. */
+  max-width: 84ch;
+}
+
+.foot a {
+  color: var(--text-2);
+  white-space: nowrap;
+  text-underline-offset: 3px;
+}
+
+.foot a:hover {
+  color: var(--accent);
+}
+
+/* ------------------------------------------------------------------ motion */
+
+@keyframes rail-draw {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes caret {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes row-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* One orchestrated entrance per load: the tape prints top-down, then stops. */
+.row--enter {
+  animation: row-enter var(--dur-enter) var(--ease-out) both;
+  animation-delay: calc(var(--i, 0) * 60ms);
+}
+
+/* Rows that arrived on a refresh, so a returning reader sees what changed. */
+.row--new {
+  animation: fade-in var(--dur-base) var(--ease-out) both;
+}
+
+@keyframes nudge {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(3px);
+  }
+  65% {
+    transform: translateX(-1px);
+  }
+}
+
+.filters__tab--nudge {
+  animation: nudge 420ms var(--ease-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+
+  .state__art::after {
+    opacity: 1;
+  }
+
+  .row--enter,
+  .row--new {
+    animation: none;
+  }
+}
+
+/* -------------------------------------------------------------- narrow view */
+
+@media (max-width: 40rem) {
+  body {
+    padding: var(--s-5) var(--s-4) var(--s-7);
+  }
+
+  /* The rail collapses: the stamp sits above the title on its own line. */
+  .row {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    align-items: start;
+    margin-top: var(--s-5);
+  }
+
+  .row__rail {
+    margin-bottom: var(--s-1);
+  }
+
+  .row__title {
+    font-size: var(--fs-md);
+  }
+
+  /* The tab row must not wrap: a rule under a wrapped row cuts the group in two. */
+  .filters {
+    flex-wrap: nowrap;
+    gap: var(--s-3);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filters__tab {
+    font-size: var(--fs-xs);
+    /* The scroll container above would clip a ring drawn outside the box. */
+    outline-offset: -2px;
+  }
+}

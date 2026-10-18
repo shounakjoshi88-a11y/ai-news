@@ -1,0 +1,3 @@
+# The collector writes data/news.json through a temp file and renames it into
+# place. A killed process can leave the temp file behind; it is never served.
+data/*.tmp

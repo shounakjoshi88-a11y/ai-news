@@ -1,0 +1,1069 @@
+{
+  "generatedAt": "2026-10-18T12:36:11Z",
+  "sources": [
+    {
+      "id": "hn",
+      "name": "Hacker News",
+      "status": "ok",
+      "count": 100,
+      "error": null
+    },
+    {
+      "id": "hf",
+      "name": "Hugging Face",
+      "status": "ok",
+      "count": 54,
+      "error": null
+    },
+    {
+      "id": "gh",
+      "name": "GitHub",
+      "status": "ok",
+      "count": 50,
+      "error": null
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "status": "ok",
+      "count": 40,
+      "error": null
+    }
+  ],
+  "items": [
+    {
+      "id": "hn:50137950",
+      "source": "hn",
+      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+      "url": "https://sphinx-six-theta.vercel.app/",
+      "publishedAt": "2026-10-18T04:33:49.000Z",
+      "score": 163,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 48
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50129045",
+      "source": "hn",
+      "title": "DeepSeek-v4.1-Flash-1017",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "publishedAt": "2026-10-17T08:21:25.000Z",
+      "score": 888,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 667
+      },
+      "alsoOn": [
+        "hn:50129121",
+        "hf:deepseek-ai/DeepSeek-V4.1-Flash-1017"
+      ]
+    },
+    {
+      "id": "arxiv:2610.22372v1",
+      "source": "arxiv",
+      "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+      "url": "http://arxiv.org/abs/2610.22372v1",
+      "publishedAt": "2026-10-15T17:59:59.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.RO",
+        "authors": 10
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50122878",
+      "source": "hn",
+      "title": "You could have invented transformers from memory",
+      "url": "https://alexwang.ai/posts/associative-memory/",
+      "publishedAt": "2026-10-16T19:01:17.000Z",
+      "score": 579,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 129
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50132278",
+      "source": "hn",
+      "title": "Amazon uses AI to monitor union risk in UK warehouses",
+      "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
+      "publishedAt": "2026-10-17T16:04:23.000Z",
+      "score": 166,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 58
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22367v1",
+      "source": "arxiv",
+      "title": "Discovering state-of-the-art quantum circuits with large language models",
+      "url": "http://arxiv.org/abs/2610.22367v1",
+      "publishedAt": "2026-10-15T17:59:20.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "quant-ph",
+        "authors": 4
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50121179",
+      "source": "hn",
+      "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+      "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+      "publishedAt": "2026-10-16T17:08:38.000Z",
+      "score": 611,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 554
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50133231",
+      "source": "hn",
+      "title": "Codex Desktop continuously generates Crashpad pending dumps",
+      "url": "https://github.com/openai/codex/issues/25921",
+      "publishedAt": "2026-10-17T17:45:08.000Z",
+      "score": 142,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 67
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:LiCinCan/blender-ai-mcp-addon",
+      "source": "gh",
+      "title": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender…",
+      "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
+      "publishedAt": "2026-10-15T22:30:47.000Z",
+      "score": 728,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "LiCinCan/blender-ai-mcp-addon",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50107379",
+      "source": "hn",
+      "title": "Muse Spark Open",
+      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "publishedAt": "2026-10-15T17:47:39.000Z",
+      "score": 914,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 477
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50122112",
+      "source": "hn",
+      "title": "Anthropic assigned highest junk credit rating in June",
+      "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
+      "publishedAt": "2026-10-16T18:11:42.000Z",
+      "score": 292,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 86
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22364v1",
+      "source": "arxiv",
+      "title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
+      "url": "http://arxiv.org/abs/2610.22364v1",
+      "publishedAt": "2026-10-15T17:59:11.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.RO",
+        "authors": 12
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50091788",
+      "source": "hn",
+      "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+      "publishedAt": "2026-10-14T17:45:23.000Z",
+      "score": 948,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 620
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:LosaLosSantos/aurelio-finance",
+      "source": "gh",
+      "title": "Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash and debts on your own computer.",
+      "url": "https://github.com/LosaLosSantos/aurelio-finance",
+      "publishedAt": "2026-10-06T20:14:19.000Z",
+      "score": 3953,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "LosaLosSantos/aurelio-finance",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:Cloudflare/clef",
+      "source": "hf",
+      "title": "Cloudflare/clef",
+      "url": "https://huggingface.co/Cloudflare/clef",
+      "publishedAt": "2026-09-30T21:15:35.000Z",
+      "score": 2207,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 21094,
+        "task": "image-text-to-text"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50123580",
+      "source": "hn",
+      "title": "FLUX 3 Image Klein",
+      "url": "https://bfl.ai/blog/flux-3-image-klein",
+      "publishedAt": "2026-10-16T19:47:13.000Z",
+      "score": 209,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 58
+      },
+      "alsoOn": [
+        "hf:black-forest-labs/flux-3-image-klein-comfy",
+        "hf:black-forest-labs/flux-3-image-klein"
+      ]
+    },
+    {
+      "id": "gh:onehumanbeing/esp32-iphone-agent",
+      "source": "gh",
+      "title": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak.",
+      "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
+      "publishedAt": "2026-10-11T19:10:25.000Z",
+      "score": 3060,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "onehumanbeing/esp32-iphone-agent",
+        "language": "C"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50105648",
+      "source": "hn",
+      "title": "Krea 3 – An image model built for editing at scale",
+      "url": "https://www.krea.ai/krea-3",
+      "publishedAt": "2026-10-15T16:04:05.000Z",
+      "score": 349,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 108
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50119991",
+      "source": "hn",
+      "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
+      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+      "publishedAt": "2026-10-16T15:55:40.000Z",
+      "score": 214,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 89
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22362v1",
+      "source": "arxiv",
+      "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+      "url": "http://arxiv.org/abs/2610.22362v1",
+      "publishedAt": "2026-10-15T17:59:02.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.RO",
+        "authors": 8
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:deeplethe/solid-glass",
+      "source": "gh",
+      "title": "A design system for AI applications. Material, physical, tactile, technical.",
+      "url": "https://github.com/deeplethe/solid-glass",
+      "publishedAt": "2026-10-12T09:19:02.000Z",
+      "score": 2001,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "deeplethe/solid-glass",
+        "language": "TypeScript"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50063427",
+      "source": "hn",
+      "title": "AI is a tool and using it well takes skill",
+      "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
+      "publishedAt": "2026-10-12T21:40:18.000Z",
+      "score": 803,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 607
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:Qwen/Qwen-Image-2.1-Turbo",
+      "source": "hf",
+      "title": "Qwen/Qwen-Image-2.1-Turbo",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+      "publishedAt": "2026-10-09T04:50:01.000Z",
+      "score": 970,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 23131,
+        "task": "text-to-image"
+      },
+      "alsoOn": [
+        "hf:AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF"
+      ]
+    },
+    {
+      "id": "gh:zhuyansen/new-term-radar",
+      "source": "gh",
+      "title": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
+      "url": "https://github.com/zhuyansen/new-term-radar",
+      "publishedAt": "2026-10-12T07:11:01.000Z",
+      "score": 1097,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "zhuyansen/new-term-radar",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22353v1",
+      "source": "arxiv",
+      "title": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
+      "url": "http://arxiv.org/abs/2610.22353v1",
+      "publishedAt": "2026-10-15T17:58:02.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.LG",
+        "authors": 5
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:Aleph-Alpha/Kolibri-1",
+      "source": "hf",
+      "title": "Aleph-Alpha/Kolibri-1",
+      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+      "publishedAt": "2026-10-02T05:54:02.000Z",
+      "score": 950,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 19548,
+        "task": "text-generation"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50092664",
+      "source": "hn",
+      "title": "Banks are now trying to offload the AI data center debt they just underwrote",
+      "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
+      "publishedAt": "2026-10-14T18:32:52.000Z",
+      "score": 385,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 277
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:outcrawlai/scout",
+      "source": "gh",
+      "title": "Scout: the open-source browser agent, by Outcrawl. Mirrored automatically from Outcrawl's own repository.",
+      "url": "https://github.com/outcrawlai/scout",
+      "publishedAt": "2026-10-13T09:18:55.000Z",
+      "score": 945,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "outcrawlai/scout",
+        "language": "TypeScript"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22350v1",
+      "source": "arxiv",
+      "title": "FDE-Gym: The Last Mile of AI Delivery",
+      "url": "http://arxiv.org/abs/2610.22350v1",
+      "publishedAt": "2026-10-15T17:57:23.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.AI",
+        "authors": 26
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50058507",
+      "source": "hn",
+      "title": "GLM-Legal",
+      "url": "https://z.ai/blog/glm-legal",
+      "publishedAt": "2026-10-12T16:11:45.000Z",
+      "score": 675,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 370
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22344v1",
+      "source": "arxiv",
+      "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
+      "url": "http://arxiv.org/abs/2610.22344v1",
+      "publishedAt": "2026-10-15T17:56:32.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.AI",
+        "authors": 10
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:openbmb/MiniCPM-V-4.7-35B-A3B",
+      "source": "hf",
+      "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+      "publishedAt": "2026-10-07T07:07:30.000Z",
+      "score": 927,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 57935,
+        "task": "image-text-to-text"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:mw00/project-maya",
+      "source": "gh",
+      "title": "Project Maya - run GLM-5.3-Flash (321B MoE) privately on your own GPU(s), from one card to 16, NVIDIA or AMD, Linux or Windows. Engine, server, dashboard, Open…",
+      "url": "https://github.com/mw00/project-maya",
+      "publishedAt": "2026-10-06T22:55:13.000Z",
+      "score": 1021,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "mw00/project-maya",
+        "language": "C++"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50059115",
+      "source": "hn",
+      "title": "Muse Wonder",
+      "url": "https://research.meta.ai/blog/muse-wonder",
+      "publishedAt": "2026-10-12T16:48:01.000Z",
+      "score": 672,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 382
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22343v1",
+      "source": "arxiv",
+      "title": "GeoState: Learning View-Decoupled Geometry States for 3D World Modeling",
+      "url": "http://arxiv.org/abs/2610.22343v1",
+      "publishedAt": "2026-10-15T17:56:18.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.CV",
+        "authors": 8
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50108131",
+      "source": "hn",
+      "title": "Why We're Banning AI",
+      "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
+      "publishedAt": "2026-10-15T18:32:29.000Z",
+      "score": 260,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 203
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:Cloudflare/clef-flash",
+      "source": "hf",
+      "title": "Cloudflare/clef-flash",
+      "url": "https://huggingface.co/Cloudflare/clef-flash",
+      "publishedAt": "2026-09-30T21:15:36.000Z",
+      "score": 840,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 34921,
+        "task": "image-text-to-text"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22341v1",
+      "source": "arxiv",
+      "title": "3DCodeVerse: Exploring 3D Worlds as Code",
+      "url": "http://arxiv.org/abs/2610.22341v1",
+      "publishedAt": "2026-10-15T17:56:07.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.CV",
+        "authors": 19
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50054751",
+      "source": "hn",
+      "title": "QGIS enacts moratorium on AI contributions",
+      "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+      "publishedAt": "2026-10-12T11:22:24.000Z",
+      "score": 392,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 412
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50095353",
+      "source": "hn",
+      "title": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
+      "url": "https://typesafe.ai/blog/jev-1-14",
+      "publishedAt": "2026-10-14T21:11:03.000Z",
+      "score": 333,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 122
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:Tejashmakwana/motionmaxxing",
+      "source": "gh",
+      "title": "Looksmaxxing for motion graphics. An agent skill that turns AI slop videos into films that look made by a motion designer.",
+      "url": "https://github.com/Tejashmakwana/motionmaxxing",
+      "publishedAt": "2026-10-06T18:18:49.000Z",
+      "score": 857,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "Tejashmakwana/motionmaxxing",
+        "language": "JavaScript"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22340v1",
+      "source": "arxiv",
+      "title": "Dexterity from Supervised Play",
+      "url": "http://arxiv.org/abs/2610.22340v1",
+      "publishedAt": "2026-10-15T17:55:50.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.RO",
+        "authors": 6
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:datalab-to/indra",
+      "source": "gh",
+      "title": "Fast CPU OCR: line detection, CTC recognition, reading order, markdown",
+      "url": "https://github.com/datalab-to/indra",
+      "publishedAt": "2026-10-13T11:07:11.000Z",
+      "score": 609,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "datalab-to/indra",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:fishaudio/drama-3",
+      "source": "hf",
+      "title": "fishaudio/drama-3",
+      "url": "https://huggingface.co/fishaudio/drama-3",
+      "publishedAt": "2026-10-01T04:34:57.000Z",
+      "score": 649,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 9620,
+        "task": "text-to-speech"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50073221",
+      "source": "hn",
+      "title": "I posted to HN, and then my website was flooded with AI bot traffic",
+      "url": "https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic",
+      "publishedAt": "2026-10-13T15:25:50.000Z",
+      "score": 351,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 186
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:ConwayResearch/Underdog-Saluki-27B-1.0",
+      "source": "hf",
+      "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
+      "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
+      "publishedAt": "2026-10-08T01:47:26.000Z",
+      "score": 533,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 410558,
+        "task": "text-generation"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22333v1",
+      "source": "arxiv",
+      "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
+      "url": "http://arxiv.org/abs/2610.22333v1",
+      "publishedAt": "2026-10-15T17:53:33.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.AI",
+        "authors": 9
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:thesysdev/open-intelligent-ui",
+      "source": "gh",
+      "title": "An open-source take on ChatGPT's Intelligent UI: answers stream as interactive UI (maps, photos, charts, drawings and working tools). Built with OpenUI.",
+      "url": "https://github.com/thesysdev/open-intelligent-ui",
+      "publishedAt": "2026-10-08T05:37:45.000Z",
+      "score": 531,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "thesysdev/open-intelligent-ui",
+        "language": "TypeScript"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+      "source": "gh",
+      "title": "AI 跨境电商运营智能体工具箱 · 把运营 SOP 拆成 7 个可复用的 AI Agent 工作流，含 Prompt、模板与真实案例",
+      "url": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+      "publishedAt": "2026-10-13T10:13:21.000Z",
+      "score": 375,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:LiquidAI/LFM2.5-24B-A2B",
+      "source": "hf",
+      "title": "LiquidAI/LFM2.5-24B-A2B",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+      "publishedAt": "2026-10-12T05:35:46.000Z",
+      "score": 456,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 13007,
+        "task": "text-generation"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:Ayzzz123/mcd-coupon-strategist",
+      "source": "gh",
+      "title": "麦麦省钱助手 —— 基于麦当劳 MCP 的点餐成本优化 Skill。算出当前门店最省钱的点餐方案，并主动提示凑单陷阱。",
+      "url": "https://github.com/Ayzzz123/mcd-coupon-strategist",
+      "publishedAt": "2026-10-10T12:59:19.000Z",
+      "score": 491,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "Ayzzz123/mcd-coupon-strategist",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50104299",
+      "source": "hn",
+      "title": "Using AI to reverse engineer hardware",
+      "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
+      "publishedAt": "2026-10-15T14:35:15.000Z",
+      "score": 253,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 249
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:LiquidAI/d1-3B",
+      "source": "hf",
+      "title": "LiquidAI/d1-3B",
+      "url": "https://huggingface.co/LiquidAI/d1-3B",
+      "publishedAt": "2026-10-05T09:55:28.000Z",
+      "score": 448,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 21223,
+        "task": "image-text-to-text"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:hanzohanzhe/Grandet",
+      "source": "gh",
+      "title": "Find the cheapest API for any model and connect it from your AI agent: Grandet Skill and an anonymous MCP server, backed by listed prices from 1,800+ official,…",
+      "url": "https://github.com/hanzohanzhe/Grandet",
+      "publishedAt": "2026-10-05T06:50:33.000Z",
+      "score": 340,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "hanzohanzhe/Grandet",
+        "language": "JavaScript"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:Cactus-Compute/whistle",
+      "source": "hf",
+      "title": "Cactus-Compute/whistle",
+      "url": "https://huggingface.co/Cactus-Compute/whistle",
+      "publishedAt": "2026-09-30T17:13:26.000Z",
+      "score": 430,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 42186,
+        "task": "automatic-speech-recognition"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:NousResearch/hermes-official-plugins",
+      "source": "gh",
+      "title": "☤ The official plugins for Hermes Agent, built and maintained by Nous Research: Home Assistant, Spotify, Claude Subscription DirectSDK and more, one install aw…",
+      "url": "https://github.com/NousResearch/hermes-official-plugins",
+      "publishedAt": "2026-10-10T20:51:25.000Z",
+      "score": 319,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "NousResearch/hermes-official-plugins",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:Comfy-Org/MOSS-Image",
+      "source": "hf",
+      "title": "Comfy-Org/MOSS-Image",
+      "url": "https://huggingface.co/Comfy-Org/MOSS-Image",
+      "publishedAt": "2026-10-16T12:42:32.000Z",
+      "score": 164,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 354126,
+        "task": null
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:canberkkkkkk/ema-lightning",
+      "source": "hf",
+      "title": "canberkkkkkk/ema-lightning",
+      "url": "https://huggingface.co/canberkkkkkk/ema-lightning",
+      "publishedAt": "2026-10-01T14:18:49.000Z",
+      "score": 421,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 34241,
+        "task": "text-to-speech"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22331v1",
+      "source": "arxiv",
+      "title": "KnowGPO: Knowledge-Grouped Policy Optimization for Search Agents",
+      "url": "http://arxiv.org/abs/2610.22331v1",
+      "publishedAt": "2026-10-15T17:52:33.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.AI",
+        "authors": 13
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:longsurf-ai/openchart",
+      "source": "gh",
+      "title": "OSS trading workspace with your favorite agents",
+      "url": "https://github.com/longsurf-ai/openchart",
+      "publishedAt": "2026-10-05T16:16:41.000Z",
+      "score": 242,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "longsurf-ai/openchart",
+        "language": "TypeScript"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:songshikang0111/awesome-REA-cases",
+      "source": "gh",
+      "title": "A curated collection of REA and AI-assisted reverse engineering cases, projects, and ideas. Updated every four hours.",
+      "url": "https://github.com/songshikang0111/awesome-REA-cases",
+      "publishedAt": "2026-10-12T04:52:44.000Z",
+      "score": 237,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "songshikang0111/awesome-REA-cases",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+      "source": "hf",
+      "title": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+      "url": "https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+      "publishedAt": "2026-10-04T10:44:11.000Z",
+      "score": 420,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 256336,
+        "task": "image-text-to-text"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50059523",
+      "source": "hn",
+      "title": "AI coding agents generate more code, but not more software",
+      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "publishedAt": "2026-10-12T17:14:01.000Z",
+      "score": 364,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 313
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:sitor-ai/frametell",
+      "source": "gh",
+      "title": "Frametell: turn your ideas and material into vivid explainer videos with an AI director agent. Local-first, any model.",
+      "url": "https://github.com/sitor-ai/frametell",
+      "publishedAt": "2026-10-10T10:02:14.000Z",
+      "score": 221,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "sitor-ai/frametell",
+        "language": "TypeScript"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22330v1",
+      "source": "arxiv",
+      "title": "Designing Transformers for Continuous Diffusion Language Models",
+      "url": "http://arxiv.org/abs/2610.22330v1",
+      "publishedAt": "2026-10-15T17:52:31.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.AI",
+        "authors": 5
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:openbmb/MiniCPM-V-4.7-1B",
+      "source": "hf",
+      "title": "openbmb/MiniCPM-V-4.7-1B",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B",
+      "publishedAt": "2026-10-06T17:40:13.000Z",
+      "score": 381,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 22689,
+        "task": "image-text-to-text"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:HRuiCcc/RuiC-oc-ferry",
+      "source": "gh",
+      "title": "把 OpenCode 的免费模型摆渡给 WorkBuddy —— 隔离运行时、并发检测、判定缓存、一键导入、本机 OpenAI 兼容转发口",
+      "url": "https://github.com/HRuiCcc/RuiC-oc-ferry",
+      "publishedAt": "2026-10-10T08:59:18.000Z",
+      "score": 220,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "HRuiCcc/RuiC-oc-ferry",
+        "language": "JavaScript"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50104654",
+      "source": "hn",
+      "title": "Simons Foundation launches $15M effort to help mathematicians navigate AI era",
+      "url": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/",
+      "publishedAt": "2026-10-15T14:58:48.000Z",
+      "score": 249,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 199
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22328v1",
+      "source": "arxiv",
+      "title": "ACEdit: Stable Multi-Turn Image Editing via Asymmetric Conditioning",
+      "url": "http://arxiv.org/abs/2610.22328v1",
+      "publishedAt": "2026-10-15T17:52:24.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.CV",
+        "authors": 5
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:FermionResearch/Phonon-2",
+      "source": "hf",
+      "title": "FermionResearch/Phonon-2",
+      "url": "https://huggingface.co/FermionResearch/Phonon-2",
+      "publishedAt": "2026-09-28T11:48:47.000Z",
+      "score": 347,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 10724,
+        "task": "automatic-speech-recognition"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:justxor/deepseek-local-guide-ru",
+      "source": "gh",
+      "title": "🐋 Полный гайд на русском: как установить и запустить DeepSeek локально (V4, R1) на ПК, Mac и сервере — Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG…",
+      "url": "https://github.com/justxor/deepseek-local-guide-ru",
+      "publishedAt": "2026-10-17T10:03:36.000Z",
+      "score": 78,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "justxor/deepseek-local-guide-ru",
+        "language": "Shell"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50097369",
+      "source": "hn",
+      "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "publishedAt": "2026-10-14T23:59:37.000Z",
+      "score": 288,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 81
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22327v1",
+      "source": "arxiv",
+      "title": "Twice Upon a Time: Complementary Representations for Time-Series Reasoning",
+      "url": "http://arxiv.org/abs/2610.22327v1",
+      "publishedAt": "2026-10-15T17:52:18.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.LG",
+        "authors": 5
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "hf:unsloth/embeddinggemma-2-GGUF",
+      "source": "hf",
+      "title": "unsloth/embeddinggemma-2-GGUF",
+      "url": "https://huggingface.co/unsloth/embeddinggemma-2-GGUF",
+      "publishedAt": "2026-10-06T10:58:50.000Z",
+      "score": 327,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 108496,
+        "task": "feature-extraction"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:hitkeeen/blender-ai-addon",
+      "source": "gh",
+      "title": "Blender add-on: create and edit 3D models by chatting with AI - send text or an image, get working bpy code",
+      "url": "https://github.com/hitkeeen/blender-ai-addon",
+      "publishedAt": "2026-10-09T08:34:03.000Z",
+      "score": 217,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "hitkeeen/blender-ai-addon",
+        "language": "Python"
+      },
+      "alsoOn": []
+    }
+  ]
+}

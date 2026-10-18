@@ -1,0 +1,88 @@
+name: Refresh dispatches
+
+# Rebuilds data/news.json every hour and commits it. The page itself is static,
+# so this is the only moving part: no server, no database, no client-side key.
+
+on:
+  schedule:
+    # Hourly, at :07 past. GitHub starts scheduled runs a few minutes late under
+    # load, and the page does not depend on the exact minute.
+    - cron: "7 * * * *"
+  # Runs on code changes only. Data commits touch data/news.json alone, so they
+  # do not re-trigger this workflow and cannot start a refresh loop.
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "styles.css"
+      - "app.js"
+      - "scripts/**"
+      - ".github/workflows/update.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+# A refresh is quick, but never let two of them race for the same file.
+concurrency:
+  group: refresh-dispatches
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Serves the site from the branch rather than from a build artifact, so the
+      # hourly data commit is all it takes to update the live page.
+      - name: Enable GitHub Pages if it is not on yet
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          if gh api "/repos/$REPO/pages" >/dev/null 2>&1; then
+            echo "Pages is already enabled."
+            exit 0
+          fi
+
+          if gh api -X POST "/repos/$REPO/pages" \
+               -H "Accept: application/vnd.github+json" \
+               --input - <<'BODY'
+          { "build_type": "legacy", "source": { "branch": "main", "path": "/" } }
+          BODY
+          then
+            echo "Enabled Pages, served from main / (root)."
+          else
+            echo "::warning title=Enable Pages manually::Run could not enable Pages. In Settings > Pages choose 'Deploy from a branch', branch main, folder / (root). Nothing else needs doing."
+          fi
+
+      # No install step on purpose: the collector is zero-dependency and Node 20
+      # already ships fetch, so there is no lockfile and nothing to cache.
+      - name: Collect dispatches
+        env:
+          # Raises the GitHub search rate limit from 60 to 5000 requests an hour.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/fetch-news.mjs --out data/news.json
+
+      # Runs only if collection succeeded. If every source failed, the step above
+      # exits 1, this is skipped, and the last good data stays live and unchanged.
+      - name: Commit if the data changed
+        run: |
+          if git diff --quiet -- data/news.json; then
+            echo "No change since the last run."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/news.json
+          git commit -m "data: refresh dispatches ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git push origin HEAD:main
