@@ -6,9 +6,16 @@ name: Refresh dispatches
 
 on:
   schedule:
-    # Hourly, at :07 past. GitHub starts scheduled runs a few minutes late under
-    # load, and the page does not depend on the exact minute.
+    # Two entries, not one, on purpose. GitHub's scheduler is explicitly
+    # best-effort — it starts runs late under load and sometimes drops them — and
+    # this job is the only thing keeping the site current. If the :07 run is
+    # dropped the :37 run picks the hour up.
+    #
+    # Both cannot be useful in the same hour, because the collector exits without
+    # writing when data/news.json is under 50 minutes old. So the cost of the
+    # spare entry is a few seconds of runner time, not a doubled commit history.
     - cron: "7 * * * *"
+    - cron: "37 * * * *"
   # Code changes re-run the collector immediately. Data commits touch
   # data/news.json alone, so they never re-trigger this workflow.
   push:
@@ -48,6 +55,9 @@ jobs:
         env:
           # Raises the GitHub search rate limit from 60 to 5000 requests an hour.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # A scheduled run yields to one that already refreshed the hour; a push
+          # or a manual run means the code changed, so it always rebuilds.
+          FORCE: ${{ github.event_name != 'schedule' }}
         run: node scripts/fetch-news.mjs --out data/news.json
 
       # Skipped when collection failed: if every source is down the step above

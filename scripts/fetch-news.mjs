@@ -2,15 +2,20 @@
 /**
  * fetch-news.mjs — zero-dependency aggregator for AI Wire.
  *
- *   node scripts/fetch-news.mjs [--out data/news.json]
+ *   node scripts/fetch-news.mjs [--out data/news.json] [--force]
  *
  * Fetches four keyless sources, normalises them into one shape, dedupes, ranks,
  * gives each card an image and a summary, and writes data/news.json atomically.
  * Exits 1 only when every source failed, in which case the existing file is left
  * untouched so the page keeps its last good data and the workflow goes red.
+ *
+ * Exits 0 without touching anything if the existing file is still fresh, unless
+ * --force is given. Two cron entries cover each hour because GitHub's scheduler
+ * drops runs under load; this guard is what stops the second entry from doubling
+ * the commit history.
  */
 
-import { mkdir, writeFile, rename } from "node:fs/promises";
+import { mkdir, readFile, writeFile, rename } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
 const UA = "ai-news/1.0 (+https://github.com/shounakjoshi88-a11y/ai-news)";
@@ -640,6 +645,34 @@ async function enrich(items) {
 /* ------------------------------------------------------------------- main */
 
 const outPath = resolve(arg("--out", "data/news.json"));
+
+/**
+ * GitHub's scheduler is best-effort: it delays scheduled runs under load and
+ * sometimes drops them outright, which for an hourly job means the page quietly
+ * goes stale. Two cron entries an hour are configured to absorb that, and this
+ * guard makes whichever fires second a no-op — so the site stays hourly without
+ * the history collecting two identical commits every hour.
+ *
+ * A push or a manual run means the code changed, and passes --force.
+ */
+const FORCE = process.argv.includes("--force") || process.env.FORCE === "true";
+const FRESH_MINUTES = Number(arg("--fresh-minutes", "50"));
+
+if (!FORCE) {
+  try {
+    const previous = JSON.parse(await readFile(outPath, "utf8"));
+    const ageMinutes = (Date.now() - Date.parse(previous.generatedAt)) / 60_000;
+    if (Number.isFinite(ageMinutes) && ageMinutes < FRESH_MINUTES) {
+      console.log(
+        `data is ${ageMinutes.toFixed(0)}m old, fresher than ${FRESH_MINUTES}m — nothing to rebuild.`,
+      );
+      process.exit(0);
+    }
+  } catch {
+    // Unreadable or absent: a first run, or a corrupted file. Either way, build one.
+  }
+}
+
 const settled = await Promise.allSettled(SOURCES.map((s) => s.fn()));
 
 const sources = [];

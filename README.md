@@ -31,6 +31,13 @@ The hourly job deploys nothing itself and holds no hosting credential — it onl
 and Vercel rebuilds on push. A total collection failure therefore leaves both the last good
 commit and the live site untouched.
 
+It is triggered **twice an hour**, at `:07` and `:37`, on purpose. GitHub's scheduler is
+explicitly best-effort: it starts runs late under load and sometimes drops them entirely,
+and this job is the only thing keeping the site current, so one missed tick means a stale
+page. The collector stands down when `data/news.json` is under 50 minutes old, so whichever
+of the two fires first does the work and the other costs a few seconds of runner time rather
+than a duplicate commit.
+
 ## Sources
 
 | Source | What it contributes | Signal | Artwork and summary |
@@ -117,7 +124,8 @@ and dark. It also prints the palette as hex, which is where the sRGB fallbacks c
 - Every source is keyless and public. The only credential involved is the ephemeral
   `GITHUB_TOKEN` the workflow already has, used purely to raise the GitHub API rate limit
   from 60 to 5000 requests an hour.
-- Scheduled runs can start 5–20 minutes late. The page reports how long ago it was built
+- Scheduled runs can start 5–20 minutes late, and occasionally do not start at all — which is
+  why there are two entries an hour (above). The page reports how long ago it was built
   rather than pretending otherwise, and marks itself stale after 90 minutes.
 - Times are shown relative to now, with the exact timestamp in the tooltip, rendered in the
   reader's own locale and timezone.
