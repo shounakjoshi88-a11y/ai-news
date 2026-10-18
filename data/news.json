@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T16:01:50Z",
+  "generatedAt": "2026-10-18T16:18:03Z",
   "sources": [
     {
       "id": "hn",
@@ -156,7 +156,7 @@
       "blurb": "FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it'll throw up a questionnaire that checks if you understand how the code you're pushing…",
       "url": "https://sphinx-six-theta.vercel.app/",
       "publishedAt": "2026-10-18T04:33:49.000Z",
-      "score": 204,
+      "score": 207,
       "scoreLabel": "points",
       "meta": {
         "comments": 66
@@ -178,37 +178,37 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50129045",
-      "source": "hn",
-      "title": "DeepSeek-v4.1-Flash-1017",
-      "blurb": null,
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "publishedAt": "2026-10-17T08:21:25.000Z",
-      "score": 920,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 681
-      },
-      "alsoOn": [
-        "hn:50129121",
-        "hf:deepseek-ai/DeepSeek-V4.1-Flash-1017"
-      ],
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/deepseek-ai/DeepSeek-V4.1-Flash-1017.png"
-    },
-    {
       "id": "hn:50141429",
       "source": "hn",
       "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
       "blurb": "Would this be enough to keep an AI model from going out of control?",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
       "publishedAt": "2026-10-18T14:30:27.000Z",
-      "score": 74,
+      "score": 81,
       "scoreLabel": "points",
       "meta": {
-        "comments": 65
+        "comments": 76
       },
       "alsoOn": [],
       "image": "https://cdn.mos.cms.futurecdn.net/SVPa8KkaDwkeyAtLnMhyKW-1920-80.png"
+    },
+    {
+      "id": "hn:50129045",
+      "source": "hn",
+      "title": "DeepSeek-v4.1-Flash-1017",
+      "blurb": null,
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "publishedAt": "2026-10-17T08:21:25.000Z",
+      "score": 921,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 682
+      },
+      "alsoOn": [
+        "hn:50129121",
+        "hf:deepseek-ai/DeepSeek-V4.1-Flash-1017"
+      ],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/deepseek-ai/DeepSeek-V4.1-Flash-1017.png"
     },
     {
       "id": "verge:https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
@@ -291,7 +291,7 @@
       "score": 604,
       "scoreLabel": "points",
       "meta": {
-        "comments": 135
+        "comments": 136
       },
       "alsoOn": [],
       "image": "https://alexwang.ai/images/share-card_hu_ba29a66ace5a286c.jpg"
@@ -306,7 +306,7 @@
       "score": 611,
       "scoreLabel": "points",
       "meta": {
-        "comments": 557
+        "comments": 558
       },
       "alsoOn": [],
       "image": null
@@ -335,10 +335,10 @@
       "blurb": "Summary Codex Desktop is continuously adding paired .dmp and _sidecar.json files under: ~/Library/Application Support/com.openai.codex/web/Crashpad/pending On my machine this directory grew…",
       "url": "https://github.com/openai/codex/issues/25921",
       "publishedAt": "2026-10-17T17:45:08.000Z",
-      "score": 157,
+      "score": 158,
       "scoreLabel": "points",
       "meta": {
-        "comments": 77
+        "comments": 78
       },
       "alsoOn": [],
       "image": "https://opengraph.githubassets.com/ca36cd0881ef0455269ae28027ff6686ed2bae99e1f24dc416de1a72bc590b3c/openai/codex/issues/25921"
@@ -966,27 +966,12 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50119991",
-      "source": "hn",
-      "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
-      "blurb": "Core devs revert up to 10 features, push release to November, and blame better tooling rather than vibe coding",
-      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
-      "publishedAt": "2026-10-16T15:55:40.000Z",
-      "score": 215,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 91
-      },
-      "alsoOn": [],
-      "image": "https://image.theregister.com/228745.jpg?imageId=228745&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
-    },
-    {
       "id": "hf:Cloudflare/clef",
       "source": "hf",
       "title": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "publishedAt": "2026-09-30T21:15:35.000Z",
-      "score": 2207,
+      "score": 2208,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 21094,
@@ -1012,6 +997,21 @@
       "image": null
     },
     {
+      "id": "hn:50119991",
+      "source": "hn",
+      "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
+      "blurb": "Core devs revert up to 10 features, push release to November, and blame better tooling rather than vibe coding",
+      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+      "publishedAt": "2026-10-16T15:55:40.000Z",
+      "score": 215,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 91
+      },
+      "alsoOn": [],
+      "image": "https://image.theregister.com/228745.jpg?imageId=228745&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
+    },
+    {
       "id": "gh:LiCinCan/blender-ai-mcp-addon",
       "source": "gh",
       "title": "LiCinCan/blender-ai-mcp-addon",
@@ -1019,7 +1019,7 @@
       "image": "https://opengraph.githubassets.com/1/LiCinCan/blender-ai-mcp-addon",
       "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
       "publishedAt": "2026-10-15T22:30:47.000Z",
-      "score": 748,
+      "score": 750,
       "scoreLabel": "stars",
       "meta": {
         "repo": "LiCinCan/blender-ai-mcp-addon",
@@ -1066,7 +1066,7 @@
       "image": "https://opengraph.githubassets.com/1/onehumanbeing/esp32-iphone-agent",
       "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
       "publishedAt": "2026-10-11T19:10:25.000Z",
-      "score": 3090,
+      "score": 3093,
       "scoreLabel": "stars",
       "meta": {
         "repo": "onehumanbeing/esp32-iphone-agent",
@@ -1140,7 +1140,7 @@
       "image": "https://opengraph.githubassets.com/1/deeplethe/solid-glass",
       "url": "https://github.com/deeplethe/solid-glass",
       "publishedAt": "2026-10-12T09:19:02.000Z",
-      "score": 2005,
+      "score": 2007,
       "scoreLabel": "stars",
       "meta": {
         "repo": "deeplethe/solid-glass",
@@ -1198,7 +1198,7 @@
       "title": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "publishedAt": "2026-10-09T04:50:01.000Z",
-      "score": 977,
+      "score": 978,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 23131,
@@ -1269,19 +1269,6 @@
       ]
     },
     {
-      "id": "deepmind:https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-      "source": "deepmind",
-      "title": "Gemini 4 Argon for Robotics",
-      "blurb": "Discover Gemini 4 Argon for robotics: leading the ERQA benchmark with physical reasoning, zero-shot control, Real2Sim, and agentic workflows.",
-      "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/argon__robotics__hero.2e16d0ba.fill-1200x600.png",
-      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-      "publishedAt": "2026-10-13T16:01:58.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "googleai:https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
       "source": "googleai",
       "title": "Introducing Playground: Create and play custom games",
@@ -1297,6 +1284,37 @@
       "alsoOn": []
     },
     {
+      "id": "deepmind:https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "source": "deepmind",
+      "title": "Gemini 4 Argon for Robotics",
+      "blurb": "Discover Gemini 4 Argon for robotics: leading the ERQA benchmark with physical reasoning, zero-shot control, Real2Sim, and agentic workflows.",
+      "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/argon__robotics__hero.2e16d0ba.fill-1200x600.png",
+      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "publishedAt": "2026-10-13T16:01:58.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "hf:black-forest-labs/flux-3-image-klein-comfy",
+      "source": "hf",
+      "title": "black-forest-labs/flux-3-image-klein-comfy",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+      "publishedAt": "2026-10-14T12:00:13.000Z",
+      "score": 757,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 338036,
+        "task": "image-to-image"
+      },
+      "alsoOn": [
+        "hf:black-forest-labs/flux-3-image-klein"
+      ],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/black-forest-labs/flux-3-image-klein-comfy.png",
+      "blurb": null
+    },
+    {
       "id": "tc:https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
       "source": "tc",
       "title": "Elorian’s first AI model wants to reason with images, not just about them",
@@ -1310,30 +1328,12 @@
       "alsoOn": []
     },
     {
-      "id": "hf:black-forest-labs/flux-3-image-klein-comfy",
-      "source": "hf",
-      "title": "black-forest-labs/flux-3-image-klein-comfy",
-      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-      "publishedAt": "2026-10-14T12:00:13.000Z",
-      "score": 755,
-      "scoreLabel": "likes",
-      "meta": {
-        "downloads": 338036,
-        "task": "image-to-image"
-      },
-      "alsoOn": [
-        "hf:black-forest-labs/flux-3-image-klein"
-      ],
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/black-forest-labs/flux-3-image-klein-comfy.png",
-      "blurb": null
-    },
-    {
       "id": "hf:openbmb/MiniCPM-V-4.7-35B-A3B",
       "source": "hf",
       "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "publishedAt": "2026-10-07T07:07:30.000Z",
-      "score": 961,
+      "score": 962,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 57935,
@@ -1367,7 +1367,7 @@
       "image": "https://opengraph.githubassets.com/1/trhhubsd/ARTEX",
       "url": "https://github.com/trhhubsd/ARTEX",
       "publishedAt": "2026-10-08T20:35:22.000Z",
-      "score": 1239,
+      "score": 1240,
       "scoreLabel": "stars",
       "meta": {
         "repo": "trhhubsd/ARTEX",
@@ -1406,6 +1406,22 @@
       "alsoOn": []
     },
     {
+      "id": "gh:zhuyansen/new-term-radar",
+      "source": "gh",
+      "title": "zhuyansen/new-term-radar",
+      "blurb": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
+      "image": "https://opengraph.githubassets.com/1/zhuyansen/new-term-radar",
+      "url": "https://github.com/zhuyansen/new-term-radar",
+      "publishedAt": "2026-10-12T07:11:01.000Z",
+      "score": 1103,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "zhuyansen/new-term-radar",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "papers:2610.21439",
       "source": "papers",
       "title": "Each Reward to Its Relevant Tokens: Reward-Specific Token-Level Credit Assignment for Multi-Reward RL",
@@ -1431,22 +1447,6 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "gh:zhuyansen/new-term-radar",
-      "source": "gh",
-      "title": "zhuyansen/new-term-radar",
-      "blurb": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
-      "image": "https://opengraph.githubassets.com/1/zhuyansen/new-term-radar",
-      "url": "https://github.com/zhuyansen/new-term-radar",
-      "publishedAt": "2026-10-12T07:11:01.000Z",
-      "score": 1103,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "zhuyansen/new-term-radar",
-        "language": "Python"
-      },
       "alsoOn": []
     },
     {
@@ -1509,19 +1509,6 @@
       "alsoOn": []
     },
     {
-      "id": "hfblog:https://huggingface.co/blog/allenai/hiro-acev2",
-      "source": "hfblog",
-      "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
-      "blurb": null,
-      "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Y8t8GnfI2lUa40iX4_sxA.png",
-      "url": "https://huggingface.co/blog/allenai/hiro-acev2",
-      "publishedAt": "2026-10-14T16:12:42.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "papers:2610.18813",
       "source": "papers",
       "title": "Self-Evolving Agent Harness",
@@ -1537,19 +1524,16 @@
       "alsoOn": []
     },
     {
-      "id": "arxiv:2610.22330v1",
-      "source": "arxiv",
-      "title": "Designing Transformers for Continuous Diffusion Language Models",
-      "blurb": "Continuous diffusion language models (CDLMs) offer an alternative approach to parallel language generation; however, most existing studies directly use transformer architectures from either…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22330v1",
-      "publishedAt": "2026-10-15T17:52:31.000Z",
+      "id": "hfblog:https://huggingface.co/blog/allenai/hiro-acev2",
+      "source": "hfblog",
+      "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
+      "blurb": null,
+      "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Y8t8GnfI2lUa40iX4_sxA.png",
+      "url": "https://huggingface.co/blog/allenai/hiro-acev2",
+      "publishedAt": "2026-10-14T16:12:42.000Z",
       "score": null,
       "scoreLabel": null,
-      "meta": {
-        "category": "cs.AI",
-        "authors": 5
-      },
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -1581,6 +1565,22 @@
       },
       "alsoOn": [],
       "image": null
+    },
+    {
+      "id": "arxiv:2610.22330v1",
+      "source": "arxiv",
+      "title": "Designing Transformers for Continuous Diffusion Language Models",
+      "blurb": "Continuous diffusion language models (CDLMs) offer an alternative approach to parallel language generation; however, most existing studies directly use transformer architectures from either…",
+      "image": null,
+      "url": "http://arxiv.org/abs/2610.22330v1",
+      "publishedAt": "2026-10-15T17:52:31.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.AI",
+        "authors": 5
+      },
+      "alsoOn": []
     },
     {
       "id": "verge:https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
@@ -1838,7 +1838,7 @@
       "title": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "publishedAt": "2026-10-01T04:34:57.000Z",
-      "score": 667,
+      "score": 669,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 9620,
@@ -1887,25 +1887,12 @@
       "image": "https://opengraph.githubassets.com/1/datalab-to/indra",
       "url": "https://github.com/datalab-to/indra",
       "publishedAt": "2026-10-13T11:07:11.000Z",
-      "score": 613,
+      "score": 614,
       "scoreLabel": "stars",
       "meta": {
         "repo": "datalab-to/indra",
         "language": "Python"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "nvidia:https://blogs.nvidia.com/blog/ec-scientific-computing-pledge/",
-      "source": "nvidia",
-      "title": "NVIDIA Expands Advanced Technology Access for Europe’s Scientific Community Through Open Learning Resources, Collaborations and Compute",
-      "blurb": "Much of today’s scientific progress begins with computation. But turning accelerated computing’s potential into scientific progress — modeling climate systems, designing molecules…",
-      "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/ai-in-science-enablers-1920x1080-1.jpg",
-      "url": "https://blogs.nvidia.com/blog/ec-scientific-computing-pledge/",
-      "publishedAt": "2026-10-15T10:00:12.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -1924,6 +1911,19 @@
       "alsoOn": []
     },
     {
+      "id": "nvidia:https://blogs.nvidia.com/blog/ec-scientific-computing-pledge/",
+      "source": "nvidia",
+      "title": "NVIDIA Expands Advanced Technology Access for Europe’s Scientific Community Through Open Learning Resources, Collaborations and Compute",
+      "blurb": "Much of today’s scientific progress begins with computation. But turning accelerated computing’s potential into scientific progress — modeling climate systems, designing molecules…",
+      "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/ai-in-science-enablers-1920x1080-1.jpg",
+      "url": "https://blogs.nvidia.com/blog/ec-scientific-computing-pledge/",
+      "publishedAt": "2026-10-15T10:00:12.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "simonw:https://simonwillison.net/2026/Oct/14/tree-appreciator/",
       "source": "simonw",
       "title": "Tree Appreciator",
@@ -1935,22 +1935,6 @@
       "scoreLabel": null,
       "meta": {
         "category": "game-design"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "arxiv:2610.22319v1",
-      "source": "arxiv",
-      "title": "A team of Gemini 4 Argon agents beats Minecraft",
-      "blurb": "We placed four Gemini 4 Argon agents in a sandboxed Minecraft survival world and gave them one goal: defeat the Ender Dragon. Each agent controlled a player via an open-source library…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22319v1",
-      "publishedAt": "2026-10-15T17:51:32.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.AI",
-        "authors": 3
       },
       "alsoOn": []
     },
@@ -1978,6 +1962,22 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22319v1",
+      "source": "arxiv",
+      "title": "A team of Gemini 4 Argon agents beats Minecraft",
+      "blurb": "We placed four Gemini 4 Argon agents in a sandboxed Minecraft survival world and gave them one goal: defeat the Ender Dragon. Each agent controlled a player via an open-source library…",
+      "image": null,
+      "url": "http://arxiv.org/abs/2610.22319v1",
+      "publishedAt": "2026-10-15T17:51:32.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.AI",
+        "authors": 3
+      },
       "alsoOn": []
     },
     {
@@ -2023,22 +2023,6 @@
       "alsoOn": []
     },
     {
-      "id": "gh:repoboost-hq/github-star-benchmarks",
-      "source": "gh",
-      "title": "repoboost-hq/github-star-benchmarks",
-      "blurb": "AI research dataset on GitHub stars: 32.6M starred repositories, star thresholds (100/1k/10k/100k), language and age cohorts, plus star-buying and fake-star research context from ICSE 2026…",
-      "image": "https://opengraph.githubassets.com/1/repoboost-hq/github-star-benchmarks",
-      "url": "https://github.com/repoboost-hq/github-star-benchmarks",
-      "publishedAt": "2026-10-18T06:19:48.000Z",
-      "score": 73,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "repoboost-hq/github-star-benchmarks",
-        "language": "Python"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "hf:LiquidAI/LFM2.5-24B-A2B",
       "source": "hf",
       "title": "LiquidAI/LFM2.5-24B-A2B",
@@ -2055,6 +2039,22 @@
       "blurb": "LFM2.5-24B-A2B is a 24B-parameter reasoning model with only 2B active parameters, built for fast, private agents on-device. It is the largest and final model in the LFM2.5 family, which now…"
     },
     {
+      "id": "gh:repoboost-hq/github-star-benchmarks",
+      "source": "gh",
+      "title": "repoboost-hq/github-star-benchmarks",
+      "blurb": "AI research dataset on GitHub stars: 32.6M starred repositories, star thresholds (100/1k/10k/100k), language and age cohorts, plus star-buying and fake-star research context from ICSE 2026…",
+      "image": "https://opengraph.githubassets.com/1/repoboost-hq/github-star-benchmarks",
+      "url": "https://github.com/repoboost-hq/github-star-benchmarks",
+      "publishedAt": "2026-10-18T06:19:48.000Z",
+      "score": 73,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "repoboost-hq/github-star-benchmarks",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "gh:thesysdev/open-intelligent-ui",
       "source": "gh",
       "title": "thesysdev/open-intelligent-ui",
@@ -2062,7 +2062,7 @@
       "image": "https://opengraph.githubassets.com/1/thesysdev/open-intelligent-ui",
       "url": "https://github.com/thesysdev/open-intelligent-ui",
       "publishedAt": "2026-10-08T05:37:45.000Z",
-      "score": 532,
+      "score": 533,
       "scoreLabel": "stars",
       "meta": {
         "repo": "thesysdev/open-intelligent-ui",
@@ -2268,7 +2268,7 @@
       "image": "https://opengraph.githubassets.com/1/hanzohanzhe/Grandet",
       "url": "https://github.com/hanzohanzhe/Grandet",
       "publishedAt": "2026-10-05T06:50:33.000Z",
-      "score": 356,
+      "score": 357,
       "scoreLabel": "stars",
       "meta": {
         "repo": "hanzohanzhe/Grandet",
@@ -2461,16 +2461,18 @@
       "alsoOn": []
     },
     {
-      "id": "tc:https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
-      "source": "tc",
-      "title": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
-      "blurb": "Counterfeiters are getting better at replicating brands' marks and passing off dupes, known as \"superfakes,\" as genuine items. A startup called Veritas wants to tackle the problem with its…",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Tiffany-Crown-e1791967522628.jpeg?resize=1200,675",
-      "url": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
-      "publishedAt": "2026-10-16T14:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
+      "id": "papers:2610.20731",
+      "source": "papers",
+      "title": "WorldCast: Exploring Intelligent Visual Generation in World State Prediction",
+      "blurb": "Humans interpret multimodal observations of the world and forecast how it will evolve. Recent multimodal generative systems have demonstrated similar capabilities: they can integrate multimodal context and synthesize visual outputs that depict changes in the world. To characterize this emerging trajectory, we organize model capabilities into a four-level hierarchy and discover that higher-level tasks remain relatively underexplored despite model progress. To bridge this gap, we explore model performance on multi-step world state prediction, a high-level task that requires models to forecast successive future world states from multimodal observations and diverse references. Such a task requires models to possess entangled understanding and generation capabilities, as well as extensive world knowledge to translate human action sequences, physical transformations, and abstract visual reasoning into coherent visual outputs. We introduce WorldCast, a benchmark comprising 320 manually designed cases across eight categories, and evaluate 12 representative models. The conducted experiments yield three key insights: (a) advances in frontier models are rapidly pushing the boundaries of intelligent world modeling, with the GPT-Image-2.5 System scoring 72.8 and demonstrating early-stage visual state prediction capabilities on real-world tasks; (b) WorldCast reveals substantial gaps between models: even Nano Banana Pro reaches only 42.8 and the best open-source model scores 20.1, with deficits in handling complex context, entangled references, and reasoning-heavy tasks; (c) strong generative models effectively draw on the capabilities of their underlying language models. These findings highlight the need for multimodal generative models that are capable of dynamic planning and reasoning while also being deeply unified to faithfully simulate real-world states.",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.20731.png",
+      "url": "https://huggingface.co/papers/2610.20731",
+      "publishedAt": "2026-10-13T20:00:00.000Z",
+      "score": 30,
+      "scoreLabel": "upvotes",
+      "meta": {
+        "comments": 2
+      },
       "alsoOn": []
     },
     {
@@ -2489,18 +2491,16 @@
       "alsoOn": []
     },
     {
-      "id": "papers:2610.20731",
-      "source": "papers",
-      "title": "WorldCast: Exploring Intelligent Visual Generation in World State Prediction",
-      "blurb": "Humans interpret multimodal observations of the world and forecast how it will evolve. Recent multimodal generative systems have demonstrated similar capabilities: they can integrate multimodal context and synthesize visual outputs that depict changes in the world. To characterize this emerging trajectory, we organize model capabilities into a four-level hierarchy and discover that higher-level tasks remain relatively underexplored despite model progress. To bridge this gap, we explore model performance on multi-step world state prediction, a high-level task that requires models to forecast successive future world states from multimodal observations and diverse references. Such a task requires models to possess entangled understanding and generation capabilities, as well as extensive world knowledge to translate human action sequences, physical transformations, and abstract visual reasoning into coherent visual outputs. We introduce WorldCast, a benchmark comprising 320 manually designed cases across eight categories, and evaluate 12 representative models. The conducted experiments yield three key insights: (a) advances in frontier models are rapidly pushing the boundaries of intelligent world modeling, with the GPT-Image-2.5 System scoring 72.8 and demonstrating early-stage visual state prediction capabilities on real-world tasks; (b) WorldCast reveals substantial gaps between models: even Nano Banana Pro reaches only 42.8 and the best open-source model scores 20.1, with deficits in handling complex context, entangled references, and reasoning-heavy tasks; (c) strong generative models effectively draw on the capabilities of their underlying language models. These findings highlight the need for multimodal generative models that are capable of dynamic planning and reasoning while also being deeply unified to faithfully simulate real-world states.",
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.20731.png",
-      "url": "https://huggingface.co/papers/2610.20731",
-      "publishedAt": "2026-10-13T20:00:00.000Z",
-      "score": 30,
-      "scoreLabel": "upvotes",
-      "meta": {
-        "comments": 2
-      },
+      "id": "tc:https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
+      "source": "tc",
+      "title": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
+      "blurb": "Counterfeiters are getting better at replicating brands' marks and passing off dupes, known as \"superfakes,\" as genuine items. A startup called Veritas wants to tackle the problem with its…",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Tiffany-Crown-e1791967522628.jpeg?resize=1200,675",
+      "url": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
+      "publishedAt": "2026-10-16T14:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
