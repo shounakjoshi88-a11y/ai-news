@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T17:46:41Z",
+  "generatedAt": "2026-10-18T17:51:49Z",
   "sources": [
     {
       "id": "hn",
@@ -221,9 +221,9 @@
     {
       "id": "register",
       "name": "The Register",
-      "status": "ok",
-      "count": 50,
-      "error": null
+      "status": "error",
+      "count": 0,
+      "error": "returned no items"
     },
     {
       "id": "techreview",
@@ -389,9 +389,9 @@
     {
       "id": "gizmodo",
       "name": "Gizmodo",
-      "status": "ok",
-      "count": 20,
-      "error": null
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 403"
     },
     {
       "id": "nine5google",
@@ -594,7 +594,7 @@
       "source": "techmeme",
       "title": "Sources: HomeView units sat in warehouses for months; Apple plans a Nov. 6 store reset, likely for new Macs; iPhone Duo preorder mess could boost 18 Pro sales …",
       "blurb": "Mark Gurman / Bloomberg : Sources: HomeView units sat in warehouses for months; Apple plans a Nov. 6 store reset, likely for new Macs; iPhone Duo preorder mess could boost 18 Pro sales…",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iXiE5svOJdSs/v0/1200x800.jpg",
+      "image": null,
       "url": "https://www.techmeme.com/261018/p8#a261018p8",
       "publishedAt": "2026-10-18T15:30:01.000Z",
       "score": null,
@@ -907,7 +907,7 @@
       "source": "marktechpost",
       "title": "Google Open-Sources Harness2, a Recursive Agent Harnessing Framework",
       "blurb": "Google Research released Harness2, an Apache-2.0 framework that rewrites an agent's harness at test time. One refinement step lifted GLM-5 by 11.5 points on WorkBuddy-Bench with no weight…",
-      "image": null,
+      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-6-scaled.png",
       "url": "https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework/",
       "publishedAt": "2026-10-18T08:15:04.000Z",
       "score": null,
@@ -920,7 +920,7 @@
       "source": "techmeme",
       "title": "An interview with Apple's new VP of the App Store, Carson Oliver, on Apple's gaming vision, Apple Arcade, providing tools for indie game developers, and more (…",
       "blurb": "Giovanni Colantonio / Polygon : An interview with Apple's new VP of the App Store, Carson Oliver, on Apple's gaming vision, Apple Arcade, providing tools for indie game developers, and more…",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/indie-games-week-app-store.jpg?w=1200&h=675&fit=crop",
+      "image": null,
       "url": "https://www.techmeme.com/261018/p7#a261018p7",
       "publishedAt": "2026-10-18T11:15:00.000Z",
       "score": null,
@@ -1099,7 +1099,7 @@
       "source": "marktechpost",
       "title": "How to Make Zero-Training Tabular Predictions with NVIDIA Structured Data Models",
       "blurb": "In this tutorial, we implement Structured Data Models, NVIDIA’s new library that puts several pretrained foundation models for tables behind one PyTorch interface, and use it to make…",
-      "image": null,
+      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-5-1024x768.png",
       "url": "https://www.marktechpost.com/2026/10/17/how-to-make-zero-training-tabular-predictions-with-nvidia-structured-data-models/",
       "publishedAt": "2026-10-18T05:56:05.000Z",
       "score": null,
@@ -1112,7 +1112,7 @@
       "source": "techmeme",
       "title": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein says ~35% of the planned US data center pipeline is credible…",
       "blurb": "Financial Times : RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein says ~35% of the planned US data center pipeline is credible — A vast…",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F7bd165b9-9b2e-4e8c-83f1-70e5b0dc9426.jpg?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1",
+      "image": null,
       "url": "https://www.techmeme.com/261018/p6#a261018p6",
       "publishedAt": "2026-10-18T06:15:01.000Z",
       "score": null,
@@ -1207,7 +1207,7 @@
       "source": "techmeme",
       "title": "AI debt worries mount as CoreWeave's bond yield tops 15%, insuring SoftBank debt gets pricier, and some Oracle debt trades near 80 to 90 cents on the dollar (N…",
       "blurb": "New York Times : AI debt worries mount as CoreWeave's bond yield tops 15%, insuring SoftBank debt gets pricier, and some Oracle debt trades near 80 to 90 cents on the dollar — Debt trouble…",
-      "image": "https://static01.nyt.com/images/2026/10/16/multimedia/00biz-data-center-debt-kmwt/00biz-data-center-debt-kmwt-facebookJumbo.jpg",
+      "image": null,
       "url": "https://www.techmeme.com/261018/p5#a261018p5",
       "publishedAt": "2026-10-18T06:10:04.000Z",
       "score": null,
@@ -1376,7 +1376,7 @@
       "score": 110,
       "scoreLabel": "points",
       "meta": {
-        "comments": 92
+        "comments": 93
       },
       "alsoOn": [
         "verge:https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
@@ -1384,26 +1384,26 @@
       "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK414_AI_CVIRGINIA_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
     },
     {
-      "id": "techmeme:https://www.techmeme.com/261018/p4#a261018p4",
-      "source": "techmeme",
-      "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex, UK, data center, which may not get grid power until the 2030…",
-      "blurb": "James Titcomb / Telegraph : Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex, UK, data center, which may not get grid power until the 2030s…",
-      "image": "https://www.telegraph.co.uk/content/dam/business/2026/10/16/TELEMMGLPICT000507649137_17921721386890_trans_NvBQzQNjv4BqP2bie5QPKGvaXrJaymJ8nZMVLLha8zPj14kJ046OG20.jpeg?impolicy=OG-Standard",
-      "url": "https://www.techmeme.com/261018/p4#a261018p4",
-      "publishedAt": "2026-10-18T06:05:00.000Z",
+      "id": "marktechpost:https://www.marktechpost.com/2026/10/17/voxel51-3-0-physical-ai-data-platform/",
+      "source": "marktechpost",
+      "title": "Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI",
+      "blurb": "Voxel51 3.0 merges search, curation, annotation and evaluation of multimodal sensor data into one platform for physical AI teams. It adds Voxel51 Agent with 45+ MCP tools, dataset…",
+      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-4-scaled.png",
+      "url": "https://www.marktechpost.com/2026/10/17/voxel51-3-0-physical-ai-data-platform/",
+      "publishedAt": "2026-10-18T04:06:33.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
       "alsoOn": []
     },
     {
-      "id": "marktechpost:https://www.marktechpost.com/2026/10/17/voxel51-3-0-physical-ai-data-platform/",
-      "source": "marktechpost",
-      "title": "Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI",
-      "blurb": "Voxel51 3.0 merges search, curation, annotation and evaluation of multimodal sensor data into one platform for physical AI teams. It adds Voxel51 Agent with 45+ MCP tools, dataset…",
+      "id": "techmeme:https://www.techmeme.com/261018/p4#a261018p4",
+      "source": "techmeme",
+      "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex, UK, data center, which may not get grid power until the 2030…",
+      "blurb": "James Titcomb / Telegraph : Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex, UK, data center, which may not get grid power until the 2030s…",
       "image": null,
-      "url": "https://www.marktechpost.com/2026/10/17/voxel51-3-0-physical-ai-data-platform/",
-      "publishedAt": "2026-10-18T04:06:33.000Z",
+      "url": "https://www.techmeme.com/261018/p4#a261018p4",
+      "publishedAt": "2026-10-18T06:05:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -1677,7 +1677,7 @@
       "source": "techmeme",
       "title": "Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zone II, CC.VC, and others, a source says at a $245M valuation…",
       "blurb": "Nick Lichtenberg / Fortune : Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zone II, CC.VC, and others, a source says at a $245M valuation…",
-      "image": "https://fortune.com/img-assets/wp-content/uploads/2026/10/1788884365250.jpg?resize=1200,600",
+      "image": null,
       "url": "https://www.techmeme.com/261018/p3#a261018p3",
       "publishedAt": "2026-10-18T05:40:01.000Z",
       "score": null,
@@ -1736,19 +1736,6 @@
       "image": "https://www.bleepstatic.com/content/hl-images/2026/10/15/Drupal.jpg",
       "url": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
       "publishedAt": "2026-10-17T14:32:48.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "gizmodo:https://gizmodo.com/meta-to-literally-every-business-user-nice-website-you-got-there-2000827266",
-      "source": "gizmodo",
-      "title": "Meta to Literally Every Business User: Nice Website You Got There",
-      "blurb": "That's right: If a business uses Meta for any commercial purpose, Meta's new terms say it can do almost anything it wants with content from that business's website, like feeding it to Muse.",
-      "image": "https://gizmodo.com/app/uploads/2026/09/GettyImages-2297798327-1280x854.jpg",
-      "url": "https://gizmodo.com/meta-to-literally-every-business-user-nice-website-you-got-there-2000827266",
-      "publishedAt": "2026-10-17T00:57:52.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -1841,7 +1828,7 @@
       "source": "techmeme",
       "title": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI counterpart…",
       "blurb": "Cristina Criddle / Financial Times : Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI…",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fd0c5836a-e180-41a3-926e-d97eee0d614a.jpg?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1",
+      "image": null,
       "url": "https://www.techmeme.com/261018/p2#a261018p2",
       "publishedAt": "2026-10-18T05:10:01.000Z",
       "score": null,
@@ -1863,19 +1850,6 @@
       "alsoOn": []
     },
     {
-      "id": "lesswrong:https://www.lesswrong.com/posts/8S5wwiJawN9v2dbmu/preparing-for-a-cybersecurity-catastrophe",
-      "source": "lesswrong",
-      "title": "Preparing for a Cybersecurity Catastrophe",
-      "blurb": "In light of the recent spate of AI-assisted hacks, some of the shortfalls with our current cybersecurity catastrophe response capability need to be urgently addressed. In this piece, I look…",
-      "image": "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1654295382/new_mississippi_river_fjdmww.jpg",
-      "url": "https://www.lesswrong.com/posts/8S5wwiJawN9v2dbmu/preparing-for-a-cybersecurity-catastrophe",
-      "publishedAt": "2026-10-18T16:10:16.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "aibusiness:https://aibusiness.com/generative-ai/open-source-on-device-strategy-behind-nvidia-s-new-ai-models",
       "source": "aibusiness",
       "title": "Open source and on device: the strategy behind Nvidia’s new AI models",
@@ -1883,6 +1857,19 @@
       "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltc08998e9ab17843d/6ad26d21c138157a4005cfb4/Nvidia.jpg?width=720&quality=80&disable=upscale",
       "url": "https://aibusiness.com/generative-ai/open-source-on-device-strategy-behind-nvidia-s-new-ai-models",
       "publishedAt": "2026-10-16T18:26:14.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "lesswrong:https://www.lesswrong.com/posts/8S5wwiJawN9v2dbmu/preparing-for-a-cybersecurity-catastrophe",
+      "source": "lesswrong",
+      "title": "Preparing for a Cybersecurity Catastrophe",
+      "blurb": "In light of the recent spate of AI-assisted hacks, some of the shortfalls with our current cybersecurity catastrophe response capability need to be urgently addressed. In this piece, I look…",
+      "image": "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1654295382/new_mississippi_river_fjdmww.jpg",
+      "url": "https://www.lesswrong.com/posts/8S5wwiJawN9v2dbmu/preparing-for-a-cybersecurity-catastrophe",
+      "publishedAt": "2026-10-18T16:10:16.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2012,21 +1999,6 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50140462",
-      "source": "hn",
-      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
-      "blurb": "Six AI assistants pursued an impossible £350 train refund in a simulated world, escalating to government officials, legal clinics and bank chargebacks.",
-      "url": "https://www.vals.ai/blogs/impossible-refund",
-      "publishedAt": "2026-10-18T12:22:58.000Z",
-      "score": 60,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 58
-      },
-      "alsoOn": [],
-      "image": "https://www.vals.ai/blogs/2026-10-15-impossible-refund/hero-vals.webp"
-    },
-    {
       "id": "pytorch:https://pytorch.org/blog/bringing-elastically-deterministic-data-loading-to-torchtitan-with-zephon/",
       "source": "pytorch",
       "title": "Bringing Elastically Deterministic Data Loading to TorchTitan with Zephon",
@@ -2040,17 +2012,19 @@
       "alsoOn": []
     },
     {
-      "id": "gizmodo:https://gizmodo.com/after-muse-launch-u-s-banks-are-saying-hell-no-to-ai-agents-moving-money-2000827221",
-      "source": "gizmodo",
-      "title": "After Muse Launch, U.S. Banks Are Saying Hell No to AI Agents Moving Money",
-      "blurb": "Fortunately, Charles Schwab CEO Rick Wurster says only a relative handful of dummies are trying to.",
-      "image": "https://gizmodo.com/app/uploads/2026/10/FrowningMuse-1280x853.jpg",
-      "url": "https://gizmodo.com/after-muse-launch-u-s-banks-are-saying-hell-no-to-ai-agents-moving-money-2000827221",
-      "publishedAt": "2026-10-16T23:15:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
+      "id": "hn:50140462",
+      "source": "hn",
+      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
+      "blurb": "Six AI assistants pursued an impossible £350 train refund in a simulated world, escalating to government officials, legal clinics and bank chargebacks.",
+      "url": "https://www.vals.ai/blogs/impossible-refund",
+      "publishedAt": "2026-10-18T12:22:58.000Z",
+      "score": 60,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 61
+      },
+      "alsoOn": [],
+      "image": "https://www.vals.ai/blogs/2026-10-15-impossible-refund/hero-vals.webp"
     },
     {
       "id": "nine5google:https://9to5google.com/2026/10/16/pixelated-121-is-googlebook-the-first-real-post-smartphone-pc/",
@@ -2069,14 +2043,29 @@
       "id": "sifted:https://sifted.eu/articles/harry-stebbings-podcast/",
       "source": "sifted",
       "title": "Harry Stebbings on 996 regrets, political ambitions and building a personal brand",
-      "blurb": null,
-      "image": null,
+      "blurb": "Recorded live at Sifted Summit in October, this conversation sees Harry sit down with host Freya Pratty to talk 996 and political ambitions.",
+      "image": "https://images.sifted.eu/cdn-cgi/image/width=1280,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/16151339/Harry-Freya-HSBC-Long.png",
       "url": "https://sifted.eu/articles/harry-stebbings-podcast/",
       "publishedAt": "2026-10-16T15:16:15.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
       "alsoOn": []
+    },
+    {
+      "id": "hn:50143218",
+      "source": "hn",
+      "title": "British Airways: Filming Crew W Meta Glasses Could Get Your Tickets Cancelled",
+      "blurb": "British Airways prohibits filming crew without consent, including with Meta smart glasses. Violations could jeopardize your remaining flights.",
+      "url": "https://liveandletsfly.com/british-airways-meta-smart-glasses-filming/",
+      "publishedAt": "2026-10-18T17:27:30.000Z",
+      "score": 37,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 23
+      },
+      "alsoOn": [],
+      "image": "https://liveandletsfly.com/wp-content/uploads/2026/10/British-Airways-Meta-Glasses.jpeg"
     },
     {
       "id": "techeu:https://tech.eu/2026/10/16/id-finance-lands-545m-uk-launches-refugee-focused-vc-fund-and-the-race-to-save-eu-inc/",
@@ -2243,19 +2232,6 @@
       "alsoOn": []
     },
     {
-      "id": "marktechpost:https://www.marktechpost.com/2026/10/17/meet-kyutai-reki-the-2-4b-vla-model-bringing-efficient-memory-to-robot-manipulation/",
-      "source": "marktechpost",
-      "title": "Meet Kyutai REKI: The 2.4B VLA Model Bringing Efficient Memory to Robot Manipulation",
-      "blurb": "Kyutai, with Inria and École des Ponts, has released REKI, a 2.4B vision-language-action model (VLA) for robot manipulation. The REKI vision-language-action model is pretrained only on…",
-      "image": null,
-      "url": "https://www.marktechpost.com/2026/10/17/meet-kyutai-reki-the-2-4b-vla-model-bringing-efficient-memory-to-robot-manipulation/",
-      "publishedAt": "2026-10-17T20:22:11.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "dair:https://nlp.elvissaravia.com/p/ai-agents-weekly-muse-spark-open",
       "source": "dair",
       "title": "🤖 AI Agents Weekly: Muse Spark Open, Gemini Agents Beat Minecraft, OpenCode 2.0, Nemotron 3.5 Super VL, OpenRouter Armor, Claude OpenTelemetry, and More",
@@ -2269,6 +2245,19 @@
       "alsoOn": [
         "hn:50107379"
       ]
+    },
+    {
+      "id": "marktechpost:https://www.marktechpost.com/2026/10/17/meet-kyutai-reki-the-2-4b-vla-model-bringing-efficient-memory-to-robot-manipulation/",
+      "source": "marktechpost",
+      "title": "Meet Kyutai REKI: The 2.4B VLA Model Bringing Efficient Memory to Robot Manipulation",
+      "blurb": "Kyutai, with Inria and École des Ponts, has released REKI, a 2.4B vision-language-action model (VLA) for robot manipulation. The REKI vision-language-action model is pretrained only on…",
+      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-3-scaled.png",
+      "url": "https://www.marktechpost.com/2026/10/17/meet-kyutai-reki-the-2-4b-vla-model-bringing-efficient-memory-to-robot-manipulation/",
+      "publishedAt": "2026-10-17T20:22:11.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "guardian:https://www.theguardian.com/australia-news/audio/2026/oct/18/black-box-the-chatbots-what-i-saw-at-the-double-six-ranch-ep-6-full-story-podcast",
@@ -2286,6 +2275,19 @@
       "alsoOn": []
     },
     {
+      "id": "restofworld:https://restofworld.org/2026/china-open-weight-models/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+      "source": "restofworld",
+      "title": "Western open-weight models still can’t beat China",
+      "blurb": "Chinese open-weight AI models offer high capability at significantly lower costs than U.S. frontier systems, but face monetization and compute challenges, experts said at a Rest of World…",
+      "image": "https://fastly.restofworld.org/uploads/2026/10/illo_chinese_US_weight.jpg?width=380&dpr=2&crop=16:9",
+      "url": "https://restofworld.org/2026/china-open-weight-models/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+      "publishedAt": "2026-10-16T10:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "macrumors:https://www.macrumors.com/2026/10/17/apple-hires-former-meta-lawyer/",
       "source": "macrumors",
       "title": "Apple Hires Former Meta Lawyer to Oversee Global Litigation",
@@ -2298,19 +2300,6 @@
       "meta": {
         "category": "Bloomberg"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "restofworld:https://restofworld.org/2026/china-open-weight-models/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-      "source": "restofworld",
-      "title": "Western open-weight models still can’t beat China",
-      "blurb": "Chinese open-weight AI models offer high capability at significantly lower costs than U.S. frontier systems, but face monetization and compute challenges, experts said at a Rest of World…",
-      "image": "https://fastly.restofworld.org/uploads/2026/10/illo_chinese_US_weight.jpg?width=380&dpr=2&crop=16:9",
-      "url": "https://restofworld.org/2026/china-open-weight-models/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-      "publishedAt": "2026-10-16T10:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -2340,19 +2329,6 @@
       "alsoOn": []
     },
     {
-      "id": "slashdot:https://yro.slashdot.org/story/26/10/18/0323207/saudi-openai-employees-arrest-revives-fears-us-tech-companies-are-hiring-spies?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-      "source": "slashdot",
-      "title": "Saudi OpenAI Employee's Arrest Revives Fears US Tech Companies Are Hiring Spies",
-      "blurb": "That Saudi national working at OpenAI and arrested by the FBI \"has not been charged with foreign espionage,\" writes the Washington Post, \"and the U.S. government has not said whether he was…",
-      "image": "https://a.fsdn.com/sd/topics/crime_64.png",
-      "url": "https://yro.slashdot.org/story/26/10/18/0323207/saudi-openai-employees-arrest-revives-fears-us-tech-companies-are-hiring-spies?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-      "publishedAt": "2026-10-18T04:34:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "aibusiness:https://aibusiness.com/robotics/untitled",
       "source": "aibusiness",
       "title": "Robots can't talk to each other yet -- that's a big AI bottleneck",
@@ -2360,6 +2336,19 @@
       "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt715f90850f843480/6ad23f60fd279747f0b9dbaa/GettyImages-2022302070.jpg_Robots.jpg?width=720&quality=80&disable=upscale",
       "url": "https://aibusiness.com/robotics/untitled",
       "publishedAt": "2026-10-16T14:57:10.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "slashdot:https://yro.slashdot.org/story/26/10/18/0323207/saudi-openai-employees-arrest-revives-fears-us-tech-companies-are-hiring-spies?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+      "source": "slashdot",
+      "title": "Saudi OpenAI Employee's Arrest Revives Fears US Tech Companies Are Hiring Spies",
+      "blurb": "That Saudi national working at OpenAI and arrested by the FBI \"has not been charged with foreign espionage,\" writes the Washington Post, \"and the U.S. government has not said whether he was…",
+      "image": "https://a.fsdn.com/sd/topics/crime_64.png",
+      "url": "https://yro.slashdot.org/story/26/10/18/0323207/saudi-openai-employees-arrest-revives-fears-us-tech-companies-are-hiring-spies?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+      "publishedAt": "2026-10-18T04:34:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2474,19 +2463,6 @@
       "alsoOn": []
     },
     {
-      "id": "techmeme:https://www.techmeme.com/261018/p1#a261018p1",
-      "source": "techmeme",
-      "title": "GTCR and Elliott agree to acquire and take private CCC, a Nasdaq-listed car insurance software provider, for $4.6B; the deal values CCC at $6.1B including debt…",
-      "blurb": "Bloomberg : GTCR and Elliott agree to acquire and take private CCC, a Nasdaq-listed car insurance software provider, for $4.6B; the deal values CCC at $6.1B including debt — GTCR and…",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iJ98L3WjUF5Y/v2/1200x800.jpg",
-      "url": "https://www.techmeme.com/261018/p1#a261018p1",
-      "publishedAt": "2026-10-18T04:35:01.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "aim:https://analyticsindiamag.com/ai-news/cert-in-warns-ai-agents-are-accessing-indian-systems-without-authorisation",
       "source": "aim",
       "title": "CERT-In Warns AI Agents Are Accessing Indian Systems Without Authorisation",
@@ -2499,6 +2475,19 @@
       "meta": {
         "category": "AI News"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "techmeme:https://www.techmeme.com/261018/p1#a261018p1",
+      "source": "techmeme",
+      "title": "GTCR and Elliott agree to acquire and take private CCC, a Nasdaq-listed car insurance software provider, for $4.6B; the deal values CCC at $6.1B including debt…",
+      "blurb": "Bloomberg : GTCR and Elliott agree to acquire and take private CCC, a Nasdaq-listed car insurance software provider, for $4.6B; the deal values CCC at $6.1B including debt — GTCR and…",
+      "image": null,
+      "url": "https://www.techmeme.com/261018/p1#a261018p1",
+      "publishedAt": "2026-10-18T04:35:01.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -2637,19 +2626,6 @@
       "meta": {
         "category": "Science"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "gizmodo:https://gizmodo.com/137-million-has-been-spent-on-ai-generated-ads-ahead-of-midterms-only-27-included-a-disclaimer-2000827138",
-      "source": "gizmodo",
-      "title": "$137 Million Has Been Spent on AI-Generated Ads Ahead of Midterms. Only 27% Included a Disclaimer",
-      "blurb": "Republicans are leading the spending on AI-generated political ads, while Democrats are more wary of potential backlash.",
-      "image": "https://gizmodo.com/app/uploads/2025/12/voting_machine-1280x853.jpg",
-      "url": "https://gizmodo.com/137-million-has-been-spent-on-ai-generated-ads-ahead-of-midterms-only-27-included-a-disclaimer-2000827138",
-      "publishedAt": "2026-10-16T20:10:12.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -2885,8 +2861,8 @@
       "id": "sifted:https://sifted.eu/articles/open-weight-models-sovereignty-ai-safety/",
       "source": "sifted",
       "title": "Are open-weight AI models safe?",
-      "blurb": null,
-      "image": null,
+      "blurb": "Open models have become Europe’s best card to play in the AI race, but some experts warn the systems come with significant safety risks",
+      "image": "https://images.sifted.eu/cdn-cgi/image/width=1920,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/15164838/mika-baumeister-J5yoGZLdpSI-unsplash.jpg",
       "url": "https://sifted.eu/articles/open-weight-models-sovereignty-ai-safety/",
       "publishedAt": "2026-10-16T05:00:57.000Z",
       "score": null,
@@ -2947,21 +2923,6 @@
       "alsoOn": []
     },
     {
-      "id": "macrumors:https://www.macrumors.com/2026/10/17/top-stories-apple-homeview-intro/",
-      "source": "macrumors",
-      "title": "Top Stories: Apple HomeView, New Apple TV and HomePod mini, and Sold-Out iPhone Duo",
-      "blurb": "It was another crazy busy week for Apple, headlined by Tuesday seeing the company take the wraps off of several home-related products as part of a \"Welcome home\" launch wave. And as if that…",
-      "image": "https://images.macrumors.com/article-new/2026/10/top-stories-2026-10-17.jpg",
-      "url": "https://www.macrumors.com/2026/10/17/top-stories-apple-homeview-intro/",
-      "publishedAt": "2026-10-17T13:00:11.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "Featured"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "databricks:https://www.databricks.com/blog/closing-binary-blind-spot-domain-knowledge-injection-llm-malware-triage-npm-packages",
       "source": "databricks",
       "title": "Closing the Binary Blind Spot: Domain-Knowledge Injection for LLM Malware Triage in npm Packages",
@@ -2973,6 +2934,21 @@
       "scoreLabel": null,
       "meta": {
         "category": "Cybersecurity"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "macrumors:https://www.macrumors.com/2026/10/17/top-stories-apple-homeview-intro/",
+      "source": "macrumors",
+      "title": "Top Stories: Apple HomeView, New Apple TV and HomePod mini, and Sold-Out iPhone Duo",
+      "blurb": "It was another crazy busy week for Apple, headlined by Tuesday seeing the company take the wraps off of several home-related products as part of a \"Welcome home\" launch wave. And as if that…",
+      "image": "https://images.macrumors.com/article-new/2026/10/top-stories-2026-10-17.jpg",
+      "url": "https://www.macrumors.com/2026/10/17/top-stories-apple-homeview-intro/",
+      "publishedAt": "2026-10-17T13:00:11.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "Featured"
       },
       "alsoOn": []
     },
@@ -3006,21 +2982,6 @@
         "category": "Uncategorized"
       },
       "alsoOn": []
-    },
-    {
-      "id": "hn:50143218",
-      "source": "hn",
-      "title": "British Airways: Filming Crew W Meta Glasses Could Get Your Tickets Cancelled",
-      "blurb": "British Airways prohibits filming crew without consent, including with Meta smart glasses. Violations could jeopardize your remaining flights.",
-      "url": "https://liveandletsfly.com/british-airways-meta-smart-glasses-filming/",
-      "publishedAt": "2026-10-18T17:27:30.000Z",
-      "score": 28,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 10
-      },
-      "alsoOn": [],
-      "image": "https://liveandletsfly.com/wp-content/uploads/2026/10/British-Airways-Meta-Glasses.jpeg"
     },
     {
       "id": "deepmind:https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
@@ -3062,19 +3023,6 @@
       "alsoOn": []
     },
     {
-      "id": "dcd:https://www.datacenterdynamics.com/en/news/plans-for-data-center-in-moncalieri-italy-put-on-hold-by-town-mayor/",
-      "source": "dcd",
-      "title": "Plans for data center in Moncalieri, Italy, put on hold by town mayor",
-      "blurb": "Before its application was halted, the project was billed as Italy’s ‘largest’ data center",
-      "image": "https://media.datacenterdynamics.com/media/images/rc24-turin-cloud-region.2e16d0ba.fill-750x500.png",
-      "url": "https://www.datacenterdynamics.com/en/news/plans-for-data-center-in-moncalieri-italy-put-on-hold-by-town-mayor/",
-      "publishedAt": "2026-10-17T09:00:36.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "scmp:https://www.scmp.com/tech/tech-trends/article/3371181/asml-eyes-hybrid-bonding-report-finds-chinese-firms-adopt-chip-packaging-technique?utm_source=rss_feed",
       "source": "scmp",
       "title": "ASML eyes hybrid bonding, report finds, as Chinese firms adopt chip packaging technique",
@@ -3082,6 +3030,19 @@
       "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/16/037b3c29-42ae-4da5-98e0-38333de32817_7ab76241.jpg?itok=keZrneUN&v=1792146449",
       "url": "https://www.scmp.com/tech/tech-trends/article/3371181/asml-eyes-hybrid-bonding-report-finds-chinese-firms-adopt-chip-packaging-technique?utm_source=rss_feed",
       "publishedAt": "2026-10-16T12:30:12.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "dcd:https://www.datacenterdynamics.com/en/news/plans-for-data-center-in-moncalieri-italy-put-on-hold-by-town-mayor/",
+      "source": "dcd",
+      "title": "Plans for data center in Moncalieri, Italy, put on hold by town mayor",
+      "blurb": "Before its application was halted, the project was billed as Italy’s ‘largest’ data center",
+      "image": "https://media.datacenterdynamics.com/media/images/rc24-turin-cloud-region.2e16d0ba.fill-750x500.png",
+      "url": "https://www.datacenterdynamics.com/en/news/plans-for-data-center-in-moncalieri-italy-put-on-hold-by-town-mayor/",
+      "publishedAt": "2026-10-17T09:00:36.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -3186,19 +3147,6 @@
       "alsoOn": []
     },
     {
-      "id": "techmeme:https://www.techmeme.com/261017/p21#a261017p21",
-      "source": "techmeme",
-      "title": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve…",
-      "blurb": "Bloomberg : Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve — More than 60…",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/im4ZtBjoW1Ss/v11/1200x790.jpg",
-      "url": "https://www.techmeme.com/261017/p21#a261017p21",
-      "publishedAt": "2026-10-18T03:50:01.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "mit:https://news.mit.edu/2026/state-of-supply-chain-sustainability-report-1015",
       "source": "mit",
       "title": "State of Supply Chain Sustainability Report finds corporate commitment at record high, but governance lags behind",
@@ -3226,6 +3174,19 @@
       "meta": {
         "category": "International trade"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "techmeme:https://www.techmeme.com/261017/p21#a261017p21",
+      "source": "techmeme",
+      "title": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve…",
+      "blurb": "Bloomberg : Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve — More than 60…",
+      "image": null,
+      "url": "https://www.techmeme.com/261017/p21#a261017p21",
+      "publishedAt": "2026-10-18T03:50:01.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -3257,19 +3218,6 @@
       "alsoOn": []
     },
     {
-      "id": "gizmodo:https://gizmodo.com/ai-agent-hacked-into-crypto-wallet-and-stole-funds-openai-says-2000826980",
-      "source": "gizmodo",
-      "title": "AI Agent Hacked Into Crypto Wallet and Stole Funds, OpenAI Says",
-      "blurb": "It questioned the ethics of what it was doing—before proceeding to do it.",
-      "image": "https://gizmodo.com/app/uploads/2026/10/ether-chatgpt-openAI-hack-1280x853.jpg",
-      "url": "https://gizmodo.com/ai-agent-hacked-into-crypto-wallet-and-stole-funds-openai-says-2000826980",
-      "publishedAt": "2026-10-16T17:20:51.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "techxplore:https://techxplore.com/news/2026-10-ai-agents-errors-software.html",
       "source": "techxplore",
       "title": "AI agents get better by anticipating errors in their own software changes",
@@ -3288,8 +3236,8 @@
       "id": "sifted:https://sifted.eu/articles/blurry-world-defence-tech-revenue-arr-vc/",
       "source": "sifted",
       "title": "The 'blurry' world of defence tech revenue",
-      "blurb": null,
-      "image": null,
+      "blurb": "VCs report some founders are misrepresenting or not being transparent about defence revenue",
+      "image": "https://content.sifted.eu/wp-content/uploads/2026/05/07164917/defence_tech_europe.webp",
       "url": "https://sifted.eu/articles/blurry-world-defence-tech-revenue-arr-vc/",
       "publishedAt": "2026-10-16T05:00:52.000Z",
       "score": null,
@@ -3801,23 +3749,10 @@
       "id": "sifted:https://sifted.eu/articles/reson8-unicorn-interview/",
       "source": "sifted",
       "title": "‘I’m 30. I’ve got one more shot’: Reson8’s founder wants to build a European AI giant",
-      "blurb": null,
+      "blurb": "After selling his healthcare company to Tandem Health, Thomas Kluiters is betting on voice AI — and says Europe’s founders need to think bigger",
       "image": null,
       "url": "https://sifted.eu/articles/reson8-unicorn-interview/",
       "publishedAt": "2026-10-16T05:00:46.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "tc:https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-      "source": "tc",
-      "title": "India becomes the latest country to report rogue AI agent activity",
-      "blurb": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/india-cyber-attack.jpg?w=612",
-      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-      "publishedAt": "2026-10-16T17:52:24.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -3849,6 +3784,19 @@
       "meta": {
         "comments": 2
       },
+      "alsoOn": []
+    },
+    {
+      "id": "tc:https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+      "source": "tc",
+      "title": "India becomes the latest country to report rogue AI agent activity",
+      "blurb": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/india-cyber-attack.jpg?w=612",
+      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+      "publishedAt": "2026-10-16T17:52:24.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -3990,6 +3938,19 @@
       "alsoOn": []
     },
     {
+      "id": "ghblog:https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/",
+      "source": "ghblog",
+      "title": "GitHub’s model for secret detection: Finding more secrets with less noise",
+      "blurb": "GitHub’s context-aware secret classifier improves detection quality, raises weighted acceptance by 11.5%, and reduces median scan execution time by 86%. The post GitHub’s model for secret…",
+      "image": null,
+      "url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/",
+      "publishedAt": "2026-10-13T17:56:33.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "arxiv:2610.22344v1",
       "source": "arxiv",
       "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
@@ -4006,19 +3967,6 @@
       "alsoOn": [
         "papers:2610.22344"
       ]
-    },
-    {
-      "id": "ghblog:https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/",
-      "source": "ghblog",
-      "title": "GitHub’s model for secret detection: Finding more secrets with less noise",
-      "blurb": "GitHub’s context-aware secret classifier improves detection quality, raises weighted acceptance by 11.5%, and reduces median scan execution time by 86%. The post GitHub’s model for secret…",
-      "image": null,
-      "url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/",
-      "publishedAt": "2026-10-13T17:56:33.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
     },
     {
       "id": "computerworld:https://www.computerworld.com/article/4236592/xbow-spent-40k-on-ai-and-cracked-google-chrome-wide-open.html",
@@ -4092,19 +4040,6 @@
       ]
     },
     {
-      "id": "dcd:https://www.datacenterdynamics.com/en/news/everton-football-club-launches-mvno-service/",
-      "source": "dcd",
-      "title": "Everton Football Club launches MVNO service",
-      "blurb": "The English football club has phoned it in",
-      "image": "https://media.datacenterdynamics.com/media/images/GettyImages-2269829484.2e16d0ba.fill-750x500.jpg",
-      "url": "https://www.datacenterdynamics.com/en/news/everton-football-club-launches-mvno-service/",
-      "publishedAt": "2026-10-17T08:00:26.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "papers:2610.22200",
       "source": "papers",
       "title": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
@@ -4117,6 +4052,19 @@
       "meta": {
         "comments": 4
       },
+      "alsoOn": []
+    },
+    {
+      "id": "dcd:https://www.datacenterdynamics.com/en/news/everton-football-club-launches-mvno-service/",
+      "source": "dcd",
+      "title": "Everton Football Club launches MVNO service",
+      "blurb": "The English football club has phoned it in",
+      "image": "https://media.datacenterdynamics.com/media/images/GettyImages-2269829484.2e16d0ba.fill-750x500.jpg",
+      "url": "https://www.datacenterdynamics.com/en/news/everton-football-club-launches-mvno-service/",
+      "publishedAt": "2026-10-17T08:00:26.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -4133,19 +4081,6 @@
       "alsoOn": []
     },
     {
-      "id": "thehackernews:https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
-      "source": "thehackernews",
-      "title": "China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers",
-      "blurb": "The China-nexus cyber espionage group tracked as Armory Castle (previously UNC5221 or Warp Panda) exploited a newly disclosed security flaw in BeyondTrust Remote Support (formerly Bomgar)…",
-      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic5zD5GBvYxe93igsDOMdwS6eyfDORIWio42Z9UY0enK0XKWYcQlLB9RLx3iO_V1xm8vqBxMVZ_R8Lt-xxOumO5_RIFN3hgB-yZyGGlVMypRx5lm2GJq-1c9cbzfRcjrMAIfBI67L4QUI-MwjjQjKL1RcgPnzFdYuAF3k1y2Ev-ppSmiG8sdQ5dbJkbjKR/s1600/beyond.jpg",
-      "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
-      "publishedAt": "2026-10-16T06:55:55.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "mozillaai:https://blog.mozilla.ai/building-the-missing-half/",
       "source": "mozillaai",
       "title": "Building the Missing Half",
@@ -4153,6 +4088,19 @@
       "image": "https://storage.ghost.io/c/68/76/6876f0af-8955-4de4-a637-a5e7cc399136/content/images/2026/10/Shift-AI-LinkedIn-3--1.jpg",
       "url": "https://blog.mozilla.ai/building-the-missing-half/",
       "publishedAt": "2026-10-13T13:28:31.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "thehackernews:https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
+      "source": "thehackernews",
+      "title": "China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers",
+      "blurb": "The China-nexus cyber espionage group tracked as Armory Castle (previously UNC5221 or Warp Panda) exploited a newly disclosed security flaw in BeyondTrust Remote Support (formerly Bomgar)…",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic5zD5GBvYxe93igsDOMdwS6eyfDORIWio42Z9UY0enK0XKWYcQlLB9RLx3iO_V1xm8vqBxMVZ_R8Lt-xxOumO5_RIFN3hgB-yZyGGlVMypRx5lm2GJq-1c9cbzfRcjrMAIfBI67L4QUI-MwjjQjKL1RcgPnzFdYuAF3k1y2Ev-ppSmiG8sdQ5dbJkbjKR/s1600/beyond.jpg",
+      "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
+      "publishedAt": "2026-10-16T06:55:55.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -4198,6 +4146,19 @@
       "alsoOn": []
     },
     {
+      "id": "hfblog:https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "source": "hfblog",
+      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+      "blurb": "A Blog post by Liquid AI on Hugging Face",
+      "image": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/YxGx9U6yV6_mumklCyMsE.png",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "publishedAt": "2026-10-13T17:05:48.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "guardian:https://www.theguardian.com/us-news/ng-interactive/2026/oct/17/california-datacenter-imperial",
       "source": "guardian",
       "title": "Inside the long, bitter fight over one man’s quest to build the biggest AI datacenter in California",
@@ -4210,19 +4171,6 @@
       "meta": {
         "category": "California"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "hfblog:https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
-      "source": "hfblog",
-      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
-      "blurb": "A Blog post by Liquid AI on Hugging Face",
-      "image": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/YxGx9U6yV6_mumklCyMsE.png",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
-      "publishedAt": "2026-10-13T17:05:48.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -4280,19 +4228,6 @@
       "alsoOn": []
     },
     {
-      "id": "etai:https://economictimes.indiatimes.com/tech/technology/meta-employees-said-lulas-accounts-were-hindered-during-brazil-election-report/articleshow/135000017.cms",
-      "source": "etai",
-      "title": "Meta employees said Lula's accounts were hindered during Brazil election: Report",
-      "blurb": "The messages also acknowledged that the platform recommended the profile of challenger Flavio Bolsonaro, as well as his WhatsApp channel, according to the report.",
-      "image": "https://img.etimg.com/photo/msid-135000017,imgsize-2727410.cms",
-      "url": "https://economictimes.indiatimes.com/tech/technology/meta-employees-said-lulas-accounts-were-hindered-during-brazil-election-report/articleshow/135000017.cms",
-      "publishedAt": "2026-10-16T17:12:04.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "verge:https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
       "source": "verge",
       "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
@@ -4305,6 +4240,19 @@
       "meta": {
         "category": "AI"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "etai:https://economictimes.indiatimes.com/tech/technology/meta-employees-said-lulas-accounts-were-hindered-during-brazil-election-report/articleshow/135000017.cms",
+      "source": "etai",
+      "title": "Meta employees said Lula's accounts were hindered during Brazil election: Report",
+      "blurb": "The messages also acknowledged that the platform recommended the profile of challenger Flavio Bolsonaro, as well as his WhatsApp channel, according to the report.",
+      "image": "https://img.etimg.com/photo/msid-135000017,imgsize-2727410.cms",
+      "url": "https://economictimes.indiatimes.com/tech/technology/meta-employees-said-lulas-accounts-were-hindered-during-brazil-election-report/articleshow/135000017.cms",
+      "publishedAt": "2026-10-16T17:12:04.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -4440,19 +4388,6 @@
       "alsoOn": []
     },
     {
-      "id": "slashdot:https://yro.slashdot.org/story/26/10/17/1915216/does-a-universal-basic-income-bring-long-term-changes?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-      "source": "slashdot",
-      "title": "Does a Universal Basic Income Bring Long-Term Changes?",
-      "blurb": "For more than a year, The New York Times followed recipients of a universal basic income program who received $1,330 a month for an entire year. There were benefits, but also the everyday…",
-      "image": "https://a.fsdn.com/sd/topics/government_64.png",
-      "url": "https://yro.slashdot.org/story/26/10/17/1915216/does-a-universal-basic-income-bring-long-term-changes?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-      "publishedAt": "2026-10-17T23:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "arxiv:2610.22339v1",
       "source": "arxiv",
       "title": "Lean Graph Search for Formal Theorem Proving",
@@ -4466,6 +4401,19 @@
         "category": "cs.LG",
         "authors": 10
       },
+      "alsoOn": []
+    },
+    {
+      "id": "slashdot:https://yro.slashdot.org/story/26/10/17/1915216/does-a-universal-basic-income-bring-long-term-changes?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+      "source": "slashdot",
+      "title": "Does a Universal Basic Income Bring Long-Term Changes?",
+      "blurb": "For more than a year, The New York Times followed recipients of a universal basic income program who received $1,330 a month for an entire year. There were benefits, but also the everyday…",
+      "image": "https://a.fsdn.com/sd/topics/government_64.png",
+      "url": "https://yro.slashdot.org/story/26/10/17/1915216/does-a-universal-basic-income-bring-long-term-changes?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+      "publishedAt": "2026-10-17T23:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -4497,21 +4445,6 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50119991",
-      "source": "hn",
-      "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
-      "blurb": "Core devs revert up to 10 features, push release to November, and blame better tooling rather than vibe coding",
-      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
-      "publishedAt": "2026-10-16T15:55:40.000Z",
-      "score": 216,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 91
-      },
-      "alsoOn": [],
-      "image": "https://image.theregister.com/228745.jpg?imageId=228745&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
-    },
-    {
       "id": "hn:50105648",
       "source": "hn",
       "title": "Krea 3 – An image model built for editing at scale",
@@ -4525,6 +4458,21 @@
       },
       "alsoOn": [],
       "image": null
+    },
+    {
+      "id": "hn:50119991",
+      "source": "hn",
+      "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
+      "blurb": "Core devs revert up to 10 features, push release to November, and blame better tooling rather than vibe coding",
+      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+      "publishedAt": "2026-10-16T15:55:40.000Z",
+      "score": 216,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 91
+      },
+      "alsoOn": [],
+      "image": "https://image.theregister.com/228745.jpg?imageId=228745&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
     },
     {
       "id": "nvidia:https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
@@ -4602,21 +4550,6 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "register:https://www.theregister.com/software/2026/10/07/cosmic-shuts-the-door-on-ai-code-as-gnome-debates-letting-bug-reports-in/5301141",
-      "source": "register",
-      "title": "COSMIC shuts the door on AI code as GNOME debates letting bug reports in",
-      "blurb": "System76 demands human-written contributions, while a rival desktop developer argues bot-found flaws are too valuable to ignore",
-      "image": "https://image.theregister.com/?imageId=237408&width=800",
-      "url": "https://www.theregister.com/software/2026/10/07/cosmic-shuts-the-door-on-ai-code-as-gnome-debates-letting-bug-reports-in/5301141",
-      "publishedAt": "2026-10-07T08:09:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "software"
-      },
       "alsoOn": []
     },
     {
@@ -4767,8 +4700,8 @@
       "id": "sifted:https://sifted.eu/articles/europes-ai-fintech-market-mapped-94-startups-automating-the-business-of-money/",
       "source": "sifted",
       "title": "Europe’s AI fintech market mapped: 94 startups automating the business of money",
-      "blurb": null,
-      "image": null,
+      "blurb": "From AI accountants to agents that pay other agents, Sifted maps the startups rebuilding the back office of finance",
+      "image": "https://content.sifted.eu/wp-content/uploads/2026/03/31140136/huss_and_steven-1-1024x683.png",
       "url": "https://sifted.eu/articles/europes-ai-fintech-market-mapped-94-startups-automating-the-business-of-money/",
       "publishedAt": "2026-10-16T05:00:03.000Z",
       "score": null,
@@ -4831,6 +4764,22 @@
       "alsoOn": []
     },
     {
+      "id": "gh:LiCinCan/blender-ai-mcp-addon",
+      "source": "gh",
+      "title": "LiCinCan/blender-ai-mcp-addon",
+      "blurb": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon and plugin, copilot…",
+      "image": "https://opengraph.githubassets.com/1/LiCinCan/blender-ai-mcp-addon",
+      "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
+      "publishedAt": "2026-10-15T22:30:47.000Z",
+      "score": 775,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "LiCinCan/blender-ai-mcp-addon",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "tc:https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
       "source": "tc",
       "title": "Physical AI is more than robots, says the Nvidia veteran now investing in it",
@@ -4844,22 +4793,6 @@
       "alsoOn": []
     },
     {
-      "id": "gh:LiCinCan/blender-ai-mcp-addon",
-      "source": "gh",
-      "title": "LiCinCan/blender-ai-mcp-addon",
-      "blurb": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon and plugin, copilot…",
-      "image": "https://opengraph.githubassets.com/1/LiCinCan/blender-ai-mcp-addon",
-      "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
-      "publishedAt": "2026-10-15T22:30:47.000Z",
-      "score": 773,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "LiCinCan/blender-ai-mcp-addon",
-        "language": "Python"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "sciencedaily:https://www.sciencedaily.com/releases/2026/10/261011211615.htm",
       "source": "sciencedaily",
       "title": "Physicists discover “astonishing” property of light that defies expectations",
@@ -4867,19 +4800,6 @@
       "image": "https://www.sciencedaily.com/images/1920/multidimensional-quantum-light-data-communications.webp",
       "url": "https://www.sciencedaily.com/releases/2026/10/261011211615.htm",
       "publishedAt": "2026-10-13T04:19:32.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "techmeme:https://www.techmeme.com/261017/p20#a261017p20",
-      "source": "techmeme",
-      "title": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and more…",
-      "blurb": "Joanna Stern / The New Things : An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and…",
-      "image": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/c34007e3-a820-4426-8999-0c1d14cac551/Joanna-microsoft-nl-4__1_.jpg?t=1792065245",
-      "url": "https://www.techmeme.com/261017/p20#a261017p20",
-      "publishedAt": "2026-10-18T01:20:02.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -4901,19 +4821,6 @@
       "image": null
     },
     {
-      "id": "thenewstack:https://thenewstack.io/kagent-kubernetes-ai-agents/",
-      "source": "thenewstack",
-      "title": "AI agents turn one request into about 20. Kubernetes is evolving to handle it.",
-      "blurb": "Welcome to another edition of Road to KubeCon, where we’re tracking interesting movements in the cloud-native and Kubernetes ecosystem as The post AI agents turn one request into about 20…",
-      "image": "https://cdn.thenewstack.io/media/2026/10/9a261836-getty-images-u0axzkvx1qg-unsplash-1024x695.jpg",
-      "url": "https://thenewstack.io/kagent-kubernetes-ai-agents/",
-      "publishedAt": "2026-10-16T18:37:03.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "techeu:https://tech.eu/2026/10/16/eu-inc-will-europe-blow-its-biggest-chance-to-get-startups-right/",
       "source": "techeu",
       "title": "EU Inc: Will Europe blow its biggest chance to get startups right?",
@@ -4921,19 +4828,6 @@
       "image": "https://cdn.tech.eu/uploads/2026/10/untitled-design-41-204.png",
       "url": "https://tech.eu/2026/10/16/eu-inc-will-europe-blow-its-biggest-chance-to-get-startups-right/",
       "publishedAt": "2026-10-16T09:17:26.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "semiengineering:https://semiengineering.com/beyond-the-specification-what-really-determines-pcie-retimer-reach/",
-      "source": "semiengineering",
-      "title": "Beyond The Specification: What Really Determines PCIe Retimer Reach?",
-      "blurb": "Multiple interacting factors span silicon design, controller intelligence, channel quality, and the transmission medium itself. The post Beyond The Specification: What Really Determines…",
-      "image": "https://semiengineering.com/wp-content/uploads/2026/06/06-26-AdobeStock_143980229-scaled.jpeg",
-      "url": "https://semiengineering.com/beyond-the-specification-what-really-determines-pcie-retimer-reach/",
-      "publishedAt": "2026-10-15T07:07:45.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -4953,6 +4847,45 @@
         "repo": "onehumanbeing/esp32-iphone-agent",
         "language": "C"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "semiengineering:https://semiengineering.com/beyond-the-specification-what-really-determines-pcie-retimer-reach/",
+      "source": "semiengineering",
+      "title": "Beyond The Specification: What Really Determines PCIe Retimer Reach?",
+      "blurb": "Multiple interacting factors span silicon design, controller intelligence, channel quality, and the transmission medium itself. The post Beyond The Specification: What Really Determines…",
+      "image": "https://semiengineering.com/wp-content/uploads/2026/06/06-26-AdobeStock_143980229-scaled.jpeg",
+      "url": "https://semiengineering.com/beyond-the-specification-what-really-determines-pcie-retimer-reach/",
+      "publishedAt": "2026-10-15T07:07:45.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "thenewstack:https://thenewstack.io/kagent-kubernetes-ai-agents/",
+      "source": "thenewstack",
+      "title": "AI agents turn one request into about 20. Kubernetes is evolving to handle it.",
+      "blurb": "Welcome to another edition of Road to KubeCon, where we’re tracking interesting movements in the cloud-native and Kubernetes ecosystem as The post AI agents turn one request into about 20…",
+      "image": "https://cdn.thenewstack.io/media/2026/10/9a261836-getty-images-u0axzkvx1qg-unsplash-1024x695.jpg",
+      "url": "https://thenewstack.io/kagent-kubernetes-ai-agents/",
+      "publishedAt": "2026-10-16T18:37:03.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "techmeme:https://www.techmeme.com/261017/p20#a261017p20",
+      "source": "techmeme",
+      "title": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and more…",
+      "blurb": "Joanna Stern / The New Things : An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and…",
+      "image": null,
+      "url": "https://www.techmeme.com/261017/p20#a261017p20",
+      "publishedAt": "2026-10-18T01:20:02.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -5041,21 +4974,6 @@
       "alsoOn": []
     },
     {
-      "id": "siliconangle:https://siliconangle.com/2026/10/16/knowledge-graphs-ai-raymond-james-neo4j-neo4jgraphsummit/",
-      "source": "siliconangle",
-      "title": "Knowledge graphs fuel AI innovation for financial services at Raymond James Financial",
-      "blurb": "Knowledge graphs are becoming a critical context and reasoning layer for agentic AI, helping enterprises connect data and ground agents in key areas of business expertise. For diversified…",
-      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/09/Jeff-Griffith-Naveen-Mahankali-Clean.jpg",
-      "url": "https://siliconangle.com/2026/10/16/knowledge-graphs-ai-raymond-james-neo4j-neo4jgraphsummit/",
-      "publishedAt": "2026-10-16T16:42:53.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "NYSE:RJF"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "hn:50092664",
       "source": "hn",
       "title": "Banks are now trying to offload the AI data center debt they just underwrote",
@@ -5071,17 +4989,17 @@
       "image": "https://startupfortune.com/wp-content/uploads/2026/10/oracle-jpmorgan-man-group.jpg"
     },
     {
-      "id": "register:https://www.theregister.com/ai-and-ml/2026/09/30/show-colleagues-how-much-you-care-by-sending-an-ai-avatar-to-your-google-meet-call/5300205",
-      "source": "register",
-      "title": "Show colleagues how much you care by sending an AI avatar to your Google Meet call",
-      "blurb": "MeetTwins is still in development, but it's a genius idea if the goal is to prove more time-wasting calls should just be emails",
-      "image": "https://image.theregister.com/?imageId=5300222&width=800",
-      "url": "https://www.theregister.com/ai-and-ml/2026/09/30/show-colleagues-how-much-you-care-by-sending-an-ai-avatar-to-your-google-meet-call/5300205",
-      "publishedAt": "2026-09-30T16:03:07.000Z",
+      "id": "siliconangle:https://siliconangle.com/2026/10/16/knowledge-graphs-ai-raymond-james-neo4j-neo4jgraphsummit/",
+      "source": "siliconangle",
+      "title": "Knowledge graphs fuel AI innovation for financial services at Raymond James Financial",
+      "blurb": "Knowledge graphs are becoming a critical context and reasoning layer for agentic AI, helping enterprises connect data and ground agents in key areas of business expertise. For diversified…",
+      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/09/Jeff-Griffith-Naveen-Mahankali-Clean.jpg",
+      "url": "https://siliconangle.com/2026/10/16/knowledge-graphs-ai-raymond-james-neo4j-neo4jgraphsummit/",
+      "publishedAt": "2026-10-16T16:42:53.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {
-        "category": "ai and ml"
+        "category": "NYSE:RJF"
       },
       "alsoOn": []
     },
@@ -5225,6 +5143,19 @@
       "image": "https://research.meta.ai/articles/introducing-muse-wonder/social/muse-wonder-social-v1.webp"
     },
     {
+      "id": "ollama:https://ollama.com/blog/ollama-now-supports-jev-style-decision-models",
+      "source": "ollama",
+      "title": "Ollama now supports Jev-style decision models",
+      "blurb": "Ollama now supports decision models, based on TypeSafe's Jev API for fast, typed decisions. Decision models can now be run at no cost with low latency. Based on text, decision models answer…",
+      "image": "https://ollama.com/public/og.png",
+      "url": "https://ollama.com/blog/ollama-now-supports-jev-style-decision-models",
+      "publishedAt": "2026-09-29T00:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "rundown:https://www.therundown.ai/articles/meta-watermelon-ripens-into-a-frontier-model",
       "source": "rundown",
       "title": "Meta's Watermelon ripens into a frontier model",
@@ -5237,19 +5168,6 @@
       "meta": {
         "category": "ai"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "ollama:https://ollama.com/blog/ollama-now-supports-jev-style-decision-models",
-      "source": "ollama",
-      "title": "Ollama now supports Jev-style decision models",
-      "blurb": "Ollama now supports decision models, based on TypeSafe's Jev API for fast, typed decisions. Decision models can now be run at no cost with low latency. Based on text, decision models answer…",
-      "image": "https://ollama.com/public/og.png",
-      "url": "https://ollama.com/blog/ollama-now-supports-jev-style-decision-models",
-      "publishedAt": "2026-09-29T00:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -5338,21 +5256,6 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "register:https://www.theregister.com/software/2026/09/18/kde-turns-30-and-someones-brought-an-ai-native-desktop-proposal/5297282",
-      "source": "register",
-      "title": "KDE turns 30 and someone's brought an AI-native desktop proposal",
-      "blurb": "Akademy talk imagines Plasma assembling itself around a personal model of each user",
-      "image": "https://image.theregister.com/?imageId=5297398&width=800",
-      "url": "https://www.theregister.com/software/2026/09/18/kde-turns-30-and-someones-brought-an-ai-native-desktop-proposal/5297282",
-      "publishedAt": "2026-09-18T14:25:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "software"
-      },
       "alsoOn": []
     },
     {
@@ -5578,21 +5481,6 @@
       "alsoOn": []
     },
     {
-      "id": "wiredai:https://www.wired.com/story/katie-zacharia-was-linked-to-an-ai-rare-earths-startup-its-even-weirder-than-it-sounds/",
-      "source": "wiredai",
-      "title": "Katie Zacharia Was Linked to an AI Rare-Earths Startup. It’s Even Weirder Than It Sounds",
-      "blurb": "The short-lived White House press secretary was listed as an adviser to a Kristi Noem–linked company that aims to use AI for mining. Both the company and she say she never worked there.",
-      "image": "https://media.wired.com/photos/6ad24f19ed303ecbe8441980/master/pass/GettyImages-2299989251.jpg",
-      "url": "https://www.wired.com/story/katie-zacharia-was-linked-to-an-ai-rare-earths-startup-its-even-weirder-than-it-sounds/",
-      "publishedAt": "2026-10-16T20:05:08.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "Politics"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "lastweekinai:https://lastweekin.ai/p/lwiai-podcast-258-opus-55-sol-and",
       "source": "lastweekinai",
       "title": "LWiAI Podcast #258 - Opus 5.5, Sol and Luna, Muse, DeepSeek-V4.1-Flash, Xi",
@@ -5645,12 +5533,27 @@
       "alsoOn": []
     },
     {
+      "id": "wiredai:https://www.wired.com/story/katie-zacharia-was-linked-to-an-ai-rare-earths-startup-its-even-weirder-than-it-sounds/",
+      "source": "wiredai",
+      "title": "Katie Zacharia Was Linked to an AI Rare-Earths Startup. It’s Even Weirder Than It Sounds",
+      "blurb": "The short-lived White House press secretary was listed as an adviser to a Kristi Noem–linked company that aims to use AI for mining. Both the company and she say she never worked there.",
+      "image": "https://media.wired.com/photos/6ad24f19ed303ecbe8441980/master/pass/GettyImages-2299989251.jpg",
+      "url": "https://www.wired.com/story/katie-zacharia-was-linked-to-an-ai-rare-earths-startup-its-even-weirder-than-it-sounds/",
+      "publishedAt": "2026-10-16T20:05:08.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "Politics"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "hf:black-forest-labs/flux-3-image-klein-comfy",
       "source": "hf",
       "title": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "publishedAt": "2026-10-14T12:00:13.000Z",
-      "score": 767,
+      "score": 770,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 338036,
@@ -5661,6 +5564,22 @@
       ],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/black-forest-labs/flux-3-image-klein-comfy.png",
       "blurb": null
+    },
+    {
+      "id": "hf:openbmb/MiniCPM-V-4.7-35B-A3B",
+      "source": "hf",
+      "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+      "publishedAt": "2026-10-07T07:07:30.000Z",
+      "score": 976,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 57935,
+        "task": "image-text-to-text"
+      },
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/openbmb/MiniCPM-V-4.7-35B-A3B.png",
+      "blurb": "An MoE model can have far more total parameters than it activates for a single token, but its on-device storage requirements are not limited to those active parameters. Different tokens can…"
     },
     {
       "id": "fastcompany:https://www.fastcompany.com/91624656/ais-memory-chip-crunch-is-crushing-the-smartphone-market?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=5&partner=newsletter&campaign_date=10182026",
@@ -5674,22 +5593,6 @@
       "scoreLabel": null,
       "meta": {},
       "alsoOn": []
-    },
-    {
-      "id": "hf:openbmb/MiniCPM-V-4.7-35B-A3B",
-      "source": "hf",
-      "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
-      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
-      "publishedAt": "2026-10-07T07:07:30.000Z",
-      "score": 975,
-      "scoreLabel": "likes",
-      "meta": {
-        "downloads": 57935,
-        "task": "image-text-to-text"
-      },
-      "alsoOn": [],
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/openbmb/MiniCPM-V-4.7-35B-A3B.png",
-      "blurb": "An MoE model can have far more total parameters than it activates for a single token, but its on-device storage requirements are not limited to those active parameters. Different tokens can…"
     },
     {
       "id": "nvidia:https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update/",
@@ -5749,18 +5652,16 @@
       "alsoOn": []
     },
     {
-      "id": "register:https://www.theregister.com/software/2026/09/11/oracle-says-ai-will-save-it-from-the-saaspocalypse-not-bring-it-on/5295736",
-      "source": "register",
-      "title": "Oracle says AI will save it from the SaaSpocalypse, not bring it on",
-      "blurb": "It’s a better interface, can speed installations, and drives IaaS sales too",
-      "image": "https://image.theregister.com/?imageId=5295741&width=800",
-      "url": "https://www.theregister.com/software/2026/09/11/oracle-says-ai-will-save-it-from-the-saaspocalypse-not-bring-it-on/5295736",
-      "publishedAt": "2026-09-11T02:43:10.000Z",
+      "id": "metr:https://metr.org/blog/2026-09-30-chris-painter-senate-testimony/",
+      "source": "metr",
+      "title": "Chris Painter's testimony to the U.S. Senate on AI agent incidents",
+      "blurb": "On September 30, 2026, METR President Chris Painter testified before the U.S. Senate Committee on Homeland Security & Governmental Affairs’ Subcommittee on Disaster Management, District of…",
+      "image": null,
+      "url": "https://metr.org/blog/2026-09-30-chris-painter-senate-testimony/",
+      "publishedAt": "2026-09-30T07:00:00.000Z",
       "score": null,
       "scoreLabel": null,
-      "meta": {
-        "category": "software"
-      },
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -5777,19 +5678,6 @@
       "alsoOn": []
     },
     {
-      "id": "metr:https://metr.org/blog/2026-09-30-chris-painter-senate-testimony/",
-      "source": "metr",
-      "title": "Chris Painter's testimony to the U.S. Senate on AI agent incidents",
-      "blurb": "On September 30, 2026, METR President Chris Painter testified before the U.S. Senate Committee on Homeland Security & Governmental Affairs’ Subcommittee on Disaster Management, District of…",
-      "image": null,
-      "url": "https://metr.org/blog/2026-09-30-chris-painter-senate-testimony/",
-      "publishedAt": "2026-09-30T07:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "together:https://www.together.ai/blog/global-fintech-scales-coding-agent-traffic-with-dedicated-model-inference",
       "source": "together",
       "title": "How a global fintech scaled coding agent traffic with Dedicated Model Inference",
@@ -5797,19 +5685,6 @@
       "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/6aad615d591d02ae926847c5_OG-image_202600918_DMI%20blog_global%20fintech.png",
       "url": "https://www.together.ai/blog/global-fintech-scales-coding-agent-traffic-with-dedicated-model-inference",
       "publishedAt": "2026-09-18T00:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "gizmodo:https://gizmodo.com/ai-agent-reportedly-deletes-an-entire-season-of-reality-tv-show-2000826600",
-      "source": "gizmodo",
-      "title": "AI Agent Reportedly Deletes an Entire Season of Reality TV Show",
-      "blurb": "The second season of Sweden’s version of 'The Challenge' has now been pushed to 2027 just weeks before its scheduled premiere.",
-      "image": "https://gizmodo.com/app/uploads/2024/06/6ee6c9ec1189ca61f3faaf003ca5526c-e1792096983178-1280x852.jpg",
-      "url": "https://gizmodo.com/ai-agent-reportedly-deletes-an-entire-season-of-reality-tv-show-2000826600",
-      "publishedAt": "2026-10-15T20:55:27.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -5873,19 +5748,6 @@
       "alsoOn": []
     },
     {
-      "id": "nine5google:https://9to5google.com/2026/10/16/galaxy-s26-ultra-privacy-display-gets-it-on-best-inventions-list/",
-      "source": "nine5google",
-      "title": "Galaxy S26 Ultra is one of the ‘best inventions of 2026’ thanks to its Privacy Display",
-      "blurb": "A new 2026 roundup has the Galaxy S26 Ultra included in a list of best inventions for the year, all thanks to what it doesn’t display. more…",
-      "image": "https://9to5google.com/wp-content/uploads/sites/4/2026/02/Privacy-Screen-angled-Galaxy-S26-Ultra-1.jpg?quality=82&strip=all&w=1600",
-      "url": "https://9to5google.com/2026/10/16/galaxy-s26-ultra-privacy-display-gets-it-on-best-inventions-list/",
-      "publishedAt": "2026-10-16T17:42:53.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "rundown:https://www.therundown.ai/articles/ucla-builds-a-humanoid-from-smartphone",
       "source": "rundown",
       "title": "UCLA builds a humanoid from smartphone",
@@ -5916,13 +5778,13 @@
       "image": "https://framerusercontent.com/images/KBTvCTXoQaZeABcI7te5PTQw7Q.png?width=1574&height=996"
     },
     {
-      "id": "daringfireball:https://netnewswire.blog/2026/10/16/how-we-got-duo-support.html",
-      "source": "daringfireball",
-      "title": "How They Got Duo Support in NetNewsWire",
-      "blurb": "From the NetNewsWire blog: The latest version of NetNewsWire for iOS supports iPhone Duo, which is very much a novel iPhone with toolbars running up the side and all kinds of behavior. How…",
-      "image": null,
-      "url": "https://netnewswire.blog/2026/10/16/how-we-got-duo-support.html",
-      "publishedAt": "2026-10-16T20:53:42.000Z",
+      "id": "nine5google:https://9to5google.com/2026/10/16/galaxy-s26-ultra-privacy-display-gets-it-on-best-inventions-list/",
+      "source": "nine5google",
+      "title": "Galaxy S26 Ultra is one of the ‘best inventions of 2026’ thanks to its Privacy Display",
+      "blurb": "A new 2026 roundup has the Galaxy S26 Ultra included in a list of best inventions for the year, all thanks to what it doesn’t display. more…",
+      "image": "https://9to5google.com/wp-content/uploads/sites/4/2026/02/Privacy-Screen-angled-Galaxy-S26-Ultra-1.jpg?quality=82&strip=all&w=1600",
+      "url": "https://9to5google.com/2026/10/16/galaxy-s26-ultra-privacy-display-gets-it-on-best-inventions-list/",
+      "publishedAt": "2026-10-16T17:42:53.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -5936,6 +5798,19 @@
       "image": "https://ollama.com/public/og.png",
       "url": "https://ollama.com/blog/claude-desktop",
       "publishedAt": "2026-08-25T00:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "daringfireball:https://netnewswire.blog/2026/10/16/how-we-got-duo-support.html",
+      "source": "daringfireball",
+      "title": "How They Got Duo Support in NetNewsWire",
+      "blurb": "From the NetNewsWire blog: The latest version of NetNewsWire for iOS supports iPhone Duo, which is very much a novel iPhone with toolbars running up the side and all kinds of behavior. How…",
+      "image": null,
+      "url": "https://netnewswire.blog/2026/10/16/how-we-got-duo-support.html",
+      "publishedAt": "2026-10-16T20:53:42.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -6224,21 +6099,6 @@
       "alsoOn": []
     },
     {
-      "id": "register:https://www.theregister.com/software/2026/09/10/microsoft-goes-after-salesforce-and-erp-users-with-ai-powered-converter/5295428",
-      "source": "register",
-      "title": "Microsoft goes after Salesforce and ERP users with AI-powered converter",
-      "blurb": "Ironically, this idea lands as Salesforce is struggling to sell its own AI",
-      "image": "https://image.theregister.com/?imageId=5295433&width=800",
-      "url": "https://www.theregister.com/software/2026/09/10/microsoft-goes-after-salesforce-and-erp-users-with-ai-powered-converter/5295428",
-      "publishedAt": "2026-09-10T04:53:32.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "software"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "techreview:https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
       "source": "techreview",
       "title": "Open models have real benefits. Do they outweigh the risks?",
@@ -6283,7 +6143,7 @@
       "id": "hn:50059523",
       "source": "hn",
       "title": "AI coding agents generate more code, but not more software",
-      "blurb": null,
+      "blurb": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
       "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
       "publishedAt": "2026-10-12T17:14:01.000Z",
       "score": 364,
@@ -6292,7 +6152,7 @@
         "comments": 313
       },
       "alsoOn": [],
-      "image": null
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2264559974-1152x648.jpg"
     },
     {
       "id": "lobsters:jbnmj9",
@@ -6465,6 +6325,19 @@
       "alsoOn": []
     },
     {
+      "id": "exponentialview:https://www.exponentialview.co/p/what-is-bigger-than-ai",
+      "source": "exponentialview",
+      "title": "📈 What is bigger than AI?",
+      "blurb": "GLP-1s: the science, the savings and the societal stakes.",
+      "image": "https://substackcdn.com/image/fetch/$s_!LfrB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8e73621d-6818-403f-b8ab-6266f8461f63_539x568.jpeg",
+      "url": "https://www.exponentialview.co/p/what-is-bigger-than-ai",
+      "publishedAt": "2026-10-12T12:29:50.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "arxiv:2610.22330v1",
       "source": "arxiv",
       "title": "Designing Transformers for Continuous Diffusion Language Models",
@@ -6478,19 +6351,6 @@
         "category": "cs.AI",
         "authors": 5
       },
-      "alsoOn": []
-    },
-    {
-      "id": "exponentialview:https://www.exponentialview.co/p/what-is-bigger-than-ai",
-      "source": "exponentialview",
-      "title": "📈 What is bigger than AI?",
-      "blurb": "GLP-1s: the science, the savings and the societal stakes.",
-      "image": "https://substackcdn.com/image/fetch/$s_!LfrB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8e73621d-6818-403f-b8ab-6266f8461f63_539x568.jpeg",
-      "url": "https://www.exponentialview.co/p/what-is-bigger-than-ai",
-      "publishedAt": "2026-10-12T12:29:50.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -6616,21 +6476,6 @@
       "alsoOn": []
     },
     {
-      "id": "verge:https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
-      "source": "verge",
-      "title": "Meta’s new terms may allow it to train AI on news sites for free",
-      "blurb": "Meta's new terms appear to give it permission to crawl and scrape websites \"associated\" with the businesses that use its platforms - including online publishers, according to a report from…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25546023/STK043_META_CVIRGINIA_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-      "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
-      "publishedAt": "2026-10-16T14:02:40.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "AI"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "hf:Cloudflare/clef-flash",
       "source": "hf",
       "title": "Cloudflare/clef-flash",
@@ -6645,6 +6490,21 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Cloudflare/clef-flash.png",
       "blurb": "Clef-Flash Announcement: Clef decision models on the Cloudflare blog Decision Index leaderboard: clef-evals.workers-ai-mle.workers.dev"
+    },
+    {
+      "id": "verge:https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
+      "source": "verge",
+      "title": "Meta’s new terms may allow it to train AI on news sites for free",
+      "blurb": "Meta's new terms appear to give it permission to crawl and scrape websites \"associated\" with the businesses that use its platforms - including online publishers, according to a report from…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25546023/STK043_META_CVIRGINIA_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
+      "publishedAt": "2026-10-16T14:02:40.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "AI"
+      },
+      "alsoOn": []
     },
     {
       "id": "hn:50104654",
@@ -6716,21 +6576,6 @@
       "alsoOn": []
     },
     {
-      "id": "guardian:https://www.theguardian.com/technology/2026/oct/17/fake-linda-and-me-mystery-fraudster-stole-my-byline",
-      "source": "guardian",
-      "title": "Fake Linda and me: the Agatha Christie-worthy mystery of the fraudster who stole my byline",
-      "blurb": "How a string of bizarre events led writer Linda Geddes to don her sleuthing cap and dig into a world of shadowy impersonators It started with an entirely ordinary interaction on LinkedIn…",
-      "image": "https://i.guim.co.uk/img/media/a426a8b6b459aed32bd6a8e431b13736369c3b21/676_119_6732_5385/master/6732.jpg?width=140&quality=85&auto=format&fit=max&s=f09aaf2d349e8bfc65d3ca6823fc23a4",
-      "url": "https://www.theguardian.com/technology/2026/oct/17/fake-linda-and-me-mystery-fraudster-stole-my-byline",
-      "publishedAt": "2026-10-17T11:00:30.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "Cybercrime"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "scmp:https://www.scmp.com/tech/tech-trends/article/3371007/ai-agents-tencent-cloud-try-break-alibabas-amap-researchers?utm_source=rss_feed",
       "source": "scmp",
       "title": "AI agents on Tencent Cloud try to break into Alibaba’s Amap: researchers",
@@ -6790,17 +6635,17 @@
       "alsoOn": []
     },
     {
-      "id": "register:https://www.theregister.com/software/2026/09/09/another-microsoft-team-admits-its-struggling-to-handle-flood-of-ai-generated-code/5295185",
-      "source": "register",
-      "title": "Another Microsoft team admits it’s struggling to handle flood of AI-generated code",
-      "blurb": "Increase in vibe-coded browser extensions sees Edge team automate quality assessments",
-      "image": "https://image.theregister.com/?imageId=5271891&width=800",
-      "url": "https://www.theregister.com/software/2026/09/09/another-microsoft-team-admits-its-struggling-to-handle-flood-of-ai-generated-code/5295185",
-      "publishedAt": "2026-09-09T06:34:21.000Z",
+      "id": "guardian:https://www.theguardian.com/technology/2026/oct/17/fake-linda-and-me-mystery-fraudster-stole-my-byline",
+      "source": "guardian",
+      "title": "Fake Linda and me: the Agatha Christie-worthy mystery of the fraudster who stole my byline",
+      "blurb": "How a string of bizarre events led writer Linda Geddes to don her sleuthing cap and dig into a world of shadowy impersonators It started with an entirely ordinary interaction on LinkedIn…",
+      "image": "https://i.guim.co.uk/img/media/a426a8b6b459aed32bd6a8e431b13736369c3b21/676_119_6732_5385/master/6732.jpg?width=140&quality=85&auto=format&fit=max&s=f09aaf2d349e8bfc65d3ca6823fc23a4",
+      "url": "https://www.theguardian.com/technology/2026/oct/17/fake-linda-and-me-mystery-fraudster-stole-my-byline",
+      "publishedAt": "2026-10-17T11:00:30.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {
-        "category": "software"
+        "category": "Cybercrime"
       },
       "alsoOn": []
     },
@@ -6958,19 +6803,6 @@
       "alsoOn": []
     },
     {
-      "id": "techmeme:https://www.techmeme.com/261017/p19#a261017p19",
-      "source": "techmeme",
-      "title": "Google says \"magic state cultivation\" works in practice on its Willow quantum processor, calling it a breakthrough that reduces errors by about 40x (Google)",
-      "blurb": "Google : Google says “magic state cultivation” works in practice on its Willow quantum processor, calling it a breakthrough that reduces errors by about 40x — We've shown that magic state…",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/magic_state_social.width-1300.png",
-      "url": "https://www.techmeme.com/261017/p19#a261017p19",
-      "publishedAt": "2026-10-17T23:35:01.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "importai:https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/",
       "source": "importai",
       "title": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
@@ -6991,6 +6823,19 @@
       "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0Y0ZP5acV4vjjJV9at7yMnz0frJTAeLd3nGmqMIcifTwGoe2NsB7pDInUjGa6aocyqoM3o-NyXKpsfyy1LRdkH5UG67UVYC_lNZDYArvg-hkmtifcalWo67Mkl3A4_2qwXomi7iJURUjoiSlBdEWtJL5N63jfuMDjI7ewZHLlTZBXlkc4zqwyxKox7eE/s1600/pwnescape-main.jpg",
       "url": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
       "publishedAt": "2026-10-15T20:24:36.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "techmeme:https://www.techmeme.com/261017/p19#a261017p19",
+      "source": "techmeme",
+      "title": "Google says \"magic state cultivation\" works in practice on its Willow quantum processor, calling it a breakthrough that reduces errors by about 40x (Google)",
+      "blurb": "Google : Google says “magic state cultivation” works in practice on its Willow quantum processor, calling it a breakthrough that reduces errors by about 40x — We've shown that magic state…",
+      "image": null,
+      "url": "https://www.techmeme.com/261017/p19#a261017p19",
+      "publishedAt": "2026-10-17T23:35:01.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -7031,8 +6876,8 @@
       "id": "sifted:https://sifted.eu/articles/accel-deepmind-researcher-60m/",
       "source": "sifted",
       "title": "Exclusive: Accel set to lead DeepMind alum’s $60m round",
-      "blurb": null,
-      "image": null,
+      "blurb": "Nando de Freitas, a former leading researcher at Google DeepMind and Microsoft AI, has raised $60m for his new startup Revolution Labs.",
+      "image": "https://images.sifted.eu/cdn-cgi/image/width=1044,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/15165014/Gemini_Generated_Image_dg75wjdg75wjdg75-8-2.jpg",
       "url": "https://sifted.eu/articles/accel-deepmind-researcher-60m/",
       "publishedAt": "2026-10-15T16:48:11.000Z",
       "score": null,
@@ -7118,34 +6963,6 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "gizmodo:https://gizmodo.com/researchers-stranded-an-ai-agent-on-a-virtual-island-things-got-very-weird-2000825998",
-      "source": "gizmodo",
-      "title": "Researchers Stranded an AI Agent on a Virtual Island. Things Got Very Weird.",
-      "blurb": "A new MIT study found that when left to their own devices, AI agents will invent games, build temples, draw mandalas, and playfully investigate the world around them.",
-      "image": "https://gizmodo.com/app/uploads/2026/10/Eko-1280x853.jpg",
-      "url": "https://gizmodo.com/researchers-stranded-an-ai-agent-on-a-virtual-island-things-got-very-weird-2000825998",
-      "publishedAt": "2026-10-15T19:15:47.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "register:https://www.theregister.com/offbeat/2026/09/02/ai-assisted-mushroom-hunting-is-a-recipe-for-a-bad-trip/5294060",
-      "source": "register",
-      "title": "AI-assisted mushroom hunting is a recipe for a bad trip",
-      "blurb": "Even the best model gets fungus identification right just 65% of the time - talk about a false friend",
-      "image": "https://image.theregister.com/?imageId=241049&width=800",
-      "url": "https://www.theregister.com/offbeat/2026/09/02/ai-assisted-mushroom-hunting-is-a-recipe-for-a-bad-trip/5294060",
-      "publishedAt": "2026-09-02T20:34:41.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "offbeat"
-      },
       "alsoOn": []
     },
     {
@@ -7261,19 +7078,6 @@
       "alsoOn": []
     },
     {
-      "id": "fastcompany:https://www.fastcompany.com/91624036/this-one-factor-will-define-the-hospital-of-the-future?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=6&partner=newsletter&campaign_date=10182026",
-      "source": "fastcompany",
-      "title": "This one factor will define the hospital of the future",
-      "blurb": "Uniting fragmented data across hospital systems is critical to improving patient care.",
-      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/10/1-50.png",
-      "url": "https://www.fastcompany.com/91624036/this-one-factor-will-define-the-hospital-of-the-future?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=6&partner=newsletter&campaign_date=10182026",
-      "publishedAt": "2026-10-16T12:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hn:50060269",
       "source": "hn",
       "title": "'AI' Is Not a Tool by Rich Hickey",
@@ -7287,6 +7091,19 @@
       },
       "alsoOn": [],
       "image": "https://static.licdn.com/scds/common/u/images/email/artdeco/logos/96/linkedin-bug-color.png"
+    },
+    {
+      "id": "fastcompany:https://www.fastcompany.com/91624036/this-one-factor-will-define-the-hospital-of-the-future?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=6&partner=newsletter&campaign_date=10182026",
+      "source": "fastcompany",
+      "title": "This one factor will define the hospital of the future",
+      "blurb": "Uniting fragmented data across hospital systems is critical to improving patient care.",
+      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/10/1-50.png",
+      "url": "https://www.fastcompany.com/91624036/this-one-factor-will-define-the-hospital-of-the-future?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=6&partner=newsletter&campaign_date=10182026",
+      "publishedAt": "2026-10-16T12:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "metr:https://metr.org/blog/2026-08-31-security-update/",
@@ -7318,19 +7135,6 @@
       "blurb": "Drama 3 runs on SGLang-Omni from launch day. For installation, deployment, and streaming API examples, see the Drama 3 Cookbook. Launch with vLLM-Omni"
     },
     {
-      "id": "latentspace:https://www.latent.space/p/lab-in-the-loop-at-compute-speed",
-      "source": "latentspace",
-      "title": "Lab-in-the-Loop at Compute Speed — Ian Quigley, Leash Bio",
-      "blurb": "How Leash Bio tamed DELs, the assay that traumatizes everyone, and used the data to catch cheating models. And why that same data is perfect for AI agents learning to think like chemists.",
-      "image": "https://substackcdn.com/image/fetch/$s_!_2Xe!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F220316507%2F1ab4e337-1a1f-4b3b-afa1-cfdb8262bddc%2Ftranscoded-1792008845.png",
-      "url": "https://www.latent.space/p/lab-in-the-loop-at-compute-speed",
-      "publishedAt": "2026-10-14T20:35:09.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "spectrum:https://spectrum.ieee.org/master-ai-chip-principles-ieee",
       "source": "spectrum",
       "title": "Master AI Chip Principles With New IEEE Design Program",
@@ -7343,6 +7147,19 @@
       "meta": {
         "category": "Ieee-products-and-services"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "latentspace:https://www.latent.space/p/lab-in-the-loop-at-compute-speed",
+      "source": "latentspace",
+      "title": "Lab-in-the-Loop at Compute Speed — Ian Quigley, Leash Bio",
+      "blurb": "How Leash Bio tamed DELs, the assay that traumatizes everyone, and used the data to catch cheating models. And why that same data is perfect for AI agents learning to think like chemists.",
+      "image": "https://substackcdn.com/image/fetch/$s_!_2Xe!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F220316507%2F1ab4e337-1a1f-4b3b-afa1-cfdb8262bddc%2Ftranscoded-1792008845.png",
+      "url": "https://www.latent.space/p/lab-in-the-loop-at-compute-speed",
+      "publishedAt": "2026-10-14T20:35:09.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -7470,21 +7287,6 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "register:https://www.theregister.com/ai-and-ml/2026/08/31/openclaw-20-pours-glitter-on-slow-burning-security-dumpster-fire/5293492",
-      "source": "register",
-      "title": "OpenClaw 2.0 pours glitter on slow-burning security dumpster fire",
-      "blurb": "Making installation easier and putting a new wrapper on the interface while leaving most of the security to users is a recipe for more trouble with the popular agent harness",
-      "image": "https://image.theregister.com/?imageId=4094099&width=800",
-      "url": "https://www.theregister.com/ai-and-ml/2026/08/31/openclaw-20-pours-glitter-on-slow-burning-security-dumpster-fire/5293492",
-      "publishedAt": "2026-08-31T19:13:31.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "ai and ml"
-      },
       "alsoOn": []
     },
     {
@@ -7709,21 +7511,6 @@
       "alsoOn": []
     },
     {
-      "id": "register:https://www.theregister.com/ai-and-ml/2026/08/28/microsofts-virtual-intern-teams-facilitator-will-be-late-for-the-meeting/5293045",
-      "source": "register",
-      "title": "Microsoft's virtual intern Teams Facilitator will be late for the meeting",
-      "blurb": "Teams question detection bot postpones debut, will get 2-month extension to practice interrupting you",
-      "image": "https://image.theregister.com/?imageId=5287779&width=800",
-      "url": "https://www.theregister.com/ai-and-ml/2026/08/28/microsofts-virtual-intern-teams-facilitator-will-be-late-for-the-meeting/5293045",
-      "publishedAt": "2026-08-28T10:29:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "ai and ml"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "arxiv:2610.22319v1",
       "source": "arxiv",
       "title": "A team of Gemini 4 Argon agents beats Minecraft",
@@ -7781,19 +7568,6 @@
       "image": null
     },
     {
-      "id": "marktechpost:https://www.marktechpost.com/2026/10/17/20-jev-alternatives-the-decision-models-taking-on-typesafe-in-2026/",
-      "source": "marktechpost",
-      "title": "20 Jev Alternatives: The Decision Models Taking On TypeSafe in 2026",
-      "blurb": "TypeSafe launched Jev on September 15, 2026. It is a decision model, not a chatbot. You define the allowed answers, and Jev returns a label, a score or a yes/no probability. In about 4…",
-      "image": null,
-      "url": "https://www.marktechpost.com/2026/10/17/20-jev-alternatives-the-decision-models-taking-on-typesafe-in-2026/",
-      "publishedAt": "2026-10-17T07:26:39.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "ars:https://arstechnica.com/information-technology/2026/10/topgolf-saved-over-11-3-million-after-leaving-vmware/",
       "source": "ars",
       "title": "Topgolf saved over $11.3 million after leaving VMware",
@@ -7801,6 +7575,19 @@
       "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/11-TGFW-Tee-Line-X2-1152x648.jpg",
       "url": "https://arstechnica.com/information-technology/2026/10/topgolf-saved-over-11-3-million-after-leaving-vmware/",
       "publishedAt": "2026-10-13T21:33:43.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "marktechpost:https://www.marktechpost.com/2026/10/17/20-jev-alternatives-the-decision-models-taking-on-typesafe-in-2026/",
+      "source": "marktechpost",
+      "title": "20 Jev Alternatives: The Decision Models Taking On TypeSafe in 2026",
+      "blurb": "TypeSafe launched Jev on September 15, 2026. It is a decision model, not a chatbot. You define the allowed answers, and Jev returns a label, a score or a yes/no probability. In about 4…",
+      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-1-1-scaled.png",
+      "url": "https://www.marktechpost.com/2026/10/17/20-jev-alternatives-the-decision-models-taking-on-typesafe-in-2026/",
+      "publishedAt": "2026-10-17T07:26:39.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -7907,19 +7694,6 @@
       "alsoOn": []
     },
     {
-      "id": "gizmodo:https://gizmodo.com/ftc-subpoenas-openai-and-anthropic-over-ai-safety-concerns-2000826413",
-      "source": "gizmodo",
-      "title": "FTC Subpoenas OpenAI and Anthropic Over AI Safety Concerns",
-      "blurb": "The agency is seeking records related to AI safety incidents as it investigates potential consumer protection violations.",
-      "image": "https://gizmodo.com/app/uploads/2026/09/GettyImages-2292626872-1280x853.jpg",
-      "url": "https://gizmodo.com/ftc-subpoenas-openai-and-anthropic-over-ai-safety-concerns-2000826413",
-      "publishedAt": "2026-10-15T17:25:12.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "aibusiness:https://aibusiness.com/agentic-ai/google-s-workplace-agent-is-out",
       "source": "aibusiness",
       "title": "Google’s workplace agent is out, but questions abound",
@@ -7944,21 +7718,6 @@
       "scoreLabel": null,
       "meta": {
         "category": "Interview"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "register:https://www.theregister.com/software/2026/08/27/salesforce-boasts-50-of-bookings-were-from-customers-refilling-the-tank-they-consume-flex-credits-they-want-more/5292927",
-      "source": "register",
-      "title": "Salesforce boasts: 50% of bookings were from 'customers refilling the tank... they consume Flex Credits, they want more'",
-      "blurb": "As SaaS giant gets a boost from Claudeforce, users might want to know how their AI use will be monetized",
-      "image": "https://image.theregister.com/?imageId=5292961&width=800",
-      "url": "https://www.theregister.com/software/2026/08/27/salesforce-boasts-50-of-bookings-were-from-customers-refilling-the-tank-they-consume-flex-credits-they-want-more/5292927",
-      "publishedAt": "2026-08-27T13:56:54.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "software"
       },
       "alsoOn": []
     },
@@ -8051,6 +7810,19 @@
       "alsoOn": []
     },
     {
+      "id": "tldrai:https://tldr.tech/ai/2026-10-12",
+      "source": "tldrai",
+      "title": "Gemini 4 Carbon 🧠, Nvidia weighs Reflection acquihire 💰, decision model race 🤖",
+      "blurb": null,
+      "image": null,
+      "url": "https://tldr.tech/ai/2026-10-12",
+      "publishedAt": "2026-10-12T00:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "nvidia:https://blogs.nvidia.com/blog/nordics-technology-ecosystem/",
       "source": "nvidia",
       "title": "The Nordics and NVIDIA Show What’s Possible When a Region Commits to Advanced Computing",
@@ -8064,13 +7836,13 @@
       "alsoOn": []
     },
     {
-      "id": "tldrai:https://tldr.tech/ai/2026-10-12",
-      "source": "tldrai",
-      "title": "Gemini 4 Carbon 🧠, Nvidia weighs Reflection acquihire 💰, decision model race 🤖",
-      "blurb": null,
-      "image": null,
-      "url": "https://tldr.tech/ai/2026-10-12",
-      "publishedAt": "2026-10-12T00:00:00.000Z",
+      "id": "awsml:https://aws.amazon.com/blogs/machine-learning/generate-presentations-with-amazon-bedrock-agentcore/",
+      "source": "awsml",
+      "title": "Generate presentations with Amazon Bedrock AgentCore",
+      "blurb": "This post walks you through building an AI agent system with Amazon Bedrock AgentCore that automates PowerPoint presentation creation from enterprise documents. A supervisor agent…",
+      "image": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/10/09/ML-19250-featured-image.png",
+      "url": "https://aws.amazon.com/blogs/machine-learning/generate-presentations-with-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-10-14T13:58:43.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -8089,19 +7861,6 @@
       "meta": {
         "category": "Business"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "awsml:https://aws.amazon.com/blogs/machine-learning/generate-presentations-with-amazon-bedrock-agentcore/",
-      "source": "awsml",
-      "title": "Generate presentations with Amazon Bedrock AgentCore",
-      "blurb": "This post walks you through building an AI agent system with Amazon Bedrock AgentCore that automates PowerPoint presentation creation from enterprise documents. A supervisor agent…",
-      "image": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/10/09/ML-19250-featured-image.png",
-      "url": "https://aws.amazon.com/blogs/machine-learning/generate-presentations-with-amazon-bedrock-agentcore/",
-      "publishedAt": "2026-10-14T13:58:43.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -8162,21 +7921,6 @@
       "alsoOn": []
     },
     {
-      "id": "register:https://www.theregister.com/ai-and-ml/2026/08/25/mckinsey-says-enterprise-ai-is-finally-on-the-road-to-roi/5292388",
-      "source": "register",
-      "title": "McKinsey says enterprise AI is finally 'on the road to ROI'",
-      "blurb": "Fasten your seatbelt and empty that bladder: AI investment is rising, but reported enterprise earnings impact remains stubbornly flat",
-      "image": "https://image.theregister.com/?imageId=234929&width=800",
-      "url": "https://www.theregister.com/ai-and-ml/2026/08/25/mckinsey-says-enterprise-ai-is-finally-on-the-road-to-roi/5292388",
-      "publishedAt": "2026-08-25T17:44:49.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "ai and ml"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "thenewstack:https://thenewstack.io/cloudflare-voidzero-void-vibe-coding/",
       "source": "thenewstack",
       "title": "Employees are vibe-coding their own apps. Cloudflare open-sources Void to give IT a handle on them",
@@ -8184,19 +7928,6 @@
       "image": "https://cdn.thenewstack.io/media/2026/10/10c0e182-ubaid-e-alyafizi-3ll8bdtzqya-unsplash-1024x768.jpg",
       "url": "https://thenewstack.io/cloudflare-voidzero-void-vibe-coding/",
       "publishedAt": "2026-10-16T12:16:01.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "alignmentforum:https://www.alignmentforum.org/posts/NQLCdfeNsQHZaJ8iC/preface-to-the-computational-agent-theory-and-asi-alignment",
-      "source": "alignmentforum",
-      "title": "Preface to the Computational Agent Theory and ASI Alignment Sequence",
-      "blurb": "The idea of “artificial superintelligence [1] ” (ASI) has recently crossed from the realm of science fiction (in the mainstream perception) to the realm of near-term technological goals…",
-      "image": "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1654295382/new_mississippi_river_fjdmww.jpg",
-      "url": "https://www.alignmentforum.org/posts/NQLCdfeNsQHZaJ8iC/preface-to-the-computational-agent-theory-and-asi-alignment",
-      "publishedAt": "2026-10-15T15:33:50.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -8215,6 +7946,19 @@
       "meta": {
         "category": "Type-whitepaper"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "alignmentforum:https://www.alignmentforum.org/posts/NQLCdfeNsQHZaJ8iC/preface-to-the-computational-agent-theory-and-asi-alignment",
+      "source": "alignmentforum",
+      "title": "Preface to the Computational Agent Theory and ASI Alignment Sequence",
+      "blurb": "The idea of “artificial superintelligence [1] ” (ASI) has recently crossed from the realm of science fiction (in the mainstream perception) to the realm of near-term technological goals…",
+      "image": "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1654295382/new_mississippi_river_fjdmww.jpg",
+      "url": "https://www.alignmentforum.org/posts/NQLCdfeNsQHZaJ8iC/preface-to-the-computational-agent-theory-and-asi-alignment",
+      "publishedAt": "2026-10-15T15:33:50.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -8564,6 +8308,21 @@
       "alsoOn": []
     },
     {
+      "id": "papers:2610.20731",
+      "source": "papers",
+      "title": "WorldCast: Exploring Intelligent Visual Generation in World State Prediction",
+      "blurb": "Humans interpret multimodal observations of the world and forecast how it will evolve. Recent multimodal generative systems have demonstrated similar capabilities: they can integrate multimodal context and synthesize visual outputs that depict changes in the world. To characterize this emerging trajectory, we organize model capabilities into a four-level hierarchy and discover that higher-level tasks remain relatively underexplored despite model progress. To bridge this gap, we explore model performance on multi-step world state prediction, a high-level task that requires models to forecast successive future world states from multimodal observations and diverse references. Such a task requires models to possess entangled understanding and generation capabilities, as well as extensive world knowledge to translate human action sequences, physical transformations, and abstract visual reasoning into coherent visual outputs. We introduce WorldCast, a benchmark comprising 320 manually designed cases across eight categories, and evaluate 12 representative models. The conducted experiments yield three key insights: (a) advances in frontier models are rapidly pushing the boundaries of intelligent world modeling, with the GPT-Image-2.5 System scoring 72.8 and demonstrating early-stage visual state prediction capabilities on real-world tasks; (b) WorldCast reveals substantial gaps between models: even Nano Banana Pro reaches only 42.8 and the best open-source model scores 20.1, with deficits in handling complex context, entangled references, and reasoning-heavy tasks; (c) strong generative models effectively draw on the capabilities of their underlying language models. These findings highlight the need for multimodal generative models that are capable of dynamic planning and reasoning while also being deeply unified to faithfully simulate real-world states.",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.20731.png",
+      "url": "https://huggingface.co/papers/2610.20731",
+      "publishedAt": "2026-10-13T20:00:00.000Z",
+      "score": 30,
+      "scoreLabel": "upvotes",
+      "meta": {
+        "comments": 2
+      },
+      "alsoOn": []
+    },
+    {
       "id": "oneusefulthing:https://www.oneusefulthing.org/p/an-opinionated-guide-to-which-ai-b22",
       "source": "oneusefulthing",
       "title": "An opinionated guide to which AI to use to do stuff",
@@ -8592,34 +8351,6 @@
       "alsoOn": []
     },
     {
-      "id": "papers:2610.20731",
-      "source": "papers",
-      "title": "WorldCast: Exploring Intelligent Visual Generation in World State Prediction",
-      "blurb": "Humans interpret multimodal observations of the world and forecast how it will evolve. Recent multimodal generative systems have demonstrated similar capabilities: they can integrate multimodal context and synthesize visual outputs that depict changes in the world. To characterize this emerging trajectory, we organize model capabilities into a four-level hierarchy and discover that higher-level tasks remain relatively underexplored despite model progress. To bridge this gap, we explore model performance on multi-step world state prediction, a high-level task that requires models to forecast successive future world states from multimodal observations and diverse references. Such a task requires models to possess entangled understanding and generation capabilities, as well as extensive world knowledge to translate human action sequences, physical transformations, and abstract visual reasoning into coherent visual outputs. We introduce WorldCast, a benchmark comprising 320 manually designed cases across eight categories, and evaluate 12 representative models. The conducted experiments yield three key insights: (a) advances in frontier models are rapidly pushing the boundaries of intelligent world modeling, with the GPT-Image-2.5 System scoring 72.8 and demonstrating early-stage visual state prediction capabilities on real-world tasks; (b) WorldCast reveals substantial gaps between models: even Nano Banana Pro reaches only 42.8 and the best open-source model scores 20.1, with deficits in handling complex context, entangled references, and reasoning-heavy tasks; (c) strong generative models effectively draw on the capabilities of their underlying language models. These findings highlight the need for multimodal generative models that are capable of dynamic planning and reasoning while also being deeply unified to faithfully simulate real-world states.",
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.20731.png",
-      "url": "https://huggingface.co/papers/2610.20731",
-      "publishedAt": "2026-10-13T20:00:00.000Z",
-      "score": 30,
-      "scoreLabel": "upvotes",
-      "meta": {
-        "comments": 2
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "tomshardware:https://www.tomshardware.com/tech-industry/artificial-intelligence/intels-crescent-island-ai-accelerator-officially-powers-new-gpu-d-series-products-chip-delivers-1-3-peak-pflops-of-fp8-compute-and-1-5-tb-s-of-memory-bandwidth",
-      "source": "tomshardware",
-      "title": "Intel's Crescent Island AI accelerator officially powers new GPU D-Series products",
-      "blurb": "Intel's Crescent Island AI inference accelerator will come to market as the GPU D-Series family, promising 1.3 PFLOPS of FP8 compute alongside up to 480 GB of LPDDR5X delivering 1.5 TB/s of…",
-      "image": "https://cdn.mos.cms.futurecdn.net/rhHcYjk8r2a28j68LDnQ88-1920-80.jpg",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/intels-crescent-island-ai-accelerator-officially-powers-new-gpu-d-series-products-chip-delivers-1-3-peak-pflops-of-fp8-compute-and-1-5-tb-s-of-memory-bandwidth",
-      "publishedAt": "2026-10-12T19:48:14.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hf:LiquidAI/d1-3B",
       "source": "hf",
       "title": "LiquidAI/d1-3B",
@@ -8634,6 +8365,19 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/LiquidAI/d1-3B.png",
       "blurb": "d1-3B is a 3B parameter decision model built on LFM2.5-VL-3B. You give it a state (text, JSON, images, or a mix) and a set of questions. It returns calibrated, typed answers in one forward…"
+    },
+    {
+      "id": "semiengineering:https://semiengineering.com/building-ai-infrastructure-for-greater-choice-and-flexibility/",
+      "source": "semiengineering",
+      "title": "Building AI Infrastructure For Greater Choice And Flexibility",
+      "blurb": "Open interfaces and interoperability allow designers to choose technologies based on the needs of the system. The post Building AI Infrastructure For Greater Choice And Flexibility appeared…",
+      "image": "https://semiengineering.com/wp-content/uploads/2026/10/Cadence_Building-AI-Infra-Choice-Flexibility-fig1.webp?fit=963%2C432&ssl=1",
+      "url": "https://semiengineering.com/building-ai-infrastructure-for-greater-choice-and-flexibility/",
+      "publishedAt": "2026-10-15T07:03:05.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "gh:repoboost-hq/github-star-benchmarks",
@@ -8652,19 +8396,6 @@
       "alsoOn": []
     },
     {
-      "id": "semiengineering:https://semiengineering.com/building-ai-infrastructure-for-greater-choice-and-flexibility/",
-      "source": "semiengineering",
-      "title": "Building AI Infrastructure For Greater Choice And Flexibility",
-      "blurb": "Open interfaces and interoperability allow designers to choose technologies based on the needs of the system. The post Building AI Infrastructure For Greater Choice And Flexibility appeared…",
-      "image": "https://semiengineering.com/wp-content/uploads/2026/10/Cadence_Building-AI-Infra-Choice-Flexibility-fig1.webp?fit=963%2C432&ssl=1",
-      "url": "https://semiengineering.com/building-ai-infrastructure-for-greater-choice-and-flexibility/",
-      "publishedAt": "2026-10-15T07:03:05.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "tc:https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
       "source": "tc",
       "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
@@ -8678,13 +8409,13 @@
       "alsoOn": []
     },
     {
-      "id": "aisnakeoil:https://www.normaltech.ai/p/ai-agents-cant-yet-do-open-ended",
-      "source": "aisnakeoil",
-      "title": "AI agents can't yet do open-ended AI research",
-      "blurb": null,
-      "image": "https://substackcdn.com/image/fetch/$s_!2o-q!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5a0117ca-8ce4-45e9-a956-62c82a45d44b_3064x1792.jpeg",
-      "url": "https://www.normaltech.ai/p/ai-agents-cant-yet-do-open-ended",
-      "publishedAt": "2026-08-05T13:49:19.000Z",
+      "id": "tomshardware:https://www.tomshardware.com/tech-industry/artificial-intelligence/intels-crescent-island-ai-accelerator-officially-powers-new-gpu-d-series-products-chip-delivers-1-3-peak-pflops-of-fp8-compute-and-1-5-tb-s-of-memory-bandwidth",
+      "source": "tomshardware",
+      "title": "Intel's Crescent Island AI accelerator officially powers new GPU D-Series products",
+      "blurb": "Intel's Crescent Island AI inference accelerator will come to market as the GPU D-Series family, promising 1.3 PFLOPS of FP8 compute alongside up to 480 GB of LPDDR5X delivering 1.5 TB/s of…",
+      "image": "https://cdn.mos.cms.futurecdn.net/rhHcYjk8r2a28j68LDnQ88-1920-80.jpg",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/intels-crescent-island-ai-accelerator-officially-powers-new-gpu-d-series-products-chip-delivers-1-3-peak-pflops-of-fp8-compute-and-1-5-tb-s-of-memory-bandwidth",
+      "publishedAt": "2026-10-12T19:48:14.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -8734,19 +8465,6 @@
       "meta": {
         "category": "Ieee-member-news"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "gizmodo:https://gizmodo.com/amazon-bee-eclipse-frontier-2000826303",
-      "source": "gizmodo",
-      "title": "Amazon’s New AI Gadget Is a Credit Card-Sized Puck That Can Listen to Everything With a Press of a Button",
-      "blurb": "The Bee wearables are back and now come in a small card-shaped version that records everything you say.",
-      "image": "https://gizmodo.com/app/uploads/2026/10/Bee-wearables-1280x853.jpg",
-      "url": "https://gizmodo.com/amazon-bee-eclipse-frontier-2000826303",
-      "publishedAt": "2026-10-15T14:55:10.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -8917,13 +8635,13 @@
       "alsoOn": []
     },
     {
-      "id": "aibusiness:https://aibusiness.com/responsible-ai/anthropic-opens-cybersecurity-program-applications",
-      "source": "aibusiness",
-      "title": "Anthropic opens cybersecurity program applications, releases cheaper Haiku",
-      "blurb": "Under the program, the vendor provides enterprises with models that can defend against bad actors.",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltcab87278a271fd3c/6ac8104a015fc8b02d6de29a/GettyImages-2265889715.jpg?width=720&quality=80&disable=upscale",
-      "url": "https://aibusiness.com/responsible-ai/anthropic-opens-cybersecurity-program-applications",
-      "publishedAt": "2026-10-08T21:12:15.000Z",
+      "id": "aisnakeoil:https://www.normaltech.ai/p/ai-agents-cant-yet-do-open-ended",
+      "source": "aisnakeoil",
+      "title": "AI agents can't yet do open-ended AI research",
+      "blurb": null,
+      "image": "https://substackcdn.com/image/fetch/$s_!2o-q!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5a0117ca-8ce4-45e9-a956-62c82a45d44b_3064x1792.jpeg",
+      "url": "https://www.normaltech.ai/p/ai-agents-cant-yet-do-open-ended",
+      "publishedAt": "2026-08-05T13:49:19.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -9197,7 +8915,7 @@
       "source": "marktechpost",
       "title": "StepFun Releases Step 5 Preview Open Weights: 600B MoE, 27B Active, 1M Context",
       "blurb": "StepFun has released Step 5 Preview as open weights. FP8 and BF16 checkpoints are live on Hugging Face and ModelScope. Step 5 Preview is a sparse Mixture-of-Experts model from StepFun built…",
-      "image": null,
+      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-1-scaled.png",
       "url": "https://www.marktechpost.com/2026/10/16/stepfun-releases-step-5-preview-open-weights-600b-moe-27b-active-1m-context/",
       "publishedAt": "2026-10-17T06:29:55.000Z",
       "score": null,
@@ -9244,19 +8962,6 @@
       "image": "https://www.bleepstatic.com/content/hl-images/2026/04/01/Windows_11.jpg",
       "url": "https://www.bleepingcomputer.com/news/microsoft/kb5127648-windows-security-update-may-break-smart-app-control/",
       "publishedAt": "2026-10-16T08:44:22.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "gizmodo:https://gizmodo.com/brain-drain-is-a-bigger-threat-to-national-cybersecurity-than-ai-2000778508",
-      "source": "gizmodo",
-      "title": "Brain Drain Is a Bigger Threat to National Cybersecurity Than AI",
-      "blurb": "What good is investing in offense if you’ve hobbled your own defense?",
-      "image": "https://gizmodo.com/app/uploads/2026/10/Access-Control-national-security-1280x853.jpg",
-      "url": "https://gizmodo.com/brain-drain-is-a-bigger-threat-to-national-cybersecurity-than-ai-2000778508",
-      "publishedAt": "2026-10-15T14:41:27.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -9376,6 +9081,19 @@
       "alsoOn": []
     },
     {
+      "id": "tldrai:https://tldr.tech/ai/2026-10-08",
+      "source": "tldrai",
+      "title": "ChatGPT Intelligent UI 🧠, Claude Haiku 5.5 ⚡, Grok Bot 3rd party models 🤖",
+      "blurb": null,
+      "image": null,
+      "url": "https://tldr.tech/ai/2026-10-08",
+      "publishedAt": "2026-10-08T00:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "arxiv:2610.22297v1",
       "source": "arxiv",
       "title": "Private Retrieval Augmented Generation via Random Projection",
@@ -9389,19 +9107,6 @@
         "category": "cs.AI",
         "authors": 3
       },
-      "alsoOn": []
-    },
-    {
-      "id": "tldrai:https://tldr.tech/ai/2026-10-08",
-      "source": "tldrai",
-      "title": "ChatGPT Intelligent UI 🧠, Claude Haiku 5.5 ⚡, Grok Bot 3rd party models 🤖",
-      "blurb": null,
-      "image": null,
-      "url": "https://tldr.tech/ai/2026-10-08",
-      "publishedAt": "2026-10-08T00:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -9658,6 +9363,19 @@
       "blurb": "MOSS-Image-SFT is a supervised fine-tuned text-to-image model in the *MOSS-Image family from OpenMOSS, derived from MOSS-Image-Base. It uses the same architecture and inference pipeline…"
     },
     {
+      "id": "aibusiness:https://aibusiness.com/responsible-ai/anthropic-opens-cybersecurity-program-applications",
+      "source": "aibusiness",
+      "title": "Anthropic opens cybersecurity program applications, releases cheaper Haiku",
+      "blurb": "Under the program, the vendor provides enterprises with models that can defend against bad actors.",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltcab87278a271fd3c/6ac8104a015fc8b02d6de29a/GettyImages-2265889715.jpg?width=720&quality=80&disable=upscale",
+      "url": "https://aibusiness.com/responsible-ai/anthropic-opens-cybersecurity-program-applications",
+      "publishedAt": "2026-10-08T21:12:15.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "arxiv:2610.22294v1",
       "source": "arxiv",
       "title": "Multi-Target Few-Shot Prompting with Diffusion Language Models",
@@ -9670,21 +9388,6 @@
       "meta": {
         "category": "cs.CL",
         "authors": 3
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "mit:https://news.mit.edu/2026/discovering-value-humanistic-inquiry-1007",
-      "source": "mit",
-      "title": "Discovering the value of humanistic inquiry",
-      "blurb": "Students in MIT’s Concourse program delve deeply into the human condition, debate challenging questions, and learn to develop judgment about issues that can’t be quantified.",
-      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202609/mit-concourse-seminar.jpg?itok=NJvo4Obo",
-      "url": "https://news.mit.edu/2026/discovering-value-humanistic-inquiry-1007",
-      "publishedAt": "2026-10-07T20:10:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "Classes and programs"
       },
       "alsoOn": []
     },
@@ -9709,7 +9412,7 @@
       "image": "https://opengraph.githubassets.com/1/sitor-ai/frametell",
       "url": "https://github.com/sitor-ai/frametell",
       "publishedAt": "2026-10-10T10:02:14.000Z",
-      "score": 236,
+      "score": 237,
       "scoreLabel": "stars",
       "meta": {
         "repo": "sitor-ai/frametell",
@@ -9759,21 +9462,6 @@
       "alsoOn": []
     },
     {
-      "id": "register:https://www.theregister.com/software/2026/08/24/canonical-backs-quest-to-translate-mountains-of-c-into-safe-rust-with-ai/5290959",
-      "source": "register",
-      "title": "Canonical backs quest to translate mountains of C into safe Rust with AI",
-      "blurb": "Bungs banknotes at Bristol boffins to find out if mature code survives the machine",
-      "image": "https://image.theregister.com/?imageId=1618337&width=800",
-      "url": "https://www.theregister.com/software/2026/08/24/canonical-backs-quest-to-translate-mountains-of-c-into-safe-rust-with-ai/5290959",
-      "publishedAt": "2026-08-24T09:27:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "software"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "zdnet:https://www.zdnet.com/tech/windows-october-update-patches-file-explorer-bluetooth/",
       "source": "zdnet",
       "title": "Windows update patches a whopping 1,400 security bugs – including 2 zero days",
@@ -9785,6 +9473,21 @@
       "scoreLabel": null,
       "meta": {
         "category": "Security"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "mit:https://news.mit.edu/2026/discovering-value-humanistic-inquiry-1007",
+      "source": "mit",
+      "title": "Discovering the value of humanistic inquiry",
+      "blurb": "Students in MIT’s Concourse program delve deeply into the human condition, debate challenging questions, and learn to develop judgment about issues that can’t be quantified.",
+      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202609/mit-concourse-seminar.jpg?itok=NJvo4Obo",
+      "url": "https://news.mit.edu/2026/discovering-value-humanistic-inquiry-1007",
+      "publishedAt": "2026-10-07T20:10:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "Classes and programs"
       },
       "alsoOn": []
     },
@@ -9802,19 +9505,6 @@
       "alsoOn": []
     },
     {
-      "id": "techmeme:https://www.techmeme.com/261017/p18#a261017p18",
-      "source": "techmeme",
-      "title": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a \"large scale distillation attack\"…",
-      "blurb": "Walter Schulze / Startup Fortune : Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation…",
-      "image": "https://startupfortune.com/wp-content/uploads/2026/10/opencode-matt-johansen-anomaly-innovations.jpg",
-      "url": "https://www.techmeme.com/261017/p18#a261017p18",
-      "publishedAt": "2026-10-17T20:50:01.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "mozillaai:https://blog.mozilla.ai/open-source-is-not-a-virtue-its-an-ownership-model/",
       "source": "mozillaai",
       "title": "Open Source Is Not a Virtue: It’s an Ownership Model",
@@ -9825,22 +9515,6 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "gh:justxor/deepseek-local-guide-ru",
-      "source": "gh",
-      "title": "justxor/deepseek-local-guide-ru",
-      "blurb": "🐋 Полный гайд на русском: как установить и запустить DeepSeek локально (V4, R1) на ПК, Mac и сервере — Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG, агенты, fine-tuning, лучшие…",
-      "image": "https://opengraph.githubassets.com/1/justxor/deepseek-local-guide-ru",
-      "url": "https://github.com/justxor/deepseek-local-guide-ru",
-      "publishedAt": "2026-10-17T10:03:36.000Z",
-      "score": 87,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "justxor/deepseek-local-guide-ru",
-        "language": "Shell"
-      },
       "alsoOn": []
     },
     {
@@ -9867,6 +9541,22 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "gh:justxor/deepseek-local-guide-ru",
+      "source": "gh",
+      "title": "justxor/deepseek-local-guide-ru",
+      "blurb": "🐋 Полный гайд на русском: как установить и запустить DeepSeek локально (V4, R1) на ПК, Mac и сервере — Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG, агенты, fine-tuning, лучшие…",
+      "image": "https://opengraph.githubassets.com/1/justxor/deepseek-local-guide-ru",
+      "url": "https://github.com/justxor/deepseek-local-guide-ru",
+      "publishedAt": "2026-10-17T10:03:36.000Z",
+      "score": 87,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "justxor/deepseek-local-guide-ru",
+        "language": "Shell"
+      },
       "alsoOn": []
     },
     {
@@ -9975,6 +9665,19 @@
       "alsoOn": []
     },
     {
+      "id": "techmeme:https://www.techmeme.com/261017/p18#a261017p18",
+      "source": "techmeme",
+      "title": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a \"large scale distillation attack\"…",
+      "blurb": "Walter Schulze / Startup Fortune : Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation…",
+      "image": null,
+      "url": "https://www.techmeme.com/261017/p18#a261017p18",
+      "publishedAt": "2026-10-17T20:50:01.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "hn:50088430",
       "source": "hn",
       "title": "ASML's strong orders ease fears AI spending boom is running out of steam",
@@ -9988,6 +9691,21 @@
       },
       "alsoOn": [],
       "image": null
+    },
+    {
+      "id": "googleai:https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
+      "source": "googleai",
+      "title": "Making global data easier to explore",
+      "blurb": "Google and the UN system have launched the UN System Data Commons, a new open platform making global statistics accessible and easy to search.",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/data-commons.max-600x600.format-webp.webp",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
+      "publishedAt": "2026-09-17T20:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "AI"
+      },
+      "alsoOn": []
     },
     {
       "id": "techxplore:https://techxplore.com/news/2026-10-human-underestimated-factor-success-humanai.html",
@@ -10012,34 +9730,6 @@
       "image": "https://substackcdn.com/image/youtube/w_728,c_limit/LEnGYQaYsfs",
       "url": "https://lastweekin.ai/p/lwiai-podcast-256-fable-51-astra",
       "publishedAt": "2026-09-09T08:01:40.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "googleai:https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
-      "source": "googleai",
-      "title": "Making global data easier to explore",
-      "blurb": "Google and the UN system have launched the UN System Data Commons, a new open platform making global statistics accessible and easy to search.",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/data-commons.max-600x600.format-webp.webp",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
-      "publishedAt": "2026-09-17T20:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "AI"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "latentspace:https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
-      "source": "latentspace",
-      "title": "[AINews] Meta Muse Wonder & Wonder Full: MSL’s Claude 5.5-tier Frontier Model",
-      "blurb": "MSL’s emergence as a frontier lab is finally complete.",
-      "image": "https://substackcdn.com/image/fetch/$s_!RofT!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHUck_odaQAA3OF2.jpg",
-      "url": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
-      "publishedAt": "2026-10-13T09:37:04.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -10074,13 +9764,13 @@
       "image": "https://laya-ai.vercel.app/laya_vs_jev_full.png"
     },
     {
-      "id": "gizmodo:https://gizmodo.com/men-are-shaping-the-future-of-ai-that-doesnt-mean-they-know-what-theyre-talking-about-2000825911",
-      "source": "gizmodo",
-      "title": "Men Are Shaping the Future of AI. That Doesn’t Mean They Know What They’re Talking About",
-      "blurb": "\"The question now is who gets to decide on the future of AI and how much will women be involved.\"",
-      "image": "https://gizmodo.com/app/uploads/2026/10/men-confident-about-AI-1280x853.jpg",
-      "url": "https://gizmodo.com/men-are-shaping-the-future-of-ai-that-doesnt-mean-they-know-what-theyre-talking-about-2000825911",
-      "publishedAt": "2026-10-15T13:30:36.000Z",
+      "id": "latentspace:https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
+      "source": "latentspace",
+      "title": "[AINews] Meta Muse Wonder & Wonder Full: MSL’s Claude 5.5-tier Frontier Model",
+      "blurb": "MSL’s emergence as a frontier lab is finally complete.",
+      "image": "https://substackcdn.com/image/fetch/$s_!RofT!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHUck_odaQAA3OF2.jpg",
+      "url": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
+      "publishedAt": "2026-10-13T09:37:04.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -10284,13 +9974,13 @@
       "alsoOn": []
     },
     {
-      "id": "f404:https://www.404media.co/accenture-tells-employees-they-can-now-spend-only-29-on-claude-per-month/",
-      "source": "f404",
-      "title": "Accenture Tells Employees They Can Now Spend Only $29 on Claude Per Month",
-      "blurb": "Some employees who spend as much as $1,000 on Claude usage each month are scrambling to find ways to maintain access to the tool.",
-      "image": "https://storage.ghost.io/c/0f/76/0f76b548-bc58-4f25-abc3-3f5ebca07da4/content/images/2026/10/POLAND_RAILWAYS__26282341837000.jpg",
-      "url": "https://www.404media.co/accenture-tells-employees-they-can-now-spend-only-29-on-claude-per-month/",
-      "publishedAt": "2026-10-15T16:46:18.000Z",
+      "id": "dair:https://nlp.elvissaravia.com/p/ai-agents-weekly-claude-opus-55-gpt",
+      "source": "dair",
+      "title": "🤖 AI Agents Weekly: Claude Opus 5.5, GPT-6 Sol and Luna, MiMo-V2.6, Step 5 Preview, Google AX, Agensh, and More",
+      "blurb": "Claude Opus 5.5, GPT-6 Sol and Luna, MiMo-V2.6, Step 5 Preview, Google AX, Agensh, and More",
+      "image": "https://substackcdn.com/image/fetch/$s_!Dkeo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9cd86004-a056-4777-9963-d9d013c360f9_1760x1390.png",
+      "url": "https://nlp.elvissaravia.com/p/ai-agents-weekly-claude-opus-55-gpt",
+      "publishedAt": "2026-09-26T14:55:56.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -10307,6 +9997,309 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "mozillaai:https://blog.mozilla.ai/using-octonous-as-a-product-operations-manager/",
+      "source": "mozillaai",
+      "title": "Using Octonous as a Product Operations Manager",
+      "blurb": "Discover how a Product Operations Manager uses Octonous to streamline daily workflows, from turning GitHub releases into newsletters to capturing competitor intel from Slack. Save hours on…",
+      "image": "https://storage.ghost.io/c/68/76/6876f0af-8955-4de4-a637-a5e7cc399136/content/images/2026/08/data-src-image-81ba1d55-8ca0-4af2-a172-c0f37b8a64f6-1.png",
+      "url": "https://blog.mozilla.ai/using-octonous-as-a-product-operations-manager/",
+      "publishedAt": "2026-08-14T09:32:29.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "interconnects:https://www.interconnects.ai/p/one-resignation-turned-the-embers",
+      "source": "interconnects",
+      "title": "One resignation turned the embers of AI fear into a wildfire",
+      "blurb": null,
+      "image": "https://substack-post-media.s3.amazonaws.com/public/images/dcb4417f-b766-4f5c-9ade-78f591cf0e71_3182x1790.png",
+      "url": "https://www.interconnects.ai/p/one-resignation-turned-the-embers",
+      "publishedAt": "2026-09-10T15:28:52.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "f404:https://www.404media.co/accenture-tells-employees-they-can-now-spend-only-29-on-claude-per-month/",
+      "source": "f404",
+      "title": "Accenture Tells Employees They Can Now Spend Only $29 on Claude Per Month",
+      "blurb": "Some employees who spend as much as $1,000 on Claude usage each month are scrambling to find ways to maintain access to the tool.",
+      "image": "https://storage.ghost.io/c/0f/76/0f76b548-bc58-4f25-abc3-3f5ebca07da4/content/images/2026/10/POLAND_RAILWAYS__26282341837000.jpg",
+      "url": "https://www.404media.co/accenture-tells-employees-they-can-now-spend-only-29-on-claude-per-month/",
+      "publishedAt": "2026-10-15T16:46:18.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "spectrum:https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
+      "source": "spectrum",
+      "title": "Unveiling IC-STAR: Full-Flow Autonomy from Digital to Analog",
+      "blurb": "Learn how engineers can shift from manually managing tools and handoffs to defining objectives and supervising AI-driven execution across the silicon development lifecycle. Key Takeaways…",
+      "image": "https://assets.rbl.ms/67843727/origin.png",
+      "url": "https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
+      "publishedAt": "2026-09-29T10:00:06.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "Type-webinar"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "stratechery:https://stratechery.com/2026/its-not-you-its-me/",
+      "source": "stratechery",
+      "title": "2026.41: It’s Not You, It’s Me",
+      "blurb": "The best Stratechery content from the week of October 5, 2026, including drifting apart from Apple, Facebook complications, and the delightful absurdity of U.S.-China dynamics.",
+      "image": "https://i0.wp.com/stratechery.com/wp-content/uploads/2026/10/GettyImages-112746830-scaled.jpg?fit=1200%2C783&ssl=1",
+      "url": "https://stratechery.com/2026/its-not-you-its-me/",
+      "publishedAt": "2026-10-09T17:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "pytorch:https://pytorch.org/blog/session-aware-agentic-inference-with-nvidia-dynamo/",
+      "source": "pytorch",
+      "title": "Session-Aware Agentic Inference with NVIDIA Dynamo",
+      "blurb": "TL;DR Agentic workloads change the traffic an inference server sees. Unlike single-turn chat, an agent session can involve a large initial prefill, repeated model calls, and subagents…",
+      "image": "https://pytorch.org/wp-content/uploads/2026/10/All-PyTorch-Blog-Social-Images-31.png",
+      "url": "https://pytorch.org/blog/session-aware-agentic-inference-with-nvidia-dynamo/",
+      "publishedAt": "2026-10-08T18:13:46.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "techreview:https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
+      "source": "techreview",
+      "title": "AI breakthroughs in robotics won’t change your life any time soon",
+      "blurb": "The story is a collaboration between MIT Technology Review and Aventine, a non-profit research foundation that creates and supports content about how technology and science are changing the…",
+      "image": "https://wp.technologyreview.com/wp-content/uploads/2026/10/fin1a_updated.jpg?resize=1200,600",
+      "url": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
+      "publishedAt": "2026-10-08T09:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "ghblog:https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/",
+      "source": "ghblog",
+      "title": "AI is changing developer work. Here are three skills to strengthen.",
+      "blurb": "Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow. The post AI is changing developer work. Here are three skills to…",
+      "image": "https://github.blog/wp-content/uploads/2026/03/branchingout.png",
+      "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/",
+      "publishedAt": "2026-10-02T15:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "nvidiaresearch:https://research.nvidia.com/person/yujui-lin",
+      "source": "nvidiaresearch",
+      "title": "Yujui Lin",
+      "blurb": "Yujui Lin yujuil Thu, 10/01/2026 - 14:58 Yujui Lin received his Ph.D. in Mechanical Engineering from Stanford University, where he worked with Professors Kenneth Goodson and Mehdi Asheghi…",
+      "image": "https://research.nvidia.com/sites/default/files/person/Yujui%20Lin.jpg",
+      "url": "https://research.nvidia.com/person/yujui-lin",
+      "publishedAt": "2026-10-01T21:58:13.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "msr:https://www.microsoft.com/en-us/research/blog/forecasting-space-weather-risks-on-power-grids/",
+      "source": "msr",
+      "title": "Forecasting space weather risks on power grids",
+      "blurb": "Extreme space-weather events can damage power systems on Earth and degrade GPS accuracy and satellite operations. A new machine learning system can predict where damage is likely to occur…",
+      "image": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/ForecastingSpace-TWLIFB-1200x627-1.jpg",
+      "url": "https://www.microsoft.com/en-us/research/blog/forecasting-space-weather-risks-on-power-grids/",
+      "publishedAt": "2026-09-30T16:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "gradflow:https://gradientflow.com/the-ai-data-problem-moved-downstream/",
+      "source": "gradflow",
+      "title": "The AI Data Problem Moved Downstream",
+      "blurb": "Last year I wrote that robotics had a data problem language models were lucky enough to avoid. Text, images, and code had accumulated for decades before anyone decided to train models on…",
+      "image": "https://i0.wp.com/gradientflow.com/wp-content/uploads/2026/09/Data-for-AI-art2.jpeg?fit=1851%2C1009&ssl=1",
+      "url": "https://gradientflow.com/the-ai-data-problem-moved-downstream/",
+      "publishedAt": "2026-09-30T12:57:49.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "sakana:/sail/",
+      "source": "sakana",
+      "title": "SAIL: Scaling In-Context Imitation Learning",
+      "blurb": null,
+      "image": null,
+      "url": "/sail/",
+      "publishedAt": "2026-09-27T15:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "media"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "importai:https://jack-clark.net/2026/09/07/import-ai-472-deepminds-cheating-math-agents-populist-ai-policies-and-forethought-theorizes-a-nightwatchman/",
+      "source": "importai",
+      "title": "Import AI 472: DeepMind’s cheating math agents; populist AI policies; and Forethought theorizes a nightwatchman",
+      "blurb": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now…",
+      "image": "https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/09/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-0Ig6P5.png?resize=150%2C150&ssl=1",
+      "url": "https://jack-clark.net/2026/09/07/import-ai-472-deepminds-cheating-math-agents-populist-ai-policies-and-forethought-theorizes-a-nightwatchman/",
+      "publishedAt": "2026-09-07T12:26:31.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "hf:SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
+      "source": "hf",
+      "title": "SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
+      "url": "https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
+      "publishedAt": "2026-10-02T03:42:33.000Z",
+      "score": 306,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 1773110,
+        "task": "image-text-to-text"
+      },
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF.png",
+      "blurb": "🧭 What this repository is An abliterated build of the official ISTA-DASLab GSQ-RCO quantizations . Not a single one of GSQ's learned quantized tensors was recomputed — 144…"
+    },
+    {
+      "id": "arxiv:2610.22292v1",
+      "source": "arxiv",
+      "title": "CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty",
+      "blurb": "Large language models (LLMs) are becoming prevalent in scenarios where honesty is critical. However, despite alignment training, these models still exhibit dishonest behaviour, such as…",
+      "image": null,
+      "url": "http://arxiv.org/abs/2610.22292v1",
+      "publishedAt": "2026-10-15T17:43:47.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.LG",
+        "authors": 4
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "semiengineering:https://semiengineering.com/why-open-weight-ai-matters/",
+      "source": "semiengineering",
+      "title": "Why Open-Weight AI Matters",
+      "blurb": "Proprietary models still hold the edge, but open-weight models add more flexibility for deploying AI. The post Why Open-Weight AI Matters appeared first on Semiconductor Engineering .",
+      "image": "https://semiengineering.com/wp-content/uploads/AdobeStock_1104488381-03-26-2025-scaled.jpeg?fit=2560%2C1600&ssl=1",
+      "url": "https://semiengineering.com/why-open-weight-ai-matters/",
+      "publishedAt": "2026-10-15T07:02:13.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "lobsters:xff77a",
+      "source": "lobsters",
+      "title": "Best Books/Courses/Channels to Leapfrog on AI/ML Material",
+      "blurb": "Assuming I have been on hibernation since 2018-19 time frame, which materials - books, MOOC courses and YT channels would be recommended for me to get started with understanding all the current progress on AI/ML. Ideally a resource like TeachYourselfCS that can give structure and roadmap to navigate all the progress/knowledge on the domain would really help. Do we have to take different approaches to understand LLMs vs other type of ML models which have been in large scale deployment/usage from pre-2022/21 time frame? Thanks a lot in advance.",
+      "url": "https://lobste.rs/s/xff77a/best_books_courses_channels_leapfrog_on",
+      "publishedAt": "2026-10-07T14:12:02.815Z",
+      "score": 5,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 4
+      },
+      "alsoOn": [],
+      "image": null
+    },
+    {
+      "id": "marktechpost:https://www.marktechpost.com/2026/10/16/perplexity-open-sources-space-firecracker-microvm-sandbox-ai-agents/",
+      "source": "marktechpost",
+      "title": "Perplexity Open-Sources SPACE, a Firecracker MicroVM Sandbox for AI Agents",
+      "blurb": "Perplexity has open-sourced SPACE, the sandbox platform behind every task in Perplexity Computer. The Perplexity SPACE sandbox gives each agent task its own Firecracker microVM. Credentials…",
+      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-scaled.png",
+      "url": "https://www.marktechpost.com/2026/10/16/perplexity-open-sources-space-firecracker-microvm-sandbox-ai-agents/",
+      "publishedAt": "2026-10-17T00:09:12.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "tc:https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
+      "source": "tc",
+      "title": "When it came to Cal AI’s viral success, a small army of influencers paid off",
+      "blurb": "The company generated over $30 million in revenue in two years and was acquired by MyFitnessPal for an undisclosed amount of money in March.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/IMG_4996.jpeg?resize=1200,900",
+      "url": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
+      "publishedAt": "2026-10-15T23:44:56.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "ars:https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/",
+      "source": "ars",
+      "title": "MCP for agent-to-agent comms may be the riskiest protocol you've never heard of",
+      "blurb": "Trust gaps in the new protocol spread malicious prompts from one agent to another.",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-1152x648.jpg",
+      "url": "https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/",
+      "publishedAt": "2026-10-05T22:26:35.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "gh:christos-antono/NPCTalk",
+      "source": "gh",
+      "title": "christos-antono/NPCTalk",
+      "blurb": "Make any NPC in any game talk back with Fish Audio: skills, a self-hosted voice server and tools for AI coding agents, with a full GTA V example.",
+      "image": "https://opengraph.githubassets.com/1/christos-antono/NPCTalk",
+      "url": "https://github.com/christos-antono/NPCTalk",
+      "publishedAt": "2026-10-15T23:37:25.000Z",
+      "score": 155,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "christos-antono/NPCTalk",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "googleai:https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+      "source": "googleai",
+      "title": "Building AI to accelerate science and improve lives",
+      "blurb": "The true measure of AI is who it helps. Here’s how it’s impacting lives today. We're focused on key areas where advanced technology can help make extraordinary progress …",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SocialShare_hD2gcAw.max-600x600.format-webp.webp",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+      "publishedAt": "2026-09-15T16:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "Google Research"
+      },
       "alsoOn": []
     }
   ]
