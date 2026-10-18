@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T17:51:49Z",
+  "generatedAt": "2026-10-18T17:54:44Z",
   "sources": [
     {
       "id": "hn",
@@ -219,13 +219,6 @@
       "error": null
     },
     {
-      "id": "register",
-      "name": "The Register",
-      "status": "error",
-      "count": 0,
-      "error": "returned no items"
-    },
-    {
       "id": "techreview",
       "name": "MIT Tech Review",
       "status": "ok",
@@ -352,8 +345,22 @@
       "error": null
     },
     {
+      "id": "techspot",
+      "name": "TechSpot",
+      "status": "ok",
+      "count": 30,
+      "error": null
+    },
+    {
       "id": "semiengineering",
       "name": "Semiconductor Engineering",
+      "status": "ok",
+      "count": 10,
+      "error": null
+    },
+    {
+      "id": "eetimes",
+      "name": "EE Times",
       "status": "ok",
       "count": 10,
       "error": null
@@ -385,13 +392,6 @@
       "status": "ok",
       "count": 20,
       "error": null
-    },
-    {
-      "id": "gizmodo",
-      "name": "Gizmodo",
-      "status": "error",
-      "count": 0,
-      "error": "HTTP 403"
     },
     {
       "id": "nine5google",
@@ -594,7 +594,7 @@
       "source": "techmeme",
       "title": "Sources: HomeView units sat in warehouses for months; Apple plans a Nov. 6 store reset, likely for new Macs; iPhone Duo preorder mess could boost 18 Pro sales …",
       "blurb": "Mark Gurman / Bloomberg : Sources: HomeView units sat in warehouses for months; Apple plans a Nov. 6 store reset, likely for new Macs; iPhone Duo preorder mess could boost 18 Pro sales…",
-      "image": null,
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iXiE5svOJdSs/v0/1200x800.jpg",
       "url": "https://www.techmeme.com/261018/p8#a261018p8",
       "publishedAt": "2026-10-18T15:30:01.000Z",
       "score": null,
@@ -644,6 +644,19 @@
       "alsoOn": []
     },
     {
+      "id": "thenewstack:https://thenewstack.io/gemini-argon-claude-opus/",
+      "source": "thenewstack",
+      "title": "Gemini 4 Argon vs. Claude Opus 5.5: Half the price and about half as accurate",
+      "blurb": "When Google announced Gemini 4 Argon to a small group of testers on September 30, it came with a benchmark The post Gemini 4 Argon vs. Claude Opus 5.5: Half the price and about half as…",
+      "image": "https://cdn.thenewstack.io/media/2026/10/667cdf2d-daniele-franchi-wyj0rahs_2k-unsplash-1024x683.jpg",
+      "url": "https://thenewstack.io/gemini-argon-claude-opus/",
+      "publishedAt": "2026-10-18T15:30:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "guardian:https://www.theguardian.com/australia-news/2026/oct/19/victorian-election-advance-campaign-undermining-liberal-national-ntwnfb",
       "source": "guardian",
       "title": "‘Not our friends’: Victorian Coalition warns Advance’s ‘bizarre’ campaign may cost it majority government",
@@ -659,13 +672,13 @@
       "alsoOn": []
     },
     {
-      "id": "thenewstack:https://thenewstack.io/gemini-argon-claude-opus/",
-      "source": "thenewstack",
-      "title": "Gemini 4 Argon vs. Claude Opus 5.5: Half the price and about half as accurate",
-      "blurb": "When Google announced Gemini 4 Argon to a small group of testers on September 30, it came with a benchmark The post Gemini 4 Argon vs. Claude Opus 5.5: Half the price and about half as…",
-      "image": "https://cdn.thenewstack.io/media/2026/10/667cdf2d-daniele-franchi-wyj0rahs_2k-unsplash-1024x683.jpg",
-      "url": "https://thenewstack.io/gemini-argon-claude-opus/",
-      "publishedAt": "2026-10-18T15:30:00.000Z",
+      "id": "techspot:https://www.techspot.com/news/114246-sony-patents-ai-predicts-game-next-frame-before.html",
+      "source": "techspot",
+      "title": "Sony patents AI that predicts a game's next frame before the GPU finishes rendering it",
+      "blurb": "The approach targets a drawback of some frame-generation techniques: they require two completed frames before generating an image to insert between them. Waiting for the second frame adds…",
+      "image": "https://www.techspot.com/images2/news/ts3_thumbs/2026/10/2026-10-18-ts3_thumbs-0ce.jpg",
+      "url": "https://www.techspot.com/news/114246-sony-patents-ai-predicts-game-next-frame-before.html",
+      "publishedAt": "2026-10-18T14:48:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -907,7 +920,7 @@
       "source": "marktechpost",
       "title": "Google Open-Sources Harness2, a Recursive Agent Harnessing Framework",
       "blurb": "Google Research released Harness2, an Apache-2.0 framework that rewrites an agent's harness at test time. One refinement step lifted GLM-5 by 11.5 points on WorkBuddy-Bench with no weight…",
-      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-6-scaled.png",
+      "image": null,
       "url": "https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework/",
       "publishedAt": "2026-10-18T08:15:04.000Z",
       "score": null,
@@ -920,7 +933,7 @@
       "source": "techmeme",
       "title": "An interview with Apple's new VP of the App Store, Carson Oliver, on Apple's gaming vision, Apple Arcade, providing tools for indie game developers, and more (…",
       "blurb": "Giovanni Colantonio / Polygon : An interview with Apple's new VP of the App Store, Carson Oliver, on Apple's gaming vision, Apple Arcade, providing tools for indie game developers, and more…",
-      "image": null,
+      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/indie-games-week-app-store.jpg?w=1200&h=675&fit=crop",
       "url": "https://www.techmeme.com/261018/p7#a261018p7",
       "publishedAt": "2026-10-18T11:15:00.000Z",
       "score": null,
@@ -1099,7 +1112,7 @@
       "source": "marktechpost",
       "title": "How to Make Zero-Training Tabular Predictions with NVIDIA Structured Data Models",
       "blurb": "In this tutorial, we implement Structured Data Models, NVIDIA’s new library that puts several pretrained foundation models for tables behind one PyTorch interface, and use it to make…",
-      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-5-1024x768.png",
+      "image": null,
       "url": "https://www.marktechpost.com/2026/10/17/how-to-make-zero-training-tabular-predictions-with-nvidia-structured-data-models/",
       "publishedAt": "2026-10-18T05:56:05.000Z",
       "score": null,
@@ -1112,7 +1125,7 @@
       "source": "techmeme",
       "title": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein says ~35% of the planned US data center pipeline is credible…",
       "blurb": "Financial Times : RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein says ~35% of the planned US data center pipeline is credible — A vast…",
-      "image": null,
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F7bd165b9-9b2e-4e8c-83f1-70e5b0dc9426.jpg?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1",
       "url": "https://www.techmeme.com/261018/p6#a261018p6",
       "publishedAt": "2026-10-18T06:15:01.000Z",
       "score": null,
@@ -1207,7 +1220,7 @@
       "source": "techmeme",
       "title": "AI debt worries mount as CoreWeave's bond yield tops 15%, insuring SoftBank debt gets pricier, and some Oracle debt trades near 80 to 90 cents on the dollar (N…",
       "blurb": "New York Times : AI debt worries mount as CoreWeave's bond yield tops 15%, insuring SoftBank debt gets pricier, and some Oracle debt trades near 80 to 90 cents on the dollar — Debt trouble…",
-      "image": null,
+      "image": "https://static01.nyt.com/images/2026/10/16/multimedia/00biz-data-center-debt-kmwt/00biz-data-center-debt-kmwt-facebookJumbo.jpg",
       "url": "https://www.techmeme.com/261018/p5#a261018p5",
       "publishedAt": "2026-10-18T06:10:04.000Z",
       "score": null,
@@ -1241,6 +1254,19 @@
       "meta": {
         "category": "AI (artificial intelligence)"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "techspot:https://www.techspot.com/news/114235-eiliko-robot-maker-energize-lab-left-entire-fleet.html",
+      "source": "techspot",
+      "title": "Eiliko robot maker Energize Lab left its entire fleet of 68,000 robots open to a remote takeover",
+      "blurb": "An investigation by The Verge found that researcher Sammy Azdoufal could access 13 million conversations across what appeared to be Energize Lab's entire active fleet of 68,000 Eiliko…",
+      "image": "https://www.techspot.com/images2/news/ts3_thumbs/2026/10/2026-10-17-ts3_thumbs-79f.jpg",
+      "url": "https://www.techspot.com/news/114235-eiliko-robot-maker-energize-lab-left-entire-fleet.html",
+      "publishedAt": "2026-10-17T18:20:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -1388,7 +1414,7 @@
       "source": "marktechpost",
       "title": "Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI",
       "blurb": "Voxel51 3.0 merges search, curation, annotation and evaluation of multimodal sensor data into one platform for physical AI teams. It adds Voxel51 Agent with 45+ MCP tools, dataset…",
-      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-4-scaled.png",
+      "image": null,
       "url": "https://www.marktechpost.com/2026/10/17/voxel51-3-0-physical-ai-data-platform/",
       "publishedAt": "2026-10-18T04:06:33.000Z",
       "score": null,
@@ -1401,7 +1427,7 @@
       "source": "techmeme",
       "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex, UK, data center, which may not get grid power until the 2030…",
       "blurb": "James Titcomb / Telegraph : Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex, UK, data center, which may not get grid power until the 2030s…",
-      "image": null,
+      "image": "https://www.telegraph.co.uk/content/dam/business/2026/10/16/TELEMMGLPICT000507649137_17921721386890_trans_NvBQzQNjv4BqP2bie5QPKGvaXrJaymJ8nZMVLLha8zPj14kJ046OG20.jpeg?impolicy=OG-Standard",
       "url": "https://www.techmeme.com/261018/p4#a261018p4",
       "publishedAt": "2026-10-18T06:05:00.000Z",
       "score": null,
@@ -1423,6 +1449,19 @@
       },
       "alsoOn": [],
       "image": null
+    },
+    {
+      "id": "techspot:https://www.techspot.com/news/114244-google-calendar-phishing-scams-increased-exponentially-year.html",
+      "source": "techspot",
+      "title": "PSA: The calendar invite is the new phishing vector, and email filters aren't catching it",
+      "blurb": "Security researchers at Sublime are warning users about a new phishing tactic targeting work calendars. Reports of these attacks have surged in recent months because the technique is…",
+      "image": "https://www.techspot.com/images2/news/ts3_thumbs/2014/04/2014-04-10-ts3_thumbs748.jpg",
+      "url": "https://www.techspot.com/news/114244-google-calendar-phishing-scams-increased-exponentially-year.html",
+      "publishedAt": "2026-10-17T16:32:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "macrumors:https://www.macrumors.com/2026/10/18/gurman-says-iphone-duo-preorders-major-mistake/",
@@ -1619,6 +1658,19 @@
       "alsoOn": []
     },
     {
+      "id": "techspot:https://www.techspot.com/news/114245-analogue-super-nt-mega-sg-back-wireless-controls.html",
+      "source": "techspot",
+      "title": "Analogue's updated SNES and Genesis consoles go wireless and switch to USB-C",
+      "blurb": "Both consoles cost $219.99 and will be available for pre-order this weekend, with shipping expected to begin in December. Read Entire Article",
+      "image": "https://www.techspot.com/images2/news/ts3_thumbs/2026/10/2026-10-17-ts3_thumbs-604.jpg",
+      "url": "https://www.techspot.com/news/114245-analogue-super-nt-mega-sg-back-wireless-controls.html",
+      "publishedAt": "2026-10-17T15:08:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "tc:https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
       "source": "tc",
       "title": "Replit makes OpenAI its default over Anthropic, CEO says",
@@ -1677,7 +1729,7 @@
       "source": "techmeme",
       "title": "Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zone II, CC.VC, and others, a source says at a $245M valuation…",
       "blurb": "Nick Lichtenberg / Fortune : Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zone II, CC.VC, and others, a source says at a $245M valuation…",
-      "image": null,
+      "image": "https://fortune.com/img-assets/wp-content/uploads/2026/10/1788884365250.jpg?resize=1200,600",
       "url": "https://www.techmeme.com/261018/p3#a261018p3",
       "publishedAt": "2026-10-18T05:40:01.000Z",
       "score": null,
@@ -1729,6 +1781,19 @@
       "alsoOn": []
     },
     {
+      "id": "techspot:https://www.techspot.com/news/114242-amazon-return-scammers-may-delidding-cpus-suspected-fake.html",
+      "source": "techspot",
+      "title": "Amazon return scammers may be delidding CPUs, a suspected fake Ryzen suggests",
+      "blurb": "When a Redditor recently bought a second AMD Ryzen 9 9950X3D2 Dual Edition processor, he noticed conspicuous differences compared with his earlier purchase. Commenters quickly realized that…",
+      "image": "https://www.techspot.com/images2/news/ts3_thumbs/2026/08/2026-08-21-ts3_thumbs-e61.jpg",
+      "url": "https://www.techspot.com/news/114242-amazon-return-scammers-may-delidding-cpus-suspected-fake.html",
+      "publishedAt": "2026-10-17T14:17:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "bleepingcomputer:https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
       "source": "bleepingcomputer",
       "title": "Drupal patches critical RCE flaws, warns exploits may emerge soon",
@@ -1767,6 +1832,19 @@
       "meta": {
         "category": "Lakehouse"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "eetimes:https://www.eetimes.com/semicon-west-2026-displays-ai-era-chipmaking-workforce-development/",
+      "source": "eetimes",
+      "title": "SEMICON West 2026 Displays AI-Era Chipmaking, Workforce Development",
+      "blurb": "The trillion-dollar semiconductor industry is ready to adapt and expand its fab infrastructure for the AI wave. The post SEMICON West 2026 Displays AI-Era Chipmaking, Workforce Development…",
+      "image": "https://www.eetimes.com/wp-content/uploads/Hero-image-10.jpg",
+      "url": "https://www.eetimes.com/semicon-west-2026-displays-ai-era-chipmaking-workforce-development/",
+      "publishedAt": "2026-10-16T20:59:50.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -1811,6 +1889,21 @@
       "alsoOn": []
     },
     {
+      "id": "hn:50143218",
+      "source": "hn",
+      "title": "British Airways: Filming Crew W Meta Glasses Could Get Your Tickets Cancelled",
+      "blurb": "British Airways prohibits filming crew without consent, including with Meta smart glasses. Violations could jeopardize your remaining flights.",
+      "url": "https://liveandletsfly.com/british-airways-meta-smart-glasses-filming/",
+      "publishedAt": "2026-10-18T17:27:30.000Z",
+      "score": 41,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 27
+      },
+      "alsoOn": [],
+      "image": "https://liveandletsfly.com/wp-content/uploads/2026/10/British-Airways-Meta-Glasses.jpeg"
+    },
+    {
       "id": "nine5google:https://9to5google.com/2026/10/16/hp-googlebook-14-review/",
       "source": "nine5google",
       "title": "HP Googlebook 14 Review: Great laptop, shame about the OS",
@@ -1828,7 +1921,7 @@
       "source": "techmeme",
       "title": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI counterpart…",
       "blurb": "Cristina Criddle / Financial Times : Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI…",
-      "image": null,
+      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fd0c5836a-e180-41a3-926e-d97eee0d614a.jpg?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1",
       "url": "https://www.techmeme.com/261018/p2#a261018p2",
       "publishedAt": "2026-10-18T05:10:01.000Z",
       "score": null,
@@ -1904,6 +1997,19 @@
       "alsoOn": []
     },
     {
+      "id": "stratechery:https://stratechery.com/2026/home-at-last/",
+      "source": "stratechery",
+      "title": "2026.42: Home At Last",
+      "blurb": "The best Stratechery content from the week of October 12, 2026, including what Apple is doing, SpaceX's appetite, and the title, takes, and the Washington Wizards.",
+      "image": "https://i0.wp.com/stratechery.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-15-at-07.56.34.jpeg?fit=1200%2C675&ssl=1",
+      "url": "https://stratechery.com/2026/home-at-last/",
+      "publishedAt": "2026-10-16T17:42:42.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "macrumors:https://www.macrumors.com/2026/10/17/staff-warn-against-iphone-duo-walk-ins/",
       "source": "macrumors",
       "title": "Apple Retail Staff Told to Warn Against iPhone Duo Walk-In Purchases",
@@ -1916,19 +2022,6 @@
       "meta": {
         "category": "Featured"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "stratechery:https://stratechery.com/2026/home-at-last/",
-      "source": "stratechery",
-      "title": "2026.42: Home At Last",
-      "blurb": "The best Stratechery content from the week of October 12, 2026, including what Apple is doing, SpaceX's appetite, and the title, takes, and the Washington Wizards.",
-      "image": "https://i0.wp.com/stratechery.com/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-15-at-07.56.34.jpeg?fit=1200%2C675&ssl=1",
-      "url": "https://stratechery.com/2026/home-at-last/",
-      "publishedAt": "2026-10-16T17:42:42.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -2021,7 +2114,7 @@
       "score": 60,
       "scoreLabel": "points",
       "meta": {
-        "comments": 61
+        "comments": 64
       },
       "alsoOn": [],
       "image": "https://www.vals.ai/blogs/2026-10-15-impossible-refund/hero-vals.webp"
@@ -2043,29 +2136,14 @@
       "id": "sifted:https://sifted.eu/articles/harry-stebbings-podcast/",
       "source": "sifted",
       "title": "Harry Stebbings on 996 regrets, political ambitions and building a personal brand",
-      "blurb": "Recorded live at Sifted Summit in October, this conversation sees Harry sit down with host Freya Pratty to talk 996 and political ambitions.",
-      "image": "https://images.sifted.eu/cdn-cgi/image/width=1280,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/16151339/Harry-Freya-HSBC-Long.png",
+      "blurb": null,
+      "image": null,
       "url": "https://sifted.eu/articles/harry-stebbings-podcast/",
       "publishedAt": "2026-10-16T15:16:15.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
       "alsoOn": []
-    },
-    {
-      "id": "hn:50143218",
-      "source": "hn",
-      "title": "British Airways: Filming Crew W Meta Glasses Could Get Your Tickets Cancelled",
-      "blurb": "British Airways prohibits filming crew without consent, including with Meta smart glasses. Violations could jeopardize your remaining flights.",
-      "url": "https://liveandletsfly.com/british-airways-meta-smart-glasses-filming/",
-      "publishedAt": "2026-10-18T17:27:30.000Z",
-      "score": 37,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 23
-      },
-      "alsoOn": [],
-      "image": "https://liveandletsfly.com/wp-content/uploads/2026/10/British-Airways-Meta-Glasses.jpeg"
     },
     {
       "id": "techeu:https://tech.eu/2026/10/16/id-finance-lands-545m-uk-launches-refugee-focused-vc-fund-and-the-race-to-save-eu-inc/",
@@ -2081,19 +2159,6 @@
       "alsoOn": []
     },
     {
-      "id": "daringfireball:https://www.cnbc.com/make-it/2020/02/14/charlie-munger-shares-opinion-of-tesla-ceo-elon-musk.html",
-      "source": "daringfireball",
-      "title": "The Late Charlie Munger on Elon Musk and Tesla",
-      "blurb": "Re: my post today on the still-vaporware Tesla Roadster and Benedict Evans’s maxim that “Elon Musk is a bullshitter who delivers”, a reader sent me this YouTube short of Charlie Munger’s…",
-      "image": "https://image.cnbcfm.com/api/v1/image/105264315-GettyImages-104478715.jpg?v=1672776102&w=1920&h=1080",
-      "url": "https://www.cnbc.com/make-it/2020/02/14/charlie-munger-shares-opinion-of-tesla-ceo-elon-musk.html",
-      "publishedAt": "2026-10-17T01:22:34.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "kdnuggets:https://www.kdnuggets.com/agentic-rag-vs-naive-rag-when-your-retrieval-system-should-think-for-itself",
       "source": "kdnuggets",
       "title": "Agentic RAG vs. Naive RAG: When Your Retrieval System Should Think for Itself",
@@ -2101,6 +2166,19 @@
       "image": "https://www.kdnuggets.com/wp-content/uploads/kdn-chugani-agentic-rag-naive-rag-retrieval-system-feature.png",
       "url": "https://www.kdnuggets.com/agentic-rag-vs-naive-rag-when-your-retrieval-system-should-think-for-itself",
       "publishedAt": "2026-10-16T14:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "daringfireball:https://www.cnbc.com/make-it/2020/02/14/charlie-munger-shares-opinion-of-tesla-ceo-elon-musk.html",
+      "source": "daringfireball",
+      "title": "The Late Charlie Munger on Elon Musk and Tesla",
+      "blurb": "Re: my post today on the still-vaporware Tesla Roadster and Benedict Evans’s maxim that “Elon Musk is a bullshitter who delivers”, a reader sent me this YouTube short of Charlie Munger’s…",
+      "image": "https://image.cnbcfm.com/api/v1/image/105264315-GettyImages-104478715.jpg?v=1672776102&w=1920&h=1080",
+      "url": "https://www.cnbc.com/make-it/2020/02/14/charlie-munger-shares-opinion-of-tesla-ceo-elon-musk.html",
+      "publishedAt": "2026-10-17T01:22:34.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2251,7 +2329,7 @@
       "source": "marktechpost",
       "title": "Meet Kyutai REKI: The 2.4B VLA Model Bringing Efficient Memory to Robot Manipulation",
       "blurb": "Kyutai, with Inria and École des Ponts, has released REKI, a 2.4B vision-language-action model (VLA) for robot manipulation. The REKI vision-language-action model is pretrained only on…",
-      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-3-scaled.png",
+      "image": null,
       "url": "https://www.marktechpost.com/2026/10/17/meet-kyutai-reki-the-2-4b-vla-model-bringing-efficient-memory-to-robot-manipulation/",
       "publishedAt": "2026-10-17T20:22:11.000Z",
       "score": null,
@@ -2286,6 +2364,21 @@
       "scoreLabel": null,
       "meta": {},
       "alsoOn": []
+    },
+    {
+      "id": "hn:50122878",
+      "source": "hn",
+      "title": "You could have invented transformers from memory",
+      "blurb": null,
+      "url": "https://alexwang.ai/posts/associative-memory/",
+      "publishedAt": "2026-10-16T19:01:17.000Z",
+      "score": 613,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 138
+      },
+      "alsoOn": [],
+      "image": "https://alexwang.ai/images/share-card_hu_ba29a66ace5a286c.jpg"
     },
     {
       "id": "macrumors:https://www.macrumors.com/2026/10/17/apple-hires-former-meta-lawyer/",
@@ -2368,21 +2461,6 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50122878",
-      "source": "hn",
-      "title": "You could have invented transformers from memory",
-      "blurb": null,
-      "url": "https://alexwang.ai/posts/associative-memory/",
-      "publishedAt": "2026-10-16T19:01:17.000Z",
-      "score": 612,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 138
-      },
-      "alsoOn": [],
-      "image": "https://alexwang.ai/images/share-card_hu_ba29a66ace5a286c.jpg"
-    },
-    {
       "id": "daringfireball:https://developer.apple.com/news/?id=vvzx6cul",
       "source": "daringfireball",
       "title": "Apple: ‘Strengthening App Review Guidelines Against Nonconsensual Intimate Imagery and Bait-And-Switch Apps’",
@@ -2394,21 +2472,6 @@
       "scoreLabel": null,
       "meta": {},
       "alsoOn": []
-    },
-    {
-      "id": "hn:50121179",
-      "source": "hn",
-      "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-      "blurb": "The US Benchmark Map places AI benchmarks across the American economy, measuring which parts of the labor force are covered by unsaturated, public, agentic benchmarks.",
-      "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
-      "publishedAt": "2026-10-16T17:08:38.000Z",
-      "score": 612,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 559
-      },
-      "alsoOn": [],
-      "image": null
     },
     {
       "id": "semiengineering:https://semiengineering.com/chip-industry-week-in-review-160/",
@@ -2450,19 +2513,6 @@
       "alsoOn": []
     },
     {
-      "id": "fastcompany:https://www.fastcompany.com/91623691/companies-liable-ai-errors?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=4&partner=newsletter&campaign_date=10182026",
-      "source": "fastcompany",
-      "title": "Why companies may be liable for AI errors",
-      "blurb": "How can professionals benefit from AI without outsourcing the judgment their work requires?",
-      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/10/p-91623691-companies-held-liable-when-AI-hurts-clients-and-customers.jpg",
-      "url": "https://www.fastcompany.com/91623691/companies-liable-ai-errors?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=4&partner=newsletter&campaign_date=10182026",
-      "publishedAt": "2026-10-17T09:30:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "aim:https://analyticsindiamag.com/ai-news/cert-in-warns-ai-agents-are-accessing-indian-systems-without-authorisation",
       "source": "aim",
       "title": "CERT-In Warns AI Agents Are Accessing Indian Systems Without Authorisation",
@@ -2478,11 +2528,24 @@
       "alsoOn": []
     },
     {
+      "id": "fastcompany:https://www.fastcompany.com/91623691/companies-liable-ai-errors?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=4&partner=newsletter&campaign_date=10182026",
+      "source": "fastcompany",
+      "title": "Why companies may be liable for AI errors",
+      "blurb": "How can professionals benefit from AI without outsourcing the judgment their work requires?",
+      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/10/p-91623691-companies-held-liable-when-AI-hurts-clients-and-customers.jpg",
+      "url": "https://www.fastcompany.com/91623691/companies-liable-ai-errors?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=4&partner=newsletter&campaign_date=10182026",
+      "publishedAt": "2026-10-17T09:30:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "techmeme:https://www.techmeme.com/261018/p1#a261018p1",
       "source": "techmeme",
       "title": "GTCR and Elliott agree to acquire and take private CCC, a Nasdaq-listed car insurance software provider, for $4.6B; the deal values CCC at $6.1B including debt…",
       "blurb": "Bloomberg : GTCR and Elliott agree to acquire and take private CCC, a Nasdaq-listed car insurance software provider, for $4.6B; the deal values CCC at $6.1B including debt — GTCR and…",
-      "image": null,
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iJ98L3WjUF5Y/v2/1200x800.jpg",
       "url": "https://www.techmeme.com/261018/p1#a261018p1",
       "publishedAt": "2026-10-18T04:35:01.000Z",
       "score": null,
@@ -2517,6 +2580,21 @@
       },
       "alsoOn": [],
       "image": "https://opengraph.githubassets.com/ca36cd0881ef0455269ae28027ff6686ed2bae99e1f24dc416de1a72bc590b3c/openai/codex/issues/25921"
+    },
+    {
+      "id": "hn:50121179",
+      "source": "hn",
+      "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+      "blurb": "The US Benchmark Map places AI benchmarks across the American economy, measuring which parts of the labor force are covered by unsaturated, public, agentic benchmarks.",
+      "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+      "publishedAt": "2026-10-16T17:08:38.000Z",
+      "score": 612,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 559
+      },
+      "alsoOn": [],
+      "image": null
     },
     {
       "id": "techeu:https://tech.eu/2026/10/16/dj-reinier-zonneveld-launches-ai-music-startup-gaslab-with-1m-pre-seed-funding/",
@@ -2861,8 +2939,8 @@
       "id": "sifted:https://sifted.eu/articles/open-weight-models-sovereignty-ai-safety/",
       "source": "sifted",
       "title": "Are open-weight AI models safe?",
-      "blurb": "Open models have become Europe’s best card to play in the AI race, but some experts warn the systems come with significant safety risks",
-      "image": "https://images.sifted.eu/cdn-cgi/image/width=1920,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/15164838/mika-baumeister-J5yoGZLdpSI-unsplash.jpg",
+      "blurb": null,
+      "image": null,
       "url": "https://sifted.eu/articles/open-weight-models-sovereignty-ai-safety/",
       "publishedAt": "2026-10-16T05:00:57.000Z",
       "score": null,
@@ -2938,21 +3016,6 @@
       "alsoOn": []
     },
     {
-      "id": "macrumors:https://www.macrumors.com/2026/10/17/top-stories-apple-homeview-intro/",
-      "source": "macrumors",
-      "title": "Top Stories: Apple HomeView, New Apple TV and HomePod mini, and Sold-Out iPhone Duo",
-      "blurb": "It was another crazy busy week for Apple, headlined by Tuesday seeing the company take the wraps off of several home-related products as part of a \"Welcome home\" launch wave. And as if that…",
-      "image": "https://images.macrumors.com/article-new/2026/10/top-stories-2026-10-17.jpg",
-      "url": "https://www.macrumors.com/2026/10/17/top-stories-apple-homeview-intro/",
-      "publishedAt": "2026-10-17T13:00:11.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "Featured"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "arxiv:2610.22358v1",
       "source": "arxiv",
       "title": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
@@ -2969,6 +3032,21 @@
       "alsoOn": []
     },
     {
+      "id": "macrumors:https://www.macrumors.com/2026/10/17/top-stories-apple-homeview-intro/",
+      "source": "macrumors",
+      "title": "Top Stories: Apple HomeView, New Apple TV and HomePod mini, and Sold-Out iPhone Duo",
+      "blurb": "It was another crazy busy week for Apple, headlined by Tuesday seeing the company take the wraps off of several home-related products as part of a \"Welcome home\" launch wave. And as if that…",
+      "image": "https://images.macrumors.com/article-new/2026/10/top-stories-2026-10-17.jpg",
+      "url": "https://www.macrumors.com/2026/10/17/top-stories-apple-homeview-intro/",
+      "publishedAt": "2026-10-17T13:00:11.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "Featured"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "zdnet:https://www.zdnet.com/uncategorized/anthropic-embed-third-party-ai-auditors-safety/",
       "source": "zdnet",
       "title": "Anthropic gives third-party auditors ’employee-like access’ in AI industry first",
@@ -2981,6 +3059,19 @@
       "meta": {
         "category": "Uncategorized"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "eetimes:https://www.eetimes.com/data-center-power-a-prominent-highlight-of-ocp-2026/",
+      "source": "eetimes",
+      "title": "Data Center Power a Prominent Highlight of OCP 2026",
+      "blurb": "The OCP Summit showcased power delivery boards, PSU designs, hot-swap controllers, and event-based telemetry. The post Data Center Power a Prominent Highlight of OCP 2026 appeared first on…",
+      "image": "https://www.eetimes.com/wp-content/uploads/Hero-image-OCP-e1792161163978.jpeg",
+      "url": "https://www.eetimes.com/data-center-power-a-prominent-highlight-of-ocp-2026/",
+      "publishedAt": "2026-10-16T15:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -3116,6 +3207,19 @@
       "alsoOn": []
     },
     {
+      "id": "techspot:https://www.techspot.com/news/114240-windows-defender-now-works-linux-because-why-not.html",
+      "source": "techspot",
+      "title": "Windows Defender now works in Linux, because why not",
+      "blurb": "Microsoft believes Linux systems also need a corporate-oriented security solution such as Defender. Redmond's anti-malware solution, notorious for its arguably excessive false positives, is…",
+      "image": "https://www.techspot.com/images2/news/ts3_thumbs/2026/10/2026-10-16-ts3_thumbs-596.jpg",
+      "url": "https://www.techspot.com/news/114240-windows-defender-now-works-linux-because-why-not.html",
+      "publishedAt": "2026-10-16T20:40:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "arxiv:2610.22355v1",
       "source": "arxiv",
       "title": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
@@ -3162,6 +3266,21 @@
       "alsoOn": []
     },
     {
+      "id": "rundown:https://www.therundown.ai/articles/rogue-ai-agents-sit-for-their-first-interview",
+      "source": "rundown",
+      "title": "Rogue AI agents sit for their first interview",
+      "blurb": "PLUS: Build a live sales dashboard in Claude",
+      "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/9eca5f99-a335-4d14-aa45-4b7961abb1f0/rogueagent.png?t=1791997047",
+      "url": "https://www.therundown.ai/articles/rogue-ai-agents-sit-for-their-first-interview",
+      "publishedAt": "2026-10-15T09:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "ai"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "guardian:https://www.theguardian.com/business/2026/oct/17/why-britain-should-reject-the-lure-of-cheap-and-scary-chinese-ai",
       "source": "guardian",
       "title": "Why Britain should reject the lure of cheap – and scary – Chinese AI",
@@ -3181,27 +3300,12 @@
       "source": "techmeme",
       "title": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve…",
       "blurb": "Bloomberg : Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve — More than 60…",
-      "image": null,
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/im4ZtBjoW1Ss/v11/1200x790.jpg",
       "url": "https://www.techmeme.com/261017/p21#a261017p21",
       "publishedAt": "2026-10-18T03:50:01.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "rundown:https://www.therundown.ai/articles/rogue-ai-agents-sit-for-their-first-interview",
-      "source": "rundown",
-      "title": "Rogue AI agents sit for their first interview",
-      "blurb": "PLUS: Build a live sales dashboard in Claude",
-      "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/9eca5f99-a335-4d14-aa45-4b7961abb1f0/rogueagent.png?t=1791997047",
-      "url": "https://www.therundown.ai/articles/rogue-ai-agents-sit-for-their-first-interview",
-      "publishedAt": "2026-10-15T09:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "ai"
-      },
       "alsoOn": []
     },
     {
@@ -3236,8 +3340,8 @@
       "id": "sifted:https://sifted.eu/articles/blurry-world-defence-tech-revenue-arr-vc/",
       "source": "sifted",
       "title": "The 'blurry' world of defence tech revenue",
-      "blurb": "VCs report some founders are misrepresenting or not being transparent about defence revenue",
-      "image": "https://content.sifted.eu/wp-content/uploads/2026/05/07164917/defence_tech_europe.webp",
+      "blurb": null,
+      "image": null,
       "url": "https://sifted.eu/articles/blurry-world-defence-tech-revenue-arr-vc/",
       "publishedAt": "2026-10-16T05:00:52.000Z",
       "score": null,
@@ -3592,6 +3696,19 @@
       "alsoOn": []
     },
     {
+      "id": "techspot:https://www.techspot.com/news/114233-dota-2-pro-talked-way-out-police-raid.html",
+      "source": "techspot",
+      "title": "A Dota 2 pro says he talked his way out of a police raid by playing a match for the officers",
+      "blurb": "In a Facebook post, 23savage said officers raided the facility, handcuffed him and teammates Fbz and Oli, and confiscated their belongings. They questioned why the team was in the city and…",
+      "image": "https://www.techspot.com/images2/news/ts3_thumbs/2026/10/2026-10-16-ts3_thumbs-dd9.jpg",
+      "url": "https://www.techspot.com/news/114233-dota-2-pro-talked-way-out-police-raid.html",
+      "publishedAt": "2026-10-16T19:21:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "bleepingcomputer:https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
       "source": "bleepingcomputer",
       "title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
@@ -3620,6 +3737,19 @@
       "alsoOn": []
     },
     {
+      "id": "hfblog:https://huggingface.co/blog/allenai/hiro-acev2",
+      "source": "hfblog",
+      "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
+      "blurb": null,
+      "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Y8t8GnfI2lUa40iX4_sxA.png",
+      "url": "https://huggingface.co/blog/allenai/hiro-acev2",
+      "publishedAt": "2026-10-14T16:12:42.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "arxiv:2610.22350v1",
       "source": "arxiv",
       "title": "FDE-Gym: The Last Mile of AI Delivery",
@@ -3636,19 +3766,6 @@
       "alsoOn": [
         "papers:2610.22350"
       ]
-    },
-    {
-      "id": "hfblog:https://huggingface.co/blog/allenai/hiro-acev2",
-      "source": "hfblog",
-      "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
-      "blurb": null,
-      "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Y8t8GnfI2lUa40iX4_sxA.png",
-      "url": "https://huggingface.co/blog/allenai/hiro-acev2",
-      "publishedAt": "2026-10-14T16:12:42.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
     },
     {
       "id": "gradflow:https://gradientflow.com/local-ai-is-a-routing-problem-not-a-privacy-feature/",
@@ -3749,7 +3866,7 @@
       "id": "sifted:https://sifted.eu/articles/reson8-unicorn-interview/",
       "source": "sifted",
       "title": "‘I’m 30. I’ve got one more shot’: Reson8’s founder wants to build a European AI giant",
-      "blurb": "After selling his healthcare company to Tandem Health, Thomas Kluiters is betting on voice AI — and says Europe’s founders need to think bigger",
+      "blurb": null,
       "image": null,
       "url": "https://sifted.eu/articles/reson8-unicorn-interview/",
       "publishedAt": "2026-10-16T05:00:46.000Z",
@@ -3969,19 +4086,6 @@
       ]
     },
     {
-      "id": "computerworld:https://www.computerworld.com/article/4236592/xbow-spent-40k-on-ai-and-cracked-google-chrome-wide-open.html",
-      "source": "computerworld",
-      "title": "Xbow spent $40K on AI and cracked Google Chrome wide open",
-      "blurb": "A chain of vulnerabilities in Google’s Chrome browser could have enabled researchers to take control of one billion Windows machines worldwide — and it cost them just $40,000 in AI compute…",
-      "image": null,
-      "url": "https://www.computerworld.com/article/4236592/xbow-spent-40k-on-ai-and-cracked-google-chrome-wide-open.html",
-      "publishedAt": "2026-10-16T15:14:59.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "deepmind:https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
       "source": "deepmind",
       "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
@@ -4002,6 +4106,19 @@
       "image": "https://pbs.twimg.com/media/HUr9XldXIAAPeX3?format=webp&name=large",
       "url": "https://x.com/finkd/status/2110778025629347999",
       "publishedAt": "2026-10-16T23:34:03.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "computerworld:https://www.computerworld.com/article/4236592/xbow-spent-40k-on-ai-and-cracked-google-chrome-wide-open.html",
+      "source": "computerworld",
+      "title": "Xbow spent $40K on AI and cracked Google Chrome wide open",
+      "blurb": "A chain of vulnerabilities in Google’s Chrome browser could have enabled researchers to take control of one billion Windows machines worldwide — and it cost them just $40,000 in AI compute…",
+      "image": null,
+      "url": "https://www.computerworld.com/article/4236592/xbow-spent-40k-on-ai-and-cracked-google-chrome-wide-open.html",
+      "publishedAt": "2026-10-16T15:14:59.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -4146,6 +4263,19 @@
       "alsoOn": []
     },
     {
+      "id": "techspot:https://www.techspot.com/products/laptops/microsoft-surface-laptop-ultra.330954/",
+      "source": "techspot",
+      "title": "First Surface Laptop Ultra reviews: a promising but pricey MacBook Pro rival",
+      "blurb": "Microsoft Surface Laptop Ultra reviews have landed with a mixed verdict. Powered by RTX Spark, the premium Arm laptop earns praise for its MacBook-like build quality, AI capabilities, and…",
+      "image": "https://www.techspot.com/images2/news/ts3_thumbs/2026/10/2026-10-16-ts3_thumbs-1ef.jpg",
+      "url": "https://www.techspot.com/products/laptops/microsoft-surface-laptop-ultra.330954/",
+      "publishedAt": "2026-10-16T18:50:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "hfblog:https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
       "source": "hfblog",
       "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
@@ -4243,19 +4373,6 @@
       "alsoOn": []
     },
     {
-      "id": "etai:https://economictimes.indiatimes.com/tech/technology/meta-employees-said-lulas-accounts-were-hindered-during-brazil-election-report/articleshow/135000017.cms",
-      "source": "etai",
-      "title": "Meta employees said Lula's accounts were hindered during Brazil election: Report",
-      "blurb": "The messages also acknowledged that the platform recommended the profile of challenger Flavio Bolsonaro, as well as his WhatsApp channel, according to the report.",
-      "image": "https://img.etimg.com/photo/msid-135000017,imgsize-2727410.cms",
-      "url": "https://economictimes.indiatimes.com/tech/technology/meta-employees-said-lulas-accounts-were-hindered-during-brazil-election-report/articleshow/135000017.cms",
-      "publishedAt": "2026-10-16T17:12:04.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "metr:https://metr.org/blog/2026-10-14-control-assessment-proposal/",
       "source": "metr",
       "title": "How an assessor could investigate control and monitoring of internal AI agents",
@@ -4263,6 +4380,19 @@
       "image": "https://metr.org/assets/images/loss-of-control-proposals/control-assessment-overview.png",
       "url": "https://metr.org/blog/2026-10-14-control-assessment-proposal/",
       "publishedAt": "2026-10-14T07:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "etai:https://economictimes.indiatimes.com/tech/technology/meta-employees-said-lulas-accounts-were-hindered-during-brazil-election-report/articleshow/135000017.cms",
+      "source": "etai",
+      "title": "Meta employees said Lula's accounts were hindered during Brazil election: Report",
+      "blurb": "The messages also acknowledged that the platform recommended the profile of challenger Flavio Bolsonaro, as well as his WhatsApp channel, according to the report.",
+      "image": "https://img.etimg.com/photo/msid-135000017,imgsize-2727410.cms",
+      "url": "https://economictimes.indiatimes.com/tech/technology/meta-employees-said-lulas-accounts-were-hindered-during-brazil-election-report/articleshow/135000017.cms",
+      "publishedAt": "2026-10-16T17:12:04.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -4404,19 +4534,6 @@
       "alsoOn": []
     },
     {
-      "id": "slashdot:https://yro.slashdot.org/story/26/10/17/1915216/does-a-universal-basic-income-bring-long-term-changes?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-      "source": "slashdot",
-      "title": "Does a Universal Basic Income Bring Long-Term Changes?",
-      "blurb": "For more than a year, The New York Times followed recipients of a universal basic income program who received $1,330 a month for an entire year. There were benefits, but also the everyday…",
-      "image": "https://a.fsdn.com/sd/topics/government_64.png",
-      "url": "https://yro.slashdot.org/story/26/10/17/1915216/does-a-universal-basic-income-bring-long-term-changes?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-      "publishedAt": "2026-10-17T23:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "mit:https://news.mit.edu/2026/collision-between-ai-your-brain-and-society-eric-so-book-1015",
       "source": "mit",
       "title": "Q&A: The “collision” between AI, your brain, and society",
@@ -4429,6 +4546,19 @@
       "meta": {
         "category": "Books and authors"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "slashdot:https://yro.slashdot.org/story/26/10/17/1915216/does-a-universal-basic-income-bring-long-term-changes?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+      "source": "slashdot",
+      "title": "Does a Universal Basic Income Bring Long-Term Changes?",
+      "blurb": "For more than a year, The New York Times followed recipients of a universal basic income program who received $1,330 a month for an entire year. There were benefits, but also the everyday…",
+      "image": "https://a.fsdn.com/sd/topics/government_64.png",
+      "url": "https://yro.slashdot.org/story/26/10/17/1915216/does-a-universal-basic-income-bring-long-term-changes?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+      "publishedAt": "2026-10-17T23:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -4460,6 +4590,19 @@
       "image": null
     },
     {
+      "id": "nvidia:https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "source": "nvidia",
+      "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+      "blurb": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it…",
+      "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/FIRST-agentic-ai-nemotron-3.5-super-vl-blog-1920x1080-5783765.jpeg",
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "publishedAt": "2026-10-15T15:00:24.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "hn:50119991",
       "source": "hn",
       "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
@@ -4473,19 +4616,6 @@
       },
       "alsoOn": [],
       "image": "https://image.theregister.com/228745.jpg?imageId=228745&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
-    },
-    {
-      "id": "nvidia:https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-      "source": "nvidia",
-      "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
-      "blurb": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it…",
-      "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/FIRST-agentic-ai-nemotron-3.5-super-vl-blog-1920x1080-5783765.jpeg",
-      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-      "publishedAt": "2026-10-15T15:00:24.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
     },
     {
       "id": "tomshardware:https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-deletes-tv-shows-entire-edit-weeks-before-release-backup-failure-means-production-team-needs-to-re-edit",
@@ -4682,6 +4812,32 @@
       "alsoOn": []
     },
     {
+      "id": "eetimes:https://www.eetimes.com/taiwans-ai-ambitions-run-into-talent-gap/",
+      "source": "eetimes",
+      "title": "Taiwan’s AI Ambitions Run into Talent Gap",
+      "blurb": "AMD’s David Wang told EE Times that while Taiwan has huge opportunities in rack-scale AI, physical AI, and AI PC markets, the sticking point may well be talent. The post Taiwan’s AI…",
+      "image": "https://www.eetimes.com/wp-content/uploads/Cover-Taiwan.jpg",
+      "url": "https://www.eetimes.com/taiwans-ai-ambitions-run-into-talent-gap/",
+      "publishedAt": "2026-10-16T10:55:42.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "sifted:https://sifted.eu/articles/europes-ai-fintech-market-mapped-94-startups-automating-the-business-of-money/",
+      "source": "sifted",
+      "title": "Europe’s AI fintech market mapped: 94 startups automating the business of money",
+      "blurb": null,
+      "image": null,
+      "url": "https://sifted.eu/articles/europes-ai-fintech-market-mapped-94-startups-automating-the-business-of-money/",
+      "publishedAt": "2026-10-16T05:00:03.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "techxplore:https://techxplore.com/news/2026-10-meta-unveils-ai-rival-chinese.html",
       "source": "techxplore",
       "title": "Meta unveils new 'open' AI model to rival Chinese competition",
@@ -4697,13 +4853,13 @@
       "alsoOn": []
     },
     {
-      "id": "sifted:https://sifted.eu/articles/europes-ai-fintech-market-mapped-94-startups-automating-the-business-of-money/",
-      "source": "sifted",
-      "title": "Europe’s AI fintech market mapped: 94 startups automating the business of money",
-      "blurb": "From AI accountants to agents that pay other agents, Sifted maps the startups rebuilding the back office of finance",
-      "image": "https://content.sifted.eu/wp-content/uploads/2026/03/31140136/huss_and_steven-1-1024x683.png",
-      "url": "https://sifted.eu/articles/europes-ai-fintech-market-mapped-94-startups-automating-the-business-of-money/",
-      "publishedAt": "2026-10-16T05:00:03.000Z",
+      "id": "techeu:https://tech.eu/2026/10/16/eu-inc-will-europe-blow-its-biggest-chance-to-get-startups-right/",
+      "source": "techeu",
+      "title": "EU Inc: Will Europe blow its biggest chance to get startups right?",
+      "blurb": "Yesterday, the founders of EU–INC issued an urgent public appeal to Europe's Heads of State and Government, warning that months of negotiations are stripping away the very provisions that…",
+      "image": "https://cdn.tech.eu/uploads/2026/10/untitled-design-41-204.png",
+      "url": "https://tech.eu/2026/10/16/eu-inc-will-europe-blow-its-biggest-chance-to-get-startups-right/",
+      "publishedAt": "2026-10-16T09:17:26.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -4764,6 +4920,19 @@
       "alsoOn": []
     },
     {
+      "id": "sciencedaily:https://www.sciencedaily.com/releases/2026/10/261011211615.htm",
+      "source": "sciencedaily",
+      "title": "Physicists discover “astonishing” property of light that defies expectations",
+      "blurb": "Scientists have uncovered a surprising hidden ability of light that allows it to develop spinning, twisting behavior as it travels through empty space, without special lenses, mirrors, or…",
+      "image": "https://www.sciencedaily.com/images/1920/multidimensional-quantum-light-data-communications.webp",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261011211615.htm",
+      "publishedAt": "2026-10-13T04:19:32.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "gh:LiCinCan/blender-ai-mcp-addon",
       "source": "gh",
       "title": "LiCinCan/blender-ai-mcp-addon",
@@ -4793,19 +4962,6 @@
       "alsoOn": []
     },
     {
-      "id": "sciencedaily:https://www.sciencedaily.com/releases/2026/10/261011211615.htm",
-      "source": "sciencedaily",
-      "title": "Physicists discover “astonishing” property of light that defies expectations",
-      "blurb": "Scientists have uncovered a surprising hidden ability of light that allows it to develop spinning, twisting behavior as it travels through empty space, without special lenses, mirrors, or…",
-      "image": "https://www.sciencedaily.com/images/1920/multidimensional-quantum-light-data-communications.webp",
-      "url": "https://www.sciencedaily.com/releases/2026/10/261011211615.htm",
-      "publishedAt": "2026-10-13T04:19:32.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hn:50063427",
       "source": "hn",
       "title": "AI is a tool and using it well takes skill",
@@ -4821,13 +4977,13 @@
       "image": null
     },
     {
-      "id": "techeu:https://tech.eu/2026/10/16/eu-inc-will-europe-blow-its-biggest-chance-to-get-startups-right/",
-      "source": "techeu",
-      "title": "EU Inc: Will Europe blow its biggest chance to get startups right?",
-      "blurb": "Yesterday, the founders of EU–INC issued an urgent public appeal to Europe's Heads of State and Government, warning that months of negotiations are stripping away the very provisions that…",
-      "image": "https://cdn.tech.eu/uploads/2026/10/untitled-design-41-204.png",
-      "url": "https://tech.eu/2026/10/16/eu-inc-will-europe-blow-its-biggest-chance-to-get-startups-right/",
-      "publishedAt": "2026-10-16T09:17:26.000Z",
+      "id": "techspot:https://www.techspot.com/products/audio-video/asus-rog-xbox-ally-x20.330955/",
+      "source": "techspot",
+      "title": "Asus ROG Xbox Ally X20 debuts: It's all about that OLED",
+      "blurb": "The ROG Xbox Ally X20 is receiving praises for its gorgeous 7.4\" OLED, premium design, improved controls and ergonomics. Performance is largely unchanged from last year's Xbox Ally X…",
+      "image": "https://www.techspot.com/images2/news/ts3_thumbs/2026/10/2026-10-16-ts3_thumbs-ba1.jpg",
+      "url": "https://www.techspot.com/products/audio-video/asus-rog-xbox-ally-x20.330955/",
+      "publishedAt": "2026-10-16T18:50:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -4841,7 +4997,7 @@
       "image": "https://opengraph.githubassets.com/1/onehumanbeing/esp32-iphone-agent",
       "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
       "publishedAt": "2026-10-11T19:10:25.000Z",
-      "score": 3096,
+      "score": 3097,
       "scoreLabel": "stars",
       "meta": {
         "repo": "onehumanbeing/esp32-iphone-agent",
@@ -4876,19 +5032,6 @@
       "alsoOn": []
     },
     {
-      "id": "techmeme:https://www.techmeme.com/261017/p20#a261017p20",
-      "source": "techmeme",
-      "title": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and more…",
-      "blurb": "Joanna Stern / The New Things : An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and…",
-      "image": null,
-      "url": "https://www.techmeme.com/261017/p20#a261017p20",
-      "publishedAt": "2026-10-18T01:20:02.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "macrumors:https://www.macrumors.com/2026/10/16/verizon-iphone-handoff-cost/",
       "source": "macrumors",
       "title": "Verizon Will Charge $10 a Month for iPhone Handoff",
@@ -4901,6 +5044,19 @@
       "meta": {
         "category": "Verizon"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "techmeme:https://www.techmeme.com/261017/p20#a261017p20",
+      "source": "techmeme",
+      "title": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and more…",
+      "blurb": "Joanna Stern / The New Things : An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and…",
+      "image": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/c34007e3-a820-4426-8999-0c1d14cac551/Joanna-microsoft-nl-4__1_.jpg?t=1792065245",
+      "url": "https://www.techmeme.com/261017/p20#a261017p20",
+      "publishedAt": "2026-10-18T01:20:02.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -5230,6 +5386,19 @@
       "alsoOn": []
     },
     {
+      "id": "googleresearch:https://research.google/blog/does-better-work-always-mean-better-workers/",
+      "source": "googleresearch",
+      "title": "Does better work always mean better workers?",
+      "blurb": null,
+      "image": "https://storage.googleapis.com/gweb-research2023-media/original_images/BetterWork2-AverageRedliningScore.png",
+      "url": "https://research.google/blog/does-better-work-always-mean-better-workers/",
+      "publishedAt": "2026-10-07T20:19:57.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "arxiv:2610.22333v1",
       "source": "arxiv",
       "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
@@ -5243,19 +5412,6 @@
         "category": "cs.AI",
         "authors": 9
       },
-      "alsoOn": []
-    },
-    {
-      "id": "googleresearch:https://research.google/blog/does-better-work-always-mean-better-workers/",
-      "source": "googleresearch",
-      "title": "Does better work always mean better workers?",
-      "blurb": null,
-      "image": "https://storage.googleapis.com/gweb-research2023-media/original_images/BetterWork2-AverageRedliningScore.png",
-      "url": "https://research.google/blog/does-better-work-always-mean-better-workers/",
-      "publishedAt": "2026-10-07T20:19:57.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -5274,6 +5430,19 @@
       "image": "https://media2.dev.to/dynamic/image/width=1200,height=627,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fokldcp34z2nxkvu9ml2b.png"
     },
     {
+      "id": "aibusiness:https://aibusiness.com/generative-ai/deepseek-what-enterprises-should-learn-from-ai-agent-exploits",
+      "source": "aibusiness",
+      "title": "DeepSeek and what enterprises should learn from AI agent exploits",
+      "blurb": "A new case of an out-of-control AI model shows that enterprises should treat models and agents as toddlers that need supervision and explicit instructions.",
+      "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt66d8a4798803f426/6acf709497bb403a9f96f866/DeepSeek.jpg?width=720&quality=80&disable=upscale",
+      "url": "https://aibusiness.com/generative-ai/deepseek-what-enterprises-should-learn-from-ai-agent-exploits",
+      "publishedAt": "2026-10-14T12:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "guardian:https://www.theguardian.com/technology/2026/oct/17/artificial-intelligence-ai-labour-government-safety-uk-extremism",
       "source": "guardian",
       "title": "The power of AI is worrying senior Labour figures – as is the fear of ‘falling behind the public’",
@@ -5289,16 +5458,18 @@
       "alsoOn": []
     },
     {
-      "id": "aibusiness:https://aibusiness.com/generative-ai/deepseek-what-enterprises-should-learn-from-ai-agent-exploits",
-      "source": "aibusiness",
-      "title": "DeepSeek and what enterprises should learn from AI agent exploits",
-      "blurb": "A new case of an out-of-control AI model shows that enterprises should treat models and agents as toddlers that need supervision and explicit instructions.",
-      "image": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt66d8a4798803f426/6acf709497bb403a9f96f866/DeepSeek.jpg?width=720&quality=80&disable=upscale",
-      "url": "https://aibusiness.com/generative-ai/deepseek-what-enterprises-should-learn-from-ai-agent-exploits",
-      "publishedAt": "2026-10-14T12:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
+      "id": "papers:2610.17665",
+      "source": "papers",
+      "title": "RoTA-Bench: Evaluating 3D Spatial Reasoning through Interactive Projection Alignment",
+      "blurb": "Can vision-language models turn 2D observations into 3D understanding that supports precise action? This requires inferring object geometry, anticipating the effects of rotation, and refining actions through visual feedback. We introduce RoTA-Bench to evaluate these abilities through interactive 3D-to-2D projection alignment. Given a target silhouette, a model observes a rotated object and chooses successive rotations to recover the target projection within a limited action budget. Our automated pipeline constructs silhouette-preserving 3D objects from 2D icons and uses reversible initialization to guarantee solvability, yielding 674 tasks and a stratified 100-task test set. Empirically, we find that (i) a substantial human-model gap persists: GPT-5.6-Sol succeeds on only 17% of tasks, whereas 20 undergraduate participants collectively complete the test set four times with a 100% success rate; (ii) image-space and pose-space progress can diverge: at matched states, the model more often improves silhouette overlap while worsening pose alignment than humans (19.4% vs. 10.9%); and (iii) fine-grained control is sensitive to interaction history: removing it leaves 96.8% of the model's actions at a coarse 30-degree step size and sharply reduces observed task success. These findings highlight the challenge of converting visual evidence into precise 3D control, beyond recognizing or matching individual images.",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.17665.png",
+      "url": "https://huggingface.co/papers/2610.17665",
+      "publishedAt": "2026-10-13T20:00:00.000Z",
+      "score": 202,
+      "scoreLabel": "upvotes",
+      "meta": {
+        "comments": 2
+      },
       "alsoOn": []
     },
     {
@@ -5317,18 +5488,16 @@
       "alsoOn": []
     },
     {
-      "id": "papers:2610.17665",
-      "source": "papers",
-      "title": "RoTA-Bench: Evaluating 3D Spatial Reasoning through Interactive Projection Alignment",
-      "blurb": "Can vision-language models turn 2D observations into 3D understanding that supports precise action? This requires inferring object geometry, anticipating the effects of rotation, and refining actions through visual feedback. We introduce RoTA-Bench to evaluate these abilities through interactive 3D-to-2D projection alignment. Given a target silhouette, a model observes a rotated object and chooses successive rotations to recover the target projection within a limited action budget. Our automated pipeline constructs silhouette-preserving 3D objects from 2D icons and uses reversible initialization to guarantee solvability, yielding 674 tasks and a stratified 100-task test set. Empirically, we find that (i) a substantial human-model gap persists: GPT-5.6-Sol succeeds on only 17% of tasks, whereas 20 undergraduate participants collectively complete the test set four times with a 100% success rate; (ii) image-space and pose-space progress can diverge: at matched states, the model more often improves silhouette overlap while worsening pose alignment than humans (19.4% vs. 10.9%); and (iii) fine-grained control is sensitive to interaction history: removing it leaves 96.8% of the model's actions at a coarse 30-degree step size and sharply reduces observed task success. These findings highlight the challenge of converting visual evidence into precise 3D control, beyond recognizing or matching individual images.",
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.17665.png",
-      "url": "https://huggingface.co/papers/2610.17665",
-      "publishedAt": "2026-10-13T20:00:00.000Z",
-      "score": 202,
-      "scoreLabel": "upvotes",
-      "meta": {
-        "comments": 2
-      },
+      "id": "nine5google:https://9to5google.com/2026/10/16/galaxy-s26-ultra-privacy-display-gets-it-on-best-inventions-list/",
+      "source": "nine5google",
+      "title": "Galaxy S26 Ultra is one of the ‘best inventions of 2026’ thanks to its Privacy Display",
+      "blurb": "A new 2026 roundup has the Galaxy S26 Ultra included in a list of best inventions for the year, all thanks to what it doesn’t display. more…",
+      "image": "https://9to5google.com/wp-content/uploads/sites/4/2026/02/Privacy-Screen-angled-Galaxy-S26-Ultra-1.jpg?quality=82&strip=all&w=1600",
+      "url": "https://9to5google.com/2026/10/16/galaxy-s26-ultra-privacy-display-gets-it-on-best-inventions-list/",
+      "publishedAt": "2026-10-16T17:42:53.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -5553,7 +5722,7 @@
       "title": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "publishedAt": "2026-10-14T12:00:13.000Z",
-      "score": 770,
+      "score": 771,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 338036,
@@ -5778,13 +5947,13 @@
       "image": "https://framerusercontent.com/images/KBTvCTXoQaZeABcI7te5PTQw7Q.png?width=1574&height=996"
     },
     {
-      "id": "nine5google:https://9to5google.com/2026/10/16/galaxy-s26-ultra-privacy-display-gets-it-on-best-inventions-list/",
-      "source": "nine5google",
-      "title": "Galaxy S26 Ultra is one of the ‘best inventions of 2026’ thanks to its Privacy Display",
-      "blurb": "A new 2026 roundup has the Galaxy S26 Ultra included in a list of best inventions for the year, all thanks to what it doesn’t display. more…",
-      "image": "https://9to5google.com/wp-content/uploads/sites/4/2026/02/Privacy-Screen-angled-Galaxy-S26-Ultra-1.jpg?quality=82&strip=all&w=1600",
-      "url": "https://9to5google.com/2026/10/16/galaxy-s26-ultra-privacy-display-gets-it-on-best-inventions-list/",
-      "publishedAt": "2026-10-16T17:42:53.000Z",
+      "id": "daringfireball:https://netnewswire.blog/2026/10/16/how-we-got-duo-support.html",
+      "source": "daringfireball",
+      "title": "How They Got Duo Support in NetNewsWire",
+      "blurb": "From the NetNewsWire blog: The latest version of NetNewsWire for iOS supports iPhone Duo, which is very much a novel iPhone with toolbars running up the side and all kinds of behavior. How…",
+      "image": null,
+      "url": "https://netnewswire.blog/2026/10/16/how-we-got-duo-support.html",
+      "publishedAt": "2026-10-16T20:53:42.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -5804,13 +5973,13 @@
       "alsoOn": []
     },
     {
-      "id": "daringfireball:https://netnewswire.blog/2026/10/16/how-we-got-duo-support.html",
-      "source": "daringfireball",
-      "title": "How They Got Duo Support in NetNewsWire",
-      "blurb": "From the NetNewsWire blog: The latest version of NetNewsWire for iOS supports iPhone Duo, which is very much a novel iPhone with toolbars running up the side and all kinds of behavior. How…",
-      "image": null,
-      "url": "https://netnewswire.blog/2026/10/16/how-we-got-duo-support.html",
-      "publishedAt": "2026-10-16T20:53:42.000Z",
+      "id": "lesswrong:https://www.lesswrong.com/posts/ZWNruQZnrH4Yeusj5/spontaneous-verbal-evidence-synthesis-in-llms",
+      "source": "lesswrong",
+      "title": "Spontaneous verbal evidence synthesis in LLMs",
+      "blurb": "TL;DR. I characterize evidence aggregation in LLMs, partly define and identify the mathematical rule(s) used by them and then behaviorally make models follow those rules more closely. You…",
+      "image": "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792110705/lexical_client_uploads/ebicxdubeycdezgspxjc.jpg",
+      "url": "https://www.lesswrong.com/posts/ZWNruQZnrH4Yeusj5/spontaneous-verbal-evidence-synthesis-in-llms",
+      "publishedAt": "2026-10-18T04:00:37.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -6017,6 +6186,19 @@
       "image": null
     },
     {
+      "id": "openai:https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+      "source": "openai",
+      "title": "The EU’s next chapter in AI is agentic",
+      "blurb": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
+      "image": null,
+      "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "techxplore:https://techxplore.com/news/2026-10-ai-mexico-legions-children.html",
       "source": "techxplore",
       "title": "Using AI to help find Mexico's legions of missing children",
@@ -6029,19 +6211,6 @@
       "meta": {
         "category": "Machine learning & AI"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "lesswrong:https://www.lesswrong.com/posts/ZWNruQZnrH4Yeusj5/spontaneous-verbal-evidence-synthesis-in-llms",
-      "source": "lesswrong",
-      "title": "Spontaneous verbal evidence synthesis in LLMs",
-      "blurb": "TL;DR. I characterize evidence aggregation in LLMs, partly define and identify the mathematical rule(s) used by them and then behaviorally make models follow those rules more closely. You…",
-      "image": "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792110705/lexical_client_uploads/ebicxdubeycdezgspxjc.jpg",
-      "url": "https://www.lesswrong.com/posts/ZWNruQZnrH4Yeusj5/spontaneous-verbal-evidence-synthesis-in-llms",
-      "publishedAt": "2026-10-18T04:00:37.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -6143,7 +6312,7 @@
       "id": "hn:50059523",
       "source": "hn",
       "title": "AI coding agents generate more code, but not more software",
-      "blurb": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
+      "blurb": null,
       "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
       "publishedAt": "2026-10-12T17:14:01.000Z",
       "score": 364,
@@ -6152,7 +6321,7 @@
         "comments": 313
       },
       "alsoOn": [],
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2264559974-1152x648.jpg"
+      "image": null
     },
     {
       "id": "lobsters:jbnmj9",
@@ -6226,6 +6395,19 @@
       "alsoOn": []
     },
     {
+      "id": "tomshardware:https://www.tomshardware.com/tech-industry/artificial-intelligence/apple-researchers-turn-idle-macs-into-a-virtual-gpu-cloud-with-minions-researchers-say-the-distributed-scheme-could-scale-globally-and-support-model-training",
+      "source": "tomshardware",
+      "title": "Apple researchers turn idle Macs into a virtual GPU cloud with ‘Minions’",
+      "blurb": "Apple researchers describe Minions, an internal system that runs AI inference jobs on idle Apple Silicon Macs when GPUs are scarce.",
+      "image": "https://cdn.mos.cms.futurecdn.net/Wjvd8aPH3tzi8eZYrAmXN7-1920-80.jpg",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/apple-researchers-turn-idle-macs-into-a-virtual-gpu-cloud-with-minions-researchers-say-the-distributed-scheme-could-scale-globally-and-support-model-training",
+      "publishedAt": "2026-10-14T11:15:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "simonw:https://simonwillison.net/2026/Oct/15/latex/",
       "source": "simonw",
       "title": "LaTeX renderer",
@@ -6241,32 +6423,6 @@
       "alsoOn": []
     },
     {
-      "id": "tomshardware:https://www.tomshardware.com/tech-industry/artificial-intelligence/apple-researchers-turn-idle-macs-into-a-virtual-gpu-cloud-with-minions-researchers-say-the-distributed-scheme-could-scale-globally-and-support-model-training",
-      "source": "tomshardware",
-      "title": "Apple researchers turn idle Macs into a virtual GPU cloud with ‘Minions’",
-      "blurb": "Apple researchers describe Minions, an internal system that runs AI inference jobs on idle Apple Silicon Macs when GPUs are scarce.",
-      "image": "https://cdn.mos.cms.futurecdn.net/Wjvd8aPH3tzi8eZYrAmXN7-1920-80.jpg",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/apple-researchers-turn-idle-macs-into-a-virtual-gpu-cloud-with-minions-researchers-say-the-distributed-scheme-could-scale-globally-and-support-model-training",
-      "publishedAt": "2026-10-14T11:15:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "openai:https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
-      "source": "openai",
-      "title": "The EU’s next chapter in AI is agentic",
-      "blurb": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
-      "image": null,
-      "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "etai:https://economictimes.indiatimes.com/tech/technology/coreweaves-ceo-sold-nearly-1-billion-of-stock-since-ipo-filings-show/articleshow/134999795.cms",
       "source": "etai",
       "title": "CoreWeave's CEO sold nearly $1 billion of stock since IPO, filings show",
@@ -6274,6 +6430,19 @@
       "image": "https://img.etimg.com/photo/msid-134999795,imgsize-1128508.cms",
       "url": "https://economictimes.indiatimes.com/tech/technology/coreweaves-ceo-sold-nearly-1-billion-of-stock-since-ipo-filings-show/articleshow/134999795.cms",
       "publishedAt": "2026-10-16T16:59:30.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "hfblog:https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+      "source": "hfblog",
+      "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+      "blurb": "A Blog post by ServiceNow-AI on Hugging Face",
+      "image": "https://cdn-uploads.huggingface.co/production/uploads/68642da9885da181fde1ad70/8kSzlHLOdu5hchCtPnK8D.png",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+      "publishedAt": "2026-10-02T04:01:31.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -6408,26 +6577,13 @@
       "alsoOn": []
     },
     {
-      "id": "computerworld:https://www.computerworld.com/article/4236672/windows-11-has-now-been-optimized-for-8-gigabytes-of-memory.html",
-      "source": "computerworld",
-      "title": "Windows 11 has now been optimized for 8 gigabytes of memory",
-      "blurb": "Due to the global memory shortage , 8 gigabytes has once again become the standard among computer manufacturers. Fortunately, Microsoft has spent the past few months optimizing Windows 11…",
-      "image": "https://www.computerworld.com/wp-content/uploads/2026/10/4236672-0-47034300-1792176938-Windows-11-Absturz-16-zu-9.jpg?quality=50&strip=all",
-      "url": "https://www.computerworld.com/article/4236672/windows-11-has-now-been-optimized-for-8-gigabytes-of-memory.html",
-      "publishedAt": "2026-10-16T11:52:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "hfblog:https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
-      "source": "hfblog",
-      "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
-      "blurb": "A Blog post by ServiceNow-AI on Hugging Face",
-      "image": "https://cdn-uploads.huggingface.co/production/uploads/68642da9885da181fde1ad70/8kSzlHLOdu5hchCtPnK8D.png",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
-      "publishedAt": "2026-10-02T04:01:31.000Z",
+      "id": "scmp:https://www.scmp.com/tech/tech-trends/article/3371007/ai-agents-tencent-cloud-try-break-alibabas-amap-researchers?utm_source=rss_feed",
+      "source": "scmp",
+      "title": "AI agents on Tencent Cloud try to break into Alibaba’s Amap: researchers",
+      "blurb": "A fleet of artificial intelligence agents operating on a Tencent Holdings cloud platform made thousands of attempts to circumvent security protections on Alibaba Group Holding’s mapping…",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/15/ca572bf5-210c-419f-b3e4-a0e30d708761_cdcf728e.jpg?itok=9ye3d9xC&v=1792054955",
+      "url": "https://www.scmp.com/tech/tech-trends/article/3371007/ai-agents-tencent-cloud-try-break-alibabas-amap-researchers?utm_source=rss_feed",
+      "publishedAt": "2026-10-16T01:00:06.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -6441,6 +6597,19 @@
       "image": "https://github.blog/wp-content/uploads/2026/10/Screenshot-2026-10-08-at-3.08.26-PM.png",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/",
       "publishedAt": "2026-10-12T17:43:59.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "computerworld:https://www.computerworld.com/article/4236672/windows-11-has-now-been-optimized-for-8-gigabytes-of-memory.html",
+      "source": "computerworld",
+      "title": "Windows 11 has now been optimized for 8 gigabytes of memory",
+      "blurb": "Due to the global memory shortage , 8 gigabytes has once again become the standard among computer manufacturers. Fortunately, Microsoft has spent the past few months optimizing Windows 11…",
+      "image": "https://www.computerworld.com/wp-content/uploads/2026/10/4236672-0-47034300-1792176938-Windows-11-Absturz-16-zu-9.jpg?quality=50&strip=all",
+      "url": "https://www.computerworld.com/article/4236672/windows-11-has-now-been-optimized-for-8-gigabytes-of-memory.html",
+      "publishedAt": "2026-10-16T11:52:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -6507,6 +6676,19 @@
       "alsoOn": []
     },
     {
+      "id": "ars:https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
+      "source": "ars",
+      "title": "Anthropic warns small AI models could self-replicate through IoT devices",
+      "blurb": "\"Small weight-based replicators\" could usher in a new generation of computer worms.",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-caution-threat-1152x648.jpg",
+      "url": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
+      "publishedAt": "2026-10-14T12:55:06.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "hn:50104654",
       "source": "hn",
       "title": "Simons Foundation launches $15M effort to help mathematicians navigate AI era",
@@ -6520,19 +6702,6 @@
       },
       "alsoOn": [],
       "image": "https://www.simonsfoundation.org/wp-content/uploads/2026/10/SEO_SF-OpenAi_c.Lucy-Reading-Ikkanda-Simons-Foundation-1.jpg"
-    },
-    {
-      "id": "ars:https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
-      "source": "ars",
-      "title": "Anthropic warns small AI models could self-replicate through IoT devices",
-      "blurb": "\"Small weight-based replicators\" could usher in a new generation of computer worms.",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-caution-threat-1152x648.jpg",
-      "url": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
-      "publishedAt": "2026-10-14T12:55:06.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
     },
     {
       "id": "pytorch:https://pytorch.org/blog/bringing-executorch-to-arm-cortex-m-cpus/",
@@ -6576,13 +6745,13 @@
       "alsoOn": []
     },
     {
-      "id": "scmp:https://www.scmp.com/tech/tech-trends/article/3371007/ai-agents-tencent-cloud-try-break-alibabas-amap-researchers?utm_source=rss_feed",
-      "source": "scmp",
-      "title": "AI agents on Tencent Cloud try to break into Alibaba’s Amap: researchers",
-      "blurb": "A fleet of artificial intelligence agents operating on a Tencent Holdings cloud platform made thousands of attempts to circumvent security protections on Alibaba Group Holding’s mapping…",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/15/ca572bf5-210c-419f-b3e4-a0e30d708761_cdcf728e.jpg?itok=9ye3d9xC&v=1792054955",
-      "url": "https://www.scmp.com/tech/tech-trends/article/3371007/ai-agents-tencent-cloud-try-break-alibabas-amap-researchers?utm_source=rss_feed",
-      "publishedAt": "2026-10-16T01:00:06.000Z",
+      "id": "techspot:https://www.techspot.com/news/114231-researchers-ad-platform-could-identify-targets-install-spyware.html",
+      "source": "techspot",
+      "title": "Researchers say an ad platform could identify targets and install spyware through online ads, no click needed",
+      "blurb": "A new investigation by Citizen Lab has uncovered a large-scale covert operation designed to install spyware through online advertising. Dubbed \"AdFection\" by the University of Toronto…",
+      "image": "https://www.techspot.com/images2/news/ts3_thumbs/2026/10/2026-10-16-ts3_thumbs-cb6.jpg",
+      "url": "https://www.techspot.com/news/114231-researchers-ad-platform-could-identify-targets-install-spyware.html",
+      "publishedAt": "2026-10-16T17:47:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -6833,7 +7002,7 @@
       "source": "techmeme",
       "title": "Google says \"magic state cultivation\" works in practice on its Willow quantum processor, calling it a breakthrough that reduces errors by about 40x (Google)",
       "blurb": "Google : Google says “magic state cultivation” works in practice on its Willow quantum processor, calling it a breakthrough that reduces errors by about 40x — We've shown that magic state…",
-      "image": null,
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/magic_state_social.width-1300.png",
       "url": "https://www.techmeme.com/261017/p19#a261017p19",
       "publishedAt": "2026-10-17T23:35:01.000Z",
       "score": null,
@@ -6876,8 +7045,8 @@
       "id": "sifted:https://sifted.eu/articles/accel-deepmind-researcher-60m/",
       "source": "sifted",
       "title": "Exclusive: Accel set to lead DeepMind alum’s $60m round",
-      "blurb": "Nando de Freitas, a former leading researcher at Google DeepMind and Microsoft AI, has raised $60m for his new startup Revolution Labs.",
-      "image": "https://images.sifted.eu/cdn-cgi/image/width=1044,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/15165014/Gemini_Generated_Image_dg75wjdg75wjdg75-8-2.jpg",
+      "blurb": null,
+      "image": null,
       "url": "https://sifted.eu/articles/accel-deepmind-researcher-60m/",
       "publishedAt": "2026-10-15T16:48:11.000Z",
       "score": null,
@@ -6927,19 +7096,6 @@
       "alsoOn": []
     },
     {
-      "id": "bleepingcomputer:https://www.bleepingcomputer.com/news/security/employees-using-personal-chatgpt-at-work-heres-what-it-admins-need-to-do/",
-      "source": "bleepingcomputer",
-      "title": "Employees using personal ChatGPT at work? Here's what IT admins need to do",
-      "blurb": "Employees using personal ChatGPT accounts at work can expose sensitive company data, even when their organization provides an approved Enterprise workspace. NordLayer explains how IT teams…",
-      "image": "https://www.bleepstatic.com/content/posts/2026/10/12/chat-prompt-header.jpg",
-      "url": "https://www.bleepingcomputer.com/news/security/employees-using-personal-chatgpt-at-work-heres-what-it-admins-need-to-do/",
-      "publishedAt": "2026-10-16T13:50:59.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "metaeng:https://engineering.fb.com/2026/10/15/developer-tools/sapienz-issta-2026-impact-paper-award-meta/",
       "source": "metaeng",
       "title": "Sapienz Receives ISSTA 2026 Impact Paper Award",
@@ -6947,6 +7103,19 @@
       "image": "https://engineering.fb.com/wp-content/uploads/2026/10/Sapienz-Award-Meta.png",
       "url": "https://engineering.fb.com/2026/10/15/developer-tools/sapienz-issta-2026-impact-paper-award-meta/",
       "publishedAt": "2026-10-15T16:00:59.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "bleepingcomputer:https://www.bleepingcomputer.com/news/security/employees-using-personal-chatgpt-at-work-heres-what-it-admins-need-to-do/",
+      "source": "bleepingcomputer",
+      "title": "Employees using personal ChatGPT at work? Here's what IT admins need to do",
+      "blurb": "Employees using personal ChatGPT accounts at work can expose sensitive company data, even when their organization provides an approved Enterprise workspace. NordLayer explains how IT teams…",
+      "image": "https://www.bleepstatic.com/content/posts/2026/10/12/chat-prompt-header.jpg",
+      "url": "https://www.bleepingcomputer.com/news/security/employees-using-personal-chatgpt-at-work-heres-what-it-admins-need-to-do/",
+      "publishedAt": "2026-10-16T13:50:59.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -7014,6 +7183,19 @@
       "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/ai-in-science-enablers-1920x1080-1.jpg",
       "url": "https://blogs.nvidia.com/blog/ec-scientific-computing-pledge/",
       "publishedAt": "2026-10-15T10:00:12.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "eetimes:https://www.eetimes.com/your-chip-works-prove-it-is-secure/",
+      "source": "eetimes",
+      "title": "Your Chip Works. Prove It Is Secure.",
+      "blurb": "Join this 30-Minute BitCast as our expert demonstrates how information flow tracking follows security-sensitive assets during existing simulation or emulation runs. The post Your Chip…",
+      "image": "https://www.eetimes.com/wp-content/uploads/Arteris-11-10-Featured-Image.png",
+      "url": "https://www.eetimes.com/your-chip-works-prove-it-is-secure/",
+      "publishedAt": "2026-10-16T08:37:49.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -7106,19 +7288,6 @@
       "alsoOn": []
     },
     {
-      "id": "metr:https://metr.org/blog/2026-08-31-security-update/",
-      "source": "metr",
-      "title": "Update on Security at METR",
-      "blurb": "Please note that this post focuses on incidents where external actors attempted to gain unauthorized access to METR’s systems, not AI agents hacking in our evaluations. We have conducted an…",
-      "image": null,
-      "url": "https://metr.org/blog/2026-08-31-security-update/",
-      "publishedAt": "2026-08-31T07:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hf:fishaudio/drama-3",
       "source": "hf",
       "title": "fishaudio/drama-3",
@@ -7133,6 +7302,19 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/fishaudio/drama-3.png",
       "blurb": "Drama 3 runs on SGLang-Omni from launch day. For installation, deployment, and streaming API examples, see the Drama 3 Cookbook. Launch with vLLM-Omni"
+    },
+    {
+      "id": "metr:https://metr.org/blog/2026-08-31-security-update/",
+      "source": "metr",
+      "title": "Update on Security at METR",
+      "blurb": "Please note that this post focuses on incidents where external actors attempted to gain unauthorized access to METR’s systems, not AI agents hacking in our evaluations. We have conducted an…",
+      "image": null,
+      "url": "https://metr.org/blog/2026-08-31-security-update/",
+      "publishedAt": "2026-08-31T07:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "spectrum:https://spectrum.ieee.org/master-ai-chip-principles-ieee",
@@ -7527,19 +7709,6 @@
       "alsoOn": []
     },
     {
-      "id": "ollama:https://ollama.com/blog/all-aboard-open-models",
-      "source": "ollama",
-      "title": "Ollama: all aboard open models",
-      "blurb": "Serving 8.9 million developers, Ollama has raised $88M from Benchmark, Theory Ventures, 8VC, Y Combinator, and many incredible angel investors.",
-      "image": "https://ollama.com/public/og.png",
-      "url": "https://ollama.com/blog/all-aboard-open-models",
-      "publishedAt": "2026-07-09T00:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "stratechery:https://stratechery.com/2026/apple-homeview-the-new-apple-tv-the-app-story/",
       "source": "stratechery",
       "title": "Apple HomeView, The New Apple TV, The App Story",
@@ -7547,6 +7716,19 @@
       "image": "https://s0.wp.com/_si/?t=eyJpbWciOiJodHRwczpcL1wvaTAud3AuY29tXC9zdHJhdGVjaGVyeS5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMThcLzAzXC9jcm9wcGVkLWFuZHJvaWQtY2hyb21lLTUxMng1MTItMS5wbmc_Zml0PTUxMiUyQzUxMiZzc2w9MSIsInR4dCI6IlN0cmF0ZWNoZXJ5IGJ5IEJlbiBUaG9tcHNvbiIsInRlbXBsYXRlIjoiZWRnZSIsImZvbnQiOiIiLCJibG9nX2lkIjoxODgwNDM0MTV9.5VWck4PcKPWCTPe_HVznn3n3xsgn-G0b3d2OeiNNC7cMQ",
       "url": "https://stratechery.com/2026/apple-homeview-the-new-apple-tv-the-app-story/",
       "publishedAt": "2026-10-14T10:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "ollama:https://ollama.com/blog/all-aboard-open-models",
+      "source": "ollama",
+      "title": "Ollama: all aboard open models",
+      "blurb": "Serving 8.9 million developers, Ollama has raised $88M from Benchmark, Theory Ventures, 8VC, Y Combinator, and many incredible angel investors.",
+      "image": "https://ollama.com/public/og.png",
+      "url": "https://ollama.com/blog/all-aboard-open-models",
+      "publishedAt": "2026-07-09T00:00:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -7581,19 +7763,6 @@
       "alsoOn": []
     },
     {
-      "id": "marktechpost:https://www.marktechpost.com/2026/10/17/20-jev-alternatives-the-decision-models-taking-on-typesafe-in-2026/",
-      "source": "marktechpost",
-      "title": "20 Jev Alternatives: The Decision Models Taking On TypeSafe in 2026",
-      "blurb": "TypeSafe launched Jev on September 15, 2026. It is a decision model, not a chatbot. You define the allowed answers, and Jev returns a label, a score or a yes/no probability. In about 4…",
-      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-1-1-scaled.png",
-      "url": "https://www.marktechpost.com/2026/10/17/20-jev-alternatives-the-decision-models-taking-on-typesafe-in-2026/",
-      "publishedAt": "2026-10-17T07:26:39.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "spectrum:https://spectrum.ieee.org/ai-assistants-nuclear-power-plant",
       "source": "spectrum",
       "title": "The U.S. Nuclear Plant Fleet Is Leaning Into AI",
@@ -7606,6 +7775,19 @@
       "meta": {
         "category": "Nuclear-power"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "marktechpost:https://www.marktechpost.com/2026/10/17/20-jev-alternatives-the-decision-models-taking-on-typesafe-in-2026/",
+      "source": "marktechpost",
+      "title": "20 Jev Alternatives: The Decision Models Taking On TypeSafe in 2026",
+      "blurb": "TypeSafe launched Jev on September 15, 2026. It is a decision model, not a chatbot. You define the allowed answers, and Jev returns a label, a score or a yes/no probability. In about 4…",
+      "image": null,
+      "url": "https://www.marktechpost.com/2026/10/17/20-jev-alternatives-the-decision-models-taking-on-typesafe-in-2026/",
+      "publishedAt": "2026-10-17T07:26:39.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -8496,6 +8678,19 @@
       "image": null
     },
     {
+      "id": "eetimes:https://www.eetimes.com/ai-moves-to-system-level-co-design-how-can-taiwan-capture-more-value/",
+      "source": "eetimes",
+      "title": "AI Moves to System-Level Co-Design: How Can Taiwan Capture More Value",
+      "blurb": "During a panel session at iTechCon 2026, discussions explored how Taiwan can build on its strengths in semiconductors, advanced packaging, and system design to support AI development. The…",
+      "image": "https://www.eetimes.com/wp-content/uploads/AdobeStock_837469872-e1792071054646.jpeg",
+      "url": "https://www.eetimes.com/ai-moves-to-system-level-co-design-how-can-taiwan-capture-more-value/",
+      "publishedAt": "2026-10-16T07:18:34.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "hf:Cactus-Compute/whistle",
       "source": "hf",
       "title": "Cactus-Compute/whistle",
@@ -8796,19 +8991,6 @@
       "alsoOn": []
     },
     {
-      "id": "fastcompany:https://www.fastcompany.com/91621198/everyones-panicking-about-the-ai-job-apocalypse-heres-the-reality?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=8&partner=newsletter&campaign_date=10182026",
-      "source": "fastcompany",
-      "title": "Everyone’s panicking about the AI job apocalypse. Here’s the reality",
-      "blurb": "A job apocalypse isn’t an accurate way to talk about it.",
-      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/10/p-1-91621198-ai-reality.jpg",
-      "url": "https://www.fastcompany.com/91621198/everyones-panicking-about-the-ai-job-apocalypse-heres-the-reality?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=8&partner=newsletter&campaign_date=10182026",
-      "publishedAt": "2026-10-16T10:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hf:openbmb/MiniCPM-V-4.7-1B",
       "source": "hf",
       "title": "openbmb/MiniCPM-V-4.7-1B",
@@ -8825,13 +9007,13 @@
       "blurb": "The 1B variant of MiniCPM-V 4.7 advances the performance–efficiency Pareto frontier. In Instruct mode, 1B substantially outperforms Qwen3.5 0.8B in both overall score and inference…"
     },
     {
-      "id": "tc:https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
-      "source": "tc",
-      "title": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
-      "blurb": "Counterfeiters are getting better at replicating brands' marks and passing off dupes, known as \"superfakes,\" as genuine items. A startup called Veritas wants to tackle the problem with its…",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Tiffany-Crown-e1791967522628.jpeg?resize=1200,675",
-      "url": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
-      "publishedAt": "2026-10-16T14:00:00.000Z",
+      "id": "fastcompany:https://www.fastcompany.com/91621198/everyones-panicking-about-the-ai-job-apocalypse-heres-the-reality?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=8&partner=newsletter&campaign_date=10182026",
+      "source": "fastcompany",
+      "title": "Everyone’s panicking about the AI job apocalypse. Here’s the reality",
+      "blurb": "A job apocalypse isn’t an accurate way to talk about it.",
+      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/10/p-1-91621198-ai-reality.jpg",
+      "url": "https://www.fastcompany.com/91621198/everyones-panicking-about-the-ai-job-apocalypse-heres-the-reality?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=8&partner=newsletter&campaign_date=10182026",
+      "publishedAt": "2026-10-16T10:00:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -8850,6 +9032,19 @@
       "meta": {
         "category": "AI"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "tc:https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
+      "source": "tc",
+      "title": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
+      "blurb": "Counterfeiters are getting better at replicating brands' marks and passing off dupes, known as \"superfakes,\" as genuine items. A startup called Veritas wants to tackle the problem with its…",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Tiffany-Crown-e1791967522628.jpeg?resize=1200,675",
+      "url": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
+      "publishedAt": "2026-10-16T14:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -8874,7 +9069,7 @@
       "title": "Comfy-Org/MOSS-Image",
       "url": "https://huggingface.co/Comfy-Org/MOSS-Image",
       "publishedAt": "2026-10-16T12:42:32.000Z",
-      "score": 179,
+      "score": 180,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 354126,
@@ -8915,7 +9110,7 @@
       "source": "marktechpost",
       "title": "StepFun Releases Step 5 Preview Open Weights: 600B MoE, 27B Active, 1M Context",
       "blurb": "StepFun has released Step 5 Preview as open weights. FP8 and BF16 checkpoints are live on Hugging Face and ModelScope. Step 5 Preview is a sparse Mixture-of-Experts model from StepFun built…",
-      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-1-scaled.png",
+      "image": null,
       "url": "https://www.marktechpost.com/2026/10/16/stepfun-releases-step-5-preview-open-weights-600b-moe-27b-active-1m-context/",
       "publishedAt": "2026-10-17T06:29:55.000Z",
       "score": null,
@@ -9576,22 +9771,6 @@
       "alsoOn": []
     },
     {
-      "id": "arxiv:2610.22293v1",
-      "source": "arxiv",
-      "title": "Towards Continual Learning: Mitigating Forgetting With Subspace Tuning",
-      "blurb": "Large language models (LLMs) acquire new skills through fine-tuning, but it can destroy capabilities they already have: catastrophic forgetting remains a central obstacle to continual…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22293v1",
-      "publishedAt": "2026-10-15T17:44:43.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.LG",
-        "authors": 9
-      },
-      "alsoOn": []
-    },
-    {
       "id": "hf:speridlabs/iris-3b",
       "source": "hf",
       "title": "speridlabs/iris-3b",
@@ -9606,6 +9785,22 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/speridlabs/iris-3b.png",
       "blurb": "Pixel-space generation & general vision learner. A 3-billion-parameter model that paints every pixel directly — no VAE, no latent space — and, fine-tuned, estimates depth and restores and…"
+    },
+    {
+      "id": "arxiv:2610.22293v1",
+      "source": "arxiv",
+      "title": "Towards Continual Learning: Mitigating Forgetting With Subspace Tuning",
+      "blurb": "Large language models (LLMs) acquire new skills through fine-tuning, but it can destroy capabilities they already have: catastrophic forgetting remains a central obstacle to continual…",
+      "image": null,
+      "url": "http://arxiv.org/abs/2610.22293v1",
+      "publishedAt": "2026-10-15T17:44:43.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.LG",
+        "authors": 9
+      },
+      "alsoOn": []
     },
     {
       "id": "gh:raullenchai/esp32-thinks",
@@ -9669,7 +9864,7 @@
       "source": "techmeme",
       "title": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a \"large scale distillation attack\"…",
       "blurb": "Walter Schulze / Startup Fortune : Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation…",
-      "image": null,
+      "image": "https://startupfortune.com/wp-content/uploads/2026/10/opencode-matt-johansen-anomaly-innovations.jpg",
       "url": "https://www.techmeme.com/261017/p18#a261017p18",
       "publishedAt": "2026-10-17T20:50:01.000Z",
       "score": null,
@@ -9918,6 +10113,19 @@
       "alsoOn": []
     },
     {
+      "id": "eetimes:https://www.eetimes.com/japan-offers-globalfoundries-21b-for-u-s-fab-expansion/",
+      "source": "eetimes",
+      "title": "Japan Offers GlobalFoundries $21B for U.S. Fab Expansion",
+      "blurb": "Japan’s $21B offer to GlobalFoundries would add two New York fabs and lift U.S. chip capacity 10%; see why analysts warn on state support. The post Japan Offers GlobalFoundries $21B for…",
+      "image": "https://www.eetimes.com/wp-content/uploads/AdobeStock_465425607_Editorial_Use_Only-e1792089080248.jpeg",
+      "url": "https://www.eetimes.com/japan-offers-globalfoundries-21b-for-u-s-fab-expansion/",
+      "publishedAt": "2026-10-15T19:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "ars:https://arstechnica.com/information-technology/2026/10/operational-complexity-a-top-barrier-for-vmware-migrations-survey/",
       "source": "ars",
       "title": "Licensing costs driving 90 percent of VMware users to explore options: Survey",
@@ -10077,229 +10285,6 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "techreview:https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
-      "source": "techreview",
-      "title": "AI breakthroughs in robotics won’t change your life any time soon",
-      "blurb": "The story is a collaboration between MIT Technology Review and Aventine, a non-profit research foundation that creates and supports content about how technology and science are changing the…",
-      "image": "https://wp.technologyreview.com/wp-content/uploads/2026/10/fin1a_updated.jpg?resize=1200,600",
-      "url": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
-      "publishedAt": "2026-10-08T09:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "ghblog:https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/",
-      "source": "ghblog",
-      "title": "AI is changing developer work. Here are three skills to strengthen.",
-      "blurb": "Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow. The post AI is changing developer work. Here are three skills to…",
-      "image": "https://github.blog/wp-content/uploads/2026/03/branchingout.png",
-      "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/",
-      "publishedAt": "2026-10-02T15:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "nvidiaresearch:https://research.nvidia.com/person/yujui-lin",
-      "source": "nvidiaresearch",
-      "title": "Yujui Lin",
-      "blurb": "Yujui Lin yujuil Thu, 10/01/2026 - 14:58 Yujui Lin received his Ph.D. in Mechanical Engineering from Stanford University, where he worked with Professors Kenneth Goodson and Mehdi Asheghi…",
-      "image": "https://research.nvidia.com/sites/default/files/person/Yujui%20Lin.jpg",
-      "url": "https://research.nvidia.com/person/yujui-lin",
-      "publishedAt": "2026-10-01T21:58:13.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "msr:https://www.microsoft.com/en-us/research/blog/forecasting-space-weather-risks-on-power-grids/",
-      "source": "msr",
-      "title": "Forecasting space weather risks on power grids",
-      "blurb": "Extreme space-weather events can damage power systems on Earth and degrade GPS accuracy and satellite operations. A new machine learning system can predict where damage is likely to occur…",
-      "image": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/ForecastingSpace-TWLIFB-1200x627-1.jpg",
-      "url": "https://www.microsoft.com/en-us/research/blog/forecasting-space-weather-risks-on-power-grids/",
-      "publishedAt": "2026-09-30T16:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "gradflow:https://gradientflow.com/the-ai-data-problem-moved-downstream/",
-      "source": "gradflow",
-      "title": "The AI Data Problem Moved Downstream",
-      "blurb": "Last year I wrote that robotics had a data problem language models were lucky enough to avoid. Text, images, and code had accumulated for decades before anyone decided to train models on…",
-      "image": "https://i0.wp.com/gradientflow.com/wp-content/uploads/2026/09/Data-for-AI-art2.jpeg?fit=1851%2C1009&ssl=1",
-      "url": "https://gradientflow.com/the-ai-data-problem-moved-downstream/",
-      "publishedAt": "2026-09-30T12:57:49.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "sakana:/sail/",
-      "source": "sakana",
-      "title": "SAIL: Scaling In-Context Imitation Learning",
-      "blurb": null,
-      "image": null,
-      "url": "/sail/",
-      "publishedAt": "2026-09-27T15:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "media"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "importai:https://jack-clark.net/2026/09/07/import-ai-472-deepminds-cheating-math-agents-populist-ai-policies-and-forethought-theorizes-a-nightwatchman/",
-      "source": "importai",
-      "title": "Import AI 472: DeepMind’s cheating math agents; populist AI policies; and Forethought theorizes a nightwatchman",
-      "blurb": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now…",
-      "image": "https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/09/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-0Ig6P5.png?resize=150%2C150&ssl=1",
-      "url": "https://jack-clark.net/2026/09/07/import-ai-472-deepminds-cheating-math-agents-populist-ai-policies-and-forethought-theorizes-a-nightwatchman/",
-      "publishedAt": "2026-09-07T12:26:31.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "hf:SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
-      "source": "hf",
-      "title": "SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
-      "url": "https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
-      "publishedAt": "2026-10-02T03:42:33.000Z",
-      "score": 306,
-      "scoreLabel": "likes",
-      "meta": {
-        "downloads": 1773110,
-        "task": "image-text-to-text"
-      },
-      "alsoOn": [],
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF.png",
-      "blurb": "🧭 What this repository is An abliterated build of the official ISTA-DASLab GSQ-RCO quantizations . Not a single one of GSQ's learned quantized tensors was recomputed — 144…"
-    },
-    {
-      "id": "arxiv:2610.22292v1",
-      "source": "arxiv",
-      "title": "CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty",
-      "blurb": "Large language models (LLMs) are becoming prevalent in scenarios where honesty is critical. However, despite alignment training, these models still exhibit dishonest behaviour, such as…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22292v1",
-      "publishedAt": "2026-10-15T17:43:47.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.LG",
-        "authors": 4
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "semiengineering:https://semiengineering.com/why-open-weight-ai-matters/",
-      "source": "semiengineering",
-      "title": "Why Open-Weight AI Matters",
-      "blurb": "Proprietary models still hold the edge, but open-weight models add more flexibility for deploying AI. The post Why Open-Weight AI Matters appeared first on Semiconductor Engineering .",
-      "image": "https://semiengineering.com/wp-content/uploads/AdobeStock_1104488381-03-26-2025-scaled.jpeg?fit=2560%2C1600&ssl=1",
-      "url": "https://semiengineering.com/why-open-weight-ai-matters/",
-      "publishedAt": "2026-10-15T07:02:13.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "lobsters:xff77a",
-      "source": "lobsters",
-      "title": "Best Books/Courses/Channels to Leapfrog on AI/ML Material",
-      "blurb": "Assuming I have been on hibernation since 2018-19 time frame, which materials - books, MOOC courses and YT channels would be recommended for me to get started with understanding all the current progress on AI/ML. Ideally a resource like TeachYourselfCS that can give structure and roadmap to navigate all the progress/knowledge on the domain would really help. Do we have to take different approaches to understand LLMs vs other type of ML models which have been in large scale deployment/usage from pre-2022/21 time frame? Thanks a lot in advance.",
-      "url": "https://lobste.rs/s/xff77a/best_books_courses_channels_leapfrog_on",
-      "publishedAt": "2026-10-07T14:12:02.815Z",
-      "score": 5,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 4
-      },
-      "alsoOn": [],
-      "image": null
-    },
-    {
-      "id": "marktechpost:https://www.marktechpost.com/2026/10/16/perplexity-open-sources-space-firecracker-microvm-sandbox-ai-agents/",
-      "source": "marktechpost",
-      "title": "Perplexity Open-Sources SPACE, a Firecracker MicroVM Sandbox for AI Agents",
-      "blurb": "Perplexity has open-sourced SPACE, the sandbox platform behind every task in Perplexity Computer. The Perplexity SPACE sandbox gives each agent task its own Firecracker microVM. Credentials…",
-      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-scaled.png",
-      "url": "https://www.marktechpost.com/2026/10/16/perplexity-open-sources-space-firecracker-microvm-sandbox-ai-agents/",
-      "publishedAt": "2026-10-17T00:09:12.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "tc:https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
-      "source": "tc",
-      "title": "When it came to Cal AI’s viral success, a small army of influencers paid off",
-      "blurb": "The company generated over $30 million in revenue in two years and was acquired by MyFitnessPal for an undisclosed amount of money in March.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/IMG_4996.jpeg?resize=1200,900",
-      "url": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
-      "publishedAt": "2026-10-15T23:44:56.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "ars:https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/",
-      "source": "ars",
-      "title": "MCP for agent-to-agent comms may be the riskiest protocol you've never heard of",
-      "blurb": "Trust gaps in the new protocol spread malicious prompts from one agent to another.",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-1152x648.jpg",
-      "url": "https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/",
-      "publishedAt": "2026-10-05T22:26:35.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "gh:christos-antono/NPCTalk",
-      "source": "gh",
-      "title": "christos-antono/NPCTalk",
-      "blurb": "Make any NPC in any game talk back with Fish Audio: skills, a self-hosted voice server and tools for AI coding agents, with a full GTA V example.",
-      "image": "https://opengraph.githubassets.com/1/christos-antono/NPCTalk",
-      "url": "https://github.com/christos-antono/NPCTalk",
-      "publishedAt": "2026-10-15T23:37:25.000Z",
-      "score": 155,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "christos-antono/NPCTalk",
-        "language": "Python"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "googleai:https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
-      "source": "googleai",
-      "title": "Building AI to accelerate science and improve lives",
-      "blurb": "The true measure of AI is who it helps. Here’s how it’s impacting lives today. We're focused on key areas where advanced technology can help make extraordinary progress …",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SocialShare_hD2gcAw.max-600x600.format-webp.webp",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
-      "publishedAt": "2026-09-15T16:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "Google Research"
-      },
       "alsoOn": []
     }
   ]

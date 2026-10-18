@@ -63,17 +63,17 @@ than a missing one — it costs a request every hour and reports a failure every
 | Labs | **OpenAI**, **DeepMind**, **Google AI**, **Google Research**, **Microsoft Research**, **NVIDIA**, **NVIDIA Research**, **Apple ML**, **Hugging Face Blog**, **Together AI**, **Ollama**, **Sakana AI**, **Mozilla.ai**, **METR** | recency | the image each publisher puts in its own feed, so no second request is needed; OpenAI answers every scraper with `403`, so its cards get a tile |
 | Engineering | **AWS Machine Learning**, **Meta Engineering**, **Databricks**, **PyTorch**, **GitHub Blog** | recency | the feed's own image |
 | Models and code | **Hugging Face** models, **GitHub** | likes, downloads / stars, language | the model page's preview; the summary comes from the model card, because the page's own description is the site tagline on every model |
-| The press, AI desks | **TechCrunch**, **The Verge**, **Ars Technica**, **MIT News**, **WIRED**, **The Guardian**, **The Register**, **MIT Tech Review**, **IEEE Spectrum**, **ZDNET**, **MarkTechPost**, **Analytics India**, **AI Business**, **SiliconANGLE**, **TechXplore**, **Fast Company**, **SCMP**, **Economic Times**, **404 Media**, **Platformer** | recency | the press write the headline, and most publish their own artwork |
-| Recent technology | **Techmeme**, **The Hacker News**, **BleepingComputer**, **Tom's Hardware**, **Semiconductor Engineering**, **The New Stack**, **ServeTheHome**, **Data Centre Dynamics**, **Computerworld**, **Gizmodo**, **9to5Google**, **MacRumors**, **Stratechery**, **Daring Fireball**, **Rest of World**, **Sifted**, **Tech.eu** | recency | the publication's own image, and a designed plate where it has none |
+| The press, AI desks | **TechCrunch**, **The Verge**, **Ars Technica**, **MIT News**, **WIRED**, **The Guardian**, **MIT Tech Review**, **IEEE Spectrum**, **ZDNET**, **MarkTechPost**, **Analytics India**, **AI Business**, **SiliconANGLE**, **TechXplore**, **Fast Company**, **SCMP**, **Economic Times**, **404 Media**, **Platformer** | recency | the press write the headline, and most publish their own artwork |
+| Recent technology | **Techmeme**, **The Hacker News**, **BleepingComputer**, **Tom's Hardware**, **TechSpot**, **Semiconductor Engineering**, **EE Times**, **The New Stack**, **ServeTheHome**, **Data Centre Dynamics**, **Computerworld**, **9to5Google**, **MacRumors**, **Stratechery**, **Daring Fireball**, **Rest of World**, **Sifted**, **Tech.eu** | recency | the publication's own image, and a designed plate where it has none |
 | Writing | **Simon Willison**, **Import AI**, **Interconnects**, **TLDR AI**, **Latent Space**, **One Useful Thing**, **Ahead of AI**, **Last Week in AI**, **AI as Normal Technology**, **Exponential View**, **Gradient Flow**, **DAIR.AI**, **KDnuggets**, **The Rundown** | recency | the newsletter's own enclosure image where there is one, a tile where there is not |
 
 Where a publisher has an AI feed, **that is the feed that is read** — a technology desk also
 writes about phones, streaming and games, and a film review is not a dispatch for this page.
-That is why Gizmodo is read through `/tag/ai/` and Tom's Hardware through
-`/feeds/tag/artificial-intelligence`, both of which were measured to drop the Batman stories
-and keep the AI ones. Where the publication *is* the beat — Techmeme, Slashdot, The Register,
-Tom's Hardware — a whole-publication feed is read, and a lower cap keeps its share of the
-wire in proportion.
+Tom's Hardware is read through `/feeds/tag/artificial-intelligence` for exactly this reason:
+the whole-publication feed was measured putting a 3D-printer deal and an overclocking record
+in the top ten of an AI wire. Where the publication *is* the beat — Techmeme, Slashdot,
+Tom's Hardware, Daring Fireball — a whole-publication feed is read, and a lower cap keeps
+its share of the wire in proportion.
 
 ## What was left out, and why
 
@@ -93,6 +93,10 @@ candidate below was fetched and parsed before it was dropped.
 | Feeds that answer `200` and return nothing | Cohere, Anyscale, InfoWorld, LangChain, Weights & Biases, Analytics Vidhya, Ben's Bites, Synced, 机器之心, 36Kr, The Neuron, Analytics India's older paths — and Hugging Face's papers feed, which answers `401`. A feed with no items is recorded as a failure, never as a source |
 | Publications that stopped | BAIR (81 days since its last post), TensorFlow Blog (92), Lil'Log (107), Eugene Yan (119), Replicate (187), SemiAnalysis (397) |
 | Whole-paper feeds from general newsrooms | BBC, NYT, Engadget, CNBC, and The Guardian's technology desk at large — an AI wire reading a paper's entire output fills up with phones and streaming |
+| Hosts that block datacenter IPs | **Gizmodo** answers `403` to GitHub's runners and `200` to a laptop, and **The Register** serves CI a page with no feed items in it. Both were verified working locally, added, and then caught on the runner's own network — which is the check that counts, because a source that fails from CI every hour is an amber alert every hour |
+
+Every source in the table above was confirmed from **the runner's network**, not just from a
+laptop, by reading the `sources[]` block the workflow itself commits.
 
 AI News (`news.smol.ai`) was wired in, measured, and then removed: its newest post was
 five weeks old, so it is not news.
