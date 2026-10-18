@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T15:55:54Z",
+  "generatedAt": "2026-10-18T16:01:50Z",
   "sources": [
     {
       "id": "hn",
@@ -156,10 +156,10 @@
       "blurb": "FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it'll throw up a questionnaire that checks if you understand how the code you're pushing…",
       "url": "https://sphinx-six-theta.vercel.app/",
       "publishedAt": "2026-10-18T04:33:49.000Z",
-      "score": 203,
+      "score": 204,
       "scoreLabel": "points",
       "meta": {
-        "comments": 63
+        "comments": 66
       },
       "alsoOn": [],
       "image": null
@@ -184,10 +184,10 @@
       "blurb": null,
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "publishedAt": "2026-10-17T08:21:25.000Z",
-      "score": 919,
+      "score": 920,
       "scoreLabel": "points",
       "meta": {
-        "comments": 680
+        "comments": 681
       },
       "alsoOn": [
         "hn:50129121",
@@ -202,10 +202,10 @@
       "blurb": "Would this be enough to keep an AI model from going out of control?",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
       "publishedAt": "2026-10-18T14:30:27.000Z",
-      "score": 73,
+      "score": 74,
       "scoreLabel": "points",
       "meta": {
-        "comments": 61
+        "comments": 65
       },
       "alsoOn": [],
       "image": "https://cdn.mos.cms.futurecdn.net/SVPa8KkaDwkeyAtLnMhyKW-1920-80.png"
@@ -291,7 +291,7 @@
       "score": 604,
       "scoreLabel": "points",
       "meta": {
-        "comments": 134
+        "comments": 135
       },
       "alsoOn": [],
       "image": "https://alexwang.ai/images/share-card_hu_ba29a66ace5a286c.jpg"
@@ -852,22 +852,6 @@
       "alsoOn": []
     },
     {
-      "id": "gh:LiCinCan/blender-ai-mcp-addon",
-      "source": "gh",
-      "title": "LiCinCan/blender-ai-mcp-addon",
-      "blurb": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon and plugin, copilot…",
-      "image": "https://opengraph.githubassets.com/1/LiCinCan/blender-ai-mcp-addon",
-      "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
-      "publishedAt": "2026-10-15T22:30:47.000Z",
-      "score": 747,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "LiCinCan/blender-ai-mcp-addon",
-        "language": "Python"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "openai:https://openai.com/index/introducing-the-rosalind-academic-plan",
       "source": "openai",
       "title": "Bringing GPT-Rosalind to academic research labs",
@@ -966,21 +950,6 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50119991",
-      "source": "hn",
-      "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
-      "blurb": "Core devs revert up to 10 features, push release to November, and blame better tooling rather than vibe coding",
-      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
-      "publishedAt": "2026-10-16T15:55:40.000Z",
-      "score": 215,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 91
-      },
-      "alsoOn": [],
-      "image": "https://image.theregister.com/228745.jpg?imageId=228745&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
-    },
-    {
       "id": "gh:LosaLosSantos/aurelio-finance",
       "source": "gh",
       "title": "LosaLosSantos/aurelio-finance",
@@ -995,6 +964,21 @@
         "language": "Python"
       },
       "alsoOn": []
+    },
+    {
+      "id": "hn:50119991",
+      "source": "hn",
+      "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
+      "blurb": "Core devs revert up to 10 features, push release to November, and blame better tooling rather than vibe coding",
+      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+      "publishedAt": "2026-10-16T15:55:40.000Z",
+      "score": 215,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 91
+      },
+      "alsoOn": [],
+      "image": "https://image.theregister.com/228745.jpg?imageId=228745&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
     },
     {
       "id": "hf:Cloudflare/clef",
@@ -1026,6 +1010,22 @@
       },
       "alsoOn": [],
       "image": null
+    },
+    {
+      "id": "gh:LiCinCan/blender-ai-mcp-addon",
+      "source": "gh",
+      "title": "LiCinCan/blender-ai-mcp-addon",
+      "blurb": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon and plugin, copilot…",
+      "image": "https://opengraph.githubassets.com/1/LiCinCan/blender-ai-mcp-addon",
+      "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
+      "publishedAt": "2026-10-15T22:30:47.000Z",
+      "score": 748,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "LiCinCan/blender-ai-mcp-addon",
+        "language": "Python"
+      },
+      "alsoOn": []
     },
     {
       "id": "arxiv:2610.22336v1",
@@ -1066,7 +1066,7 @@
       "image": "https://opengraph.githubassets.com/1/onehumanbeing/esp32-iphone-agent",
       "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
       "publishedAt": "2026-10-11T19:10:25.000Z",
-      "score": 3086,
+      "score": 3090,
       "scoreLabel": "stars",
       "meta": {
         "repo": "onehumanbeing/esp32-iphone-agent",
@@ -1241,22 +1241,6 @@
       "alsoOn": []
     },
     {
-      "id": "gh:zhuyansen/new-term-radar",
-      "source": "gh",
-      "title": "zhuyansen/new-term-radar",
-      "blurb": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
-      "image": "https://opengraph.githubassets.com/1/zhuyansen/new-term-radar",
-      "url": "https://github.com/zhuyansen/new-term-radar",
-      "publishedAt": "2026-10-12T07:11:01.000Z",
-      "score": 1103,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "zhuyansen/new-term-radar",
-        "language": "Python"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "interconnects:https://www.interconnects.ai/p/i-expect-rapid-progress-but-not-towards",
       "source": "interconnects",
       "title": "I expect rapid progress but not towards general superintelligence",
@@ -1283,19 +1267,6 @@
       "alsoOn": [
         "hn:50123580"
       ]
-    },
-    {
-      "id": "tc:https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-      "source": "tc",
-      "title": "Elorian’s first AI model wants to reason with images, not just about them",
-      "blurb": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning…",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/image-1.png?resize=1200,675",
-      "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-      "publishedAt": "2026-10-16T16:01:37.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
     },
     {
       "id": "deepmind:https://deepmind.google/blog/gemini-4-argon-for-robotics/",
@@ -1326,12 +1297,25 @@
       "alsoOn": []
     },
     {
+      "id": "tc:https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+      "source": "tc",
+      "title": "Elorian’s first AI model wants to reason with images, not just about them",
+      "blurb": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning…",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/image-1.png?resize=1200,675",
+      "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+      "publishedAt": "2026-10-16T16:01:37.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "hf:black-forest-labs/flux-3-image-klein-comfy",
       "source": "hf",
       "title": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "publishedAt": "2026-10-14T12:00:13.000Z",
-      "score": 754,
+      "score": 755,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 338036,
@@ -1342,6 +1326,22 @@
       ],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/black-forest-labs/flux-3-image-klein-comfy.png",
       "blurb": null
+    },
+    {
+      "id": "hf:openbmb/MiniCPM-V-4.7-35B-A3B",
+      "source": "hf",
+      "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+      "publishedAt": "2026-10-07T07:07:30.000Z",
+      "score": 961,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 57935,
+        "task": "image-text-to-text"
+      },
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/openbmb/MiniCPM-V-4.7-35B-A3B.png",
+      "blurb": "An MoE model can have far more total parameters than it activates for a single token, but its on-device storage requirements are not limited to those active parameters. Different tokens can…"
     },
     {
       "id": "arxiv:2610.22331v1",
@@ -1360,20 +1360,20 @@
       "alsoOn": []
     },
     {
-      "id": "hf:openbmb/MiniCPM-V-4.7-35B-A3B",
-      "source": "hf",
-      "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
-      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
-      "publishedAt": "2026-10-07T07:07:30.000Z",
-      "score": 959,
-      "scoreLabel": "likes",
+      "id": "gh:trhhubsd/ARTEX",
+      "source": "gh",
+      "title": "trhhubsd/ARTEX",
+      "blurb": "ARTEX · AI autonomous penetration testing system (multi-agent LLM, Go + Next.js) · AI 自主渗透测试系统 · 百度 agent+ 攻防挑战赛冠军",
+      "image": "https://opengraph.githubassets.com/1/trhhubsd/ARTEX",
+      "url": "https://github.com/trhhubsd/ARTEX",
+      "publishedAt": "2026-10-08T20:35:22.000Z",
+      "score": 1239,
+      "scoreLabel": "stars",
       "meta": {
-        "downloads": 57935,
-        "task": "image-text-to-text"
+        "repo": "trhhubsd/ARTEX",
+        "language": "Go"
       },
-      "alsoOn": [],
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/openbmb/MiniCPM-V-4.7-35B-A3B.png",
-      "blurb": "An MoE model can have far more total parameters than it activates for a single token, but its on-device storage requirements are not limited to those active parameters. Different tokens can…"
+      "alsoOn": []
     },
     {
       "id": "mit:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
@@ -1406,6 +1406,21 @@
       "alsoOn": []
     },
     {
+      "id": "papers:2610.21439",
+      "source": "papers",
+      "title": "Each Reward to Its Relevant Tokens: Reward-Specific Token-Level Credit Assignment for Multi-Reward RL",
+      "blurb": "Language models are increasingly trained against several verifiable rewards at once, such as the correctness and the format of a tool call, or the individual constraints of a complex instruction. Reward-decoupled normalization (GDPO) normalizes each reward separately so that different reward combinations keep distinct advantages, but it still spreads every reward's advantage evenly over the whole response, although each verifier checks only a few positions. We propose MRTPO, which assigns the advantage of each reward to the tokens relevant to it, using the information its verifier checks, without auxiliary models or token-level annotations. For each reward, the policy replays its own response with and without that reward's verifier information, and the per-token Jensen-Shannon distance between the two next-token distributions measures each token's relevance and reassigns the advantage. On text-to-SQL, multi-constraint instruction following and tool calling, MRTPO converges faster and achieves better performance than the compared methods.",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.21439.png",
+      "url": "https://huggingface.co/papers/2610.21439",
+      "publishedAt": "2026-10-15T03:47:04.000Z",
+      "score": 56,
+      "scoreLabel": "upvotes",
+      "meta": {
+        "comments": 2
+      },
+      "alsoOn": []
+    },
+    {
       "id": "nvidia:https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update/",
       "source": "nvidia",
       "title": "Dial Up the Cloud: NVIDIA DLSS 4.5 Controls Arrive on GeForce NOW",
@@ -1419,17 +1434,18 @@
       "alsoOn": []
     },
     {
-      "id": "papers:2610.21439",
-      "source": "papers",
-      "title": "Each Reward to Its Relevant Tokens: Reward-Specific Token-Level Credit Assignment for Multi-Reward RL",
-      "blurb": "Language models are increasingly trained against several verifiable rewards at once, such as the correctness and the format of a tool call, or the individual constraints of a complex instruction. Reward-decoupled normalization (GDPO) normalizes each reward separately so that different reward combinations keep distinct advantages, but it still spreads every reward's advantage evenly over the whole response, although each verifier checks only a few positions. We propose MRTPO, which assigns the advantage of each reward to the tokens relevant to it, using the information its verifier checks, without auxiliary models or token-level annotations. For each reward, the policy replays its own response with and without that reward's verifier information, and the per-token Jensen-Shannon distance between the two next-token distributions measures each token's relevance and reassigns the advantage. On text-to-SQL, multi-constraint instruction following and tool calling, MRTPO converges faster and achieves better performance than the compared methods.",
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.21439.png",
-      "url": "https://huggingface.co/papers/2610.21439",
-      "publishedAt": "2026-10-15T03:47:04.000Z",
-      "score": 56,
-      "scoreLabel": "upvotes",
+      "id": "gh:zhuyansen/new-term-radar",
+      "source": "gh",
+      "title": "zhuyansen/new-term-radar",
+      "blurb": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
+      "image": "https://opengraph.githubassets.com/1/zhuyansen/new-term-radar",
+      "url": "https://github.com/zhuyansen/new-term-radar",
+      "publishedAt": "2026-10-12T07:11:01.000Z",
+      "score": 1103,
+      "scoreLabel": "stars",
       "meta": {
-        "comments": 2
+        "repo": "zhuyansen/new-term-radar",
+        "language": "Python"
       },
       "alsoOn": []
     },
@@ -1447,22 +1463,6 @@
       },
       "alsoOn": [],
       "image": "https://www.currentaffairs.org/hubfs/smash1.png"
-    },
-    {
-      "id": "gh:outcrawlai/scout",
-      "source": "gh",
-      "title": "outcrawlai/scout",
-      "blurb": "Scout: the open-source browser agent, by Outcrawl. Mirrored automatically from Outcrawl's own repository.",
-      "image": "https://opengraph.githubassets.com/1/outcrawlai/scout",
-      "url": "https://github.com/outcrawlai/scout",
-      "publishedAt": "2026-10-13T09:18:55.000Z",
-      "score": 945,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "outcrawlai/scout",
-        "language": "TypeScript"
-      },
-      "alsoOn": []
     },
     {
       "id": "openai:https://openai.com/index/sullivan-cromwell",
@@ -1505,22 +1505,6 @@
       "scoreLabel": null,
       "meta": {
         "category": "latex"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "gh:mw00/project-maya",
-      "source": "gh",
-      "title": "mw00/project-maya",
-      "blurb": "Project Maya - run GLM-5.3-Flash (321B MoE) privately on your own GPU(s), from one card to 16, NVIDIA or AMD, Linux or Windows. Engine, server, dashboard, OpenAI- and Anthropic-compatible…",
-      "image": "https://opengraph.githubassets.com/1/mw00/project-maya",
-      "url": "https://github.com/mw00/project-maya",
-      "publishedAt": "2026-10-06T22:55:13.000Z",
-      "score": 1024,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "mw00/project-maya",
-        "language": "C++"
       },
       "alsoOn": []
     },
@@ -1584,21 +1568,6 @@
       "alsoOn": []
     },
     {
-      "id": "verge:https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
-      "source": "verge",
-      "title": "Meta’s new terms may allow it to train AI on news sites for free",
-      "blurb": "Meta's new terms appear to give it permission to crawl and scrape websites \"associated\" with the businesses that use its platforms - including online publishers, according to a report from…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25546023/STK043_META_CVIRGINIA_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-      "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
-      "publishedAt": "2026-10-16T14:02:40.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "AI"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "lobsters:jbnmj9",
       "source": "lobsters",
       "title": "ChatGPT now knows what you do on other websites via ad collector",
@@ -1614,6 +1583,21 @@
       "image": null
     },
     {
+      "id": "verge:https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
+      "source": "verge",
+      "title": "Meta’s new terms may allow it to train AI on news sites for free",
+      "blurb": "Meta's new terms appear to give it permission to crawl and scrape websites \"associated\" with the businesses that use its platforms - including online publishers, according to a report from…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25546023/STK043_META_CVIRGINIA_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
+      "publishedAt": "2026-10-16T14:02:40.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "AI"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "msr:https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
       "source": "msr",
       "title": "Simulating student learning for better AI tutoring",
@@ -1624,6 +1608,22 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "gh:outcrawlai/scout",
+      "source": "gh",
+      "title": "outcrawlai/scout",
+      "blurb": "Scout: the open-source browser agent, by Outcrawl. Mirrored automatically from Outcrawl's own repository.",
+      "image": "https://opengraph.githubassets.com/1/outcrawlai/scout",
+      "url": "https://github.com/outcrawlai/scout",
+      "publishedAt": "2026-10-13T09:18:55.000Z",
+      "score": 945,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "outcrawlai/scout",
+        "language": "TypeScript"
+      },
       "alsoOn": []
     },
     {
@@ -1654,6 +1654,22 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Cloudflare/clef-flash.png",
       "blurb": "Clef-Flash Announcement: Clef decision models on the Cloudflare blog Decision Index leaderboard: clef-evals.workers-ai-mle.workers.dev"
+    },
+    {
+      "id": "gh:mw00/project-maya",
+      "source": "gh",
+      "title": "mw00/project-maya",
+      "blurb": "Project Maya - run GLM-5.3-Flash (321B MoE) privately on your own GPU(s), from one card to 16, NVIDIA or AMD, Linux or Windows. Engine, server, dashboard, OpenAI- and Anthropic-compatible…",
+      "image": "https://opengraph.githubassets.com/1/mw00/project-maya",
+      "url": "https://github.com/mw00/project-maya",
+      "publishedAt": "2026-10-06T22:55:13.000Z",
+      "score": 1024,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "mw00/project-maya",
+        "language": "C++"
+      },
+      "alsoOn": []
     },
     {
       "id": "deepmind:https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
@@ -1756,22 +1772,6 @@
       "image": "https://framerusercontent.com/images/KBTvCTXoQaZeABcI7te5PTQw7Q.png?width=1574&height=996"
     },
     {
-      "id": "gh:Tejashmakwana/motionmaxxing",
-      "source": "gh",
-      "title": "Tejashmakwana/motionmaxxing",
-      "blurb": "Looksmaxxing for motion graphics. An agent skill that turns AI slop videos into films that look made by a motion designer.",
-      "image": "https://opengraph.githubassets.com/1/Tejashmakwana/motionmaxxing",
-      "url": "https://github.com/Tejashmakwana/motionmaxxing",
-      "publishedAt": "2026-10-06T18:18:49.000Z",
-      "score": 861,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "Tejashmakwana/motionmaxxing",
-        "language": "JavaScript"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "lobsters:qcgjpu",
       "source": "lobsters",
       "title": "Kolibri: A Sovereign Open-Weight Model",
@@ -1817,22 +1817,6 @@
       "alsoOn": []
     },
     {
-      "id": "gh:datalab-to/indra",
-      "source": "gh",
-      "title": "datalab-to/indra",
-      "blurb": "Fast CPU OCR: line detection, CTC recognition, reading order, markdown",
-      "image": "https://opengraph.githubassets.com/1/datalab-to/indra",
-      "url": "https://github.com/datalab-to/indra",
-      "publishedAt": "2026-10-13T11:07:11.000Z",
-      "score": 613,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "datalab-to/indra",
-        "language": "Python"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "arxiv:2610.22324v1",
       "source": "arxiv",
       "title": "Training Reasoning Models to Generate Diverse Scientific Ideas",
@@ -1865,6 +1849,22 @@
       "blurb": "Drama 3 runs on SGLang-Omni from launch day. For installation, deployment, and streaming API examples, see the Drama 3 Cookbook. Launch with vLLM-Omni"
     },
     {
+      "id": "gh:Tejashmakwana/motionmaxxing",
+      "source": "gh",
+      "title": "Tejashmakwana/motionmaxxing",
+      "blurb": "Looksmaxxing for motion graphics. An agent skill that turns AI slop videos into films that look made by a motion designer.",
+      "image": "https://opengraph.githubassets.com/1/Tejashmakwana/motionmaxxing",
+      "url": "https://github.com/Tejashmakwana/motionmaxxing",
+      "publishedAt": "2026-10-06T18:18:49.000Z",
+      "score": 861,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "Tejashmakwana/motionmaxxing",
+        "language": "JavaScript"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "papers:2610.21095",
       "source": "papers",
       "title": "Can World and Action Modeling Benefit Each Other under Unified Causal Training?",
@@ -1876,6 +1876,22 @@
       "scoreLabel": "upvotes",
       "meta": {
         "comments": 3
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:datalab-to/indra",
+      "source": "gh",
+      "title": "datalab-to/indra",
+      "blurb": "Fast CPU OCR: line detection, CTC recognition, reading order, markdown",
+      "image": "https://opengraph.githubassets.com/1/datalab-to/indra",
+      "url": "https://github.com/datalab-to/indra",
+      "publishedAt": "2026-10-13T11:07:11.000Z",
+      "score": 613,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "datalab-to/indra",
+        "language": "Python"
       },
       "alsoOn": []
     },
@@ -1981,22 +1997,6 @@
       "blurb": "Qwen3.8-27B in under 8 GB, tuned to keep tool calling intact. A standard GGUF for stock llama.cpp. Read more: underdog.ai/saluki"
     },
     {
-      "id": "gh:repoboost-hq/github-star-benchmarks",
-      "source": "gh",
-      "title": "repoboost-hq/github-star-benchmarks",
-      "blurb": "AI research dataset on GitHub stars: 32.6M starred repositories, star thresholds (100/1k/10k/100k), language and age cohorts, plus star-buying and fake-star research context from ICSE 2026…",
-      "image": "https://opengraph.githubassets.com/1/repoboost-hq/github-star-benchmarks",
-      "url": "https://github.com/repoboost-hq/github-star-benchmarks",
-      "publishedAt": "2026-10-18T06:19:48.000Z",
-      "score": 73,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "repoboost-hq/github-star-benchmarks",
-        "language": "Python"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "tc:https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
       "source": "tc",
       "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
@@ -2010,38 +2010,6 @@
       "alsoOn": []
     },
     {
-      "id": "gh:thesysdev/open-intelligent-ui",
-      "source": "gh",
-      "title": "thesysdev/open-intelligent-ui",
-      "blurb": "An open-source take on ChatGPT's Intelligent UI: answers stream as interactive UI (maps, photos, charts, drawings and working tools). Built with OpenUI.",
-      "image": "https://opengraph.githubassets.com/1/thesysdev/open-intelligent-ui",
-      "url": "https://github.com/thesysdev/open-intelligent-ui",
-      "publishedAt": "2026-10-08T05:37:45.000Z",
-      "score": 532,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "thesysdev/open-intelligent-ui",
-        "language": "TypeScript"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "gh:heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
-      "source": "gh",
-      "title": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
-      "blurb": "AI 跨境电商运营智能体工具箱 · 把运营 SOP 拆成 7 个可复用的 AI Agent 工作流，含 Prompt、模板与真实案例",
-      "image": "https://opengraph.githubassets.com/1/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
-      "url": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
-      "publishedAt": "2026-10-13T10:13:21.000Z",
-      "score": 383,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
-        "language": "Python"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "openai:https://openai.com/index/sentinelone",
       "source": "openai",
       "title": "SentinelOne cuts malware analysis from weeks to hours",
@@ -2052,6 +2020,22 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "gh:repoboost-hq/github-star-benchmarks",
+      "source": "gh",
+      "title": "repoboost-hq/github-star-benchmarks",
+      "blurb": "AI research dataset on GitHub stars: 32.6M starred repositories, star thresholds (100/1k/10k/100k), language and age cohorts, plus star-buying and fake-star research context from ICSE 2026…",
+      "image": "https://opengraph.githubassets.com/1/repoboost-hq/github-star-benchmarks",
+      "url": "https://github.com/repoboost-hq/github-star-benchmarks",
+      "publishedAt": "2026-10-18T06:19:48.000Z",
+      "score": 73,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "repoboost-hq/github-star-benchmarks",
+        "language": "Python"
+      },
       "alsoOn": []
     },
     {
@@ -2071,18 +2055,18 @@
       "blurb": "LFM2.5-24B-A2B is a 24B-parameter reasoning model with only 2B active parameters, built for fast, private agents on-device. It is the largest and final model in the LFM2.5 family, which now…"
     },
     {
-      "id": "gh:Ayzzz123/mcd-coupon-strategist",
+      "id": "gh:thesysdev/open-intelligent-ui",
       "source": "gh",
-      "title": "Ayzzz123/mcd-coupon-strategist",
-      "blurb": "麦麦省钱助手 —— 基于麦当劳 MCP 的点餐成本优化 Skill。算出当前门店最省钱的点餐方案，并主动提示凑单陷阱。",
-      "image": "https://opengraph.githubassets.com/1/Ayzzz123/mcd-coupon-strategist",
-      "url": "https://github.com/Ayzzz123/mcd-coupon-strategist",
-      "publishedAt": "2026-10-10T12:59:19.000Z",
-      "score": 491,
+      "title": "thesysdev/open-intelligent-ui",
+      "blurb": "An open-source take on ChatGPT's Intelligent UI: answers stream as interactive UI (maps, photos, charts, drawings and working tools). Built with OpenUI.",
+      "image": "https://opengraph.githubassets.com/1/thesysdev/open-intelligent-ui",
+      "url": "https://github.com/thesysdev/open-intelligent-ui",
+      "publishedAt": "2026-10-08T05:37:45.000Z",
+      "score": 532,
       "scoreLabel": "stars",
       "meta": {
-        "repo": "Ayzzz123/mcd-coupon-strategist",
-        "language": "Python"
+        "repo": "thesysdev/open-intelligent-ui",
+        "language": "TypeScript"
       },
       "alsoOn": []
     },
@@ -2127,6 +2111,38 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "gh:heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+      "source": "gh",
+      "title": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+      "blurb": "AI 跨境电商运营智能体工具箱 · 把运营 SOP 拆成 7 个可复用的 AI Agent 工作流，含 Prompt、模板与真实案例",
+      "image": "https://opengraph.githubassets.com/1/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+      "url": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+      "publishedAt": "2026-10-13T10:13:21.000Z",
+      "score": 384,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:Ayzzz123/mcd-coupon-strategist",
+      "source": "gh",
+      "title": "Ayzzz123/mcd-coupon-strategist",
+      "blurb": "麦麦省钱助手 —— 基于麦当劳 MCP 的点餐成本优化 Skill。算出当前门店最省钱的点餐方案，并主动提示凑单陷阱。",
+      "image": "https://opengraph.githubassets.com/1/Ayzzz123/mcd-coupon-strategist",
+      "url": "https://github.com/Ayzzz123/mcd-coupon-strategist",
+      "publishedAt": "2026-10-10T12:59:19.000Z",
+      "score": 491,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "Ayzzz123/mcd-coupon-strategist",
+        "language": "Python"
+      },
       "alsoOn": []
     },
     {
@@ -2202,22 +2218,6 @@
       "image": null
     },
     {
-      "id": "gh:hanzohanzhe/Grandet",
-      "source": "gh",
-      "title": "hanzohanzhe/Grandet",
-      "blurb": "Find the cheapest API for any model and connect it from your AI agent: Grandet Skill and an anonymous MCP server, backed by listed prices from 1,800+ official, inference and relay providers…",
-      "image": "https://opengraph.githubassets.com/1/hanzohanzhe/Grandet",
-      "url": "https://github.com/hanzohanzhe/Grandet",
-      "publishedAt": "2026-10-05T06:50:33.000Z",
-      "score": 356,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "hanzohanzhe/Grandet",
-        "language": "JavaScript"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "mit:https://news.mit.edu/2026/mit-lincoln-laboratory-hosts-national-security-commission-emerging-biotechnology-1013",
       "source": "mit",
       "title": "MIT Lincoln Laboratory hosts National Security Commission on Emerging Biotechnology",
@@ -2229,22 +2229,6 @@
       "scoreLabel": null,
       "meta": {
         "category": "Artificial intelligence"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "gh:NousResearch/hermes-official-plugins",
-      "source": "gh",
-      "title": "NousResearch/hermes-official-plugins",
-      "blurb": "☤ The official plugins for Hermes Agent, built and maintained by Nous Research: Home Assistant, Spotify, Claude Subscription DirectSDK and more, one install away from the Hermes plugin…",
-      "image": "https://opengraph.githubassets.com/1/NousResearch/hermes-official-plugins",
-      "url": "https://github.com/NousResearch/hermes-official-plugins",
-      "publishedAt": "2026-10-10T20:51:25.000Z",
-      "score": 321,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "NousResearch/hermes-official-plugins",
-        "language": "Python"
       },
       "alsoOn": []
     },
@@ -2273,6 +2257,22 @@
       "scoreLabel": null,
       "meta": {
         "category": "AI"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:hanzohanzhe/Grandet",
+      "source": "gh",
+      "title": "hanzohanzhe/Grandet",
+      "blurb": "Find the cheapest API for any model and connect it from your AI agent: Grandet Skill and an anonymous MCP server, backed by listed prices from 1,800+ official, inference and relay providers…",
+      "image": "https://opengraph.githubassets.com/1/hanzohanzhe/Grandet",
+      "url": "https://github.com/hanzohanzhe/Grandet",
+      "publishedAt": "2026-10-05T06:50:33.000Z",
+      "score": 356,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "hanzohanzhe/Grandet",
+        "language": "JavaScript"
       },
       "alsoOn": []
     },
@@ -2520,17 +2520,17 @@
       "blurb": "A speech-to-text model for mobiles, wearables, robots, smart home, automotive and microcontrollers. The whole model is a single 16.9 MB file, and it runs on the same CPU engine as Needle…"
     },
     {
-      "id": "gh:songshikang0111/awesome-REA-cases",
+      "id": "gh:NousResearch/hermes-official-plugins",
       "source": "gh",
-      "title": "songshikang0111/awesome-REA-cases",
-      "blurb": "A curated collection of REA and AI-assisted reverse engineering cases, projects, and ideas. Updated every four hours.",
-      "image": "https://opengraph.githubassets.com/1/songshikang0111/awesome-REA-cases",
-      "url": "https://github.com/songshikang0111/awesome-REA-cases",
-      "publishedAt": "2026-10-12T04:52:44.000Z",
-      "score": 247,
+      "title": "NousResearch/hermes-official-plugins",
+      "blurb": "☤ The official plugins for Hermes Agent, built and maintained by Nous Research: Home Assistant, Spotify, Claude Subscription DirectSDK and more, one install away from the Hermes plugin…",
+      "image": "https://opengraph.githubassets.com/1/NousResearch/hermes-official-plugins",
+      "url": "https://github.com/NousResearch/hermes-official-plugins",
+      "publishedAt": "2026-10-10T20:51:25.000Z",
+      "score": 321,
       "scoreLabel": "stars",
       "meta": {
-        "repo": "songshikang0111/awesome-REA-cases",
+        "repo": "NousResearch/hermes-official-plugins",
         "language": "Python"
       },
       "alsoOn": []
