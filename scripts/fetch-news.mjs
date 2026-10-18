@@ -30,14 +30,82 @@ const BLURB_MAX = 190;
 const MIN_HERO_WIDTH = 400;
 const HALF_LIFE_HOURS = 36;
 const WEIGHT_ENGAGEMENT = 0.5;
-const TOTAL_CAP = 120;
+const TOTAL_CAP = 200;
 
 /**
- * Where each card's artwork comes from. `page` scrapes the item's own page for
- * its link-preview image, `repo` builds GitHub's rendered repo card, and `none`
- * means a paper has no meaningful picture so the card gets a designed tile.
+ * The ordinary RSS and Atom sources, as data rather than fifteen near-identical
+ * functions. Every one is keyless and public, and each is read straight from the
+ * publisher, so the headline on a card is the headline they wrote.
  */
-const IMAGE_SOURCE = { hn: "page", hf: "page", gh: "repo", arxiv: "none" };
+const FEEDS = {
+  openai: { url: "https://openai.com/news/rss.xml", window: 150 * 24, cap: 7 },
+  deepmind: { url: "https://deepmind.google/blog/rss.xml", window: 150 * 24, cap: 7 },
+  googleai: { url: "https://blog.google/technology/ai/rss/", window: 150 * 24, cap: 7 },
+  msr: { url: "https://www.microsoft.com/en-us/research/feed/", window: 150 * 24, cap: 6 },
+  nvidia: { url: "https://blogs.nvidia.com/feed/", window: 90 * 24, cap: 6 },
+  hfblog: { url: "https://huggingface.co/blog/feed.xml", window: 120 * 24, cap: 7 },
+  tc: { url: "https://techcrunch.com/category/artificial-intelligence/feed/", window: 21 * 24, cap: 10 },
+  verge: { url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", window: 14 * 24, cap: 9 },
+  ars: { url: "https://feeds.arstechnica.com/arstechnica/technology-lab", window: 21 * 24, cap: 9 },
+  mit: { url: "https://news.mit.edu/rss/topic/artificial-intelligence2", window: 45 * 24, cap: 8 },
+  simonw: { url: "https://simonwillison.net/atom/everything/", window: 45 * 24, cap: 8 },
+  importai: { url: "https://importai.substack.com/feed", window: 90 * 24, cap: 5 },
+  interconnects: { url: "https://www.interconnects.ai/feed", window: 60 * 24, cap: 5 },
+};
+
+// Each feed's collector is the same function closed over its own spec, which is
+// why the entries below spread `FEEDS.<id>` rather than naming a function.
+for (const [id, spec] of Object.entries(FEEDS)) {
+  spec.id = id;
+  spec.fn = feedSource(spec);
+}
+
+/**
+ * `window` is how long an item stays worth showing, in hours — Hugging Face
+ * models are news for weeks, a Hacker News post for days. `cap` is how many
+ * items that source may contribute, so twenty sources cannot drown the page.
+ *
+ * `artwork` says where a card's picture comes from. `page` scrapes the item's own
+ * page for a link-preview image, but only when the source has not already
+ * supplied one — most feeds publish their own image, and those items then cost no
+ * second request at all. `none` is a deliberate choice rather than a missing one:
+ * a designed tile reads better than a site's logo stretched across a card.
+ */
+const SOURCES = [
+  // What practitioners are saying.
+  { id: "hn", name: "Hacker News", window: 7 * 24, cap: 22, artwork: "page", fn: fromHN },
+  { id: "lobsters", name: "Lobsters", window: 30 * 24, cap: 8, artwork: "page", fn: fromLobsters },
+
+  // Research.
+  { id: "papers", name: "Daily Papers", window: 21 * 24, cap: 15, artwork: "page", fn: fromDailyPapers },
+  { id: "arxiv", name: "arXiv", window: 14 * 24, cap: 14, artwork: "none", fn: fromArxiv },
+
+  // Models and code.
+  { id: "hf", name: "Hugging Face", window: 21 * 24, cap: 14, artwork: "page", fn: fromHF },
+  { id: "gh", name: "GitHub", window: 14 * 24, cap: 16, artwork: "page", fn: fromGH },
+
+  // What the labs publish themselves, which is the primary source for anything big.
+  // OpenAI answers every scraper with 403, so its cards are tiles by design.
+  { id: "openai", name: "OpenAI", artwork: "none", ...FEEDS.openai },
+  { id: "deepmind", name: "DeepMind", artwork: "page", ...FEEDS.deepmind },
+  { id: "googleai", name: "Google AI", artwork: "page", ...FEEDS.googleai },
+  { id: "msr", name: "Microsoft Research", artwork: "page", ...FEEDS.msr },
+  { id: "nvidia", name: "NVIDIA", artwork: "page", ...FEEDS.nvidia },
+  { id: "hfblog", name: "Hugging Face Blog", artwork: "page", ...FEEDS.hfblog },
+
+  // The press.
+  { id: "tc", name: "TechCrunch", artwork: "page", ...FEEDS.tc },
+  { id: "verge", name: "The Verge", artwork: "page", ...FEEDS.verge },
+  { id: "ars", name: "Ars Technica", artwork: "page", ...FEEDS.ars },
+  { id: "mit", name: "MIT News", artwork: "page", ...FEEDS.mit },
+
+  // Writing worth reading, from people who do the work.
+  { id: "simonw", name: "Simon Willison", artwork: "none", ...FEEDS.simonw },
+  { id: "importai", name: "Import AI", artwork: "page", ...FEEDS.importai },
+  { id: "interconnects", name: "Interconnects", artwork: "page", ...FEEDS.interconnects },
+];
+
+const IMAGE_SOURCE = Object.fromEntries(SOURCES.map((s) => [s.id, s.artwork]));
 
 /** GitHub renders one preview card per repository; the path segment is a cache tag. */
 const ghPreviewImage = (fullName) => `https://opengraph.githubassets.com/1/${fullName}`;
@@ -55,17 +123,6 @@ const TAGLINES = [
 
 /** Site furniture rather than article artwork: stretched across a card it reads as broken. */
 const DECORATIVE_IMAGE = /(^|[/\-_.])(logo|icon|avatar|favicon|sprite|placeholder|spacer|blank)([/\-_.]|$)/i;
-
-/**
- * `window` is how long an item from that source stays worth showing. Hugging Face
- * models are news for weeks; a Hacker News post is news for days.
- */
-const SOURCES = [
-  { id: "hn", name: "Hacker News", window: 7 * 24, cap: 25, fn: fromHN },
-  { id: "hf", name: "Hugging Face", window: 21 * 24, cap: 20, fn: fromHF },
-  { id: "gh", name: "GitHub", window: 14 * 24, cap: 20, fn: fromGH },
-  { id: "arxiv", name: "arXiv", window: 14 * 24, cap: 15, fn: fromArxiv },
-];
 
 /* ---------------------------------------------------------------- helpers */
 
@@ -125,7 +182,29 @@ function decode(value) {
   return out;
 }
 
-const stripTags = (s) => decode(String(s).replace(/<[^>]*>/g, " ")).replace(/\s+/g, " ").trim();
+/**
+ * Most feeds wrap their text in CDATA. Left in place, `<![CDATA[…]]>` looks like
+ * a tag and the stripper deletes the *content* along with the wrapper, so the
+ * CDATA has to come off before any tag stripping happens.
+ */
+const unwrapCdata = (s) => String(s).replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1");
+
+/**
+ * Feeds and pages nest their markup, and not just one level: an Atom `<content>`
+ * holds escaped HTML, and some feeds carry markdown inside that. Stripping tags
+ * once is therefore not enough — the entities have to be decoded *first* and the
+ * result stripped again, or `&lt;p&gt;` survives into the card as visible text.
+ */
+const TAG_RE = /<[^>]*>/g;
+
+const stripTags = (s) => {
+  let out = unwrapCdata(String(s));
+  for (let pass = 0; pass < 2; pass += 1) out = decode(out).replace(TAG_RE, " ");
+  return out
+    .replace(/!?\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/\s+/g, " ")
+    .trim();
+};
 
 /** Titles contain emoji; slicing by code unit splits surrogate pairs into mojibake. */
 function clampTitle(t) {
@@ -260,11 +339,17 @@ async function fromGH() {
     .filter((i) => i.title && i.url && i.publishedAt);
 }
 
-/** `cat:cs.AI` also returns cross-listed papers, so the primary category is kept for display. */
+/**
+ * The three arXiv categories this page covers. The query also returns papers
+ * merely cross-listed into them, so the primary category decides membership —
+ * and it is also what the card's tile displays.
+ */
+const RESEARCH_CATEGORIES = new Set(["cs.AI", "cs.LG", "cs.CL"]);
+
 async function fromArxiv() {
   const url =
-    `https://export.arxiv.org/api/query?search_query=cat:cs.AI` +
-    `&sortBy=submittedDate&sortOrder=descending&max_results=40`;
+    `https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CL` +
+    `&sortBy=submittedDate&sortOrder=descending&max_results=60`;
   const xml = await get(url, {}, SLOW_TIMEOUT_MS);
   const entries = [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map((m) => m[1]);
   return entries
@@ -294,11 +379,182 @@ async function fromArxiv() {
           category: primary || null,
           authors: [...e.matchAll(/<name>([\s\S]*?)<\/name>/g)].length,
         },
-        crossListed: !categories.includes("cs.AI"),
+        offTopic: !RESEARCH_CATEGORIES.has(primary),
       };
     })
-    .filter((i) => i.title && i.url && i.publishedAt && !i.crossListed)
-    .map(({ crossListed, ...item }) => item);
+    .filter((i) => i.title && i.url && i.publishedAt && !i.offTopic)
+    .map(({ offTopic, ...item }) => item);
+}
+
+/**
+ * One entry's fields, from either an RSS `<item>` or an Atom `<entry>`. Feeds
+ * disagree about almost everything: a link is element text in RSS and an
+ * attribute in Atom, dates arrive under four different names, and the summary
+ * lives in `description`, `summary` or `content:encoded` depending on which
+ * generator wrote the file. So each field is probed in order of preference
+ * rather than read from a fixed shape.
+ */
+function feedEntry(block) {
+  const atom = !/<link>/i.test(block) && /<link\b[^>]*href=/i.test(block);
+
+  let url = null;
+  if (atom) {
+    const tags = [...block.matchAll(/<link\b[^>]*>/gi)].map((m) => m[0]);
+    const alternate = tags.find((t) => /rel\s*=\s*["']alternate["']/i.test(t)) || tags[0];
+    url = alternate ? attr(alternate, "href") : null;
+  } else {
+    const inner = stripTags(xmlTag(block, "link"));
+    if (inner) url = inner;
+  }
+
+  const dateText =
+    xmlTag(block, "pubDate") ||
+    xmlTag(block, "published") ||
+    xmlTag(block, "updated") ||
+    xmlTag(block, "dc:date") ||
+    xmlTag(block, "date");
+  const published = Date.parse(stripTags(dateText));
+
+  // The feed's own summary is preferred over its full article body: an excerpt is
+  // a sentence someone wrote to be a summary, where `content:encoded` is the piece.
+  const body =
+    xmlTag(block, "description") ||
+    xmlTag(block, "summary") ||
+    xmlTag(block, "content:encoded") ||
+    xmlTag(block, "content");
+
+  const blurb = cleanBlurb(stripTags(body));
+  // A feed's own categories are the only honest second line a tile can carry.
+  const category =
+    [...block.matchAll(/<category[^>]*?(?:term\s*=\s*"([^"]*)"|>([^<]*)<)/gi)]
+      .map((m) => stripTags(m[1] || m[2] || ""))
+      .find((c) => c && c.length <= 32) || null;
+
+  return {
+    title: clampTitle(stripTags(xmlTag(block, "title"))),
+    url: url ? url.trim() : null,
+    publishedAt: Number.isFinite(published) ? iso(published) : null,
+    blurb: blurb ? clampText(blurb, BLURB_MAX) : null,
+    image: feedImage(block, body),
+    category,
+  };
+}
+
+/**
+ * Artwork straight out of the feed, so the item needs no page fetch at all.
+ * Feeds publish it under whichever namespace their generator chose, and plenty
+ * publish none — in which case the card gets a scrape or a designed tile.
+ */
+function feedImage(block, body) {
+  const enclosures = [...block.matchAll(/<enclosure\b[^>]*>/gi)].map((m) => m[0]);
+  const candidates = [
+    (block.match(/<media:content[^>]*\burl\s*=\s*["']([^"']+)/i) || [])[1],
+    (block.match(/<media:thumbnail[^>]*\burl\s*=\s*["']([^"']+)/i) || [])[1],
+    (block.match(/<itunes:image[^>]*\bhref\s*=\s*["']([^"']+)/i) || [])[1],
+    // An audio or video enclosure is not artwork, so only image ones qualify.
+    enclosures
+      .map((tag) => {
+        const url = attr(tag, "url");
+        const type = attr(tag, "type") || "";
+        return /^image\//i.test(type) || /\.(jpe?g|png|webp|gif|avif)(\?|#|$)/i.test(url || "")
+          ? url
+          : null;
+      })
+      .find(Boolean),
+    (body.match(/<img[^>]*\bsrc\s*=\s*["']([^"']+)/i) || [])[1],
+  ];
+
+  for (const raw of candidates) {
+    if (!raw) continue;
+    const url = decode(raw).trim();
+    if (!/^https:\/\//i.test(url)) continue;
+    if (DECORATIVE_IMAGE.test(url)) continue;
+    return url;
+  }
+  return null;
+}
+
+/**
+ * Reads one feed. Blocks are matched before anything inside them is parsed, so a
+ * single malformed entry costs that entry rather than the whole source.
+ */
+function feedSource(spec) {
+  return async function fetchFeed() {
+    const xml = await get(spec.url);
+    const rss = [...xml.matchAll(/<item[\s>][\s\S]*?<\/item>/gi)].map((m) => m[0]);
+    const blocks = rss.length
+      ? rss
+      : [...xml.matchAll(/<entry[\s>][\s\S]*?<\/entry>/gi)].map((m) => m[0]);
+
+    return blocks
+      .map(feedEntry)
+      .filter((e) => e.title && e.url && e.publishedAt)
+      .map((e) => ({
+        id: `${spec.id}:${e.url}`,
+        source: spec.id,
+        title: e.title,
+        blurb: e.blurb,
+        image: e.image,
+        url: e.url,
+        publishedAt: e.publishedAt,
+        score: null,
+        scoreLabel: null,
+        meta: e.category ? { category: e.category } : {},
+      }));
+  };
+}
+
+/**
+ * Lobsters' AI tag: a smaller, more opinionated front page than Hacker News.
+ * The links are external, so their pages carry real artwork and a real summary.
+ */
+async function fromLobsters() {
+  const data = JSON.parse(await get("https://lobste.rs/t/ai.json"));
+  return (data || [])
+    .map((s) => {
+      const published = Date.parse(s.created_at);
+      return {
+        id: `lobsters:${s.short_id}`,
+        source: "lobsters",
+        title: clampTitle(stripTags(s.title)),
+        blurb: cleanBlurb(stripTags(s.description_plain || s.description)) || null,
+        url: s.url || s.comments_url,
+        publishedAt: Number.isFinite(published) ? iso(published) : null,
+        score: typeof s.score === "number" ? s.score : null,
+        scoreLabel: "points",
+        meta: { comments: s.comment_count ?? 0 },
+      };
+    })
+    .filter((i) => i.title && i.url && i.publishedAt);
+}
+
+/**
+ * Hugging Face's Daily Papers. Unlike raw arXiv this carries a real signal — the
+ * community upvotes papers — and it ships a thumbnail, so there is nothing to
+ * scrape. Its ids overlap arXiv's, and the title match merges the two.
+ */
+async function fromDailyPapers() {
+  const data = JSON.parse(await get("https://huggingface.co/api/daily_papers?limit=50"));
+  return (data || [])
+    .map((p) => {
+      const paper = p.paper || {};
+      const published = Date.parse(p.publishedAt || paper.publishedAt);
+      const id = paper.id || p.id;
+      const image = typeof p.thumbnail === "string" ? p.thumbnail.trim() : "";
+      return {
+        id: `papers:${id}`,
+        source: "papers",
+        title: clampTitle(stripTags(p.title)),
+        blurb: cleanBlurb(stripTags(p.summary)) || null,
+        image: /^https:\/\//i.test(image) ? image : null,
+        url: id ? `https://huggingface.co/papers/${id}` : null,
+        publishedAt: Number.isFinite(published) ? iso(published) : null,
+        score: typeof paper.upvotes === "number" ? paper.upvotes : null,
+        scoreLabel: "upvotes",
+        meta: { comments: p.numComments ?? 0 },
+      };
+    })
+    .filter((i) => i.title && i.url && i.publishedAt);
 }
 
 /* ------------------------------------------------------------------- rank */
@@ -584,8 +840,9 @@ function markdownToText(markdown) {
  * A Hugging Face model page describes the *site*, not the model, so the summary
  * has to come from the model card itself: the first real paragraph of its README,
  * past the frontmatter and past the badge and link blocks most cards open with.
+ * A blog post's markdown is read the same way.
  */
-function modelCardSummary(markdown) {
+function markdownSummary(markdown) {
   for (const block of markdownToText(markdown).split(/\n\s*\n/)) {
     const text = decode(block).replace(/\s+/g, " ").trim();
     if (text.length < 80 || text.split(" ").length < 12) continue;
@@ -598,12 +855,35 @@ function modelCardSummary(markdown) {
 }
 
 /**
+ * Where a source's markdown lives, for the sources whose pages cannot supply a
+ * summary. A miss is expected here — partner posts in the blog repository are not
+ * at the path the URL implies — and a miss simply leaves the card without one.
+ */
+function markdownSummaryUrl(item) {
+  if (item.source === "hf") {
+    return `https://huggingface.co/${item.id.slice(3)}/raw/main/README.md`;
+  }
+  if (item.source === "hfblog") {
+    const slug = String(item.url)
+      .replace(/^https:\/\/huggingface\.co\/blog\//, "")
+      .replace(/\/+$/, "");
+    return /^[a-z0-9][a-z0-9._/-]*$/i.test(slug)
+      ? `https://raw.githubusercontent.com/huggingface/blog/main/${slug}.md`
+      : null;
+  }
+  return null;
+}
+
+/**
  * Give each card its artwork and summary. Only the sources that need it are
  * touched, and only after capping and deduping, so the pages fetched are the
  * pages actually shown.
  */
 async function enrich(items) {
-  const targets = items.filter((item) => IMAGE_SOURCE[item.source] === "page");
+  // An item whose feed or API already supplied artwork needs no page fetched for
+  // one. That is what keeps widening from four sources to twenty cheap: most
+  // items cost a single request shared with the whole feed.
+  const targets = items.filter((item) => IMAGE_SOURCE[item.source] === "page" && !item.image);
   const stats = { pages: targets.length, images: 0, blurbs: 0 };
   let cursor = 0;
 
@@ -624,12 +904,12 @@ async function enrich(items) {
         stats.blurbs += 1;
       }
 
-      if (item.source === "hf" && !item.blurb) {
-        const card = await fetchPage(
-          `https://huggingface.co/${item.id.slice(3)}/raw/main/README.md`,
-          "text/plain,*/*",
-        );
-        const summary = card ? modelCardSummary(card.text) : null;
+      // A second chance at a summary for the sources whose own pages cannot
+      // supply one, because the page describes the site rather than the item.
+      const markdown = item.blurb ? null : markdownSummaryUrl(item);
+      if (markdown) {
+        const card = await fetchPage(markdown, "text/plain,*/*");
+        const summary = card ? markdownSummary(card.text) : null;
         if (summary) {
           item.blurb = summary;
           stats.blurbs += 1;

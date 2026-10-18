@@ -1,20 +1,26 @@
 # AI Wire
 
-A single page showing what is happening in AI right now — papers, models, code and
-discussion — from four sources, rebuilt every hour by a scheduled job. No server, no
-database, no API keys, nothing to run.
+A single page showing what is happening in AI right now — announcements, papers, models,
+code, press and discussion — from **nineteen sources**, rebuilt every hour by a scheduled
+job. No server, no database, no API keys, nothing to run.
 
 **Live:** https://ai-news-seven-tan.vercel.app/
 
 ## How it works
 
 ```
-Hacker News   ─┐
-Hugging Face  ─┤   scripts/fetch-news.mjs                        data/news.json        index.html
-GitHub        ─┼─▶ normalise → dedupe → rank → fill in previews ─▶ committed hourly ─▶ app.js renders
-arXiv cs.AI   ─┘                                                       ▲                     ▲
-                                                                       │                     │
-                                                             GitHub Actions, hourly     Vercel, on push
+Hacker News · Lobsters · Daily Papers · arXiv · HF · GitHub
+the labs' own feeds · the press · the blogs
+        │
+        │  scripts/fetch-news.mjs
+        ▼
+   normalise → dedupe → rank → fill in previews
+        │
+        ▼
+   data/news.json, committed ──▶ index.html + app.js render it
+        ▲                             ▲
+        │                             │
+   GitHub Actions, hourly          Vercel, on push
 ```
 
 A scheduled workflow runs `scripts/fetch-news.mjs`, which writes `data/news.json` and
@@ -22,9 +28,11 @@ commits it if it changed. Because the page is served from the same origin as tha
 the browser reads it directly. There is no API to call and no process to keep alive.
 
 Each card carries artwork and a summary. Neither is invented: both are taken from the
-item's own page or feed, and each source has its own strategy (below). Only the items that
-survive ranking and deduping are fetched, so the pages read are the pages shown, and a page
-that has no preview image simply gets a designed tile instead.
+item's own page or feed, and each source has its own strategy (below). Most feeds publish
+their own image, so those cards cost nothing beyond the single request that read the feed;
+only items still missing artwork have their page fetched, and only after ranking and
+deduping — so the pages read are the pages shown. An item with no usable picture gets a
+designed tile instead.
 
 The repository is linked to Vercel, so that same commit is also what republishes the page.
 The hourly job deploys nothing itself and holds no hosting credential — it only commits,
@@ -40,20 +48,46 @@ than a duplicate commit.
 
 ## Sources
 
-| Source | What it contributes | Signal | Artwork and summary |
+Every source is keyless and public. Nothing here needs an account, an API key or a paid
+tier, and each is read from its publisher rather than through an intermediary.
+
+| Group | Source | Signal | Artwork and summary |
 | --- | --- | --- | --- |
-| Hacker News | discussion, the field's front page | points, comments | the linked page's own preview image and description; Ask/Show HN posts carry their text already |
-| Hugging Face | newly published models | likes, downloads | the model page's preview image; the summary comes from the model card itself, because the page's own description is the site's tagline on every model |
-| GitHub | repos created in the last two weeks that are already being adopted | stars, language | GitHub renders one preview card per repository; the repo's description is the summary |
-| arXiv `cs.AI` | new papers | recency | papers have no meaningful picture, so the card gets a designed tile; the abstract is the summary |
+| Community | **Hacker News** | points, comments | the linked page's own preview; Ask/Show HN posts carry their text already |
+| Community | **Lobsters** (AI tag) | points, comments | the linked page's preview |
+| Research | **Daily Papers** (Hugging Face) | upvotes, comments | the paper's own thumbnail; the abstract |
+| Research | **arXiv** `cs.AI` `cs.LG` `cs.CL` | recency | no meaningful picture, so a designed tile carrying the category; the abstract |
+| Models | **Hugging Face** models | likes, downloads | the model page's preview; the summary comes from the model card, because the page's own description is the site tagline on every model |
+| Code | **GitHub** | stars, language | GitHub renders one preview card per repository; the description is the summary |
+| Labs | **OpenAI** | recency | answers every scraper with 403, so its cards are tiles by design |
+| Labs | **DeepMind**, **Google AI**, **Microsoft Research**, **NVIDIA**, **Hugging Face Blog** | recency | the image each publisher puts in its own feed, so no second request is needed |
+| Press | **TechCrunch**, **The Verge**, **Ars Technica**, **MIT News** | recency | the press write the headline, and most publish their own artwork |
+| Writing | **Simon Willison**, **Import AI**, **Interconnects** | recency | the newsletter's own enclosure image, or a tile |
+
+## What was left out, and why
+
+Sources are only added if they are free, keyless, public, and actually return items. Four
+plausible candidates were measured and rejected:
+
+| Candidate | Why not |
+| --- | --- |
+| Reddit (`r/LocalLLaMA`, `r/MachineLearning`) | its JSON endpoints now answer `403` without OAuth |
+| Anthropic, Meta, Mistral, The Batch | no working RSS feed at any published path |
+| VentureBeat | rate-limits to `429` often enough to fail the run |
+| Google News RSS | no artwork, and every link is a redirect through `news.google.com` |
+
+AI News (`news.smol.ai`) was wired in, measured, and then removed: its newest post was
+five weeks old, so it is not news.
 
 ## How items are chosen and ordered
 
-- Each source gets a **window** (Hacker News 7 days, Hugging Face 21, GitHub and arXiv
-  14) and a **cap** (25 / 20 / 20 / 15), so no single source can flood the wire.
+- Each source gets a **window** (14 days for arXiv and Hacker News, up to 150 for a lab
+  that announces quarterly) and a **cap** (5 to 22), so no single source can flood the
+  wire and a slow-moving source cannot pad it.
 - Within a source, engagement is a **percentile** of that source's own signal, which is
-  what makes points, likes and stars comparable. arXiv has no engagement metric, so its
-  own recency order stands in.
+  what makes points, likes, stars and upvotes comparable. A source with no engagement
+  metric at all — arXiv, the labs, the press — is ranked by its own recency instead, so a
+  fresh announcement still surfaces without a score.
 - `rank = 0.5 × engagement + 0.5 × freshness`, with freshness decaying on a 36-hour
   half-life.
 - Ranking decides **which** items appear. The list is then spread so that one source
@@ -101,9 +135,13 @@ keeps its rhythm without inventing a picture. The top story, if it has no image,
 artwork entirely and becomes a wide text lead rather than a large empty panel.
 
 Cards are filtered by source through the tabs, which write `#source=<id>` so a view can be
-linked to and survives a reload, and paged in with **Show more**. Motion is deliberately
-small: one staggered entrance, and only for cards that are genuinely new since the last
-render. Relative times tick over every 30 seconds, and reduced-motion is respected.
+linked to and survives a reload, and paged in with **Show more**. Nineteen tabs is more than
+fits on a line at any width, so the strip scrolls sideways and reveals whichever tab is
+selected — a wrapped strip would turn the sticky header into a three-line block that eats a
+phone screen. The fade at its trailing edge is the only affordance, since the scrollbar is
+hidden. Motion is deliberately small: one staggered entrance, and only for cards that are
+genuinely new since the last render. Relative times tick over every 30 seconds, and
+reduced-motion is respected.
 
 The palette is written as **sRGB first and `oklch()` second**. An engine that cannot parse
 `oklch()` drops only that line and keeps the palette, instead of painting the whole page in

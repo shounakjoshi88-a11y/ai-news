@@ -15,13 +15,35 @@ const MIN_REFETCH_GAP_MS = 60 * 1000;
 const ENTER_STAGGER_CAP = 11;
 const PAGE_SIZE = 24;
 
+/**
+ * Every source the collector can produce. `code` is what a card shows, in a small
+ * chip, so it is short; `name` is what the filter tab and the card's meta line
+ * show, so it is spelled out. The order below is the order of the tabs, and it is
+ * fixed on purpose — sorting by volume would make a source jump around the strip
+ * every hour as the news changed.
+ */
 const SOURCES = {
   hn: { name: "Hacker News", code: "HN" },
+  lobsters: { name: "Lobsters", code: "LOB" },
+  papers: { name: "Daily Papers", code: "DP" },
+  arxiv: { name: "arXiv", code: "arXiv" },
   hf: { name: "Hugging Face", code: "HF" },
   gh: { name: "GitHub", code: "GH" },
-  arxiv: { name: "arXiv", code: "arXiv" },
+  openai: { name: "OpenAI", code: "OAI" },
+  deepmind: { name: "DeepMind", code: "DM" },
+  googleai: { name: "Google AI", code: "GAI" },
+  msr: { name: "Microsoft Research", code: "MSR" },
+  nvidia: { name: "NVIDIA", code: "NV" },
+  hfblog: { name: "Hugging Face Blog", code: "HFB" },
+  tc: { name: "TechCrunch", code: "TC" },
+  verge: { name: "The Verge", code: "VZ" },
+  ars: { name: "Ars Technica", code: "ARS" },
+  mit: { name: "MIT News", code: "MIT" },
+  simonw: { name: "Simon Willison", code: "SW" },
+  importai: { name: "Import AI", code: "IA" },
+  interconnects: { name: "Interconnects", code: "IC" },
 };
-const ORDER = ["hn", "hf", "gh", "arxiv"];
+const ORDER = Object.keys(SOURCES);
 
 const els = {
   wire: document.getElementById("wire"),
@@ -301,6 +323,36 @@ function renderState(list) {
   els.state.textContent = "";
 }
 
+/**
+ * The strip scrolls, so it has to say so. `data-overflow` drives the edge fade,
+ * and the fade only shows while there is something left to scroll to — a fade
+ * pinned at an edge that has reached its end is just a smudge.
+ */
+function syncTabOverflow() {
+  const strip = els.filters;
+  const slack = 4;
+  strip.dataset.overflow =
+    strip.scrollWidth - strip.clientWidth > slack ? "true" : "false";
+  strip.dataset.atEnd =
+    strip.scrollLeft + strip.clientWidth >= strip.scrollWidth - slack ? "true" : "false";
+}
+
+/**
+ * Keeps the selected tab on screen, which matters now that there are twenty of
+ * them. Instant and after a frame, not smooth and during render: the strip
+ * carries `scroll-behavior: smooth` so a drag ends softly, and an animated
+ * reveal started mid-render computes its target from a stale width — it lands at
+ * almost the old position, which is exactly what it did.
+ */
+function revealActiveTab() {
+  const active = els.filters.querySelector('[aria-current="true"]');
+  if (!active) return;
+  requestAnimationFrame(() => {
+    active.scrollIntoView({ block: "nearest", inline: "nearest", behavior: "instant" });
+    syncTabOverflow();
+  });
+}
+
 function renderTabs() {
   const items = state.payload?.items || [];
   const counts = new Map();
@@ -324,6 +376,9 @@ function renderTabs() {
       return tab;
     }),
   );
+
+  syncTabOverflow();
+  revealActiveTab();
 }
 
 function updateStatus(now = Date.now()) {
@@ -479,6 +534,11 @@ document.addEventListener("visibilitychange", () => {
 window.addEventListener("focus", maybeRefetch);
 window.setInterval(tick, TICK_MS);
 window.setInterval(load, REFRESH_MS);
+
+// The strip's scrollability depends on the tabs inside it and on the window
+// width, so both are watched rather than measured once.
+els.filters.addEventListener("scroll", syncTabOverflow, { passive: true });
+window.addEventListener("resize", syncTabOverflow, { passive: true });
 
 readHash();
 renderTabs();

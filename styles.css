@@ -188,10 +188,37 @@ a {
   background: var(--accent);
 }
 
+/* Twenty sources is more tabs than fit on a line at any width, so the strip
+   scrolls rather than wraps: a wrapped strip turns the sticky bar into a
+   three-line header that eats a phone screen. `data-overflow` is set by script
+   once the tabs are in the DOM, and the fade is the only affordance — a
+   scrollbar-width of none leaves no hint otherwise. */
 .tabs {
   display: flex;
-  flex-wrap: wrap;
   gap: 2px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+  scroll-behavior: smooth;
+  /* A scroll container clips what overflows it, and the focus ring reaches 5px
+     past the tab. This gives it that room without changing where the bar sits. */
+  padding-block: 5px;
+  margin-block: -5px;
+  /* A flex item keeps its content width as its basis by default, so a 2193px
+     strip would push the brand and the status onto rows of their own. A zero
+     basis makes it share the row and scroll inside whatever is left over. */
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs[data-overflow="true"][data-at-end="false"] {
+  mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent);
 }
 
 .tab {
@@ -679,23 +706,19 @@ main {
     gap: 4px 12px;
   }
 
-  /* Brand and status share the first row, and the tabs scroll sideways on their
-     own row rather than wrapping the bar into four lines. */
+  /* Brand and status share the first row, and the tabs get a full row of their
+     own. They already scroll at every width; here they are just given one. */
+  /* `flex-basis: 100%`, not `width: 100%`: the base rule gives this strip a zero
+     basis so it can share a desktop row, and a flex basis beats width — without
+     it the strip fits on row one at 136px wide instead of taking its own row. */
   .tabs {
     order: 3;
-    width: 100%;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-
-  .tabs::-webkit-scrollbar {
-    display: none;
+    flex-basis: 100%;
   }
 
   /* Touch width: the tabs are the primary control, so they get real height. */
   .tab {
-    padding: 12px 12px;
+    padding: 12px;
   }
 
   .pulse {
