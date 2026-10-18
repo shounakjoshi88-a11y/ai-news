@@ -337,11 +337,107 @@ a {
   color: var(--text-muted);
 }
 
+/* ------------------------------------------------------------------ clock */
+
+/* The wire rebuilds hourly, so the header carries a real clock rather than a
+   decorative one, and it sits beside the line that says when the edition was
+   built: the time now, and the time then. It is the accent's second home — the
+   same cyan as the live dot — which is why the second hand is the only coloured
+   thing on the dial.
+
+   The hands are swept by CSS animations seeded with a negative delay, so they
+   run on the compositor rather than being rewritten every frame: `-Xs` starts the
+   sweep X seconds in, which places the hand exactly where the wall clock says it
+   belongs. `tick()` reseeds them every thirty seconds, so a tab that was
+   suspended comes back correct rather than half a minute behind.
+
+   Continuous motion is the one thing the design otherwise spends sparingly, and
+   this is where it is earned: a clock's motion is its content, not a flourish. */
+.bar__time {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.clock {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+}
+
+.clock__face {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.clock__bezel {
+  fill: none;
+  stroke: var(--rule);
+  stroke-width: 1;
+}
+
+.clock__tick {
+  stroke: var(--text-muted);
+  stroke-width: 1.1;
+  stroke-linecap: round;
+}
+
+.clock__tick--major {
+  stroke: var(--text-2);
+  stroke-width: 1.5;
+}
+
+.clock__hand {
+  stroke-linecap: round;
+  transform-box: view-box;
+  transform-origin: 20px 20px;
+}
+
+.clock__hand--hour {
+  stroke: var(--text);
+  stroke-width: 2.4;
+  animation: clock-sweep 43200s linear infinite;
+}
+
+.clock__hand--minute {
+  stroke: var(--text-2);
+  stroke-width: 1.5;
+  animation: clock-sweep 3600s linear infinite;
+}
+
+.clock__hand--second {
+  stroke: var(--accent-ink);
+  stroke-width: 1.3;
+  animation: clock-sweep 60s linear infinite;
+}
+
+@keyframes clock-sweep {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* The hands still tell the time, they simply do not travel to it: `tick()` places
+   them straight where they belong. A clock that keeps sweeping forever is exactly
+   the kind of motion this preference exists to refuse. The second hand goes
+   entirely, because a stationary one is worse than none — it would sit at
+   whatever second it was last placed at and read as a stopped clock. */
+@media (prefers-reduced-motion: reduce) {
+  .clock__hand {
+    animation: none;
+  }
+
+  .clock__hand--second {
+    display: none;
+  }
+}
+
 .pulse {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  margin-left: auto;
   font-size: 0.8125rem;
   color: var(--text-muted);
 }
@@ -829,7 +925,15 @@ main {
     padding: 12px;
   }
 
-  .pulse {
+  /* The clock stays on row one with the brand, a touch smaller so the four
+     elements on that row keep their breathing room on a 360px screen. */
+  .clock {
+    width: 30px;
+    height: 30px;
+  }
+
+  .bar__time {
+    gap: 12px;
     margin-left: auto;
   }
 

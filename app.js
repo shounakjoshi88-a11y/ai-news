@@ -59,6 +59,10 @@ const els = {
   note: document.getElementById("note"),
   alert: document.getElementById("alert"),
   more: document.getElementById("more"),
+  clock: document.getElementById("clock"),
+  clockHour: document.querySelector(".clock__hand--hour"),
+  clockMinute: document.querySelector(".clock__hand--minute"),
+  clockSecond: document.querySelector(".clock__hand--second"),
   announcer: document.getElementById("announcer"),
 };
 const pulseText = els.pulse.querySelector(".pulse__text");
@@ -507,6 +511,70 @@ function updateAlerts(now = Date.now()) {
 }
 
 /** Re-render only the relative times; the cards themselves are left alone. */
+/**
+ * The marks around the dial, laid out once at startup because they are the only
+ * part of the clock that never moves. Twelve marks, the quarters longer and
+ * darker than the rest so the face reads as a watch rather than a progress ring.
+ */
+function buildClockFace() {
+  const host = document.getElementById("clockTicks");
+  if (!host) return;
+  const SVG = "http://www.w3.org/2000/svg";
+  for (let i = 0; i < 12; i += 1) {
+    const angle = (i * Math.PI) / 6;
+    const major = i % 3 === 0;
+    const outer = 15.8;
+    const inner = major ? 12.6 : 13.6;
+    const mark = document.createElementNS(SVG, "line");
+    mark.setAttribute("class", major ? "clock__tick clock__tick--major" : "clock__tick");
+    mark.setAttribute("x1", (20 + outer * Math.sin(angle)).toFixed(2));
+    mark.setAttribute("y1", (20 - outer * Math.cos(angle)).toFixed(2));
+    mark.setAttribute("x2", (20 + inner * Math.sin(angle)).toFixed(2));
+    mark.setAttribute("y2", (20 - inner * Math.cos(angle)).toFixed(2));
+    host.append(mark);
+  }
+}
+
+/**
+ * Places the three hands, by one of two routes to the same position: a sweeping
+ * animation whose phase is seeded with a negative delay, or — when the reader has
+ * asked for reduced motion — a rotation set directly. Both are driven from the
+ * real clock rather than from a counter, so neither can drift into lying about
+ * the time, and both survive the page being suspended for an hour.
+ */
+function setClock(now = new Date()) {
+  if (!els.clock) return;
+
+  const seconds = now.getSeconds() + now.getMilliseconds() / 1000;
+  const minutes = now.getMinutes() * 60 + seconds;
+  const hours = (now.getHours() % 12) * 3600 + minutes;
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // A hand turns once per its own period, so it travels 360 / period degrees a
+  // second: 0.0083 for the hour hand, 0.1 for the minute hand, 6 for the second.
+  const hands = [
+    [els.clockHour, 1 / 120, hours],
+    [els.clockMinute, 0.1, minutes],
+    [els.clockSecond, 6, seconds],
+  ];
+  for (const [hand, perSecond, elapsed] of hands) {
+    if (!hand) continue;
+    if (reduced) {
+      hand.style.animation = "none";
+      hand.style.transform = `rotate(${(elapsed * perSecond).toFixed(3)}deg)`;
+    } else {
+      hand.style.animation = "";
+      hand.style.animationDelay = `-${elapsed.toFixed(3)}s`;
+    }
+  }
+
+  const hh = String(now.getHours()).padStart(2, "0");
+  const mm = String(now.getMinutes()).padStart(2, "0");
+  const label = `${hh}:${mm} local time`;
+  els.clock.setAttribute("aria-label", label);
+  els.clock.setAttribute("title", label);
+}
+
 function tick() {
   const now = Date.now();
   for (const node of document.querySelectorAll("[data-time]")) {
@@ -515,6 +583,7 @@ function tick() {
   }
   updateStatus(now);
   updateAlerts(now);
+  setClock();
 }
 
 function announce(message) {
@@ -621,6 +690,8 @@ els.tabPrev?.addEventListener("click", () => scrollTabs(-1));
 els.tabNext?.addEventListener("click", () => scrollTabs(1));
 
 readHash();
+buildClockFace();
+setClock();
 renderTabs();
 render();
 updateStatus();

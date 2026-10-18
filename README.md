@@ -253,8 +253,19 @@ selected — a wrapped strip would turn the sticky header into a three-line bloc
 phone screen. Because the scrollbar is hidden on purpose, the strip carries its own controls
 instead of relying on one: an arrow appears on any edge that still has a tab behind it, a
 wheel over the strip scrolls it sideways, and the trailing fade marks where the tabs continue.
-A touch screen keeps the swipe and drops the arrows, which would only cover tabs there. Motion
-is deliberately small: one staggered entrance, and only for cards that are
+A touch screen keeps the swipe and drops the arrows, which would only cover tabs there.
+
+The header ends with a **clock** beside the line that says when the edition was built — the
+time now, and the time then. It is a real instrument rather than an ornament: the wire is
+rebuilt hourly, so a page about *when* things happened can reasonably tell you what time it
+is, and it wears the accent on its second hand, the same cyan as the live dot. The hands are
+swept by CSS animations seeded with a negative delay, so they run on the compositor rather
+than being rewritten sixty times a second, and the page's existing 30-second tick reseeds them
+so a tab left suspended comes back correct instead of half a minute behind. Readers who ask
+for reduced motion get the same dial with the hands placed directly and no sweep at all,
+because a clock that keeps moving forever is precisely what that preference refuses.
+
+Motion is deliberately small: one staggered entrance, and only for cards that are
 genuinely new since the last render. Relative times tick over every 30 seconds, and
 reduced-motion is respected.
 

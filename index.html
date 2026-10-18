@@ -72,10 +72,21 @@
             </svg>
           </button>
         </div>
-        <p class="pulse" id="status">
-          <span class="pulse__dot" aria-hidden="true"></span>
-          <span class="pulse__text">Connecting</span>
-        </p>
+        <div class="bar__time">
+          <div class="clock" id="clock" role="img" aria-label="Current time">
+            <svg class="clock__face" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+              <circle class="clock__bezel" cx="20" cy="20" r="17.9" />
+              <g id="clockTicks"></g>
+              <line class="clock__hand clock__hand--hour" x1="20" y1="22.9" x2="20" y2="11.4" />
+              <line class="clock__hand clock__hand--minute" x1="20" y1="23.4" x2="20" y2="7.8" />
+              <line class="clock__hand clock__hand--second" x1="20" y1="24.6" x2="20" y2="7.1" />
+            </svg>
+          </div>
+          <p class="pulse" id="status">
+            <span class="pulse__dot" aria-hidden="true"></span>
+            <span class="pulse__text">Connecting</span>
+          </p>
+        </div>
       </div>
     </header>
 

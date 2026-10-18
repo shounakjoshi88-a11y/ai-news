@@ -104,6 +104,16 @@ const PAIRS = [
   ["tile monogram", "text-2", "tile", MIN_LARGE],
   ["warning", "warning", "bg", MIN_BODY],
   ["danger", "danger", "bg", MIN_BODY],
+  // The header clock. These are graphic objects rather than text, so they are held
+  // to the 3:1 floor for non-text content — and each one already clears the
+  // stricter text floor above, since the clock reuses the page's own tokens
+  // rather than inventing its own. Its bezel is deliberately not listed: it is a
+  // `--rule` hairline, like every other border on this page, and the dial is
+  // defined by its marks and hands rather than by its outline.
+  ["clock hour hand", "text", "bg", MIN_LARGE],
+  ["clock minute hand", "text-2", "bg", MIN_LARGE],
+  ["clock second hand", "accent-ink", "bg", MIN_LARGE],
+  ["clock marks", "text-muted", "bg", MIN_LARGE],
 ];
 
 let failures = 0;
