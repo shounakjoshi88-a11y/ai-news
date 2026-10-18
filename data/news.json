@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T13:04:13Z",
+  "generatedAt": "2026-10-18T13:08:59Z",
   "sources": [
     {
       "id": "hn",
@@ -40,7 +40,7 @@
       "score": 169,
       "scoreLabel": "points",
       "meta": {
-        "comments": 50
+        "comments": 51
       },
       "alsoOn": []
     },
@@ -80,10 +80,10 @@
       "title": "You could have invented transformers from memory",
       "url": "https://alexwang.ai/posts/associative-memory/",
       "publishedAt": "2026-10-16T19:01:17.000Z",
-      "score": 581,
+      "score": 583,
       "scoreLabel": "points",
       "meta": {
-        "comments": 130
+        "comments": 131
       },
       "alsoOn": []
     },
@@ -133,7 +133,7 @@
       "title": "Codex Desktop continuously generates Crashpad pending dumps",
       "url": "https://github.com/openai/codex/issues/25921",
       "publishedAt": "2026-10-17T17:45:08.000Z",
-      "score": 143,
+      "score": 144,
       "scoreLabel": "points",
       "meta": {
         "comments": 67
@@ -146,7 +146,7 @@
       "title": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender…",
       "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
       "publishedAt": "2026-10-15T22:30:47.000Z",
-      "score": 728,
+      "score": 730,
       "scoreLabel": "stars",
       "meta": {
         "repo": "LiCinCan/blender-ai-mcp-addon",
@@ -257,7 +257,7 @@
       "title": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak.",
       "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
       "publishedAt": "2026-10-11T19:10:25.000Z",
-      "score": 3062,
+      "score": 3065,
       "scoreLabel": "stars",
       "meta": {
         "repo": "onehumanbeing/esp32-iphone-agent",
@@ -450,7 +450,7 @@
       "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "publishedAt": "2026-10-07T07:07:30.000Z",
-      "score": 932,
+      "score": 933,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 57935,
@@ -997,16 +997,16 @@
       "alsoOn": []
     },
     {
-      "id": "gh:justxor/deepseek-local-guide-ru",
+      "id": "gh:hitkeeen/blender-ai-addon",
       "source": "gh",
-      "title": "🐋 Полный гайд на русском: как установить и запустить DeepSeek локально (V4, R1) на ПК, Mac и сервере — Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG…",
-      "url": "https://github.com/justxor/deepseek-local-guide-ru",
-      "publishedAt": "2026-10-17T10:03:36.000Z",
-      "score": 78,
+      "title": "Blender add-on: create and edit 3D models by chatting with AI - send text or an image, get working bpy code",
+      "url": "https://github.com/hitkeeen/blender-ai-addon",
+      "publishedAt": "2026-10-09T08:34:03.000Z",
+      "score": 217,
       "scoreLabel": "stars",
       "meta": {
-        "repo": "justxor/deepseek-local-guide-ru",
-        "language": "Shell"
+        "repo": "hitkeeen/blender-ai-addon",
+        "language": "Python"
       },
       "alsoOn": []
     },
@@ -1052,16 +1052,16 @@
       "alsoOn": []
     },
     {
-      "id": "gh:hitkeeen/blender-ai-addon",
+      "id": "gh:justxor/deepseek-local-guide-ru",
       "source": "gh",
-      "title": "Blender add-on: create and edit 3D models by chatting with AI - send text or an image, get working bpy code",
-      "url": "https://github.com/hitkeeen/blender-ai-addon",
-      "publishedAt": "2026-10-09T08:34:03.000Z",
-      "score": 217,
+      "title": "🐋 Полный гайд на русском: как установить и запустить DeepSeek локально (V4, R1) на ПК, Mac и сервере — Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG…",
+      "url": "https://github.com/justxor/deepseek-local-guide-ru",
+      "publishedAt": "2026-10-17T10:03:36.000Z",
+      "score": 78,
       "scoreLabel": "stars",
       "meta": {
-        "repo": "hitkeeen/blender-ai-addon",
-        "language": "Python"
+        "repo": "justxor/deepseek-local-guide-ru",
+        "language": "Shell"
       },
       "alsoOn": []
     }
