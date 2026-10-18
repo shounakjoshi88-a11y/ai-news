@@ -655,10 +655,12 @@ function feedSource(spec) {
   return async function fetchFeed() {
     const urls = Array.isArray(spec.url) ? spec.url : [spec.url];
     let xml = null;
+    let served = null;
     let failure = null;
     for (const url of urls) {
       try {
         xml = await get(url);
+        served = url;
         break;
       } catch (error) {
         failure = error;
@@ -671,6 +673,20 @@ function feedSource(spec) {
           : `${String(failure?.message || failure)} — all ${urls.length} URLs`,
       );
     }
+    // Most feeds publish absolute links, but not all: Sakana AI's writes
+    // `href="/my-fish/"`, which without a base becomes a link to this site's own
+    // origin and a 404 on the card. Resolving against the URL that actually
+    // served the feed is the only base that is known to be right, and a link
+    // that is already absolute passes through untouched.
+    const absolute = (href) => {
+      const raw = String(href || "").trim();
+      if (!raw || /^[a-z][a-z0-9+.-]*:/i.test(raw)) return raw;
+      try {
+        return new URL(raw, served).href;
+      } catch {
+        return raw;
+      }
+    };
     const rss = [...xml.matchAll(/<item[\s>][\s\S]*?<\/item>/gi)].map((m) => m[0]);
     const blocks = rss.length
       ? rss
@@ -678,6 +694,7 @@ function feedSource(spec) {
 
     return blocks
       .map(feedEntry)
+      .map((e) => ({ ...e, url: absolute(e.url) }))
       .filter((e) => e.title && e.url && e.publishedAt)
       .map((e) => ({
         id: `${spec.id}:${e.url}`,

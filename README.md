@@ -350,6 +350,9 @@ and dark. It also prints the palette as hex, which is where the sRGB fallbacks c
 - Fonts are Archivo from Google Fonts, with a system fallback stack.
 - Artwork is hot-linked from the source and never re-hosted, with `referrerpolicy="no-referrer"`
   and `loading="lazy"`; a link that goes dead falls back to the designed tile.
+- Item links are resolved against the URL that actually served the feed. Most feeds publish
+  absolute links, but not all — Sakana AI's writes `href="/my-fish/"`, which without a base
+  would point the card at this site's own origin and 404.
 - Some `og:image` previews carry the page's own title text, so a card can echo itself. That
   is the trade for real imagery from the source instead of a placeholder on every card.
 - About a quarter of the cards have no picture to show, and they are the ones whose headline
