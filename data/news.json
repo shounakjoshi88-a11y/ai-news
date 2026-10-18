@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T16:21:56Z",
+  "generatedAt": "2026-10-18T16:22:58Z",
   "sources": [
     {
       "id": "hn",
@@ -187,7 +187,7 @@
       "score": 84,
       "scoreLabel": "points",
       "meta": {
-        "comments": 83
+        "comments": 84
       },
       "alsoOn": [],
       "image": "https://cdn.mos.cms.futurecdn.net/SVPa8KkaDwkeyAtLnMhyKW-1920-80.png"
@@ -232,10 +232,10 @@
       "blurb": "Online roadblocks are undermining the narrative behind AI agents.",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
       "publishedAt": "2026-10-18T14:58:10.000Z",
-      "score": 70,
+      "score": 71,
       "scoreLabel": "points",
       "meta": {
-        "comments": 47
+        "comments": 48
       },
       "alsoOn": [
         "verge:https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
@@ -292,7 +292,7 @@
       "blurb": null,
       "url": "https://alexwang.ai/posts/associative-memory/",
       "publishedAt": "2026-10-16T19:01:17.000Z",
-      "score": 605,
+      "score": 606,
       "scoreLabel": "points",
       "meta": {
         "comments": 136
@@ -1019,7 +1019,7 @@
       "image": "https://opengraph.githubassets.com/1/LiCinCan/blender-ai-mcp-addon",
       "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
       "publishedAt": "2026-10-15T22:30:47.000Z",
-      "score": 751,
+      "score": 754,
       "scoreLabel": "stars",
       "meta": {
         "repo": "LiCinCan/blender-ai-mcp-addon",
@@ -1419,6 +1419,19 @@
       "image": "https://www.currentaffairs.org/hubfs/smash1.png"
     },
     {
+      "id": "openai:https://openai.com/index/sullivan-cromwell",
+      "source": "openai",
+      "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+      "blurb": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.",
+      "image": null,
+      "url": "https://openai.com/index/sullivan-cromwell",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "papers:2610.21261",
       "source": "papers",
       "title": "Behavioral Compositionality of Sparse Autoencoder Representations",
@@ -1462,19 +1475,6 @@
       "meta": {
         "comments": 2
       },
-      "alsoOn": []
-    },
-    {
-      "id": "openai:https://openai.com/index/sullivan-cromwell",
-      "source": "openai",
-      "title": "Sullivan & Cromwell brings legal expertise into agreement review",
-      "blurb": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.",
-      "image": null,
-      "url": "https://openai.com/index/sullivan-cromwell",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -2172,19 +2172,19 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50073221",
+      "id": "hn:50140462",
       "source": "hn",
-      "title": "I posted to HN, and then my website was flooded with AI bot traffic",
-      "blurb": null,
-      "url": "https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic",
-      "publishedAt": "2026-10-13T15:25:50.000Z",
-      "score": 351,
+      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
+      "blurb": "Six AI assistants pursued an impossible £350 train refund in a simulated world, escalating to government officials, legal clinics and bank chargebacks.",
+      "url": "https://www.vals.ai/blogs/impossible-refund",
+      "publishedAt": "2026-10-18T12:22:58.000Z",
+      "score": 22,
       "scoreLabel": "points",
       "meta": {
-        "comments": 186
+        "comments": 6
       },
       "alsoOn": [],
-      "image": null
+      "image": "https://www.vals.ai/blogs/2026-10-15-impossible-refund/hero-vals.webp"
     },
     {
       "id": "hf:LiquidAI/d1-3B",
