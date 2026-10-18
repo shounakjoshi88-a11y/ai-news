@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T13:56:26Z",
+  "generatedAt": "2026-10-18T14:10:37Z",
   "sources": [
     {
       "id": "hn",
@@ -12,7 +12,7 @@
       "id": "hf",
       "name": "Hugging Face",
       "status": "ok",
-      "count": 54,
+      "count": 53,
       "error": null
     },
     {
@@ -38,7 +38,7 @@
       "blurb": "FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it'll throw up a questionnaire that checks if you understand how the code you're pushing…",
       "url": "https://sphinx-six-theta.vercel.app/",
       "publishedAt": "2026-10-18T04:33:49.000Z",
-      "score": 179,
+      "score": 183,
       "scoreLabel": "points",
       "meta": {
         "comments": 55
@@ -56,7 +56,7 @@
       "score": 903,
       "scoreLabel": "points",
       "meta": {
-        "comments": 675
+        "comments": 677
       },
       "alsoOn": [
         "hn:50129121",
@@ -87,7 +87,7 @@
       "blurb": null,
       "url": "https://alexwang.ai/posts/associative-memory/",
       "publishedAt": "2026-10-16T19:01:17.000Z",
-      "score": 591,
+      "score": 593,
       "scoreLabel": "points",
       "meta": {
         "comments": 132
@@ -149,7 +149,7 @@
       "image": "https://opengraph.githubassets.com/1/LiCinCan/blender-ai-mcp-addon",
       "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
       "publishedAt": "2026-10-15T22:30:47.000Z",
-      "score": 735,
+      "score": 736,
       "scoreLabel": "stars",
       "meta": {
         "repo": "LiCinCan/blender-ai-mcp-addon",
@@ -164,10 +164,10 @@
       "blurb": "Summary Codex Desktop is continuously adding paired .dmp and _sidecar.json files under: ~/Library/Application Support/com.openai.codex/web/Crashpad/pending On my machine this directory grew…",
       "url": "https://github.com/openai/codex/issues/25921",
       "publishedAt": "2026-10-17T17:45:08.000Z",
-      "score": 147,
+      "score": 149,
       "scoreLabel": "points",
       "meta": {
-        "comments": 67
+        "comments": 69
       },
       "alsoOn": [],
       "image": "https://opengraph.githubassets.com/ca36cd0881ef0455269ae28027ff6686ed2bae99e1f24dc416de1a72bc590b3c/openai/codex/issues/25921"
@@ -382,7 +382,7 @@
       "title": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "publishedAt": "2026-10-09T04:50:01.000Z",
-      "score": 971,
+      "score": 972,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 23131,
@@ -402,7 +402,7 @@
       "image": "https://opengraph.githubassets.com/1/zhuyansen/new-term-radar",
       "url": "https://github.com/zhuyansen/new-term-radar",
       "publishedAt": "2026-10-12T07:11:01.000Z",
-      "score": 1097,
+      "score": 1098,
       "scoreLabel": "stars",
       "meta": {
         "repo": "zhuyansen/new-term-radar",
@@ -432,7 +432,7 @@
       "title": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "publishedAt": "2026-10-02T05:54:02.000Z",
-      "score": 950,
+      "score": 951,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 19548,
@@ -495,7 +495,7 @@
       "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "publishedAt": "2026-10-07T07:07:30.000Z",
-      "score": 942,
+      "score": 944,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 57935,
@@ -584,6 +584,21 @@
       "alsoOn": []
     },
     {
+      "id": "hn:50108131",
+      "source": "hn",
+      "title": "Why We're Banning AI",
+      "blurb": "We urgently need to protect human thought and creativity. Our magazine is committing itself to remaining handmade. Ensure every publication you support does the same.",
+      "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
+      "publishedAt": "2026-10-15T18:32:29.000Z",
+      "score": 261,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 203
+      },
+      "alsoOn": [],
+      "image": "https://www.currentaffairs.org/hubfs/smash1.png"
+    },
+    {
       "id": "hf:Cloudflare/clef-flash",
       "source": "hf",
       "title": "Cloudflare/clef-flash",
@@ -598,21 +613,6 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Cloudflare/clef-flash.png",
       "blurb": "Clef-Flash Announcement: Clef decision models on the Cloudflare blog Decision Index leaderboard: clef-evals.workers-ai-mle.workers.dev"
-    },
-    {
-      "id": "hn:50108131",
-      "source": "hn",
-      "title": "Why We're Banning AI",
-      "blurb": "We urgently need to protect human thought and creativity. Our magazine is committing itself to remaining handmade. Ensure every publication you support does the same.",
-      "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
-      "publishedAt": "2026-10-15T18:32:29.000Z",
-      "score": 260,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 203
-      },
-      "alsoOn": [],
-      "image": "https://www.currentaffairs.org/hubfs/smash1.png"
     },
     {
       "id": "arxiv:2610.22341v1",
@@ -668,7 +668,7 @@
       "image": "https://opengraph.githubassets.com/1/Tejashmakwana/motionmaxxing",
       "url": "https://github.com/Tejashmakwana/motionmaxxing",
       "publishedAt": "2026-10-06T18:18:49.000Z",
-      "score": 857,
+      "score": 858,
       "scoreLabel": "stars",
       "meta": {
         "repo": "Tejashmakwana/motionmaxxing",
@@ -756,22 +756,6 @@
       "blurb": "Qwen3.8-27B in under 8 GB, tuned to keep tool calling intact. A standard GGUF for stock llama.cpp. Read more: underdog.ai/saluki"
     },
     {
-      "id": "arxiv:2610.22333v1",
-      "source": "arxiv",
-      "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
-      "blurb": "Large language models (LLMs) can often tell when they are being tested. This ability, known as evaluation awareness, can lead models to act more cautiously during safety evaluations than in…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22333v1",
-      "publishedAt": "2026-10-15T17:53:33.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.AI",
-        "authors": 9
-      },
-      "alsoOn": []
-    },
-    {
       "id": "gh:thesysdev/open-intelligent-ui",
       "source": "gh",
       "title": "thesysdev/open-intelligent-ui",
@@ -784,6 +768,22 @@
       "meta": {
         "repo": "thesysdev/open-intelligent-ui",
         "language": "TypeScript"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22333v1",
+      "source": "arxiv",
+      "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
+      "blurb": "Large language models (LLMs) can often tell when they are being tested. This ability, known as evaluation awareness, can lead models to act more cautiously during safety evaluations than in…",
+      "image": null,
+      "url": "http://arxiv.org/abs/2610.22333v1",
+      "publishedAt": "2026-10-15T17:53:33.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.AI",
+        "authors": 9
       },
       "alsoOn": []
     },
@@ -839,7 +839,7 @@
       "id": "hn:50059523",
       "source": "hn",
       "title": "AI coding agents generate more code, but not more software",
-      "blurb": null,
+      "blurb": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
       "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
       "publishedAt": "2026-10-12T17:14:01.000Z",
       "score": 364,
@@ -848,7 +848,7 @@
         "comments": 313
       },
       "alsoOn": [],
-      "image": null
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2264559974-1152x648.jpg"
     },
     {
       "id": "hf:LiquidAI/d1-3B",
@@ -874,7 +874,7 @@
       "image": "https://opengraph.githubassets.com/1/hanzohanzhe/Grandet",
       "url": "https://github.com/hanzohanzhe/Grandet",
       "publishedAt": "2026-10-05T06:50:33.000Z",
-      "score": 344,
+      "score": 347,
       "scoreLabel": "stars",
       "meta": {
         "repo": "hanzohanzhe/Grandet",
@@ -915,28 +915,12 @@
       "alsoOn": []
     },
     {
-      "id": "hf:canberkkkkkk/ema-lightning",
-      "source": "hf",
-      "title": "canberkkkkkk/ema-lightning",
-      "url": "https://huggingface.co/canberkkkkkk/ema-lightning",
-      "publishedAt": "2026-10-01T14:18:49.000Z",
-      "score": 421,
-      "scoreLabel": "likes",
-      "meta": {
-        "downloads": 34241,
-        "task": "text-to-speech"
-      },
-      "alsoOn": [],
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/canberkkkkkk/ema-lightning.png",
-      "blurb": "⚡ EMA Lightning *Tiny, fast and accurate Turkish text to speech. A 5.6M-parameter DiT acoustic model and a 3M-parameter vocoder: 8.6M in total, about 34 MB. Apache 2.0. Most accurate on…"
-    },
-    {
       "id": "hf:Comfy-Org/MOSS-Image",
       "source": "hf",
       "title": "Comfy-Org/MOSS-Image",
       "url": "https://huggingface.co/Comfy-Org/MOSS-Image",
       "publishedAt": "2026-10-16T12:42:32.000Z",
-      "score": 166,
+      "score": 167,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 354126,
@@ -947,20 +931,20 @@
       "blurb": null
     },
     {
-      "id": "arxiv:2610.22331v1",
-      "source": "arxiv",
-      "title": "KnowGPO: Knowledge-Grouped Policy Optimization for Search Agents",
-      "blurb": "Deep search agents solve knowledge-intensive tasks through long-horizon, multi-turn interactions, where assigning credit to individual search decisions is fundamentally difficult…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22331v1",
-      "publishedAt": "2026-10-15T17:52:33.000Z",
-      "score": null,
-      "scoreLabel": null,
+      "id": "hf:nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+      "source": "hf",
+      "title": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+      "url": "https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+      "publishedAt": "2026-10-04T10:44:11.000Z",
+      "score": 421,
+      "scoreLabel": "likes",
       "meta": {
-        "category": "cs.AI",
-        "authors": 13
+        "downloads": 256336,
+        "task": "image-text-to-text"
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2.png",
+      "blurb": "GPQA and LCB are identical across all three precisions. MMLU varies between 445 and 450, which is sampling noise rather than a precision effect. Dynamic FP8 means online FP8 quantization of…"
     },
     {
       "id": "gh:longsurf-ai/openchart",
@@ -975,6 +959,22 @@
       "meta": {
         "repo": "longsurf-ai/openchart",
         "language": "TypeScript"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22331v1",
+      "source": "arxiv",
+      "title": "KnowGPO: Knowledge-Grouped Policy Optimization for Search Agents",
+      "blurb": "Deep search agents solve knowledge-intensive tasks through long-horizon, multi-turn interactions, where assigning credit to individual search decisions is fundamentally difficult…",
+      "image": null,
+      "url": "http://arxiv.org/abs/2610.22331v1",
+      "publishedAt": "2026-10-15T17:52:33.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.AI",
+        "authors": 13
       },
       "alsoOn": []
     },
@@ -995,20 +995,20 @@
       "alsoOn": []
     },
     {
-      "id": "hf:nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+      "id": "hf:openbmb/MiniCPM-V-4.7-1B",
       "source": "hf",
-      "title": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
-      "url": "https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
-      "publishedAt": "2026-10-04T10:44:11.000Z",
-      "score": 421,
+      "title": "openbmb/MiniCPM-V-4.7-1B",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B",
+      "publishedAt": "2026-10-06T17:40:13.000Z",
+      "score": 381,
       "scoreLabel": "likes",
       "meta": {
-        "downloads": 256336,
+        "downloads": 22689,
         "task": "image-text-to-text"
       },
       "alsoOn": [],
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2.png",
-      "blurb": "GPQA and LCB are identical across all three precisions. MMLU varies between 445 and 450, which is sampling noise rather than a precision effect. Dynamic FP8 means online FP8 quantization of…"
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/openbmb/MiniCPM-V-4.7-1B.png",
+      "blurb": "The 1B variant of MiniCPM-V 4.7 advances the performance–efficiency Pareto frontier. In Instruct mode, 1B substantially outperforms Qwen3.5 0.8B in both overall score and inference…"
     },
     {
       "id": "gh:justxor/deepseek-local-guide-ru",
@@ -1058,20 +1058,20 @@
       "alsoOn": []
     },
     {
-      "id": "hf:openbmb/MiniCPM-V-4.7-1B",
+      "id": "hf:FermionResearch/Phonon-2",
       "source": "hf",
-      "title": "openbmb/MiniCPM-V-4.7-1B",
-      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B",
-      "publishedAt": "2026-10-06T17:40:13.000Z",
-      "score": 381,
+      "title": "FermionResearch/Phonon-2",
+      "url": "https://huggingface.co/FermionResearch/Phonon-2",
+      "publishedAt": "2026-09-28T11:48:47.000Z",
+      "score": 347,
       "scoreLabel": "likes",
       "meta": {
-        "downloads": 22689,
-        "task": "image-text-to-text"
+        "downloads": 10724,
+        "task": "automatic-speech-recognition"
       },
       "alsoOn": [],
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/openbmb/MiniCPM-V-4.7-1B.png",
-      "blurb": "The 1B variant of MiniCPM-V 4.7 advances the performance–efficiency Pareto frontier. In Instruct mode, 1B substantially outperforms Qwen3.5 0.8B in both overall score and inference…"
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/FermionResearch/Phonon-2.png",
+      "blurb": "Phonon-2 is the most accurate open speech recognition model for English under 900 MB. Across the Open ASR Leaderboard's seven English sets it averages 5.21 % word error, beating models…"
     },
     {
       "id": "gh:sitor-ai/frametell",
@@ -1121,20 +1121,20 @@
       "alsoOn": []
     },
     {
-      "id": "hf:FermionResearch/Phonon-2",
+      "id": "hf:unsloth/embeddinggemma-2-GGUF",
       "source": "hf",
-      "title": "FermionResearch/Phonon-2",
-      "url": "https://huggingface.co/FermionResearch/Phonon-2",
-      "publishedAt": "2026-09-28T11:48:47.000Z",
-      "score": 347,
+      "title": "unsloth/embeddinggemma-2-GGUF",
+      "url": "https://huggingface.co/unsloth/embeddinggemma-2-GGUF",
+      "publishedAt": "2026-10-06T10:58:50.000Z",
+      "score": 327,
       "scoreLabel": "likes",
       "meta": {
-        "downloads": 10724,
-        "task": "automatic-speech-recognition"
+        "downloads": 108496,
+        "task": "feature-extraction"
       },
       "alsoOn": [],
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/FermionResearch/Phonon-2.png",
-      "blurb": "Phonon-2 is the most accurate open speech recognition model for English under 900 MB. Across the Open ASR Leaderboard's seven English sets it averages 5.21 % word error, beating models…"
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/unsloth/embeddinggemma-2-GGUF.png",
+      "blurb": "License : Apache 2.0 | Authors : Google DeepMind *EmbeddingGemma 2 is an open multimodal embedding model built by Google DeepMind which maps text (incl. code), images, video, and audio…"
     },
     {
       "id": "gh:HRuiCcc/RuiC-oc-ferry",
@@ -1144,7 +1144,7 @@
       "image": "https://opengraph.githubassets.com/1/HRuiCcc/RuiC-oc-ferry",
       "url": "https://github.com/HRuiCcc/RuiC-oc-ferry",
       "publishedAt": "2026-10-10T08:59:18.000Z",
-      "score": 224,
+      "score": 225,
       "scoreLabel": "stars",
       "meta": {
         "repo": "HRuiCcc/RuiC-oc-ferry",
@@ -1184,20 +1184,20 @@
       "alsoOn": []
     },
     {
-      "id": "hf:unsloth/embeddinggemma-2-GGUF",
+      "id": "hf:speridlabs/iris-3b",
       "source": "hf",
-      "title": "unsloth/embeddinggemma-2-GGUF",
-      "url": "https://huggingface.co/unsloth/embeddinggemma-2-GGUF",
-      "publishedAt": "2026-10-06T10:58:50.000Z",
-      "score": 327,
+      "title": "speridlabs/iris-3b",
+      "url": "https://huggingface.co/speridlabs/iris-3b",
+      "publishedAt": "2026-10-05T14:51:15.000Z",
+      "score": 311,
       "scoreLabel": "likes",
       "meta": {
-        "downloads": 108496,
-        "task": "feature-extraction"
+        "downloads": 1450,
+        "task": "text-to-image"
       },
       "alsoOn": [],
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/unsloth/embeddinggemma-2-GGUF.png",
-      "blurb": "License : Apache 2.0 | Authors : Google DeepMind *EmbeddingGemma 2 is an open multimodal embedding model built by Google DeepMind which maps text (incl. code), images, video, and audio…"
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/speridlabs/iris-3b.png",
+      "blurb": "Pixel-space generation & general vision learner. A 3-billion-parameter model that paints every pixel directly — no VAE, no latent space — and, fine-tuned, estimates depth and restores and…"
     },
     {
       "id": "gh:hitkeeen/blender-ai-addon",
