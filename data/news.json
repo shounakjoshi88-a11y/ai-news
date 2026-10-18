@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T15:43:55Z",
+  "generatedAt": "2026-10-18T15:55:54Z",
   "sources": [
     {
       "id": "hn",
@@ -123,9 +123,9 @@
     {
       "id": "importai",
       "name": "Import AI",
-      "status": "ok",
-      "count": 20,
-      "error": null
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 403"
     },
     {
       "id": "interconnects",
@@ -156,10 +156,10 @@
       "blurb": "FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it'll throw up a questionnaire that checks if you understand how the code you're pushing…",
       "url": "https://sphinx-six-theta.vercel.app/",
       "publishedAt": "2026-10-18T04:33:49.000Z",
-      "score": 201,
+      "score": 203,
       "scoreLabel": "points",
       "meta": {
-        "comments": 62
+        "comments": 63
       },
       "alsoOn": [],
       "image": null
@@ -184,7 +184,7 @@
       "blurb": null,
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "publishedAt": "2026-10-17T08:21:25.000Z",
-      "score": 918,
+      "score": 919,
       "scoreLabel": "points",
       "meta": {
         "comments": 680
@@ -194,6 +194,21 @@
         "hf:deepseek-ai/DeepSeek-V4.1-Flash-1017"
       ],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/deepseek-ai/DeepSeek-V4.1-Flash-1017.png"
+    },
+    {
+      "id": "hn:50141429",
+      "source": "hn",
+      "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
+      "blurb": "Would this be enough to keep an AI model from going out of control?",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+      "publishedAt": "2026-10-18T14:30:27.000Z",
+      "score": 73,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 61
+      },
+      "alsoOn": [],
+      "image": "https://cdn.mos.cms.futurecdn.net/SVPa8KkaDwkeyAtLnMhyKW-1920-80.png"
     },
     {
       "id": "verge:https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
@@ -209,21 +224,6 @@
         "category": "AI"
       },
       "alsoOn": []
-    },
-    {
-      "id": "hn:50141429",
-      "source": "hn",
-      "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
-      "blurb": "Would this be enough to keep an AI model from going out of control?",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
-      "publishedAt": "2026-10-18T14:30:27.000Z",
-      "score": 63,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 51
-      },
-      "alsoOn": [],
-      "image": "https://cdn.mos.cms.futurecdn.net/SVPa8KkaDwkeyAtLnMhyKW-1920-80.png"
     },
     {
       "id": "ars:https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
@@ -568,7 +568,7 @@
       "score": 292,
       "scoreLabel": "points",
       "meta": {
-        "comments": 86
+        "comments": 87
       },
       "alsoOn": [],
       "image": null
@@ -707,19 +707,6 @@
       "alsoOn": []
     },
     {
-      "id": "tc:https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
-      "source": "tc",
-      "title": "Physical AI is more than robots, says the Nvidia veteran now investing in it",
-      "blurb": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like…",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Amulya-Vishwanath-Techable-VC.jpg?resize=960,1200",
-      "url": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
-      "publishedAt": "2026-10-16T16:30:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "nvidia:https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/",
       "source": "nvidia",
       "title": "Be There for the Beginning: Celebrate the Launch of NVIDIA RTX Spark",
@@ -745,6 +732,19 @@
       "meta": {
         "comments": 2
       },
+      "alsoOn": []
+    },
+    {
+      "id": "tc:https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
+      "source": "tc",
+      "title": "Physical AI is more than robots, says the Nvidia veteran now investing in it",
+      "blurb": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like…",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Amulya-Vishwanath-Techable-VC.jpg?resize=960,1200",
+      "url": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
+      "publishedAt": "2026-10-16T16:30:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -779,21 +779,6 @@
       "alsoOn": []
     },
     {
-      "id": "papers:2610.22200",
-      "source": "papers",
-      "title": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
-      "blurb": "Computer use has reached a turning point: the focus is expanding from GUI-only interaction to systems that complete tasks on users' computers through visual and programmatic interfaces. We define a generalist computer-use agent (GCUA) as a system in which the model chooses how to observe, act, and organize its work across visual and programmatic interfaces. Yet frontier implementations, such as GPT-6 Astra's computer-use system, remain largely closed, limiting systematic study of their design. We introduce Open Generalist CUA (OpenGCUA), an ongoing project to develop and open the full stack for GCUAs with the community. This report presents the first release of OpenGCUA. Code execution is a key feature of our agent design: it lets intermediate results determine subsequent operations and enables models to apply their existing programming capabilities directly to computer interaction. We also propose harness-to-model decision transfer, moving selected observations and task-state decisions from fixed harness rules to the model. On OSWorld-v2, our full configuration improves task scores across all eight evaluated models, including GPT-6 Astra and Claude Opus 5, raising mean partial score by +19.6 points and reducing reported steps per task by an average of 53.0% relative to batched GUI-only execution. We release our implementation and prompts, evaluation trajectories from all eight models, and preliminary versions of a real-device harness and a cross-device SDK. The harness addresses real-device challenges not fully captured by benchmarks, while the SDK provides a common programming interface across computers, mobiles and browsers. Across four real macOS tasks under our real-device harness, selected Qwen3.8-Max runs use 19.4 times as many reported reasoning tokens as GPT-6 Astra, highlighting substantial differences between models in real-device execution efficiency.",
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.22200.png",
-      "url": "https://huggingface.co/papers/2610.22200",
-      "publishedAt": "2026-10-14T20:00:00.000Z",
-      "score": 316,
-      "scoreLabel": "upvotes",
-      "meta": {
-        "comments": 4
-      },
-      "alsoOn": []
-    },
-    {
       "id": "deepmind:https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
       "source": "deepmind",
       "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
@@ -807,17 +792,17 @@
       "alsoOn": []
     },
     {
-      "id": "verge:https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
-      "source": "verge",
-      "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
-      "blurb": "Nvidia's RTX Spark N1X processor is finally here, and we've been collectively testing a small fortune's worth of powerful laptops sporting this new \"superchip.\" RTX Spark is designed to be…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268814_Nvidia_RTX_Spark_laptops_Asus_HP_Lenovo_ADiBenedetto_0001.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-      "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
-      "publishedAt": "2026-10-16T15:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
+      "id": "papers:2610.22200",
+      "source": "papers",
+      "title": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
+      "blurb": "Computer use has reached a turning point: the focus is expanding from GUI-only interaction to systems that complete tasks on users' computers through visual and programmatic interfaces. We define a generalist computer-use agent (GCUA) as a system in which the model chooses how to observe, act, and organize its work across visual and programmatic interfaces. Yet frontier implementations, such as GPT-6 Astra's computer-use system, remain largely closed, limiting systematic study of their design. We introduce Open Generalist CUA (OpenGCUA), an ongoing project to develop and open the full stack for GCUAs with the community. This report presents the first release of OpenGCUA. Code execution is a key feature of our agent design: it lets intermediate results determine subsequent operations and enables models to apply their existing programming capabilities directly to computer interaction. We also propose harness-to-model decision transfer, moving selected observations and task-state decisions from fixed harness rules to the model. On OSWorld-v2, our full configuration improves task scores across all eight evaluated models, including GPT-6 Astra and Claude Opus 5, raising mean partial score by +19.6 points and reducing reported steps per task by an average of 53.0% relative to batched GUI-only execution. We release our implementation and prompts, evaluation trajectories from all eight models, and preliminary versions of a real-device harness and a cross-device SDK. The harness addresses real-device challenges not fully captured by benchmarks, while the SDK provides a common programming interface across computers, mobiles and browsers. Across four real macOS tasks under our real-device harness, selected Qwen3.8-Max runs use 19.4 times as many reported reasoning tokens as GPT-6 Astra, highlighting substantial differences between models in real-device execution efficiency.",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.22200.png",
+      "url": "https://huggingface.co/papers/2610.22200",
+      "publishedAt": "2026-10-14T20:00:00.000Z",
+      "score": 316,
+      "scoreLabel": "upvotes",
       "meta": {
-        "category": "AI"
+        "comments": 4
       },
       "alsoOn": []
     },
@@ -837,6 +822,21 @@
       "alsoOn": [
         "deepmind:https://deepmind.google/blog/introducing-gemini-4-argon/"
       ]
+    },
+    {
+      "id": "verge:https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+      "source": "verge",
+      "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
+      "blurb": "Nvidia's RTX Spark N1X processor is finally here, and we've been collectively testing a small fortune's worth of powerful laptops sporting this new \"superchip.\" RTX Spark is designed to be…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268814_Nvidia_RTX_Spark_laptops_Asus_HP_Lenovo_ADiBenedetto_0001.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+      "publishedAt": "2026-10-16T15:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "AI"
+      },
+      "alsoOn": []
     },
     {
       "id": "hfblog:https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
@@ -859,7 +859,7 @@
       "image": "https://opengraph.githubassets.com/1/LiCinCan/blender-ai-mcp-addon",
       "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
       "publishedAt": "2026-10-15T22:30:47.000Z",
-      "score": 749,
+      "score": 747,
       "scoreLabel": "stars",
       "meta": {
         "repo": "LiCinCan/blender-ai-mcp-addon",
@@ -894,19 +894,6 @@
         "category": "cs.LG",
         "authors": 10
       },
-      "alsoOn": []
-    },
-    {
-      "id": "importai:https://importai.substack.com/p/import-ai-476-creativity-and-rsi",
-      "source": "importai",
-      "title": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
-      "blurb": null,
-      "image": "https://substackcdn.com/image/youtube/w_728,c_limit/4v837X1Py4M",
-      "url": "https://importai.substack.com/p/import-ai-476-creativity-and-rsi",
-      "publishedAt": "2026-10-12T12:30:39.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -953,19 +940,6 @@
       "alsoOn": []
     },
     {
-      "id": "tc:https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
-      "source": "tc",
-      "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
-      "blurb": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like…",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/unitree-robots.jpg?resize=1200,800",
-      "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
-      "publishedAt": "2026-10-16T16:30:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "nvidia:https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
       "source": "nvidia",
       "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
@@ -973,6 +947,19 @@
       "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/FIRST-agentic-ai-nemotron-3.5-super-vl-blog-1920x1080-5783765.jpeg",
       "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
       "publishedAt": "2026-10-15T15:00:24.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "tc:https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
+      "source": "tc",
+      "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
+      "blurb": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like…",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/unitree-robots.jpg?resize=1200,800",
+      "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
+      "publishedAt": "2026-10-16T16:30:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -1079,7 +1066,7 @@
       "image": "https://opengraph.githubassets.com/1/onehumanbeing/esp32-iphone-agent",
       "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
       "publishedAt": "2026-10-11T19:10:25.000Z",
-      "score": 3084,
+      "score": 3086,
       "scoreLabel": "stars",
       "meta": {
         "repo": "onehumanbeing/esp32-iphone-agent",
@@ -1162,6 +1149,21 @@
       "alsoOn": []
     },
     {
+      "id": "hn:50059115",
+      "source": "hn",
+      "title": "Muse Wonder",
+      "blurb": "Muse Wonder is Meta's frontier AI model that keeps track of what matters to you with Active Memory & Active Focus to work towards your goals at work & life.",
+      "url": "https://research.meta.ai/blog/muse-wonder",
+      "publishedAt": "2026-10-12T16:48:01.000Z",
+      "score": 672,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 382
+      },
+      "alsoOn": [],
+      "image": "https://research.meta.ai/articles/introducing-muse-wonder/social/muse-wonder-social-v1.webp"
+    },
+    {
       "id": "arxiv:2610.22333v1",
       "source": "arxiv",
       "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
@@ -1176,21 +1178,6 @@
         "authors": 9
       },
       "alsoOn": []
-    },
-    {
-      "id": "hn:50059115",
-      "source": "hn",
-      "title": "Muse Wonder",
-      "blurb": "Muse Wonder is Meta's frontier AI model that keeps track of what matters to you with Active Memory & Active Focus to work towards your goals at work & life.",
-      "url": "https://research.meta.ai/blog/muse-wonder",
-      "publishedAt": "2026-10-12T16:48:01.000Z",
-      "score": 672,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 382
-      },
-      "alsoOn": [],
-      "image": "https://research.meta.ai/articles/introducing-muse-wonder/social/muse-wonder-social-v1.webp"
     },
     {
       "id": "openai:https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
@@ -1211,7 +1198,7 @@
       "title": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "publishedAt": "2026-10-09T04:50:01.000Z",
-      "score": 976,
+      "score": 977,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 23131,
@@ -1222,21 +1209,6 @@
       ],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Qwen/Qwen-Image-2.1-Turbo.png",
       "blurb": "The checkpoint includes its recommended sampling schedule, so it is ready to use without manually configuring the scheduler. Generation uses CFG=1 by default, and prefix KV caching reuses…"
-    },
-    {
-      "id": "papers:2610.17665",
-      "source": "papers",
-      "title": "RoTA-Bench: Evaluating 3D Spatial Reasoning through Interactive Projection Alignment",
-      "blurb": "Can vision-language models turn 2D observations into 3D understanding that supports precise action? This requires inferring object geometry, anticipating the effects of rotation, and refining actions through visual feedback. We introduce RoTA-Bench to evaluate these abilities through interactive 3D-to-2D projection alignment. Given a target silhouette, a model observes a rotated object and chooses successive rotations to recover the target projection within a limited action budget. Our automated pipeline constructs silhouette-preserving 3D objects from 2D icons and uses reversible initialization to guarantee solvability, yielding 674 tasks and a stratified 100-task test set. Empirically, we find that (i) a substantial human-model gap persists: GPT-5.6-Sol succeeds on only 17% of tasks, whereas 20 undergraduate participants collectively complete the test set four times with a 100% success rate; (ii) image-space and pose-space progress can diverge: at matched states, the model more often improves silhouette overlap while worsening pose alignment than humans (19.4% vs. 10.9%); and (iii) fine-grained control is sensitive to interaction history: removing it leaves 96.8% of the model's actions at a coarse 30-degree step size and sharply reduces observed task success. These findings highlight the challenge of converting visual evidence into precise 3D control, beyond recognizing or matching individual images.",
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.17665.png",
-      "url": "https://huggingface.co/papers/2610.17665",
-      "publishedAt": "2026-10-13T20:00:00.000Z",
-      "score": 202,
-      "scoreLabel": "upvotes",
-      "meta": {
-        "comments": 2
-      },
-      "alsoOn": []
     },
     {
       "id": "lobsters:kaqsr5",
@@ -1252,6 +1224,21 @@
       },
       "alsoOn": [],
       "image": "https://media2.dev.to/dynamic/image/width=1200,height=627,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fokldcp34z2nxkvu9ml2b.png"
+    },
+    {
+      "id": "papers:2610.17665",
+      "source": "papers",
+      "title": "RoTA-Bench: Evaluating 3D Spatial Reasoning through Interactive Projection Alignment",
+      "blurb": "Can vision-language models turn 2D observations into 3D understanding that supports precise action? This requires inferring object geometry, anticipating the effects of rotation, and refining actions through visual feedback. We introduce RoTA-Bench to evaluate these abilities through interactive 3D-to-2D projection alignment. Given a target silhouette, a model observes a rotated object and chooses successive rotations to recover the target projection within a limited action budget. Our automated pipeline constructs silhouette-preserving 3D objects from 2D icons and uses reversible initialization to guarantee solvability, yielding 674 tasks and a stratified 100-task test set. Empirically, we find that (i) a substantial human-model gap persists: GPT-5.6-Sol succeeds on only 17% of tasks, whereas 20 undergraduate participants collectively complete the test set four times with a 100% success rate; (ii) image-space and pose-space progress can diverge: at matched states, the model more often improves silhouette overlap while worsening pose alignment than humans (19.4% vs. 10.9%); and (iii) fine-grained control is sensitive to interaction history: removing it leaves 96.8% of the model's actions at a coarse 30-degree step size and sharply reduces observed task success. These findings highlight the challenge of converting visual evidence into precise 3D control, beyond recognizing or matching individual images.",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.17665.png",
+      "url": "https://huggingface.co/papers/2610.17665",
+      "publishedAt": "2026-10-13T20:00:00.000Z",
+      "score": 202,
+      "scoreLabel": "upvotes",
+      "meta": {
+        "comments": 2
+      },
+      "alsoOn": []
     },
     {
       "id": "gh:zhuyansen/new-term-radar",
@@ -1283,19 +1270,6 @@
       "alsoOn": []
     },
     {
-      "id": "tc:https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-      "source": "tc",
-      "title": "Elorian’s first AI model wants to reason with images, not just about them",
-      "blurb": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning…",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/image-1.png?resize=1200,675",
-      "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-      "publishedAt": "2026-10-16T16:01:37.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hfblog:https://huggingface.co/blog/flux-3",
       "source": "hfblog",
       "title": "Welcome FLUX.3 Image Klein in Diffusers",
@@ -1309,6 +1283,19 @@
       "alsoOn": [
         "hn:50123580"
       ]
+    },
+    {
+      "id": "tc:https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+      "source": "tc",
+      "title": "Elorian’s first AI model wants to reason with images, not just about them",
+      "blurb": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning…",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/image-1.png?resize=1200,675",
+      "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+      "publishedAt": "2026-10-16T16:01:37.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "deepmind:https://deepmind.google/blog/gemini-4-argon-for-robotics/",
@@ -1339,25 +1326,12 @@
       "alsoOn": []
     },
     {
-      "id": "importai:https://importai.substack.com/p/import-ai-475-swarm-scaling-google",
-      "source": "importai",
-      "title": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
-      "blurb": null,
-      "image": "https://substackcdn.com/image/fetch/$s_!3yYS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png",
-      "url": "https://importai.substack.com/p/import-ai-475-swarm-scaling-google",
-      "publishedAt": "2026-10-05T12:32:30.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hf:black-forest-labs/flux-3-image-klein-comfy",
       "source": "hf",
       "title": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "publishedAt": "2026-10-14T12:00:13.000Z",
-      "score": 753,
+      "score": 754,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 338036,
@@ -1391,7 +1365,7 @@
       "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "publishedAt": "2026-10-07T07:07:30.000Z",
-      "score": 958,
+      "score": 959,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 57935,
@@ -1535,6 +1509,22 @@
       "alsoOn": []
     },
     {
+      "id": "gh:mw00/project-maya",
+      "source": "gh",
+      "title": "mw00/project-maya",
+      "blurb": "Project Maya - run GLM-5.3-Flash (321B MoE) privately on your own GPU(s), from one card to 16, NVIDIA or AMD, Linux or Windows. Engine, server, dashboard, OpenAI- and Anthropic-compatible…",
+      "image": "https://opengraph.githubassets.com/1/mw00/project-maya",
+      "url": "https://github.com/mw00/project-maya",
+      "publishedAt": "2026-10-06T22:55:13.000Z",
+      "score": 1024,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "mw00/project-maya",
+        "language": "C++"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "hfblog:https://huggingface.co/blog/allenai/hiro-acev2",
       "source": "hfblog",
       "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
@@ -1548,18 +1538,17 @@
       "alsoOn": []
     },
     {
-      "id": "gh:mw00/project-maya",
-      "source": "gh",
-      "title": "mw00/project-maya",
-      "blurb": "Project Maya - run GLM-5.3-Flash (321B MoE) privately on your own GPU(s), from one card to 16, NVIDIA or AMD, Linux or Windows. Engine, server, dashboard, OpenAI- and Anthropic-compatible…",
-      "image": "https://opengraph.githubassets.com/1/mw00/project-maya",
-      "url": "https://github.com/mw00/project-maya",
-      "publishedAt": "2026-10-06T22:55:13.000Z",
-      "score": 1023,
-      "scoreLabel": "stars",
+      "id": "papers:2610.18813",
+      "source": "papers",
+      "title": "Self-Evolving Agent Harness",
+      "blurb": "Harness self-evolution revises an agent's software scaffolding, including prompts, memory, workflows, and executable components, while keeping model weights fixed. We formalize a feedback-driven process in which accepted revisions persist across runs. The framework separates update targets from proposal and admission mechanisms. It distinguishes changes to interpreted state from revisions to tools and code, repository-level control logic, and plugin composition. We characterize search through evolutionary optimization and examine its reliability through continual PAC-learning. Under explicit assumptions, the analysis yields an expected generalization bound, a retention bound conditional on historical regression budgets, and a high-probability admission rule using fresh, independent validation data. We examine how persistent harness revisions affect knowledge sharing and organizational workflows, with implications for scientific reliability, physical safety, and institutional accountability. Cases from prior work illustrate model--harness co-design, distributed execution, and plugin reuse. Reliable deployment requires continual validation as task distributions and evaluators change, with independent safeguards for learning, runtime privileges, and consequential actions. We provide a comprehensive 66-page discussion of related work, theory, algorithms, evaluation, applications, and the broader impact of Harness RSI, together with continuously updated code and supplementary materials, at",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.18813.png",
+      "url": "https://huggingface.co/papers/2610.18813",
+      "publishedAt": "2026-10-12T20:00:00.000Z",
+      "score": 201,
+      "scoreLabel": "upvotes",
       "meta": {
-        "repo": "mw00/project-maya",
-        "language": "C++"
+        "comments": 7
       },
       "alsoOn": []
     },
@@ -1580,17 +1569,17 @@
       "alsoOn": []
     },
     {
-      "id": "papers:2610.18813",
+      "id": "papers:2610.20939",
       "source": "papers",
-      "title": "Self-Evolving Agent Harness",
-      "blurb": "Harness self-evolution revises an agent's software scaffolding, including prompts, memory, workflows, and executable components, while keeping model weights fixed. We formalize a feedback-driven process in which accepted revisions persist across runs. The framework separates update targets from proposal and admission mechanisms. It distinguishes changes to interpreted state from revisions to tools and code, repository-level control logic, and plugin composition. We characterize search through evolutionary optimization and examine its reliability through continual PAC-learning. Under explicit assumptions, the analysis yields an expected generalization bound, a retention bound conditional on historical regression budgets, and a high-probability admission rule using fresh, independent validation data. We examine how persistent harness revisions affect knowledge sharing and organizational workflows, with implications for scientific reliability, physical safety, and institutional accountability. Cases from prior work illustrate model--harness co-design, distributed execution, and plugin reuse. Reliable deployment requires continual validation as task distributions and evaluators change, with independent safeguards for learning, runtime privileges, and consequential actions. We provide a comprehensive 66-page discussion of related work, theory, algorithms, evaluation, applications, and the broader impact of Harness RSI, together with continuously updated code and supplementary materials, at",
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.18813.png",
-      "url": "https://huggingface.co/papers/2610.18813",
-      "publishedAt": "2026-10-12T20:00:00.000Z",
-      "score": 201,
+      "title": "MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments",
+      "blurb": "Online reinforcement learning (RL) with verifiable rewards has driven rapid progress in mathematics, coding, and tool use, but scaling this success to GUI agents remains challenging due to the high cost of interactive environments and the scarcity of realistic training tasks. We introduce MAI-Gym, an open all-in-one platform that unifies GUI agent evaluation, data collection, and online RL training across mobile, computer, and web environments. Through a shared rollout pipeline, MAI-Gym ensures consistent agent behavior across evaluation and training, supports ten established benchmarks, and scales to 20,000 parallel environment instances. Beyond scalable infrastructure, MAI-Gym enables automated synthesis of diverse GUI applications and challenging tasks, including resettable mocked apps and coherent cross-app worlds with execution-validated task verifiers. Using MAI-Gym, we train MAI-Gym-9B, a unified 9B agent for mobile and computer use, achieving state-of-the-art performance among open GUI agents under 10B parameters: 78.4% on MobileWorld and 76.2% on OSWorld-Verified. Importantly, RL in a mocked train-ticketing app transfers to its real-world counterpart, improving task success on a phys- ical phone from 28.8% to 48.1%. We release the framework, synthesis skills, mocked apps, 2,000 verified tasks, and the model checkpoint to support repro- ducible research and further advances in scalable GUI agent training.",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.20939.png",
+      "url": "https://huggingface.co/papers/2610.20939",
+      "publishedAt": "2026-10-13T20:00:00.000Z",
+      "score": 154,
       "scoreLabel": "upvotes",
       "meta": {
-        "comments": 7
+        "comments": 2
       },
       "alsoOn": []
     },
@@ -1606,21 +1595,6 @@
       "scoreLabel": null,
       "meta": {
         "category": "AI"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "papers:2610.20939",
-      "source": "papers",
-      "title": "MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments",
-      "blurb": "Online reinforcement learning (RL) with verifiable rewards has driven rapid progress in mathematics, coding, and tool use, but scaling this success to GUI agents remains challenging due to the high cost of interactive environments and the scarcity of realistic training tasks. We introduce MAI-Gym, an open all-in-one platform that unifies GUI agent evaluation, data collection, and online RL training across mobile, computer, and web environments. Through a shared rollout pipeline, MAI-Gym ensures consistent agent behavior across evaluation and training, supports ten established benchmarks, and scales to 20,000 parallel environment instances. Beyond scalable infrastructure, MAI-Gym enables automated synthesis of diverse GUI applications and challenging tasks, including resettable mocked apps and coherent cross-app worlds with execution-validated task verifiers. Using MAI-Gym, we train MAI-Gym-9B, a unified 9B agent for mobile and computer use, achieving state-of-the-art performance among open GUI agents under 10B parameters: 78.4% on MobileWorld and 76.2% on OSWorld-Verified. Importantly, RL in a mocked train-ticketing app transfers to its real-world counterpart, improving task success on a phys- ical phone from 28.8% to 48.1%. We release the framework, synthesis skills, mocked apps, 2,000 verified tasks, and the model checkpoint to support repro- ducible research and further advances in scalable GUI agent training.",
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.20939.png",
-      "url": "https://huggingface.co/papers/2610.20939",
-      "publishedAt": "2026-10-13T20:00:00.000Z",
-      "score": 154,
-      "scoreLabel": "upvotes",
-      "meta": {
-        "comments": 2
       },
       "alsoOn": []
     },
@@ -1723,19 +1697,6 @@
       "alsoOn": []
     },
     {
-      "id": "importai:https://importai.substack.com/p/import-ai-474-platonic-mindspace",
-      "source": "importai",
-      "title": "Import AI 474: Platonic mindspace; TPUs in space; Zhipu starts an outer RSI loop",
-      "blurb": "Where do you exceed the capabilities of an LLM?",
-      "image": "https://substackcdn.com/image/fetch/$s_!3yYS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png",
-      "url": "https://importai.substack.com/p/import-ai-474-platonic-mindspace",
-      "publishedAt": "2026-09-28T12:32:03.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "papers:2610.22174",
       "source": "papers",
       "title": "Mosaic: Multi-Session Agentic Reinforcement Learning",
@@ -1748,19 +1709,6 @@
       "meta": {
         "comments": 2
       },
-      "alsoOn": []
-    },
-    {
-      "id": "tc:https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
-      "source": "tc",
-      "title": "Jev is Vercel’s fastest-adopted AI model ever",
-      "blurb": "The data comes from Vercel's AI gateway, a unified API service similar to OpenRouter.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/04/vercel-2249343327-smaller.jpg?resize=1200,800",
-      "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
-      "publishedAt": "2026-10-16T15:33:49.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -1777,6 +1725,19 @@
         "category": "cs.LG",
         "authors": 5
       },
+      "alsoOn": []
+    },
+    {
+      "id": "tc:https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
+      "source": "tc",
+      "title": "Jev is Vercel’s fastest-adopted AI model ever",
+      "blurb": "The data comes from Vercel's AI gateway, a unified API service similar to OpenRouter.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/04/vercel-2249343327-smaller.jpg?resize=1200,800",
+      "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
+      "publishedAt": "2026-10-16T15:33:49.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -1856,22 +1817,6 @@
       "alsoOn": []
     },
     {
-      "id": "arxiv:2610.22324v1",
-      "source": "arxiv",
-      "title": "Training Reasoning Models to Generate Diverse Scientific Ideas",
-      "blurb": "One of the first steps of a research pipeline is generating ideas. Large Language Models (LLMs) are increasingly used to automate this step, but most of this work optimizes the quality of…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22324v1",
-      "publishedAt": "2026-10-15T17:52:12.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.CL",
-        "authors": 6
-      },
-      "alsoOn": []
-    },
-    {
       "id": "gh:datalab-to/indra",
       "source": "gh",
       "title": "datalab-to/indra",
@@ -1888,12 +1833,28 @@
       "alsoOn": []
     },
     {
+      "id": "arxiv:2610.22324v1",
+      "source": "arxiv",
+      "title": "Training Reasoning Models to Generate Diverse Scientific Ideas",
+      "blurb": "One of the first steps of a research pipeline is generating ideas. Large Language Models (LLMs) are increasingly used to automate this step, but most of this work optimizes the quality of…",
+      "image": null,
+      "url": "http://arxiv.org/abs/2610.22324v1",
+      "publishedAt": "2026-10-15T17:52:12.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.CL",
+        "authors": 6
+      },
+      "alsoOn": []
+    },
+    {
       "id": "hf:fishaudio/drama-3",
       "source": "hf",
       "title": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "publishedAt": "2026-10-01T04:34:57.000Z",
-      "score": 666,
+      "score": 667,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 9620,
@@ -1978,19 +1939,6 @@
       "alsoOn": []
     },
     {
-      "id": "interconnects:https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
-      "source": "interconnects",
-      "title": "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI",
-      "blurb": null,
-      "image": "https://substackcdn.com/image/fetch/$s_!7ykn!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F216367194%2Fb86a80c9-fb77-4876-8e6b-44c6c7eb26c0%2Ftranscoded-1790019629.png",
-      "url": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
-      "publishedAt": "2026-09-22T13:37:45.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "ars:https://arstechnica.com/information-technology/2026/10/topgolf-saved-over-11-3-million-after-leaving-vmware/",
       "source": "ars",
       "title": "Topgolf saved over $11.3 million after leaving VMware",
@@ -2004,13 +1952,13 @@
       "alsoOn": []
     },
     {
-      "id": "importai:https://importai.substack.com/p/import-ai-473-the-uss-superintelligence",
-      "source": "importai",
-      "title": "Import AI 473: The US's superintelligence strategy; human brain in a mouse skull; and machine hermeneutics",
-      "blurb": "Is the wall AI is hitting in the room with us right now?",
-      "image": "https://substackcdn.com/image/fetch/$s_!3yYS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png",
-      "url": "https://importai.substack.com/p/import-ai-473-the-uss-superintelligence",
-      "publishedAt": "2026-09-21T12:31:04.000Z",
+      "id": "interconnects:https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
+      "source": "interconnects",
+      "title": "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI",
+      "blurb": null,
+      "image": "https://substackcdn.com/image/fetch/$s_!7ykn!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F216367194%2Fb86a80c9-fb77-4876-8e6b-44c6c7eb26c0%2Ftranscoded-1790019629.png",
+      "url": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
+      "publishedAt": "2026-09-22T13:37:45.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2031,6 +1979,22 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ConwayResearch/Underdog-Saluki-27B-1.0.png",
       "blurb": "Qwen3.8-27B in under 8 GB, tuned to keep tool calling intact. A standard GGUF for stock llama.cpp. Read more: underdog.ai/saluki"
+    },
+    {
+      "id": "gh:repoboost-hq/github-star-benchmarks",
+      "source": "gh",
+      "title": "repoboost-hq/github-star-benchmarks",
+      "blurb": "AI research dataset on GitHub stars: 32.6M starred repositories, star thresholds (100/1k/10k/100k), language and age cohorts, plus star-buying and fake-star research context from ICSE 2026…",
+      "image": "https://opengraph.githubassets.com/1/repoboost-hq/github-star-benchmarks",
+      "url": "https://github.com/repoboost-hq/github-star-benchmarks",
+      "publishedAt": "2026-10-18T06:19:48.000Z",
+      "score": 73,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "repoboost-hq/github-star-benchmarks",
+        "language": "Python"
+      },
+      "alsoOn": []
     },
     {
       "id": "tc:https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
@@ -2062,17 +2026,17 @@
       "alsoOn": []
     },
     {
-      "id": "gh:repoboost-hq/github-star-benchmarks",
+      "id": "gh:heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
       "source": "gh",
-      "title": "repoboost-hq/github-star-benchmarks",
-      "blurb": "AI research dataset on GitHub stars: 32.6M starred repositories, star thresholds (100/1k/10k/100k), language and age cohorts, plus star-buying and fake-star research context from ICSE 2026…",
-      "image": "https://opengraph.githubassets.com/1/repoboost-hq/github-star-benchmarks",
-      "url": "https://github.com/repoboost-hq/github-star-benchmarks",
-      "publishedAt": "2026-10-18T06:19:48.000Z",
-      "score": 71,
+      "title": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+      "blurb": "AI 跨境电商运营智能体工具箱 · 把运营 SOP 拆成 7 个可复用的 AI Agent 工作流，含 Prompt、模板与真实案例",
+      "image": "https://opengraph.githubassets.com/1/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+      "url": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+      "publishedAt": "2026-10-13T10:13:21.000Z",
+      "score": 383,
       "scoreLabel": "stars",
       "meta": {
-        "repo": "repoboost-hq/github-star-benchmarks",
+        "repo": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
         "language": "Python"
       },
       "alsoOn": []
@@ -2088,22 +2052,6 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "gh:heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
-      "source": "gh",
-      "title": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
-      "blurb": "AI 跨境电商运营智能体工具箱 · 把运营 SOP 拆成 7 个可复用的 AI Agent 工作流，含 Prompt、模板与真实案例",
-      "image": "https://opengraph.githubassets.com/1/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
-      "url": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
-      "publishedAt": "2026-10-13T10:13:21.000Z",
-      "score": 383,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
-        "language": "Python"
-      },
       "alsoOn": []
     },
     {
@@ -2182,19 +2130,6 @@
       "alsoOn": []
     },
     {
-      "id": "deepmind:https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-      "source": "deepmind",
-      "title": "Gemini 4 Argon: our next era of frontier intelligence",
-      "blurb": "Announcing Gemini 4 Argon, our frontier model for real-world coding, enterprise knowledge work, and cyber defense, rolling out soon.",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-1300.png",
-      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-      "publishedAt": "2026-09-30T20:01:45.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "msr:https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
       "source": "msr",
       "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
@@ -2202,6 +2137,19 @@
       "image": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/10/AgentLightning-TWLIFB-1200x627-1.jpg",
       "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
       "publishedAt": "2026-10-07T16:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "deepmind:https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "source": "deepmind",
+      "title": "Gemini 4 Argon: our next era of frontier intelligence",
+      "blurb": "Announcing Gemini 4 Argon, our frontier model for real-world coding, enterprise knowledge work, and cyber defense, rolling out soon.",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-1300.png",
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "publishedAt": "2026-09-30T20:01:45.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2221,21 +2169,6 @@
       },
       "alsoOn": [],
       "image": null
-    },
-    {
-      "id": "mit:https://news.mit.edu/2026/mit-lincoln-laboratory-hosts-national-security-commission-emerging-biotechnology-1013",
-      "source": "mit",
-      "title": "MIT Lincoln Laboratory hosts National Security Commission on Emerging Biotechnology",
-      "blurb": "Roadshow event highlights Massachusetts' defense-biotechnology ecosystem.",
-      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202609/mit-lincolnlab-biosecurity.jpg?itok=XhKBx43q",
-      "url": "https://news.mit.edu/2026/mit-lincoln-laboratory-hosts-national-security-commission-emerging-biotechnology-1013",
-      "publishedAt": "2026-10-13T20:40:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "Artificial intelligence"
-      },
-      "alsoOn": []
     },
     {
       "id": "hf:LiquidAI/d1-3B",
@@ -2276,7 +2209,7 @@
       "image": "https://opengraph.githubassets.com/1/hanzohanzhe/Grandet",
       "url": "https://github.com/hanzohanzhe/Grandet",
       "publishedAt": "2026-10-05T06:50:33.000Z",
-      "score": 355,
+      "score": 356,
       "scoreLabel": "stars",
       "meta": {
         "repo": "hanzohanzhe/Grandet",
@@ -2285,17 +2218,17 @@
       "alsoOn": []
     },
     {
-      "id": "simonw:https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
-      "source": "simonw",
-      "title": "AI is mass decompiling games. That's both awesome and scary.",
-      "blurb": "AI is mass decompiling games. That's both awesome and scary. Indie game developer Popcar talks about the recent wave of AI-powered decompilation of existing games, enabling weird mashups…",
-      "image": null,
-      "url": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
-      "publishedAt": "2026-10-14T16:26:53.000Z",
+      "id": "mit:https://news.mit.edu/2026/mit-lincoln-laboratory-hosts-national-security-commission-emerging-biotechnology-1013",
+      "source": "mit",
+      "title": "MIT Lincoln Laboratory hosts National Security Commission on Emerging Biotechnology",
+      "blurb": "Roadshow event highlights Massachusetts' defense-biotechnology ecosystem.",
+      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202609/mit-lincolnlab-biosecurity.jpg?itok=XhKBx43q",
+      "url": "https://news.mit.edu/2026/mit-lincoln-laboratory-hosts-national-security-commission-emerging-biotechnology-1013",
+      "publishedAt": "2026-10-13T20:40:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {
-        "category": "computer-history"
+        "category": "Artificial intelligence"
       },
       "alsoOn": []
     },
@@ -2344,18 +2277,17 @@
       "alsoOn": []
     },
     {
-      "id": "arxiv:2610.22316v1",
-      "source": "arxiv",
-      "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
-      "blurb": "Large language model (LLM)-based agents and multi-agent systems increasingly tackle complex tasks through long-horizon tool use and inter-agent collaboration. However, these systems are…",
+      "id": "simonw:https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
+      "source": "simonw",
+      "title": "AI is mass decompiling games. That's both awesome and scary.",
+      "blurb": "AI is mass decompiling games. That's both awesome and scary. Indie game developer Popcar talks about the recent wave of AI-powered decompilation of existing games, enabling weird mashups…",
       "image": null,
-      "url": "http://arxiv.org/abs/2610.22316v1",
-      "publishedAt": "2026-10-15T17:51:17.000Z",
+      "url": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
+      "publishedAt": "2026-10-14T16:26:53.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {
-        "category": "cs.LG",
-        "authors": 10
+        "category": "computer-history"
       },
       "alsoOn": []
     },
@@ -2388,16 +2320,19 @@
       "alsoOn": []
     },
     {
-      "id": "nvidia:https://blogs.nvidia.com/blog/nordics-technology-ecosystem/",
-      "source": "nvidia",
-      "title": "The Nordics and NVIDIA Show What’s Possible When a Region Commits to Advanced Computing",
-      "blurb": "The Nordic countries have become the European leader in unicorn startup density, producing the most emerging companies valued at $1 billion or more per capita on the continent. Now, a new…",
-      "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/nordics-embrace-social-1920x1080-5822300.jpeg",
-      "url": "https://blogs.nvidia.com/blog/nordics-technology-ecosystem/",
-      "publishedAt": "2026-10-15T05:00:12.000Z",
+      "id": "arxiv:2610.22316v1",
+      "source": "arxiv",
+      "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
+      "blurb": "Large language model (LLM)-based agents and multi-agent systems increasingly tackle complex tasks through long-horizon tool use and inter-agent collaboration. However, these systems are…",
+      "image": null,
+      "url": "http://arxiv.org/abs/2610.22316v1",
+      "publishedAt": "2026-10-15T17:51:17.000Z",
       "score": null,
       "scoreLabel": null,
-      "meta": {},
+      "meta": {
+        "category": "cs.LG",
+        "authors": 10
+      },
       "alsoOn": []
     },
     {
@@ -2472,13 +2407,13 @@
       "alsoOn": []
     },
     {
-      "id": "interconnects:https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
-      "source": "interconnects",
-      "title": "The current balance of power in open models",
-      "blurb": "The expanded form of a testimony I prepared for Congress.",
-      "image": "https://substack-post-media.s3.amazonaws.com/public/images/da6bb5fd-56d4-49ec-a19b-dafc917414e1_3182x1790.png",
-      "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
-      "publishedAt": "2026-09-21T11:56:56.000Z",
+      "id": "nvidia:https://blogs.nvidia.com/blog/nordics-technology-ecosystem/",
+      "source": "nvidia",
+      "title": "The Nordics and NVIDIA Show What’s Possible When a Region Commits to Advanced Computing",
+      "blurb": "The Nordic countries have become the European leader in unicorn startup density, producing the most emerging companies valued at $1 billion or more per capita on the continent. Now, a new…",
+      "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/nordics-embrace-social-1920x1080-5822300.jpeg",
+      "url": "https://blogs.nvidia.com/blog/nordics-technology-ecosystem/",
+      "publishedAt": "2026-10-15T05:00:12.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2498,13 +2433,13 @@
       "alsoOn": []
     },
     {
-      "id": "importai:https://importai.substack.com/p/import-ai-472-deepminds-cheating",
-      "source": "importai",
-      "title": "Import AI 472: DeepMind's cheating math agents; populist AI policies; and Forethought theorizes a nightwatchman",
-      "blurb": null,
-      "image": "https://substackcdn.com/image/fetch/$s_!3yYS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png",
-      "url": "https://importai.substack.com/p/import-ai-472-deepminds-cheating",
-      "publishedAt": "2026-09-07T12:26:31.000Z",
+      "id": "interconnects:https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+      "source": "interconnects",
+      "title": "The current balance of power in open models",
+      "blurb": "The expanded form of a testimony I prepared for Congress.",
+      "image": "https://substack-post-media.s3.amazonaws.com/public/images/da6bb5fd-56d4-49ec-a19b-dafc917414e1_3182x1790.png",
+      "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+      "publishedAt": "2026-09-21T11:56:56.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2592,7 +2527,7 @@
       "image": "https://opengraph.githubassets.com/1/songshikang0111/awesome-REA-cases",
       "url": "https://github.com/songshikang0111/awesome-REA-cases",
       "publishedAt": "2026-10-12T04:52:44.000Z",
-      "score": 246,
+      "score": 247,
       "scoreLabel": "stars",
       "meta": {
         "repo": "songshikang0111/awesome-REA-cases",
