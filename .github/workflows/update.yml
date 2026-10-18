@@ -52,23 +52,6 @@ jobs:
         with:
           node-version: "20"
 
-      # TEMPORARY diagnostic, removed in the commit that acts on its answer.
-      # It writes to a tracked file rather than stdout because reading a job log
-      # needs an authenticated token this session does not hold. Delete with
-      # scripts/probe-feeds.mjs.
-      - name: Probe feed reachability from this runner
-        continue-on-error: true
-        run: node scripts/probe-feeds.mjs > probe-report.txt 2>&1
-
-      - name: Publish the probe report
-        continue-on-error: true
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f probe-report.txt
-          git commit -m "TEMPORARY: probe report" || exit 0
-          git push origin HEAD:main || (git fetch origin main && git rebase origin/main && git push origin HEAD:main)
-
       # No install step on purpose: the collector is zero-dependency and Node 20
       # already ships fetch, so there is no lockfile and nothing to cache.
       - name: Collect dispatches

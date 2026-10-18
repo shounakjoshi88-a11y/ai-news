@@ -200,6 +200,7 @@ limit. Neither fixes reason 2.
 | What breaks | What happens |
 | --- | --- |
 | One source is down | The rest still publish, and the page names the source that failed. |
+| A source's host is blocked rather than broken | The collector tries that source's alternate URL before giving up — see the two-host note in [Notes and limits](#notes-and-limits). |
 | Every source is down | The script exits non-zero, commits nothing, and the last good data stays live. |
 | Image generation, if it is switched on, fails or is rate-limited | The step gives up politely, the affected cards keep their designed tiles, and the news is committed regardless. |
 | The browser is offline, or the file is missing | The page says so and keeps retrying on refocus and on a timer, rather than showing an empty page. |
@@ -289,3 +290,11 @@ and dark. It also prints the palette as hex, which is where the sRGB fallbacks c
 - About a quarter of the cards have no picture to show, and they are the ones whose headline
   has no visual subject. They get tiles rather than a generated face, for the reasons in
   [Pictures](#pictures-and-why-they-are-not-generated).
+- **One source is read from two hosts, because it has two.** Import AI's Substack host
+  answers GitHub's runners with `403` on every path, under every user-agent, while the same
+  URL returns `200` with twenty items from a residential connection: a block on datacenter
+  addresses, which no amount of parsing gets around. The author mirrors each post to
+  `jack-clark.net` on the same minute, and that host does answer the runner, so the collector
+  asks it first and falls back to Substack. This was not hypothetical: across the editions
+  kept in git history, Import AI was the only source that ever failed — three of five, always
+  `403` — and it was the amber notice every time a reader saw one.

@@ -49,7 +49,16 @@ const FEEDS = {
   ars: { url: "https://feeds.arstechnica.com/arstechnica/technology-lab", window: 21 * 24, cap: 9 },
   mit: { url: "https://news.mit.edu/rss/topic/artificial-intelligence2", window: 45 * 24, cap: 8 },
   simonw: { url: "https://simonwillison.net/atom/everything/", window: 45 * 24, cap: 8 },
-  importai: { url: "https://importai.substack.com/feed", window: 90 * 24, cap: 5 },
+  // Jack Clark's own domain first, his Substack mirror second. Same posts, to
+  // the minute — but `importai.substack.com` answers GitHub's runners with 403
+  // and `jack-clark.net` answers them with 200. The order is measured, not
+  // guessed, and keeping both means one walled-off host cannot take the source
+  // down; see the note on `feedSource`.
+  importai: {
+    url: ["https://jack-clark.net/feed/", "https://importai.substack.com/feed"],
+    window: 90 * 24,
+    cap: 5,
+  },
   interconnects: { url: "https://www.interconnects.ai/feed", window: 60 * 24, cap: 5 },
 };
 
@@ -477,10 +486,36 @@ function feedImage(block, body) {
 /**
  * Reads one feed. Blocks are matched before anything inside them is parsed, so a
  * single malformed entry costs that entry rather than the whole source.
+ *
+ * `url` may be a list, and Import AI is the reason it may be. Its Substack host
+ * answers GitHub's runners with `403` on every path, under every user-agent,
+ * while the same URL returns 200 with twenty items from a residential
+ * connection: a block on datacenter addresses, which no amount of parsing fixes.
+ * The author publishes the identical posts to jack-clark.net, which the runner
+ * can reach, so this tries each URL in turn and stops at the first that answers.
+ * That fallback is the whole value — a source with two hosts outlives one of
+ * them being walled off, where a single URL just goes missing every few hours.
  */
 function feedSource(spec) {
   return async function fetchFeed() {
-    const xml = await get(spec.url);
+    const urls = Array.isArray(spec.url) ? spec.url : [spec.url];
+    let xml = null;
+    let failure = null;
+    for (const url of urls) {
+      try {
+        xml = await get(url);
+        break;
+      } catch (error) {
+        failure = error;
+      }
+    }
+    if (xml === null) {
+      throw new Error(
+        urls.length === 1
+          ? String(failure?.message || failure)
+          : `${String(failure?.message || failure)} — all ${urls.length} URLs`,
+      );
+    }
     const rss = [...xml.matchAll(/<item[\s>][\s\S]*?<\/item>/gi)].map((m) => m[0]);
     const blocks = rss.length
       ? rss
