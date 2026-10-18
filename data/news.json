@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T14:52:06Z",
+  "generatedAt": "2026-10-18T14:52:34Z",
   "sources": [
     {
       "id": "hn",
@@ -123,9 +123,9 @@
     {
       "id": "importai",
       "name": "Import AI",
-      "status": "ok",
-      "count": 20,
-      "error": null
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 403"
     },
     {
       "id": "interconnects",
@@ -908,19 +908,6 @@
       "alsoOn": []
     },
     {
-      "id": "importai:https://importai.substack.com/p/import-ai-476-creativity-and-rsi",
-      "source": "importai",
-      "title": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
-      "blurb": null,
-      "image": "https://substackcdn.com/image/youtube/w_728,c_limit/4v837X1Py4M",
-      "url": "https://importai.substack.com/p/import-ai-476-creativity-and-rsi",
-      "publishedAt": "2026-10-12T12:30:39.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "tc:https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
       "source": "tc",
       "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
@@ -1337,19 +1324,6 @@
       "meta": {
         "category": "AI"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "importai:https://importai.substack.com/p/import-ai-475-swarm-scaling-google",
-      "source": "importai",
-      "title": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
-      "blurb": null,
-      "image": "https://substackcdn.com/image/fetch/$s_!3yYS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png",
-      "url": "https://importai.substack.com/p/import-ai-475-swarm-scaling-google",
-      "publishedAt": "2026-10-05T12:32:30.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -1780,19 +1754,6 @@
       "alsoOn": []
     },
     {
-      "id": "importai:https://importai.substack.com/p/import-ai-474-platonic-mindspace",
-      "source": "importai",
-      "title": "Import AI 474: Platonic mindspace; TPUs in space; Zhipu starts an outer RSI loop",
-      "blurb": "Where do you exceed the capabilities of an LLM?",
-      "image": "https://substackcdn.com/image/fetch/$s_!3yYS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png",
-      "url": "https://importai.substack.com/p/import-ai-474-platonic-mindspace",
-      "publishedAt": "2026-09-28T12:32:03.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "mit:https://news.mit.edu/2026/how-artificial-neural-networks-build-their-own-learning-machinery-1013",
       "source": "mit",
       "title": "How artificial neural networks build their own learning machinery",
@@ -1991,19 +1952,6 @@
       "alsoOn": []
     },
     {
-      "id": "interconnects:https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
-      "source": "interconnects",
-      "title": "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI",
-      "blurb": null,
-      "image": "https://substackcdn.com/image/fetch/$s_!7ykn!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F216367194%2Fb86a80c9-fb77-4876-8e6b-44c6c7eb26c0%2Ftranscoded-1790019629.png",
-      "url": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
-      "publishedAt": "2026-09-22T13:37:45.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "ars:https://arstechnica.com/information-technology/2026/10/topgolf-saved-over-11-3-million-after-leaving-vmware/",
       "source": "ars",
       "title": "Topgolf saved over $11.3 million after leaving VMware",
@@ -2017,13 +1965,13 @@
       "alsoOn": []
     },
     {
-      "id": "importai:https://importai.substack.com/p/import-ai-473-the-uss-superintelligence",
-      "source": "importai",
-      "title": "Import AI 473: The US's superintelligence strategy; human brain in a mouse skull; and machine hermeneutics",
-      "blurb": "Is the wall AI is hitting in the room with us right now?",
-      "image": "https://substackcdn.com/image/fetch/$s_!3yYS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png",
-      "url": "https://importai.substack.com/p/import-ai-473-the-uss-superintelligence",
-      "publishedAt": "2026-09-21T12:31:04.000Z",
+      "id": "interconnects:https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
+      "source": "interconnects",
+      "title": "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI",
+      "blurb": null,
+      "image": "https://substackcdn.com/image/fetch/$s_!7ykn!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F216367194%2Fb86a80c9-fb77-4876-8e6b-44c6c7eb26c0%2Ftranscoded-1790019629.png",
+      "url": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
+      "publishedAt": "2026-09-22T13:37:45.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2192,21 +2140,6 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50059523",
-      "source": "hn",
-      "title": "AI coding agents generate more code, but not more software",
-      "blurb": null,
-      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
-      "publishedAt": "2026-10-12T17:14:01.000Z",
-      "score": 364,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 313
-      },
-      "alsoOn": [],
-      "image": null
-    },
-    {
       "id": "msr:https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
       "source": "msr",
       "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
@@ -2220,19 +2153,19 @@
       "alsoOn": []
     },
     {
-      "id": "mit:https://news.mit.edu/2026/mit-lincoln-laboratory-hosts-national-security-commission-emerging-biotechnology-1013",
-      "source": "mit",
-      "title": "MIT Lincoln Laboratory hosts National Security Commission on Emerging Biotechnology",
-      "blurb": "Roadshow event highlights Massachusetts' defense-biotechnology ecosystem.",
-      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202609/mit-lincolnlab-biosecurity.jpg?itok=XhKBx43q",
-      "url": "https://news.mit.edu/2026/mit-lincoln-laboratory-hosts-national-security-commission-emerging-biotechnology-1013",
-      "publishedAt": "2026-10-13T20:40:00.000Z",
-      "score": null,
-      "scoreLabel": null,
+      "id": "hn:50059523",
+      "source": "hn",
+      "title": "AI coding agents generate more code, but not more software",
+      "blurb": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
+      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "publishedAt": "2026-10-12T17:14:01.000Z",
+      "score": 364,
+      "scoreLabel": "points",
       "meta": {
-        "category": "Artificial intelligence"
+        "comments": 313
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2264559974-1152x648.jpg"
     },
     {
       "id": "hf:LiquidAI/d1-3B",
@@ -2282,17 +2215,17 @@
       "alsoOn": []
     },
     {
-      "id": "simonw:https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
-      "source": "simonw",
-      "title": "AI is mass decompiling games. That's both awesome and scary.",
-      "blurb": "AI is mass decompiling games. That's both awesome and scary. Indie game developer Popcar talks about the recent wave of AI-powered decompilation of existing games, enabling weird mashups…",
-      "image": null,
-      "url": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
-      "publishedAt": "2026-10-14T16:26:53.000Z",
+      "id": "mit:https://news.mit.edu/2026/mit-lincoln-laboratory-hosts-national-security-commission-emerging-biotechnology-1013",
+      "source": "mit",
+      "title": "MIT Lincoln Laboratory hosts National Security Commission on Emerging Biotechnology",
+      "blurb": "Roadshow event highlights Massachusetts' defense-biotechnology ecosystem.",
+      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202609/mit-lincolnlab-biosecurity.jpg?itok=XhKBx43q",
+      "url": "https://news.mit.edu/2026/mit-lincoln-laboratory-hosts-national-security-commission-emerging-biotechnology-1013",
+      "publishedAt": "2026-10-13T20:40:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {
-        "category": "computer-history"
+        "category": "Artificial intelligence"
       },
       "alsoOn": []
     },
@@ -2372,18 +2305,17 @@
       "alsoOn": []
     },
     {
-      "id": "arxiv:2610.22316v1",
-      "source": "arxiv",
-      "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
-      "blurb": "Large language model (LLM)-based agents and multi-agent systems increasingly tackle complex tasks through long-horizon tool use and inter-agent collaboration. However, these systems are…",
+      "id": "simonw:https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
+      "source": "simonw",
+      "title": "AI is mass decompiling games. That's both awesome and scary.",
+      "blurb": "AI is mass decompiling games. That's both awesome and scary. Indie game developer Popcar talks about the recent wave of AI-powered decompilation of existing games, enabling weird mashups…",
       "image": null,
-      "url": "http://arxiv.org/abs/2610.22316v1",
-      "publishedAt": "2026-10-15T17:51:17.000Z",
+      "url": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
+      "publishedAt": "2026-10-14T16:26:53.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {
-        "category": "cs.LG",
-        "authors": 10
+        "category": "computer-history"
       },
       "alsoOn": []
     },
@@ -2401,16 +2333,19 @@
       "alsoOn": []
     },
     {
-      "id": "nvidia:https://blogs.nvidia.com/blog/nordics-technology-ecosystem/",
-      "source": "nvidia",
-      "title": "The Nordics and NVIDIA Show What’s Possible When a Region Commits to Advanced Computing",
-      "blurb": "The Nordic countries have become the European leader in unicorn startup density, producing the most emerging companies valued at $1 billion or more per capita on the continent. Now, a new…",
-      "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/nordics-embrace-social-1920x1080-5822300.jpeg",
-      "url": "https://blogs.nvidia.com/blog/nordics-technology-ecosystem/",
-      "publishedAt": "2026-10-15T05:00:12.000Z",
+      "id": "arxiv:2610.22316v1",
+      "source": "arxiv",
+      "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
+      "blurb": "Large language model (LLM)-based agents and multi-agent systems increasingly tackle complex tasks through long-horizon tool use and inter-agent collaboration. However, these systems are…",
+      "image": null,
+      "url": "http://arxiv.org/abs/2610.22316v1",
+      "publishedAt": "2026-10-15T17:51:17.000Z",
       "score": null,
       "scoreLabel": null,
-      "meta": {},
+      "meta": {
+        "category": "cs.LG",
+        "authors": 10
+      },
       "alsoOn": []
     },
     {
@@ -2485,13 +2420,13 @@
       "alsoOn": []
     },
     {
-      "id": "interconnects:https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
-      "source": "interconnects",
-      "title": "The current balance of power in open models",
-      "blurb": "The expanded form of a testimony I prepared for Congress.",
-      "image": "https://substack-post-media.s3.amazonaws.com/public/images/da6bb5fd-56d4-49ec-a19b-dafc917414e1_3182x1790.png",
-      "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
-      "publishedAt": "2026-09-21T11:56:56.000Z",
+      "id": "nvidia:https://blogs.nvidia.com/blog/nordics-technology-ecosystem/",
+      "source": "nvidia",
+      "title": "The Nordics and NVIDIA Show What’s Possible When a Region Commits to Advanced Computing",
+      "blurb": "The Nordic countries have become the European leader in unicorn startup density, producing the most emerging companies valued at $1 billion or more per capita on the continent. Now, a new…",
+      "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/nordics-embrace-social-1920x1080-5822300.jpeg",
+      "url": "https://blogs.nvidia.com/blog/nordics-technology-ecosystem/",
+      "publishedAt": "2026-10-15T05:00:12.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2511,13 +2446,13 @@
       "alsoOn": []
     },
     {
-      "id": "importai:https://importai.substack.com/p/import-ai-472-deepminds-cheating",
-      "source": "importai",
-      "title": "Import AI 472: DeepMind's cheating math agents; populist AI policies; and Forethought theorizes a nightwatchman",
-      "blurb": null,
-      "image": "https://substackcdn.com/image/fetch/$s_!3yYS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png",
-      "url": "https://importai.substack.com/p/import-ai-472-deepminds-cheating",
-      "publishedAt": "2026-09-07T12:26:31.000Z",
+      "id": "interconnects:https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+      "source": "interconnects",
+      "title": "The current balance of power in open models",
+      "blurb": "The expanded form of a testimony I prepared for Congress.",
+      "image": "https://substack-post-media.s3.amazonaws.com/public/images/da6bb5fd-56d4-49ec-a19b-dafc917414e1_3182x1790.png",
+      "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+      "publishedAt": "2026-09-21T11:56:56.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2598,18 +2533,18 @@
       "blurb": "A speech-to-text model for mobiles, wearables, robots, smart home, automotive and microcontrollers. The whole model is a single 16.9 MB file, and it runs on the same CPU engine as Needle…"
     },
     {
-      "id": "gh:justxor/deepseek-local-guide-ru",
+      "id": "gh:longsurf-ai/openchart",
       "source": "gh",
-      "title": "justxor/deepseek-local-guide-ru",
-      "blurb": "🐋 Полный гайд на русском: как установить и запустить DeepSeek локально (V4, R1) на ПК, Mac и сервере — Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG, агенты, fine-tuning, лучшие…",
-      "image": "https://opengraph.githubassets.com/1/justxor/deepseek-local-guide-ru",
-      "url": "https://github.com/justxor/deepseek-local-guide-ru",
-      "publishedAt": "2026-10-17T10:03:36.000Z",
-      "score": 85,
+      "title": "longsurf-ai/openchart",
+      "blurb": "OSS trading workspace with your favorite agents",
+      "image": "https://opengraph.githubassets.com/1/longsurf-ai/openchart",
+      "url": "https://github.com/longsurf-ai/openchart",
+      "publishedAt": "2026-10-05T16:16:41.000Z",
+      "score": 242,
       "scoreLabel": "stars",
       "meta": {
-        "repo": "justxor/deepseek-local-guide-ru",
-        "language": "Shell"
+        "repo": "longsurf-ai/openchart",
+        "language": "TypeScript"
       },
       "alsoOn": []
     },
