@@ -337,107 +337,13 @@ a {
   color: var(--text-muted);
 }
 
-/* ------------------------------------------------------------------ clock */
-
-/* The wire rebuilds hourly, so the header carries a real clock rather than a
-   decorative one, and it sits beside the line that says when the edition was
-   built: the time now, and the time then. It is the accent's second home — the
-   same cyan as the live dot — which is why the second hand is the only coloured
-   thing on the dial.
-
-   The hands are swept by CSS animations seeded with a negative delay, so they
-   run on the compositor rather than being rewritten every frame: `-Xs` starts the
-   sweep X seconds in, which places the hand exactly where the wall clock says it
-   belongs. `tick()` reseeds them every thirty seconds, so a tab that was
-   suspended comes back correct rather than half a minute behind.
-
-   Continuous motion is the one thing the design otherwise spends sparingly, and
-   this is where it is earned: a clock's motion is its content, not a flourish. */
-.bar__time {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-left: auto;
-}
-
-.clock {
-  flex: 0 0 auto;
-  width: 34px;
-  height: 34px;
-}
-
-.clock__face {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.clock__bezel {
-  fill: none;
-  stroke: var(--rule);
-  stroke-width: 1;
-}
-
-.clock__tick {
-  stroke: var(--text-muted);
-  stroke-width: 1.1;
-  stroke-linecap: round;
-}
-
-.clock__tick--major {
-  stroke: var(--text-2);
-  stroke-width: 1.5;
-}
-
-.clock__hand {
-  stroke-linecap: round;
-  transform-box: view-box;
-  transform-origin: 20px 20px;
-}
-
-.clock__hand--hour {
-  stroke: var(--text);
-  stroke-width: 2.4;
-  animation: clock-sweep 43200s linear infinite;
-}
-
-.clock__hand--minute {
-  stroke: var(--text-2);
-  stroke-width: 1.5;
-  animation: clock-sweep 3600s linear infinite;
-}
-
-.clock__hand--second {
-  stroke: var(--accent-ink);
-  stroke-width: 1.3;
-  animation: clock-sweep 60s linear infinite;
-}
-
-@keyframes clock-sweep {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* The hands still tell the time, they simply do not travel to it: `tick()` places
-   them straight where they belong. A clock that keeps sweeping forever is exactly
-   the kind of motion this preference exists to refuse. The second hand goes
-   entirely, because a stationary one is worse than none — it would sit at
-   whatever second it was last placed at and read as a stopped clock. */
-@media (prefers-reduced-motion: reduce) {
-  .clock__hand {
-    animation: none;
-  }
-
-  .clock__hand--second {
-    display: none;
-  }
-}
+/* ------------------------------------------------------------------ pulse */
 
 .pulse {
   display: inline-flex;
   align-items: center;
   gap: 7px;
+  margin-left: auto;
   font-size: 0.8125rem;
   color: var(--text-muted);
 }
@@ -460,23 +366,153 @@ a {
 /* ------------------------------------------------------------------ hero */
 
 .hero {
-  padding: clamp(40px, 5.4vw, 68px) 0 clamp(34px, 4.2vw, 54px);
+  padding: clamp(28px, 4vw, 50px) 0 clamp(34px, 4.2vw, 54px);
   background: var(--hero-bg);
   color: var(--hero-text);
   text-align: center;
 }
 
 .hero__inner {
-  max-width: 44rem;
+  max-width: 62rem;
   margin-inline: auto;
   padding-inline: var(--gut);
 }
 
+/* ------------------------------------------------------------------ board */
+
+/* The masthead opens with a display board rather than a headline. This page is
+   built out of time — an hourly rebuild, a relative stamp on every card, a stale
+   marker at ninety minutes — so the clock belongs at the top of it, and the
+   thing it is modelled on is a departure board rather than a watch.
+
+   The digits are seven-segment geometry drawn in SVG, not set in a typeface: one
+   `viewBox` then scales the whole board from a phone to a desktop without a
+   single breakpoint, and a bar that is off can stay faintly visible. That ghost
+   of the 8 is what makes this read as a board — a display showing only its lit
+   bars would read as a font.
+
+   Nothing here runs on a timer of its own. The seconds change because
+   `startBoard()` writes the time, and the only transition is a 110ms fade on the
+   bars that actually changed: motion that reports what changed rather than
+   decorating it. Under `prefers-reduced-motion` even that goes. */
+.hero__date {
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+  color: var(--hero-muted);
+}
+
+.board {
+  width: 100%;
+  height: clamp(86px, 14.6vw, 178px);
+  margin-top: 14px;
+}
+
+.board__svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* One colour per group, inherited by all seven bars, so no segment is styled by
+   hand. The seconds are the only thing on the board in the accent — the same
+   cyan as the live dot in the bar — which is what marks them as the running part
+   of the display. */
+.board__digit,
+.board__colon {
+  color: var(--hero-text);
+}
+
+.board__digit--seconds {
+  color: var(--accent);
+}
+
+/* The unlit bars are drawn, not omitted: they are what makes this read as a
+   board rather than a stencil font. They are held right at the edge of visible
+   — any stronger and every digit carries a muddy second copy of itself, and
+   neighbouring ghosts start to merge across the gap. 0.08 was exactly that
+   mistake; this is the level where you see the board only if you look for it. */
+.seg {
+  fill: currentColor;
+  opacity: 0.05;
+  transition: opacity 110ms linear;
+}
+
+.seg.is-on {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .seg {
+    transition: none;
+  }
+}
+
+/* The row of zones under the board, the reader's own first. Each is a place over
+   a time, which is all it needs to be: the board above already says which zone
+   it is showing. */
+.clocks {
+  margin: 26px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 30px;
+  list-style: none;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+
+.clock__label {
+  font-size: 0.75rem;
+  color: var(--hero-muted);
+  white-space: nowrap;
+}
+
+.clock__value {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+/* Only a zone that has rolled over into another date carries this, so on most of
+   the row the span is empty — and an empty flex item still claims its gap, which
+   would pull every other time slightly off centre. So it is taken out of the
+   layout entirely rather than left blank. */
+.clock__day {
+  font-size: 0.6875rem;
+  color: var(--hero-muted);
+}
+
+.clock__day:empty {
+  display: none;
+}
+
+.clock__time {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--hero-text);
+}
+
+/* One accent label on the whole row. Where every other place is grey, that alone
+   says which of these clocks is the one you are standing in. */
+.clock--here .clock__label {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .hero__title {
-  font-size: clamp(2.4rem, 7.4vw, 4rem);
+  margin-top: clamp(30px, 3.8vw, 44px);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 800;
-  line-height: 0.96;
-  letter-spacing: -0.038em;
+  line-height: 1.04;
+  letter-spacing: -0.034em;
   text-wrap: balance;
 }
 
@@ -925,16 +961,14 @@ main {
     padding: 12px;
   }
 
-  /* The clock stays on row one with the brand, a touch smaller so the four
-     elements on that row keep their breathing room on a 360px screen. */
-  .clock {
-    width: 30px;
-    height: 30px;
+  /* Seven zones will not sit on one row of a phone, so they tighten up and are
+     allowed to wrap rather than shrink into illegibility. */
+  .clocks {
+    gap: 14px 22px;
   }
 
-  .bar__time {
-    gap: 12px;
-    margin-left: auto;
+  .clock__time {
+    font-size: 0.9375rem;
   }
 
   .wire {

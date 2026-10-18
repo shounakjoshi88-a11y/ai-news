@@ -72,26 +72,26 @@
             </svg>
           </button>
         </div>
-        <div class="bar__time">
-          <div class="clock" id="clock" role="img" aria-label="Current time">
-            <svg class="clock__face" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
-              <circle class="clock__bezel" cx="20" cy="20" r="17.9" />
-              <g id="clockTicks"></g>
-              <line class="clock__hand clock__hand--hour" x1="20" y1="22.9" x2="20" y2="11.4" />
-              <line class="clock__hand clock__hand--minute" x1="20" y1="23.4" x2="20" y2="7.8" />
-              <line class="clock__hand clock__hand--second" x1="20" y1="24.6" x2="20" y2="7.1" />
-            </svg>
-          </div>
-          <p class="pulse" id="status">
-            <span class="pulse__dot" aria-hidden="true"></span>
-            <span class="pulse__text">Connecting</span>
-          </p>
-        </div>
+        <p class="pulse" id="status">
+          <span class="pulse__dot" aria-hidden="true"></span>
+          <span class="pulse__text">Connecting</span>
+        </p>
       </div>
     </header>
 
     <section class="hero">
       <div class="hero__inner">
+        <p class="hero__date" id="wireDate"></p>
+
+        <!-- The board is the page's clock. It is a picture of the time, so it is
+             hidden from assistive tech and the zone row below carries the time as
+             text instead — see the list's first row. -->
+        <div class="board" aria-hidden="true">
+          <svg class="board__svg" id="board" viewBox="0 0 688 180" focusable="false"></svg>
+        </div>
+
+        <ul class="clocks" id="clocks" aria-label="Time zones"></ul>
+
         <h1 class="hero__title">AI&nbsp;Wire</h1>
         <p class="hero__lede">
           Every story worth reading, gathered from nineteen sources — the labs' own

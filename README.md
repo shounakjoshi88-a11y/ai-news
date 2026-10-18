@@ -226,10 +226,10 @@ Node standard library, which is also why the workflow has no install step and no
 
 ## Design
 
-The page is a **grid of dispatches**. A dark masthead carries the name and the live state;
-below it the top-ranked story runs full width as a lead, and everything else sits in a
-three-column grid of cards — artwork, source, headline, summary, and the source's own
-signal along the foot.
+The page is a **grid of dispatches**. A dark masthead opens with a segmented clock board,
+then the name and the live state; below it the top-ranked story runs full width as a lead,
+and everything else sits in a three-column grid of cards — artwork, source, headline,
+summary, and the source's own signal along the foot.
 
 The visual language is a newsletter front page: a near-white page, one family (Archivo),
 off-black headings over muted grey body text, generous leading, and a single vivid cyan
@@ -255,15 +255,32 @@ instead of relying on one: an arrow appears on any edge that still has a tab beh
 wheel over the strip scrolls it sideways, and the trailing fade marks where the tabs continue.
 A touch screen keeps the swipe and drops the arrows, which would only cover tabs there.
 
-The header ends with a **clock** beside the line that says when the edition was built — the
-time now, and the time then. It is a real instrument rather than an ornament: the wire is
-rebuilt hourly, so a page about *when* things happened can reasonably tell you what time it
-is, and it wears the accent on its second hand, the same cyan as the live dot. The hands are
-swept by CSS animations seeded with a negative delay, so they run on the compositor rather
-than being rewritten sixty times a second, and the page's existing 30-second tick reseeds them
-so a tab left suspended comes back correct instead of half a minute behind. Readers who ask
-for reduced motion get the same dial with the hands placed directly and no sweep at all,
-because a clock that keeps moving forever is precisely what that preference refuses.
+The masthead opens with a **segmented clock board** rather than a headline: the date, then
+hours and minutes at full size with the seconds at two thirds in the accent, then a row of
+zones. It is a real instrument rather than an ornament — the wire is rebuilt hourly, every
+card is stamped with when it landed, and the edition goes stale at ninety minutes, so a page
+that is *about* time can reasonably open by telling you what time it is.
+
+The digits are seven-segment geometry drawn as SVG rather than set in a typeface. That is
+what lets one `viewBox` scale the board from a phone to a desktop without a breakpoint, and
+what lets an unlit bar stay faintly visible: the ghost of the 8 is the difference between a
+board and a stencil font. It is held at 5% opacity, which is where you see the board only if
+you look for it — at 8% every digit carried a muddy second copy of itself and neighbouring
+ghosts merged across the gap.
+
+The reader's own zone is the first item on the row beneath, named in the accent — the zone's
+own name as the browser reports it, not a city inferred from it. A zone sharing the reader's
+offset is dropped rather than printed twice, and a zone that has rolled into another date
+carries its weekday with the time (`Mon 01:20`), since after the place name it read as one
+name: `Beijing Mon`.
+
+The board is a picture of the time, so it is `aria-hidden`; the row of zones is where the
+local time actually comes from for a screen reader, and its first item reads "Your clock, …".
+The seconds cost one glyph a second rather than six — a digit whose character has not changed
+is left untouched — and the only transition is a 110ms fade on the bars that did change. A
+timer aligned to the wall clock drives it, recomputed from `Date.now()` on every pass rather
+than accumulated, so a second changes on the second and a suspended tab re-aligns instead of
+resuming late. Under `prefers-reduced-motion` the fade goes and the time still ticks.
 
 Motion is deliberately small: one staggered entrance, and only for cards that are
 genuinely new since the last render. Relative times tick over every 30 seconds, and

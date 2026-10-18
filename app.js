@@ -59,10 +59,9 @@ const els = {
   note: document.getElementById("note"),
   alert: document.getElementById("alert"),
   more: document.getElementById("more"),
-  clock: document.getElementById("clock"),
-  clockHour: document.querySelector(".clock__hand--hour"),
-  clockMinute: document.querySelector(".clock__hand--minute"),
-  clockSecond: document.querySelector(".clock__hand--second"),
+  board: document.getElementById("board"),
+  clocks: document.getElementById("clocks"),
+  wireDate: document.getElementById("wireDate"),
   announcer: document.getElementById("announcer"),
 };
 const pulseText = els.pulse.querySelector(".pulse__text");
@@ -510,70 +509,288 @@ function updateAlerts(now = Date.now()) {
   els.alert.classList.toggle("alert--error", failed.length === payload.sources.length);
 }
 
-/** Re-render only the relative times; the cards themselves are left alone. */
+/* --------------------------------------------------------------- the board */
+
 /**
- * The marks around the dial, laid out once at startup because they are the only
- * part of the clock that never moves. Twelve marks, the quarters longer and
- * darker than the rest so the face reads as a watch rather than a progress ring.
+ * Seven-segment geometry in a 100 x 180 cell: a 22-unit bar with mitred ends,
+ * which is the detail that makes this read as a display rather than a typeface.
+ * Written once as SVG, so a single `viewBox` scales the whole board and no
+ * breakpoint has to know the digits exist.
  */
-function buildClockFace() {
-  const host = document.getElementById("clockTicks");
-  if (!host) return;
+const SEGMENTS = {
+  a: "11,0 89,0 100,11 89,22 11,22 0,11",
+  b: "89,0 100,11 100,79 89,90 78,79 78,11",
+  c: "89,90 100,101 100,169 89,180 78,169 78,101",
+  d: "11,158 89,158 100,169 89,180 11,180 0,169",
+  e: "11,90 22,101 22,169 11,180 0,169 0,101",
+  f: "11,0 22,11 22,79 11,90 0,79 0,11",
+  g: "11,79 89,79 100,90 89,101 11,101 0,90",
+};
+
+/** Which of those bars each character lights. */
+const GLYPHS = {
+  0: "abcdef",
+  1: "bc",
+  2: "abdeg",
+  3: "abcdg",
+  4: "bcfg",
+  5: "acdfg",
+  6: "acdefg",
+  7: "abc",
+  8: "abcdefg",
+  9: "abcdfg",
+};
+
+/**
+ * The cells of the board in reading order: hours, the colon, minutes, then the
+ * seconds at two thirds size, centred on the same axis so the row reads as one
+ * line rather than as a clock with a smaller clock bolted to its right.
+ */
+const CELLS = [
+  { x: 0, kind: "digit" },
+  { x: 112, kind: "digit" },
+  { x: 232, kind: "colon" },
+  { x: 296, kind: "digit" },
+  { x: 408, kind: "digit" },
+  { x: 548, kind: "second" },
+  { x: 621.9, kind: "second" },
+];
+const SECOND_SCALE = 0.66;
+const SECOND_Y = (180 * (1 - SECOND_SCALE)) / 2;
+
+/**
+ * The zones on the row under the board. Nothing is claimed about which is
+ * important; they are simply spread across the field's working day, so that
+ * whatever hour you are reading at, some part of it is in daylight.
+ */
+const OTHER_ZONES = [
+  { name: "San Francisco", zone: "America/Los_Angeles" },
+  { name: "New York", zone: "America/New_York" },
+  { name: "London", zone: "Europe/London" },
+  { name: "Paris", zone: "Europe/Paris" },
+  { name: "Beijing", zone: "Asia/Shanghai" },
+  { name: "Bengaluru", zone: "Asia/Kolkata" },
+];
+
+/**
+ * The reader's own zone: what the board shows, and what the first item on the
+ * row names. This is the zone's own name rather than an inferred city — the
+ * browser reports the zone, not the place, and naming a city the reader may not
+ * be in would be a guess dressed up as a fact.
+ */
+const LOCAL_ZONE = (() => {
+  try {
+    return Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+  } catch {
+    return "UTC";
+  }
+})();
+
+/** `Intl` formatters are expensive to build, so one set per zone is kept. */
+const zoneFormats = new Map();
+
+function formatsFor(zone) {
+  let formats = zoneFormats.get(zone);
+  if (!formats) {
+    formats = {
+      clock: new Intl.DateTimeFormat("en-GB", {
+        timeZone: zone,
+        hour: "2-digit",
+        minute: "2-digit",
+        hourCycle: "h23",
+      }),
+      date: new Intl.DateTimeFormat("en-CA", {
+        timeZone: zone,
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+      }),
+      weekday: new Intl.DateTimeFormat("en-GB", { timeZone: zone, weekday: "short" }),
+      full: new Intl.DateTimeFormat("en-GB", {
+        timeZone: zone,
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      }),
+    };
+    zoneFormats.set(zone, formats);
+  }
+  return formats;
+}
+
+const boardParts = [];
+const clockCells = [];
+
+/** Lays out the digits once; from here on only their classes change. */
+function buildBoard() {
+  if (!els.board) return;
   const SVG = "http://www.w3.org/2000/svg";
-  for (let i = 0; i < 12; i += 1) {
-    const angle = (i * Math.PI) / 6;
-    const major = i % 3 === 0;
-    const outer = 15.8;
-    const inner = major ? 12.6 : 13.6;
-    const mark = document.createElementNS(SVG, "line");
-    mark.setAttribute("class", major ? "clock__tick clock__tick--major" : "clock__tick");
-    mark.setAttribute("x1", (20 + outer * Math.sin(angle)).toFixed(2));
-    mark.setAttribute("y1", (20 - outer * Math.cos(angle)).toFixed(2));
-    mark.setAttribute("x2", (20 + inner * Math.sin(angle)).toFixed(2));
-    mark.setAttribute("y2", (20 - inner * Math.cos(angle)).toFixed(2));
-    host.append(mark);
+
+  for (const cell of CELLS) {
+    const group = document.createElementNS(SVG, "g");
+
+    if (cell.kind === "colon") {
+      group.setAttribute("class", "board__colon");
+      for (const y of [49, 109]) {
+        const dot = document.createElementNS(SVG, "rect");
+        dot.setAttribute("x", 243);
+        dot.setAttribute("y", y);
+        dot.setAttribute("width", 22);
+        dot.setAttribute("height", 22);
+        dot.setAttribute("class", "seg is-on");
+        group.append(dot);
+      }
+      els.board.append(group);
+      continue;
+    }
+
+    const seconds = cell.kind === "second";
+    group.setAttribute(
+      "class",
+      seconds ? "board__digit board__digit--seconds" : "board__digit",
+    );
+    group.setAttribute(
+      "transform",
+      seconds
+        ? `translate(${cell.x} ${SECOND_Y}) scale(${SECOND_SCALE})`
+        : `translate(${cell.x} 0)`,
+    );
+
+    const bars = new Map();
+    for (const [name, points] of Object.entries(SEGMENTS)) {
+      const bar = document.createElementNS(SVG, "polygon");
+      bar.setAttribute("points", points);
+      bar.setAttribute("class", "seg");
+      bars.set(name, bar);
+      group.append(bar);
+    }
+    els.board.append(group);
+    boardParts.push({ bars, lit: null });
   }
 }
 
 /**
- * Places the three hands, by one of two routes to the same position: a sweeping
- * animation whose phase is seeded with a negative delay, or — when the reader has
- * asked for reduced motion — a rotation set directly. Both are driven from the
- * real clock rather than from a counter, so neither can drift into lying about
- * the time, and both survive the page being suspended for an hour.
+ * Lights the bars each digit needs. A digit whose character has not changed is
+ * left completely alone, so one second costs one glyph rather than six, and the
+ * faint unlit bars are never touched at all.
  */
-function setClock(now = new Date()) {
-  if (!els.clock) return;
+function drawBoard(now) {
+  const digits =
+    String(now.getHours()).padStart(2, "0") +
+    String(now.getMinutes()).padStart(2, "0") +
+    String(now.getSeconds()).padStart(2, "0");
 
-  const seconds = now.getSeconds() + now.getMilliseconds() / 1000;
-  const minutes = now.getMinutes() * 60 + seconds;
-  const hours = (now.getHours() % 12) * 3600 + minutes;
-  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  // A hand turns once per its own period, so it travels 360 / period degrees a
-  // second: 0.0083 for the hour hand, 0.1 for the minute hand, 6 for the second.
-  const hands = [
-    [els.clockHour, 1 / 120, hours],
-    [els.clockMinute, 0.1, minutes],
-    [els.clockSecond, 6, seconds],
-  ];
-  for (const [hand, perSecond, elapsed] of hands) {
-    if (!hand) continue;
-    if (reduced) {
-      hand.style.animation = "none";
-      hand.style.transform = `rotate(${(elapsed * perSecond).toFixed(3)}deg)`;
-    } else {
-      hand.style.animation = "";
-      hand.style.animationDelay = `-${elapsed.toFixed(3)}s`;
+  for (let i = 0; i < boardParts.length; i += 1) {
+    const part = boardParts[i];
+    const lit = GLYPHS[digits[i]] || "";
+    if (lit === part.lit) continue;
+    part.lit = lit;
+    for (const [name, bar] of part.bars) {
+      bar.classList.toggle("is-on", lit.includes(name));
     }
   }
-
-  const hh = String(now.getHours()).padStart(2, "0");
-  const mm = String(now.getMinutes()).padStart(2, "0");
-  const label = `${hh}:${mm} local time`;
-  els.clock.setAttribute("aria-label", label);
-  els.clock.setAttribute("title", label);
 }
+
+/**
+ * The row of zones. Built once, because a zone that already shares the reader's
+ * own offset would print the same minute twice; it is dropped rather than shown
+ * as though it were somewhere else.
+ */
+function buildClocks() {
+  if (!els.clocks) return;
+  const now = new Date();
+  const here = formatsFor(LOCAL_ZONE).clock.format(now);
+  const others = OTHER_ZONES.filter(
+    (place) => formatsFor(place.zone).clock.format(now) !== here,
+  );
+
+  const places = [
+    { name: LOCAL_ZONE.replace(/_/g, " "), zone: LOCAL_ZONE, here: true },
+    ...others,
+  ];
+
+  clockCells.length = 0;
+  els.clocks.replaceChildren();
+
+  for (const place of places) {
+    const item = document.createElement("li");
+    item.className = place.here ? "clock clock--here" : "clock";
+
+    const label = document.createElement("span");
+    label.className = "clock__label";
+    if (place.here) {
+      // The board is hidden from assistive tech, so this row is where the local
+      // time actually comes from — and this is the word that says it is theirs.
+      const mine = document.createElement("span");
+      mine.className = "sr-only";
+      mine.textContent = "Your clock, ";
+      label.append(mine);
+    }
+
+    const name = document.createElement("span");
+    name.textContent = place.name;
+    label.append(name);
+
+    // The weekday rides with the time, not with the place: "Beijing Mon" reads
+    // as one name, where "Mon 01:18" reads as the day it actually is.
+    const value = document.createElement("span");
+    value.className = "clock__value";
+    const day = document.createElement("span");
+    day.className = "clock__day";
+    const time = document.createElement("time");
+    time.className = "clock__time";
+    value.append(day, time);
+
+    item.append(label, value);
+    els.clocks.append(item);
+    clockCells.push({ time, day, zone: place.zone, here: place.here });
+  }
+}
+
+function drawClocks(now) {
+  if (clockCells.length === 0) return;
+  const hereDay = formatsFor(LOCAL_ZONE).date.format(now);
+
+  for (const cell of clockCells) {
+    const formats = formatsFor(cell.zone);
+
+    const text = formats.clock.format(now);
+    if (cell.time.textContent !== text) {
+      cell.time.textContent = text;
+      cell.time.setAttribute("datetime", now.toISOString());
+    }
+
+    // Only a zone that has rolled into another date carries a weekday; on the
+    // ones that agree with the reader's date the marker would be noise.
+    const mark =
+      cell.here || formats.date.format(now) === hereDay
+        ? ""
+        : formats.weekday.format(now);
+    if (cell.day.textContent !== mark) cell.day.textContent = mark;
+  }
+}
+
+/**
+ * One timer, aligned to the wall clock rather than to whenever the page happened
+ * to open, so a second changes on the second instead of drifting a fraction
+ * behind. The delay is recomputed from `Date.now()` on every pass, so a tab the
+ * browser throttled or suspended re-aligns itself on the way back instead of
+ * resuming late. Anything that has not changed is not written.
+ */
+function startBoard() {
+  const step = () => {
+    const now = new Date();
+    drawBoard(now);
+    drawClocks(now);
+    const today = formatsFor(LOCAL_ZONE).full.format(now);
+    if (els.wireDate.textContent !== today) els.wireDate.textContent = today;
+    window.setTimeout(step, 1000 - (Date.now() % 1000));
+  };
+  step();
+}
+
+/** Re-render only the relative times; the cards themselves are left alone. */
 
 function tick() {
   const now = Date.now();
@@ -583,7 +800,6 @@ function tick() {
   }
   updateStatus(now);
   updateAlerts(now);
-  setClock();
 }
 
 function announce(message) {
@@ -690,8 +906,9 @@ els.tabPrev?.addEventListener("click", () => scrollTabs(-1));
 els.tabNext?.addEventListener("click", () => scrollTabs(1));
 
 readHash();
-buildClockFace();
-setClock();
+buildBoard();
+buildClocks();
+startBoard();
 renderTabs();
 render();
 updateStatus();
