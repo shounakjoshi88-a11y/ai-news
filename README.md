@@ -246,11 +246,14 @@ no image, drops the artwork entirely and becomes a wide text lead rather than a 
 panel.
 
 Cards are filtered by source through the tabs, which write `#source=<id>` so a view can be
-linked to and survives a reload, and paged in with **Show more**. Nineteen tabs is more than
+linked to and survives a reload, and paged in with **Show more**. Twenty tabs is more than
 fits on a line at any width, so the strip scrolls sideways and reveals whichever tab is
 selected — a wrapped strip would turn the sticky header into a three-line block that eats a
-phone screen. The fade at its trailing edge is the only affordance, since the scrollbar is
-hidden. Motion is deliberately small: one staggered entrance, and only for cards that are
+phone screen. Because the scrollbar is hidden on purpose, the strip carries its own controls
+instead of relying on one: an arrow appears on any edge that still has a tab behind it, a
+wheel over the strip scrolls it sideways, and the trailing fade marks where the tabs continue.
+A touch screen keeps the swipe and drops the arrows, which would only cover tabs there. Motion
+is deliberately small: one staggered entrance, and only for cards that are
 genuinely new since the last render. Relative times tick over every 30 seconds, and
 reduced-motion is respected.
 

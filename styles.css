@@ -92,6 +92,16 @@
   box-sizing: border-box;
 }
 
+/* `hidden` has to mean hidden. The rule the browser ships for it is a user-agent
+   rule, so it loses to any `display` an author sets — and this sheet sets one on
+   almost everything it hides. The strip's scroll buttons stayed on screen when
+   they had nothing to scroll to, and an empty `.brief` kept painting its 13px
+   rule and 28px margin. Normalise it once, here, rather than remembering at
+   every `display` in the file. */
+[hidden] {
+  display: none !important;
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -190,9 +200,24 @@ a {
 
 /* Twenty sources is more tabs than fit on a line at any width, so the strip
    scrolls rather than wraps: a wrapped strip turns the sticky bar into a
-   three-line header that eats a phone screen. `data-overflow` is set by script
-   once the tabs are in the DOM, and the fade is the only affordance — a
-   scrollbar-width of none leaves no hint otherwise. */
+   three-line header that eats a phone screen.
+
+   A hidden scrollbar, though, is not an affordance — it is the absence of one.
+   The fade said "there is more" and then nothing took you there: 1209px of tabs
+   past DeepMind, reachable only by a touch swipe, so on a desktop with a mouse
+   the NVIDIA, Verge, MIT and Simon Willison tabs may as well not have existed.
+   The rail therefore carries two buttons, the fade arms itself on whichever edge
+   still has a tab behind it, and a wheel over the strip scrolls it sideways. */
+.tabrail {
+  position: relative;
+  display: flex;
+  /* A flex item keeps its content width as its basis by default, so a 2097px
+     strip would push the brand and the status onto rows of their own. A zero
+     basis makes it share the row and scroll inside whatever is left over. */
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 .tabs {
   display: flex;
   gap: 2px;
@@ -206,10 +231,6 @@ a {
      past the tab. This gives it that room without changing where the bar sits. */
   padding-block: 5px;
   margin-block: -5px;
-  /* A flex item keeps its content width as its basis by default, so a 2193px
-     strip would push the brand and the status onto rows of their own. A zero
-     basis makes it share the row and scroll inside whatever is left over. */
-  flex: 1 1 0;
   min-width: 0;
 }
 
@@ -217,8 +238,61 @@ a {
   display: none;
 }
 
-.tabs[data-overflow="true"][data-at-end="false"] {
-  mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent);
+.tabrail__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: var(--bg);
+  color: var(--text-2);
+  cursor: pointer;
+}
+
+.tabrail__nav:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
+.tabrail__nav svg {
+  width: 14px;
+  height: 14px;
+}
+
+.tabrail__nav--prev {
+  left: 0;
+}
+
+.tabrail__nav--next {
+  right: 0;
+}
+
+/* A touch screen already has a way to move the strip — a swipe — so the buttons
+   are only for pointers that do not, and would otherwise just cover tabs. */
+@media (hover: none) {
+  .tabrail__nav {
+    display: none;
+  }
+}
+
+/* The fade only shows on an edge with something still behind it. A fade pinned at
+   an edge that has run out is a smudge. */
+.tabs[data-at-start="false"][data-at-end="false"] {
+  mask-image: linear-gradient(to right, transparent, #000 44px, #000 calc(100% - 44px), transparent);
+}
+
+.tabs[data-at-start="false"][data-at-end="true"] {
+  mask-image: linear-gradient(to right, transparent, #000 44px);
+}
+
+.tabs[data-at-start="true"][data-at-end="false"] {
+  mask-image: linear-gradient(to right, #000 calc(100% - 44px), transparent);
 }
 
 .tab {
@@ -742,10 +816,10 @@ main {
 
   /* Brand and status share the first row, and the tabs get a full row of their
      own. They already scroll at every width; here they are just given one. */
-  /* `flex-basis: 100%`, not `width: 100%`: the base rule gives this strip a zero
+  /* `flex-basis: 100%`, not `width: 100%`: the base rule gives the rail a zero
      basis so it can share a desktop row, and a flex basis beats width — without
      it the strip fits on row one at 136px wide instead of taking its own row. */
-  .tabs {
+  .tabrail {
     order: 3;
     flex-basis: 100%;
   }

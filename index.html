@@ -33,7 +33,45 @@
           <span class="bar__glyph" aria-hidden="true"></span>
           AI&nbsp;Wire
         </a>
-        <nav class="tabs" id="filters" aria-label="Filter dispatches by source"></nav>
+        <div class="tabrail">
+          <button
+            class="tabrail__nav tabrail__nav--prev"
+            id="tabPrev"
+            type="button"
+            aria-label="Scroll sources left"
+            hidden
+          >
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path
+                d="M10 3.5 5.5 8 10 12.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <nav class="tabs" id="filters" aria-label="Filter dispatches by source"></nav>
+          <button
+            class="tabrail__nav tabrail__nav--next"
+            id="tabNext"
+            type="button"
+            aria-label="Scroll sources right"
+            hidden
+          >
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path
+                d="M6 3.5 10.5 8 6 12.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
         <p class="pulse" id="status">
           <span class="pulse__dot" aria-hidden="true"></span>
           <span class="pulse__text">Connecting</span>

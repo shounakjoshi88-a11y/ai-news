@@ -52,6 +52,8 @@ const els = {
   brief: document.getElementById("brief"),
   count: document.getElementById("count"),
   filters: document.getElementById("filters"),
+  tabPrev: document.getElementById("tabPrev"),
+  tabNext: document.getElementById("tabNext"),
   state: document.getElementById("state"),
   pulse: document.getElementById("status"),
   note: document.getElementById("note"),
@@ -362,17 +364,50 @@ function renderState(list) {
 }
 
 /**
- * The strip scrolls, so it has to say so. `data-overflow` drives the edge fade,
- * and the fade only shows while there is something left to scroll to — a fade
- * pinned at an edge that has reached its end is just a smudge.
+ * The strip scrolls, so it has to say so. `data-overflow` drives the fade and the
+ * buttons, and both edges are tracked separately: the fade only shows on an edge
+ * that still has a tab behind it, and a button only shows when it can do
+ * something. A control that does nothing when clicked is worse than no control.
  */
 function syncTabOverflow() {
   const strip = els.filters;
   const slack = 4;
-  strip.dataset.overflow =
-    strip.scrollWidth - strip.clientWidth > slack ? "true" : "false";
-  strip.dataset.atEnd =
-    strip.scrollLeft + strip.clientWidth >= strip.scrollWidth - slack ? "true" : "false";
+  const reach = strip.scrollWidth - strip.clientWidth;
+  const scrolls = reach > slack;
+  const atStart = strip.scrollLeft <= slack;
+  const atEnd = strip.scrollLeft >= reach - slack;
+  strip.dataset.overflow = scrolls ? "true" : "false";
+  strip.dataset.atStart = atStart ? "true" : "false";
+  strip.dataset.atEnd = atEnd ? "true" : "false";
+  if (els.tabPrev) els.tabPrev.hidden = !scrolls || atStart;
+  if (els.tabNext) els.tabNext.hidden = !scrolls || atEnd;
+}
+
+/** Moves the strip about a screenful, which is as far as anyone wants to go in one click. */
+function scrollTabs(direction) {
+  els.filters.scrollBy({
+    left: direction * Math.round(els.filters.clientWidth * 0.7),
+    behavior: "smooth",
+  });
+}
+
+/**
+ * A wheel over the strip scrolls it sideways. The scrollbar is hidden on purpose,
+ * so this is the other half of what the buttons do for a mouse. It deliberately
+ * claims the event only while there is somewhere to go, and hands it back to the
+ * page at either end — otherwise the strip becomes a trap where you cannot scroll
+ * past the header at all.
+ */
+function onTabWheel(event) {
+  const strip = els.filters;
+  const reach = strip.scrollWidth - strip.clientWidth;
+  if (reach <= 0) return;
+  const step = Math.abs(event.deltaY) > Math.abs(event.deltaX) ? event.deltaY : event.deltaX;
+  if (!step) return;
+  const next = strip.scrollLeft + step;
+  if (next < 0 || next > reach) return;
+  strip.scrollTo({ left: next, behavior: "instant" });
+  event.preventDefault();
 }
 
 /**
@@ -577,6 +612,13 @@ window.setInterval(load, REFRESH_MS);
 // width, so both are watched rather than measured once.
 els.filters.addEventListener("scroll", syncTabOverflow, { passive: true });
 window.addEventListener("resize", syncTabOverflow, { passive: true });
+
+// The strip is reachable three ways now, because a hidden scrollbar is not an
+// affordance: click a button, turn the wheel over it, or swipe a touch screen.
+// Not passive — this one calls preventDefault when it takes the event.
+els.filters.addEventListener("wheel", onTabWheel, { passive: false });
+els.tabPrev?.addEventListener("click", () => scrollTabs(-1));
+els.tabNext?.addEventListener("click", () => scrollTabs(1));
 
 readHash();
 renderTabs();
