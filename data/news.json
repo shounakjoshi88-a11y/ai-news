@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T16:18:03Z",
+  "generatedAt": "2026-10-18T16:21:56Z",
   "sources": [
     {
       "id": "hn",
@@ -137,19 +137,6 @@
   ],
   "items": [
     {
-      "id": "tc:https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-      "source": "tc",
-      "title": "Meta removes language that raised scraping and AI training concerns",
-      "blurb": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/05/meta-ai-GettyImages-2264943773.jpg?w=1024",
-      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-      "publishedAt": "2026-10-17T21:31:32.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hn:50137950",
       "source": "hn",
       "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
@@ -163,6 +150,19 @@
       },
       "alsoOn": [],
       "image": null
+    },
+    {
+      "id": "tc:https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "source": "tc",
+      "title": "Meta removes language that raised scraping and AI training concerns",
+      "blurb": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/05/meta-ai-GettyImages-2264943773.jpg?w=1024",
+      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "publishedAt": "2026-10-17T21:31:32.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "tc:https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
@@ -184,10 +184,10 @@
       "blurb": "Would this be enough to keep an AI model from going out of control?",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
       "publishedAt": "2026-10-18T14:30:27.000Z",
-      "score": 81,
+      "score": 84,
       "scoreLabel": "points",
       "meta": {
-        "comments": 76
+        "comments": 83
       },
       "alsoOn": [],
       "image": "https://cdn.mos.cms.futurecdn.net/SVPa8KkaDwkeyAtLnMhyKW-1920-80.png"
@@ -211,34 +211,6 @@
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/deepseek-ai/DeepSeek-V4.1-Flash-1017.png"
     },
     {
-      "id": "verge:https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
-      "source": "verge",
-      "title": "Meta removes language that may have allowed it to scrape news sites",
-      "blurb": "After backlash, Meta is updating its terms again to remove language that suggested it could scrape content from sites, including news sites, to train its AI. Specifically, the following…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK043_VRG_Illo_N_Barclay_2_Meta.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-      "url": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
-      "publishedAt": "2026-10-17T15:04:36.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "AI"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "ars:https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-      "source": "ars",
-      "title": "OpenAI models hacked a crypto wallet and breached more websites",
-      "blurb": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-1152x648.jpg",
-      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-      "publishedAt": "2026-10-16T20:59:01.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "mit:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
       "source": "mit",
       "title": "Giving AI a “crystal clear” view of the materials world",
@@ -251,6 +223,36 @@
       "meta": {
         "category": "Research"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50141657",
+      "source": "hn",
+      "title": "Websites are closing their doors to AI agents",
+      "blurb": "Online roadblocks are undermining the narrative behind AI agents.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "publishedAt": "2026-10-18T14:58:10.000Z",
+      "score": 70,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 47
+      },
+      "alsoOn": [
+        "verge:https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+      ],
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK414_AI_CVIRGINIA_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+    },
+    {
+      "id": "ars:https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+      "source": "ars",
+      "title": "OpenAI models hacked a crypto wallet and breached more websites",
+      "blurb": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-1152x648.jpg",
+      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+      "publishedAt": "2026-10-16T20:59:01.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -269,16 +271,18 @@
       "alsoOn": []
     },
     {
-      "id": "tc:https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "source": "tc",
-      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
-      "blurb": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/replit-ceo-masad.jpg?resize=1200,800",
-      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "publishedAt": "2026-10-17T18:48:08.000Z",
+      "id": "verge:https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+      "source": "verge",
+      "title": "Meta removes language that may have allowed it to scrape news sites",
+      "blurb": "After backlash, Meta is updating its terms again to remove language that suggested it could scrape content from sites, including news sites, to train its AI. Specifically, the following…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK043_VRG_Illo_N_Barclay_2_Meta.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "url": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+      "publishedAt": "2026-10-17T15:04:36.000Z",
       "score": null,
       "scoreLabel": null,
-      "meta": {},
+      "meta": {
+        "category": "AI"
+      },
       "alsoOn": []
     },
     {
@@ -288,7 +292,7 @@
       "blurb": null,
       "url": "https://alexwang.ai/posts/associative-memory/",
       "publishedAt": "2026-10-16T19:01:17.000Z",
-      "score": 604,
+      "score": 605,
       "scoreLabel": "points",
       "meta": {
         "comments": 136
@@ -312,21 +316,17 @@
       "image": null
     },
     {
-      "id": "verge:https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-      "source": "verge",
-      "title": "Websites are closing their doors to AI agents",
-      "blurb": "Autonomous agents are the hottest thing in AI. OpenAI, Meta, Google, Instinct, and others promise their agents can scour the internet on your behalf, doing anything from booking a dinner…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK414_AI_CVIRGINIA_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-      "publishedAt": "2026-10-17T13:00:00.000Z",
+      "id": "tc:https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "source": "tc",
+      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+      "blurb": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/replit-ceo-masad.jpg?resize=1200,800",
+      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "publishedAt": "2026-10-17T18:48:08.000Z",
       "score": null,
       "scoreLabel": null,
-      "meta": {
-        "category": "AI"
-      },
-      "alsoOn": [
-        "hn:50141657"
-      ]
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "hn:50133231",
@@ -546,19 +546,6 @@
       "alsoOn": []
     },
     {
-      "id": "ars:https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/",
-      "source": "ars",
-      "title": "Targeted ads delivered 0-click exploits to install mercenary malware",
-      "blurb": "The incident is likely 1st confirmation of mercenary spyware delivered by targeted ads.",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security-1.jpg",
-      "url": "https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/",
-      "publishedAt": "2026-10-15T20:32:41.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hn:50122112",
       "source": "hn",
       "title": "Anthropic assigned highest junk credit rating in June",
@@ -572,6 +559,19 @@
       },
       "alsoOn": [],
       "image": null
+    },
+    {
+      "id": "ars:https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/",
+      "source": "ars",
+      "title": "Targeted ads delivered 0-click exploits to install mercenary malware",
+      "blurb": "The incident is likely 1st confirmation of mercenary spyware delivered by targeted ads.",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security-1.jpg",
+      "url": "https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/",
+      "publishedAt": "2026-10-15T20:32:41.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "mit:https://news.mit.edu/2026/state-of-supply-chain-sustainability-report-1015",
@@ -924,6 +924,21 @@
       "alsoOn": []
     },
     {
+      "id": "hn:50119991",
+      "source": "hn",
+      "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
+      "blurb": "Core devs revert up to 10 features, push release to November, and blame better tooling rather than vibe coding",
+      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+      "publishedAt": "2026-10-16T15:55:40.000Z",
+      "score": 215,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 91
+      },
+      "alsoOn": [],
+      "image": "https://image.theregister.com/228745.jpg?imageId=228745&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
+    },
+    {
       "id": "nvidia:https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
       "source": "nvidia",
       "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
@@ -997,21 +1012,6 @@
       "image": null
     },
     {
-      "id": "hn:50119991",
-      "source": "hn",
-      "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
-      "blurb": "Core devs revert up to 10 features, push release to November, and blame better tooling rather than vibe coding",
-      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
-      "publishedAt": "2026-10-16T15:55:40.000Z",
-      "score": 215,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 91
-      },
-      "alsoOn": [],
-      "image": "https://image.theregister.com/228745.jpg?imageId=228745&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
-    },
-    {
       "id": "gh:LiCinCan/blender-ai-mcp-addon",
       "source": "gh",
       "title": "LiCinCan/blender-ai-mcp-addon",
@@ -1019,7 +1019,7 @@
       "image": "https://opengraph.githubassets.com/1/LiCinCan/blender-ai-mcp-addon",
       "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
       "publishedAt": "2026-10-15T22:30:47.000Z",
-      "score": 750,
+      "score": 751,
       "scoreLabel": "stars",
       "meta": {
         "repo": "LiCinCan/blender-ai-mcp-addon",
@@ -1302,7 +1302,7 @@
       "title": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "publishedAt": "2026-10-14T12:00:13.000Z",
-      "score": 757,
+      "score": 759,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 338036,
@@ -1333,7 +1333,7 @@
       "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "publishedAt": "2026-10-07T07:07:30.000Z",
-      "score": 962,
+      "score": 963,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 57935,
@@ -1342,6 +1342,21 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/openbmb/MiniCPM-V-4.7-35B-A3B.png",
       "blurb": "An MoE model can have far more total parameters than it activates for a single token, but its on-device storage requirements are not limited to those active parameters. Different tokens can…"
+    },
+    {
+      "id": "mit:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
+      "source": "mit",
+      "title": "Researchers improve weather forecasts looking two to six weeks out",
+      "blurb": "A new machine-learning approach broke records for weather forecasting for an important time frame in emergency planning.",
+      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202610/MIT-Weather-Forecasting-01.gif?itok=n6-zCHF4",
+      "url": "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
+      "publishedAt": "2026-10-14T15:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "Research"
+      },
+      "alsoOn": []
     },
     {
       "id": "arxiv:2610.22331v1",
@@ -1376,67 +1391,6 @@
       "alsoOn": []
     },
     {
-      "id": "mit:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
-      "source": "mit",
-      "title": "Researchers improve weather forecasts looking two to six weeks out",
-      "blurb": "A new machine-learning approach broke records for weather forecasting for an important time frame in emergency planning.",
-      "image": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202610/MIT-Weather-Forecasting-01.gif?itok=n6-zCHF4",
-      "url": "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
-      "publishedAt": "2026-10-14T15:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "Research"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "papers:2610.21261",
-      "source": "papers",
-      "title": "Behavioral Compositionality of Sparse Autoencoder Representations",
-      "blurb": "Sparse autoencoders (SAEs) represent model activations with sparse, linearly decoded features, but the downstream effects of those features need not compose additively. We introduce SAE Additivity Residuals (SAR), which measure the behavioral variation left unexplained above a chosen interaction order. Under independent feature subset sampling, population SAR is exactly the normalized energy of interactions above that order and bounds coalition ordering error for the optimal low order approximation. To distinguish compositionality associated with the SAE representation from that induced by downstream computation, we compare learned SAE coordinates with sum preserving random rotations of the same selected subspace and find lower first order residuals for the learned coordinates across all 18 model and behavior settings. The coordinates are nevertheless not fully additive: pairwise terms improve held out coalition ordering in every setting and outperform parameter matched models using randomly selected third order terms. In a combined steering experiment, pairwise modeling raises rank fidelity from 0.5874 to 0.7790 and reduces ordering error from 0.1444 to 0.0606. Together, these results show that SAE coordinates support comparatively compositional behavioral descriptions while faithful joint explanations and interventions still require interactions beyond individual feature effects. Code is available at",
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.21261.png",
-      "url": "https://huggingface.co/papers/2610.21261",
-      "publishedAt": "2026-10-14T20:00:00.000Z",
-      "score": 106,
-      "scoreLabel": "upvotes",
-      "meta": {
-        "comments": 2
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "gh:zhuyansen/new-term-radar",
-      "source": "gh",
-      "title": "zhuyansen/new-term-radar",
-      "blurb": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
-      "image": "https://opengraph.githubassets.com/1/zhuyansen/new-term-radar",
-      "url": "https://github.com/zhuyansen/new-term-radar",
-      "publishedAt": "2026-10-12T07:11:01.000Z",
-      "score": 1103,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "zhuyansen/new-term-radar",
-        "language": "Python"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "papers:2610.21439",
-      "source": "papers",
-      "title": "Each Reward to Its Relevant Tokens: Reward-Specific Token-Level Credit Assignment for Multi-Reward RL",
-      "blurb": "Language models are increasingly trained against several verifiable rewards at once, such as the correctness and the format of a tool call, or the individual constraints of a complex instruction. Reward-decoupled normalization (GDPO) normalizes each reward separately so that different reward combinations keep distinct advantages, but it still spreads every reward's advantage evenly over the whole response, although each verifier checks only a few positions. We propose MRTPO, which assigns the advantage of each reward to the tokens relevant to it, using the information its verifier checks, without auxiliary models or token-level annotations. For each reward, the policy replays its own response with and without that reward's verifier information, and the per-token Jensen-Shannon distance between the two next-token distributions measures each token's relevance and reassigns the advantage. On text-to-SQL, multi-constraint instruction following and tool calling, MRTPO converges faster and achieves better performance than the compared methods.",
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.21439.png",
-      "url": "https://huggingface.co/papers/2610.21439",
-      "publishedAt": "2026-10-15T03:47:04.000Z",
-      "score": 56,
-      "scoreLabel": "upvotes",
-      "meta": {
-        "comments": 2
-      },
-      "alsoOn": []
-    },
-    {
       "id": "nvidia:https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update/",
       "source": "nvidia",
       "title": "Dial Up the Cloud: NVIDIA DLSS 4.5 Controls Arrive on GeForce NOW",
@@ -1463,6 +1417,52 @@
       },
       "alsoOn": [],
       "image": "https://www.currentaffairs.org/hubfs/smash1.png"
+    },
+    {
+      "id": "papers:2610.21261",
+      "source": "papers",
+      "title": "Behavioral Compositionality of Sparse Autoencoder Representations",
+      "blurb": "Sparse autoencoders (SAEs) represent model activations with sparse, linearly decoded features, but the downstream effects of those features need not compose additively. We introduce SAE Additivity Residuals (SAR), which measure the behavioral variation left unexplained above a chosen interaction order. Under independent feature subset sampling, population SAR is exactly the normalized energy of interactions above that order and bounds coalition ordering error for the optimal low order approximation. To distinguish compositionality associated with the SAE representation from that induced by downstream computation, we compare learned SAE coordinates with sum preserving random rotations of the same selected subspace and find lower first order residuals for the learned coordinates across all 18 model and behavior settings. The coordinates are nevertheless not fully additive: pairwise terms improve held out coalition ordering in every setting and outperform parameter matched models using randomly selected third order terms. In a combined steering experiment, pairwise modeling raises rank fidelity from 0.5874 to 0.7790 and reduces ordering error from 0.1444 to 0.0606. Together, these results show that SAE coordinates support comparatively compositional behavioral descriptions while faithful joint explanations and interventions still require interactions beyond individual feature effects. Code is available at",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.21261.png",
+      "url": "https://huggingface.co/papers/2610.21261",
+      "publishedAt": "2026-10-14T20:00:00.000Z",
+      "score": 106,
+      "scoreLabel": "upvotes",
+      "meta": {
+        "comments": 2
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:zhuyansen/new-term-radar",
+      "source": "gh",
+      "title": "zhuyansen/new-term-radar",
+      "blurb": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
+      "image": "https://opengraph.githubassets.com/1/zhuyansen/new-term-radar",
+      "url": "https://github.com/zhuyansen/new-term-radar",
+      "publishedAt": "2026-10-12T07:11:01.000Z",
+      "score": 1104,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "zhuyansen/new-term-radar",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "papers:2610.21439",
+      "source": "papers",
+      "title": "Each Reward to Its Relevant Tokens: Reward-Specific Token-Level Credit Assignment for Multi-Reward RL",
+      "blurb": "Language models are increasingly trained against several verifiable rewards at once, such as the correctness and the format of a tool call, or the individual constraints of a complex instruction. Reward-decoupled normalization (GDPO) normalizes each reward separately so that different reward combinations keep distinct advantages, but it still spreads every reward's advantage evenly over the whole response, although each verifier checks only a few positions. We propose MRTPO, which assigns the advantage of each reward to the tokens relevant to it, using the information its verifier checks, without auxiliary models or token-level annotations. For each reward, the policy replays its own response with and without that reward's verifier information, and the per-token Jensen-Shannon distance between the two next-token distributions measures each token's relevance and reassigns the advantage. On text-to-SQL, multi-constraint instruction following and tool calling, MRTPO converges faster and achieves better performance than the compared methods.",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.21439.png",
+      "url": "https://huggingface.co/papers/2610.21439",
+      "publishedAt": "2026-10-15T03:47:04.000Z",
+      "score": 56,
+      "scoreLabel": "upvotes",
+      "meta": {
+        "comments": 2
+      },
+      "alsoOn": []
     },
     {
       "id": "openai:https://openai.com/index/sullivan-cromwell",
@@ -1838,7 +1838,7 @@
       "title": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "publishedAt": "2026-10-01T04:34:57.000Z",
-      "score": 669,
+      "score": 671,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 9620,
