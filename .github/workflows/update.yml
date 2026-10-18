@@ -1,15 +1,16 @@
 name: Refresh dispatches
 
-# Rebuilds data/news.json every hour and commits it. The page itself is static,
-# so this is the only moving part: no server, no database, no client-side key.
+# Rebuilds data/news.json every hour, commits it, and publishes the page. The page
+# itself is static, so this is the only moving part: no server, no database, no
+# client-side API key.
 
 on:
   schedule:
     # Hourly, at :07 past. GitHub starts scheduled runs a few minutes late under
     # load, and the page does not depend on the exact minute.
     - cron: "7 * * * *"
-  # Runs on code changes only. Data commits touch data/news.json alone, so they
-  # do not re-trigger this workflow and cannot start a refresh loop.
+  # Code changes re-run the pipeline immediately. Data commits touch
+  # data/news.json alone, so they never re-trigger this workflow.
   push:
     branches: [main]
     paths:
@@ -22,15 +23,15 @@ on:
 
 permissions:
   contents: write
-  pages: write
 
-# A refresh is quick, but never let two of them race for the same file.
+# Never let two refreshes race for the same file.
 concurrency:
   group: refresh-dispatches
   cancel-in-progress: false
 
 jobs:
   refresh:
+    name: Rebuild the data
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -41,29 +42,6 @@ jobs:
         with:
           node-version: "20"
 
-      # Serves the site from the branch rather than from a build artifact, so the
-      # hourly data commit is all it takes to update the live page.
-      - name: Enable GitHub Pages if it is not on yet
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO: ${{ github.repository }}
-        run: |
-          if gh api "/repos/$REPO/pages" >/dev/null 2>&1; then
-            echo "Pages is already enabled."
-            exit 0
-          fi
-
-          if gh api -X POST "/repos/$REPO/pages" \
-               -H "Accept: application/vnd.github+json" \
-               --input - <<'BODY'
-          { "build_type": "legacy", "source": { "branch": "main", "path": "/" } }
-          BODY
-          then
-            echo "Enabled Pages, served from main / (root)."
-          else
-            echo "::warning title=Enable Pages manually::Run could not enable Pages. In Settings > Pages choose 'Deploy from a branch', branch main, folder / (root). Nothing else needs doing."
-          fi
-
       # No install step on purpose: the collector is zero-dependency and Node 20
       # already ships fetch, so there is no lockfile and nothing to cache.
       - name: Collect dispatches
@@ -72,8 +50,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/fetch-news.mjs --out data/news.json
 
-      # Runs only if collection succeeded. If every source failed, the step above
-      # exits 1, this is skipped, and the last good data stays live and unchanged.
+      # Skipped when collection failed: if every source is down the step above
+      # exits 1, so the last good data stays live and unchanged.
       - name: Commit if the data changed
         run: |
           if git diff --quiet -- data/news.json; then
@@ -86,3 +64,46 @@ jobs:
           git add data/news.json
           git commit -m "data: refresh dispatches ($(date -u +'%Y-%m-%d %H:%M UTC'))"
           git push origin HEAD:main
+
+  publish:
+    name: Publish the page
+    needs: refresh
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+
+    steps:
+      # main, not the triggering commit: the refresh job may have just pushed data.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/configure-pages@v5
+
+      # Only the four files the page needs plus its data, so the published site
+      # never carries the repo's docs, scripts or git metadata.
+      - name: Assemble the site
+        run: |
+          mkdir -p _site
+          cp index.html styles.css app.js _site/
+          cp -r data _site/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy
+        id: deploy
+        uses: actions/deploy-pages@v4
