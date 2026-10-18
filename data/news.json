@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T16:40:17Z",
+  "generatedAt": "2026-10-18T17:04:35Z",
   "sources": [
     {
       "id": "hn",
@@ -137,19 +137,49 @@
   ],
   "items": [
     {
-      "id": "hn:50137950",
+      "id": "tc:https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "source": "tc",
+      "title": "Disney agrees to hire the majority of Character.AI’s workforce",
+      "blurb": "After chatbot startup Character.AI filed for bankruptcy earlier this week, many of its employees will have the opportunity to take jobs at Disney. Character.AI’s former CEO Karandeep Anand…",
+      "image": "https://techcrunch.com/wp-content/uploads/2024/01/character-ai-alexa.jpg?resize=1200,675",
+      "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "publishedAt": "2026-10-18T16:30:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50141657",
       "source": "hn",
-      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
-      "blurb": "FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it'll throw up a questionnaire that checks if you understand how the code you're pushing…",
-      "url": "https://sphinx-six-theta.vercel.app/",
-      "publishedAt": "2026-10-18T04:33:49.000Z",
-      "score": 209,
+      "title": "Websites are closing their doors to AI agents",
+      "blurb": "Online roadblocks are undermining the narrative behind AI agents.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "publishedAt": "2026-10-18T14:58:10.000Z",
+      "score": 96,
       "scoreLabel": "points",
       "meta": {
-        "comments": 68
+        "comments": 74
+      },
+      "alsoOn": [
+        "verge:https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+      ],
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK414_AI_CVIRGINIA_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+    },
+    {
+      "id": "hn:50141429",
+      "source": "hn",
+      "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
+      "blurb": "Would this be enough to keep an AI model from going out of control?",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+      "publishedAt": "2026-10-18T14:30:27.000Z",
+      "score": 106,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 113
       },
       "alsoOn": [],
-      "image": null
+      "image": "https://cdn.mos.cms.futurecdn.net/SVPa8KkaDwkeyAtLnMhyKW-1920-80.png"
     },
     {
       "id": "tc:https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
@@ -165,49 +195,19 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50141429",
+      "id": "hn:50137950",
       "source": "hn",
-      "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
-      "blurb": "Would this be enough to keep an AI model from going out of control?",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
-      "publishedAt": "2026-10-18T14:30:27.000Z",
-      "score": 89,
+      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+      "blurb": "FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it'll throw up a questionnaire that checks if you understand how the code you're pushing…",
+      "url": "https://sphinx-six-theta.vercel.app/",
+      "publishedAt": "2026-10-18T04:33:49.000Z",
+      "score": 210,
       "scoreLabel": "points",
       "meta": {
-        "comments": 93
+        "comments": 69
       },
       "alsoOn": [],
-      "image": "https://cdn.mos.cms.futurecdn.net/SVPa8KkaDwkeyAtLnMhyKW-1920-80.png"
-    },
-    {
-      "id": "tc:https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
-      "source": "tc",
-      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
-      "blurb": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2278736523.jpeg?resize=1200,798",
-      "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
-      "publishedAt": "2026-10-17T20:21:19.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "hn:50141657",
-      "source": "hn",
-      "title": "Websites are closing their doors to AI agents",
-      "blurb": "Online roadblocks are undermining the narrative behind AI agents.",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-      "publishedAt": "2026-10-18T14:58:10.000Z",
-      "score": 81,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 57
-      },
-      "alsoOn": [
-        "verge:https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
-      ],
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK414_AI_CVIRGINIA_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+      "image": null
     },
     {
       "id": "hn:50129045",
@@ -216,29 +216,16 @@
       "blurb": null,
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "publishedAt": "2026-10-17T08:21:25.000Z",
-      "score": 921,
+      "score": 923,
       "scoreLabel": "points",
       "meta": {
-        "comments": 682
+        "comments": 683
       },
       "alsoOn": [
         "hn:50129121",
         "hf:deepseek-ai/DeepSeek-V4.1-Flash-1017"
       ],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/deepseek-ai/DeepSeek-V4.1-Flash-1017.png"
-    },
-    {
-      "id": "ars:https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-      "source": "ars",
-      "title": "OpenAI models hacked a crypto wallet and breached more websites",
-      "blurb": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-1152x648.jpg",
-      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-      "publishedAt": "2026-10-16T20:59:01.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
     },
     {
       "id": "mit:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
@@ -253,6 +240,19 @@
       "meta": {
         "category": "Research"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "ars:https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+      "source": "ars",
+      "title": "OpenAI models hacked a crypto wallet and breached more websites",
+      "blurb": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-1152x648.jpg",
+      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+      "publishedAt": "2026-10-16T20:59:01.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -286,13 +286,26 @@
       "alsoOn": []
     },
     {
+      "id": "tc:https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+      "source": "tc",
+      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+      "blurb": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2278736523.jpeg?resize=1200,798",
+      "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+      "publishedAt": "2026-10-17T20:21:19.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "hn:50122878",
       "source": "hn",
       "title": "You could have invented transformers from memory",
       "blurb": null,
       "url": "https://alexwang.ai/posts/associative-memory/",
       "publishedAt": "2026-10-16T19:01:17.000Z",
-      "score": 608,
+      "score": 611,
       "scoreLabel": "points",
       "meta": {
         "comments": 136
@@ -310,53 +323,10 @@
       "score": 611,
       "scoreLabel": "points",
       "meta": {
-        "comments": 558
+        "comments": 559
       },
       "alsoOn": [],
       "image": null
-    },
-    {
-      "id": "tc:https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "source": "tc",
-      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
-      "blurb": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/replit-ceo-masad.jpg?resize=1200,800",
-      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "publishedAt": "2026-10-17T18:48:08.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "hn:50133231",
-      "source": "hn",
-      "title": "Codex Desktop continuously generates Crashpad pending dumps",
-      "blurb": "Summary Codex Desktop is continuously adding paired .dmp and _sidecar.json files under: ~/Library/Application Support/com.openai.codex/web/Crashpad/pending On my machine this directory grew…",
-      "url": "https://github.com/openai/codex/issues/25921",
-      "publishedAt": "2026-10-17T17:45:08.000Z",
-      "score": 159,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 80
-      },
-      "alsoOn": [],
-      "image": "https://opengraph.githubassets.com/ca36cd0881ef0455269ae28027ff6686ed2bae99e1f24dc416de1a72bc590b3c/openai/codex/issues/25921"
-    },
-    {
-      "id": "hn:50132278",
-      "source": "hn",
-      "title": "Amazon uses AI to monitor union risk in UK warehouses",
-      "blurb": "Internal documents suggest tech giant collects ‘hundreds of data points’ for ‘union-busting’ AI model",
-      "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
-      "publishedAt": "2026-10-17T16:04:23.000Z",
-      "score": 169,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 59
-      },
-      "alsoOn": [],
-      "image": "https://storage.ghost.io/c/3f/80/3f804bea-4b2d-4ddf-9ff0-6ec7d0afa5fa/content/images/size/w1200/2026/10/Amazon-AI-question-openDemocracy-edit.jpg"
     },
     {
       "id": "simonw:https://simonwillison.net/2026/Oct/17/web-edit/",
@@ -372,6 +342,64 @@
         "category": "projects"
       },
       "alsoOn": []
+    },
+    {
+      "id": "hn:50140462",
+      "source": "hn",
+      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
+      "blurb": "Six AI assistants pursued an impossible £350 train refund in a simulated world, escalating to government officials, legal clinics and bank chargebacks.",
+      "url": "https://www.vals.ai/blogs/impossible-refund",
+      "publishedAt": "2026-10-18T12:22:58.000Z",
+      "score": 43,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 21
+      },
+      "alsoOn": [],
+      "image": "https://www.vals.ai/blogs/2026-10-15-impossible-refund/hero-vals.webp"
+    },
+    {
+      "id": "hn:50133231",
+      "source": "hn",
+      "title": "Codex Desktop continuously generates Crashpad pending dumps",
+      "blurb": "Summary Codex Desktop is continuously adding paired .dmp and _sidecar.json files under: ~/Library/Application Support/com.openai.codex/web/Crashpad/pending On my machine this directory grew…",
+      "url": "https://github.com/openai/codex/issues/25921",
+      "publishedAt": "2026-10-17T17:45:08.000Z",
+      "score": 160,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 80
+      },
+      "alsoOn": [],
+      "image": "https://opengraph.githubassets.com/ca36cd0881ef0455269ae28027ff6686ed2bae99e1f24dc416de1a72bc590b3c/openai/codex/issues/25921"
+    },
+    {
+      "id": "tc:https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "source": "tc",
+      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+      "blurb": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/replit-ceo-masad.jpg?resize=1200,800",
+      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "publishedAt": "2026-10-17T18:48:08.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50132278",
+      "source": "hn",
+      "title": "Amazon uses AI to monitor union risk in UK warehouses",
+      "blurb": "Internal documents suggest tech giant collects ‘hundreds of data points’ for ‘union-busting’ AI model",
+      "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
+      "publishedAt": "2026-10-17T16:04:23.000Z",
+      "score": 169,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 59
+      },
+      "alsoOn": [],
+      "image": "https://storage.ghost.io/c/3f/80/3f804bea-4b2d-4ddf-9ff0-6ec7d0afa5fa/content/images/size/w1200/2026/10/Amazon-AI-question-openDemocracy-edit.jpg"
     },
     {
       "id": "openai:https://openai.com/index/itau-generative-ai",
@@ -520,19 +548,6 @@
       ]
     },
     {
-      "id": "tc:https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-      "source": "tc",
-      "title": "India becomes the latest country to report rogue AI agent activity",
-      "blurb": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/india-cyber-attack.jpg?w=612",
-      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-      "publishedAt": "2026-10-16T17:52:24.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "msr:https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/",
       "source": "msr",
       "title": "Proof-based general-purpose computing with Magnetar",
@@ -552,7 +567,7 @@
       "blurb": null,
       "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
       "publishedAt": "2026-10-16T18:11:42.000Z",
-      "score": 293,
+      "score": 294,
       "scoreLabel": "points",
       "meta": {
         "comments": 87
@@ -707,6 +722,19 @@
       "alsoOn": []
     },
     {
+      "id": "tc:https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+      "source": "tc",
+      "title": "India becomes the latest country to report rogue AI agent activity",
+      "blurb": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/india-cyber-attack.jpg?w=612",
+      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+      "publishedAt": "2026-10-16T17:52:24.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "nvidia:https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/",
       "source": "nvidia",
       "title": "Be There for the Beginning: Celebrate the Launch of NVIDIA RTX Spark",
@@ -732,19 +760,6 @@
       "meta": {
         "comments": 2
       },
-      "alsoOn": []
-    },
-    {
-      "id": "tc:https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
-      "source": "tc",
-      "title": "Physical AI is more than robots, says the Nvidia veteran now investing in it",
-      "blurb": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like…",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Amulya-Vishwanath-Techable-VC.jpg?resize=960,1200",
-      "url": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
-      "publishedAt": "2026-10-16T16:30:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -792,21 +807,6 @@
       "alsoOn": []
     },
     {
-      "id": "papers:2610.22200",
-      "source": "papers",
-      "title": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
-      "blurb": "Computer use has reached a turning point: the focus is expanding from GUI-only interaction to systems that complete tasks on users' computers through visual and programmatic interfaces. We define a generalist computer-use agent (GCUA) as a system in which the model chooses how to observe, act, and organize its work across visual and programmatic interfaces. Yet frontier implementations, such as GPT-6 Astra's computer-use system, remain largely closed, limiting systematic study of their design. We introduce Open Generalist CUA (OpenGCUA), an ongoing project to develop and open the full stack for GCUAs with the community. This report presents the first release of OpenGCUA. Code execution is a key feature of our agent design: it lets intermediate results determine subsequent operations and enables models to apply their existing programming capabilities directly to computer interaction. We also propose harness-to-model decision transfer, moving selected observations and task-state decisions from fixed harness rules to the model. On OSWorld-v2, our full configuration improves task scores across all eight evaluated models, including GPT-6 Astra and Claude Opus 5, raising mean partial score by +19.6 points and reducing reported steps per task by an average of 53.0% relative to batched GUI-only execution. We release our implementation and prompts, evaluation trajectories from all eight models, and preliminary versions of a real-device harness and a cross-device SDK. The harness addresses real-device challenges not fully captured by benchmarks, while the SDK provides a common programming interface across computers, mobiles and browsers. Across four real macOS tasks under our real-device harness, selected Qwen3.8-Max runs use 19.4 times as many reported reasoning tokens as GPT-6 Astra, highlighting substantial differences between models in real-device execution efficiency.",
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.22200.png",
-      "url": "https://huggingface.co/papers/2610.22200",
-      "publishedAt": "2026-10-14T20:00:00.000Z",
-      "score": 316,
-      "scoreLabel": "upvotes",
-      "meta": {
-        "comments": 4
-      },
-      "alsoOn": []
-    },
-    {
       "id": "googleai:https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
       "source": "googleai",
       "title": "Gemini 4 Argon: Built to solve your hardest problems",
@@ -824,17 +824,17 @@
       ]
     },
     {
-      "id": "verge:https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
-      "source": "verge",
-      "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
-      "blurb": "Nvidia's RTX Spark N1X processor is finally here, and we've been collectively testing a small fortune's worth of powerful laptops sporting this new \"superchip.\" RTX Spark is designed to be…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268814_Nvidia_RTX_Spark_laptops_Asus_HP_Lenovo_ADiBenedetto_0001.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-      "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
-      "publishedAt": "2026-10-16T15:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
+      "id": "papers:2610.22200",
+      "source": "papers",
+      "title": "OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use",
+      "blurb": "Computer use has reached a turning point: the focus is expanding from GUI-only interaction to systems that complete tasks on users' computers through visual and programmatic interfaces. We define a generalist computer-use agent (GCUA) as a system in which the model chooses how to observe, act, and organize its work across visual and programmatic interfaces. Yet frontier implementations, such as GPT-6 Astra's computer-use system, remain largely closed, limiting systematic study of their design. We introduce Open Generalist CUA (OpenGCUA), an ongoing project to develop and open the full stack for GCUAs with the community. This report presents the first release of OpenGCUA. Code execution is a key feature of our agent design: it lets intermediate results determine subsequent operations and enables models to apply their existing programming capabilities directly to computer interaction. We also propose harness-to-model decision transfer, moving selected observations and task-state decisions from fixed harness rules to the model. On OSWorld-v2, our full configuration improves task scores across all eight evaluated models, including GPT-6 Astra and Claude Opus 5, raising mean partial score by +19.6 points and reducing reported steps per task by an average of 53.0% relative to batched GUI-only execution. We release our implementation and prompts, evaluation trajectories from all eight models, and preliminary versions of a real-device harness and a cross-device SDK. The harness addresses real-device challenges not fully captured by benchmarks, while the SDK provides a common programming interface across computers, mobiles and browsers. Across four real macOS tasks under our real-device harness, selected Qwen3.8-Max runs use 19.4 times as many reported reasoning tokens as GPT-6 Astra, highlighting substantial differences between models in real-device execution efficiency.",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.22200.png",
+      "url": "https://huggingface.co/papers/2610.22200",
+      "publishedAt": "2026-10-14T20:00:00.000Z",
+      "score": 316,
+      "scoreLabel": "upvotes",
       "meta": {
-        "category": "AI"
+        "comments": 4
       },
       "alsoOn": []
     },
@@ -852,19 +852,19 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50140462",
-      "source": "hn",
-      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
-      "blurb": "Six AI assistants pursued an impossible £350 train refund in a simulated world, escalating to government officials, legal clinics and bank chargebacks.",
-      "url": "https://www.vals.ai/blogs/impossible-refund",
-      "publishedAt": "2026-10-18T12:22:58.000Z",
-      "score": 28,
-      "scoreLabel": "points",
+      "id": "verge:https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+      "source": "verge",
+      "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
+      "blurb": "Nvidia's RTX Spark N1X processor is finally here, and we've been collectively testing a small fortune's worth of powerful laptops sporting this new \"superchip.\" RTX Spark is designed to be…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268814_Nvidia_RTX_Spark_laptops_Asus_HP_Lenovo_ADiBenedetto_0001.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+      "publishedAt": "2026-10-16T15:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
       "meta": {
-        "comments": 11
+        "category": "AI"
       },
-      "alsoOn": [],
-      "image": "https://www.vals.ai/blogs/2026-10-15-impossible-refund/hero-vals.webp"
+      "alsoOn": []
     },
     {
       "id": "openai:https://openai.com/index/introducing-the-rosalind-academic-plan",
@@ -952,6 +952,19 @@
       "alsoOn": []
     },
     {
+      "id": "nvidia:https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "source": "nvidia",
+      "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+      "blurb": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it…",
+      "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/FIRST-agentic-ai-nemotron-3.5-super-vl-blog-1920x1080-5783765.jpeg",
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "publishedAt": "2026-10-15T15:00:24.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "hn:50119991",
       "source": "hn",
       "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
@@ -965,19 +978,6 @@
       },
       "alsoOn": [],
       "image": "https://image.theregister.com/228745.jpg?imageId=228745&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
-    },
-    {
-      "id": "nvidia:https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-      "source": "nvidia",
-      "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
-      "blurb": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it…",
-      "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/FIRST-agentic-ai-nemotron-3.5-super-vl-blog-1920x1080-5783765.jpeg",
-      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-      "publishedAt": "2026-10-15T15:00:24.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
     },
     {
       "id": "gh:LosaLosSantos/aurelio-finance",
@@ -1001,7 +1001,7 @@
       "title": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "publishedAt": "2026-09-30T21:15:35.000Z",
-      "score": 2208,
+      "score": 2209,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 21094,
@@ -1027,12 +1027,12 @@
       "image": null
     },
     {
-      "id": "tc:https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
+      "id": "tc:https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
       "source": "tc",
-      "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
+      "title": "Physical AI is more than robots, says the Nvidia veteran now investing in it",
       "blurb": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like…",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/06/unitree-robots.jpg?resize=1200,800",
-      "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Amulya-Vishwanath-Techable-VC.jpg?resize=960,1200",
+      "url": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
       "publishedAt": "2026-10-16T16:30:00.000Z",
       "score": null,
       "scoreLabel": null,
@@ -1047,7 +1047,7 @@
       "image": "https://opengraph.githubassets.com/1/LiCinCan/blender-ai-mcp-addon",
       "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
       "publishedAt": "2026-10-15T22:30:47.000Z",
-      "score": 763,
+      "score": 773,
       "scoreLabel": "stars",
       "meta": {
         "repo": "LiCinCan/blender-ai-mcp-addon",
@@ -1071,22 +1071,6 @@
       "image": null
     },
     {
-      "id": "arxiv:2610.22336v1",
-      "source": "arxiv",
-      "title": "Robust Reinforcement Learning for Dynamic Treatment Regimes under Model and Measurement Uncertainty",
-      "blurb": "We develop a robust reinforcement learning (RL) framework for learning adaptive treatment policies that generalize across patients and remain reliable under errors in the measured biomarker…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22336v1",
-      "publishedAt": "2026-10-15T17:54:13.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.LG",
-        "authors": 5
-      },
-      "alsoOn": []
-    },
-    {
       "id": "gh:onehumanbeing/esp32-iphone-agent",
       "source": "gh",
       "title": "onehumanbeing/esp32-iphone-agent",
@@ -1099,6 +1083,22 @@
       "meta": {
         "repo": "onehumanbeing/esp32-iphone-agent",
         "language": "C"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22336v1",
+      "source": "arxiv",
+      "title": "Robust Reinforcement Learning for Dynamic Treatment Regimes under Model and Measurement Uncertainty",
+      "blurb": "We develop a robust reinforcement learning (RL) framework for learning adaptive treatment policies that generalize across patients and remain reliable under errors in the measured biomarker…",
+      "image": null,
+      "url": "http://arxiv.org/abs/2610.22336v1",
+      "publishedAt": "2026-10-15T17:54:13.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.LG",
+        "authors": 5
       },
       "alsoOn": []
     },
@@ -1148,19 +1148,6 @@
       "image": null
     },
     {
-      "id": "ars:https://arstechnica.com/security/2026/10/fridge-hack-costing-millions-and-sparking-fires-stemmed-from-poor-security/",
-      "source": "ars",
-      "title": "Fridge hack costing millions and sparking fires stemmed from poor security",
-      "blurb": "Incident hitting 700 supermarkets exploited outdated devices exposed to the Internet.",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/mass-fridge-hack-1024x648.jpg",
-      "url": "https://arstechnica.com/security/2026/10/fridge-hack-costing-millions-and-sparking-fires-stemmed-from-poor-security/",
-      "publishedAt": "2026-10-14T21:35:09.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "gh:deeplethe/solid-glass",
       "source": "gh",
       "title": "deeplethe/solid-glass",
@@ -1177,6 +1164,19 @@
       "alsoOn": []
     },
     {
+      "id": "ars:https://arstechnica.com/security/2026/10/fridge-hack-costing-millions-and-sparking-fires-stemmed-from-poor-security/",
+      "source": "ars",
+      "title": "Fridge hack costing millions and sparking fires stemmed from poor security",
+      "blurb": "Incident hitting 700 supermarkets exploited outdated devices exposed to the Internet.",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/mass-fridge-hack-1024x648.jpg",
+      "url": "https://arstechnica.com/security/2026/10/fridge-hack-costing-millions-and-sparking-fires-stemmed-from-poor-security/",
+      "publishedAt": "2026-10-14T21:35:09.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "openai:https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
       "source": "openai",
       "title": "Teaching students to think and learn through questions",
@@ -1187,22 +1187,6 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "arxiv:2610.22333v1",
-      "source": "arxiv",
-      "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
-      "blurb": "Large language models (LLMs) can often tell when they are being tested. This ability, known as evaluation awareness, can lead models to act more cautiously during safety evaluations than in…",
-      "image": null,
-      "url": "http://arxiv.org/abs/2610.22333v1",
-      "publishedAt": "2026-10-15T17:53:33.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.AI",
-        "authors": 9
-      },
       "alsoOn": []
     },
     {
@@ -1219,6 +1203,22 @@
       "alsoOn": [
         "hn:50123580"
       ]
+    },
+    {
+      "id": "arxiv:2610.22333v1",
+      "source": "arxiv",
+      "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
+      "blurb": "Large language models (LLMs) can often tell when they are being tested. This ability, known as evaluation awareness, can lead models to act more cautiously during safety evaluations than in…",
+      "image": null,
+      "url": "http://arxiv.org/abs/2610.22333v1",
+      "publishedAt": "2026-10-15T17:53:33.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.AI",
+        "authors": 9
+      },
+      "alsoOn": []
     },
     {
       "id": "hf:Qwen/Qwen-Image-2.1-Turbo",
@@ -1310,6 +1310,24 @@
       "alsoOn": []
     },
     {
+      "id": "hf:black-forest-labs/flux-3-image-klein-comfy",
+      "source": "hf",
+      "title": "black-forest-labs/flux-3-image-klein-comfy",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+      "publishedAt": "2026-10-14T12:00:13.000Z",
+      "score": 765,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 338036,
+        "task": "image-to-image"
+      },
+      "alsoOn": [
+        "hf:black-forest-labs/flux-3-image-klein"
+      ],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/black-forest-labs/flux-3-image-klein-comfy.png",
+      "blurb": null
+    },
+    {
       "id": "hn:50059115",
       "source": "hn",
       "title": "Muse Wonder",
@@ -1325,31 +1343,13 @@
       "image": "https://research.meta.ai/articles/introducing-muse-wonder/social/muse-wonder-social-v1.webp"
     },
     {
-      "id": "hf:black-forest-labs/flux-3-image-klein-comfy",
-      "source": "hf",
-      "title": "black-forest-labs/flux-3-image-klein-comfy",
-      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-      "publishedAt": "2026-10-14T12:00:13.000Z",
-      "score": 761,
-      "scoreLabel": "likes",
-      "meta": {
-        "downloads": 338036,
-        "task": "image-to-image"
-      },
-      "alsoOn": [
-        "hf:black-forest-labs/flux-3-image-klein"
-      ],
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/black-forest-labs/flux-3-image-klein-comfy.png",
-      "blurb": null
-    },
-    {
-      "id": "tc:https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+      "id": "tc:https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
       "source": "tc",
-      "title": "Elorian’s first AI model wants to reason with images, not just about them",
-      "blurb": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning…",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/image-1.png?resize=1200,675",
-      "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-      "publishedAt": "2026-10-16T16:01:37.000Z",
+      "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
+      "blurb": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like…",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/06/unitree-robots.jpg?resize=1200,800",
+      "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
+      "publishedAt": "2026-10-16T16:30:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -1361,7 +1361,7 @@
       "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "publishedAt": "2026-10-07T07:07:30.000Z",
-      "score": 966,
+      "score": 969,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 57935,
@@ -1370,6 +1370,22 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/openbmb/MiniCPM-V-4.7-35B-A3B.png",
       "blurb": "An MoE model can have far more total parameters than it activates for a single token, but its on-device storage requirements are not limited to those active parameters. Different tokens can…"
+    },
+    {
+      "id": "gh:trhhubsd/ARTEX",
+      "source": "gh",
+      "title": "trhhubsd/ARTEX",
+      "blurb": "ARTEX · AI autonomous penetration testing system (multi-agent LLM, Go + Next.js) · AI 自主渗透测试系统 · 百度 agent+ 攻防挑战赛冠军",
+      "image": "https://opengraph.githubassets.com/1/trhhubsd/ARTEX",
+      "url": "https://github.com/trhhubsd/ARTEX",
+      "publishedAt": "2026-10-08T20:35:22.000Z",
+      "score": 1242,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "trhhubsd/ARTEX",
+        "language": "Go"
+      },
+      "alsoOn": []
     },
     {
       "id": "mit:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
@@ -1387,19 +1403,16 @@
       "alsoOn": []
     },
     {
-      "id": "gh:trhhubsd/ARTEX",
-      "source": "gh",
-      "title": "trhhubsd/ARTEX",
-      "blurb": "ARTEX · AI autonomous penetration testing system (multi-agent LLM, Go + Next.js) · AI 自主渗透测试系统 · 百度 agent+ 攻防挑战赛冠军",
-      "image": "https://opengraph.githubassets.com/1/trhhubsd/ARTEX",
-      "url": "https://github.com/trhhubsd/ARTEX",
-      "publishedAt": "2026-10-08T20:35:22.000Z",
-      "score": 1240,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "trhhubsd/ARTEX",
-        "language": "Go"
-      },
+      "id": "nvidia:https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update/",
+      "source": "nvidia",
+      "title": "Dial Up the Cloud: NVIDIA DLSS 4.5 Controls Arrive on GeForce NOW",
+      "blurb": "Dial in the next gaming session this GFN Thursday. New NVIDIA DLSS 4.5 controls give GeForce NOW members more choice over how supported games look and perform in the cloud, even without the…",
+      "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/GFN_Thursday_October_15_2026.jpg",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update/",
+      "publishedAt": "2026-10-15T13:00:59.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -1416,19 +1429,6 @@
         "category": "cs.AI",
         "authors": 13
       },
-      "alsoOn": []
-    },
-    {
-      "id": "nvidia:https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update/",
-      "source": "nvidia",
-      "title": "Dial Up the Cloud: NVIDIA DLSS 4.5 Controls Arrive on GeForce NOW",
-      "blurb": "Dial in the next gaming session this GFN Thursday. New NVIDIA DLSS 4.5 controls give GeForce NOW members more choice over how supported games look and perform in the cloud, even without the…",
-      "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/GFN_Thursday_October_15_2026.jpg",
-      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update/",
-      "publishedAt": "2026-10-15T13:00:59.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -1467,7 +1467,7 @@
       "image": "https://opengraph.githubassets.com/1/zhuyansen/new-term-radar",
       "url": "https://github.com/zhuyansen/new-term-radar",
       "publishedAt": "2026-10-12T07:11:01.000Z",
-      "score": 1104,
+      "score": 1105,
       "scoreLabel": "stars",
       "meta": {
         "repo": "zhuyansen/new-term-radar",
@@ -1496,7 +1496,7 @@
       "title": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "publishedAt": "2026-10-02T05:54:02.000Z",
-      "score": 952,
+      "score": 953,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 19548,
@@ -1522,21 +1522,6 @@
       "alsoOn": []
     },
     {
-      "id": "simonw:https://simonwillison.net/2026/Oct/15/latex/",
-      "source": "simonw",
-      "title": "LaTeX renderer",
-      "blurb": "Tool: LaTeX renderer Inspired by Paul Ford and Aboard Foundary's new web app Tiny Little Office , which provides a suite of web app content editors (a Word Processor, Outliner, Presentation…",
-      "image": null,
-      "url": "https://simonwillison.net/2026/Oct/15/latex/",
-      "publishedAt": "2026-10-15T02:07:28.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "latex"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "hfblog:https://huggingface.co/blog/allenai/hiro-acev2",
       "source": "hfblog",
       "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
@@ -1550,17 +1535,17 @@
       "alsoOn": []
     },
     {
-      "id": "papers:2610.20939",
-      "source": "papers",
-      "title": "MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments",
-      "blurb": "Online reinforcement learning (RL) with verifiable rewards has driven rapid progress in mathematics, coding, and tool use, but scaling this success to GUI agents remains challenging due to the high cost of interactive environments and the scarcity of realistic training tasks. We introduce MAI-Gym, an open all-in-one platform that unifies GUI agent evaluation, data collection, and online RL training across mobile, computer, and web environments. Through a shared rollout pipeline, MAI-Gym ensures consistent agent behavior across evaluation and training, supports ten established benchmarks, and scales to 20,000 parallel environment instances. Beyond scalable infrastructure, MAI-Gym enables automated synthesis of diverse GUI applications and challenging tasks, including resettable mocked apps and coherent cross-app worlds with execution-validated task verifiers. Using MAI-Gym, we train MAI-Gym-9B, a unified 9B agent for mobile and computer use, achieving state-of-the-art performance among open GUI agents under 10B parameters: 78.4% on MobileWorld and 76.2% on OSWorld-Verified. Importantly, RL in a mocked train-ticketing app transfers to its real-world counterpart, improving task success on a phys- ical phone from 28.8% to 48.1%. We release the framework, synthesis skills, mocked apps, 2,000 verified tasks, and the model checkpoint to support repro- ducible research and further advances in scalable GUI agent training.",
-      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.20939.png",
-      "url": "https://huggingface.co/papers/2610.20939",
-      "publishedAt": "2026-10-13T20:00:00.000Z",
-      "score": 154,
-      "scoreLabel": "upvotes",
+      "id": "simonw:https://simonwillison.net/2026/Oct/15/latex/",
+      "source": "simonw",
+      "title": "LaTeX renderer",
+      "blurb": "Tool: LaTeX renderer Inspired by Paul Ford and Aboard Foundary's new web app Tiny Little Office , which provides a suite of web app content editors (a Word Processor, Outliner, Presentation…",
+      "image": null,
+      "url": "https://simonwillison.net/2026/Oct/15/latex/",
+      "publishedAt": "2026-10-15T02:07:28.000Z",
+      "score": null,
+      "scoreLabel": null,
       "meta": {
-        "comments": 2
+        "category": "latex"
       },
       "alsoOn": []
     },
@@ -1578,6 +1563,21 @@
       },
       "alsoOn": [],
       "image": null
+    },
+    {
+      "id": "papers:2610.20939",
+      "source": "papers",
+      "title": "MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments",
+      "blurb": "Online reinforcement learning (RL) with verifiable rewards has driven rapid progress in mathematics, coding, and tool use, but scaling this success to GUI agents remains challenging due to the high cost of interactive environments and the scarcity of realistic training tasks. We introduce MAI-Gym, an open all-in-one platform that unifies GUI agent evaluation, data collection, and online RL training across mobile, computer, and web environments. Through a shared rollout pipeline, MAI-Gym ensures consistent agent behavior across evaluation and training, supports ten established benchmarks, and scales to 20,000 parallel environment instances. Beyond scalable infrastructure, MAI-Gym enables automated synthesis of diverse GUI applications and challenging tasks, including resettable mocked apps and coherent cross-app worlds with execution-validated task verifiers. Using MAI-Gym, we train MAI-Gym-9B, a unified 9B agent for mobile and computer use, achieving state-of-the-art performance among open GUI agents under 10B parameters: 78.4% on MobileWorld and 76.2% on OSWorld-Verified. Importantly, RL in a mocked train-ticketing app transfers to its real-world counterpart, improving task success on a phys- ical phone from 28.8% to 48.1%. We release the framework, synthesis skills, mocked apps, 2,000 verified tasks, and the model checkpoint to support repro- ducible research and further advances in scalable GUI agent training.",
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.20939.png",
+      "url": "https://huggingface.co/papers/2610.20939",
+      "publishedAt": "2026-10-13T20:00:00.000Z",
+      "score": 154,
+      "scoreLabel": "upvotes",
+      "meta": {
+        "comments": 2
+      },
+      "alsoOn": []
     },
     {
       "id": "arxiv:2610.22330v1",
@@ -1741,6 +1741,19 @@
       "alsoOn": []
     },
     {
+      "id": "importai:https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/",
+      "source": "importai",
+      "title": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
+      "blurb": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now When…",
+      "image": "https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/10/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-icWL54.png?resize=150%2C150&ssl=1",
+      "url": "https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/",
+      "publishedAt": "2026-10-05T12:32:30.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "arxiv:2610.22327v1",
       "source": "arxiv",
       "title": "Twice Upon a Time: Complementary Representations for Time-Series Reasoning",
@@ -1757,26 +1770,13 @@
       "alsoOn": []
     },
     {
-      "id": "importai:https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/",
-      "source": "importai",
-      "title": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
-      "blurb": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now When…",
-      "image": "https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/10/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-icWL54.png?resize=150%2C150&ssl=1",
-      "url": "https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy/",
-      "publishedAt": "2026-10-05T12:32:30.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "tc:https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
+      "id": "tc:https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
       "source": "tc",
-      "title": "Jev is Vercel’s fastest-adopted AI model ever",
-      "blurb": "The data comes from Vercel's AI gateway, a unified API service similar to OpenRouter.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/04/vercel-2249343327-smaller.jpg?resize=1200,800",
-      "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
-      "publishedAt": "2026-10-16T15:33:49.000Z",
+      "title": "Elorian’s first AI model wants to reason with images, not just about them",
+      "blurb": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning…",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/image-1.png?resize=1200,675",
+      "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+      "publishedAt": "2026-10-16T16:01:37.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -1913,7 +1913,7 @@
       "image": "https://opengraph.githubassets.com/1/datalab-to/indra",
       "url": "https://github.com/datalab-to/indra",
       "publishedAt": "2026-10-13T11:07:11.000Z",
-      "score": 614,
+      "score": 615,
       "scoreLabel": "stars",
       "meta": {
         "repo": "datalab-to/indra",
@@ -1965,6 +1965,19 @@
       "alsoOn": []
     },
     {
+      "id": "interconnects:https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
+      "source": "interconnects",
+      "title": "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI",
+      "blurb": null,
+      "image": "https://substackcdn.com/image/fetch/$s_!7ykn!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F216367194%2Fb86a80c9-fb77-4876-8e6b-44c6c7eb26c0%2Ftranscoded-1790019629.png",
+      "url": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
+      "publishedAt": "2026-09-22T13:37:45.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "ars:https://arstechnica.com/information-technology/2026/10/topgolf-saved-over-11-3-million-after-leaving-vmware/",
       "source": "ars",
       "title": "Topgolf saved over $11.3 million after leaving VMware",
@@ -1983,7 +1996,7 @@
       "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
       "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
       "publishedAt": "2026-10-08T01:47:26.000Z",
-      "score": 537,
+      "score": 539,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 410558,
@@ -1992,19 +2005,6 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ConwayResearch/Underdog-Saluki-27B-1.0.png",
       "blurb": "Qwen3.8-27B in under 8 GB, tuned to keep tool calling intact. A standard GGUF for stock llama.cpp. Read more: underdog.ai/saluki"
-    },
-    {
-      "id": "interconnects:https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
-      "source": "interconnects",
-      "title": "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI",
-      "blurb": null,
-      "image": "https://substackcdn.com/image/fetch/$s_!7ykn!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F216367194%2Fb86a80c9-fb77-4876-8e6b-44c6c7eb26c0%2Ftranscoded-1790019629.png",
-      "url": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
-      "publishedAt": "2026-09-22T13:37:45.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
     },
     {
       "id": "arxiv:2610.22319v1",
@@ -2023,13 +2023,13 @@
       "alsoOn": []
     },
     {
-      "id": "tc:https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
+      "id": "tc:https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
       "source": "tc",
-      "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
-      "blurb": "Actor and angel investor Mark Wahlberg says he's OK with using AI in filmmaking, provided it's used \"to enhance what you're doing.\"",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/55591094982_b63d06fba8_o.jpg?resize=1200,800",
-      "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
-      "publishedAt": "2026-10-16T14:26:51.000Z",
+      "title": "Jev is Vercel’s fastest-adopted AI model ever",
+      "blurb": "The data comes from Vercel's AI gateway, a unified API service similar to OpenRouter.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/04/vercel-2249343327-smaller.jpg?resize=1200,800",
+      "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
+      "publishedAt": "2026-10-16T15:33:49.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2054,7 +2054,7 @@
       "title": "LiquidAI/LFM2.5-24B-A2B",
       "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
       "publishedAt": "2026-10-12T05:35:46.000Z",
-      "score": 458,
+      "score": 459,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 13007,
@@ -2077,22 +2077,6 @@
       "meta": {
         "repo": "thesysdev/open-intelligent-ui",
         "language": "TypeScript"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "gh:repoboost-hq/github-star-benchmarks",
-      "source": "gh",
-      "title": "repoboost-hq/github-star-benchmarks",
-      "blurb": "AI research dataset on GitHub stars: 32.6M starred repositories, star thresholds (100/1k/10k/100k), language and age cohorts, plus star-buying and fake-star research context from ICSE 2026…",
-      "image": "https://opengraph.githubassets.com/1/repoboost-hq/github-star-benchmarks",
-      "url": "https://github.com/repoboost-hq/github-star-benchmarks",
-      "publishedAt": "2026-10-18T06:19:48.000Z",
-      "score": 73,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "repoboost-hq/github-star-benchmarks",
-        "language": "Python"
       },
       "alsoOn": []
     },
@@ -2147,12 +2131,54 @@
       "image": "https://opengraph.githubassets.com/1/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
       "url": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
       "publishedAt": "2026-10-13T10:13:21.000Z",
-      "score": 385,
+      "score": 386,
       "scoreLabel": "stars",
       "meta": {
         "repo": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
         "language": "Python"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "gh:repoboost-hq/github-star-benchmarks",
+      "source": "gh",
+      "title": "repoboost-hq/github-star-benchmarks",
+      "blurb": "AI research dataset on GitHub stars: 32.6M starred repositories, star thresholds (100/1k/10k/100k), language and age cohorts, plus star-buying and fake-star research context from ICSE 2026…",
+      "image": "https://opengraph.githubassets.com/1/repoboost-hq/github-star-benchmarks",
+      "url": "https://github.com/repoboost-hq/github-star-benchmarks",
+      "publishedAt": "2026-10-18T06:19:48.000Z",
+      "score": 73,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "repoboost-hq/github-star-benchmarks",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "deepmind:https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "source": "deepmind",
+      "title": "Gemini 4 Argon: our next era of frontier intelligence",
+      "blurb": "Announcing Gemini 4 Argon, our frontier model for real-world coding, enterprise knowledge work, and cyber defense, rolling out soon.",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-1300.png",
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "publishedAt": "2026-09-30T20:01:45.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "msr:https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "source": "msr",
+      "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
+      "blurb": "Training AI agents with reinforcement learning can be challenging because their tools, context, and decision-making are managed by complex frameworks. Agent Lightning connects existing…",
+      "image": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/10/AgentLightning-TWLIFB-1200x627-1.jpg",
+      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "publishedAt": "2026-10-07T16:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -2172,19 +2198,6 @@
       "alsoOn": []
     },
     {
-      "id": "msr:https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
-      "source": "msr",
-      "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
-      "blurb": "Training AI agents with reinforcement learning can be challenging because their tools, context, and decision-making are managed by complex frameworks. Agent Lightning connects existing…",
-      "image": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/10/AgentLightning-TWLIFB-1200x627-1.jpg",
-      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
-      "publishedAt": "2026-10-07T16:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "importai:https://jack-clark.net/2026/09/28/import-ai-474-platonic-mindspace-tpus-in-space-zhipu-starts-an-outer-rsi-loop/",
       "source": "importai",
       "title": "Import AI 474: Platonic mindspace; TPUs in space; Zhipu starts an outer RSI loop",
@@ -2192,19 +2205,6 @@
       "image": "https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/09/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-owL1ku.png?resize=150%2C150&ssl=1",
       "url": "https://jack-clark.net/2026/09/28/import-ai-474-platonic-mindspace-tpus-in-space-zhipu-starts-an-outer-rsi-loop/",
       "publishedAt": "2026-09-28T12:32:03.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "deepmind:https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-      "source": "deepmind",
-      "title": "Gemini 4 Argon: our next era of frontier intelligence",
-      "blurb": "Announcing Gemini 4 Argon, our frontier model for real-world coding, enterprise knowledge work, and cyber defense, rolling out soon.",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-1300.png",
-      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-      "publishedAt": "2026-09-30T20:01:45.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2528,13 +2528,13 @@
       "alsoOn": []
     },
     {
-      "id": "tc:https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
+      "id": "tc:https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
       "source": "tc",
-      "title": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
-      "blurb": "Counterfeiters are getting better at replicating brands' marks and passing off dupes, known as \"superfakes,\" as genuine items. A startup called Veritas wants to tackle the problem with its…",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Tiffany-Crown-e1791967522628.jpeg?resize=1200,675",
-      "url": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
-      "publishedAt": "2026-10-16T14:00:00.000Z",
+      "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
+      "blurb": "Actor and angel investor Mark Wahlberg says he's OK with using AI in filmmaking, provided it's used \"to enhance what you're doing.\"",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/55591094982_b63d06fba8_o.jpg?resize=1200,800",
+      "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
+      "publishedAt": "2026-10-16T14:26:51.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
