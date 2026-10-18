@@ -3,52 +3,78 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AI Wire</title>
+    <title>AI Wire — today's AI news, models, code and research</title>
     <meta
       name="description"
-      content="An automated wire of current AI news, models, code and research. Rebuilt every hour."
+      content="Every AI story worth reading, gathered from Hacker News, Hugging Face, GitHub and arXiv and re-ranked every hour."
     />
     <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#f5f7f9" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#171a1f" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fcfcfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d0f13" media="(prefers-color-scheme: dark)" />
     <link
       rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23171a1f'/%3E%3Crect x='8' y='6' width='2' height='20' fill='%23e8ebef'/%3E%3Crect x='14' y='9' width='11' height='2' fill='%23e8ebef'/%3E%3Crect x='14' y='15' width='8' height='2' fill='%23808a96'/%3E%3Crect x='14' y='21' width='11' height='2' fill='%236fb4de'/%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2314161c'/%3E%3Crect x='7' y='7' width='18' height='2.5' fill='%23f7f8fa'/%3E%3Crect x='7' y='14.5' width='12' height='2.5' fill='%238b93a0'/%3E%3Crect x='7' y='22' width='18' height='2.5' fill='%2300caff'/%3E%3C/svg%3E"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <a class="skip-link" href="#feed">Skip to dispatches</a>
+    <a class="skip-link" href="#feed">Skip to the wire</a>
 
-    <header class="masthead">
-      <div class="masthead__line">
-        <h1 class="masthead__name">AI Wire</h1>
-        <p class="status" id="status">
-          <span class="status__dot" aria-hidden="true"></span>
-          <span class="status__text">Connecting</span>
+    <header class="bar">
+      <div class="bar__inner">
+        <a class="bar__brand" href="./">
+          <span class="bar__glyph" aria-hidden="true"></span>
+          AI&nbsp;Wire
+        </a>
+        <nav class="tabs" id="filters" aria-label="Filter dispatches by source"></nav>
+        <p class="pulse" id="status">
+          <span class="pulse__dot" aria-hidden="true"></span>
+          <span class="pulse__text">Connecting</span>
         </p>
       </div>
-      <p class="masthead__note" id="note"></p>
-      <p class="alert" id="alert" role="alert" hidden></p>
     </header>
 
-    <div class="filters" id="filters" role="group" aria-label="Filter by source"></div>
+    <section class="hero">
+      <div class="hero__inner">
+        <h1 class="hero__title">AI&nbsp;Wire</h1>
+        <p class="hero__lede">
+          Every story worth reading, gathered from Hacker News, Hugging Face, GitHub and arXiv,
+          then ranked against each other and rebuilt every hour.
+        </p>
+        <p class="hero__stamp" id="note"></p>
+      </div>
+    </section>
+
+    <p class="alert" id="alert" role="alert" hidden></p>
 
     <main id="feed" tabindex="-1">
-      <ol class="tape" id="tape" role="list"></ol>
+      <div class="brief" id="brief" hidden>
+        <h2 class="brief__title">Latest</h2>
+        <p class="brief__count" id="count"></p>
+      </div>
+
+      <article class="lead" id="lead" hidden></article>
+      <ol class="wire" id="wire" role="list"></ol>
       <div class="state" id="state" hidden></div>
+
+      <div class="more-wrap">
+        <button class="more" id="more" type="button" hidden></button>
+      </div>
     </main>
 
     <footer class="foot">
       <p>
-        Assembled hourly from Hacker News, Hugging Face, GitHub and arXiv.
+        Assembled hourly from Hacker News, Hugging Face, GitHub and arXiv. Nothing here is
+        written by a person, and nothing is tracked about you.
+      </p>
+      <p>
         <a href="https://github.com/shounakjoshi88-a11y/ai-news">Source on GitHub</a>
       </p>
     </footer>
@@ -57,8 +83,8 @@
 
     <noscript>
       <p class="state state--static">
-        This wire is assembled in the browser from a file the build writes each hour, so it
-        needs JavaScript enabled.
+        This wire is assembled in the browser from a file the build writes each hour, so it needs
+        JavaScript enabled.
       </p>
     </noscript>
 

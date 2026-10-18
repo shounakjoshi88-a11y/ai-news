@@ -5,9 +5,9 @@
  *   node scripts/fetch-news.mjs [--out data/news.json]
  *
  * Fetches four keyless sources, normalises them into one shape, dedupes, ranks,
- * and writes data/news.json atomically. Exits 1 only when every source failed,
- * in which case the existing file is left untouched so the page keeps its last
- * good data and the workflow goes red (and emails).
+ * gives each card an image and a summary, and writes data/news.json atomically.
+ * Exits 1 only when every source failed, in which case the existing file is left
+ * untouched so the page keeps its last good data and the workflow goes red.
  */
 
 import { mkdir, writeFile, rename } from "node:fs/promises";
@@ -17,9 +17,39 @@ const UA = "ai-news/1.0 (+https://github.com/shounakjoshi88-a11y/ai-news)";
 const TIMEOUT_MS = 12_000;
 /** arXiv's API regularly needs longer than the rest. */
 const SLOW_TIMEOUT_MS = 30_000;
+/** A link preview is a nice-to-have; a page that hangs must not hold up the run. */
+const PAGE_TIMEOUT_MS = 6_000;
+const PAGE_CONCURRENCY = 8;
+const BLURB_MAX = 190;
+/** Below this the artwork is a stretched favicon, and a designed tile looks better. */
+const MIN_HERO_WIDTH = 400;
 const HALF_LIFE_HOURS = 36;
 const WEIGHT_ENGAGEMENT = 0.5;
 const TOTAL_CAP = 120;
+
+/**
+ * Where each card's artwork comes from. `page` scrapes the item's own page for
+ * its link-preview image, `repo` builds GitHub's rendered repo card, and `none`
+ * means a paper has no meaningful picture so the card gets a designed tile.
+ */
+const IMAGE_SOURCE = { hn: "page", hf: "page", gh: "repo", arxiv: "none" };
+
+/** GitHub renders one preview card per repository; the path segment is a cache tag. */
+const ghPreviewImage = (fullName) => `https://opengraph.githubassets.com/1/${fullName}`;
+
+/**
+ * Some pages put their site tagline in the description of every URL. Those make
+ * every card say the same sentence, so they are dropped rather than shown.
+ */
+const TAGLINES = [
+  "on a journey to advance and democratize artificial intelligence",
+  "hugging face is a platform",
+  "we use cookies",
+  "please enable javascript",
+];
+
+/** Site furniture rather than article artwork: stretched across a card it reads as broken. */
+const DECORATIVE_IMAGE = /(^|[/\-_.])(logo|icon|avatar|favicon|sprite|placeholder|spacer|blank)([/\-_.]|$)/i;
 
 /**
  * `window` is how long an item from that source stays worth showing. Hugging Face
@@ -54,14 +84,41 @@ async function get(url, headers = {}, timeoutMs = TIMEOUT_MS) {
   }
 }
 
-const decode = (s) =>
-  String(s)
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&#0?39;/g, "'")
-    .replace(/&apos;/g, "'")
-    .replace(/&amp;/g, "&");
+const codePoint = (n) =>
+  Number.isInteger(n) && n > 0 && n <= 0x10ffff ? String.fromCodePoint(n) : "";
+
+const NAMED_ENTITIES = {
+  lt: "<",
+  gt: ">",
+  quot: '"',
+  apos: "'",
+  amp: "&",
+  nbsp: " ",
+  hellip: "…",
+  mdash: "—",
+  ndash: "–",
+  lsquo: "\u2018",
+  rsquo: "\u2019",
+  ldquo: "\u201C",
+  rdquo: "\u201D",
+};
+
+/**
+ * Entities, in the order a page can nest them. Head metadata and feed text are
+ * routinely double-encoded — `&amp;#x27;` for an apostrophe — so the value is
+ * decoded twice: the first pass unwraps the outer layer, the second resolves
+ * whatever that layer was hiding.
+ */
+function decode(value) {
+  let out = String(value);
+  for (let pass = 0; pass < 2; pass += 1) {
+    out = out
+      .replace(/&#x([0-9a-f]{1,6});/gi, (_, hex) => codePoint(parseInt(hex, 16)))
+      .replace(/&#(\d{1,7});/g, (_, dec) => codePoint(Number(dec)))
+      .replace(/&([a-z]{2,8});/gi, (match, name) => NAMED_ENTITIES[name.toLowerCase()] ?? match);
+  }
+  return out;
+}
 
 const stripTags = (s) => decode(String(s).replace(/<[^>]*>/g, " ")).replace(/\s+/g, " ").trim();
 
@@ -69,6 +126,34 @@ const stripTags = (s) => decode(String(s).replace(/<[^>]*>/g, " ")).replace(/\s+
 function clampTitle(t) {
   const chars = Array.from(String(t).trim());
   return chars.length > 160 ? chars.slice(0, 159).join("") + "…" : chars.join("");
+}
+
+/**
+ * Same code-point care as clampTitle, but summaries are cut on a word boundary
+ * and lose the punctuation the cut left dangling.
+ */
+function clampText(value, max) {
+  const chars = Array.from(String(value).trim());
+  if (chars.length <= max) return chars.join("");
+  const cut = chars.slice(0, max).join("");
+  const at = cut.lastIndexOf(" ");
+  return (at > max * 0.6 ? cut.slice(0, at) : cut).replace(/[\s,;:.–—-]+$/, "") + "…";
+}
+
+/** A summary made of links tells a reader nothing, so it is dropped rather than shown. */
+function cleanBlurb(value) {
+  if (!value) return "";
+  const text = String(value)
+    .replace(/https?:\/\/\S+/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  return text.length >= 40 ? text : "";
+}
+
+/** One attribute out of a tag string, single- or double-quoted or bare. */
+function attr(tag, name) {
+  const m = tag.match(new RegExp(`\\b${name}\\s*=\\s*(?:"([^"]*)"|'([^']*)'|([^\\s"'>]+))`, "i"));
+  return m ? decode(m[1] ?? m[2] ?? m[3] ?? "") : null;
 }
 
 function xmlTag(xml, name) {
@@ -103,6 +188,9 @@ async function fromHN() {
       id: `hn:${h.objectID}`,
       source: "hn",
       title: clampTitle(stripTags(h.title || h.story_title || "")),
+      // Ask/Show HN posts carry their own text, which is a summary already written
+      // by whoever posted the story, so no page needs to be fetched for it.
+      blurb: h.story_text ? clampText(stripTags(h.story_text), BLURB_MAX) : null,
       url: h.url || h.story_url || `https://news.ycombinator.com/item?id=${h.objectID}`,
       publishedAt: iso(h.created_at_i * 1000),
       score: typeof h.points === "number" ? h.points : null,
@@ -151,7 +239,13 @@ async function fromGH() {
     .map((r) => ({
       id: `gh:${r.full_name}`,
       source: "gh",
-      title: clampTitle(stripTags(r.description || r.full_name)),
+      // The repo name is the headline and its description the summary, so a card
+      // reads like every other card. `altTitle` keeps the description in play for
+      // duplicate matching, which would otherwise lose a repo's second telling.
+      title: clampTitle(r.full_name),
+      altTitle: r.description ? clampTitle(stripTags(r.description)) : null,
+      blurb: r.description ? clampText(stripTags(r.description), BLURB_MAX) : null,
+      image: ghPreviewImage(r.full_name),
       url: r.html_url,
       publishedAt: iso(Date.parse(r.created_at)),
       score: typeof r.stargazers_count === "number" ? r.stargazers_count : null,
@@ -180,6 +274,12 @@ async function fromArxiv() {
         id: `arxiv:${slug}`,
         source: "arxiv",
         title: clampTitle(stripTags(xmlTag(e, "title"))),
+        // The feed already carries the abstract, so no page has to be fetched.
+        blurb: (() => {
+          const abstract = stripTags(xmlTag(e, "summary"));
+          return abstract.length >= 80 ? clampText(abstract, BLURB_MAX) : null;
+        })(),
+        image: null,
         url: rawId,
         // Validated before formatting: new Date(NaN).toISOString() throws.
         publishedAt: Number.isFinite(published) ? iso(published) : null,
@@ -322,7 +422,10 @@ function dedupe(items) {
   for (const item of items) {
     const url = normalizeUrl(item.url);
     const title = normalizeTitle(item.title);
-    const tokens = new Set(title.split(" ").filter(Boolean));
+    // A repo's description is a second telling of its own title, so both count.
+    const tokens = new Set(
+      `${title} ${normalizeTitle(item.altTitle || "")}`.split(" ").filter(Boolean),
+    );
     let twin = byUrl.get(url) || byTitle.get(title) || null;
 
     if (!twin) {
@@ -358,6 +461,180 @@ function dedupe(items) {
   }
 
   return kept.map((r) => r.item);
+}
+
+/* ------------------------------------------------------------------ media */
+
+/**
+ * Reading a page for its link preview is entirely best-effort: a missing image
+ * means a designed tile and a missing summary means a shorter card, never a
+ * failed run.
+ */
+async function fetchPage(url, accept) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), PAGE_TIMEOUT_MS);
+  try {
+    const res = await fetch(url, {
+      headers: { "user-agent": UA, accept },
+      redirect: "follow",
+      signal: controller.signal,
+    });
+    if (!res.ok) return null;
+    // A size ceiling keeps one pathological page from stalling the collector.
+    if (Number(res.headers.get("content-length") || 0) > 4_000_000) return null;
+    if (accept.includes("html") && !(res.headers.get("content-type") || "").includes("html")) {
+      return null;
+    }
+    return { text: await res.text(), url: res.url || url };
+  } catch {
+    return null;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+/**
+ * The two things a link preview needs, out of a page's head. Tolerant on purpose:
+ * unclosed tags, single quotes and content-before-property are all common, so
+ * candidates are collected and ranked rather than matched in place. `og:` beats
+ * `twitter:`, which beats a plain description.
+ */
+function headMeta(html, baseUrl) {
+  const images = [];
+  const blurbs = [];
+  let declaredWidth = null;
+
+  for (const tag of html.match(/<meta\b[^>]*>/gi) || []) {
+    const key = (attr(tag, "property") || attr(tag, "name") || "").toLowerCase();
+    const content = attr(tag, "content");
+    if (!key || !content) continue;
+
+    if (key === "og:image" || key === "og:image:url" || key === "og:image:secure_url") {
+      images.push([1, content]);
+    } else if (key === "twitter:image" || key === "twitter:image:src") {
+      images.push([2, content]);
+    } else if (key === "og:description") {
+      blurbs.push([1, content]);
+    } else if (key === "twitter:description") {
+      blurbs.push([2, content]);
+    } else if (key === "description") {
+      blurbs.push([3, content]);
+    } else if (key === "og:image:width" && Number(content) > 0) {
+      declaredWidth = Number(content);
+    }
+  }
+
+  images.sort((a, b) => a[0] - b[0]);
+  blurbs.sort((a, b) => a[0] - b[0]);
+
+  let image = null;
+  // A declared width small enough to look like a stretched favicon voids all of them.
+  if (!(declaredWidth !== null && declaredWidth < MIN_HERO_WIDTH)) {
+    for (const [, candidate] of images) {
+      let resolved;
+      try {
+        resolved = new URL(String(candidate).trim(), baseUrl);
+      } catch {
+        continue;
+      }
+      if (resolved.protocol !== "http:" && resolved.protocol !== "https:") continue;
+      if (DECORATIVE_IMAGE.test(resolved.pathname)) continue;
+      image = resolved.href;
+      break;
+    }
+  }
+
+  // A URL in a card summary is dead weight; if that leaves nothing, there is none.
+  let blurb = stripTags(blurbs[0]?.[1] || "")
+    .replace(/https?:\/\/\S+/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  const lowered = blurb.toLowerCase();
+  if (blurb.length < 40 || TAGLINES.some((t) => lowered.includes(t))) blurb = "";
+
+  return { image, blurb: blurb ? clampText(blurb, BLURB_MAX) : null };
+}
+
+/**
+ * Markdown reduced to something a card can wear: frontmatter, code, HTML, images
+ * and emphasis go, links keep only their text.
+ */
+function markdownToText(markdown) {
+  return String(markdown)
+    .replace(/^---[\s\S]*?\n---\s*/, "")
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/`([^`]*)`/g, "$1")
+    // Model cards routinely open with an <img> that spans several lines, so tags
+    // are removed before the text is ever split into lines.
+    .replace(/<[a-z/!?][^>]*>/gi, " ")
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/^\s*(#{1,6}|[-*>+])\s*/gm, "")
+    .replace(/(\*\*|__|~~)/g, "")
+    .replace(/(^|[\s(])[*_](\S(?:[^*_]*\S)?)[*_](?=[\s).,;:!?]|$)/g, "$1$2")
+    .replace(/[ \t]+/g, " ");
+}
+
+/**
+ * A Hugging Face model page describes the *site*, not the model, so the summary
+ * has to come from the model card itself: the first real paragraph of its README,
+ * past the frontmatter and past the badge and link blocks most cards open with.
+ */
+function modelCardSummary(markdown) {
+  for (const block of markdownToText(markdown).split(/\n\s*\n/)) {
+    const text = decode(block).replace(/\s+/g, " ").trim();
+    if (text.length < 80 || text.split(" ").length < 12) continue;
+    // Still markup, or a nav strip of links rather than a sentence.
+    if (/\]\(|\*\*|\b(src|alt|style|href|class)=/.test(text)) continue;
+    if ((text.match(/[|·]/g) || []).length >= 2) continue;
+    return clampText(text, BLURB_MAX);
+  }
+  return null;
+}
+
+/**
+ * Give each card its artwork and summary. Only the sources that need it are
+ * touched, and only after capping and deduping, so the pages fetched are the
+ * pages actually shown.
+ */
+async function enrich(items) {
+  const targets = items.filter((item) => IMAGE_SOURCE[item.source] === "page");
+  const stats = { pages: targets.length, images: 0, blurbs: 0 };
+  let cursor = 0;
+
+  const worker = async () => {
+    while (cursor < targets.length) {
+      const item = targets[cursor];
+      cursor += 1;
+
+      const page = await fetchPage(item.url, "text/html,application/xhtml+xml");
+      const found = page ? headMeta(page.text, page.url) : null;
+
+      if (found?.image && !item.image) {
+        item.image = found.image;
+        stats.images += 1;
+      }
+      if (found?.blurb && !item.blurb && normalizeTitle(found.blurb) !== normalizeTitle(item.title)) {
+        item.blurb = found.blurb;
+        stats.blurbs += 1;
+      }
+
+      if (item.source === "hf" && !item.blurb) {
+        const card = await fetchPage(
+          `https://huggingface.co/${item.id.slice(3)}/raw/main/README.md`,
+          "text/plain,*/*",
+        );
+        const summary = card ? modelCardSummary(card.text) : null;
+        if (summary) {
+          item.blurb = summary;
+          stats.blurbs += 1;
+        }
+      }
+    }
+  };
+
+  await Promise.all(Array.from({ length: Math.min(PAGE_CONCURRENCY, targets.length) }, worker));
+  return stats;
 }
 
 /* ------------------------------------------------------------------- main */
@@ -418,7 +695,19 @@ for (const s of sources) {
 }
 
 items = diversify(dedupe(items)).slice(0, TOTAL_CAP);
-for (const item of items) delete item.rank;
+
+console.log(
+  `\nenriching ${items.length} cards — fetching link previews for the sources that need them…`,
+);
+const media = await enrich(items);
+
+// `rank` and `altTitle` are working values for ordering and matching, not data.
+for (const item of items) {
+  delete item.rank;
+  delete item.altTitle;
+  item.image ||= null;
+  item.blurb = cleanBlurb(item.blurb) || null;
+}
 
 const payload = {
   generatedAt: iso(Date.now()).replace(/\.\d{3}Z$/, "Z"),
@@ -438,4 +727,8 @@ const tmp = `${outPath}.tmp`;
 await writeFile(tmp, JSON.stringify(payload, null, 2) + "\n", "utf8");
 await rename(tmp, outPath);
 
+console.log(
+  `media: ${media.images}/${media.pages} page-sourced cards got artwork, ` +
+    `${media.blurbs} cards got a summary`,
+);
 console.log(`\n${items.length} dispatches from ${okCount}/${SOURCES.length} sources → ${outPath}`);

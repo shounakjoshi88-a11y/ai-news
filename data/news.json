@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T13:08:59Z",
+  "generatedAt": "2026-10-18T13:56:26Z",
   "sources": [
     {
       "id": "hn",
@@ -35,35 +35,41 @@
       "id": "hn:50137950",
       "source": "hn",
       "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+      "blurb": "FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it'll throw up a questionnaire that checks if you understand how the code you're pushing…",
       "url": "https://sphinx-six-theta.vercel.app/",
       "publishedAt": "2026-10-18T04:33:49.000Z",
-      "score": 169,
+      "score": 179,
       "scoreLabel": "points",
       "meta": {
-        "comments": 51
+        "comments": 55
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": null
     },
     {
       "id": "hn:50129045",
       "source": "hn",
       "title": "DeepSeek-v4.1-Flash-1017",
+      "blurb": null,
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "publishedAt": "2026-10-17T08:21:25.000Z",
-      "score": 893,
+      "score": 903,
       "scoreLabel": "points",
       "meta": {
-        "comments": 671
+        "comments": 675
       },
       "alsoOn": [
         "hn:50129121",
         "hf:deepseek-ai/DeepSeek-V4.1-Flash-1017"
-      ]
+      ],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/deepseek-ai/DeepSeek-V4.1-Flash-1017.png"
     },
     {
       "id": "arxiv:2610.22372v1",
       "source": "arxiv",
       "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+      "blurb": "Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic manipulation has been extensively…",
+      "image": null,
       "url": "http://arxiv.org/abs/2610.22372v1",
       "publishedAt": "2026-10-15T17:59:59.000Z",
       "score": null,
@@ -78,32 +84,38 @@
       "id": "hn:50122878",
       "source": "hn",
       "title": "You could have invented transformers from memory",
+      "blurb": null,
       "url": "https://alexwang.ai/posts/associative-memory/",
       "publishedAt": "2026-10-16T19:01:17.000Z",
-      "score": 583,
+      "score": 591,
       "scoreLabel": "points",
       "meta": {
-        "comments": 131
+        "comments": 132
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://alexwang.ai/images/share-card_hu_ba29a66ace5a286c.jpg"
     },
     {
       "id": "hn:50121179",
       "source": "hn",
       "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+      "blurb": "The US Benchmark Map places AI benchmarks across the American economy, measuring which parts of the labor force are covered by unsaturated, public, agentic benchmarks.",
       "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
       "publishedAt": "2026-10-16T17:08:38.000Z",
       "score": 611,
       "scoreLabel": "points",
       "meta": {
-        "comments": 554
+        "comments": 556
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": null
     },
     {
       "id": "arxiv:2610.22367v1",
       "source": "arxiv",
       "title": "Discovering state-of-the-art quantum circuits with large language models",
+      "blurb": "Significant efforts are currently being directed toward the implementation of large-scale quantum information processors, but realizing useful quantum advantage also requires the…",
+      "image": null,
       "url": "http://arxiv.org/abs/2610.22367v1",
       "publishedAt": "2026-10-15T17:59:20.000Z",
       "score": null,
@@ -118,6 +130,7 @@
       "id": "hn:50132278",
       "source": "hn",
       "title": "Amazon uses AI to monitor union risk in UK warehouses",
+      "blurb": "Internal documents suggest tech giant collects ‘hundreds of data points’ for ‘union-busting’ AI model",
       "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
       "publishedAt": "2026-10-17T16:04:23.000Z",
       "score": 168,
@@ -125,28 +138,18 @@
       "meta": {
         "comments": 58
       },
-      "alsoOn": []
-    },
-    {
-      "id": "hn:50133231",
-      "source": "hn",
-      "title": "Codex Desktop continuously generates Crashpad pending dumps",
-      "url": "https://github.com/openai/codex/issues/25921",
-      "publishedAt": "2026-10-17T17:45:08.000Z",
-      "score": 144,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 67
-      },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://storage.ghost.io/c/3f/80/3f804bea-4b2d-4ddf-9ff0-6ec7d0afa5fa/content/images/size/w1200/2026/10/Amazon-AI-question-openDemocracy-edit.jpg"
     },
     {
       "id": "gh:LiCinCan/blender-ai-mcp-addon",
       "source": "gh",
-      "title": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender…",
+      "title": "LiCinCan/blender-ai-mcp-addon",
+      "blurb": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon and plugin, copilot…",
+      "image": "https://opengraph.githubassets.com/1/LiCinCan/blender-ai-mcp-addon",
       "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
       "publishedAt": "2026-10-15T22:30:47.000Z",
-      "score": 730,
+      "score": 735,
       "scoreLabel": "stars",
       "meta": {
         "repo": "LiCinCan/blender-ai-mcp-addon",
@@ -155,9 +158,25 @@
       "alsoOn": []
     },
     {
+      "id": "hn:50133231",
+      "source": "hn",
+      "title": "Codex Desktop continuously generates Crashpad pending dumps",
+      "blurb": "Summary Codex Desktop is continuously adding paired .dmp and _sidecar.json files under: ~/Library/Application Support/com.openai.codex/web/Crashpad/pending On my machine this directory grew…",
+      "url": "https://github.com/openai/codex/issues/25921",
+      "publishedAt": "2026-10-17T17:45:08.000Z",
+      "score": 147,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 67
+      },
+      "alsoOn": [],
+      "image": "https://opengraph.githubassets.com/ca36cd0881ef0455269ae28027ff6686ed2bae99e1f24dc416de1a72bc590b3c/openai/codex/issues/25921"
+    },
+    {
       "id": "hn:50107379",
       "source": "hn",
       "title": "Muse Spark Open",
+      "blurb": null,
       "url": "https://research.meta.ai/blog/muse-spark-open",
       "publishedAt": "2026-10-15T17:47:39.000Z",
       "score": 914,
@@ -165,25 +184,15 @@
       "meta": {
         "comments": 477
       },
-      "alsoOn": []
-    },
-    {
-      "id": "hn:50122112",
-      "source": "hn",
-      "title": "Anthropic assigned highest junk credit rating in June",
-      "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
-      "publishedAt": "2026-10-16T18:11:42.000Z",
-      "score": 292,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 86
-      },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://research.meta.ai/articles/muse-spark-open/social/muse-spark-1-2-open-weights-social-v2.webp"
     },
     {
       "id": "arxiv:2610.22364v1",
       "source": "arxiv",
       "title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
+      "blurb": "Predicting how the world responds to an action requires more than what can be seen: robots must account for environmental factors that are neither directly observable nor explicitly…",
+      "image": null,
       "url": "http://arxiv.org/abs/2610.22364v1",
       "publishedAt": "2026-10-15T17:59:11.000Z",
       "score": null,
@@ -195,22 +204,26 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50091788",
+      "id": "hn:50122112",
       "source": "hn",
-      "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
-      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
-      "publishedAt": "2026-10-14T17:45:23.000Z",
-      "score": 948,
+      "title": "Anthropic assigned highest junk credit rating in June",
+      "blurb": null,
+      "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
+      "publishedAt": "2026-10-16T18:11:42.000Z",
+      "score": 292,
       "scoreLabel": "points",
       "meta": {
-        "comments": 620
+        "comments": 86
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": null
     },
     {
       "id": "gh:LosaLosSantos/aurelio-finance",
       "source": "gh",
-      "title": "Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash and debts on your own computer.",
+      "title": "LosaLosSantos/aurelio-finance",
+      "blurb": "Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash and debts on your own computer.",
+      "image": "https://opengraph.githubassets.com/1/LosaLosSantos/aurelio-finance",
       "url": "https://github.com/LosaLosSantos/aurelio-finance",
       "publishedAt": "2026-10-06T20:14:19.000Z",
       "score": 3953,
@@ -220,6 +233,21 @@
         "language": "Python"
       },
       "alsoOn": []
+    },
+    {
+      "id": "hn:50091788",
+      "source": "hn",
+      "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+      "blurb": "Cyber experts say AI labs’ containment and monitoring failures — not agents with minds of their own — are to blame for recent alarming hacking reports. CISOs should vet their AI vendors and…",
+      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+      "publishedAt": "2026-10-14T17:45:23.000Z",
+      "score": 948,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 620
+      },
+      "alsoOn": [],
+      "image": "https://www.csoonline.com/wp-content/uploads/2026/10/4234854-0-28632700-1792004597-shutterstock_2472843149.jpg?quality=50&strip=all&w=1024"
     },
     {
       "id": "hf:Cloudflare/clef",
@@ -233,15 +261,18 @@
         "downloads": 21094,
         "task": "image-text-to-text"
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Cloudflare/clef.png",
+      "blurb": "Clef Announcement: Clef decision models on the Cloudflare blog Decision Index leaderboard: clef-evals.workers-ai-mle.workers.dev"
     },
     {
       "id": "hn:50123580",
       "source": "hn",
       "title": "FLUX 3 Image Klein",
+      "blurb": "Frontier image quality with the customization and speed of open weights: 5.6B parameters, first in text-to-image, multi-reference generation and editing.",
       "url": "https://bfl.ai/blog/flux-3-image-klein",
       "publishedAt": "2026-10-16T19:47:13.000Z",
-      "score": 209,
+      "score": 211,
       "scoreLabel": "points",
       "meta": {
         "comments": 58
@@ -249,15 +280,18 @@
       "alsoOn": [
         "hf:black-forest-labs/flux-3-image-klein-comfy",
         "hf:black-forest-labs/flux-3-image-klein"
-      ]
+      ],
+      "image": "https://bfl.ai/api/og/blog/flux-3-image-klein"
     },
     {
       "id": "gh:onehumanbeing/esp32-iphone-agent",
       "source": "gh",
-      "title": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak.",
+      "title": "onehumanbeing/esp32-iphone-agent",
+      "blurb": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak.",
+      "image": "https://opengraph.githubassets.com/1/onehumanbeing/esp32-iphone-agent",
       "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
       "publishedAt": "2026-10-11T19:10:25.000Z",
-      "score": 3065,
+      "score": 3073,
       "scoreLabel": "stars",
       "meta": {
         "repo": "onehumanbeing/esp32-iphone-agent",
@@ -269,19 +303,22 @@
       "id": "hn:50105648",
       "source": "hn",
       "title": "Krea 3 – An image model built for editing at scale",
+      "blurb": null,
       "url": "https://www.krea.ai/krea-3",
       "publishedAt": "2026-10-15T16:04:05.000Z",
       "score": 349,
       "scoreLabel": "points",
       "meta": {
-        "comments": 108
+        "comments": 109
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": null
     },
     {
       "id": "hn:50119991",
       "source": "hn",
       "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
+      "blurb": "Core devs revert up to 10 features, push release to November, and blame better tooling rather than vibe coding",
       "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
       "publishedAt": "2026-10-16T15:55:40.000Z",
       "score": 214,
@@ -289,15 +326,18 @@
       "meta": {
         "comments": 89
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://image.theregister.com/228745.jpg?imageId=228745&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
     },
     {
       "id": "gh:deeplethe/solid-glass",
       "source": "gh",
-      "title": "A design system for AI applications. Material, physical, tactile, technical.",
+      "title": "deeplethe/solid-glass",
+      "blurb": "A design system for AI applications. Material, physical, tactile, technical.",
+      "image": "https://opengraph.githubassets.com/1/deeplethe/solid-glass",
       "url": "https://github.com/deeplethe/solid-glass",
       "publishedAt": "2026-10-12T09:19:02.000Z",
-      "score": 2001,
+      "score": 2002,
       "scoreLabel": "stars",
       "meta": {
         "repo": "deeplethe/solid-glass",
@@ -309,6 +349,8 @@
       "id": "arxiv:2610.22362v1",
       "source": "arxiv",
       "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+      "blurb": "Generative simulation can automate robot environment construction, but physically valid environments are not necessarily useful for training. The challenge is to identify environments that…",
+      "image": null,
       "url": "http://arxiv.org/abs/2610.22362v1",
       "publishedAt": "2026-10-15T17:59:02.000Z",
       "score": null,
@@ -323,6 +365,7 @@
       "id": "hn:50063427",
       "source": "hn",
       "title": "AI is a tool and using it well takes skill",
+      "blurb": "A response to Rich Hickey's \"'AI' is Not a Tool\": automation and tool use can coexist, and wielding an LLM well requires skill, feedback, and judgment.",
       "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
       "publishedAt": "2026-10-12T21:40:18.000Z",
       "score": 803,
@@ -330,7 +373,8 @@
       "meta": {
         "comments": 607
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": null
     },
     {
       "id": "hf:Qwen/Qwen-Image-2.1-Turbo",
@@ -338,7 +382,7 @@
       "title": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "publishedAt": "2026-10-09T04:50:01.000Z",
-      "score": 970,
+      "score": 971,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 23131,
@@ -346,12 +390,16 @@
       },
       "alsoOn": [
         "hf:AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF"
-      ]
+      ],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Qwen/Qwen-Image-2.1-Turbo.png",
+      "blurb": "The checkpoint includes its recommended sampling schedule, so it is ready to use without manually configuring the scheduler. Generation uses CFG=1 by default, and prefix KV caching reuses…"
     },
     {
       "id": "gh:zhuyansen/new-term-radar",
       "source": "gh",
-      "title": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
+      "title": "zhuyansen/new-term-radar",
+      "blurb": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
+      "image": "https://opengraph.githubassets.com/1/zhuyansen/new-term-radar",
       "url": "https://github.com/zhuyansen/new-term-radar",
       "publishedAt": "2026-10-12T07:11:01.000Z",
       "score": 1097,
@@ -366,6 +414,8 @@
       "id": "arxiv:2610.22353v1",
       "source": "arxiv",
       "title": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
+      "blurb": "Mixture-of-experts (MoE) models have become an important approach for scaling model parameters. Modern MoE architectures increasingly combine two design choices: fine-grained expert…",
+      "image": null,
       "url": "http://arxiv.org/abs/2610.22353v1",
       "publishedAt": "2026-10-15T17:58:02.000Z",
       "score": null,
@@ -388,25 +438,31 @@
         "downloads": 19548,
         "task": "text-generation"
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Aleph-Alpha/Kolibri-1.png",
+      "blurb": "Kolibri is Aleph Alpha's mixture-of-experts (MoE) reasoning model, with a focus on German and English. The model supports an explicit reasoning mode and tool calling. It is optimized for…"
     },
     {
-      "id": "hn:50092664",
+      "id": "hn:50058507",
       "source": "hn",
-      "title": "Banks are now trying to offload the AI data center debt they just underwrote",
-      "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
-      "publishedAt": "2026-10-14T18:32:52.000Z",
-      "score": 385,
+      "title": "GLM-Legal",
+      "blurb": null,
+      "url": "https://z.ai/blog/glm-legal",
+      "publishedAt": "2026-10-12T16:11:45.000Z",
+      "score": 675,
       "scoreLabel": "points",
       "meta": {
-        "comments": 277
+        "comments": 370
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": null
     },
     {
       "id": "gh:outcrawlai/scout",
       "source": "gh",
-      "title": "Scout: the open-source browser agent, by Outcrawl. Mirrored automatically from Outcrawl's own repository.",
+      "title": "outcrawlai/scout",
+      "blurb": "Scout: the open-source browser agent, by Outcrawl. Mirrored automatically from Outcrawl's own repository.",
+      "image": "https://opengraph.githubassets.com/1/outcrawlai/scout",
       "url": "https://github.com/outcrawlai/scout",
       "publishedAt": "2026-10-13T09:18:55.000Z",
       "score": 945,
@@ -421,6 +477,8 @@
       "id": "arxiv:2610.22350v1",
       "source": "arxiv",
       "title": "FDE-Gym: The Last Mile of AI Delivery",
+      "blurb": "Existing agent benchmarks typically evaluate agents on well-specified tasks defined by issue reports, specifications, or task tickets. Real-world customer delivery is different…",
+      "image": null,
       "url": "http://arxiv.org/abs/2610.22350v1",
       "publishedAt": "2026-10-15T17:57:23.000Z",
       "score": null,
@@ -432,36 +490,42 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50058507",
-      "source": "hn",
-      "title": "GLM-Legal",
-      "url": "https://z.ai/blog/glm-legal",
-      "publishedAt": "2026-10-12T16:11:45.000Z",
-      "score": 675,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 370
-      },
-      "alsoOn": []
-    },
-    {
       "id": "hf:openbmb/MiniCPM-V-4.7-35B-A3B",
       "source": "hf",
       "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "publishedAt": "2026-10-07T07:07:30.000Z",
-      "score": 933,
+      "score": 942,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 57935,
         "task": "image-text-to-text"
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/openbmb/MiniCPM-V-4.7-35B-A3B.png",
+      "blurb": "An MoE model can have far more total parameters than it activates for a single token, but its on-device storage requirements are not limited to those active parameters. Different tokens can…"
+    },
+    {
+      "id": "hn:50092664",
+      "source": "hn",
+      "title": "Banks are now trying to offload the AI data center debt they just underwrote",
+      "blurb": "Banks including JPMorgan and MUFG are shopping AI data center debt tied to Oracle as credit default swaps spike and bond order books thin out.",
+      "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
+      "publishedAt": "2026-10-14T18:32:52.000Z",
+      "score": 385,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 277
+      },
+      "alsoOn": [],
+      "image": "https://startupfortune.com/wp-content/uploads/2026/10/oracle-jpmorgan-man-group.jpg"
     },
     {
       "id": "arxiv:2610.22344v1",
       "source": "arxiv",
       "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
+      "blurb": "Large language models (LLMs) are expanding from assisting scientific research and engineering to autonomously developing and improving AI systems, advancing AI for AI (AI4AI) as a pathway…",
+      "image": null,
       "url": "http://arxiv.org/abs/2610.22344v1",
       "publishedAt": "2026-10-15T17:56:32.000Z",
       "score": null,
@@ -475,10 +539,12 @@
     {
       "id": "gh:mw00/project-maya",
       "source": "gh",
-      "title": "Project Maya - run GLM-5.3-Flash (321B MoE) privately on your own GPU(s), from one card to 16, NVIDIA or AMD, Linux or Windows. Engine, server, dashboard, Open…",
+      "title": "mw00/project-maya",
+      "blurb": "Project Maya - run GLM-5.3-Flash (321B MoE) privately on your own GPU(s), from one card to 16, NVIDIA or AMD, Linux or Windows. Engine, server, dashboard, OpenAI- and Anthropic-compatible…",
+      "image": "https://opengraph.githubassets.com/1/mw00/project-maya",
       "url": "https://github.com/mw00/project-maya",
       "publishedAt": "2026-10-06T22:55:13.000Z",
-      "score": 1022,
+      "score": 1023,
       "scoreLabel": "stars",
       "meta": {
         "repo": "mw00/project-maya",
@@ -490,6 +556,7 @@
       "id": "hn:50059115",
       "source": "hn",
       "title": "Muse Wonder",
+      "blurb": "Muse Wonder is Meta's frontier AI model that keeps track of what matters to you with Active Memory & Active Focus to work towards your goals at work & life.",
       "url": "https://research.meta.ai/blog/muse-wonder",
       "publishedAt": "2026-10-12T16:48:01.000Z",
       "score": 672,
@@ -497,12 +564,15 @@
       "meta": {
         "comments": 382
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://research.meta.ai/articles/introducing-muse-wonder/social/muse-wonder-social-v1.webp"
     },
     {
       "id": "arxiv:2610.22343v1",
       "source": "arxiv",
       "title": "GeoState: Learning View-Decoupled Geometry States for 3D World Modeling",
+      "blurb": "Recent 3D world models increasingly use features from geometry foundation models (GFMs) as predictive world states, benefiting from their rich geometric priors. However, the view dependence…",
+      "image": null,
       "url": "http://arxiv.org/abs/2610.22343v1",
       "publishedAt": "2026-10-15T17:56:18.000Z",
       "score": null,
@@ -510,19 +580,6 @@
       "meta": {
         "category": "cs.CV",
         "authors": 8
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "hn:50108131",
-      "source": "hn",
-      "title": "Why We're Banning AI",
-      "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
-      "publishedAt": "2026-10-15T18:32:29.000Z",
-      "score": 260,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 203
       },
       "alsoOn": []
     },
@@ -538,12 +595,31 @@
         "downloads": 34921,
         "task": "image-text-to-text"
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Cloudflare/clef-flash.png",
+      "blurb": "Clef-Flash Announcement: Clef decision models on the Cloudflare blog Decision Index leaderboard: clef-evals.workers-ai-mle.workers.dev"
+    },
+    {
+      "id": "hn:50108131",
+      "source": "hn",
+      "title": "Why We're Banning AI",
+      "blurb": "We urgently need to protect human thought and creativity. Our magazine is committing itself to remaining handmade. Ensure every publication you support does the same.",
+      "url": "https://www.currentaffairs.org/news/why-were-banning-ai",
+      "publishedAt": "2026-10-15T18:32:29.000Z",
+      "score": 260,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 203
+      },
+      "alsoOn": [],
+      "image": "https://www.currentaffairs.org/hubfs/smash1.png"
     },
     {
       "id": "arxiv:2610.22341v1",
       "source": "arxiv",
       "title": "3DCodeVerse: Exploring 3D Worlds as Code",
+      "blurb": "We introduce 3DCodeVerse, a research ecosystem that enables coding agents to create editable and verifiable 3D content at scale. 3DCodeVerse comprises large-scale, high-quality datasets of…",
+      "image": null,
       "url": "http://arxiv.org/abs/2610.22341v1",
       "publishedAt": "2026-10-15T17:56:07.000Z",
       "score": null,
@@ -558,6 +634,7 @@
       "id": "hn:50054751",
       "source": "hn",
       "title": "QGIS enacts moratorium on AI contributions",
+      "blurb": null,
       "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
       "publishedAt": "2026-10-12T11:22:24.000Z",
       "score": 392,
@@ -565,12 +642,14 @@
       "meta": {
         "comments": 412
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://opengraph.githubassets.com/31863430aac37c26c6003741570d6b3829afed346f81fde65080a3ef8547c908/qgis/QGIS-Enhancement-Proposals/pull/387"
     },
     {
       "id": "hn:50095353",
       "source": "hn",
       "title": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
+      "blurb": "TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access.",
       "url": "https://typesafe.ai/blog/jev-1-14",
       "publishedAt": "2026-10-14T21:11:03.000Z",
       "score": 333,
@@ -578,12 +657,15 @@
       "meta": {
         "comments": 122
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://framerusercontent.com/images/KBTvCTXoQaZeABcI7te5PTQw7Q.png?width=1574&height=996"
     },
     {
       "id": "gh:Tejashmakwana/motionmaxxing",
       "source": "gh",
-      "title": "Looksmaxxing for motion graphics. An agent skill that turns AI slop videos into films that look made by a motion designer.",
+      "title": "Tejashmakwana/motionmaxxing",
+      "blurb": "Looksmaxxing for motion graphics. An agent skill that turns AI slop videos into films that look made by a motion designer.",
+      "image": "https://opengraph.githubassets.com/1/Tejashmakwana/motionmaxxing",
       "url": "https://github.com/Tejashmakwana/motionmaxxing",
       "publishedAt": "2026-10-06T18:18:49.000Z",
       "score": 857,
@@ -595,9 +677,27 @@
       "alsoOn": []
     },
     {
+      "id": "gh:datalab-to/indra",
+      "source": "gh",
+      "title": "datalab-to/indra",
+      "blurb": "Fast CPU OCR: line detection, CTC recognition, reading order, markdown",
+      "image": "https://opengraph.githubassets.com/1/datalab-to/indra",
+      "url": "https://github.com/datalab-to/indra",
+      "publishedAt": "2026-10-13T11:07:11.000Z",
+      "score": 612,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "datalab-to/indra",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "arxiv:2610.22340v1",
       "source": "arxiv",
       "title": "Dexterity from Supervised Play",
+      "blurb": "How can robots autonomously collect the contact-rich experience needed to learn dexterous manipulation? We present DSP: Dexterity from supervised play, a framework in which a robot learns a…",
+      "image": null,
       "url": "http://arxiv.org/abs/2610.22340v1",
       "publishedAt": "2026-10-15T17:55:50.000Z",
       "score": null,
@@ -609,37 +709,26 @@
       "alsoOn": []
     },
     {
-      "id": "gh:datalab-to/indra",
-      "source": "gh",
-      "title": "Fast CPU OCR: line detection, CTC recognition, reading order, markdown",
-      "url": "https://github.com/datalab-to/indra",
-      "publishedAt": "2026-10-13T11:07:11.000Z",
-      "score": 611,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "datalab-to/indra",
-        "language": "Python"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "hf:fishaudio/drama-3",
       "source": "hf",
       "title": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "publishedAt": "2026-10-01T04:34:57.000Z",
-      "score": 652,
+      "score": 654,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 9620,
         "task": "text-to-speech"
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/fishaudio/drama-3.png",
+      "blurb": "Drama 3 runs on SGLang-Omni from launch day. For installation, deployment, and streaming API examples, see the Drama 3 Cookbook. Launch with vLLM-Omni"
     },
     {
       "id": "hn:50073221",
       "source": "hn",
       "title": "I posted to HN, and then my website was flooded with AI bot traffic",
+      "blurb": null,
       "url": "https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic",
       "publishedAt": "2026-10-13T15:25:50.000Z",
       "score": 351,
@@ -647,7 +736,8 @@
       "meta": {
         "comments": 186
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": null
     },
     {
       "id": "hf:ConwayResearch/Underdog-Saluki-27B-1.0",
@@ -655,18 +745,22 @@
       "title": "ConwayResearch/Underdog-Saluki-27B-1.0",
       "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
       "publishedAt": "2026-10-08T01:47:26.000Z",
-      "score": 533,
+      "score": 535,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 410558,
         "task": "text-generation"
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ConwayResearch/Underdog-Saluki-27B-1.0.png",
+      "blurb": "Qwen3.8-27B in under 8 GB, tuned to keep tool calling intact. A standard GGUF for stock llama.cpp. Read more: underdog.ai/saluki"
     },
     {
       "id": "arxiv:2610.22333v1",
       "source": "arxiv",
       "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
+      "blurb": "Large language models (LLMs) can often tell when they are being tested. This ability, known as evaluation awareness, can lead models to act more cautiously during safety evaluations than in…",
+      "image": null,
       "url": "http://arxiv.org/abs/2610.22333v1",
       "publishedAt": "2026-10-15T17:53:33.000Z",
       "score": null,
@@ -680,7 +774,9 @@
     {
       "id": "gh:thesysdev/open-intelligent-ui",
       "source": "gh",
-      "title": "An open-source take on ChatGPT's Intelligent UI: answers stream as interactive UI (maps, photos, charts, drawings and working tools). Built with OpenUI.",
+      "title": "thesysdev/open-intelligent-ui",
+      "blurb": "An open-source take on ChatGPT's Intelligent UI: answers stream as interactive UI (maps, photos, charts, drawings and working tools). Built with OpenUI.",
+      "image": "https://opengraph.githubassets.com/1/thesysdev/open-intelligent-ui",
       "url": "https://github.com/thesysdev/open-intelligent-ui",
       "publishedAt": "2026-10-08T05:37:45.000Z",
       "score": 531,
@@ -694,10 +790,12 @@
     {
       "id": "gh:heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
       "source": "gh",
-      "title": "AI 跨境电商运营智能体工具箱 · 把运营 SOP 拆成 7 个可复用的 AI Agent 工作流，含 Prompt、模板与真实案例",
+      "title": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+      "blurb": "AI 跨境电商运营智能体工具箱 · 把运营 SOP 拆成 7 个可复用的 AI Agent 工作流，含 Prompt、模板与真实案例",
+      "image": "https://opengraph.githubassets.com/1/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
       "url": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
       "publishedAt": "2026-10-13T10:13:21.000Z",
-      "score": 379,
+      "score": 380,
       "scoreLabel": "stars",
       "meta": {
         "repo": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
@@ -717,12 +815,16 @@
         "downloads": 13007,
         "task": "text-generation"
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/LiquidAI/LFM2.5-24B-A2B.png",
+      "blurb": "LFM2.5-24B-A2B is a 24B-parameter reasoning model with only 2B active parameters, built for fast, private agents on-device. It is the largest and final model in the LFM2.5 family, which now…"
     },
     {
       "id": "gh:Ayzzz123/mcd-coupon-strategist",
       "source": "gh",
-      "title": "麦麦省钱助手 —— 基于麦当劳 MCP 的点餐成本优化 Skill。算出当前门店最省钱的点餐方案，并主动提示凑单陷阱。",
+      "title": "Ayzzz123/mcd-coupon-strategist",
+      "blurb": "麦麦省钱助手 —— 基于麦当劳 MCP 的点餐成本优化 Skill。算出当前门店最省钱的点餐方案，并主动提示凑单陷阱。",
+      "image": "https://opengraph.githubassets.com/1/Ayzzz123/mcd-coupon-strategist",
       "url": "https://github.com/Ayzzz123/mcd-coupon-strategist",
       "publishedAt": "2026-10-10T12:59:19.000Z",
       "score": 491,
@@ -737,6 +839,7 @@
       "id": "hn:50059523",
       "source": "hn",
       "title": "AI coding agents generate more code, but not more software",
+      "blurb": null,
       "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
       "publishedAt": "2026-10-12T17:14:01.000Z",
       "score": 364,
@@ -744,7 +847,8 @@
       "meta": {
         "comments": 313
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": null
     },
     {
       "id": "hf:LiquidAI/d1-3B",
@@ -758,15 +862,19 @@
         "downloads": 21223,
         "task": "image-text-to-text"
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/LiquidAI/d1-3B.png",
+      "blurb": "d1-3B is a 3B parameter decision model built on LFM2.5-VL-3B. You give it a state (text, JSON, images, or a mix) and a set of questions. It returns calibrated, typed answers in one forward…"
     },
     {
       "id": "gh:hanzohanzhe/Grandet",
       "source": "gh",
-      "title": "Find the cheapest API for any model and connect it from your AI agent: Grandet Skill and an anonymous MCP server, backed by listed prices from 1,800+ official,…",
+      "title": "hanzohanzhe/Grandet",
+      "blurb": "Find the cheapest API for any model and connect it from your AI agent: Grandet Skill and an anonymous MCP server, backed by listed prices from 1,800+ official, inference and relay providers…",
+      "image": "https://opengraph.githubassets.com/1/hanzohanzhe/Grandet",
       "url": "https://github.com/hanzohanzhe/Grandet",
       "publishedAt": "2026-10-05T06:50:33.000Z",
-      "score": 342,
+      "score": 344,
       "scoreLabel": "stars",
       "meta": {
         "repo": "hanzohanzhe/Grandet",
@@ -786,12 +894,16 @@
         "downloads": 42186,
         "task": "automatic-speech-recognition"
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Cactus-Compute/whistle.png",
+      "blurb": "A speech-to-text model for mobiles, wearables, robots, smart home, automotive and microcontrollers. The whole model is a single 16.9 MB file, and it runs on the same CPU engine as Needle…"
     },
     {
       "id": "gh:NousResearch/hermes-official-plugins",
       "source": "gh",
-      "title": "☤ The official plugins for Hermes Agent, built and maintained by Nous Research: Home Assistant, Spotify, Claude Subscription DirectSDK and more, one install aw…",
+      "title": "NousResearch/hermes-official-plugins",
+      "blurb": "☤ The official plugins for Hermes Agent, built and maintained by Nous Research: Home Assistant, Spotify, Claude Subscription DirectSDK and more, one install away from the Hermes plugin…",
+      "image": "https://opengraph.githubassets.com/1/NousResearch/hermes-official-plugins",
       "url": "https://github.com/NousResearch/hermes-official-plugins",
       "publishedAt": "2026-10-10T20:51:25.000Z",
       "score": 320,
@@ -814,7 +926,9 @@
         "downloads": 34241,
         "task": "text-to-speech"
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/canberkkkkkk/ema-lightning.png",
+      "blurb": "⚡ EMA Lightning *Tiny, fast and accurate Turkish text to speech. A 5.6M-parameter DiT acoustic model and a 3M-parameter vocoder: 8.6M in total, about 34 MB. Apache 2.0. Most accurate on…"
     },
     {
       "id": "hf:Comfy-Org/MOSS-Image",
@@ -822,18 +936,22 @@
       "title": "Comfy-Org/MOSS-Image",
       "url": "https://huggingface.co/Comfy-Org/MOSS-Image",
       "publishedAt": "2026-10-16T12:42:32.000Z",
-      "score": 165,
+      "score": 166,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 354126,
         "task": null
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Comfy-Org/MOSS-Image.png",
+      "blurb": null
     },
     {
       "id": "arxiv:2610.22331v1",
       "source": "arxiv",
       "title": "KnowGPO: Knowledge-Grouped Policy Optimization for Search Agents",
+      "blurb": "Deep search agents solve knowledge-intensive tasks through long-horizon, multi-turn interactions, where assigning credit to individual search decisions is fundamentally difficult…",
+      "image": null,
       "url": "http://arxiv.org/abs/2610.22331v1",
       "publishedAt": "2026-10-15T17:52:33.000Z",
       "score": null,
@@ -847,7 +965,9 @@
     {
       "id": "gh:longsurf-ai/openchart",
       "source": "gh",
-      "title": "OSS trading workspace with your favorite agents",
+      "title": "longsurf-ai/openchart",
+      "blurb": "OSS trading workspace with your favorite agents",
+      "image": "https://opengraph.githubassets.com/1/longsurf-ai/openchart",
       "url": "https://github.com/longsurf-ai/openchart",
       "publishedAt": "2026-10-05T16:16:41.000Z",
       "score": 242,
@@ -861,10 +981,12 @@
     {
       "id": "gh:songshikang0111/awesome-REA-cases",
       "source": "gh",
-      "title": "A curated collection of REA and AI-assisted reverse engineering cases, projects, and ideas. Updated every four hours.",
+      "title": "songshikang0111/awesome-REA-cases",
+      "blurb": "A curated collection of REA and AI-assisted reverse engineering cases, projects, and ideas. Updated every four hours.",
+      "image": "https://opengraph.githubassets.com/1/songshikang0111/awesome-REA-cases",
       "url": "https://github.com/songshikang0111/awesome-REA-cases",
       "publishedAt": "2026-10-12T04:52:44.000Z",
-      "score": 238,
+      "score": 240,
       "scoreLabel": "stars",
       "meta": {
         "repo": "songshikang0111/awesome-REA-cases",
@@ -884,12 +1006,31 @@
         "downloads": 256336,
         "task": "image-text-to-text"
       },
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2.png",
+      "blurb": "GPQA and LCB are identical across all three precisions. MMLU varies between 445 and 450, which is sampling noise rather than a precision effect. Dynamic FP8 means online FP8 quantization of…"
+    },
+    {
+      "id": "gh:justxor/deepseek-local-guide-ru",
+      "source": "gh",
+      "title": "justxor/deepseek-local-guide-ru",
+      "blurb": "🐋 Полный гайд на русском: как установить и запустить DeepSeek локально (V4, R1) на ПК, Mac и сервере — Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG, агенты, fine-tuning, лучшие…",
+      "image": "https://opengraph.githubassets.com/1/justxor/deepseek-local-guide-ru",
+      "url": "https://github.com/justxor/deepseek-local-guide-ru",
+      "publishedAt": "2026-10-17T10:03:36.000Z",
+      "score": 81,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "justxor/deepseek-local-guide-ru",
+        "language": "Shell"
+      },
       "alsoOn": []
     },
     {
       "id": "hn:50104299",
       "source": "hn",
       "title": "Using AI to reverse engineer hardware",
+      "blurb": "After my mother passed away I ended up with a big box full of old film negatives containing photos from childhood family trips and similar. So I decided to buy a negative photo scanner and…",
       "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
       "publishedAt": "2026-10-15T14:35:15.000Z",
       "score": 253,
@@ -897,26 +1038,15 @@
       "meta": {
         "comments": 249
       },
-      "alsoOn": []
-    },
-    {
-      "id": "gh:HRuiCcc/RuiC-oc-ferry",
-      "source": "gh",
-      "title": "把 OpenCode 的免费模型摆渡给 WorkBuddy —— 隔离运行时、并发检测、判定缓存、一键导入、本机 OpenAI 兼容转发口",
-      "url": "https://github.com/HRuiCcc/RuiC-oc-ferry",
-      "publishedAt": "2026-10-10T08:59:18.000Z",
-      "score": 223,
-      "scoreLabel": "stars",
-      "meta": {
-        "repo": "HRuiCcc/RuiC-oc-ferry",
-        "language": "JavaScript"
-      },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://blogs.gnome.org/uraeus/files/2026/10/drivercompare.png"
     },
     {
       "id": "arxiv:2610.22330v1",
       "source": "arxiv",
       "title": "Designing Transformers for Continuous Diffusion Language Models",
+      "blurb": "Continuous diffusion language models (CDLMs) offer an alternative approach to parallel language generation; however, most existing studies directly use transformer architectures from either…",
+      "image": null,
       "url": "http://arxiv.org/abs/2610.22330v1",
       "publishedAt": "2026-10-15T17:52:31.000Z",
       "score": null,
@@ -939,15 +1069,19 @@
         "downloads": 22689,
         "task": "image-text-to-text"
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/openbmb/MiniCPM-V-4.7-1B.png",
+      "blurb": "The 1B variant of MiniCPM-V 4.7 advances the performance–efficiency Pareto frontier. In Instruct mode, 1B substantially outperforms Qwen3.5 0.8B in both overall score and inference…"
     },
     {
       "id": "gh:sitor-ai/frametell",
       "source": "gh",
-      "title": "Frametell: turn your ideas and material into vivid explainer videos with an AI director agent. Local-first, any model.",
+      "title": "sitor-ai/frametell",
+      "blurb": "Frametell: turn your ideas and material into vivid explainer videos with an AI director agent. Local-first, any model.",
+      "image": "https://opengraph.githubassets.com/1/sitor-ai/frametell",
       "url": "https://github.com/sitor-ai/frametell",
       "publishedAt": "2026-10-10T10:02:14.000Z",
-      "score": 222,
+      "score": 227,
       "scoreLabel": "stars",
       "meta": {
         "repo": "sitor-ai/frametell",
@@ -959,6 +1093,7 @@
       "id": "hn:50104654",
       "source": "hn",
       "title": "Simons Foundation launches $15M effort to help mathematicians navigate AI era",
+      "blurb": "The Simons Foundation today announced a new set of initiatives that will help the mathematics community navigate the rapid rise of artificial intelligence in the field. Under a partnership…",
       "url": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/",
       "publishedAt": "2026-10-15T14:58:48.000Z",
       "score": 249,
@@ -966,12 +1101,15 @@
       "meta": {
         "comments": 199
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://www.simonsfoundation.org/wp-content/uploads/2026/10/SEO_SF-OpenAi_c.Lucy-Reading-Ikkanda-Simons-Foundation-1.jpg"
     },
     {
       "id": "arxiv:2610.22328v1",
       "source": "arxiv",
       "title": "ACEdit: Stable Multi-Turn Image Editing via Asymmetric Conditioning",
+      "blurb": "Image editing models produce impressive results for individual edits, but their quality often deteriorates over multiple editing turns. Each editing turn introduces small distribution…",
+      "image": null,
       "url": "http://arxiv.org/abs/2610.22328v1",
       "publishedAt": "2026-10-15T17:52:24.000Z",
       "score": null,
@@ -994,19 +1132,23 @@
         "downloads": 10724,
         "task": "automatic-speech-recognition"
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/FermionResearch/Phonon-2.png",
+      "blurb": "Phonon-2 is the most accurate open speech recognition model for English under 900 MB. Across the Open ASR Leaderboard's seven English sets it averages 5.21 % word error, beating models…"
     },
     {
-      "id": "gh:hitkeeen/blender-ai-addon",
+      "id": "gh:HRuiCcc/RuiC-oc-ferry",
       "source": "gh",
-      "title": "Blender add-on: create and edit 3D models by chatting with AI - send text or an image, get working bpy code",
-      "url": "https://github.com/hitkeeen/blender-ai-addon",
-      "publishedAt": "2026-10-09T08:34:03.000Z",
-      "score": 217,
+      "title": "HRuiCcc/RuiC-oc-ferry",
+      "blurb": "把 OpenCode 的免费模型摆渡给 WorkBuddy —— 隔离运行时、并发检测、判定缓存、一键导入、本机 OpenAI 兼容转发口",
+      "image": "https://opengraph.githubassets.com/1/HRuiCcc/RuiC-oc-ferry",
+      "url": "https://github.com/HRuiCcc/RuiC-oc-ferry",
+      "publishedAt": "2026-10-10T08:59:18.000Z",
+      "score": 224,
       "scoreLabel": "stars",
       "meta": {
-        "repo": "hitkeeen/blender-ai-addon",
-        "language": "Python"
+        "repo": "HRuiCcc/RuiC-oc-ferry",
+        "language": "JavaScript"
       },
       "alsoOn": []
     },
@@ -1014,6 +1156,7 @@
       "id": "hn:50097369",
       "source": "hn",
       "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
+      "blurb": "LFM2.5-24B-A2B: an open-weight 24B reasoning model with 2B active parameters, built for fast, private on-device agents. Beats Qwen3.6-35B-A3B on LiveClaw.",
       "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
       "publishedAt": "2026-10-14T23:59:37.000Z",
       "score": 288,
@@ -1021,12 +1164,15 @@
       "meta": {
         "comments": 81
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://aypchzzf9pftwuto.public.blob.vercel-storage.com/image%20(3)-oOdUn61bDRSykk4H951SoDOHzqoOe1.png"
     },
     {
       "id": "arxiv:2610.22327v1",
       "source": "arxiv",
       "title": "Twice Upon a Time: Complementary Representations for Time-Series Reasoning",
+      "blurb": "Time Series Language Models (TSLMs) enable language-based understanding and reasoning over temporal data, yet a fundamental question remains: what information should their time-series…",
+      "image": null,
       "url": "http://arxiv.org/abs/2610.22327v1",
       "publishedAt": "2026-10-15T17:52:18.000Z",
       "score": null,
@@ -1049,19 +1195,23 @@
         "downloads": 108496,
         "task": "feature-extraction"
       },
-      "alsoOn": []
+      "alsoOn": [],
+      "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/unsloth/embeddinggemma-2-GGUF.png",
+      "blurb": "License : Apache 2.0 | Authors : Google DeepMind *EmbeddingGemma 2 is an open multimodal embedding model built by Google DeepMind which maps text (incl. code), images, video, and audio…"
     },
     {
-      "id": "gh:justxor/deepseek-local-guide-ru",
+      "id": "gh:hitkeeen/blender-ai-addon",
       "source": "gh",
-      "title": "🐋 Полный гайд на русском: как установить и запустить DeepSeek локально (V4, R1) на ПК, Mac и сервере — Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG…",
-      "url": "https://github.com/justxor/deepseek-local-guide-ru",
-      "publishedAt": "2026-10-17T10:03:36.000Z",
-      "score": 78,
+      "title": "hitkeeen/blender-ai-addon",
+      "blurb": "Blender add-on: create and edit 3D models by chatting with AI - send text or an image, get working bpy code",
+      "image": "https://opengraph.githubassets.com/1/hitkeeen/blender-ai-addon",
+      "url": "https://github.com/hitkeeen/blender-ai-addon",
+      "publishedAt": "2026-10-09T08:34:03.000Z",
+      "score": 217,
       "scoreLabel": "stars",
       "meta": {
-        "repo": "justxor/deepseek-local-guide-ru",
-        "language": "Shell"
+        "repo": "hitkeeen/blender-ai-addon",
+        "language": "Python"
       },
       "alsoOn": []
     }

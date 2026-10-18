@@ -1,9 +1,9 @@
 /**
- * AI Wire — renders data/news.json as a dispatch tape.
+ * AI Wire — renders data/news.json as a grid of dispatches.
  *
  * The data file is rewritten hourly by a scheduled job and served from the same
  * origin, so there is no API, no build step and no key. This script only reads,
- * filters and formats it.
+ * filters, paginates and formats it.
  */
 
 const DATA_URL = "data/news.json";
@@ -11,422 +11,477 @@ const REFRESH_MS = 10 * 60 * 1000;
 const TICK_MS = 30 * 1000;
 const STALE_MS = 90 * 60 * 1000;
 const MIN_REFETCH_GAP_MS = 60 * 1000;
-/** Rows past this point all animate together, so the entrance never drags on. */
+/** Cards past this point still animate, but as one batch, so the entrance never drags. */
 const ENTER_STAGGER_CAP = 11;
-/** How many top-ranked dispatches are set in ink rather than muted type. */
-const LEAD_ROWS = 6;
+const PAGE_SIZE = 24;
 
-const SOURCES = { hn: "Hacker News", hf: "Hugging Face", gh: "GitHub", arxiv: "arXiv" };
+const SOURCES = {
+  hn: { name: "Hacker News", code: "HN" },
+  hf: { name: "Hugging Face", code: "HF" },
+  gh: { name: "GitHub", code: "GH" },
+  arxiv: { name: "arXiv", code: "arXiv" },
+};
 const ORDER = ["hn", "hf", "gh", "arxiv"];
 
 const els = {
-  tape: document.getElementById("tape"),
-  state: document.getElementById("state"),
+  wire: document.getElementById("wire"),
+  lead: document.getElementById("lead"),
+  brief: document.getElementById("brief"),
+  count: document.getElementById("count"),
   filters: document.getElementById("filters"),
-  status: document.getElementById("status"),
+  state: document.getElementById("state"),
+  pulse: document.getElementById("status"),
   note: document.getElementById("note"),
   alert: document.getElementById("alert"),
+  more: document.getElementById("more"),
   announcer: document.getElementById("announcer"),
 };
+const pulseText = els.pulse.querySelector(".pulse__text");
 
 const state = {
-  data: null,
+  payload: null,
   filter: "all",
+  shown: PAGE_SIZE,
+  loading: true,
   error: null,
-  fetchedAt: 0,
+  /** Ids already on screen, so a refresh only animates what is genuinely new. */
   seen: new Set(),
-  rendered: false,
+  animateAll: true,
+  lastFetch: 0,
 };
 
-/* ------------------------------------------------------------------ format */
+const nf = new Intl.NumberFormat();
 
-const fmtInt = new Intl.NumberFormat();
-const fmtCompact = new Intl.NumberFormat(undefined, {
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
-const fmtTime = new Intl.DateTimeFormat(undefined, {
-  hour: "2-digit",
-  minute: "2-digit",
-  hourCycle: "h23",
-});
-const fmtDate = new Intl.DateTimeFormat(undefined, { day: "numeric", month: "short" });
+/* --------------------------------------------------------------- helpers */
 
-function num(value) {
-  if (typeof value !== "number" || !Number.isFinite(value)) return null;
-  return value >= 10000 ? fmtCompact.format(value) : fmtInt.format(value);
-}
-
-function countOf(count, singular, pluralForm) {
-  return `${fmtInt.format(count)} ${count === 1 ? singular : pluralForm}`;
-}
-
-function plural(count, word) {
-  return countOf(count, word, `${word}s`);
-}
-
-const startOfDay = (date) => new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
-
-/**
- * The tape is ordered by signal, not by clock, so a stamp belongs to its own row
- * rather than to a day heading. Today shows the hour; older shows the date.
- */
-function railStamp(date) {
-  return startOfDay(date) === startOfDay(new Date()) ? fmtTime.format(date) : fmtDate.format(date);
-}
-
-function ago(iso) {
-  const seconds = (Date.now() - Date.parse(iso)) / 1000;
-  if (!Number.isFinite(seconds)) return "an unknown time ago";
-  if (seconds < 45) return "just now";
-  const minutes = Math.round(seconds / 60);
-  if (minutes < 60) return `${plural(minutes, "minute")} ago`;
-  const hours = Math.round(minutes / 60);
-  if (hours < 24) return `${plural(hours, "hour")} ago`;
-  return `${plural(Math.round(hours / 24), "day")} ago`;
-}
-
-function el(tag, className, text) {
+function el(tag, props = {}, ...children) {
   const node = document.createElement(tag);
-  if (className) node.className = className;
-  if (text != null) node.textContent = text;
+  for (const [key, value] of Object.entries(props)) {
+    if (value === null || value === undefined || value === false) continue;
+    if (key === "class") node.className = value;
+    else if (key === "text") node.textContent = value;
+    else node.setAttribute(key, value === true ? "" : String(value));
+  }
+  node.append(...children.filter(Boolean));
   return node;
 }
 
-/** Source first, then its figures. No middle dots, no badges. */
-function metaLine(item) {
-  const meta = item.meta || {};
-  const words = [];
+const stamp = (iso) =>
+  Number.isFinite(Date.parse(iso))
+    ? new Date(iso).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })
+    : "";
 
-  if (item.source === "hn") {
-    const points = num(item.score);
-    if (points) words.push(`${points} points`);
-    const comments = num(meta.comments);
-    if (comments) words.push(`${comments} comments`);
-  } else if (item.source === "hf") {
-    const likes = num(item.score);
-    if (likes) words.push(`${likes} likes`);
-    const downloads = num(meta.downloads);
-    if (downloads) words.push(`${downloads} downloads`);
-  } else if (item.source === "gh") {
-    const stars = num(item.score);
-    if (stars) words.push(`${stars} stars`);
-    if (meta.language) words.push(meta.language);
-  } else if (item.source === "arxiv") {
-    if (meta.category) words.push(meta.category);
-    if (meta.authors) words.push(plural(meta.authors, "author"));
-  }
-
-  if (Array.isArray(item.alsoOn) && item.alsoOn.length > 0) {
-    const own = SOURCES[item.source] || item.source;
-    const names = [
-      ...new Set(
-        item.alsoOn
-          .map((id) => SOURCES[String(id).split(":")[0]])
-          .filter((name) => Boolean(name) && name !== own),
-      ),
-    ];
-    if (names.length > 0) words.push(`also on ${names.join(" and ")}`);
-  }
-
-  return { name: SOURCES[item.source] || item.source, words };
+function relTime(iso, now = Date.now()) {
+  const t = Date.parse(iso);
+  if (!Number.isFinite(t)) return "";
+  const mins = Math.max(0, Math.round((now - t) / 60_000));
+  if (mins < 1) return "just now";
+  if (mins < 60) return `${mins}m ago`;
+  const hours = Math.round(mins / 60);
+  if (hours < 24) return `${hours}h ago`;
+  return `${Math.round(hours / 24)}d ago`;
 }
 
-/* ------------------------------------------------------------------ render */
-
-function renderRow(item, index, options) {
-  const row = el("li", "row");
-  if (index < LEAD_ROWS) row.classList.add("row--lead");
-
-  if (options.enter) {
-    row.classList.add("row--enter");
-    row.style.setProperty("--i", String(Math.min(index, ENTER_STAGGER_CAP)));
-  }
-  if (options.newIds && options.newIds.has(item.id)) row.classList.add("row--new");
-
-  const rail = el("div", "row__rail");
-  const date = new Date(item.publishedAt);
-  const stamp = el("time", null, railStamp(date));
-  stamp.dateTime = item.publishedAt;
-  stamp.title = date.toLocaleString();
-  rail.appendChild(stamp);
-
-  const body = el("div", "row__body");
-  const heading = el("h3", "row__title");
-  const link = el("a", "row__link", item.title);
-  link.href = item.url;
-  link.target = "_blank";
-  link.rel = "noopener noreferrer";
-  heading.appendChild(link);
-  body.appendChild(heading);
-
-  const { name, words } = metaLine(item);
-  const meta = el("p", "row__meta");
-  meta.appendChild(el("span", "row__source", name));
-  if (words.length > 0) meta.appendChild(document.createTextNode(`, ${words.join(", ")}`));
-  body.appendChild(meta);
-
-  row.append(rail, body);
-  return row;
+function relWords(iso, now = Date.now()) {
+  const t = Date.parse(iso);
+  if (!Number.isFinite(t)) return "";
+  const mins = Math.max(0, Math.round((now - t) / 60_000));
+  if (mins < 1) return "less than a minute ago";
+  if (mins < 60) return `${mins} minute${mins === 1 ? "" : "s"} ago`;
+  const hours = Math.round(mins / 60);
+  if (hours < 24) return `${hours} hour${hours === 1 ? "" : "s"} ago`;
+  const days = Math.round(hours / 24);
+  return `${days} day${days === 1 ? "" : "s"} ago`;
 }
 
-function renderTape(items, options) {
-  els.tape.textContent = "";
-  items.forEach((item, index) => {
-    els.tape.appendChild(renderRow(item, index, options));
+const sourceOf = (item) => SOURCES[item.source] || { name: item.source, code: item.source };
+
+function scoreText(item) {
+  if (typeof item.score === "number") return `${nf.format(item.score)} ${item.scoreLabel}`;
+  return item.meta?.category || "";
+}
+
+/**
+ * Other sources carrying the same story, named rather than counted. The item's own
+ * source is excluded: the same link submitted twice to Hacker News is still just
+ * Hacker News, and "Also on Hacker News" on a Hacker News card reads as a bug.
+ */
+function alsoText(item) {
+  if (!item.alsoOn?.length) return "";
+  const own = sourceOf(item).name;
+  const names = [
+    ...new Set(
+      item.alsoOn
+        .map((id) => SOURCES[String(id).split(":")[0]]?.name)
+        .filter((name) => name && name !== own),
+    ),
+  ];
+  if (names.length === 0) return "";
+  return `Also on ${names.join(" and ")}`;
+}
+
+const timeNode = (item, className) =>
+  el("p", {
+    class: className,
+    "data-time": item.publishedAt,
+    title: stamp(item.publishedAt),
+    text: relTime(item.publishedAt),
+  });
+
+/** A second line for the designed tile, from what the source actually records. */
+function tileSub(item) {
+  return item.meta?.category || item.meta?.task || item.meta?.language || "";
+}
+
+/**
+ * Artwork when the source has any, and a designed tile when it does not — the
+ * grid keeps its rhythm either way, and a dead preview link degrades to the tile
+ * rather than to a broken image.
+ */
+function media(item, isLead) {
+  const wrap = el("div", { class: isLead ? "lead__media" : "story__media" });
+  wrap.append(
+    el("span", {
+      class: isLead ? "lead__mark" : "story__mark",
+      "aria-hidden": "true",
+      text: sourceOf(item).code,
+    }),
+  );
+  const sub = tileSub(item);
+  if (sub) {
+    wrap.append(
+      el("span", {
+        class: isLead ? "lead__mark-sub" : "story__mark-sub",
+        "aria-hidden": "true",
+        text: sub,
+      }),
+    );
+  }
+  if (item.image) {
+    const img = el("img", {
+      class: isLead ? "lead__img" : "story__img",
+      src: item.image,
+      alt: "",
+      loading: "lazy",
+      decoding: "async",
+      referrerpolicy: "no-referrer",
+    });
+    img.addEventListener("error", () => img.remove(), { once: true });
+    wrap.append(img);
+  }
+  return wrap;
+}
+
+function link(item, className) {
+  return el("a", {
+    class: className,
+    href: item.url,
+    target: "_blank",
+    rel: "noopener noreferrer",
   });
 }
 
-/** Six rows in the final grid, fading in quietly. No shimmer, no layout shift. */
-function renderSkeleton() {
-  els.tape.textContent = "";
-  showState(null);
-  for (let i = 0; i < 6; i += 1) {
-    const row = el("li", "row");
-    const rail = el("div", "row__rail");
-    const railBar = el("div", "skeleton__bar skeleton__bar--rail");
-    railBar.style.animationDelay = `${i * 40}ms`;
-    rail.appendChild(railBar);
+function leadNode(item) {
+  const anchor = link(item, item.image ? "lead__link" : "lead__link lead__link--text");
+  const body = el("div", { class: "lead__body" });
 
-    const body = el("div", "row__body");
-    const titleBar = el("div", "skeleton__bar skeleton__bar--title");
-    const metaBar = el("div", "skeleton__bar skeleton__bar--meta");
-    titleBar.style.animationDelay = `${i * 40}ms`;
-    metaBar.style.animationDelay = `${i * 40}ms`;
-    body.append(titleBar, metaBar);
+  const meta = el("div", { class: "lead__meta" });
+  meta.append(el("span", { class: "chip", "aria-hidden": "true", text: sourceOf(item).code }));
+  meta.append(el("span", { class: "story__source", text: sourceOf(item).name }));
+  meta.append(
+    el("span", {
+      "data-time": item.publishedAt,
+      title: stamp(item.publishedAt),
+      text: relTime(item.publishedAt),
+    }),
+  );
+  body.append(meta);
 
-    row.append(rail, body);
-    els.tape.appendChild(row);
+  body.append(el("h2", { class: "lead__title", text: item.title }));
+  if (item.blurb) body.append(el("p", { class: "lead__blurb", text: item.blurb }));
+
+  const score = scoreText(item);
+  const also = alsoText(item);
+  if (score || also) {
+    const foot = el("div", { class: "lead__foot" });
+    if (score) foot.append(el("span", { text: score }));
+    if (also) foot.append(el("span", { text: also }));
+    body.append(foot);
   }
+
+  if (item.image) anchor.append(media(item, true));
+  anchor.append(body);
+  return el("article", { class: "lead" }, anchor);
 }
 
-function showState(spec) {
+function storyNode(item) {
+  const source = sourceOf(item);
+  const anchor = link(item, "story__link");
+
+  anchor.append(media(item, false));
+  anchor.append(timeNode(item, "story__time"));
+  anchor.append(el("h3", { class: "story__title", text: item.title }));
+  if (item.blurb) anchor.append(el("p", { class: "story__blurb", text: item.blurb }));
+
+  const foot = el("div", { class: "story__foot" });
+  foot.append(el("span", { class: "chip", "aria-hidden": "true", text: source.code }));
+  foot.append(el("span", { class: "story__source", text: source.name }));
+  const score = scoreText(item);
+  if (score) foot.append(el("span", { class: "story__score", text: score }));
+  anchor.append(foot);
+
+  const also = alsoText(item);
+  if (also) anchor.append(el("p", { class: "story__also", text: also }));
+
+  return el("li", { class: "story" }, anchor);
+}
+
+/* ---------------------------------------------------------------- render */
+
+const visible = () => {
+  const items = state.payload?.items || [];
+  return state.filter === "all" ? items : items.filter((item) => item.source === state.filter);
+};
+
+function render({ animate = true } = {}) {
+  const list = visible();
+  const page = list.slice(0, state.shown);
+
+  els.wire.replaceChildren();
+  els.lead.replaceChildren();
+
+  if (page.length > 0) {
+    const lead = leadNode(page[0]);
+    if (animate && (state.animateAll || !state.seen.has(page[0].id))) {
+      lead.classList.add("is-new");
+    }
+    els.lead.append(lead);
+  }
+  els.lead.hidden = page.length === 0;
+
+  const fragment = document.createDocumentFragment();
+  page.slice(1).forEach((item, i) => {
+    const node = storyNode(item);
+    if (animate && (state.animateAll || !state.seen.has(item.id))) {
+      node.classList.add("is-new");
+      node.style.setProperty("--i", String(Math.min(i, ENTER_STAGGER_CAP)));
+    }
+    fragment.append(node);
+  });
+  els.wire.append(fragment);
+
+  for (const item of page) state.seen.add(item.id);
+  state.animateAll = false;
+
+  els.brief.hidden = list.length === 0;
+  els.count.textContent = `${nf.format(list.length)} ${list.length === 1 ? "dispatch" : "dispatches"}`;
+
+  const remaining = list.length - page.length;
+  els.more.hidden = remaining <= 0;
+  els.more.textContent = `Show ${nf.format(remaining)} more`;
+
+  renderState(list);
+}
+
+function renderState(list) {
+  const show = (className, message) => {
+    els.state.hidden = false;
+    els.state.className = className;
+    els.state.textContent = message;
+  };
+
+  if (!state.payload) {
+    if (state.loading) return show("state", "Loading the latest edition…");
+    return show("state state--warn", "The wire could not be loaded. It will be retried automatically.");
+  }
+  if (list.length === 0) {
+    return show("state", "Nothing from this source in the latest edition.");
+  }
+  els.state.hidden = true;
   els.state.textContent = "";
-  if (!spec) {
-    els.state.hidden = true;
-    return;
-  }
-  els.state.hidden = false;
-  if (spec.art) els.state.appendChild(el("div", "state__art"));
-  els.state.appendChild(el("p", "state__title", spec.title));
-  if (spec.line) els.state.appendChild(el("p", "state__line", spec.line));
-  if (spec.action) {
-    const wrap = el("p", "state__action");
-    const button = el("button", "btn", spec.action.label);
-    button.type = "button";
-    button.addEventListener("click", spec.action.onClick);
-    wrap.appendChild(button);
-    els.state.appendChild(wrap);
-  }
 }
 
-function emptySpec() {
-  if (!state.data) {
-    return {
-      title: "Couldn't load dispatches",
-      line: "The page couldn't read the data file. The hourly build may not have run yet.",
-      action: { label: "Retry", onClick: () => load("retry") },
-    };
-  }
-  if (state.filter !== "all") {
-    return {
-      title: `Nothing from ${SOURCES[state.filter]}`,
-      line: "That source had no dispatches worth showing in the last run.",
-      action: { label: "Clear filter", onClick: () => setFilter("all") },
-    };
-  }
-  return {
-    art: true,
-    title: "No dispatches yet",
-    line: "The first build hasn't finished. This wire is rebuilt every hour.",
-    action: { label: "Check now", onClick: () => load("retry") },
-  };
-}
+function renderTabs() {
+  const items = state.payload?.items || [];
+  const counts = new Map();
+  for (const item of items) counts.set(item.source, (counts.get(item.source) || 0) + 1);
 
-function render(options = {}) {
-  // Still loading: keep the skeleton rather than claiming a failure.
-  if (!state.data && !state.error) {
-    updateStatus();
-    return;
+  const options = [["all", "All", items.length]];
+  for (const id of ORDER) {
+    if (SOURCES[id] && counts.get(id)) options.push([id, SOURCES[id].name, counts.get(id)]);
   }
 
-  const all = state.data ? state.data.items || [] : [];
-  const items = state.filter === "all" ? all : all.filter((i) => i.source === state.filter);
-
-  if (items.length === 0) {
-    // Clear the tape as well, or skeleton rows left over from the first load
-    // stay on screen underneath the empty state.
-    els.tape.textContent = "";
-    showState(emptySpec());
-    if (state.data && state.filter !== "all") nudgeActiveTab();
-  } else {
-    renderTape(items, options);
-    showState(null);
-  }
-
-  updateNote(items);
-  updateStatus();
-}
-
-function nudgeActiveTab() {
-  const tab = els.filters.querySelector('[aria-pressed="true"]');
-  if (!tab) return;
-  tab.classList.remove("filters__tab--nudge");
-  void tab.offsetWidth; // restart the animation
-  tab.classList.add("filters__tab--nudge");
-}
-
-/* ------------------------------------------------------------------ chrome */
-
-function updateStatus() {
-  const set = (tone, text) => {
-    els.status.dataset.tone = tone;
-    els.status.querySelector(".status__text").textContent = text;
-  };
-
-  if (state.error && !state.data) return set("danger", "Couldn't load dispatches");
-  if (state.error && state.data) return set("danger", `Showing data from ${ago(state.data.generatedAt)}`);
-  if (!state.data) return set("ok", "Connecting");
-
-  const age = Date.now() - Date.parse(state.data.generatedAt);
-  set(age > STALE_MS ? "warning" : "ok", `Synced ${ago(state.data.generatedAt)}`);
-}
-
-function updateNote(items) {
-  if (!state.data) {
-    els.note.textContent = "";
-    return;
-  }
-  // Nothing to count: the state panel already says why.
-  if (items.length === 0) {
-    els.note.textContent = "";
-    return;
-  }
-  const ok = (state.data.sources || []).filter((s) => s.status === "ok").length;
-  els.note.textContent =
-    state.filter === "all"
-      ? `${countOf(items.length, "dispatch", "dispatches")} from ${countOf(ok, "source", "sources")}`
-      : `${countOf(items.length, "dispatch", "dispatches")} from ${SOURCES[state.filter]}`;
-}
-
-function updateAlert() {
-  const failed = (state.data?.sources || []).filter((s) => s.status !== "ok");
-  if (failed.length === 0) {
-    els.alert.hidden = true;
-    els.alert.textContent = "";
-    return;
-  }
-  const names = failed.map((s) => s.name);
-  const list =
-    names.length === 1 ? names[0] : `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`;
-  els.alert.hidden = false;
-  els.alert.textContent = `${list} couldn't be reached in the last run.`;
-}
-
-function updateFilterTabs() {
-  for (const tab of els.filters.querySelectorAll(".filters__tab")) {
-    tab.setAttribute("aria-pressed", String(tab.dataset.source === state.filter));
-  }
-}
-
-function renderFilters() {
-  els.filters.textContent = "";
-  const entries = [["all", "All"], ...ORDER.map((id) => [id, SOURCES[id]])];
-  for (const [id, label] of entries) {
-    const tab = el("button", "filters__tab", label);
-    tab.type = "button";
-    tab.dataset.source = id;
-    tab.setAttribute("aria-pressed", String(state.filter === id));
-    tab.addEventListener("click", () => setFilter(id));
-    els.filters.appendChild(tab);
-  }
-}
-
-function readHash() {
-  const raw = location.hash.replace(/^#/, "");
-  if (!raw) return "all";
-  const id = new URLSearchParams(raw).get("source");
-  return id && SOURCES[id] ? id : "all";
-}
-
-function setFilter(id) {
-  state.filter = id;
-  const params = new URLSearchParams();
-  if (id !== "all") params.set("source", id);
-  const hash = params.toString();
-  history.replaceState(null, "", hash ? `#${hash}` : location.pathname + location.search);
-  updateFilterTabs();
-  render();
-  announce(
-    state.filter === "all"
-      ? "Showing every source."
-      : `Showing dispatches from ${SOURCES[state.filter]}.`,
+  els.filters.replaceChildren(
+    ...options.map(([id, name, n]) => {
+      const tab = el("button", {
+        class: "tab",
+        type: "button",
+        "aria-current": state.filter === id ? "true" : null,
+      });
+      tab.append(document.createTextNode(name));
+      if (n) tab.append(el("span", { class: "tab__n", text: nf.format(n) }));
+      tab.addEventListener("click", () => setFilter(id));
+      return tab;
+    }),
   );
 }
 
-function announce(message) {
-  els.announcer.textContent = message;
-}
+function updateStatus(now = Date.now()) {
+  els.pulse.classList.remove("pulse--stale", "pulse--error");
+  const stampNode = els.note;
+  const payload = state.payload;
 
-/* -------------------------------------------------------------------- load */
-
-async function load(reason) {
-  if (reason === "init") {
-    renderSkeleton();
-    updateStatus();
+  if (!payload) {
+    pulseText.textContent = state.loading ? "Connecting…" : "Offline";
+    if (!state.loading) els.pulse.classList.add("pulse--error");
+    stampNode.textContent = "";
+    return;
   }
 
+  const age = now - Date.parse(payload.generatedAt);
+  const stale = !Number.isFinite(age) || age > STALE_MS;
+  pulseText.textContent = stale
+    ? `Stale · ${relTime(payload.generatedAt, now)}`
+    : `Updated ${relTime(payload.generatedAt, now)}`;
+  if (stale) els.pulse.classList.add("pulse--stale");
+
+  const ok = payload.sources.filter((s) => s.status === "ok").length;
+  stampNode.textContent =
+    `${nf.format(payload.items.length)} dispatches from ${ok} of ${payload.sources.length} ` +
+    `sources, rebuilt ${relWords(payload.generatedAt, now)}.`;
+}
+
+function updateAlerts(now = Date.now()) {
+  const payload = state.payload;
+  if (!payload) {
+    els.alert.hidden = true;
+    return;
+  }
+
+  const failed = payload.sources.filter((s) => s.status !== "ok");
+  const stale = now - Date.parse(payload.generatedAt) > STALE_MS;
+  const messages = [];
+
+  if (failed.length > 0) {
+    const names = failed.map((s) => s.name).join(", ");
+    messages.push(
+      `${names} ${failed.length === 1 ? "is" : "are"} not reporting right now, so ` +
+        `${failed.length === 1 ? "its dispatches are" : "their dispatches are"} missing from this edition.`,
+    );
+  }
+  if (stale) {
+    messages.push("This edition is older than expected, so the hourly rebuild may have stalled.");
+  }
+
+  els.alert.hidden = messages.length === 0;
+  els.alert.textContent = messages.join(" ");
+  els.alert.classList.toggle("alert--error", failed.length === payload.sources.length);
+}
+
+/** Re-render only the relative times; the cards themselves are left alone. */
+function tick() {
+  const now = Date.now();
+  for (const node of document.querySelectorAll("[data-time]")) {
+    const rel = relTime(node.getAttribute("data-time"), now);
+    if (rel) node.textContent = rel;
+  }
+  updateStatus(now);
+  updateAlerts(now);
+}
+
+function announce(message) {
+  els.announcer.textContent = "";
+  window.setTimeout(() => {
+    els.announcer.textContent = message;
+  }, 60);
+}
+
+/* ----------------------------------------------------------------- state */
+
+function syncHash() {
+  const url =
+    state.filter === "all" ? location.pathname + location.search : `#source=${state.filter}`;
+  history.replaceState(null, "", url);
+}
+
+function readHash() {
+  const m = location.hash.match(/^#source=([a-z]+)$/);
+  if (m && SOURCES[m[1]]) state.filter = m[1];
+}
+
+function setFilter(id, { sync = true } = {}) {
+  if (state.filter === id) return;
+  state.filter = id;
+  state.shown = PAGE_SIZE;
+  if (sync) syncHash();
+  renderTabs();
+  render();
+  announce(
+    id === "all" ? "Showing every source." : `Showing ${SOURCES[id].name} only.`,
+  );
+}
+
+/* ------------------------------------------------------------------ load */
+
+async function load() {
+  state.lastFetch = Date.now();
   try {
-    const response = await fetch(`${DATA_URL}?v=${Date.now()}`, { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    state.data = await response.json();
+    const res = await fetch(DATA_URL, { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    if (!Array.isArray(data?.items) || data.items.length === 0) throw new Error("empty edition");
+
+    const first = !state.payload;
+    state.payload = data;
     state.error = null;
-    state.fetchedAt = Date.now();
+    state.loading = false;
+    if (first) state.animateAll = true;
+
+    renderTabs();
+    render();
+    updateAlerts();
+    if (!first) {
+      announce(`Refreshed. ${data.items.length} dispatches.`);
+    }
   } catch (error) {
     state.error = error;
+    state.loading = false;
+    // Whatever is already on screen stays on screen; a failed refresh must not blank it.
+    renderTabs();
+    render({ animate: false });
+    if (!state.payload) announce("The wire could not be loaded.");
   }
-
-  const newIds = new Set();
-  if (state.data && state.rendered) {
-    for (const item of state.data.items || []) {
-      if (!state.seen.has(item.id)) newIds.add(item.id);
-    }
-  }
-
-  const firstPaint = !state.rendered && Boolean(state.data);
-  if (state.data) {
-    state.rendered = true;
-    for (const item of state.data.items || []) state.seen.add(item.id);
-  }
-
-  updateAlert();
-  render({ enter: firstPaint, newIds });
-
-  if (state.error && !state.data) announce("Couldn't load dispatches.");
-  else if (state.data && firstPaint) {
-    announce(`${countOf((state.data.items || []).length, "dispatch", "dispatches")} loaded.`);
-  }
+  updateStatus();
 }
 
-/* -------------------------------------------------------------------- boot */
+/** Focus and tab-return refetch, but never more than once a minute. */
+function maybeRefetch() {
+  if (Date.now() - state.lastFetch < MIN_REFETCH_GAP_MS) return;
+  load();
+}
 
-state.filter = readHash();
-renderFilters();
-updateStatus();
-load("init");
+/* ------------------------------------------------------------------ boot */
 
-setInterval(updateStatus, TICK_MS);
+els.more.addEventListener("click", () => {
+  state.shown += PAGE_SIZE;
+  render();
+});
 
-setInterval(() => {
-  if (document.visibilityState === "visible") load("interval");
-}, REFRESH_MS);
+window.addEventListener("hashchange", () => {
+  const before = state.filter;
+  readHash();
+  if (state.filter !== before) setFilter(state.filter, { sync: false });
+});
 
 document.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === "visible" && Date.now() - state.fetchedAt > MIN_REFETCH_GAP_MS) {
-    load("visible");
-  }
+  if (document.visibilityState === "visible") maybeRefetch();
 });
+window.addEventListener("focus", maybeRefetch);
+window.setInterval(tick, TICK_MS);
+window.setInterval(load, REFRESH_MS);
 
-window.addEventListener("focus", () => {
-  if (Date.now() - state.fetchedAt > MIN_REFETCH_GAP_MS) load("focus");
-});
+readHash();
+renderTabs();
+render();
+updateStatus();
+load();

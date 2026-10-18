@@ -88,10 +88,14 @@ const themes = {
 /** Every pairing that actually renders, and the threshold it must clear. */
 const PAIRS = [
   ["page text", "text", "bg", MIN_BODY],
-  ["body title", "text-2", "bg", MIN_BODY],
+  ["headline rest", "text-2", "bg", MIN_BODY],
   ["meta + rail", "text-muted", "bg", MIN_BODY],
   ["inactive tab", "text-2", "bg", MIN_BODY],
-  ["accent link", "accent", "bg", MIN_LARGE],
+  ["accent link", "accent-ink", "bg", MIN_BODY],
+  ["button label", "on-accent", "accent", MIN_BODY],
+  ["hero title", "hero-text", "hero-bg", MIN_BODY],
+  ["hero lede", "hero-muted", "hero-bg", MIN_BODY],
+  ["tile mark", "tile-ink", "tile", MIN_BODY],
   ["warning", "warning", "bg", MIN_BODY],
   ["danger", "danger", "bg", MIN_BODY],
 ];
@@ -120,4 +124,13 @@ for (const [themeName, tokens] of Object.entries(themes)) {
 }
 
 console.log(failures === 0 ? "\nAll pairings pass.\n" : `\n${failures} pairings failed.\n`);
+
+// Every token as sRGB, for authoring the fallback block that older engines use.
+for (const [themeName, tokens] of Object.entries(themes)) {
+  console.log(`${themeName} palette`);
+  for (const [name, token] of Object.entries(tokens)) {
+    console.log(`  --${name}: ${toHex(token)};`);
+  }
+}
+
 process.exit(failures === 0 ? 0 : 1);
