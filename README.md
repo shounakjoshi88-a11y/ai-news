@@ -4,29 +4,27 @@ A single page showing what is happening in AI right now — papers, models, code
 discussion — from four sources, rebuilt every hour by a scheduled job. No server, no
 database, no API keys, nothing to run.
 
-**Live:** https://shounakjoshi88-a11y.github.io/ai-news/
+**Live:** https://ai-news-seven-tan.vercel.app/
 
 ## How it works
 
 ```
-Hacker News  ─┐
-Hugging Face ─┤   scripts/fetch-news.mjs        data/news.json         index.html
-GitHub       ─┼─▶ normalise → dedupe → rank ─▶ committed hourly ─▶ app.js renders
-arXiv cs.AI  ─┘                                       ▲
-                                                      └─ GitHub Actions, every hour
+Hacker News   ─┐
+Hugging Face  ─┤   scripts/fetch-news.mjs          data/news.json        index.html
+GitHub        ─┼─▶ normalise → dedupe → rank ─▶   committed hourly  ─▶  app.js renders
+arXiv cs.AI   ─┘                                         ▲                     ▲
+                                                         │                     │
+                                               GitHub Actions, hourly     Vercel, on push
 ```
 
 A scheduled workflow runs `scripts/fetch-news.mjs`, which writes `data/news.json` and
-commits it if it changed, then publishes the page. Because the page is served from the
-same origin as that file, the browser reads it directly. There is no API to call and no
-process to keep alive.
+commits it if it changed. Because the page is served from the same origin as that file,
+the browser reads it directly. There is no API to call and no process to keep alive.
 
-Publishing runs on GitHub Pages from Actions, and the published site is assembled from
-four files plus the data — the repo's own `scripts/` and `docs/` are never part of it.
-
-> Pages has to be switched on once in the repository's **Settings → Pages**, which is an
-> administrator action no workflow token is allowed to perform. After that single
-> setting, every hourly run keeps the live page current on its own.
+The repository is linked to Vercel, so that same commit is also what republishes the page.
+The hourly job deploys nothing itself and holds no hosting credential — it only commits,
+and Vercel rebuilds on push. A total collection failure therefore leaves both the last good
+commit and the live site untouched.
 
 ## Sources
 

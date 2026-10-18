@@ -1,15 +1,15 @@
 name: Refresh dispatches
 
-# Rebuilds data/news.json every hour, commits it, and publishes the page. The page
-# itself is static, so this is the only moving part: no server, no database, no
-# client-side API key.
+# Rebuilds data/news.json every hour and commits it. Vercel is linked to this
+# repository, so that commit is itself what republishes the site — there is no
+# deploy step here, and the job holds no hosting credential.
 
 on:
   schedule:
     # Hourly, at :07 past. GitHub starts scheduled runs a few minutes late under
     # load, and the page does not depend on the exact minute.
     - cron: "7 * * * *"
-  # Code changes re-run the pipeline immediately. Data commits touch
+  # Code changes re-run the collector immediately. Data commits touch
   # data/news.json alone, so they never re-trigger this workflow.
   push:
     branches: [main]
@@ -71,46 +71,3 @@ jobs:
             git rebase origin/main
             git push origin HEAD:main
           fi
-
-  publish:
-    name: Publish the page
-    needs: refresh
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
-
-    concurrency:
-      group: pages
-      cancel-in-progress: false
-
-    steps:
-      # main, not the triggering commit: the refresh job may have just pushed data.
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - uses: actions/configure-pages@v5
-
-      # Only the four files the page needs plus its data, so the published site
-      # never carries the repo's docs, scripts or git metadata.
-      - name: Assemble the site
-        run: |
-          mkdir -p _site
-          cp index.html styles.css app.js _site/
-          cp -r data _site/
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-      - name: Deploy
-        id: deploy
-        uses: actions/deploy-pages@v4
