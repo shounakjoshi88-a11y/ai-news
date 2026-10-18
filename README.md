@@ -274,6 +274,14 @@ offset is dropped rather than printed twice, and a zone that has rolled into ano
 carries its weekday with the time (`Mon 01:20`), since after the place name it read as one
 name: `Beijing Mon`.
 
+Under all of that sits a **rail rather than a title block**: the name, what the page is, and how
+much is in it, on one line of small type. The first version was a 2.5rem name over a three-line
+paragraph, and under a board that loud it read as a second, softer monument — not a quieter page,
+just two loud things. Cut to a rail it does the same work in a fifth of the height (612px of
+masthead became 439px) and the board above keeps the only big voice. It wraps to its own short
+lines on a phone rather than shrinking, and the stamp no longer says when the edition was rebuilt,
+because the pulse in the bar already says it.
+
 The board is a picture of the time, so it is `aria-hidden`; the row of zones is where the
 local time actually comes from for a screen reader, and its first item reads "Your clock, …".
 The seconds cost one glyph a second rather than six — a digit whose character has not changed

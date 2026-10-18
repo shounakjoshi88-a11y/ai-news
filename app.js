@@ -110,18 +110,6 @@ function relTime(iso, now = Date.now()) {
   return `${Math.round(hours / 24)}d ago`;
 }
 
-function relWords(iso, now = Date.now()) {
-  const t = Date.parse(iso);
-  if (!Number.isFinite(t)) return "";
-  const mins = Math.max(0, Math.round((now - t) / 60_000));
-  if (mins < 1) return "less than a minute ago";
-  if (mins < 60) return `${mins} minute${mins === 1 ? "" : "s"} ago`;
-  const hours = Math.round(mins / 60);
-  if (hours < 24) return `${hours} hour${hours === 1 ? "" : "s"} ago`;
-  const days = Math.round(hours / 24);
-  return `${days} day${days === 1 ? "" : "s"} ago`;
-}
-
 const sourceOf = (item) => SOURCES[item.source] || { name: item.source, code: item.source };
 
 function scoreText(item) {
@@ -477,9 +465,12 @@ function updateStatus(now = Date.now()) {
   if (stale) els.pulse.classList.add("pulse--stale");
 
   const ok = payload.sources.filter((s) => s.status === "ok").length;
+  // Only the counts, now. "rebuilt X ago" was the same fact as the pulse two
+  // inches above it, and on a one-line rail the extra clause was the difference
+  // between a line and a wrapped remnant.
   stampNode.textContent =
-    `${nf.format(payload.items.length)} dispatches from ${ok} of ${payload.sources.length} ` +
-    `sources, rebuilt ${relWords(payload.generatedAt, now)}.`;
+    `${nf.format(payload.items.length)} dispatches from ${ok} of ` +
+    `${payload.sources.length} sources.`;
 }
 
 function updateAlerts(now = Date.now()) {

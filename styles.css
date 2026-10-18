@@ -507,26 +507,37 @@ a {
   font-weight: 600;
 }
 
+/* The foot of the masthead: the name, what the page is, and how much is in it.
+   This was a stacked block — a 2.5rem name over a three-line paragraph, all of it
+   centred — and under a board that loud it read as a second, softer monument: not
+   a quieter page, just two loud things. Cut down to one rail of small type it does
+   the same work in a fifth of the height, and the board above keeps the only big
+   voice on the page. It wraps to its own short lines on a phone rather than
+   shrinking, and flex `gap` owns every space in it. */
+.hero__foot {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px 20px;
+}
+
 .hero__title {
-  margin-top: clamp(30px, 3.8vw, 44px);
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-size: 1.25rem;
   font-weight: 800;
-  line-height: 1.04;
-  letter-spacing: -0.034em;
-  text-wrap: balance;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
 }
 
 .hero__lede {
-  margin: 20px auto 0;
-  max-width: 52ch;
-  font-size: clamp(0.9375rem, 1.6vw, 1.0625rem);
-  line-height: 1.55;
+  font-size: 0.875rem;
+  line-height: 1.5;
   color: var(--hero-muted);
   text-wrap: pretty;
 }
 
 .hero__stamp {
-  margin-top: 22px;
   font-size: 0.8125rem;
   color: var(--hero-muted);
 }
