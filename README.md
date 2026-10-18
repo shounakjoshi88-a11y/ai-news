@@ -122,14 +122,51 @@ fabrication.
 | Attempt | Result |
 | --- | --- |
 | `GET https://perchance.org/api/...` | `403` to any non-browser client |
-| `image-generation.perchance.org/api/verifyUser` | `{"status":"failed_verification","reason":"token_required"}` |
+| `GET/POST https://image-generation.perchance.org/api/*` | every method, every path: `403` with `<title>Just a moment...</title>` — Cloudflare's challenge interstitial, so the request never reaches the API at all |
+| `image-generation.perchance.org/api/verifyUser` from inside a real session | `{"status":"failed_verification","reason":"token_required"}` |
 | A headless browser, driven with Playwright | `400`, `424 Failed Dependency`, `ERR_TOO_MANY_REDIRECTS` |
 | Its own page's JavaScript | reads `navigator.webdriver`, and gates generation behind an ad-powered access code from `/api/getAccessCodeForAdPoweredStuff` |
 | Our own `perchance-image-mcp`, headed Chrome, cleared profile | `no image after 180s (queue may be busy)` — repeatedly |
 
-Generation there is gated behind a Cloudflare Turnstile token, which is precisely the thing a
-script cannot obtain. It can be made to work by hand in a real browser; it cannot back an
-hourly job.
+**What the token actually is, since it is the natural question.** It is not a credential that
+exists anywhere to be collected. Perchance's own front-end shows the whole mechanism:
+
+```js
+let cachedAccessCodeForAdPoweredStuff = null;
+setInterval(() => { cachedAccessCodeForAdPoweredStuff = null }, 10 * 60 * 1000);
+
+window.addEventListener("message", async function (e) {
+  if (e.origin !== "https://text-generation.perchance.org" &&
+      e.origin !== "https://image-generation.perchance.org") return;
+  if (e.data.type == "plsGibAccessCodeForAdPoweredStuff") {
+    let code = cachedAccessCodeForAdPoweredStuff ||
+      (await fetch(`/api/getAccessCodeForAdPoweredStuff?__cacheBust=...`).then(r => r.text()));
+    cachedAccessCodeForAdPoweredStuff = code;
+```
+
+and immediately before that fetch:
+
+```js
+let interactionGateTimeout = setTimeout(() => { ... adgate60t ... }, 60_000);
+await window.humanInteractionSignalsPromise;   // real pointer/keyboard signals
+window.queuedStatCountKeys.add("adgatep");     // "ad gate passed"
+```
+
+So there are two gates stacked, and neither is a token you can fetch:
+
+1. **Cloudflare** fronts `image-generation.perchance.org`. Anything that is not a browser it
+   trusts gets the interstitial instead of a response, whatever the path or method.
+2. **Behind that, an ad-powered access code.** The generation plugin asks its parent for one by
+   `postMessage`; the parent mints it, caches it for ten minutes, and only after it has seen
+   `humanInteractionSignalsPromise` resolve and has run a sandboxed ad iframe
+   (`ad-sandbox.perchance.org`, provider `vli`).
+
+That is the whole point of it. The code is per session, expires in ten minutes, and re-minting
+it means passing the interaction gate again — in a browser, by hand or close enough. It is a
+gate by construction, not a key: there is no endpoint that issues one, no page that shows you
+one, and nothing to paste into a scheduled job. Driving a real headed browser with a warmed
+profile can satisfy it — which is what our own `perchance-image-mcp` does, and even that only
+sometimes, because the queue then answers `no image after 180s`.
 
 **If it is ever wanted anyway**, one repository variable turns it on: set `ARTWORK_MAX` to a
 number, and the workflow runs the generator capped to that many new pictures per hour. Its

@@ -26,13 +26,18 @@
  * unattended job, and that was measured rather than assumed:
  *
  *   - `GET /api/*` on perchance.org answers 403 to a non-browser client.
- *   - `image-generation.perchance.org/api/verifyUser` without a Cloudflare
- *     Turnstile token answers `{"status":"failed_verification",
- *     "reason":"token_required"}`, so generation is gated behind a challenge
- *     that a script cannot solve.
- *   - the same page's own code reads `navigator.webdriver`, and generation is
- *     further gated behind an ad-powered access code
- *     (`/api/getAccessCodeForAdPoweredStuff`).
+ *   - `image-generation.perchance.org` — the host that renders the images — is
+ *     behind Cloudflare: every path and method from an HTTP client answers 403
+ *     with `<title>Just a moment...</title>`, so the request never reaches the
+ *     API. From inside a real session it then answers
+ *     `{"status":"failed_verification","reason":"token_required"}`.
+ *   - that token is perchance's own ad-powered access code, not a credential
+ *     that exists anywhere to be collected: the plugin postMessages
+ *     `plsGibAccessCodeForAdPoweredStuff` to its parent, which fetches
+ *     `/api/getAccessCodeForAdPoweredStuff`, caches it for ten minutes, and only
+ *     after a `humanInteractionSignalsPromise` of real pointer and keyboard
+ *     input has resolved. Per session, re-minted only by passing the gate again.
+ *     The same page's code also reads `navigator.webdriver`.
  *   - driven with a real headed Chrome it can work, but it is a consumer
  *     service with a shared queue, not an API: it answers "no image after
  *     180s" often enough that nothing unattended should depend on it.
