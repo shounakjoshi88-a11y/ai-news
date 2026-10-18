@@ -17,8 +17,16 @@ arXiv cs.AI  ─┘                                       ▲
 ```
 
 A scheduled workflow runs `scripts/fetch-news.mjs`, which writes `data/news.json` and
-commits it if it changed. Because the page is served from the same origin as that file,
-the browser reads it directly. There is no API to call and no process to keep alive.
+commits it if it changed, then publishes the page. Because the page is served from the
+same origin as that file, the browser reads it directly. There is no API to call and no
+process to keep alive.
+
+Publishing runs on GitHub Pages from Actions, and the published site is assembled from
+four files plus the data — the repo's own `scripts/` and `docs/` are never part of it.
+
+> Pages has to be switched on once in the repository's **Settings → Pages**, which is an
+> administrator action no workflow token is allowed to perform. After that single
+> setting, every hourly run keeps the live page current on its own.
 
 ## Sources
 
