@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T17:54:44Z",
+  "generatedAt": "2026-10-18T17:55:47Z",
   "sources": [
     {
       "id": "hn",
@@ -594,7 +594,7 @@
       "source": "techmeme",
       "title": "Sources: HomeView units sat in warehouses for months; Apple plans a Nov. 6 store reset, likely for new Macs; iPhone Duo preorder mess could boost 18 Pro sales …",
       "blurb": "Mark Gurman / Bloomberg : Sources: HomeView units sat in warehouses for months; Apple plans a Nov. 6 store reset, likely for new Macs; iPhone Duo preorder mess could boost 18 Pro sales…",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iXiE5svOJdSs/v0/1200x800.jpg",
+      "image": null,
       "url": "https://www.techmeme.com/261018/p8#a261018p8",
       "publishedAt": "2026-10-18T15:30:01.000Z",
       "score": null,
@@ -920,7 +920,7 @@
       "source": "marktechpost",
       "title": "Google Open-Sources Harness2, a Recursive Agent Harnessing Framework",
       "blurb": "Google Research released Harness2, an Apache-2.0 framework that rewrites an agent's harness at test time. One refinement step lifted GLM-5 by 11.5 points on WorkBuddy-Bench with no weight…",
-      "image": null,
+      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-6-scaled.png",
       "url": "https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework/",
       "publishedAt": "2026-10-18T08:15:04.000Z",
       "score": null,
@@ -933,7 +933,7 @@
       "source": "techmeme",
       "title": "An interview with Apple's new VP of the App Store, Carson Oliver, on Apple's gaming vision, Apple Arcade, providing tools for indie game developers, and more (…",
       "blurb": "Giovanni Colantonio / Polygon : An interview with Apple's new VP of the App Store, Carson Oliver, on Apple's gaming vision, Apple Arcade, providing tools for indie game developers, and more…",
-      "image": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/indie-games-week-app-store.jpg?w=1200&h=675&fit=crop",
+      "image": null,
       "url": "https://www.techmeme.com/261018/p7#a261018p7",
       "publishedAt": "2026-10-18T11:15:00.000Z",
       "score": null,
@@ -1112,7 +1112,7 @@
       "source": "marktechpost",
       "title": "How to Make Zero-Training Tabular Predictions with NVIDIA Structured Data Models",
       "blurb": "In this tutorial, we implement Structured Data Models, NVIDIA’s new library that puts several pretrained foundation models for tables behind one PyTorch interface, and use it to make…",
-      "image": null,
+      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-5-1024x768.png",
       "url": "https://www.marktechpost.com/2026/10/17/how-to-make-zero-training-tabular-predictions-with-nvidia-structured-data-models/",
       "publishedAt": "2026-10-18T05:56:05.000Z",
       "score": null,
@@ -1125,7 +1125,7 @@
       "source": "techmeme",
       "title": "RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein says ~35% of the planned US data center pipeline is credible…",
       "blurb": "Financial Times : RegLayer: 47+ large US data center projects were delayed, withdrawn, or blocked in 2026; Bernstein says ~35% of the planned US data center pipeline is credible — A vast…",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F7bd165b9-9b2e-4e8c-83f1-70e5b0dc9426.jpg?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1",
+      "image": null,
       "url": "https://www.techmeme.com/261018/p6#a261018p6",
       "publishedAt": "2026-10-18T06:15:01.000Z",
       "score": null,
@@ -1220,7 +1220,7 @@
       "source": "techmeme",
       "title": "AI debt worries mount as CoreWeave's bond yield tops 15%, insuring SoftBank debt gets pricier, and some Oracle debt trades near 80 to 90 cents on the dollar (N…",
       "blurb": "New York Times : AI debt worries mount as CoreWeave's bond yield tops 15%, insuring SoftBank debt gets pricier, and some Oracle debt trades near 80 to 90 cents on the dollar — Debt trouble…",
-      "image": "https://static01.nyt.com/images/2026/10/16/multimedia/00biz-data-center-debt-kmwt/00biz-data-center-debt-kmwt-facebookJumbo.jpg",
+      "image": null,
       "url": "https://www.techmeme.com/261018/p5#a261018p5",
       "publishedAt": "2026-10-18T06:10:04.000Z",
       "score": null,
@@ -1414,7 +1414,7 @@
       "source": "marktechpost",
       "title": "Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI",
       "blurb": "Voxel51 3.0 merges search, curation, annotation and evaluation of multimodal sensor data into one platform for physical AI teams. It adds Voxel51 Agent with 45+ MCP tools, dataset…",
-      "image": null,
+      "image": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-4-scaled.png",
       "url": "https://www.marktechpost.com/2026/10/17/voxel51-3-0-physical-ai-data-platform/",
       "publishedAt": "2026-10-18T04:06:33.000Z",
       "score": null,
@@ -1427,7 +1427,7 @@
       "source": "techmeme",
       "title": "Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex, UK, data center, which may not get grid power until the 2030…",
       "blurb": "James Titcomb / Telegraph : Microsoft cancels its deal to be the anchor tenant and rent 23K Nvidia AI chips at Nscale's Essex, UK, data center, which may not get grid power until the 2030s…",
-      "image": "https://www.telegraph.co.uk/content/dam/business/2026/10/16/TELEMMGLPICT000507649137_17921721386890_trans_NvBQzQNjv4BqP2bie5QPKGvaXrJaymJ8nZMVLLha8zPj14kJ046OG20.jpeg?impolicy=OG-Standard",
+      "image": null,
       "url": "https://www.techmeme.com/261018/p4#a261018p4",
       "publishedAt": "2026-10-18T06:05:00.000Z",
       "score": null,
@@ -1729,7 +1729,7 @@
       "source": "techmeme",
       "title": "Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zone II, CC.VC, and others, a source says at a $245M valuation…",
       "blurb": "Nick Lichtenberg / Fortune : Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zone II, CC.VC, and others, a source says at a $245M valuation…",
-      "image": "https://fortune.com/img-assets/wp-content/uploads/2026/10/1788884365250.jpg?resize=1200,600",
+      "image": null,
       "url": "https://www.techmeme.com/261018/p3#a261018p3",
       "publishedAt": "2026-10-18T05:40:01.000Z",
       "score": null,
@@ -1820,6 +1820,21 @@
       "alsoOn": []
     },
     {
+      "id": "hn:50143218",
+      "source": "hn",
+      "title": "British Airways: Filming Crew W Meta Glasses Could Get Your Tickets Cancelled",
+      "blurb": "British Airways prohibits filming crew without consent, including with Meta smart glasses. Violations could jeopardize your remaining flights.",
+      "url": "https://liveandletsfly.com/british-airways-meta-smart-glasses-filming/",
+      "publishedAt": "2026-10-18T17:27:30.000Z",
+      "score": 44,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 28
+      },
+      "alsoOn": [],
+      "image": "https://liveandletsfly.com/wp-content/uploads/2026/10/British-Airways-Meta-Glasses.jpeg"
+    },
+    {
       "id": "databricks:https://www.databricks.com/blog/transactions-are-generally-available-advancing-warehousing-lakehouse",
       "source": "databricks",
       "title": "Transactions are Generally Available, advancing warehousing on the Lakehouse",
@@ -1889,21 +1904,6 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50143218",
-      "source": "hn",
-      "title": "British Airways: Filming Crew W Meta Glasses Could Get Your Tickets Cancelled",
-      "blurb": "British Airways prohibits filming crew without consent, including with Meta smart glasses. Violations could jeopardize your remaining flights.",
-      "url": "https://liveandletsfly.com/british-airways-meta-smart-glasses-filming/",
-      "publishedAt": "2026-10-18T17:27:30.000Z",
-      "score": 41,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 27
-      },
-      "alsoOn": [],
-      "image": "https://liveandletsfly.com/wp-content/uploads/2026/10/British-Airways-Meta-Glasses.jpeg"
-    },
-    {
       "id": "nine5google:https://9to5google.com/2026/10/16/hp-googlebook-14-review/",
       "source": "nine5google",
       "title": "HP Googlebook 14 Review: Great laptop, shame about the OS",
@@ -1921,7 +1921,7 @@
       "source": "techmeme",
       "title": "Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI counterpart…",
       "blurb": "Cristina Criddle / Financial Times : Sources: Anthropic is consulting law firms on deal negotiation tactics as it develops AI agents to negotiate on humans' behalf and interact with AI…",
-      "image": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fd0c5836a-e180-41a3-926e-d97eee0d614a.jpg?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1",
+      "image": null,
       "url": "https://www.techmeme.com/261018/p2#a261018p2",
       "publishedAt": "2026-10-18T05:10:01.000Z",
       "score": null,
@@ -2136,8 +2136,8 @@
       "id": "sifted:https://sifted.eu/articles/harry-stebbings-podcast/",
       "source": "sifted",
       "title": "Harry Stebbings on 996 regrets, political ambitions and building a personal brand",
-      "blurb": null,
-      "image": null,
+      "blurb": "Recorded live at Sifted Summit in October, this conversation sees Harry sit down with host Freya Pratty to talk 996 and political ambitions.",
+      "image": "https://images.sifted.eu/cdn-cgi/image/width=1280,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/16151339/Harry-Freya-HSBC-Long.png",
       "url": "https://sifted.eu/articles/harry-stebbings-podcast/",
       "publishedAt": "2026-10-16T15:16:15.000Z",
       "score": null,
@@ -2435,19 +2435,6 @@
       "alsoOn": []
     },
     {
-      "id": "slashdot:https://yro.slashdot.org/story/26/10/18/0323207/saudi-openai-employees-arrest-revives-fears-us-tech-companies-are-hiring-spies?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-      "source": "slashdot",
-      "title": "Saudi OpenAI Employee's Arrest Revives Fears US Tech Companies Are Hiring Spies",
-      "blurb": "That Saudi national working at OpenAI and arrested by the FBI \"has not been charged with foreign espionage,\" writes the Washington Post, \"and the U.S. government has not said whether he was…",
-      "image": "https://a.fsdn.com/sd/topics/crime_64.png",
-      "url": "https://yro.slashdot.org/story/26/10/18/0323207/saudi-openai-employees-arrest-revives-fears-us-tech-companies-are-hiring-spies?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-      "publishedAt": "2026-10-18T04:34:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "thehackernews:https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
       "source": "thehackernews",
       "title": "Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug",
@@ -2455,6 +2442,19 @@
       "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqmitTMm5t8BBKfynqzFAKqJSzh_s7fQczmMm5u95RLUUzuWMubd5DeM8e8EH6YOpP-_gvbYwn8Cd3flsL-nGIupBw5HOo49Orr7J2rqhI99J7U4LcXW6shlxd3w0zFAng1mLw5xGb-F9GRmpDK82GC1-Dcb1gPcvkgl4wVi0-QTEGalDwPmelGE0TtNU/s1600/openbsd.jpg",
       "url": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
       "publishedAt": "2026-10-16T17:48:45.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "slashdot:https://yro.slashdot.org/story/26/10/18/0323207/saudi-openai-employees-arrest-revives-fears-us-tech-companies-are-hiring-spies?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+      "source": "slashdot",
+      "title": "Saudi OpenAI Employee's Arrest Revives Fears US Tech Companies Are Hiring Spies",
+      "blurb": "That Saudi national working at OpenAI and arrested by the FBI \"has not been charged with foreign espionage,\" writes the Washington Post, \"and the U.S. government has not said whether he was…",
+      "image": "https://a.fsdn.com/sd/topics/crime_64.png",
+      "url": "https://yro.slashdot.org/story/26/10/18/0323207/saudi-openai-employees-arrest-revives-fears-us-tech-companies-are-hiring-spies?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+      "publishedAt": "2026-10-18T04:34:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2545,7 +2545,7 @@
       "source": "techmeme",
       "title": "GTCR and Elliott agree to acquire and take private CCC, a Nasdaq-listed car insurance software provider, for $4.6B; the deal values CCC at $6.1B including debt…",
       "blurb": "Bloomberg : GTCR and Elliott agree to acquire and take private CCC, a Nasdaq-listed car insurance software provider, for $4.6B; the deal values CCC at $6.1B including debt — GTCR and…",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iJ98L3WjUF5Y/v2/1200x800.jpg",
+      "image": null,
       "url": "https://www.techmeme.com/261018/p1#a261018p1",
       "publishedAt": "2026-10-18T04:35:01.000Z",
       "score": null,
@@ -2591,7 +2591,7 @@
       "score": 612,
       "scoreLabel": "points",
       "meta": {
-        "comments": 559
+        "comments": 560
       },
       "alsoOn": [],
       "image": null
@@ -2604,6 +2604,19 @@
       "image": "https://cdn.tech.eu/uploads/2026/10/untitled-design-43-939.png",
       "url": "https://tech.eu/2026/10/16/dj-reinier-zonneveld-launches-ai-music-startup-gaslab-with-1m-pre-seed-funding/",
       "publishedAt": "2026-10-16T14:23:30.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "nine5google:https://9to5google.com/2026/10/16/google-universal-cart-shopping-icon/",
+      "source": "nine5google",
+      "title": "Google’s Universal Cart puts a shopping cart everywhere, including Search homepage, Chrome",
+      "blurb": "Yesterday, Google started rolling out its Universal Cart, and the company is very prominently placing it in Search, AI Mode, Chrome, and the Gemini app. more…",
+      "image": null,
+      "url": "https://9to5google.com/2026/10/16/google-universal-cart-shopping-icon/",
+      "publishedAt": "2026-10-16T19:47:01.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2623,19 +2636,6 @@
       },
       "alsoOn": [],
       "image": "https://storage.ghost.io/c/3f/80/3f804bea-4b2d-4ddf-9ff0-6ec7d0afa5fa/content/images/size/w1200/2026/10/Amazon-AI-question-openDemocracy-edit.jpg"
-    },
-    {
-      "id": "nine5google:https://9to5google.com/2026/10/16/google-universal-cart-shopping-icon/",
-      "source": "nine5google",
-      "title": "Google’s Universal Cart puts a shopping cart everywhere, including Search homepage, Chrome",
-      "blurb": "Yesterday, Google started rolling out its Universal Cart, and the company is very prominently placing it in Search, AI Mode, Chrome, and the Gemini app. more…",
-      "image": null,
-      "url": "https://9to5google.com/2026/10/16/google-universal-cart-shopping-icon/",
-      "publishedAt": "2026-10-16T19:47:01.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
     },
     {
       "id": "f404:https://www.404media.co/behind-the-blog-doing-whatever/",
@@ -2939,8 +2939,8 @@
       "id": "sifted:https://sifted.eu/articles/open-weight-models-sovereignty-ai-safety/",
       "source": "sifted",
       "title": "Are open-weight AI models safe?",
-      "blurb": null,
-      "image": null,
+      "blurb": "Open models have become Europe’s best card to play in the AI race, but some experts warn the systems come with significant safety risks",
+      "image": "https://images.sifted.eu/cdn-cgi/image/width=1920,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/15164838/mika-baumeister-J5yoGZLdpSI-unsplash.jpg",
       "url": "https://sifted.eu/articles/open-weight-models-sovereignty-ai-safety/",
       "publishedAt": "2026-10-16T05:00:57.000Z",
       "score": null,
@@ -3296,19 +3296,6 @@
       "alsoOn": []
     },
     {
-      "id": "techmeme:https://www.techmeme.com/261017/p21#a261017p21",
-      "source": "techmeme",
-      "title": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve…",
-      "blurb": "Bloomberg : Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve — More than 60…",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/im4ZtBjoW1Ss/v11/1200x790.jpg",
-      "url": "https://www.techmeme.com/261017/p21#a261017p21",
-      "publishedAt": "2026-10-18T03:50:01.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "f404:https://www.404media.co/podcast-cops-can-use-ai-to-pinpoint-your-home-with-just-one-photo/",
       "source": "f404",
       "title": "Podcast: Cops Can Use AI to Pinpoint Your Home with Just One Photo",
@@ -3316,6 +3303,19 @@
       "image": "https://storage.ghost.io/c/0f/76/0f76b548-bc58-4f25-abc3-3f5ebca07da4/content/images/2026/10/maxresdefault-10.jpg",
       "url": "https://www.404media.co/podcast-cops-can-use-ai-to-pinpoint-your-home-with-just-one-photo/",
       "publishedAt": "2026-10-16T15:40:44.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "techmeme:https://www.techmeme.com/261017/p21#a261017p21",
+      "source": "techmeme",
+      "title": "Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve…",
+      "blurb": "Bloomberg : Filing: Disney agreed to hire 60+ staff from Character.AI and pay them ~$180M over three years, plus $30M for retention awards; a bankruptcy judge must approve — More than 60…",
+      "image": null,
+      "url": "https://www.techmeme.com/261017/p21#a261017p21",
+      "publishedAt": "2026-10-18T03:50:01.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -3340,8 +3340,8 @@
       "id": "sifted:https://sifted.eu/articles/blurry-world-defence-tech-revenue-arr-vc/",
       "source": "sifted",
       "title": "The 'blurry' world of defence tech revenue",
-      "blurb": null,
-      "image": null,
+      "blurb": "VCs report some founders are misrepresenting or not being transparent about defence revenue",
+      "image": "https://content.sifted.eu/wp-content/uploads/2026/05/07164917/defence_tech_europe.webp",
       "url": "https://sifted.eu/articles/blurry-world-defence-tech-revenue-arr-vc/",
       "publishedAt": "2026-10-16T05:00:52.000Z",
       "score": null,
@@ -3478,19 +3478,6 @@
       "alsoOn": []
     },
     {
-      "id": "nvidiaresearch:https://research.nvidia.com/publication/2026-12_edgewise-bringing-long-horizon-agents-edge-selective-cloud-delegation",
-      "source": "nvidiaresearch",
-      "title": "EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation",
-      "blurb": "EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation Complex and long-horizon agent tasks often rely on frontier models deployed in the cloud to achieve strong…",
-      "image": null,
-      "url": "https://research.nvidia.com/publication/2026-12_edgewise-bringing-long-horizon-agents-edge-selective-cloud-delegation",
-      "publishedAt": "2026-10-16T06:45:55.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "appleml:https://machinelearning.apple.com/research/plan-retrieve-tool-discovery",
       "source": "appleml",
       "title": "Plan or Retrieve First? A Scale Study of Tool Discovery Architectures",
@@ -3511,6 +3498,19 @@
       "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/6ad05aa9a57ccc564b6563a1_TAI_Meta.png",
       "url": "https://www.together.ai/blog/meta-muse-spark-open",
       "publishedAt": "2026-10-15T00:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "nvidiaresearch:https://research.nvidia.com/publication/2026-12_edgewise-bringing-long-horizon-agents-edge-selective-cloud-delegation",
+      "source": "nvidiaresearch",
+      "title": "EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation",
+      "blurb": "EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation Complex and long-horizon agent tasks often rely on frontier models deployed in the cloud to achieve strong…",
+      "image": null,
+      "url": "https://research.nvidia.com/publication/2026-12_edgewise-bringing-long-horizon-agents-edge-selective-cloud-delegation",
+      "publishedAt": "2026-10-16T06:45:55.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -3545,19 +3545,6 @@
       "alsoOn": []
     },
     {
-      "id": "thehackernews:https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
-      "source": "thehackernews",
-      "title": "AI Decision Models and Their Impact on AI SOC Platforms",
-      "blurb": "In the space of a month, a new category of AI model went from nonexistent to everywhere. TypeSafe AI released Jev on September 15 and called it a System One model, a nod to Kahneman's fast…",
-      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVccQyMWKH3TTGpMGwsFUkVETAsZFTWBlOZyCPr3ZlMJfVPTN09xHFKk94-6OWpwhpE68JRImlVGgma5xaM66ohDwD5XvlOu1FjQPllSMNRvuDUMPB0PNUJEK3u2MaELBNvDP0GNThHj3IGreaWQe6UpzfZ55Ei6HeOpmbcWzo6Mach5g3-9OJPBuA1wY/s1600/modal.jpg",
-      "url": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
-      "publishedAt": "2026-10-16T11:30:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hfblog:https://huggingface.co/blog/meta-muse-spark-open",
       "source": "hfblog",
       "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
@@ -3565,6 +3552,19 @@
       "image": "https://huggingface.co/blog/assets/meta-muse-spark-open/thumbnail.png",
       "url": "https://huggingface.co/blog/meta-muse-spark-open",
       "publishedAt": "2026-10-15T00:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "thehackernews:https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
+      "source": "thehackernews",
+      "title": "AI Decision Models and Their Impact on AI SOC Platforms",
+      "blurb": "In the space of a month, a new category of AI model went from nonexistent to everywhere. TypeSafe AI released Jev on September 15 and called it a System One model, a nod to Kahneman's fast…",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVccQyMWKH3TTGpMGwsFUkVETAsZFTWBlOZyCPr3ZlMJfVPTN09xHFKk94-6OWpwhpE68JRImlVGgma5xaM66ohDwD5XvlOu1FjQPllSMNRvuDUMPB0PNUJEK3u2MaELBNvDP0GNThHj3IGreaWQe6UpzfZ55Ei6HeOpmbcWzo6Mach5g3-9OJPBuA1wY/s1600/modal.jpg",
+      "url": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
+      "publishedAt": "2026-10-16T11:30:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -3837,19 +3837,6 @@
       "alsoOn": []
     },
     {
-      "id": "lesswrong:https://www.lesswrong.com/posts/qmnrZ3YFpSKfLQ59b/knowingly-wrong",
-      "source": "lesswrong",
-      "title": "Knowingly Wrong",
-      "blurb": "This research was completed for London AI Safety Research (LASR) Labs Summer 2026. The team was supervised by Bartosz Cywinski. TL;DR Fine-tuning a model on something it knows is false can…",
-      "image": "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792154515/lexical_client_uploads/fa8jxrnpv7i2p5cubqkj.png",
-      "url": "https://www.lesswrong.com/posts/qmnrZ3YFpSKfLQ59b/knowingly-wrong",
-      "publishedAt": "2026-10-18T04:03:40.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "openai:https://openai.com/index/sentinelone",
       "source": "openai",
       "title": "SentinelOne cuts malware analysis from weeks to hours",
@@ -3863,10 +3850,23 @@
       "alsoOn": []
     },
     {
+      "id": "lesswrong:https://www.lesswrong.com/posts/qmnrZ3YFpSKfLQ59b/knowingly-wrong",
+      "source": "lesswrong",
+      "title": "Knowingly Wrong",
+      "blurb": "This research was completed for London AI Safety Research (LASR) Labs Summer 2026. The team was supervised by Bartosz Cywinski. TL;DR Fine-tuning a model on something it knows is false can…",
+      "image": "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792154515/lexical_client_uploads/fa8jxrnpv7i2p5cubqkj.png",
+      "url": "https://www.lesswrong.com/posts/qmnrZ3YFpSKfLQ59b/knowingly-wrong",
+      "publishedAt": "2026-10-18T04:03:40.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "sifted:https://sifted.eu/articles/reson8-unicorn-interview/",
       "source": "sifted",
       "title": "‘I’m 30. I’ve got one more shot’: Reson8’s founder wants to build a European AI giant",
-      "blurb": null,
+      "blurb": "After selling his healthcare company to Tandem Health, Thomas Kluiters is betting on voice AI — and says Europe’s founders need to think bigger",
       "image": null,
       "url": "https://sifted.eu/articles/reson8-unicorn-interview/",
       "publishedAt": "2026-10-16T05:00:46.000Z",
@@ -4505,19 +4505,6 @@
       "alsoOn": []
     },
     {
-      "id": "thehackernews:https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html",
-      "source": "thehackernews",
-      "title": "CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing",
-      "blurb": "AI agents being tested online reached the live systems of Indian organizations and read business records, including personal data and confidential material, CERT-In said in an advisory on…",
-      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMnLMgZNuoh6c41MPT17IsrvbfocknmRb8sxaolFmTpU9h0b-jyJAe9Ods3iCWligbpcd1a1IThvmpUts5llDkKkScffnItGGrGcneDJ8oUJjuc76syHF8g31ZeTWMunD7LDJjviCRFMf8Zugkg8Z4kgXyhDW4bfrCHtV8Xkt-wJlnUd78z-ab28LrfV5/s1600/certin.jpg",
-      "url": "https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html",
-      "publishedAt": "2026-10-16T06:53:09.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "arxiv:2610.22339v1",
       "source": "arxiv",
       "title": "Lean Graph Search for Formal Theorem Proving",
@@ -4531,6 +4518,19 @@
         "category": "cs.LG",
         "authors": 10
       },
+      "alsoOn": []
+    },
+    {
+      "id": "thehackernews:https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html",
+      "source": "thehackernews",
+      "title": "CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing",
+      "blurb": "AI agents being tested online reached the live systems of Indian organizations and read business records, including personal data and confidential material, CERT-In said in an advisory on…",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyMnLMgZNuoh6c41MPT17IsrvbfocknmRb8sxaolFmTpU9h0b-jyJAe9Ods3iCWligbpcd1a1IThvmpUts5llDkKkScffnItGGrGcneDJ8oUJjuc76syHF8g31ZeTWMunD7LDJjviCRFMf8Zugkg8Z4kgXyhDW4bfrCHtV8Xkt-wJlnUd78z-ab28LrfV5/s1600/certin.jpg",
+      "url": "https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html",
+      "publishedAt": "2026-10-16T06:53:09.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -4828,8 +4828,8 @@
       "id": "sifted:https://sifted.eu/articles/europes-ai-fintech-market-mapped-94-startups-automating-the-business-of-money/",
       "source": "sifted",
       "title": "Europe’s AI fintech market mapped: 94 startups automating the business of money",
-      "blurb": null,
-      "image": null,
+      "blurb": "From AI accountants to agents that pay other agents, Sifted maps the startups rebuilding the back office of finance",
+      "image": "https://content.sifted.eu/wp-content/uploads/2026/03/31140136/huss_and_steven-1-1024x683.png",
       "url": "https://sifted.eu/articles/europes-ai-fintech-market-mapped-94-startups-automating-the-business-of-money/",
       "publishedAt": "2026-10-16T05:00:03.000Z",
       "score": null,
@@ -4940,7 +4940,7 @@
       "image": "https://opengraph.githubassets.com/1/LiCinCan/blender-ai-mcp-addon",
       "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
       "publishedAt": "2026-10-15T22:30:47.000Z",
-      "score": 775,
+      "score": 773,
       "scoreLabel": "stars",
       "meta": {
         "repo": "LiCinCan/blender-ai-mcp-addon",
@@ -5051,7 +5051,7 @@
       "source": "techmeme",
       "title": "An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and more…",
       "blurb": "Joanna Stern / The New Things : An interview with Microsoft CEO Satya Nadella on the Nvidia RTX Spark-powered Surface Laptop Ultra, plans to make Windows a safer OS to run AI agents, and…",
-      "image": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/c34007e3-a820-4426-8999-0c1d14cac551/Joanna-microsoft-nl-4__1_.jpg?t=1792065245",
+      "image": null,
       "url": "https://www.techmeme.com/261017/p20#a261017p20",
       "publishedAt": "2026-10-18T01:20:02.000Z",
       "score": null,
@@ -5188,19 +5188,6 @@
       "alsoOn": []
     },
     {
-      "id": "bleepingcomputer:https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
-      "source": "bleepingcomputer",
-      "title": "Targeted ads installed Candiru spyware in zero-click attacks",
-      "blurb": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's…",
-      "image": "https://www.bleepstatic.com/content/hl-images/2026/10/16/spywareads.jpg",
-      "url": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
-      "publishedAt": "2026-10-16T17:20:03.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "gh:deeplethe/solid-glass",
       "source": "gh",
       "title": "deeplethe/solid-glass",
@@ -5214,6 +5201,19 @@
         "repo": "deeplethe/solid-glass",
         "language": "TypeScript"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "bleepingcomputer:https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
+      "source": "bleepingcomputer",
+      "title": "Targeted ads installed Candiru spyware in zero-click attacks",
+      "blurb": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's…",
+      "image": "https://www.bleepstatic.com/content/hl-images/2026/10/16/spywareads.jpg",
+      "url": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
+      "publishedAt": "2026-10-16T17:20:03.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -5271,19 +5271,6 @@
       "alsoOn": []
     },
     {
-      "id": "awsml:https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/",
-      "source": "awsml",
-      "title": "Trust in Depth: Giving agents more autonomy without losing control",
-      "blurb": "Enterprise leaders want AI agents to take on more work but don't fully trust them to act correctly every time. Trust in Depth is AWS's layered approach-scope, know, bound, observe, and…",
-      "image": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/10/15/trust-in-depth-hero-image-v2-1122x630.png",
-      "url": "https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/",
-      "publishedAt": "2026-10-15T15:05:35.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hn:50059115",
       "source": "hn",
       "title": "Muse Wonder",
@@ -5297,6 +5284,19 @@
       },
       "alsoOn": [],
       "image": "https://research.meta.ai/articles/introducing-muse-wonder/social/muse-wonder-social-v1.webp"
+    },
+    {
+      "id": "awsml:https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/",
+      "source": "awsml",
+      "title": "Trust in Depth: Giving agents more autonomy without losing control",
+      "blurb": "Enterprise leaders want AI agents to take on more work but don't fully trust them to act correctly every time. Trust in Depth is AWS's layered approach-scope, know, bound, observe, and…",
+      "image": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/10/15/trust-in-depth-hero-image-v2-1122x630.png",
+      "url": "https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/",
+      "publishedAt": "2026-10-15T15:05:35.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "ollama:https://ollama.com/blog/ollama-now-supports-jev-style-decision-models",
@@ -5740,7 +5740,7 @@
       "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "publishedAt": "2026-10-07T07:07:30.000Z",
-      "score": 976,
+      "score": 977,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 57935,
@@ -5973,19 +5973,6 @@
       "alsoOn": []
     },
     {
-      "id": "lesswrong:https://www.lesswrong.com/posts/ZWNruQZnrH4Yeusj5/spontaneous-verbal-evidence-synthesis-in-llms",
-      "source": "lesswrong",
-      "title": "Spontaneous verbal evidence synthesis in LLMs",
-      "blurb": "TL;DR. I characterize evidence aggregation in LLMs, partly define and identify the mathematical rule(s) used by them and then behaviorally make models follow those rules more closely. You…",
-      "image": "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792110705/lexical_client_uploads/ebicxdubeycdezgspxjc.jpg",
-      "url": "https://www.lesswrong.com/posts/ZWNruQZnrH4Yeusj5/spontaneous-verbal-evidence-synthesis-in-llms",
-      "publishedAt": "2026-10-18T04:00:37.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "sciencedaily:https://www.sciencedaily.com/releases/2026/09/260929053534.htm",
       "source": "sciencedaily",
       "title": "This light-powered AI can spot deepfakes with nearly 98% accuracy",
@@ -5993,6 +5980,19 @@
       "image": "https://www.sciencedaily.com/images/1920/optical-ai-technology-that-detects-deepfake-videos.webp",
       "url": "https://www.sciencedaily.com/releases/2026/09/260929053534.htm",
       "publishedAt": "2026-10-01T13:03:50.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "lesswrong:https://www.lesswrong.com/posts/ZWNruQZnrH4Yeusj5/spontaneous-verbal-evidence-synthesis-in-llms",
+      "source": "lesswrong",
+      "title": "Spontaneous verbal evidence synthesis in LLMs",
+      "blurb": "TL;DR. I characterize evidence aggregation in LLMs, partly define and identify the mathematical rule(s) used by them and then behaviorally make models follow those rules more closely. You…",
+      "image": "https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792110705/lexical_client_uploads/ebicxdubeycdezgspxjc.jpg",
+      "url": "https://www.lesswrong.com/posts/ZWNruQZnrH4Yeusj5/spontaneous-verbal-evidence-synthesis-in-llms",
+      "publishedAt": "2026-10-18T04:00:37.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -6086,6 +6086,19 @@
       "alsoOn": []
     },
     {
+      "id": "metr:https://metr.org/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/",
+      "source": "metr",
+      "title": "Implementing and Evaluating a Basic Per-Action Monitor for Safer Evals",
+      "blurb": "In light of recent incidents (e.g. those from OpenAI , Anthropic , and UK AISI ), we developed and deployed a basic live per-action monitor to reduce the likelihood of incidents involving…",
+      "image": "https://metr.org/assets/images/blocking-action-monitor/argument-structure.png",
+      "url": "https://metr.org/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/",
+      "publishedAt": "2026-09-27T07:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "databricks:https://www.databricks.com/blog/how-our-ai-research-team-uses-ai-runtime",
       "source": "databricks",
       "title": "How our AI Research team uses AI Runtime",
@@ -6098,19 +6111,6 @@
       "meta": {
         "category": "Engineering"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "metr:https://metr.org/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/",
-      "source": "metr",
-      "title": "Implementing and Evaluating a Basic Per-Action Monitor for Safer Evals",
-      "blurb": "In light of recent incidents (e.g. those from OpenAI , Anthropic , and UK AISI ), we developed and deployed a basic live per-action monitor to reduce the likelihood of incidents involving…",
-      "image": "https://metr.org/assets/images/blocking-action-monitor/argument-structure.png",
-      "url": "https://metr.org/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/",
-      "publishedAt": "2026-09-27T07:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -6142,19 +6142,6 @@
       "alsoOn": []
     },
     {
-      "id": "thenewstack:https://thenewstack.io/synthetic-data-referential-integrity/",
-      "source": "thenewstack",
-      "title": "Only 34% trust synthetic data’s referential integrity — and it’s holding adoption back",
-      "blurb": "While enterprise leaders overwhelmingly believe in the promise of synthetic data, adoption lags. As a result, synthetic data has great, The post Only 34% trust synthetic data’s referential…",
-      "image": "https://cdn.thenewstack.io/media/2026/10/2aee3ec0-kirsten-frank-wovzqv7ly6e-unsplash-1024x683.jpg",
-      "url": "https://thenewstack.io/synthetic-data-referential-integrity/",
-      "publishedAt": "2026-10-16T15:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hf:Aleph-Alpha/Kolibri-1",
       "source": "hf",
       "title": "Aleph-Alpha/Kolibri-1",
@@ -6169,6 +6156,19 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Aleph-Alpha/Kolibri-1.png",
       "blurb": "Kolibri is Aleph Alpha's mixture-of-experts (MoE) reasoning model, with a focus on German and English. The model supports an explicit reasoning mode and tool calling. It is optimized for…"
+    },
+    {
+      "id": "thenewstack:https://thenewstack.io/synthetic-data-referential-integrity/",
+      "source": "thenewstack",
+      "title": "Only 34% trust synthetic data’s referential integrity — and it’s holding adoption back",
+      "blurb": "While enterprise leaders overwhelmingly believe in the promise of synthetic data, adoption lags. As a result, synthetic data has great, The post Only 34% trust synthetic data’s referential…",
+      "image": "https://cdn.thenewstack.io/media/2026/10/2aee3ec0-kirsten-frank-wovzqv7ly6e-unsplash-1024x683.jpg",
+      "url": "https://thenewstack.io/synthetic-data-referential-integrity/",
+      "publishedAt": "2026-10-16T15:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "hn:50073221",
@@ -6268,19 +6268,6 @@
       "alsoOn": []
     },
     {
-      "id": "techreview:https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
-      "source": "techreview",
-      "title": "Open models have real benefits. Do they outweigh the risks?",
-      "blurb": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next. You can read more from the series…",
-      "image": "https://wp.technologyreview.com/wp-content/uploads/2026/09/260915_openaimodels.jpg?resize=1200,600",
-      "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
-      "publishedAt": "2026-10-13T10:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "metr:https://metr.org/blog/2026-09-22-claude-opus-5-5/",
       "source": "metr",
       "title": "Summary of METR's predeployment evaluation of Claude Opus 5.5",
@@ -6288,6 +6275,19 @@
       "image": null,
       "url": "https://metr.org/blog/2026-09-22-claude-opus-5-5/",
       "publishedAt": "2026-09-22T07:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "techreview:https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+      "source": "techreview",
+      "title": "Open models have real benefits. Do they outweigh the risks?",
+      "blurb": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next. You can read more from the series…",
+      "image": "https://wp.technologyreview.com/wp-content/uploads/2026/09/260915_openaimodels.jpg?resize=1200,600",
+      "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+      "publishedAt": "2026-10-13T10:00:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -6312,7 +6312,7 @@
       "id": "hn:50059523",
       "source": "hn",
       "title": "AI coding agents generate more code, but not more software",
-      "blurb": null,
+      "blurb": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
       "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
       "publishedAt": "2026-10-12T17:14:01.000Z",
       "score": 364,
@@ -6321,7 +6321,7 @@
         "comments": 313
       },
       "alsoOn": [],
-      "image": null
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2264559974-1152x648.jpg"
     },
     {
       "id": "lobsters:jbnmj9",
@@ -6464,21 +6464,6 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50104299",
-      "source": "hn",
-      "title": "Using AI to reverse engineer hardware",
-      "blurb": "After my mother passed away I ended up with a big box full of old film negatives containing photos from childhood family trips and similar. So I decided to buy a negative photo scanner and…",
-      "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
-      "publishedAt": "2026-10-15T14:35:15.000Z",
-      "score": 253,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 249
-      },
-      "alsoOn": [],
-      "image": "https://blogs.gnome.org/uraeus/files/2026/10/drivercompare.png"
-    },
-    {
       "id": "spectrum:https://content.knowledgehub.wiley.com/learning-to-play-like-a-pro-adaptive-motion-planning-and-tracking-for-humanoid-robots/",
       "source": "spectrum",
       "title": "Learning to Play Like a Pro: Adaptive Motion Planning and Tracking for Humanoid Robots",
@@ -6492,6 +6477,21 @@
         "category": "Type-whitepaper"
       },
       "alsoOn": []
+    },
+    {
+      "id": "hn:50104299",
+      "source": "hn",
+      "title": "Using AI to reverse engineer hardware",
+      "blurb": "After my mother passed away I ended up with a big box full of old film negatives containing photos from childhood family trips and similar. So I decided to buy a negative photo scanner and…",
+      "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
+      "publishedAt": "2026-10-15T14:35:15.000Z",
+      "score": 253,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 249
+      },
+      "alsoOn": [],
+      "image": "https://blogs.gnome.org/uraeus/files/2026/10/drivercompare.png"
     },
     {
       "id": "exponentialview:https://www.exponentialview.co/p/what-is-bigger-than-ai",
@@ -6804,21 +6804,6 @@
       "alsoOn": []
     },
     {
-      "id": "guardian:https://www.theguardian.com/technology/2026/oct/17/fake-linda-and-me-mystery-fraudster-stole-my-byline",
-      "source": "guardian",
-      "title": "Fake Linda and me: the Agatha Christie-worthy mystery of the fraudster who stole my byline",
-      "blurb": "How a string of bizarre events led writer Linda Geddes to don her sleuthing cap and dig into a world of shadowy impersonators It started with an entirely ordinary interaction on LinkedIn…",
-      "image": "https://i.guim.co.uk/img/media/a426a8b6b459aed32bd6a8e431b13736369c3b21/676_119_6732_5385/master/6732.jpg?width=140&quality=85&auto=format&fit=max&s=f09aaf2d349e8bfc65d3ca6823fc23a4",
-      "url": "https://www.theguardian.com/technology/2026/oct/17/fake-linda-and-me-mystery-fraudster-stole-my-byline",
-      "publishedAt": "2026-10-17T11:00:30.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "Cybercrime"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "sakana:/mass/",
       "source": "sakana",
       "title": "Recursive Self-Improvement through Collective Intelligence",
@@ -6830,6 +6815,21 @@
       "scoreLabel": null,
       "meta": {
         "category": "media"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "guardian:https://www.theguardian.com/technology/2026/oct/17/fake-linda-and-me-mystery-fraudster-stole-my-byline",
+      "source": "guardian",
+      "title": "Fake Linda and me: the Agatha Christie-worthy mystery of the fraudster who stole my byline",
+      "blurb": "How a string of bizarre events led writer Linda Geddes to don her sleuthing cap and dig into a world of shadowy impersonators It started with an entirely ordinary interaction on LinkedIn…",
+      "image": "https://i.guim.co.uk/img/media/a426a8b6b459aed32bd6a8e431b13736369c3b21/676_119_6732_5385/master/6732.jpg?width=140&quality=85&auto=format&fit=max&s=f09aaf2d349e8bfc65d3ca6823fc23a4",
+      "url": "https://www.theguardian.com/technology/2026/oct/17/fake-linda-and-me-mystery-fraudster-stole-my-byline",
+      "publishedAt": "2026-10-17T11:00:30.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "Cybercrime"
       },
       "alsoOn": []
     },
@@ -7002,7 +7002,7 @@
       "source": "techmeme",
       "title": "Google says \"magic state cultivation\" works in practice on its Willow quantum processor, calling it a breakthrough that reduces errors by about 40x (Google)",
       "blurb": "Google : Google says “magic state cultivation” works in practice on its Willow quantum processor, calling it a breakthrough that reduces errors by about 40x — We've shown that magic state…",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/magic_state_social.width-1300.png",
+      "image": null,
       "url": "https://www.techmeme.com/261017/p19#a261017p19",
       "publishedAt": "2026-10-17T23:35:01.000Z",
       "score": null,
@@ -7045,8 +7045,8 @@
       "id": "sifted:https://sifted.eu/articles/accel-deepmind-researcher-60m/",
       "source": "sifted",
       "title": "Exclusive: Accel set to lead DeepMind alum’s $60m round",
-      "blurb": null,
-      "image": null,
+      "blurb": "Nando de Freitas, a former leading researcher at Google DeepMind and Microsoft AI, has raised $60m for his new startup Revolution Labs.",
+      "image": "https://images.sifted.eu/cdn-cgi/image/width=1044,quality=75,fit=cover,format=auto/wp-content/uploads/2026/10/15165014/Gemini_Generated_Image_dg75wjdg75wjdg75-8-2.jpg",
       "url": "https://sifted.eu/articles/accel-deepmind-researcher-60m/",
       "publishedAt": "2026-10-15T16:48:11.000Z",
       "score": null,
@@ -7232,6 +7232,19 @@
       "alsoOn": []
     },
     {
+      "id": "tomshardware:https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-warns-of-self-replicating-ai-worm-threat-that-doesnt-need-data-centers-to-self-improve-and-spread-current-deployment-is-impractical-but-could-become-a-worry-as-tech-improves",
+      "source": "tomshardware",
+      "title": "Anthropic warns of self-replicating AI worm threat that doesn't need data centers to self-improve and spread",
+      "blurb": "Anthropic’s paper establishes conceptual model capabilities, but doesn’t quite demonstrate a real threat until models improve further.",
+      "image": "https://cdn.mos.cms.futurecdn.net/E8iSMKgnW5PaeepdDQjS4W-1920-80.jpg",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-warns-of-self-replicating-ai-worm-threat-that-doesnt-need-data-centers-to-self-improve-and-spread-current-deployment-is-impractical-but-could-become-a-worry-as-tech-improves",
+      "publishedAt": "2026-10-13T14:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "techxplore:https://techxplore.com/news/2026-10-mini-brain-organoids-braille-key.html",
       "source": "techxplore",
       "title": "Mini brain organoids 'read' braille in key step toward biohybrid computing",
@@ -7244,19 +7257,6 @@
       "meta": {
         "category": "Hi Tech & Innovation"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "tomshardware:https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-warns-of-self-replicating-ai-worm-threat-that-doesnt-need-data-centers-to-self-improve-and-spread-current-deployment-is-impractical-but-could-become-a-worry-as-tech-improves",
-      "source": "tomshardware",
-      "title": "Anthropic warns of self-replicating AI worm threat that doesn't need data centers to self-improve and spread",
-      "blurb": "Anthropic’s paper establishes conceptual model capabilities, but doesn’t quite demonstrate a real threat until models improve further.",
-      "image": "https://cdn.mos.cms.futurecdn.net/E8iSMKgnW5PaeepdDQjS4W-1920-80.jpg",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-warns-of-self-replicating-ai-worm-threat-that-doesnt-need-data-centers-to-self-improve-and-spread-current-deployment-is-impractical-but-could-become-a-worry-as-tech-improves",
-      "publishedAt": "2026-10-13T14:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -7415,6 +7415,19 @@
       "alsoOn": []
     },
     {
+      "id": "platformer:https://www.platformer.news/openai-math-breakthroughs-tao-reaction/",
+      "source": "platformer",
+      "title": "AI is solving math problems faster than humans can understand the solutions",
+      "blurb": "OpenAI’s math breakthroughs may trigger an identity crisis for mathematicians. Who’s next?",
+      "image": "https://storage.ghost.io/c/a0/4c/a04c7225-d919-4d78-9b7c-a3fdd071349b/content/images/2026/10/shutterstock_2108067146.jpg",
+      "url": "https://www.platformer.news/openai-math-breakthroughs-tao-reaction/",
+      "publishedAt": "2026-10-09T00:28:26.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "hn:50063365",
       "source": "hn",
       "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
@@ -7428,19 +7441,6 @@
       },
       "alsoOn": [],
       "image": "https://www.intel.com/etc.clientlibs/settings/wcm/designs/intel/us/en/images/resources/printlogo.png"
-    },
-    {
-      "id": "platformer:https://www.platformer.news/openai-math-breakthroughs-tao-reaction/",
-      "source": "platformer",
-      "title": "AI is solving math problems faster than humans can understand the solutions",
-      "blurb": "OpenAI’s math breakthroughs may trigger an identity crisis for mathematicians. Who’s next?",
-      "image": "https://storage.ghost.io/c/a0/4c/a04c7225-d919-4d78-9b7c-a3fdd071349b/content/images/2026/10/shutterstock_2108067146.jpg",
-      "url": "https://www.platformer.news/openai-math-breakthroughs-tao-reaction/",
-      "publishedAt": "2026-10-09T00:28:26.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
     },
     {
       "id": "gh:Tejashmakwana/motionmaxxing",
@@ -8562,6 +8562,19 @@
       "alsoOn": []
     },
     {
+      "id": "tc:https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
+      "source": "tc",
+      "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
+      "blurb": "Actor and angel investor Mark Wahlberg says he's OK with using AI in filmmaking, provided it's used \"to enhance what you're doing.\"",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/55591094982_b63d06fba8_o.jpg?resize=1200,800",
+      "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
+      "publishedAt": "2026-10-16T14:26:51.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "gh:repoboost-hq/github-star-benchmarks",
       "source": "gh",
       "title": "repoboost-hq/github-star-benchmarks",
@@ -8575,19 +8588,6 @@
         "repo": "repoboost-hq/github-star-benchmarks",
         "language": "Python"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "tc:https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
-      "source": "tc",
-      "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
-      "blurb": "Actor and angel investor Mark Wahlberg says he's OK with using AI in filmmaking, provided it's used \"to enhance what you're doing.\"",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/55591094982_b63d06fba8_o.jpg?resize=1200,800",
-      "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
-      "publishedAt": "2026-10-16T14:26:51.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -9064,6 +9064,19 @@
       "alsoOn": []
     },
     {
+      "id": "appleml:https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+      "source": "appleml",
+      "title": "The Design Space of Tri-Modal Masked Diffusion Models",
+      "blurb": "Discrete diffusion models have emerged as strong alternatives to autoregressive language models, with recent work initializing and finetuning a base unimodal model for bi-modal generation…",
+      "image": "https://mlr.cdn-apple.com/media/Home_1200x630_48225d82e9.png",
+      "url": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "hf:Comfy-Org/MOSS-Image",
       "source": "hf",
       "title": "Comfy-Org/MOSS-Image",
@@ -9078,19 +9091,6 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Comfy-Org/MOSS-Image.png",
       "blurb": null
-    },
-    {
-      "id": "appleml:https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
-      "source": "appleml",
-      "title": "The Design Space of Tri-Modal Masked Diffusion Models",
-      "blurb": "Discrete diffusion models have emerged as strong alternatives to autoregressive language models, with recent work initializing and finetuning a base unimodal model for bi-modal generation…",
-      "image": "https://mlr.cdn-apple.com/media/Home_1200x630_48225d82e9.png",
-      "url": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
     },
     {
       "id": "f404:https://www.404media.co/nidal-hasans-public-execution-is-off-but-propagandists-are-still-using-him-as-a-martyr/",
@@ -9864,7 +9864,7 @@
       "source": "techmeme",
       "title": "Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a \"large scale distillation attack\"…",
       "blurb": "Walter Schulze / Startup Fortune : Anomaly Innovations, behind coding agent OpenCode, says a breach hit ~1.4% of OpenCode Console users and their API keys, in a “large scale distillation…",
-      "image": "https://startupfortune.com/wp-content/uploads/2026/10/opencode-matt-johansen-anomaly-innovations.jpg",
+      "image": null,
       "url": "https://www.techmeme.com/261017/p18#a261017p18",
       "publishedAt": "2026-10-17T20:50:01.000Z",
       "score": null,
