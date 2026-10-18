@@ -1,8 +1,9 @@
 # AI Wire
 
 A single page showing what is happening in AI right now — announcements, papers, models,
-code, press and discussion — from **nineteen sources**, rebuilt every hour by a scheduled
-job. No server, no database, no API keys, nothing to run.
+code, press, discussion, and the wider technology industry around all of it — from **eighty
+sources**, rebuilt every hour by a scheduled job. No server, no database, no API keys,
+nothing to run.
 
 **Live:** https://ai-news-seven-tan.vercel.app/
 
@@ -10,7 +11,7 @@ job. No server, no database, no API keys, nothing to run.
 
 ```
 Hacker News · Lobsters · Daily Papers · arXiv · HF · GitHub
-the labs' own feeds · the press · the blogs
+the labs · the engineering blogs · the press, AI desks · recent technology
         │
         │  scripts/fetch-news.mjs
         ▼
@@ -49,33 +50,49 @@ than a duplicate commit.
 
 ## Sources
 
-Every source is keyless and public. Nothing here needs an account, an API key or a paid
-tier, and each is read from its publisher rather than through an intermediary.
+**Eighty sources**, every one keyless and public. Nothing here needs an account, an API key
+or a paid tier, and each is read from its publisher rather than through an intermediary.
+Every URL was fetched and parsed before it was added; the ones that failed are in the next
+table rather than left as a guess, because a source that turns out to be walled off is worse
+than a missing one — it costs a request every hour and reports a failure every hour.
 
-| Group | Source | Signal | Artwork and summary |
+| Group | Sources | Signal | Artwork and summary |
 | --- | --- | --- | --- |
-| Community | **Hacker News** | points, comments | the linked page's own preview; Ask/Show HN posts carry their text already |
-| Community | **Lobsters** (AI tag) | points, comments | the linked page's preview |
-| Research | **Daily Papers** (Hugging Face) | upvotes, comments | the paper's own thumbnail; the abstract |
-| Research | **arXiv** `cs.AI` `cs.LG` `cs.CL` | recency | no picture from the source at all, so the card gets a tile; the abstract is the summary |
-| Models | **Hugging Face** models | likes, downloads | the model page's preview; the summary comes from the model card, because the page's own description is the site tagline on every model |
-| Code | **GitHub** | stars, language | GitHub renders one preview card per repository; the description is the summary |
-| Labs | **OpenAI** | recency | answers every scraper with `403`, so the card gets a tile |
-| Labs | **DeepMind**, **Google AI**, **Microsoft Research**, **NVIDIA**, **Hugging Face Blog** | recency | the image each publisher puts in its own feed, so no second request is needed |
-| Press | **TechCrunch**, **The Verge**, **Ars Technica**, **MIT News** | recency | the press write the headline, and most publish their own artwork |
-| Writing | **Simon Willison**, **Import AI**, **Interconnects** | recency | the newsletter's own enclosure image where there is one, a tile where there is not |
+| Community | **Hacker News**, **Lobsters** (AI tag), **Slashdot**, **LessWrong**, **Alignment Forum** | points, comments | the linked page's own preview; Ask/Show HN posts carry their text already |
+| Research | **Daily Papers** (Hugging Face), **arXiv** `cs.AI` `cs.LG` `cs.CL` | upvotes, comments / recency | the paper's own thumbnail and abstract; arXiv publishes no picture at all, so its cards get a tile |
+| Labs | **OpenAI**, **DeepMind**, **Google AI**, **Google Research**, **Microsoft Research**, **NVIDIA**, **NVIDIA Research**, **Apple ML**, **Hugging Face Blog**, **Together AI**, **Ollama**, **Sakana AI**, **Mozilla.ai**, **METR** | recency | the image each publisher puts in its own feed, so no second request is needed; OpenAI answers every scraper with `403`, so its cards get a tile |
+| Engineering | **AWS Machine Learning**, **Meta Engineering**, **Databricks**, **PyTorch**, **GitHub Blog** | recency | the feed's own image |
+| Models and code | **Hugging Face** models, **GitHub** | likes, downloads / stars, language | the model page's preview; the summary comes from the model card, because the page's own description is the site tagline on every model |
+| The press, AI desks | **TechCrunch**, **The Verge**, **Ars Technica**, **MIT News**, **WIRED**, **The Guardian**, **The Register**, **MIT Tech Review**, **IEEE Spectrum**, **ZDNET**, **MarkTechPost**, **Analytics India**, **AI Business**, **SiliconANGLE**, **TechXplore**, **Fast Company**, **SCMP**, **Economic Times**, **404 Media**, **Platformer** | recency | the press write the headline, and most publish their own artwork |
+| Recent technology | **Techmeme**, **The Hacker News**, **BleepingComputer**, **Tom's Hardware**, **Semiconductor Engineering**, **The New Stack**, **ServeTheHome**, **Data Centre Dynamics**, **Computerworld**, **Gizmodo**, **9to5Google**, **MacRumors**, **Stratechery**, **Daring Fireball**, **Rest of World**, **Sifted**, **Tech.eu** | recency | the publication's own image, and a designed plate where it has none |
+| Writing | **Simon Willison**, **Import AI**, **Interconnects**, **TLDR AI**, **Latent Space**, **One Useful Thing**, **Ahead of AI**, **Last Week in AI**, **AI as Normal Technology**, **Exponential View**, **Gradient Flow**, **DAIR.AI**, **KDnuggets**, **The Rundown** | recency | the newsletter's own enclosure image where there is one, a tile where there is not |
+
+Where a publisher has an AI feed, **that is the feed that is read** — a technology desk also
+writes about phones, streaming and games, and a film review is not a dispatch for this page.
+That is why Gizmodo is read through `/tag/ai/` and Tom's Hardware through
+`/feeds/tag/artificial-intelligence`, both of which were measured to drop the Batman stories
+and keep the AI ones. Where the publication *is* the beat — Techmeme, Slashdot, The Register,
+Tom's Hardware — a whole-publication feed is read, and a lower cap keeps its share of the
+wire in proportion.
 
 ## What was left out, and why
 
-Sources are only added if they are free, keyless, public, and actually return items. Four
-plausible candidates were measured and rejected:
+Sources are only added if they are free, keyless, public, and actually return items. Every
+candidate below was fetched and parsed before it was dropped.
 
 | Candidate | Why not |
 | --- | --- |
-| Reddit (`r/LocalLLaMA`, `r/MachineLearning`) | its JSON endpoints now answer `403` without OAuth |
-| Anthropic, Meta, Mistral, The Batch | no working RSS feed at any published path |
-| VentureBeat | rate-limits to `429` often enough to fail the run |
+| Reddit (`r/LocalLLaMA`, `r/MachineLearning`) | its JSON endpoints answer `403` without OAuth |
+| Anthropic | `404` at four published URL shapes |
+| Meta AI (`ai.meta.com/blog/rss/`), Mistral, DeepLearning.AI's The Batch, deeplearning.ai | `404` |
+| VentureBeat | rate-limits to `429` often enough to fail a run |
+| Ars Technica's AI feed | `404` twice — Ars publishes no AI-only feed, so its technology desk is read instead |
 | Google News RSS | no artwork, and every link is a redirect through `news.google.com` |
+| New Scientist | `404` at its technology section, so only its general science feed was on offer |
+| The Hindu | the feed carries no parseable date, so no item could be placed in time |
+| Feeds that answer `200` and return nothing | Cohere, Anyscale, InfoWorld, LangChain, Weights & Biases, Analytics Vidhya, Ben's Bites, Synced, 机器之心, 36Kr, The Neuron, Analytics India's older paths — and Hugging Face's papers feed, which answers `401`. A feed with no items is recorded as a failure, never as a source |
+| Publications that stopped | BAIR (81 days since its last post), TensorFlow Blog (92), Lil'Log (107), Eugene Yan (119), Replicate (187), SemiAnalysis (397) |
+| Whole-paper feeds from general newsrooms | BBC, NYT, Engadget, CNBC, and The Guardian's technology desk at large — an AI wire reading a paper's entire output fills up with phones and streaming |
 
 AI News (`news.smol.ai`) was wired in, measured, and then removed: its newest post was
 five weeks old, so it is not news.
@@ -180,9 +197,11 @@ limit. Neither fixes reason 2.
 
 ## How items are chosen and ordered
 
-- Each source gets a **window** (14 days for arXiv and Hacker News, up to 150 for a lab
-  that announces quarterly) and a **cap** (5 to 22), so no single source can flood the
-  wire and a slow-moving source cannot pad it.
+- Each source gets a **window** (14 days for arXiv and Hacker News, up to 180 for a lab that
+  announces quarterly) and a **cap** (3 to 34), so no single source can flood the wire and a
+  slow-moving source cannot pad it. The caps add up to far more than the wire holds, so it is
+  the ranking — not the caps — that decides what a busy hour looks like, and a quiet hour has
+  fewer cards rather than a padded wire.
 - Within a source, engagement is a **percentile** of that source's own signal, which is
   what makes points, likes, stars and upvotes comparable. A source with no engagement
   metric at all — arXiv, the labs, the press — is ranked by its own recency instead, so a
@@ -305,7 +324,7 @@ node scripts/check-contrast.mjs
 ```
 
 It converts the `oklch()` tokens in `styles.css` to sRGB directly and fails if any pairing
-that actually renders on the page drops below WCAG AA in either theme — 24 pairings, light
+that actually renders on the page drops below WCAG AA in either theme — 34 pairings, light
 and dark. It also prints the palette as hex, which is where the sRGB fallbacks come from.
 
 ## Notes and limits

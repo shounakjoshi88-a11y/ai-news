@@ -4,8 +4,9 @@
  *
  *   node scripts/fetch-news.mjs [--out data/news.json] [--force]
  *
- * Fetches four keyless sources, normalises them into one shape, dedupes, ranks,
- * gives each card an image and a summary, and writes data/news.json atomically.
+ * Fetches every source in SOURCES — all of them keyless, all of them read from
+ * the publisher itself — normalises them into one shape, dedupes, ranks, gives
+ * each card an image and a summary, and writes data/news.json atomically.
  * Exits 1 only when every source failed, in which case the existing file is left
  * untouched so the page keeps its last good data and the workflow goes red.
  *
@@ -30,25 +31,97 @@ const BLURB_MAX = 190;
 const MIN_HERO_WIDTH = 400;
 const HALF_LIFE_HOURS = 36;
 const WEIGHT_ENGAGEMENT = 0.5;
-const TOTAL_CAP = 200;
+/**
+ * The wire's ceiling. The per-source caps add up to far more than this, so the
+ * ranking — not the caps — is what decides what the page holds when everything
+ * is busy, and a quiet hour simply has fewer cards rather than a padded wire.
+ */
+const TOTAL_CAP = 700;
 
 /**
- * The ordinary RSS and Atom sources, as data rather than fifteen near-identical
+ * The ordinary RSS and Atom sources, as data rather than eighty near-identical
  * functions. Every one is keyless and public, and each is read straight from the
  * publisher, so the headline on a card is the headline they wrote.
+ *
+ * Every URL here was fetched and parsed before it was added, and the ones that
+ * were tried and rejected are listed in the README rather than left as a guess.
+ * A source that turns out to be a walled garden is worse than a missing one: it
+ * costs a request every hour and reports a failure every hour.
  */
 const FEEDS = {
-  openai: { url: "https://openai.com/news/rss.xml", window: 150 * 24, cap: 7 },
-  deepmind: { url: "https://deepmind.google/blog/rss.xml", window: 150 * 24, cap: 7 },
-  googleai: { url: "https://blog.google/technology/ai/rss/", window: 150 * 24, cap: 7 },
-  msr: { url: "https://www.microsoft.com/en-us/research/feed/", window: 150 * 24, cap: 6 },
-  nvidia: { url: "https://blogs.nvidia.com/feed/", window: 90 * 24, cap: 6 },
-  hfblog: { url: "https://huggingface.co/blog/feed.xml", window: 120 * 24, cap: 7 },
-  tc: { url: "https://techcrunch.com/category/artificial-intelligence/feed/", window: 21 * 24, cap: 10 },
-  verge: { url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", window: 14 * 24, cap: 9 },
-  ars: { url: "https://feeds.arstechnica.com/arstechnica/technology-lab", window: 21 * 24, cap: 9 },
-  mit: { url: "https://news.mit.edu/rss/topic/artificial-intelligence2", window: 45 * 24, cap: 8 },
-  simonw: { url: "https://simonwillison.net/atom/everything/", window: 45 * 24, cap: 8 },
+  // The labs, and the engineering they publish. They are the primary source for
+  // anything big, so they hold the longest windows on the page.
+  openai: { url: "https://openai.com/news/rss.xml", window: 150 * 24, cap: 11 },
+  deepmind: { url: "https://deepmind.google/blog/rss.xml", window: 150 * 24, cap: 11 },
+  googleai: { url: "https://blog.google/technology/ai/rss/", window: 150 * 24, cap: 11 },
+  googleresearch: { url: "https://research.google/blog/rss/", window: 90 * 24, cap: 12 },
+  msr: { url: "https://www.microsoft.com/en-us/research/feed/", window: 150 * 24, cap: 9 },
+  nvidia: { url: "https://blogs.nvidia.com/feed/", window: 90 * 24, cap: 9 },
+  nvidiaresearch: { url: "https://research.nvidia.com/rss.xml", window: 120 * 24, cap: 8 },
+  appleml: { url: "https://machinelearning.apple.com/rss.xml", window: 180 * 24, cap: 8 },
+  awsml: { url: "https://aws.amazon.com/blogs/machine-learning/feed/", window: 120 * 24, cap: 10 },
+  metaeng: { url: "https://engineering.fb.com/feed/", window: 120 * 24, cap: 8 },
+  databricks: { url: "https://www.databricks.com/feed", window: 120 * 24, cap: 8 },
+  pytorch: { url: "https://pytorch.org/blog/feed.xml", window: 180 * 24, cap: 8 },
+  ghblog: { url: "https://github.blog/ai-and-ml/feed/", window: 120 * 24, cap: 8 },
+  hfblog: { url: "https://huggingface.co/blog/feed.xml", window: 120 * 24, cap: 11 },
+  together: { url: "https://www.together.ai/blog/rss.xml", window: 120 * 24, cap: 8 },
+  ollama: { url: "https://ollama.com/blog/rss.xml", window: 180 * 24, cap: 8 },
+  sakana: { url: "https://sakana.ai/feed.xml", window: 180 * 24, cap: 8 },
+  metr: { url: "https://metr.org/blog/rss.xml", window: 180 * 24, cap: 10 },
+  mozillaai: { url: "https://blog.mozilla.ai/feed/", window: 180 * 24, cap: 8 },
+
+  // The press, in its AI sections. Where a publisher has an AI feed this is that
+  // feed and not the paper's whole output: a technology desk also writes about
+  // phones and streaming, and those are not dispatches for this page.
+  tc: { url: "https://techcrunch.com/category/artificial-intelligence/feed/", window: 21 * 24, cap: 18 },
+  verge: { url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", window: 14 * 24, cap: 15 },
+  ars: { url: "https://feeds.arstechnica.com/arstechnica/technology-lab", window: 21 * 24, cap: 15 },
+  mit: { url: "https://news.mit.edu/rss/topic/artificial-intelligence2", window: 45 * 24, cap: 12 },
+  wiredai: { url: "https://www.wired.com/feed/tag/ai/latest/rss", window: 21 * 24, cap: 10 },
+  guardian: { url: "https://www.theguardian.com/technology/artificialintelligenceai/rss", window: 21 * 24, cap: 12 },
+  register: { url: "https://www.theregister.com/software/ai_ml/headlines.atom", window: 60 * 24, cap: 12 },
+  techreview: { url: "https://www.technologyreview.com/topic/artificial-intelligence/feed", window: 45 * 24, cap: 12 },
+  spectrum: { url: "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss", window: 45 * 24, cap: 12 },
+  zdnet: { url: "https://www.zdnet.com/topic/artificial-intelligence/rss.xml", window: 21 * 24, cap: 12 },
+  marktechpost: { url: "https://www.marktechpost.com/feed/", window: 21 * 24, cap: 10 },
+  aim: { url: "https://analyticsindiamag.com/feed/", window: 30 * 24, cap: 12 },
+  aibusiness: { url: "https://aibusiness.com/rss.xml", window: 30 * 24, cap: 12 },
+  siliconangle: { url: "https://siliconangle.com/category/ai/feed/", window: 30 * 24, cap: 12 },
+  techxplore: { url: "https://techxplore.com/rss-feed/machine-learning-ai-news/", window: 21 * 24, cap: 12 },
+  fastcompany: { url: "https://www.fastcompany.com/section/artificial-intelligence/rss", window: 21 * 24, cap: 10 },
+  scmp: { url: "https://www.scmp.com/rss/36/feed", window: 14 * 24, cap: 10 },
+  etai: { url: "https://economictimes.indiatimes.com/tech/artificial-intelligence/rssfeeds/13357270.cms", window: 14 * 24, cap: 12 },
+  f404: { url: "https://www.404media.co/rss/", window: 30 * 24, cap: 8 },
+  platformer: { url: "https://www.platformer.news/feed", window: 45 * 24, cap: 6 },
+
+  // Recent technology, and the industry around all of it. These are whole
+  // publications rather than sections, so they are capped lower: a general feed
+  // is a wider net, and the page is still about machines that learn. Ranking is
+  // half freshness, so breadth here means breadth of what can reach the top —
+  // which is why the cap, and not the source, is what keeps the mix right.
+  techmeme: { url: "https://www.techmeme.com/feed.xml", window: 7 * 24, cap: 12 },
+  stratechery: { url: "https://stratechery.com/feed/", window: 60 * 24, cap: 6 },
+  restofworld: { url: "https://restofworld.org/feed/latest/", window: 45 * 24, cap: 6 },
+  slashdot: { url: "https://rss.slashdot.org/Slashdot/slashdotMain", window: 7 * 24, cap: 10 },
+  thehackernews: { url: "https://feeds.feedburner.com/TheHackersNews", window: 14 * 24, cap: 12 },
+  bleepingcomputer: { url: "https://www.bleepingcomputer.com/feed/", window: 14 * 24, cap: 10 },
+  tomshardware: { url: "https://www.tomshardware.com/feeds/tag/artificial-intelligence", window: 14 * 24, cap: 12 },
+  semiengineering: { url: "https://semiengineering.com/feed/", window: 45 * 24, cap: 8 },
+  thenewstack: { url: "https://thenewstack.io/feed/", window: 21 * 24, cap: 10 },
+  daringfireball: { url: "https://daringfireball.net/feeds/main", window: 45 * 24, cap: 8 },
+  servethehome: { url: "https://www.servethehome.com/feed/", window: 45 * 24, cap: 6 },
+  dcd: { url: "https://www.datacenterdynamics.com/en/rss/", window: 21 * 24, cap: 8 },
+  sifted: { url: "https://sifted.eu/feed", window: 45 * 24, cap: 6 },
+  techeu: { url: "https://tech.eu/feed/", window: 45 * 24, cap: 6 },
+  computerworld: { url: "https://www.computerworld.com/index.rss", window: 30 * 24, cap: 8 },
+  gizmodo: { url: "https://gizmodo.com/tag/ai/feed", window: 14 * 24, cap: 10 },
+  sciencedaily: { url: "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml", window: 30 * 24, cap: 12 },
+  nine5google: { url: "https://9to5google.com/feed/", window: 14 * 24, cap: 10 },
+  macrumors: { url: "https://feeds.macrumors.com/MacRumors-All", window: 14 * 24, cap: 8 },
+
+  // Writing worth reading, from people who do the work.
+  simonw: { url: "https://simonwillison.net/atom/everything/", window: 45 * 24, cap: 12 },
   // Jack Clark's own domain first, his Substack mirror second. Same posts, to
   // the minute — but `importai.substack.com` answers GitHub's runners with 403
   // and `jack-clark.net` answers them with 200. The order is measured, not
@@ -57,9 +130,22 @@ const FEEDS = {
   importai: {
     url: ["https://jack-clark.net/feed/", "https://importai.substack.com/feed"],
     window: 90 * 24,
-    cap: 5,
+    cap: 8,
   },
-  interconnects: { url: "https://www.interconnects.ai/feed", window: 60 * 24, cap: 5 },
+  interconnects: { url: "https://www.interconnects.ai/feed", window: 60 * 24, cap: 8 },
+  tldrai: { url: "https://tldr.tech/api/rss/ai", window: 14 * 24, cap: 10 },
+  latentspace: { url: "https://www.latent.space/feed", window: 60 * 24, cap: 8 },
+  oneusefulthing: { url: "https://www.oneusefulthing.org/feed", window: 90 * 24, cap: 6 },
+  aheadofai: { url: "https://magazine.sebastianraschka.com/feed", window: 90 * 24, cap: 6 },
+  lastweekinai: { url: "https://lastweekin.ai/feed", window: 60 * 24, cap: 6 },
+  aisnakeoil: { url: "https://www.aisnakeoil.com/feed", window: 90 * 24, cap: 6 },
+  exponentialview: { url: "https://www.exponentialview.co/feed", window: 45 * 24, cap: 8 },
+  gradflow: { url: "https://gradientflow.com/feed/", window: 90 * 24, cap: 6 },
+  dair: { url: "https://nlp.elvissaravia.com/feed", window: 30 * 24, cap: 8 },
+  alignmentforum: { url: "https://www.alignmentforum.org/feed.xml", window: 30 * 24, cap: 8 },
+  lesswrong: { url: "https://www.lesswrong.com/feed.xml", window: 21 * 24, cap: 6 },
+  kdnuggets: { url: "https://www.kdnuggets.com/feed", window: 30 * 24, cap: 8 },
+  rundown: { url: "https://www.therundown.ai/feed", window: 14 * 24, cap: 8 },
 };
 
 // Each feed's collector is the same function closed over its own spec, which is
@@ -72,7 +158,10 @@ for (const [id, spec] of Object.entries(FEEDS)) {
 /**
  * `window` is how long an item stays worth showing, in hours — Hugging Face
  * models are news for weeks, a Hacker News post for days. `cap` is how many
- * items that source may contribute, so twenty sources cannot drown the page.
+ * items that source may contribute, so no one source can drown the page. The two
+ * are set per source rather than averaged, because a lab that posts monthly and
+ * a newswire that posts hourly are not the same kind of source and should not be
+ * held to the same clock.
  *
  * `artwork` says where a card's picture comes from. `page` scrapes the item's own
  * page for a link-preview image, but only when the source has not already
@@ -82,36 +171,99 @@ for (const [id, spec] of Object.entries(FEEDS)) {
  */
 const SOURCES = [
   // What practitioners are saying.
-  { id: "hn", name: "Hacker News", window: 7 * 24, cap: 22, artwork: "page", fn: fromHN },
-  { id: "lobsters", name: "Lobsters", window: 30 * 24, cap: 8, artwork: "page", fn: fromLobsters },
+  { id: "hn", name: "Hacker News", window: 7 * 24, cap: 34, artwork: "page", fn: fromHN },
+  { id: "lobsters", name: "Lobsters", window: 30 * 24, cap: 12, artwork: "page", fn: fromLobsters },
 
   // Research.
-  { id: "papers", name: "Daily Papers", window: 21 * 24, cap: 15, artwork: "page", fn: fromDailyPapers },
-  { id: "arxiv", name: "arXiv", window: 14 * 24, cap: 14, artwork: "none", fn: fromArxiv },
+  { id: "papers", name: "Daily Papers", window: 21 * 24, cap: 24, artwork: "page", fn: fromDailyPapers },
+  { id: "arxiv", name: "arXiv", window: 14 * 24, cap: 22, artwork: "none", fn: fromArxiv },
 
   // Models and code.
-  { id: "hf", name: "Hugging Face", window: 21 * 24, cap: 14, artwork: "page", fn: fromHF },
-  { id: "gh", name: "GitHub", window: 14 * 24, cap: 16, artwork: "page", fn: fromGH },
+  { id: "hf", name: "Hugging Face", window: 21 * 24, cap: 22, artwork: "page", fn: fromHF },
+  { id: "gh", name: "GitHub", window: 14 * 24, cap: 24, artwork: "page", fn: fromGH },
 
-  // What the labs publish themselves, which is the primary source for anything big.
-  // OpenAI answers every scraper with 403, so its cards are tiles by design.
+  // What the labs publish themselves, which is the primary source for anything
+  // big. OpenAI answers every scraper with 403, so its cards are tiles by design.
   { id: "openai", name: "OpenAI", artwork: "none", ...FEEDS.openai },
   { id: "deepmind", name: "DeepMind", artwork: "page", ...FEEDS.deepmind },
   { id: "googleai", name: "Google AI", artwork: "page", ...FEEDS.googleai },
+  { id: "googleresearch", name: "Google Research", artwork: "page", ...FEEDS.googleresearch },
   { id: "msr", name: "Microsoft Research", artwork: "page", ...FEEDS.msr },
   { id: "nvidia", name: "NVIDIA", artwork: "page", ...FEEDS.nvidia },
+  { id: "nvidiaresearch", name: "NVIDIA Research", artwork: "page", ...FEEDS.nvidiaresearch },
+  { id: "appleml", name: "Apple ML", artwork: "page", ...FEEDS.appleml },
+  { id: "awsml", name: "AWS Machine Learning", artwork: "page", ...FEEDS.awsml },
+  { id: "metaeng", name: "Meta Engineering", artwork: "page", ...FEEDS.metaeng },
+  { id: "databricks", name: "Databricks", artwork: "page", ...FEEDS.databricks },
+  { id: "pytorch", name: "PyTorch", artwork: "page", ...FEEDS.pytorch },
+  { id: "ghblog", name: "GitHub Blog", artwork: "page", ...FEEDS.ghblog },
   { id: "hfblog", name: "Hugging Face Blog", artwork: "page", ...FEEDS.hfblog },
+  { id: "together", name: "Together AI", artwork: "page", ...FEEDS.together },
+  { id: "ollama", name: "Ollama", artwork: "page", ...FEEDS.ollama },
+  { id: "sakana", name: "Sakana AI", artwork: "page", ...FEEDS.sakana },
+  { id: "metr", name: "METR", artwork: "page", ...FEEDS.metr },
+  { id: "mozillaai", name: "Mozilla.ai", artwork: "page", ...FEEDS.mozillaai },
 
-  // The press.
+  // The press, in its AI sections.
   { id: "tc", name: "TechCrunch", artwork: "page", ...FEEDS.tc },
   { id: "verge", name: "The Verge", artwork: "page", ...FEEDS.verge },
   { id: "ars", name: "Ars Technica", artwork: "page", ...FEEDS.ars },
   { id: "mit", name: "MIT News", artwork: "page", ...FEEDS.mit },
+  { id: "wiredai", name: "WIRED", artwork: "page", ...FEEDS.wiredai },
+  { id: "guardian", name: "The Guardian", artwork: "page", ...FEEDS.guardian },
+  { id: "register", name: "The Register", artwork: "page", ...FEEDS.register },
+  { id: "techreview", name: "MIT Tech Review", artwork: "page", ...FEEDS.techreview },
+  { id: "spectrum", name: "IEEE Spectrum", artwork: "page", ...FEEDS.spectrum },
+  { id: "zdnet", name: "ZDNET", artwork: "page", ...FEEDS.zdnet },
+  { id: "marktechpost", name: "MarkTechPost", artwork: "page", ...FEEDS.marktechpost },
+  { id: "aim", name: "Analytics India", artwork: "page", ...FEEDS.aim },
+  { id: "aibusiness", name: "AI Business", artwork: "page", ...FEEDS.aibusiness },
+  { id: "siliconangle", name: "SiliconANGLE", artwork: "page", ...FEEDS.siliconangle },
+  { id: "techxplore", name: "TechXplore", artwork: "page", ...FEEDS.techxplore },
+  { id: "fastcompany", name: "Fast Company", artwork: "page", ...FEEDS.fastcompany },
+  { id: "scmp", name: "SCMP", artwork: "page", ...FEEDS.scmp },
+  { id: "etai", name: "Economic Times", artwork: "page", ...FEEDS.etai },
+  { id: "f404", name: "404 Media", artwork: "page", ...FEEDS.f404 },
+  { id: "platformer", name: "Platformer", artwork: "page", ...FEEDS.platformer },
+
+  // Recent technology, beyond the models themselves.
+  { id: "techmeme", name: "Techmeme", artwork: "page", ...FEEDS.techmeme },
+  { id: "slashdot", name: "Slashdot", artwork: "page", ...FEEDS.slashdot },
+  { id: "thehackernews", name: "The Hacker News", artwork: "page", ...FEEDS.thehackernews },
+  { id: "bleepingcomputer", name: "BleepingComputer", artwork: "page", ...FEEDS.bleepingcomputer },
+  { id: "tomshardware", name: "Tom's Hardware", artwork: "page", ...FEEDS.tomshardware },
+  { id: "semiengineering", name: "Semiconductor Engineering", artwork: "page", ...FEEDS.semiengineering },
+  { id: "thenewstack", name: "The New Stack", artwork: "page", ...FEEDS.thenewstack },
+  { id: "servethehome", name: "ServeTheHome", artwork: "page", ...FEEDS.servethehome },
+  { id: "dcd", name: "Data Centre Dynamics", artwork: "page", ...FEEDS.dcd },
+  { id: "computerworld", name: "Computerworld", artwork: "page", ...FEEDS.computerworld },
+  { id: "gizmodo", name: "Gizmodo", artwork: "page", ...FEEDS.gizmodo },
+  { id: "nine5google", name: "9to5Google", artwork: "page", ...FEEDS.nine5google },
+  { id: "macrumors", name: "MacRumors", artwork: "page", ...FEEDS.macrumors },
+  { id: "stratechery", name: "Stratechery", artwork: "page", ...FEEDS.stratechery },
+  { id: "daringfireball", name: "Daring Fireball", artwork: "page", ...FEEDS.daringfireball },
+  { id: "restofworld", name: "Rest of World", artwork: "page", ...FEEDS.restofworld },
+  { id: "sifted", name: "Sifted", artwork: "page", ...FEEDS.sifted },
+  { id: "techeu", name: "Tech.eu", artwork: "page", ...FEEDS.techeu },
+  { id: "sciencedaily", name: "ScienceDaily", artwork: "page", ...FEEDS.sciencedaily },
 
   // Writing worth reading, from people who do the work.
   { id: "simonw", name: "Simon Willison", artwork: "none", ...FEEDS.simonw },
   { id: "importai", name: "Import AI", artwork: "page", ...FEEDS.importai },
   { id: "interconnects", name: "Interconnects", artwork: "page", ...FEEDS.interconnects },
+  { id: "tldrai", name: "TLDR AI", artwork: "page", ...FEEDS.tldrai },
+  { id: "latentspace", name: "Latent Space", artwork: "page", ...FEEDS.latentspace },
+  { id: "oneusefulthing", name: "One Useful Thing", artwork: "page", ...FEEDS.oneusefulthing },
+  { id: "aheadofai", name: "Ahead of AI", artwork: "page", ...FEEDS.aheadofai },
+  { id: "lastweekinai", name: "Last Week in AI", artwork: "page", ...FEEDS.lastweekinai },
+  { id: "aisnakeoil", name: "AI as Normal Technology", artwork: "page", ...FEEDS.aisnakeoil },
+  { id: "exponentialview", name: "Exponential View", artwork: "page", ...FEEDS.exponentialview },
+  { id: "gradflow", name: "Gradient Flow", artwork: "page", ...FEEDS.gradflow },
+  { id: "dair", name: "DAIR.AI", artwork: "page", ...FEEDS.dair },
+  { id: "alignmentforum", name: "Alignment Forum", artwork: "page", ...FEEDS.alignmentforum },
+  { id: "lesswrong", name: "LessWrong", artwork: "page", ...FEEDS.lesswrong },
+  { id: "kdnuggets", name: "KDnuggets", artwork: "page", ...FEEDS.kdnuggets },
+  { id: "rundown", name: "The Rundown", artwork: "page", ...FEEDS.rundown },
 ];
 
 const IMAGE_SOURCE = Object.fromEntries(SOURCES.map((s) => [s.id, s.artwork]));
