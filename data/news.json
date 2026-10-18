@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T12:40:14Z",
+  "generatedAt": "2026-10-18T12:52:07Z",
   "sources": [
     {
       "id": "hn",
@@ -37,10 +37,10 @@
       "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
       "url": "https://sphinx-six-theta.vercel.app/",
       "publishedAt": "2026-10-18T04:33:49.000Z",
-      "score": 165,
+      "score": 167,
       "scoreLabel": "points",
       "meta": {
-        "comments": 48
+        "comments": 49
       },
       "alsoOn": []
     },
@@ -50,10 +50,10 @@
       "title": "DeepSeek-v4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "publishedAt": "2026-10-17T08:21:25.000Z",
-      "score": 889,
+      "score": 890,
       "scoreLabel": "points",
       "meta": {
-        "comments": 667
+        "comments": 671
       },
       "alsoOn": [
         "hn:50129121",
@@ -80,7 +80,7 @@
       "title": "You could have invented transformers from memory",
       "url": "https://alexwang.ai/posts/associative-memory/",
       "publishedAt": "2026-10-16T19:01:17.000Z",
-      "score": 579,
+      "score": 580,
       "scoreLabel": "points",
       "meta": {
         "comments": 130
@@ -93,7 +93,7 @@
       "title": "Amazon uses AI to monitor union risk in UK warehouses",
       "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
       "publishedAt": "2026-10-17T16:04:23.000Z",
-      "score": 166,
+      "score": 167,
       "scoreLabel": "points",
       "meta": {
         "comments": 58
@@ -146,7 +146,7 @@
       "title": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender…",
       "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
       "publishedAt": "2026-10-15T22:30:47.000Z",
-      "score": 728,
+      "score": 727,
       "scoreLabel": "stars",
       "meta": {
         "repo": "LiCinCan/blender-ai-mcp-addon",
@@ -257,7 +257,7 @@
       "title": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak.",
       "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
       "publishedAt": "2026-10-11T19:10:25.000Z",
-      "score": 3060,
+      "score": 3061,
       "scoreLabel": "stars",
       "meta": {
         "repo": "onehumanbeing/esp32-iphone-agent",
@@ -445,6 +445,20 @@
       "alsoOn": []
     },
     {
+      "id": "hf:openbmb/MiniCPM-V-4.7-35B-A3B",
+      "source": "hf",
+      "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+      "publishedAt": "2026-10-07T07:07:30.000Z",
+      "score": 930,
+      "scoreLabel": "likes",
+      "meta": {
+        "downloads": 57935,
+        "task": "image-text-to-text"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "arxiv:2610.22344v1",
       "source": "arxiv",
       "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
@@ -459,26 +473,12 @@
       "alsoOn": []
     },
     {
-      "id": "hf:openbmb/MiniCPM-V-4.7-35B-A3B",
-      "source": "hf",
-      "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
-      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
-      "publishedAt": "2026-10-07T07:07:30.000Z",
-      "score": 928,
-      "scoreLabel": "likes",
-      "meta": {
-        "downloads": 57935,
-        "task": "image-text-to-text"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "gh:mw00/project-maya",
       "source": "gh",
       "title": "Project Maya - run GLM-5.3-Flash (321B MoE) privately on your own GPU(s), from one card to 16, NVIDIA or AMD, Linux or Windows. Engine, server, dashboard, Open…",
       "url": "https://github.com/mw00/project-maya",
       "publishedAt": "2026-10-06T22:55:13.000Z",
-      "score": 1021,
+      "score": 1022,
       "scoreLabel": "stars",
       "meta": {
         "repo": "mw00/project-maya",
@@ -628,7 +628,7 @@
       "title": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "publishedAt": "2026-10-01T04:34:57.000Z",
-      "score": 650,
+      "score": 651,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 9620,
@@ -697,7 +697,7 @@
       "title": "AI 跨境电商运营智能体工具箱 · 把运营 SOP 拆成 7 个可复用的 AI Agent 工作流，含 Prompt、模板与真实案例",
       "url": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
       "publishedAt": "2026-10-13T10:13:21.000Z",
-      "score": 375,
+      "score": 377,
       "scoreLabel": "stars",
       "meta": {
         "repo": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
@@ -711,7 +711,7 @@
       "title": "LiquidAI/LFM2.5-24B-A2B",
       "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
       "publishedAt": "2026-10-12T05:35:46.000Z",
-      "score": 456,
+      "score": 458,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 13007,
@@ -766,7 +766,7 @@
       "title": "Find the cheapest API for any model and connect it from your AI agent: Grandet Skill and an anonymous MCP server, backed by listed prices from 1,800+ official,…",
       "url": "https://github.com/hanzohanzhe/Grandet",
       "publishedAt": "2026-10-05T06:50:33.000Z",
-      "score": 340,
+      "score": 342,
       "scoreLabel": "stars",
       "meta": {
         "repo": "hanzohanzhe/Grandet",
@@ -794,7 +794,7 @@
       "title": "☤ The official plugins for Hermes Agent, built and maintained by Nous Research: Home Assistant, Spotify, Claude Subscription DirectSDK and more, one install aw…",
       "url": "https://github.com/NousResearch/hermes-official-plugins",
       "publishedAt": "2026-10-10T20:51:25.000Z",
-      "score": 319,
+      "score": 320,
       "scoreLabel": "stars",
       "meta": {
         "repo": "NousResearch/hermes-official-plugins",
@@ -878,7 +878,7 @@
       "title": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
       "url": "https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
       "publishedAt": "2026-10-04T10:44:11.000Z",
-      "score": 420,
+      "score": 421,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 256336,
@@ -900,16 +900,16 @@
       "alsoOn": []
     },
     {
-      "id": "gh:sitor-ai/frametell",
+      "id": "gh:HRuiCcc/RuiC-oc-ferry",
       "source": "gh",
-      "title": "Frametell: turn your ideas and material into vivid explainer videos with an AI director agent. Local-first, any model.",
-      "url": "https://github.com/sitor-ai/frametell",
-      "publishedAt": "2026-10-10T10:02:14.000Z",
-      "score": 221,
+      "title": "把 OpenCode 的免费模型摆渡给 WorkBuddy —— 隔离运行时、并发检测、判定缓存、一键导入、本机 OpenAI 兼容转发口",
+      "url": "https://github.com/HRuiCcc/RuiC-oc-ferry",
+      "publishedAt": "2026-10-10T08:59:18.000Z",
+      "score": 223,
       "scoreLabel": "stars",
       "meta": {
-        "repo": "sitor-ai/frametell",
-        "language": "TypeScript"
+        "repo": "HRuiCcc/RuiC-oc-ferry",
+        "language": "JavaScript"
       },
       "alsoOn": []
     },
@@ -942,16 +942,16 @@
       "alsoOn": []
     },
     {
-      "id": "gh:HRuiCcc/RuiC-oc-ferry",
+      "id": "gh:sitor-ai/frametell",
       "source": "gh",
-      "title": "把 OpenCode 的免费模型摆渡给 WorkBuddy —— 隔离运行时、并发检测、判定缓存、一键导入、本机 OpenAI 兼容转发口",
-      "url": "https://github.com/HRuiCcc/RuiC-oc-ferry",
-      "publishedAt": "2026-10-10T08:59:18.000Z",
-      "score": 221,
+      "title": "Frametell: turn your ideas and material into vivid explainer videos with an AI director agent. Local-first, any model.",
+      "url": "https://github.com/sitor-ai/frametell",
+      "publishedAt": "2026-10-10T10:02:14.000Z",
+      "score": 222,
       "scoreLabel": "stars",
       "meta": {
-        "repo": "HRuiCcc/RuiC-oc-ferry",
-        "language": "JavaScript"
+        "repo": "sitor-ai/frametell",
+        "language": "TypeScript"
       },
       "alsoOn": []
     },
