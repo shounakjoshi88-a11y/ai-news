@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T12:52:07Z",
+  "generatedAt": "2026-10-18T13:04:13Z",
   "sources": [
     {
       "id": "hn",
@@ -37,10 +37,10 @@
       "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
       "url": "https://sphinx-six-theta.vercel.app/",
       "publishedAt": "2026-10-18T04:33:49.000Z",
-      "score": 167,
+      "score": 169,
       "scoreLabel": "points",
       "meta": {
-        "comments": 49
+        "comments": 50
       },
       "alsoOn": []
     },
@@ -50,7 +50,7 @@
       "title": "DeepSeek-v4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "publishedAt": "2026-10-17T08:21:25.000Z",
-      "score": 890,
+      "score": 893,
       "scoreLabel": "points",
       "meta": {
         "comments": 671
@@ -80,7 +80,7 @@
       "title": "You could have invented transformers from memory",
       "url": "https://alexwang.ai/posts/associative-memory/",
       "publishedAt": "2026-10-16T19:01:17.000Z",
-      "score": 580,
+      "score": 581,
       "scoreLabel": "points",
       "meta": {
         "comments": 130
@@ -88,15 +88,15 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50132278",
+      "id": "hn:50121179",
       "source": "hn",
-      "title": "Amazon uses AI to monitor union risk in UK warehouses",
-      "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
-      "publishedAt": "2026-10-17T16:04:23.000Z",
-      "score": 167,
+      "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+      "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+      "publishedAt": "2026-10-16T17:08:38.000Z",
+      "score": 611,
       "scoreLabel": "points",
       "meta": {
-        "comments": 58
+        "comments": 554
       },
       "alsoOn": []
     },
@@ -115,15 +115,15 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50121179",
+      "id": "hn:50132278",
       "source": "hn",
-      "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-      "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
-      "publishedAt": "2026-10-16T17:08:38.000Z",
-      "score": 611,
+      "title": "Amazon uses AI to monitor union risk in UK warehouses",
+      "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
+      "publishedAt": "2026-10-17T16:04:23.000Z",
+      "score": 168,
       "scoreLabel": "points",
       "meta": {
-        "comments": 554
+        "comments": 58
       },
       "alsoOn": []
     },
@@ -146,7 +146,7 @@
       "title": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender…",
       "url": "https://github.com/LiCinCan/blender-ai-mcp-addon",
       "publishedAt": "2026-10-15T22:30:47.000Z",
-      "score": 727,
+      "score": 728,
       "scoreLabel": "stars",
       "meta": {
         "repo": "LiCinCan/blender-ai-mcp-addon",
@@ -257,7 +257,7 @@
       "title": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak.",
       "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
       "publishedAt": "2026-10-11T19:10:25.000Z",
-      "score": 3061,
+      "score": 3062,
       "scoreLabel": "stars",
       "meta": {
         "repo": "onehumanbeing/esp32-iphone-agent",
@@ -292,20 +292,6 @@
       "alsoOn": []
     },
     {
-      "id": "arxiv:2610.22362v1",
-      "source": "arxiv",
-      "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
-      "url": "http://arxiv.org/abs/2610.22362v1",
-      "publishedAt": "2026-10-15T17:59:02.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "cs.RO",
-        "authors": 8
-      },
-      "alsoOn": []
-    },
-    {
       "id": "gh:deeplethe/solid-glass",
       "source": "gh",
       "title": "A design system for AI applications. Material, physical, tactile, technical.",
@@ -316,6 +302,20 @@
       "meta": {
         "repo": "deeplethe/solid-glass",
         "language": "TypeScript"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "arxiv:2610.22362v1",
+      "source": "arxiv",
+      "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+      "url": "http://arxiv.org/abs/2610.22362v1",
+      "publishedAt": "2026-10-15T17:59:02.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "cs.RO",
+        "authors": 8
       },
       "alsoOn": []
     },
@@ -450,7 +450,7 @@
       "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "publishedAt": "2026-10-07T07:07:30.000Z",
-      "score": 930,
+      "score": 932,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 57935,
@@ -614,7 +614,7 @@
       "title": "Fast CPU OCR: line detection, CTC recognition, reading order, markdown",
       "url": "https://github.com/datalab-to/indra",
       "publishedAt": "2026-10-13T11:07:11.000Z",
-      "score": 610,
+      "score": 611,
       "scoreLabel": "stars",
       "meta": {
         "repo": "datalab-to/indra",
@@ -628,7 +628,7 @@
       "title": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "publishedAt": "2026-10-01T04:34:57.000Z",
-      "score": 651,
+      "score": 652,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 9620,
@@ -697,7 +697,7 @@
       "title": "AI 跨境电商运营智能体工具箱 · 把运营 SOP 拆成 7 个可复用的 AI Agent 工作流，含 Prompt、模板与真实案例",
       "url": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
       "publishedAt": "2026-10-13T10:13:21.000Z",
-      "score": 377,
+      "score": 379,
       "scoreLabel": "stars",
       "meta": {
         "repo": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
@@ -734,15 +734,15 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50104299",
+      "id": "hn:50059523",
       "source": "hn",
-      "title": "Using AI to reverse engineer hardware",
-      "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
-      "publishedAt": "2026-10-15T14:35:15.000Z",
-      "score": 253,
+      "title": "AI coding agents generate more code, but not more software",
+      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "publishedAt": "2026-10-12T17:14:01.000Z",
+      "score": 364,
       "scoreLabel": "points",
       "meta": {
-        "comments": 249
+        "comments": 313
       },
       "alsoOn": []
     },
@@ -822,7 +822,7 @@
       "title": "Comfy-Org/MOSS-Image",
       "url": "https://huggingface.co/Comfy-Org/MOSS-Image",
       "publishedAt": "2026-10-16T12:42:32.000Z",
-      "score": 164,
+      "score": 165,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 354126,
@@ -864,7 +864,7 @@
       "title": "A curated collection of REA and AI-assisted reverse engineering cases, projects, and ideas. Updated every four hours.",
       "url": "https://github.com/songshikang0111/awesome-REA-cases",
       "publishedAt": "2026-10-12T04:52:44.000Z",
-      "score": 237,
+      "score": 238,
       "scoreLabel": "stars",
       "meta": {
         "repo": "songshikang0111/awesome-REA-cases",
@@ -887,15 +887,15 @@
       "alsoOn": []
     },
     {
-      "id": "hn:50059523",
+      "id": "hn:50104299",
       "source": "hn",
-      "title": "AI coding agents generate more code, but not more software",
-      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
-      "publishedAt": "2026-10-12T17:14:01.000Z",
-      "score": 364,
+      "title": "Using AI to reverse engineer hardware",
+      "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
+      "publishedAt": "2026-10-15T14:35:15.000Z",
+      "score": 253,
       "scoreLabel": "points",
       "meta": {
-        "comments": 313
+        "comments": 249
       },
       "alsoOn": []
     },
