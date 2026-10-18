@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T14:10:37Z",
+  "generatedAt": "2026-10-18T14:18:20Z",
   "sources": [
     {
       "id": "hn",
@@ -38,10 +38,10 @@
       "blurb": "FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it'll throw up a questionnaire that checks if you understand how the code you're pushing…",
       "url": "https://sphinx-six-theta.vercel.app/",
       "publishedAt": "2026-10-18T04:33:49.000Z",
-      "score": 183,
+      "score": 184,
       "scoreLabel": "points",
       "meta": {
-        "comments": 55
+        "comments": 56
       },
       "alsoOn": [],
       "image": null
@@ -53,10 +53,10 @@
       "blurb": null,
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "publishedAt": "2026-10-17T08:21:25.000Z",
-      "score": 903,
+      "score": 906,
       "scoreLabel": "points",
       "meta": {
-        "comments": 677
+        "comments": 678
       },
       "alsoOn": [
         "hn:50129121",
@@ -87,10 +87,10 @@
       "blurb": null,
       "url": "https://alexwang.ai/posts/associative-memory/",
       "publishedAt": "2026-10-16T19:01:17.000Z",
-      "score": 593,
+      "score": 594,
       "scoreLabel": "points",
       "meta": {
-        "comments": 132
+        "comments": 133
       },
       "alsoOn": [],
       "image": "https://alexwang.ai/images/share-card_hu_ba29a66ace5a286c.jpg"
@@ -105,7 +105,7 @@
       "score": 611,
       "scoreLabel": "points",
       "meta": {
-        "comments": 556
+        "comments": 557
       },
       "alsoOn": [],
       "image": null
@@ -167,7 +167,7 @@
       "score": 149,
       "scoreLabel": "points",
       "meta": {
-        "comments": 69
+        "comments": 70
       },
       "alsoOn": [],
       "image": "https://opengraph.githubassets.com/ca36cd0881ef0455269ae28027ff6686ed2bae99e1f24dc416de1a72bc590b3c/openai/codex/issues/25921"
@@ -291,7 +291,7 @@
       "image": "https://opengraph.githubassets.com/1/onehumanbeing/esp32-iphone-agent",
       "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
       "publishedAt": "2026-10-11T19:10:25.000Z",
-      "score": 3073,
+      "score": 3075,
       "scoreLabel": "stars",
       "meta": {
         "repo": "onehumanbeing/esp32-iphone-agent",
@@ -432,7 +432,7 @@
       "title": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "publishedAt": "2026-10-02T05:54:02.000Z",
-      "score": 951,
+      "score": 952,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 19548,
@@ -495,7 +495,7 @@
       "title": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "publishedAt": "2026-10-07T07:07:30.000Z",
-      "score": 944,
+      "score": 945,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 57935,
@@ -714,7 +714,7 @@
       "title": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "publishedAt": "2026-10-01T04:34:57.000Z",
-      "score": 654,
+      "score": 657,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 9620,
@@ -795,7 +795,7 @@
       "image": "https://opengraph.githubassets.com/1/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
       "url": "https://github.com/heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
       "publishedAt": "2026-10-13T10:13:21.000Z",
-      "score": 380,
+      "score": 381,
       "scoreLabel": "stars",
       "meta": {
         "repo": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
@@ -874,7 +874,7 @@
       "image": "https://opengraph.githubassets.com/1/hanzohanzhe/Grandet",
       "url": "https://github.com/hanzohanzhe/Grandet",
       "publishedAt": "2026-10-05T06:50:33.000Z",
-      "score": 347,
+      "score": 349,
       "scoreLabel": "stars",
       "meta": {
         "repo": "hanzohanzhe/Grandet",
@@ -986,7 +986,7 @@
       "image": "https://opengraph.githubassets.com/1/songshikang0111/awesome-REA-cases",
       "url": "https://github.com/songshikang0111/awesome-REA-cases",
       "publishedAt": "2026-10-12T04:52:44.000Z",
-      "score": 240,
+      "score": 241,
       "scoreLabel": "stars",
       "meta": {
         "repo": "songshikang0111/awesome-REA-cases",
@@ -1011,18 +1011,18 @@
       "blurb": "The 1B variant of MiniCPM-V 4.7 advances the performance–efficiency Pareto frontier. In Instruct mode, 1B substantially outperforms Qwen3.5 0.8B in both overall score and inference…"
     },
     {
-      "id": "gh:justxor/deepseek-local-guide-ru",
+      "id": "gh:sitor-ai/frametell",
       "source": "gh",
-      "title": "justxor/deepseek-local-guide-ru",
-      "blurb": "🐋 Полный гайд на русском: как установить и запустить DeepSeek локально (V4, R1) на ПК, Mac и сервере — Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG, агенты, fine-tuning, лучшие…",
-      "image": "https://opengraph.githubassets.com/1/justxor/deepseek-local-guide-ru",
-      "url": "https://github.com/justxor/deepseek-local-guide-ru",
-      "publishedAt": "2026-10-17T10:03:36.000Z",
-      "score": 81,
+      "title": "sitor-ai/frametell",
+      "blurb": "Frametell: turn your ideas and material into vivid explainer videos with an AI director agent. Local-first, any model.",
+      "image": "https://opengraph.githubassets.com/1/sitor-ai/frametell",
+      "url": "https://github.com/sitor-ai/frametell",
+      "publishedAt": "2026-10-10T10:02:14.000Z",
+      "score": 227,
       "scoreLabel": "stars",
       "meta": {
-        "repo": "justxor/deepseek-local-guide-ru",
-        "language": "Shell"
+        "repo": "sitor-ai/frametell",
+        "language": "TypeScript"
       },
       "alsoOn": []
     },
@@ -1074,18 +1074,18 @@
       "blurb": "Phonon-2 is the most accurate open speech recognition model for English under 900 MB. Across the Open ASR Leaderboard's seven English sets it averages 5.21 % word error, beating models…"
     },
     {
-      "id": "gh:sitor-ai/frametell",
+      "id": "gh:justxor/deepseek-local-guide-ru",
       "source": "gh",
-      "title": "sitor-ai/frametell",
-      "blurb": "Frametell: turn your ideas and material into vivid explainer videos with an AI director agent. Local-first, any model.",
-      "image": "https://opengraph.githubassets.com/1/sitor-ai/frametell",
-      "url": "https://github.com/sitor-ai/frametell",
-      "publishedAt": "2026-10-10T10:02:14.000Z",
-      "score": 227,
+      "title": "justxor/deepseek-local-guide-ru",
+      "blurb": "🐋 Полный гайд на русском: как установить и запустить DeepSeek локально (V4, R1) на ПК, Mac и сервере — Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG, агенты, fine-tuning, лучшие…",
+      "image": "https://opengraph.githubassets.com/1/justxor/deepseek-local-guide-ru",
+      "url": "https://github.com/justxor/deepseek-local-guide-ru",
+      "publishedAt": "2026-10-17T10:03:36.000Z",
+      "score": 81,
       "scoreLabel": "stars",
       "meta": {
-        "repo": "sitor-ai/frametell",
-        "language": "TypeScript"
+        "repo": "justxor/deepseek-local-guide-ru",
+        "language": "Shell"
       },
       "alsoOn": []
     },
