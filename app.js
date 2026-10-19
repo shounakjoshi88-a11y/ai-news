@@ -1,13 +1,16 @@
 /**
  * AI Wire — renders data/news.json as a grid of dispatches.
  *
- * The data file is rewritten hourly by a scheduled job and served from the same
- * origin, so there is no API, no build step and no key. This script only reads,
- * filters, paginates and formats it.
+ * The data file is rebuilt every five minutes by a scheduled job. The deployed
+ * copy is the fallback; a live ladder reads the freshest edition straight from
+ * the repo's data branch, so a refresh costs the reader one request rather than
+ * the project a deployment. There is no API, no build step and no key. This
+ * script only reads, filters, paginates and formats.
  */
 
 const DATA_URL = "data/news.json";
-const REFRESH_MS = 10 * 60 * 1000;
+/** How often the page re-reads the wire. The collector writes every five minutes. */
+const REFRESH_MS = 5 * 60 * 1000;
 const TICK_MS = 30 * 1000;
 const STALE_MS = 90 * 60 * 1000;
 const MIN_REFETCH_GAP_MS = 60 * 1000;
@@ -21,7 +24,7 @@ const PAGE_SIZE = 24;
  * show, so it is spelled out; `kind` is what the source publishes, and is what a
  * card with no picture says instead of a picture. The order below is the order of
  * the tabs, and it is fixed on purpose — sorting by volume would make a source
- * jump around the strip every hour as the news changed.
+ * jump around the strip every five minutes as the news changes.
  */
 const SOURCES = {
   hn: { name: "Hacker News", code: "HN", kind: "Discussion" },
@@ -141,6 +144,8 @@ const state = {
   seen: new Set(),
   animateAll: true,
   lastFetch: 0,
+  /** False until the first load completes, so the boot itself never announces. */
+  booted: false,
 };
 
 const nf = new Intl.NumberFormat();
@@ -557,7 +562,7 @@ function updateAlerts(now = Date.now()) {
     );
   }
   if (stale) {
-    messages.push("This edition is older than expected, so the hourly rebuild may have stalled.");
+    messages.push("This edition is older than expected, so the scheduled rebuild may have stalled.");
   }
 
   els.alert.hidden = messages.length === 0;
@@ -892,34 +897,90 @@ function setFilter(id, { sync = true } = {}) {
 
 /* ------------------------------------------------------------------ load */
 
+// The deployed copy is the instant first paint and the guaranteed fallback: it
+// ships with the site, so it is there even when nothing else can be reached.
+//
+// The live ladder upgrades it without a deployment. The GitHub contents API is
+// first because it is the only path that is current the moment the collector
+// writes; the raw CDN copy trails it by up to five minutes and carries no rate
+// limit; the same-origin copy is the floor every run can fall back to. The data
+// is a file the page reads, not something baked into the build — so a refresh
+// costs the reader one request, not the project a deployment.
+const LIVE_SOURCES = [
+  {
+    url: "https://api.github.com/repos/shounakjoshi88-a11y/ai-news/contents/data/news.json?ref=data",
+    init: { headers: { Accept: "application/vnd.github.raw" } },
+  },
+  {
+    url: "https://raw.githubusercontent.com/shounakjoshi88-a11y/ai-news/data/data/news.json",
+  },
+];
+
+async function fetchEdition(url, init) {
+  const res = await fetch(url, { cache: "no-store", ...init });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const data = await res.json();
+  if (!Array.isArray(data?.items) || data.items.length === 0) throw new Error("empty edition");
+  return data;
+}
+
+/** True only when this edition is newer than what is already on screen. */
+function isNewer(a, b) {
+  const ta = Date.parse(a?.generatedAt || 0) || 0;
+  const tb = Date.parse(b?.generatedAt || 0) || 0;
+  return ta > tb;
+}
+
+/**
+ * Show an edition, but only when it is newer than the current one. Returns true
+ * when it actually changed the screen, so a poll that finds nothing new stays
+ * quiet and a stale fallback never regresses the page.
+ */
+function applyEdition(data) {
+  if (!isNewer(data, state.payload)) return false;
+  const first = !state.payload;
+  state.payload = data;
+  state.error = null;
+  state.loading = false;
+  if (first) state.animateAll = true;
+  renderTabs();
+  render();
+  updateAlerts();
+  return true;
+}
+
 async function load() {
   state.lastFetch = Date.now();
-  try {
-    const res = await fetch(DATA_URL, { cache: "no-store" });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
-    if (!Array.isArray(data?.items) || data.items.length === 0) throw new Error("empty edition");
+  const booted = state.booted;
+  let changed = false;
+  let lastError = null;
 
-    const first = !state.payload;
-    state.payload = data;
-    state.error = null;
-    state.loading = false;
-    if (first) state.animateAll = true;
-
-    renderTabs();
-    render();
-    updateAlerts();
-    if (!first) {
-      announce(`Refreshed. ${data.items.length} dispatches.`);
+  // Walk the ladder: the deployed copy first for a fast first paint, then the
+  // live sources for whatever is newer. The first live source that applies is
+  // the freshest there is, so the ladder stops there.
+  for (const { url, init } of [{ url: DATA_URL }, ...LIVE_SOURCES]) {
+    try {
+      const data = await fetchEdition(url, init);
+      if (applyEdition(data)) {
+        changed = true;
+        if (url !== DATA_URL) break;
+      }
+    } catch (error) {
+      lastError = error;
     }
-  } catch (error) {
-    state.error = error;
+  }
+
+  if (!state.payload) {
+    state.error = lastError;
     state.loading = false;
     // Whatever is already on screen stays on screen; a failed refresh must not blank it.
     renderTabs();
     render({ animate: false });
-    if (!state.payload) announce("The wire could not be loaded.");
+    announce("The wire could not be loaded.");
+  } else if (changed && booted) {
+    announce(`Refreshed. ${state.payload.items.length} dispatches.`);
   }
+  state.booted = true;
   updateStatus();
 }
 

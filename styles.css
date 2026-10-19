@@ -381,7 +381,7 @@ a {
 /* ------------------------------------------------------------------ board */
 
 /* The masthead opens with a display board rather than a headline. This page is
-   built out of time — an hourly rebuild, a relative stamp on every card, a stale
+   built out of time — a rebuild every five minutes, a relative stamp on every card, a stale
    marker at ninety minutes — so the clock belongs at the top of it, and the
    thing it is modelled on is a departure board rather than a watch.
 

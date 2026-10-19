@@ -2,7 +2,7 @@
 
 A single page showing what is happening in AI right now — announcements, papers, models,
 code, press, discussion, and the wider technology industry around all of it — from **eighty
-sources**, rebuilt every hour by a scheduled job. No server, no database, no API keys,
+sources**, rebuilt every five minutes by a scheduled job. No server, no database, no API keys,
 nothing to run.
 
 **Live:** https://ai-news-seven-tan.vercel.app/
@@ -18,15 +18,17 @@ the labs · the engineering blogs · the press, AI desks · recent technology
    normalise → dedupe → rank → fill in previews
         │
         ▼
-   data/news.json, committed ──▶ index.html + app.js render it
-        ▲                             ▲
-        │                             │
-   GitHub Actions, hourly          Vercel, on push
+   data/news.json ──▶ data branch ──▶ index.html + app.js render it
+          ▲                           ▲
+          │                           │
+   GitHub Actions, every 5 min            Vercel, on push to main
 ```
 
 A scheduled workflow runs `scripts/fetch-news.mjs`, which writes `data/news.json` and
-commits it if it changed. Because the page is served from the same origin as that file,
-the browser reads it directly. There is no API to call and no process to keep alive.
+commits it to the `data` branch if it changed. The page reads that branch through a small
+ladder — the GitHub contents API first, the raw CDN copy next, and the deployed same-origin
+copy as the guaranteed fallback — so a refresh costs the reader one request and the project
+no deployment. There is no API to call and no process to keep alive.
 
 Each card carries artwork and a summary, and neither is invented: both are taken from the
 item's own page or feed, and each source has its own strategy (below). Most feeds publish
@@ -36,17 +38,26 @@ deduping — so the pages read are the pages shown. Where there is no picture to
 all, the card gets a designed tile instead of a fake one. See
 [Pictures](#pictures-and-why-they-are-not-generated).
 
-The repository is linked to Vercel, so that same commit is also what republishes the page.
-The hourly job deploys nothing itself and holds no hosting credential — it only commits,
-and Vercel rebuilds on push. A total collection failure therefore leaves both the last good
-commit and the live site untouched.
+The repository is linked to Vercel, so a commit to `main` is also what republishes the page.
+The job deploys nothing itself and holds no hosting credential — it only commits, and Vercel
+rebuilds on push. A total collection failure therefore leaves both the last good commit and
+the live site untouched.
 
-It is triggered **twice an hour**, at `:07` and `:37`, on purpose. GitHub's scheduler is
-explicitly best-effort: it starts runs late under load and sometimes drops them entirely,
-and this job is the only thing keeping the site current, so one missed tick means a stale
-page. The collector stands down when `data/news.json` is under 50 minutes old, so whichever
-of the two fires first does the work and the other costs a few seconds of runner time rather
-than a duplicate commit.
+It is triggered **every five minutes**, on `:00` and `:02` past each minute, on purpose.
+GitHub's scheduler is explicitly best-effort: it starts runs late under load and sometimes
+drops them entirely, and this job is the only thing keeping the site current, so one missed
+tick means a stale page. Five minutes is also GitHub's documented floor for scheduled
+workflows, so it cannot be tuned any faster. The collector stands down when the data branch's
+copy is under four minutes old, so whichever of the two entries fires first does the work and
+the other costs a few seconds of runner time rather than a duplicate commit.
+
+Why the data is decoupled from the deploy: Vercel's Hobby plan caps deployments at **100 a
+day**, and a data refresh used to mean re-shipping the whole site — at a five-minute cadence
+that is 144 deployments, over the cap, which would lock deploys for the rest of the day.
+Shipping the data as a file the page fetches removes the coupling entirely. `main` is
+committed only on the hour's first run (to keep the deployed fallback fresh), and the `data`
+branch is a single-commit orphan holding only the data file, so a refresh never grows the
+history.
 
 ## Sources
 
@@ -54,7 +65,7 @@ than a duplicate commit.
 or a paid tier, and each is read from its publisher rather than through an intermediary.
 Every URL was fetched and parsed before it was added; the ones that failed are in the next
 table rather than left as a guess, because a source that turns out to be walled off is worse
-than a missing one — it costs a request every hour and reports a failure every hour.
+than a missing one — it costs a request every five minutes and reports a failure that often.
 
 | Group | Sources | Signal | Artwork and summary |
 | --- | --- | --- | --- |
@@ -93,7 +104,7 @@ candidate below was fetched and parsed before it was dropped.
 | Feeds that answer `200` and return nothing | Cohere, Anyscale, InfoWorld, LangChain, Weights & Biases, Analytics Vidhya, Ben's Bites, Synced, 机器之心, 36Kr, The Neuron, Analytics India's older paths — and Hugging Face's papers feed, which answers `401`. A feed with no items is recorded as a failure, never as a source |
 | Publications that stopped | BAIR (81 days since its last post), TensorFlow Blog (92), Lil'Log (107), Eugene Yan (119), Replicate (187), SemiAnalysis (397) |
 | Whole-paper feeds from general newsrooms | BBC, NYT, Engadget, CNBC, and The Guardian's technology desk at large — an AI wire reading a paper's entire output fills up with phones and streaming |
-| Hosts that block datacenter IPs | **Gizmodo** answers `403` to GitHub's runners and `200` to a laptop, and **The Register** serves CI a page with no feed items in it. Both were verified working locally, added, and then caught on the runner's own network — which is the check that counts, because a source that fails from CI every hour is an amber alert every hour |
+| Hosts that block datacenter IPs | **Gizmodo** answers `403` to GitHub's runners and `200` to a laptop, and **The Register** serves CI a page with no feed items in it. Both were verified working locally, added, and then caught on the runner's own network — which is the check that counts, because a source that fails from CI on every run is an amber alert every five minutes |
 
 Every source in the table above was confirmed from **the runner's network**, not just from a
 laptop, by reading the `sources[]` block the workflow itself commits.
@@ -286,7 +297,7 @@ A touch screen keeps the swipe and drops the arrows, which would only cover tabs
 
 The masthead opens with a **segmented clock board** rather than a headline: the date, then
 hours and minutes at full size with the seconds at two thirds in the accent, then a row of
-zones. It is a real instrument rather than an ornament — the wire is rebuilt hourly, every
+zones. It is a real instrument rather than an ornament — the wire is rebuilt every five minutes, every
 card is stamped with when it landed, and the edition goes stale at ninety minutes, so a page
 that is *about* time can reasonably open by telling you what time it is.
 
@@ -343,7 +354,7 @@ and dark. It also prints the palette as hex, which is where the sRGB fallbacks c
   `GITHUB_TOKEN` the workflow already has, used purely to raise the GitHub API rate limit
   from 60 to 5000 requests an hour.
 - Scheduled runs can start 5–20 minutes late, and occasionally do not start at all — which is
-  why there are two entries an hour (above). The page reports how long ago it was built
+  why there are two entries every five minutes (above). The page reports how long ago it was built
   rather than pretending otherwise, and marks itself stale after 90 minutes.
 - Times are shown relative to now, with the exact timestamp in the tooltip, rendered in the
   reader's own locale and timezone.

@@ -1,21 +1,33 @@
 name: Refresh dispatches
 
-# Rebuilds data/news.json every hour and commits it. Vercel is linked to this
-# repository, so that commit is itself what republishes the site — there is no
-# deploy step here, and the job holds no hosting credential.
+# Rebuilds data/news.json every five minutes. The data lives on its own orphan
+# `data` branch, which the page reads directly — so a refresh costs the reader one
+# request and the project no deployment. main is committed only on the hour's
+# first run, to keep the deployed fallback fresh; Vercel is linked to this
+# repository, so that hourly commit is itself what republishes the site. There is
+# no deploy step here, and the job holds no hosting credential.
+#
+# Why the data is decoupled: on Vercel's Hobby plan every deployment is capped at
+# 100 a day, and a data refresh used to mean re-shipping the whole site. At a
+# five-minute cadence that is 144 deployments — over the cap, which would lock
+# deploys for the rest of the day. Shipping the data as a file the page fetches
+# removes the coupling entirely.
 
 on:
   schedule:
     # Two entries, not one, on purpose. GitHub's scheduler is explicitly
     # best-effort — it starts runs late under load and sometimes drops them — and
-    # this job is the only thing keeping the site current. If the :07 run is
-    # dropped the :37 run picks the hour up.
+    # this job is the only thing keeping the site current. If the :00 run is
+    # dropped the :02 run picks the minute up.
     #
-    # Both cannot be useful in the same hour, because the collector exits without
-    # writing when data/news.json is under 50 minutes old. So the cost of the
-    # spare entry is a few seconds of runner time, not a doubled commit history.
-    - cron: "7 * * * *"
-    - cron: "37 * * * *"
+    # Both cannot be useful in the same five minutes, because the collector exits
+    # without writing when the data branch's copy is under four minutes old. So
+    # the cost of the spare entry is a few seconds of runner time, not a doubled
+    # commit history. Five minutes is GitHub's documented floor for scheduled
+    # workflows, and a refresh here costs no deployment — see the data-branch
+    # push in the commit step below.
+    - cron: "*/5 * * * *"
+    - cron: "2-59/5 * * * *"
   # Code changes re-run the collector immediately. Data commits touch
   # data/news.json alone, so they never re-trigger this workflow.
   push:
@@ -54,12 +66,29 @@ jobs:
 
       # No install step on purpose: the collector is zero-dependency and Node 20
       # already ships fetch, so there is no lockfile and nothing to cache.
+
+      # The collector's freshness guard compares against the data branch's copy —
+      # the one the page reads — not main's, which is only refreshed once an hour.
+      # Read the branch's generatedAt so the guard stands down correctly between
+      # runs instead of rebuilding on every tick. On the first run, or if the
+      # branch is unreachable, this is empty and the collector falls back to the
+      # local file.
+      - name: Read the live edition's age
+        run: |
+          gen=$(curl -fsS "https://api.github.com/repos/shounakjoshi88-a11y/ai-news/contents/data/news.json?ref=data" \
+            -H "Accept: application/vnd.github.raw" \
+            -H "User-Agent: ai-news-workflow" \
+            | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{try{console.log(JSON.parse(s).generatedAt||'')}catch{console.log('')}})" \
+            || true)
+          echo "PREVIOUS_GEN=$gen" >> "$GITHUB_ENV"
+
       - name: Collect dispatches
         env:
           # Raises the GitHub search rate limit from 60 to 5000 requests an hour.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # A scheduled run yields to one that already refreshed the hour; a push
-          # or a manual run means the code changed, so it always rebuilds.
+          # A scheduled run yields to one that already refreshed the last few
+          # minutes; a push or a manual run means the code changed, so it always
+          # rebuilds.
           FORCE: ${{ github.event_name != 'schedule' }}
         run: node scripts/fetch-news.mjs --out data/news.json
 
@@ -87,7 +116,7 @@ jobs:
         run: |
           # `images/` does not exist at all while generation is off, and may not
           # exist on a run where it failed before writing anything; a bare
-          # `git add images` would fail the step and cost the hour's news.
+          # `git add images` would fail the step and cost the run's news.
           git add -- data/news.json
           if [ -d images ]; then git add -- images; fi
 
@@ -102,10 +131,28 @@ jobs:
           changed=$(git diff --cached --name-only | wc -l)
           git commit -m "data: refresh dispatches ($(date -u +'%Y-%m-%d %H:%M UTC'), $changed files)"
 
-          # main can move while this job is collecting (someone pushes a fix).
-          # Replay on top of whatever landed rather than failing the run.
-          if ! git push origin HEAD:main; then
-            git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
+          # The page reads the data branch. It is a single-commit orphan holding
+          # only the data file, rebuilt from this run's tree and force-pushed, so
+          # a refresh never costs a deployment and never grows the history — the
+          # branch is one commit no matter how many times a day it is written.
+          git checkout --orphan data-work
+          git rm -rf --cached . >/dev/null 2>&1 || true
+          git add -f -- data/news.json
+          if [ -d images ]; then git add -f -- images; fi
+          git commit -m "data: live dispatches ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git push --force origin data-work:data
+          git checkout main
+
+          # main is the deployed fallback, so it is pushed only on the hour's first
+          # run, and on a code push where the fallback should track the change.
+          # Between those the live branch carries the wire and the deploy budget
+          # stays untouched.
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$(date -u +%M)" -lt 15 ]; then
+            # main can move while this job is collecting (someone pushes a fix).
+            # Replay on top of whatever landed rather than failing the run.
+            if ! git push origin HEAD:main; then
+              git fetch origin main
+              git rebase origin/main
+              git push origin HEAD:main
+            fi
           fi

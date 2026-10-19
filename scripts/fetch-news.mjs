@@ -11,9 +11,11 @@
  * untouched so the page keeps its last good data and the workflow goes red.
  *
  * Exits 0 without touching anything if the existing file is still fresh, unless
- * --force is given. Two cron entries cover each hour because GitHub's scheduler
- * drops runs under load; this guard is what stops the second entry from doubling
- * the commit history.
+ * --force is given. Two cron entries cover each five minutes because GitHub's
+ * scheduler drops runs under load; this guard is what stops the second entry
+ * from doubling the commit history. The previous edition's age is read from the
+ * data branch (PREVIOUS_GEN) when the workflow passes it, because that is the
+ * copy the page actually reads.
  */
 
 import { mkdir, readFile, writeFile, rename } from "node:fs/promises";
@@ -49,7 +51,7 @@ const TOTAL_CAP = 1200;
  * Every URL here was fetched and parsed before it was added, and the ones that
  * were tried and rejected are listed in the README rather than left as a guess.
  * A source that turns out to be a walled garden is worse than a missing one: it
- * costs a request every hour and reports a failure every hour.
+ * costs a request every five minutes and reports a failure that often.
  */
 const FEEDS = {
   // The labs, and the engineering they publish. They are the primary source for
@@ -1086,11 +1088,22 @@ function markdownSummaryUrl(item) {
  * touched, and only after capping and deduping, so the pages fetched are the
  * pages actually shown.
  */
-async function enrich(items) {
+async function enrich(items, known = new Map(), retryEmpty = false) {
   // An item whose feed or API already supplied artwork needs no page fetched for
   // one. That is what keeps widening from four sources to twenty cheap: most
   // items cost a single request shared with the whole feed.
-  const targets = items.filter((item) => IMAGE_SOURCE[item.source] === "page" && !item.image);
+  //
+  // An item already present in the previous edition has been tried before; if it
+  // still has no artwork it is almost certainly a card whose page has none, so
+  // re-trying it every five minutes would be wasted requests. It gets one more
+  // chance on the hour's first run, which is enough to recover a page that
+  // failed once without turning a permanently imageless card into a poll target.
+  const targets = items.filter((item) => {
+    if (IMAGE_SOURCE[item.source] !== "page" || item.image) return false;
+    if (!known.has(item.url)) return true; // genuinely new
+    if (retryEmpty) return true; // hourly retry for the ones that came up empty
+    return false;
+  });
   const stats = { pages: targets.length, images: 0, blurbs: 0 };
   let cursor = 0;
 
@@ -1133,22 +1146,38 @@ async function enrich(items) {
 
 const outPath = resolve(arg("--out", "data/news.json"));
 
+// Read the previous edition up front: it feeds both the freshness guard and the
+// enrichment reuse below, so a fast cadence does not re-fetch every article
+// page on every run.
+let previous = null;
+try {
+  previous = JSON.parse(await readFile(outPath, "utf8"));
+} catch {
+  // Absent or unreadable: a first run, or a corrupted file. Either way, build one.
+}
+
 /**
  * GitHub's scheduler is best-effort: it delays scheduled runs under load and
- * sometimes drops them outright, which for an hourly job means the page quietly
- * goes stale. Two cron entries an hour are configured to absorb that, and this
- * guard makes whichever fires second a no-op — so the site stays hourly without
- * the history collecting two identical commits every hour.
+ * sometimes drops them outright. Two cron entries every five minutes are
+ * configured to absorb that, and this guard makes whichever fires second a
+ * no-op — so the wire stays current without the history collecting two
+ * identical commits every five minutes.
+ *
+ * The previous edition's age is checked against the data branch's copy (the one
+ * the page actually reads), whose generatedAt is passed in as PREVIOUS_GEN, so
+ * the guard stays correct even though this run checks out `main`, whose copy is
+ * only refreshed once an hour. Falling back to the local file covers the first
+ * run and any run where the branch does not yet exist.
  *
  * A push or a manual run means the code changed, and passes --force.
  */
 const FORCE = process.argv.includes("--force") || process.env.FORCE === "true";
-const FRESH_MINUTES = Number(arg("--fresh-minutes", "50"));
+const FRESH_MINUTES = Number(arg("--fresh-minutes", "4"));
 
 if (!FORCE) {
+  const previousGeneratedAt = process.env.PREVIOUS_GEN || previous?.generatedAt;
   try {
-    const previous = JSON.parse(await readFile(outPath, "utf8"));
-    const ageMinutes = (Date.now() - Date.parse(previous.generatedAt)) / 60_000;
+    const ageMinutes = (Date.now() - Date.parse(previousGeneratedAt)) / 60_000;
     if (Number.isFinite(ageMinutes) && ageMinutes < FRESH_MINUTES) {
       console.log(
         `data is ${ageMinutes.toFixed(0)}m old, fresher than ${FRESH_MINUTES}m — nothing to rebuild.`,
@@ -1156,7 +1185,7 @@ if (!FORCE) {
       process.exit(0);
     }
   } catch {
-    // Unreadable or absent: a first run, or a corrupted file. Either way, build one.
+    // Unreadable previous edition: build one.
   }
 }
 
@@ -1216,10 +1245,22 @@ for (const s of sources) {
 
 items = diversify(dedupe(items)).slice(0, TOTAL_CAP);
 
+// Reuse what the previous edition already found, so a five-minute cadence does
+// not re-fetch the same article pages every run. New items, and items that have
+// never had artwork, still get a chance; the rest keep their previous result.
+const known = new Map((previous?.items || []).map((i) => [i.url, i]));
+for (const item of items) {
+  const old = known.get(item.url);
+  if (!old) continue;
+  if (!item.image && old.image) item.image = old.image;
+  if (!item.blurb && old.blurb) item.blurb = old.blurb;
+}
+const retryEmpty = new Date().getUTCMinutes() < 5;
+
 console.log(
   `\nenriching ${items.length} cards — fetching link previews for the sources that need them…`,
 );
-const media = await enrich(items);
+const media = await enrich(items, known, retryEmpty);
 
 // `rank` and `altTitle` are working values for ordering and matching, not data.
 for (const item of items) {
