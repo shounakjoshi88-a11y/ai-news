@@ -131,6 +131,24 @@ jobs:
           changed=$(git diff --cached --name-only | wc -l)
           git commit -m "data: refresh dispatches ($(date -u +'%Y-%m-%d %H:%M UTC'), $changed files)"
 
+          # main is the deployed fallback, so it is pushed only on the hour's first
+          # run, and on a code push where the fallback should track the change.
+          # Between those the live branch carries the wire and the deploy budget
+          # stays untouched.
+          #
+          # This runs before the data branch below, not after: the orphan checkout
+          # leaves the working tree on a branch where every other file is
+          # untracked, and git then refuses to switch back to main.
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$(date -u +%M)" -lt 15 ]; then
+            # main can move while this job is collecting (someone pushes a fix).
+            # Replay on top of whatever landed rather than failing the run.
+            if ! git push origin HEAD:main; then
+              git fetch origin main
+              git rebase origin/main
+              git push origin HEAD:main
+            fi
+          fi
+
           # The page reads the data branch. It is a single-commit orphan holding
           # only the data file, rebuilt from this run's tree and force-pushed, so
           # a refresh never costs a deployment and never grows the history — the
@@ -141,18 +159,3 @@ jobs:
           if [ -d images ]; then git add -f -- images; fi
           git commit -m "data: live dispatches ($(date -u +'%Y-%m-%d %H:%M UTC'))"
           git push --force origin data-work:data
-          git checkout main
-
-          # main is the deployed fallback, so it is pushed only on the hour's first
-          # run, and on a code push where the fallback should track the change.
-          # Between those the live branch carries the wire and the deploy budget
-          # stays untouched.
-          if [ "${{ github.event_name }}" != "schedule" ] || [ "$(date -u +%M)" -lt 15 ]; then
-            # main can move while this job is collecting (someone pushes a fix).
-            # Replay on top of whatever landed rather than failing the run.
-            if ! git push origin HEAD:main; then
-              git fetch origin main
-              git rebase origin/main
-              git push origin HEAD:main
-            fi
-          fi
