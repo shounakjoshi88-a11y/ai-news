@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T19:09:58Z",
+  "generatedAt": "2026-11-01T19:14:59Z",
   "sources": [
     {
       "id": "hn",
@@ -1037,19 +1037,6 @@
       "alsoOn": []
     },
     {
-      "id": "thehackernews:https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
-      "source": "thehackernews",
-      "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
-      "blurb": "Cybersecurity researchers have disclosed details of what has been described as a \"highly sophisticated infection chain\" targeting government organizations in Asia. The activity, detailed by…",
-      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy0oLNj9TVg8ifLKdJSg4HH1EhN3m_OBldd7wEIeVoQSHtFXSmsiPdmf-njsPD-CbVHY8NckeW2N9rN8-CTnp81zaeFq-ISj04O7ihoj5HgnvJT_zY_0fdC8vCcd5LXL8Mx9ym1fPI5GMrEtjxZoEiernCr_CZwLocgtrJsKZzixEnYUe2WmkehWLNR2hx/s1600/windows-hacker.jpg",
-      "url": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
-      "publishedAt": "2026-11-01T07:02:58.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "scmp:https://www.scmp.com/tech/big-tech/article/3372785/us-or-china-why-kazakhstan-refuses-pick-sides-it-eyes-ai-revolution",
       "source": "scmp",
       "title": "US or China? Why Kazakhstan refuses to pick sides as it eyes AI revolution",
@@ -1057,6 +1044,19 @@
       "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/30/efcead60-18ca-4015-990a-6053a136f570_d5f80ff8.jpg?itok=jlzJW3-E&v=1793370090",
       "url": "https://www.scmp.com/tech/big-tech/article/3372785/us-or-china-why-kazakhstan-refuses-pick-sides-it-eyes-ai-revolution",
       "publishedAt": "2026-11-01T06:00:13.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "thehackernews:https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
+      "source": "thehackernews",
+      "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
+      "blurb": "Cybersecurity researchers have disclosed details of what has been described as a \"highly sophisticated infection chain\" targeting government organizations in Asia. The activity, detailed by…",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy0oLNj9TVg8ifLKdJSg4HH1EhN3m_OBldd7wEIeVoQSHtFXSmsiPdmf-njsPD-CbVHY8NckeW2N9rN8-CTnp81zaeFq-ISj04O7ihoj5HgnvJT_zY_0fdC8vCcd5LXL8Mx9ym1fPI5GMrEtjxZoEiernCr_CZwLocgtrJsKZzixEnYUe2WmkehWLNR2hx/s1600/windows-hacker.jpg",
+      "url": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
+      "publishedAt": "2026-11-01T07:02:58.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -1240,6 +1240,21 @@
       "alsoOn": []
     },
     {
+      "id": "hn:50327266",
+      "source": "hn",
+      "title": "Frontier Airlines Likely Breached",
+      "blurb": null,
+      "url": "https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam/",
+      "publishedAt": "2026-11-01T16:46:33.000Z",
+      "score": 93,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 22
+      },
+      "alsoOn": [],
+      "image": null
+    },
+    {
       "id": "simonw:https://simonwillison.net/2026/Oct/31/datasette-llm/",
       "source": "simonw",
       "title": "datasette-llm 0.1a9",
@@ -1266,21 +1281,6 @@
       "scoreLabel": null,
       "meta": {},
       "alsoOn": []
-    },
-    {
-      "id": "hn:50327266",
-      "source": "hn",
-      "title": "Frontier Airlines Likely Breached",
-      "blurb": null,
-      "url": "https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam/",
-      "publishedAt": "2026-11-01T16:46:33.000Z",
-      "score": 91,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 22
-      },
-      "alsoOn": [],
-      "image": null
     },
     {
       "id": "verge:https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
@@ -1317,10 +1317,10 @@
       "blurb": "One of my pet peeves with the web development community is that so many of the decisions we make are vibes-based. Frameworks are “blazing fast,” tools will…",
       "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
       "publishedAt": "2026-11-01T06:06:19.000Z",
-      "score": 231,
+      "score": 232,
       "scoreLabel": "points",
       "meta": {
-        "comments": 159
+        "comments": 163
       },
       "alsoOn": [],
       "image": "https://nolanlawson.com/_astro/frameworks.B14_z7MF_2lv3q1.webp"
@@ -1874,10 +1874,10 @@
       "blurb": "Air-gapped systems are physically separated from external networks, including the Internet. This isolation is achieved by keeping the air-gap computers disconnected from wired or wireless…",
       "url": "https://arxiv.org/abs/2409.02292",
       "publishedAt": "2026-11-01T01:46:29.000Z",
-      "score": 160,
+      "score": 161,
       "scoreLabel": "points",
       "meta": {
-        "comments": 82
+        "comments": 83
       },
       "alsoOn": [],
       "image": null
@@ -2296,21 +2296,6 @@
       "alsoOn": []
     },
     {
-      "id": "guardian:https://www.theguardian.com/lifeandstyle/2026/oct/31/ai-your-wingman-chatbots-transforming-dating",
-      "source": "guardian",
-      "title": "Is AI your new wingman? How chatbots are transforming dating",
-      "blurb": "Almost 40% of British singles have used AI for romantic advice, from writing messages to assessing potential partners After Sam’s ex joked that her sister found him ugly, he turned to AI…",
-      "image": "https://i.guim.co.uk/img/media/f57dcf1a8bbea5c0f23d491b38cd69b5b7d99f18/0_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=e31ca46ee09a0e757f9394788a52ffd8",
-      "url": "https://www.theguardian.com/lifeandstyle/2026/oct/31/ai-your-wingman-chatbots-transforming-dating",
-      "publishedAt": "2026-10-31T12:00:42.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "Dating"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "hn:50305693",
       "source": "hn",
       "title": "AI isn't replacing SREs, it's deskilling them",
@@ -2341,6 +2326,21 @@
       "alsoOn": []
     },
     {
+      "id": "guardian:https://www.theguardian.com/lifeandstyle/2026/oct/31/ai-your-wingman-chatbots-transforming-dating",
+      "source": "guardian",
+      "title": "Is AI your new wingman? How chatbots are transforming dating",
+      "blurb": "Almost 40% of British singles have used AI for romantic advice, from writing messages to assessing potential partners After Sam’s ex joked that her sister found him ugly, he turned to AI…",
+      "image": "https://i.guim.co.uk/img/media/f57dcf1a8bbea5c0f23d491b38cd69b5b7d99f18/0_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=e31ca46ee09a0e757f9394788a52ffd8",
+      "url": "https://www.theguardian.com/lifeandstyle/2026/oct/31/ai-your-wingman-chatbots-transforming-dating",
+      "publishedAt": "2026-10-31T12:00:42.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "Dating"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "lobsters:bmmj1e",
       "source": "lobsters",
       "title": "Let’s Build a Brain",
@@ -2354,6 +2354,19 @@
       },
       "alsoOn": [],
       "image": "https://aatishb.com/myriad/promo_behaviors.jpeg"
+    },
+    {
+      "id": "nine5google:https://9to5toys.com/2026/10/30/todays-highlight-google-play-deals-40/",
+      "source": "nine5google",
+      "title": "Friday’s Android app deals and freebies: Thronefall, Demon Castle Story, Pocket Academy 3, Dungeon Village 2, more",
+      "blurb": "Friday’s best Google Play app and game deals are ready, including Thronefall, Demon Castle Story, Pocket Academy 3, Dungeon Village 2, RPG Silver Nornir, Witchcraft!, Lovecraft’s Untold…",
+      "image": "https://9to5google.com/wp-content/uploads/sites/4/2026/10/Google-Play-collage-af8b04.webp?w=1600",
+      "url": "https://9to5toys.com/2026/10/30/todays-highlight-google-play-deals-40/",
+      "publishedAt": "2026-10-30T17:58:04.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "lesswrong:https://www.lesswrong.com/posts/moDKmh4GerCjfB5mM/monitor-evasion-depends-on-what-rl-finds-and-what-monitors",
@@ -2384,19 +2397,6 @@
       ]
     },
     {
-      "id": "nine5google:https://9to5toys.com/2026/10/30/todays-highlight-google-play-deals-40/",
-      "source": "nine5google",
-      "title": "Friday’s Android app deals and freebies: Thronefall, Demon Castle Story, Pocket Academy 3, Dungeon Village 2, more",
-      "blurb": "Friday’s best Google Play app and game deals are ready, including Thronefall, Demon Castle Story, Pocket Academy 3, Dungeon Village 2, RPG Silver Nornir, Witchcraft!, Lovecraft’s Untold…",
-      "image": "https://9to5google.com/wp-content/uploads/sites/4/2026/10/Google-Play-collage-af8b04.webp?w=1600",
-      "url": "https://9to5toys.com/2026/10/30/todays-highlight-google-play-deals-40/",
-      "publishedAt": "2026-10-30T17:58:04.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "macrumors:https://www.macrumors.com/2026/10/31/apple-watch-ultra-4-99-discounts/",
       "source": "macrumors",
       "title": "Apple Watch Ultra 4 Hits All-Time Low Price With Amazon's $99 Discount",
@@ -2409,19 +2409,6 @@
       "meta": {
         "category": "Deals"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "techmeme:https://www.techmeme.com/261101/p5#a261101p5",
-      "source": "techmeme",
-      "title": "Binance has started resuming withdrawals in phases, including for BTC and ETH, after covering 95% of the $6.3B in tokens stolen in the hack by TraderTraitor (R…",
-      "blurb": "Reuters : Binance has started resuming withdrawals in phases, including for BTC and ETH, after covering 95% of the $6.3B in tokens stolen in the hack by TraderTraitor — Binance, the world's…",
-      "image": null,
-      "url": "https://www.techmeme.com/261101/p5#a261101p5",
-      "publishedAt": "2026-11-01T06:30:02.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -2445,6 +2432,19 @@
       "image": "https://img.etimg.com/photo/msid-135385131,imgsize-1365238.cms",
       "url": "https://economictimes.indiatimes.com/tech/technology/october-ends-with-a-thud-for-intel-reddit-ai-stalwarts/articleshow/135385131.cms",
       "publishedAt": "2026-10-31T02:42:25.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "techmeme:https://www.techmeme.com/261101/p5#a261101p5",
+      "source": "techmeme",
+      "title": "Binance has started resuming withdrawals in phases, including for BTC and ETH, after covering 95% of the $6.3B in tokens stolen in the hack by TraderTraitor (R…",
+      "blurb": "Reuters : Binance has started resuming withdrawals in phases, including for BTC and ETH, after covering 95% of the $6.3B in tokens stolen in the hack by TraderTraitor — Binance, the world's…",
+      "image": null,
+      "url": "https://www.techmeme.com/261101/p5#a261101p5",
+      "publishedAt": "2026-11-01T06:30:02.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -2557,19 +2557,6 @@
       "alsoOn": []
     },
     {
-      "id": "scmp:https://www.scmp.com/tech/tech-trends/article/3372779/china-joins-global-race-reawaken-brain-injury-patients-through-ultrasound-therapy",
-      "source": "scmp",
-      "title": "China joins global race to reawaken brain-injury patients through ultrasound therapy",
-      "blurb": "After spending three months in a coma following a brain haemorrhage, a patient in China has regained the ability to speak, eat and walk with support – part of an early clinical trial using…",
-      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/30/0ece54a4-c48c-4710-9ca4-ca72ef5f3a18_bcb3dc8a.jpg?itok=nK79p_0Q&v=1793367339",
-      "url": "https://www.scmp.com/tech/tech-trends/article/3372779/china-joins-global-race-reawaken-brain-injury-patients-through-ultrasound-therapy",
-      "publishedAt": "2026-10-31T07:00:06.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "rundown:https://www.therundown.ai/articles/inside-the-spy-plot-around-nvidia-ceo",
       "source": "rundown",
       "title": "Inside the spy plot around Nvidia’s CEO",
@@ -2582,6 +2569,19 @@
       "meta": {
         "category": "ai"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "scmp:https://www.scmp.com/tech/tech-trends/article/3372779/china-joins-global-race-reawaken-brain-injury-patients-through-ultrasound-therapy",
+      "source": "scmp",
+      "title": "China joins global race to reawaken brain-injury patients through ultrasound therapy",
+      "blurb": "After spending three months in a coma following a brain haemorrhage, a patient in China has regained the ability to speak, eat and walk with support – part of an early clinical trial using…",
+      "image": "https://cdn.i-scmp.com/sites/default/files/styles/1280x720/public/d8/images/canvas/2026/10/30/0ece54a4-c48c-4710-9ca4-ca72ef5f3a18_bcb3dc8a.jpg?itok=nK79p_0Q&v=1793367339",
+      "url": "https://www.scmp.com/tech/tech-trends/article/3372779/china-joins-global-race-reawaken-brain-injury-patients-through-ultrasound-therapy",
+      "publishedAt": "2026-10-31T07:00:06.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -2667,6 +2667,21 @@
       "scoreLabel": null,
       "meta": {},
       "alsoOn": []
+    },
+    {
+      "id": "hn:50325253",
+      "source": "hn",
+      "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+      "blurb": "I have been researching what the ultimate diff tool would look like, based on actual diffs in open source repositories. OmniDiff can diff: code (25 languages), config, images, PDFs…",
+      "url": "https://github.com/ivankovic/omnidiff",
+      "publishedAt": "2026-11-01T13:02:30.000Z",
+      "score": 54,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 25
+      },
+      "alsoOn": [],
+      "image": "https://repository-images.githubusercontent.com/1078209382/05657b56-1763-4014-bae7-bb30db0db322"
     },
     {
       "id": "thenewstack:https://thenewstack.io/gpt-6-1-terra-vs-claude-opus-5-5/",
@@ -2814,21 +2829,6 @@
       "scoreLabel": null,
       "meta": {},
       "alsoOn": []
-    },
-    {
-      "id": "hn:50325253",
-      "source": "hn",
-      "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
-      "blurb": "I have been researching what the ultimate diff tool would look like, based on actual diffs in open source repositories. OmniDiff can diff: code (25 languages), config, images, PDFs…",
-      "url": "https://github.com/ivankovic/omnidiff",
-      "publishedAt": "2026-11-01T13:02:30.000Z",
-      "score": 50,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 25
-      },
-      "alsoOn": [],
-      "image": "https://repository-images.githubusercontent.com/1078209382/05657b56-1763-4014-bae7-bb30db0db322"
     },
     {
       "id": "tldrai:https://tldr.tech/ai/2026-10-30",
@@ -3265,7 +3265,7 @@
       "image": "https://opengraph.githubassets.com/1/wangzan101/Mika",
       "url": "https://github.com/wangzan101/Mika",
       "publishedAt": "2026-10-29T14:34:07.000Z",
-      "score": 3719,
+      "score": 3720,
       "scoreLabel": "stars",
       "meta": {
         "repo": "wangzan101/Mika",
@@ -3313,19 +3313,6 @@
       "alsoOn": []
     },
     {
-      "id": "servethehome:https://www.servethehome.com/intel-q3-2026-earnings-data-center-foundry-client/",
-      "source": "servethehome",
-      "title": "Intel Q3 2026 Earnings Data Center Soars While PC Faces Memory Pressure",
-      "blurb": "Intel's Q3 2026 earnings highlighted how well the data center segment is doing and how rough the client segment is due to DRAM and NAND pricing The post Intel Q3 2026 Earnings Data Center…",
-      "image": "https://www.servethehome.com/wp-content/uploads/2025/05/Intel-Panther-Lake-18A-at-Computex-2025-2.jpg",
-      "url": "https://www.servethehome.com/intel-q3-2026-earnings-data-center-foundry-client/",
-      "publishedAt": "2026-10-30T22:43:29.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "sifted:https://sifted.eu/articles/talent-tops-european-ai-startups-concerns-as-funding-pressures-mount/",
       "source": "sifted",
       "title": "Talent tops European AI startups’ concerns as funding pressures mount",
@@ -3333,6 +3320,19 @@
       "image": "https://images.sifted.eu/cdn-cgi/image/width=2048,quality=75,fit=cover,format=auto/wp-content/uploads/2026/06/03162236/Dwelly-Founders-2F-1-scaled.jpg",
       "url": "https://sifted.eu/articles/talent-tops-european-ai-startups-concerns-as-funding-pressures-mount/",
       "publishedAt": "2026-10-30T05:00:59.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "servethehome:https://www.servethehome.com/intel-q3-2026-earnings-data-center-foundry-client/",
+      "source": "servethehome",
+      "title": "Intel Q3 2026 Earnings Data Center Soars While PC Faces Memory Pressure",
+      "blurb": "Intel's Q3 2026 earnings highlighted how well the data center segment is doing and how rough the client segment is due to DRAM and NAND pricing The post Intel Q3 2026 Earnings Data Center…",
+      "image": "https://www.servethehome.com/wp-content/uploads/2025/05/Intel-Panther-Lake-18A-at-Computex-2025-2.jpg",
+      "url": "https://www.servethehome.com/intel-q3-2026-earnings-data-center-foundry-client/",
+      "publishedAt": "2026-10-30T22:43:29.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -3382,19 +3382,6 @@
       "alsoOn": []
     },
     {
-      "id": "techspot:https://www.techspot.com/news/114397-smart-screwdriver-uses-camera-ai-identify-screws-set.html",
-      "source": "techspot",
-      "title": "This smart screwdriver uses a camera and AI to identify screws and set torque automatically",
-      "blurb": "Hong Kong-based Arrowmax recently launched a Kickstarter campaign for what it calls the world's first AI-powered electric screwdriver, and funded it almost immediately. Starting at around…",
-      "image": "https://www.techspot.com/images2/news/ts3_thumbs/2026/10/2026-10-30-ts3_thumbs-4be.jpg",
-      "url": "https://www.techspot.com/news/114397-smart-screwdriver-uses-camera-ai-identify-screws-set.html",
-      "publishedAt": "2026-10-31T11:33:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "arxiv:2610.40649v1",
       "source": "arxiv",
       "title": "Rethinking Neural Thickets Without Weight Perturbations",
@@ -3408,6 +3395,19 @@
         "category": "cs.LG",
         "authors": 5
       },
+      "alsoOn": []
+    },
+    {
+      "id": "techspot:https://www.techspot.com/news/114397-smart-screwdriver-uses-camera-ai-identify-screws-set.html",
+      "source": "techspot",
+      "title": "This smart screwdriver uses a camera and AI to identify screws and set torque automatically",
+      "blurb": "Hong Kong-based Arrowmax recently launched a Kickstarter campaign for what it calls the world's first AI-powered electric screwdriver, and funded it almost immediately. Starting at around…",
+      "image": "https://www.techspot.com/images2/news/ts3_thumbs/2026/10/2026-10-30-ts3_thumbs-4be.jpg",
+      "url": "https://www.techspot.com/news/114397-smart-screwdriver-uses-camera-ai-identify-screws-set.html",
+      "publishedAt": "2026-10-31T11:33:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -3443,13 +3443,13 @@
       "alsoOn": []
     },
     {
-      "id": "bleepingcomputer:https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/",
-      "source": "bleepingcomputer",
-      "title": "From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.",
-      "blurb": "AI-generated vulnerability reports are overwhelming some bug bounty programs, making it harder for aspiring security researchers to know where to start. TryHackMe explains how beginners can…",
-      "image": "https://www.bleepstatic.com/content/posts/2026/10/30/tryhackme-laptop.jpg",
-      "url": "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/",
-      "publishedAt": "2026-10-31T13:10:19.000Z",
+      "id": "hfblog:https://huggingface.co/blog/anydecisionmodel",
+      "source": "hfblog",
+      "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+      "blurb": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+      "image": "https://huggingface.co/blog/assets/anydecisionmodel/banner.png",
+      "url": "https://huggingface.co/blog/anydecisionmodel",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -3471,12 +3471,25 @@
       "alsoOn": []
     },
     {
-      "id": "hfblog:https://huggingface.co/blog/anydecisionmodel",
+      "id": "bleepingcomputer:https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/",
+      "source": "bleepingcomputer",
+      "title": "From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.",
+      "blurb": "AI-generated vulnerability reports are overwhelming some bug bounty programs, making it harder for aspiring security researchers to know where to start. TryHackMe explains how beginners can…",
+      "image": "https://www.bleepstatic.com/content/posts/2026/10/30/tryhackme-laptop.jpg",
+      "url": "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/",
+      "publishedAt": "2026-10-31T13:10:19.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "hfblog:https://huggingface.co/blog/mistral-large4",
       "source": "hfblog",
-      "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
-      "blurb": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
-      "image": "https://huggingface.co/blog/assets/anydecisionmodel/banner.png",
-      "url": "https://huggingface.co/blog/anydecisionmodel",
+      "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
+      "blurb": "Mistral Large 4 (aka Le Chonk) is a multimodal, multilingual, Mixture-of-Experts (MoE) model from Mistral. It takes text and images as input and generates text. It has about 1T total, 49B…",
+      "image": "https://huggingface.co/blog/assets/ml4/thumbnail.png",
+      "url": "https://huggingface.co/blog/mistral-large4",
       "publishedAt": "2026-10-29T00:00:00.000Z",
       "score": null,
       "scoreLabel": null,
@@ -3496,19 +3509,6 @@
       "meta": {
         "category": "Smart Home"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "hfblog:https://huggingface.co/blog/mistral-large4",
-      "source": "hfblog",
-      "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
-      "blurb": "Mistral Large 4 (aka Le Chonk) is a multimodal, multilingual, Mixture-of-Experts (MoE) model from Mistral. It takes text and images as input and generates text. It has about 1T total, 49B…",
-      "image": "https://huggingface.co/blog/assets/ml4/thumbnail.png",
-      "url": "https://huggingface.co/blog/mistral-large4",
-      "publishedAt": "2026-10-29T00:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -3564,6 +3564,19 @@
       "alsoOn": []
     },
     {
+      "id": "deepmind:https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "source": "deepmind",
+      "title": "Gemini 4 Carbon: Our next frontier model",
+      "blurb": "Gemini 4 Carbon is our strongest model with state-of-the-art cybersecurity and long horizon capabilities.",
+      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_carbon_102726_social_share.width-1300.png",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "publishedAt": "2026-10-28T17:00:58.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "techxplore:https://techxplore.com/news/2026-10-company-ai-job.html",
       "source": "techxplore",
       "title": "What to consider if a company that made AI-related job cuts wants you back",
@@ -3579,13 +3592,13 @@
       "alsoOn": []
     },
     {
-      "id": "deepmind:https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
-      "source": "deepmind",
-      "title": "Gemini 4 Carbon: Our next frontier model",
-      "blurb": "Gemini 4 Carbon is our strongest model with state-of-the-art cybersecurity and long horizon capabilities.",
-      "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_carbon_102726_social_share.width-1300.png",
-      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
-      "publishedAt": "2026-10-28T17:00:58.000Z",
+      "id": "nvidia:https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
+      "source": "nvidia",
+      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
+      "blurb": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining…",
+      "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/Copy-of-nvidia-ov-x-astra-4up-KV-r1-press-4k-r2-scaled.png",
+      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
+      "publishedAt": "2026-10-29T16:00:35.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -3599,19 +3612,6 @@
       "image": "https://cdn.mos.cms.futurecdn.net/ZzVp3BPjywhWEBRXxjxq4S-1920-80.jpg",
       "url": "https://www.tomshardware.com/tech-industry/data-centers/criminal-investigation-launched-into-googles-ai-data-center-deforestation-in-finland-local-police-act-over-multiple-complaints-about-breaches-of-environmental-law",
       "publishedAt": "2026-10-30T10:40:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "nvidia:https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
-      "source": "nvidia",
-      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
-      "blurb": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining…",
-      "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/Copy-of-nvidia-ov-x-astra-4up-KV-r1-press-4k-r2-scaled.png",
-      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
-      "publishedAt": "2026-10-29T16:00:35.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -3787,6 +3787,22 @@
       "alsoOn": []
     },
     {
+      "id": "gh:N1nEmAn/sapper-v2",
+      "source": "gh",
+      "title": "N1nEmAn/sapper-v2",
+      "blurb": "Autonomous pentest legion — AI commander + worker swarm + layered fact-intent graph. 3rd Tencent Intelligent Attack-Defense online champion (634 teams · 8h unattended · 1B tokens beat…",
+      "image": "https://opengraph.githubassets.com/1/N1nEmAn/sapper-v2",
+      "url": "https://github.com/N1nEmAn/sapper-v2",
+      "publishedAt": "2026-10-30T15:12:35.000Z",
+      "score": 432,
+      "scoreLabel": "stars",
+      "meta": {
+        "repo": "N1nEmAn/sapper-v2",
+        "language": "Python"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "thehackernews:https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
       "source": "thehackernews",
       "title": "TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them",
@@ -3800,18 +3816,17 @@
       "alsoOn": []
     },
     {
-      "id": "gh:N1nEmAn/sapper-v2",
-      "source": "gh",
-      "title": "N1nEmAn/sapper-v2",
-      "blurb": "Autonomous pentest legion — AI commander + worker swarm + layered fact-intent graph. 3rd Tencent Intelligent Attack-Defense online champion (634 teams · 8h unattended · 1B tokens beat…",
-      "image": "https://opengraph.githubassets.com/1/N1nEmAn/sapper-v2",
-      "url": "https://github.com/N1nEmAn/sapper-v2",
-      "publishedAt": "2026-10-30T15:12:35.000Z",
-      "score": 432,
-      "scoreLabel": "stars",
+      "id": "aim:https://analyticsindiamag.com/ai-news/gnani-ai-launches-prisma-v30-speech-recognition-model-for-10-languages",
+      "source": "aim",
+      "title": "Gnani AI Launches Prisma v3.0 Speech Recognition Model for 10 Languages",
+      "blurb": "The company’s Prisma v3.0 supports nine Indian languages and English, with the company reporting lower transcription error rates than competing models on a mult",
+      "image": "https://zdpdvwhvukelzzbzbjvh.supabase.co/storage/v1/object/public/imported-images/1768567921974-dee1708a-7983-40bc-83b6-5baddf31bc77-hdxbr.webp",
+      "url": "https://analyticsindiamag.com/ai-news/gnani-ai-launches-prisma-v30-speech-recognition-model-for-10-languages",
+      "publishedAt": "2026-10-29T12:20:54.000Z",
+      "score": null,
+      "scoreLabel": null,
       "meta": {
-        "repo": "N1nEmAn/sapper-v2",
-        "language": "Python"
+        "category": "AI News"
       },
       "alsoOn": []
     },
@@ -3829,21 +3844,6 @@
       },
       "alsoOn": [],
       "image": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/10b0/live/dcdf2a60-d46e-11f1-9dda-1ba6fcc7d159.jpg"
-    },
-    {
-      "id": "aim:https://analyticsindiamag.com/ai-news/gnani-ai-launches-prisma-v30-speech-recognition-model-for-10-languages",
-      "source": "aim",
-      "title": "Gnani AI Launches Prisma v3.0 Speech Recognition Model for 10 Languages",
-      "blurb": "The company’s Prisma v3.0 supports nine Indian languages and English, with the company reporting lower transcription error rates than competing models on a mult",
-      "image": "https://zdpdvwhvukelzzbzbjvh.supabase.co/storage/v1/object/public/imported-images/1768567921974-dee1708a-7983-40bc-83b6-5baddf31bc77-hdxbr.webp",
-      "url": "https://analyticsindiamag.com/ai-news/gnani-ai-launches-prisma-v30-speech-recognition-model-for-10-languages",
-      "publishedAt": "2026-10-29T12:20:54.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "AI News"
-      },
-      "alsoOn": []
     },
     {
       "id": "eetimes:https://www.eetimes.com/google-agentic-ai-will-drive-new-demands-on-data-center-cpus/",
@@ -3872,19 +3872,6 @@
       "alsoOn": []
     },
     {
-      "id": "openai:https://openai.com/index/the-future-of-the-firm",
-      "source": "openai",
-      "title": "The future of the firm",
-      "blurb": "How AI might enter the org chart—beneath, beside, and between us.",
-      "image": null,
-      "url": "https://openai.com/index/the-future-of-the-firm",
-      "publishedAt": "2026-10-28T10:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hn:50284255",
       "source": "hn",
       "title": "Claude Code regularly sends each background agent’s transcript to its model",
@@ -3898,6 +3885,19 @@
       },
       "alsoOn": [],
       "image": "https://github.githubassets.com/assets/gist-og-image-54fd7dc0713e.png"
+    },
+    {
+      "id": "openai:https://openai.com/index/the-future-of-the-firm",
+      "source": "openai",
+      "title": "The future of the firm",
+      "blurb": "How AI might enter the org chart—beneath, beside, and between us.",
+      "image": null,
+      "url": "https://openai.com/index/the-future-of-the-firm",
+      "publishedAt": "2026-10-28T10:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "sifted:https://sifted.eu/articles/is-frances-startup-nation-falling-out-of-love-with-macron/",
@@ -4236,19 +4236,6 @@
       "alsoOn": []
     },
     {
-      "id": "openai:https://openai.com/index/legora",
-      "source": "openai",
-      "title": "Legora is building the agentic operating system for legal work",
-      "blurb": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
-      "image": null,
-      "url": "https://openai.com/index/legora",
-      "publishedAt": "2026-10-28T09:30:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "together:https://www.together.ai/blog/auto-repair-for-together-gpu-clusters",
       "source": "together",
       "title": "Auto repair for Together GPU Clusters: from GPU fault to healthy node",
@@ -4256,6 +4243,19 @@
       "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/6adfc9c7d8cc8003d466bf41_6adfc97703664d05b18f8202_og-auto-repair-together-gpu-clusters.png",
       "url": "https://www.together.ai/blog/auto-repair-for-together-gpu-clusters",
       "publishedAt": "2026-10-27T00:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "openai:https://openai.com/index/legora",
+      "source": "openai",
+      "title": "Legora is building the agentic operating system for legal work",
+      "blurb": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
+      "image": null,
+      "url": "https://openai.com/index/legora",
+      "publishedAt": "2026-10-28T09:30:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -4278,19 +4278,6 @@
       "alsoOn": []
     },
     {
-      "id": "thehackernews:https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
-      "source": "thehackernews",
-      "title": "WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",
-      "blurb": "Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released. The vulnerability, which does not have a CVE…",
-      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-pzflJO9HQoCdvBvYNtS12gwwEjAbM4dQ30ak7UYaIPzsVPN9MlFwvIDEFkbe9cWg4wQRFPbGfJ0YXjzGcBS6mUTwttwkQ8IR7OoHyTz3owZkVzYQOAObyJUqfjsC-PqMw2pv41_m68hb6ZkwJb56kGx-Ypv7GWZBtDzjyTTQ8L8i9NxA8_MDVoJSEba/s1600/wp-hack.jpg",
-      "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
-      "publishedAt": "2026-10-30T14:08:14.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "papers:2610.36671",
       "source": "papers",
       "title": "Look Only When Needed: Certificate-Guided Visual Routing for Efficient Diffusion VLMs",
@@ -4303,6 +4290,19 @@
       "meta": {
         "comments": 3
       },
+      "alsoOn": []
+    },
+    {
+      "id": "thehackernews:https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
+      "source": "thehackernews",
+      "title": "WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",
+      "blurb": "Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released. The vulnerability, which does not have a CVE…",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf-pzflJO9HQoCdvBvYNtS12gwwEjAbM4dQ30ak7UYaIPzsVPN9MlFwvIDEFkbe9cWg4wQRFPbGfJ0YXjzGcBS6mUTwttwkQ8IR7OoHyTz3owZkVzYQOAObyJUqfjsC-PqMw2pv41_m68hb6ZkwJb56kGx-Ypv7GWZBtDzjyTTQ8L8i9NxA8_MDVoJSEba/s1600/wp-hack.jpg",
+      "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
+      "publishedAt": "2026-10-30T14:08:14.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -4483,7 +4483,7 @@
       "image": "https://opengraph.githubassets.com/1/ccch1mneyyy/dsh-Go",
       "url": "https://github.com/ccch1mneyyy/dsh-Go",
       "publishedAt": "2026-10-25T08:09:52.000Z",
-      "score": 4551,
+      "score": 4555,
       "scoreLabel": "stars",
       "meta": {
         "repo": "ccch1mneyyy/dsh-Go",
@@ -4521,19 +4521,6 @@
       "alsoOn": []
     },
     {
-      "id": "etai:https://economictimes.indiatimes.com/tech/newsletters/tech-top-5/pb-fintech-q2-profit-surges-binance-suffers-6-3-billion-crypto-hack/articleshow/135363878.cms",
-      "source": "etai",
-      "title": "PB Fintech, Delhivery improve Q2 profits; Binance's $6.3 billion caper",
-      "blurb": "PB Fintech on Friday reported a strong jump in profit and revenue for the July-September quarter. This and more in today’s ETtech Top 5.",
-      "image": "https://img.etimg.com/photo/msid-135363878,imgsize-138468.cms",
-      "url": "https://economictimes.indiatimes.com/tech/newsletters/tech-top-5/pb-fintech-q2-profit-surges-binance-suffers-6-3-billion-crypto-hack/articleshow/135363878.cms",
-      "publishedAt": "2026-10-30T13:32:19.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "aheadofai:https://magazine.sebastianraschka.com/p/building-reasoning-models",
       "source": "aheadofai",
       "title": "Building Reasoning Models from the Ground Up: A Full Video Course",
@@ -4541,6 +4528,19 @@
       "image": "https://substack-post-media.s3.amazonaws.com/public/images/519db120-1320-411b-adec-a88865345f2c_4083x2916.jpeg",
       "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
       "publishedAt": "2026-10-24T11:14:32.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "etai:https://economictimes.indiatimes.com/tech/newsletters/tech-top-5/pb-fintech-q2-profit-surges-binance-suffers-6-3-billion-crypto-hack/articleshow/135363878.cms",
+      "source": "etai",
+      "title": "PB Fintech, Delhivery improve Q2 profits; Binance's $6.3 billion caper",
+      "blurb": "PB Fintech on Friday reported a strong jump in profit and revenue for the July-September quarter. This and more in today’s ETtech Top 5.",
+      "image": "https://img.etimg.com/photo/msid-135363878,imgsize-138468.cms",
+      "url": "https://economictimes.indiatimes.com/tech/newsletters/tech-top-5/pb-fintech-q2-profit-surges-binance-suffers-6-3-billion-crypto-hack/articleshow/135363878.cms",
+      "publishedAt": "2026-10-30T13:32:19.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -4643,7 +4643,7 @@
       "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "publishedAt": "2026-10-17T02:40:38.000Z",
-      "score": 4227,
+      "score": 4228,
       "scoreLabel": "likes",
       "meta": {
         "downloads": 170353,
@@ -4708,19 +4708,6 @@
       "alsoOn": []
     },
     {
-      "id": "daringfireball:https://furbo.org/2026/10/28/a-health-update/",
-      "source": "daringfireball",
-      "title": "A Health Update From Craig Hockenberry",
-      "blurb": "Craig Hockenberry: If you noticed that the Iconfactory sites were kinda broken last week, now you know why. It’s because I was kinda broken last week. Now I’m finishing this post from a…",
-      "image": "https://furbo.org/wp-content/uploads/2026/10/Health-Hero-2.jpeg",
-      "url": "https://furbo.org/2026/10/28/a-health-update/",
-      "publishedAt": "2026-10-29T19:57:21.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hfblog:https://huggingface.co/blog/torch-neuronx-model-support",
       "source": "hfblog",
       "title": "Does Your Model Run on AWS Trainium? Look It Up",
@@ -4728,6 +4715,19 @@
       "image": "https://huggingface.co/blog/assets/torch-neuronx-model-support/thumbnail.jpg",
       "url": "https://huggingface.co/blog/torch-neuronx-model-support",
       "publishedAt": "2026-10-23T00:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "daringfireball:https://furbo.org/2026/10/28/a-health-update/",
+      "source": "daringfireball",
+      "title": "A Health Update From Craig Hockenberry",
+      "blurb": "Craig Hockenberry: If you noticed that the Iconfactory sites were kinda broken last week, now you know why. It’s because I was kinda broken last week. Now I’m finishing this post from a…",
+      "image": "https://furbo.org/wp-content/uploads/2026/10/Health-Hero-2.jpeg",
+      "url": "https://furbo.org/2026/10/28/a-health-update/",
+      "publishedAt": "2026-10-29T19:57:21.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -4868,19 +4868,6 @@
       "alsoOn": []
     },
     {
-      "id": "semiengineering:https://semiengineering.com/auto-generation-of-properties-methodology-insertion/",
-      "source": "semiengineering",
-      "title": "Auto-Generation Of Properties: Methodology Insertion",
-      "blurb": "Technology is only useful if it improves an existing methodology. Property generation is still refining that goal, but in the long term it could be very useful. The post Auto-Generation Of…",
-      "image": "https://semiengineering.com/wp-content/uploads/AdobeStock_576655008-June-15-2023-scaled.jpeg?fit=2560%2C1706&ssl=1",
-      "url": "https://semiengineering.com/auto-generation-of-properties-methodology-insertion/",
-      "publishedAt": "2026-10-29T07:13:12.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hn:50264853",
       "source": "hn",
       "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
@@ -4894,6 +4881,19 @@
       },
       "alsoOn": [],
       "image": "https://www.brangus.io/survival-llm/social-card.png"
+    },
+    {
+      "id": "semiengineering:https://semiengineering.com/auto-generation-of-properties-methodology-insertion/",
+      "source": "semiengineering",
+      "title": "Auto-Generation Of Properties: Methodology Insertion",
+      "blurb": "Technology is only useful if it improves an existing methodology. Property generation is still refining that goal, but in the long term it could be very useful. The post Auto-Generation Of…",
+      "image": "https://semiengineering.com/wp-content/uploads/AdobeStock_576655008-June-15-2023-scaled.jpeg?fit=2560%2C1706&ssl=1",
+      "url": "https://semiengineering.com/auto-generation-of-properties-methodology-insertion/",
+      "publishedAt": "2026-10-29T07:13:12.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "mit:https://news.mit.edu/2026/making-machines-that-can-listen-paris-smaragdis-1028",
@@ -4984,6 +4984,21 @@
       "alsoOn": []
     },
     {
+      "id": "googleresearch:https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
+      "source": "googleresearch",
+      "title": "Empowering frontline maternal care with AI-assisted ultrasound",
+      "blurb": null,
+      "image": "https://storage.googleapis.com/gweb-research2023-media/original_images/FrontlineMaternalCarewithAI2_ModelOverview.png",
+      "url": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
+      "publishedAt": "2026-10-21T16:23:53.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "Health & Bioscience"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "macrumors:https://www.macrumors.com/2026/10/31/ipad-mini-8-battery-capacity-mah-wh/",
       "source": "macrumors",
       "title": "Apple Reveals New iPad Mini's Battery Capacity",
@@ -4999,18 +5014,16 @@
       "alsoOn": []
     },
     {
-      "id": "googleresearch:https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
-      "source": "googleresearch",
-      "title": "Empowering frontline maternal care with AI-assisted ultrasound",
-      "blurb": null,
-      "image": "https://storage.googleapis.com/gweb-research2023-media/original_images/FrontlineMaternalCarewithAI2_ModelOverview.png",
-      "url": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
-      "publishedAt": "2026-10-21T16:23:53.000Z",
+      "id": "metr:https://metr.org/blog/2026-10-14-ai-rd-acceleration-assessment-proposal/",
+      "source": "metr",
+      "title": "How an assessor could investigate evidence of acceleration from the automation of AI R&D",
+      "blurb": "This article discusses how an assessor could study whether capabilities progress could accelerate dramatically due to AI-driven acceleration of AI R&D. Such an assessment would answer…",
+      "image": "https://metr.org/assets/images/loss-of-control-proposals/ai-rd-acceleration-trajectories.png",
+      "url": "https://metr.org/blog/2026-10-14-ai-rd-acceleration-assessment-proposal/",
+      "publishedAt": "2026-10-14T07:00:00.000Z",
       "score": null,
       "scoreLabel": null,
-      "meta": {
-        "category": "Health & Bioscience"
-      },
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -5029,32 +5042,6 @@
       "image": "https://divagr.com/qwenputer/og.png"
     },
     {
-      "id": "metr:https://metr.org/blog/2026-10-14-ai-rd-acceleration-assessment-proposal/",
-      "source": "metr",
-      "title": "How an assessor could investigate evidence of acceleration from the automation of AI R&D",
-      "blurb": "This article discusses how an assessor could study whether capabilities progress could accelerate dramatically due to AI-driven acceleration of AI R&D. Such an assessment would answer…",
-      "image": "https://metr.org/assets/images/loss-of-control-proposals/ai-rd-acceleration-trajectories.png",
-      "url": "https://metr.org/blog/2026-10-14-ai-rd-acceleration-assessment-proposal/",
-      "publishedAt": "2026-10-14T07:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "techmeme:https://www.techmeme.com/261101/p2#a261101p2",
-      "source": "techmeme",
-      "title": "DeepSeek open sources Super-Agent, a coding agent research prototype it says proactively monitors developer group chats for coding issues and suggests solution…",
-      "blurb": "Debby Wu / Bloomberg : DeepSeek open sources Super-Agent, a coding agent research prototype it says proactively monitors developer group chats for coding issues and suggests solutions…",
-      "image": null,
-      "url": "https://www.techmeme.com/261101/p2#a261101p2",
-      "publishedAt": "2026-11-01T06:00:13.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hn:50273396",
       "source": "hn",
       "title": "Kentucky man becomes the first humanist granted religious exemption from AI",
@@ -5070,6 +5057,19 @@
       "image": null
     },
     {
+      "id": "techmeme:https://www.techmeme.com/261101/p2#a261101p2",
+      "source": "techmeme",
+      "title": "DeepSeek open sources Super-Agent, a coding agent research prototype it says proactively monitors developer group chats for coding issues and suggests solution…",
+      "blurb": "Debby Wu / Bloomberg : DeepSeek open sources Super-Agent, a coding agent research prototype it says proactively monitors developer group chats for coding issues and suggests solutions…",
+      "image": null,
+      "url": "https://www.techmeme.com/261101/p2#a261101p2",
+      "publishedAt": "2026-11-01T06:00:13.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "together:https://www.together.ai/blog/meta-muse-spark-open",
       "source": "together",
       "title": "Meta Muse Spark Open is live on Together AI",
@@ -5077,19 +5077,6 @@
       "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/6ad05aa9a57ccc564b6563a1_TAI_Meta.png",
       "url": "https://www.together.ai/blog/meta-muse-spark-open",
       "publishedAt": "2026-10-15T00:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "siliconangle:https://siliconangle.com/2026/10/30/role-based-access-control-decides-ai-agents-can-trusted-evolve26/",
-      "source": "siliconangle",
-      "title": "The race to deploy AI agents finds a familiar hurdle in data access",
-      "blurb": "Enterprises racing to put AI agents into production are discovering that role-based access control, not model choice, decides whether those agents can be trusted. Rising inference costs…",
-      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/Screenshot-2026-10-30-at-13.24.54-scaled.png",
-      "url": "https://siliconangle.com/2026/10/30/role-based-access-control-decides-ai-agents-can-trusted-evolve26/",
-      "publishedAt": "2026-10-30T12:03:27.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -5109,6 +5096,19 @@
         "repo": "jackwener/DSH-Android",
         "language": "Kotlin"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "siliconangle:https://siliconangle.com/2026/10/30/role-based-access-control-decides-ai-agents-can-trusted-evolve26/",
+      "source": "siliconangle",
+      "title": "The race to deploy AI agents finds a familiar hurdle in data access",
+      "blurb": "Enterprises racing to put AI agents into production are discovering that role-based access control, not model choice, decides whether those agents can be trusted. Rising inference costs…",
+      "image": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/Screenshot-2026-10-30-at-13.24.54-scaled.png",
+      "url": "https://siliconangle.com/2026/10/30/role-based-access-control-decides-ai-agents-can-trusted-evolve26/",
+      "publishedAt": "2026-10-30T12:03:27.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -5196,19 +5196,6 @@
       "alsoOn": []
     },
     {
-      "id": "tc:https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
-      "source": "tc",
-      "title": "Intel’s stock crashes, knocking $12B from government’s stake",
-      "blurb": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Intel-Lip-Bu-Tan-1.jpg?resize=1200,800",
-      "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
-      "publishedAt": "2026-10-30T21:54:34.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "sciencedaily:https://www.sciencedaily.com/releases/2026/10/261022081308.htm",
       "source": "sciencedaily",
       "title": "MIT scientists build a tiny robot that swims using living muscle cells",
@@ -5216,6 +5203,19 @@
       "image": "https://www.sciencedaily.com/images/1920/soft-robot-that-can-flap-through-water.webp",
       "url": "https://www.sciencedaily.com/releases/2026/10/261022081308.htm",
       "publishedAt": "2026-10-23T10:33:56.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "tc:https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+      "source": "tc",
+      "title": "Intel’s stock crashes, knocking $12B from government’s stake",
+      "blurb": "Intel is being hurt by PC sales as the AI industry gobbles memory and other components causing PC prices to rise.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/Intel-Lip-Bu-Tan-1.jpg?resize=1200,800",
+      "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+      "publishedAt": "2026-10-30T21:54:34.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -5265,19 +5265,6 @@
       "alsoOn": []
     },
     {
-      "id": "slashdot:https://games.slashdot.org/story/26/10/31/2038237/recycling-ansi-art-tracing-the-origins-of-bbs-logon-screens?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-      "source": "slashdot",
-      "title": "Recycling ANSI Art: Tracing the Origins of BBS Logon Screens",
-      "blurb": "BBS-era \"door\" games are preserved by the site Break Into Chat, along with their history. Now the site's actually traced the origins of several ANSI art screens in the 1980s and \"how…",
-      "image": "https://a.fsdn.com/sd/topics/classicgames_64.png",
-      "url": "https://games.slashdot.org/story/26/10/31/2038237/recycling-ansi-art-tracing-the-origins-of-bbs-logon-screens?utm_source=rss1.0mainlinkanon&utm_medium=feed",
-      "publishedAt": "2026-10-31T20:50:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "together:https://www.together.ai/blog/expanding-our-enterprise-inference-capacity-with-ibm-cloud-and-nvidia",
       "source": "together",
       "title": "Expanding our enterprise inference capacity with IBM Cloud and NVIDIA",
@@ -5319,6 +5306,19 @@
       "alsoOn": []
     },
     {
+      "id": "slashdot:https://games.slashdot.org/story/26/10/31/2038237/recycling-ansi-art-tracing-the-origins-of-bbs-logon-screens?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+      "source": "slashdot",
+      "title": "Recycling ANSI Art: Tracing the Origins of BBS Logon Screens",
+      "blurb": "BBS-era \"door\" games are preserved by the site Break Into Chat, along with their history. Now the site's actually traced the origins of several ANSI art screens in the 1980s and \"how…",
+      "image": "https://a.fsdn.com/sd/topics/classicgames_64.png",
+      "url": "https://games.slashdot.org/story/26/10/31/2038237/recycling-ansi-art-tracing-the-origins-of-bbs-logon-screens?utm_source=rss1.0mainlinkanon&utm_medium=feed",
+      "publishedAt": "2026-10-31T20:50:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "hf:RecursiveSI/flint",
       "source": "hf",
       "title": "RecursiveSI/flint",
@@ -5348,19 +5348,6 @@
       "alsoOn": []
     },
     {
-      "id": "openai:https://openai.com/index/retell-ai",
-      "source": "openai",
-      "title": "Retell uses OpenAI models to help power 100M monthly calls",
-      "blurb": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
-      "image": null,
-      "url": "https://openai.com/index/retell-ai",
-      "publishedAt": "2026-10-27T15:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "gh:huaxialucaicaizi/ai-startup-skills",
       "source": "gh",
       "title": "huaxialucaicaizi/ai-startup-skills",
@@ -5374,6 +5361,19 @@
         "repo": "huaxialucaicaizi/ai-startup-skills",
         "language": "Python"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "openai:https://openai.com/index/retell-ai",
+      "source": "openai",
+      "title": "Retell uses OpenAI models to help power 100M monthly calls",
+      "blurb": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
+      "image": null,
+      "url": "https://openai.com/index/retell-ai",
+      "publishedAt": "2026-10-27T15:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -5518,19 +5518,6 @@
       "alsoOn": []
     },
     {
-      "id": "f404:https://www.404media.co/behind-the-blog-tech-support/",
-      "source": "f404",
-      "title": "Behind the Blog: Tech Support",
-      "blurb": "This week, we discuss customer service and Proton fallout.",
-      "image": "https://storage.ghost.io/c/0f/76/0f76b548-bc58-4f25-abc3-3f5ebca07da4/content/images/2026/10/andynl--1-.png",
-      "url": "https://www.404media.co/behind-the-blog-tech-support/",
-      "publishedAt": "2026-10-30T15:48:18.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "hn:50255298",
       "source": "hn",
       "title": "The Mythical Man-Month in the Age of AI",
@@ -5544,6 +5531,19 @@
       },
       "alsoOn": [],
       "image": "https://j11g.com/content/images/cern-resized.jpg"
+    },
+    {
+      "id": "f404:https://www.404media.co/behind-the-blog-tech-support/",
+      "source": "f404",
+      "title": "Behind the Blog: Tech Support",
+      "blurb": "This week, we discuss customer service and Proton fallout.",
+      "image": "https://storage.ghost.io/c/0f/76/0f76b548-bc58-4f25-abc3-3f5ebca07da4/content/images/2026/10/andynl--1-.png",
+      "url": "https://www.404media.co/behind-the-blog-tech-support/",
+      "publishedAt": "2026-10-30T15:48:18.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
     },
     {
       "id": "guardian:https://www.theguardian.com/global/video/2026/oct/30/anthropic-92-page-risk-factor-document-ipo-filing-video-explainer",
@@ -5587,6 +5587,19 @@
       "alsoOn": []
     },
     {
+      "id": "sciencedaily:https://www.sciencedaily.com/releases/2026/10/261022081312.htm",
+      "source": "sciencedaily",
+      "title": "Cambridge scientists create a $10 chip that could put a medical lab on your wrist",
+      "blurb": "Cambridge researchers have created a groundbreaking $10 optical sensor that delivers the precision of laboratory equipment in a device small enough for wearable technology. It identified…",
+      "image": "https://www.sciencedaily.com/images/1920/wearable-spectrometer-chip.webp",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261022081312.htm",
+      "publishedAt": "2026-10-23T01:21:47.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "hn:50323848",
       "source": "hn",
       "title": "OpenIDEA: The IDE you know, rebuilt in Rust",
@@ -5600,19 +5613,6 @@
       },
       "alsoOn": [],
       "image": "https://opengraph.githubassets.com/6e7994eb1d8f2af0ede84a7b43a45072f9b88740a7232fc1b7006bdfeb24cfa5/l0ng-ai/openidea"
-    },
-    {
-      "id": "sciencedaily:https://www.sciencedaily.com/releases/2026/10/261022081312.htm",
-      "source": "sciencedaily",
-      "title": "Cambridge scientists create a $10 chip that could put a medical lab on your wrist",
-      "blurb": "Cambridge researchers have created a groundbreaking $10 optical sensor that delivers the precision of laboratory equipment in a device small enough for wearable technology. It identified…",
-      "image": "https://www.sciencedaily.com/images/1920/wearable-spectrometer-chip.webp",
-      "url": "https://www.sciencedaily.com/releases/2026/10/261022081312.htm",
-      "publishedAt": "2026-10-23T01:21:47.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
     },
     {
       "id": "googleresearch:https://research.google/blog/analyzing-technical-documents-with-deep-review/",
@@ -5849,36 +5849,6 @@
       "alsoOn": []
     },
     {
-      "id": "verge:https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-      "source": "verge",
-      "title": "The biggest names in AI are backing a new way to opt out of scraping",
-      "blurb": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25330660/STK414_AI_CHATBOT_H.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-      "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-      "publishedAt": "2026-10-30T20:26:10.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "AI"
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "techxplore:https://techxplore.com/news/2026-10-framework-ai.html",
-      "source": "techxplore",
-      "title": "New 'four As' framework for the governance of AI",
-      "blurb": "Experts have unveiled a new proposal for the governance of artificial intelligence as they argue the debate has moved beyond simply whether to slow the pace of AI development.",
-      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/governance-of-ai.jpg",
-      "url": "https://techxplore.com/news/2026-10-framework-ai.html",
-      "publishedAt": "2026-10-29T22:00:06.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "Machine learning & AI"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "googleresearch:https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/",
       "source": "googleresearch",
       "title": "Putting Earth AI to work: Geospatial agents for our planet's biggest challenges",
@@ -5920,6 +5890,36 @@
       "alsoOn": []
     },
     {
+      "id": "techxplore:https://techxplore.com/news/2026-10-framework-ai.html",
+      "source": "techxplore",
+      "title": "New 'four As' framework for the governance of AI",
+      "blurb": "Experts have unveiled a new proposal for the governance of artificial intelligence as they argue the debate has moved beyond simply whether to slow the pace of AI development.",
+      "image": "https://scx1.b-cdn.net/csz/news/tmb/2026/governance-of-ai.jpg",
+      "url": "https://techxplore.com/news/2026-10-framework-ai.html",
+      "publishedAt": "2026-10-29T22:00:06.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "Machine learning & AI"
+      },
+      "alsoOn": []
+    },
+    {
+      "id": "verge:https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+      "source": "verge",
+      "title": "The biggest names in AI are backing a new way to opt out of scraping",
+      "blurb": "OpenAI, Google, Microsoft, and Anthropic say they will adopt a new standard that publishers can use to opt out of being scraped by AI, as reported earlier by Search Engine Roundtable. With…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25330660/STK414_AI_CHATBOT_H.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+      "publishedAt": "2026-10-30T20:26:10.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "AI"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "metaeng:https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/",
       "source": "metaeng",
       "title": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
@@ -5948,19 +5948,6 @@
       "alsoOn": []
     },
     {
-      "id": "tldrai:https://tldr.tech/ai/2026-10-28",
-      "source": "tldrai",
-      "title": "Genie 4 worlds 🌍, Frontier Code 2 👨‍💻, AI drug discovery 🧬",
-      "blurb": "Genie 4 is a world model that generates photorealistic, interactive environments with synchronized audio and real-time prompt-based editing.",
-      "image": "https://tldr.tech/tldr-share.jpg",
-      "url": "https://tldr.tech/ai/2026-10-28",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "ollama:https://ollama.com/blog/ollama-now-supports-jev-style-decision-models",
       "source": "ollama",
       "title": "Ollama now supports Jev-style decision models",
@@ -5968,6 +5955,19 @@
       "image": "https://ollama.com/public/og.png",
       "url": "https://ollama.com/blog/ollama-now-supports-jev-style-decision-models",
       "publishedAt": "2026-09-29T00:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "tldrai:https://tldr.tech/ai/2026-10-28",
+      "source": "tldrai",
+      "title": "Genie 4 worlds 🌍, Frontier Code 2 👨‍💻, AI drug discovery 🧬",
+      "blurb": "Genie 4 is a world model that generates photorealistic, interactive environments with synchronized audio and real-time prompt-based editing.",
+      "image": "https://tldr.tech/tldr-share.jpg",
+      "url": "https://tldr.tech/ai/2026-10-28",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -5985,6 +5985,34 @@
       "scoreLabel": null,
       "meta": {},
       "alsoOn": []
+    },
+    {
+      "id": "together:https://www.together.ai/blog/canary-rollouts-upgrade-models-in-production-without-downtime",
+      "source": "together",
+      "title": "Canary rollouts: upgrade models in production without downtime",
+      "blurb": "A hard model swap exposes every user at once, and rolling back means cold-starting the old deployment under pressure. Here's how staged traffic ramps, metric gates, and automatic rollback…",
+      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/6ab2084d400cf06357fcb03e_OG-image_202600921_canary-rollouts.png",
+      "url": "https://www.together.ai/blog/canary-rollouts-upgrade-models-in-production-without-downtime",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "hn:50261819",
+      "source": "hn",
+      "title": "Police are using AI to pull over drivers for 'suspicious' behavior",
+      "blurb": null,
+      "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
+      "publishedAt": "2026-10-27T16:40:15.000Z",
+      "score": 400,
+      "scoreLabel": "points",
+      "meta": {
+        "comments": 313
+      },
+      "alsoOn": [],
+      "image": null
     },
     {
       "id": "databricks:https://www.databricks.com/blog/deliberate-decisions-and-enterprise-ai-value",
@@ -6015,34 +6043,6 @@
       },
       "alsoOn": [],
       "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202610/anthropic--cathedral-263559161-16x9_0.png?VersionId=hngQNnOgez44Zv0vMDM35oEeCVLPJGZC"
-    },
-    {
-      "id": "together:https://www.together.ai/blog/canary-rollouts-upgrade-models-in-production-without-downtime",
-      "source": "together",
-      "title": "Canary rollouts: upgrade models in production without downtime",
-      "blurb": "A hard model swap exposes every user at once, and rolling back means cold-starting the old deployment under pressure. Here's how staged traffic ramps, metric gates, and automatic rollback…",
-      "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/6ab2084d400cf06357fcb03e_OG-image_202600921_canary-rollouts.png",
-      "url": "https://www.together.ai/blog/canary-rollouts-upgrade-models-in-production-without-downtime",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "hn:50261819",
-      "source": "hn",
-      "title": "Police are using AI to pull over drivers for 'suspicious' behavior",
-      "blurb": null,
-      "url": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
-      "publishedAt": "2026-10-27T16:40:15.000Z",
-      "score": 400,
-      "scoreLabel": "points",
-      "meta": {
-        "comments": 313
-      },
-      "alsoOn": [],
-      "image": null
     },
     {
       "id": "arxiv:2610.40589v1",
@@ -6089,21 +6089,6 @@
       "alsoOn": []
     },
     {
-      "id": "rundown:https://www.therundown.ai/articles/apple-big-week-begins-with-ipad-mini",
-      "source": "rundown",
-      "title": "Apple's big week begins with iPad mini",
-      "blurb": "PLUS: Microsoft puts buyouts on the table for 60K workers",
-      "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/5c9556ce-3a26-42ce-a189-b3c8d0430d2d/336d31ca-6957-435e-8126-c552e72ec822.png?t=1793102685",
-      "url": "https://www.therundown.ai/articles/apple-big-week-begins-with-ipad-mini",
-      "publishedAt": "2026-10-27T14:30:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "tech"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "deepmind:https://deepmind.google/blog/introducing-gemini-4-argon/",
       "source": "deepmind",
       "title": "Gemini 4 Argon: Built to solve your hardest problems",
@@ -6145,16 +6130,18 @@
       "alsoOn": []
     },
     {
-      "id": "awsml:https://aws.amazon.com/blogs/machine-learning/how-the-uk-amazon-quick-user-group-grew-in-2026/",
-      "source": "awsml",
-      "title": "How the UK Amazon Quick User Group grew in 2026",
-      "blurb": "The UK Amazon Quick User Group's 2026 roundup: three quarterly meetups, 150+ attendees, and customer stories from Arriva, Carsa, and Propulse Lab on using agentic AI and Amazon Quick to…",
-      "image": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/10/28/ML-21295-featured-image.png",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-the-uk-amazon-quick-user-group-grew-in-2026/",
-      "publishedAt": "2026-10-29T20:16:40.000Z",
+      "id": "rundown:https://www.therundown.ai/articles/apple-big-week-begins-with-ipad-mini",
+      "source": "rundown",
+      "title": "Apple's big week begins with iPad mini",
+      "blurb": "PLUS: Microsoft puts buyouts on the table for 60K workers",
+      "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/5c9556ce-3a26-42ce-a189-b3c8d0430d2d/336d31ca-6957-435e-8126-c552e72ec822.png?t=1793102685",
+      "url": "https://www.therundown.ai/articles/apple-big-week-begins-with-ipad-mini",
+      "publishedAt": "2026-10-27T14:30:00.000Z",
       "score": null,
       "scoreLabel": null,
-      "meta": {},
+      "meta": {
+        "category": "tech"
+      },
       "alsoOn": []
     },
     {
@@ -6165,6 +6152,19 @@
       "image": "https://substackcdn.com/image/fetch/$s_!CO8-!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F78b63a9d-cf9f-4e0e-94d2-d99f55b86231_1100x579.jpeg",
       "url": "https://www.exponentialview.co/p/anthropics-s-1-in-charts",
       "publishedAt": "2026-10-27T17:31:56.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "awsml:https://aws.amazon.com/blogs/machine-learning/how-the-uk-amazon-quick-user-group-grew-in-2026/",
+      "source": "awsml",
+      "title": "How the UK Amazon Quick User Group grew in 2026",
+      "blurb": "The UK Amazon Quick User Group's 2026 roundup: three quarterly meetups, 150+ attendees, and customer stories from Arriva, Carsa, and Propulse Lab on using agentic AI and Amazon Quick to…",
+      "image": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/10/28/ML-21295-featured-image.png",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-the-uk-amazon-quick-user-group-grew-in-2026/",
+      "publishedAt": "2026-10-29T20:16:40.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -6397,19 +6397,6 @@
       "alsoOn": []
     },
     {
-      "id": "tc:https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
-      "source": "tc",
-      "title": "Anthropic expected to receive high ‘junk’ rating from credit agencies following IPO, FT report says",
-      "blurb": "Blackstone's forecast is just a prediction, but naturally, a high junk rating would make it more difficult and costlier for Anthropic to raise the money to keep funding its massive spending…",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2282033342.jpg?w=1024",
-      "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
-      "publishedAt": "2026-10-30T21:52:03.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "sciencedaily:https://www.sciencedaily.com/releases/2026/10/261012185017.htm",
       "source": "sciencedaily",
       "title": "AI can act exactly like a human, but we still don't think it's conscious",
@@ -6417,6 +6404,19 @@
       "image": "https://www.sciencedaily.com/images/1920/human-vs-ai-brain-thinking-understanding.webp",
       "url": "https://www.sciencedaily.com/releases/2026/10/261012185017.htm",
       "publishedAt": "2026-10-14T01:41:55.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "tc:https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+      "source": "tc",
+      "title": "Anthropic expected to receive high ‘junk’ rating from credit agencies following IPO, FT report says",
+      "blurb": "Blackstone's forecast is just a prediction, but naturally, a high junk rating would make it more difficult and costlier for Anthropic to raise the money to keep funding its massive spending…",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2282033342.jpg?w=1024",
+      "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+      "publishedAt": "2026-10-30T21:52:03.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -6451,19 +6451,6 @@
       "alsoOn": []
     },
     {
-      "id": "thehackernews:https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
-      "source": "thehackernews",
-      "title": "Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis",
-      "blurb": "A Trezor Safe 5 hardware wallet bought from the reseller CryptoBilis has an extra circuit board that sends out the recovery phrase over a mobile network, a customer has reported. Trezor has…",
-      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih5QxhFnBw6d40ollOAoolmZedxywTm7DeBQpEqydVG5Pqg0v5iDVFT1hhbsW7Thqg00oI8MACNXC9FX6MCp_qMRkBRiqdxb9D4CDKfTWTZwI5eyY3V2IOa8ODSg24kX7Ni_C968r2X89tUXwPbDnHPV9xX-ydhytwerqMI1ru7tqdIK-cqA0p9oM5Ppxr/s1600/trezor-wallet.jpg",
-      "url": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
-      "publishedAt": "2026-10-30T12:21:56.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "googleresearch:https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/",
       "source": "googleresearch",
       "title": "Open and Emergent Problems in Agentic Privacy and Security: A Contextual Angle",
@@ -6492,6 +6479,19 @@
       "alsoOn": []
     },
     {
+      "id": "thehackernews:https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
+      "source": "thehackernews",
+      "title": "Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis",
+      "blurb": "A Trezor Safe 5 hardware wallet bought from the reseller CryptoBilis has an extra circuit board that sends out the recovery phrase over a mobile network, a customer has reported. Trezor has…",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih5QxhFnBw6d40ollOAoolmZedxywTm7DeBQpEqydVG5Pqg0v5iDVFT1hhbsW7Thqg00oI8MACNXC9FX6MCp_qMRkBRiqdxb9D4CDKfTWTZwI5eyY3V2IOa8ODSg24kX7Ni_C968r2X89tUXwPbDnHPV9xX-ydhytwerqMI1ru7tqdIK-cqA0p9oM5Ppxr/s1600/trezor-wallet.jpg",
+      "url": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
+      "publishedAt": "2026-10-30T12:21:56.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "hfblog:https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
       "source": "hfblog",
       "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
@@ -6499,32 +6499,6 @@
       "image": "https://cdn-uploads.huggingface.co/production/uploads/6a725daa5ca641a21ab61956/OWGtXjnbBov-7SI_04o4z.png",
       "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
       "publishedAt": "2026-10-21T17:35:36.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "daringfireball:https://www.wsj.com/tech/apple-iphone-memory-chips-ai-c0084cc9?st=FNAyaT",
-      "source": "daringfireball",
-      "title": "Rolfe Winkler at The WSJ: ‘The Beleaguered Chip Sellers Getting Their Revenge on Apple’",
-      "blurb": "Rolfe Winkler, in a crackerjack story for The Wall Street Journal (gift link): Blevins, who left Apple in 2022, sometimes set up back-to-back meetings with suppliers so that rival sales…",
-      "image": null,
-      "url": "https://www.wsj.com/tech/apple-iphone-memory-chips-ai-c0084cc9?st=FNAyaT",
-      "publishedAt": "2026-10-29T19:44:11.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
-      "id": "tomshardware:https://www.tomshardware.com/tech-industry/artificial-intelligence/our-first-step-at-defining-a-cpu-benchmark-for-agentic-ai-how-we-can-measure-throughput-of-agentic-ai-workloads-without-any-gpu-involved",
-      "source": "tomshardware",
-      "title": "Our first step at defining a CPU benchmark for agentic AI",
-      "blurb": "Over the past six months, CPUs have taken center stage as agentic AI workloads evolve. Here’s our first attempt at trying to measure CPU performance when running agentic workloads.",
-      "image": "https://cdn.mos.cms.futurecdn.net/M7rNzLtwKS7ggot5vjyuf-1920-80.jpg",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/our-first-step-at-defining-a-cpu-benchmark-for-agentic-ai-how-we-can-measure-throughput-of-agentic-ai-workloads-without-any-gpu-involved",
-      "publishedAt": "2026-10-29T12:20:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -6546,6 +6520,19 @@
       "alsoOn": []
     },
     {
+      "id": "tomshardware:https://www.tomshardware.com/tech-industry/artificial-intelligence/our-first-step-at-defining-a-cpu-benchmark-for-agentic-ai-how-we-can-measure-throughput-of-agentic-ai-workloads-without-any-gpu-involved",
+      "source": "tomshardware",
+      "title": "Our first step at defining a CPU benchmark for agentic AI",
+      "blurb": "Over the past six months, CPUs have taken center stage as agentic AI workloads evolve. Here’s our first attempt at trying to measure CPU performance when running agentic workloads.",
+      "image": "https://cdn.mos.cms.futurecdn.net/M7rNzLtwKS7ggot5vjyuf-1920-80.jpg",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/our-first-step-at-defining-a-cpu-benchmark-for-agentic-ai-how-we-can-measure-throughput-of-agentic-ai-workloads-without-any-gpu-involved",
+      "publishedAt": "2026-10-29T12:20:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "pytorch:https://pytorch.org/blog/optimizing-streaming-speech-recognition-on-arm-edge-devices-with-executorch/",
       "source": "pytorch",
       "title": "Optimizing Streaming Speech Recognition on Arm® Edge Devices with ExecuTorch",
@@ -6553,6 +6540,19 @@
       "image": "https://pytorch.org/wp-content/uploads/2026/10/1-2.png",
       "url": "https://pytorch.org/blog/optimizing-streaming-speech-recognition-on-arm-edge-devices-with-executorch/",
       "publishedAt": "2026-10-26T18:27:27.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "daringfireball:https://www.wsj.com/tech/apple-iphone-memory-chips-ai-c0084cc9?st=FNAyaT",
+      "source": "daringfireball",
+      "title": "Rolfe Winkler at The WSJ: ‘The Beleaguered Chip Sellers Getting Their Revenge on Apple’",
+      "blurb": "Rolfe Winkler, in a crackerjack story for The Wall Street Journal (gift link): Blevins, who left Apple in 2022, sometimes set up back-to-back meetings with suppliers so that rival sales…",
+      "image": null,
+      "url": "https://www.wsj.com/tech/apple-iphone-memory-chips-ai-c0084cc9?st=FNAyaT",
+      "publishedAt": "2026-10-29T19:44:11.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -6572,6 +6572,21 @@
       "alsoOn": []
     },
     {
+      "id": "rundown:https://www.therundown.ai/articles/the-ai-bubble-meets-anthropic-real-numbers",
+      "source": "rundown",
+      "title": "The AI bubble meets Anthropic’s real numbers",
+      "blurb": "PLUS: Turn sales call notes into follow-up emails with AI",
+      "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/4923d10f-2c9f-462b-ab88-46291eb2f217/antfiling1.png?t=1793042913",
+      "url": "https://www.therundown.ai/articles/the-ai-bubble-meets-anthropic-real-numbers",
+      "publishedAt": "2026-10-27T10:00:00.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "ai"
+      },
+      "alsoOn": []
+    },
+    {
       "id": "arxiv:2610.40588v1",
       "source": "arxiv",
       "title": "Pre-Crime for Agents, at the Last Second: Probing When a Recruited Agent Gives In",
@@ -6584,21 +6599,6 @@
       "meta": {
         "category": "cs.AI",
         "authors": 1
-      },
-      "alsoOn": []
-    },
-    {
-      "id": "rundown:https://www.therundown.ai/articles/the-ai-bubble-meets-anthropic-real-numbers",
-      "source": "rundown",
-      "title": "The AI bubble meets Anthropic’s real numbers",
-      "blurb": "PLUS: Turn sales call notes into follow-up emails with AI",
-      "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/4923d10f-2c9f-462b-ab88-46291eb2f217/antfiling1.png?t=1793042913",
-      "url": "https://www.therundown.ai/articles/the-ai-bubble-meets-anthropic-real-numbers",
-      "publishedAt": "2026-10-27T10:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "ai"
       },
       "alsoOn": []
     },
@@ -6664,7 +6664,7 @@
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.32411.png",
       "url": "https://huggingface.co/papers/2610.32411",
       "publishedAt": "2026-10-22T20:00:00.000Z",
-      "score": 28,
+      "score": 29,
       "scoreLabel": "upvotes",
       "meta": {
         "comments": 2
@@ -6719,7 +6719,7 @@
       "blurb": "OpenAI now trains its most powerful models without internet access, after an internal research model exploited a DNS misconfiguration in September and reached the open internet. In…",
       "url": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/",
       "publishedAt": "2026-10-26T21:24:18.000Z",
-      "score": 361,
+      "score": 362,
       "scoreLabel": "points",
       "meta": {
         "comments": 254
@@ -7029,19 +7029,6 @@
       "alsoOn": []
     },
     {
-      "id": "thenewstack:https://thenewstack.io/ai-inference-kubernetes-observability/",
-      "source": "thenewstack",
-      "title": "Busy GPUs can hide slow AI inference on Kubernetes",
-      "blurb": "A Kubernetes cluster can be healthy while the AI service running on it disappoints users. A model might return its The post Busy GPUs can hide slow AI inference on Kubernetes appeared first…",
-      "image": "https://cdn.thenewstack.io/media/2026/10/f9cd7390-getty-images-kct0zld_ufo-unsplash-1-1024x576.jpg",
-      "url": "https://thenewstack.io/ai-inference-kubernetes-observability/",
-      "publishedAt": "2026-10-30T19:56:41.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "metr:https://metr.org/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/",
       "source": "metr",
       "title": "Implementing and Evaluating a Basic Per-Action Monitor for Safer Evals",
@@ -7055,13 +7042,13 @@
       "alsoOn": []
     },
     {
-      "id": "techmeme:https://www.techmeme.com/261101/p7#a261101p7",
-      "source": "techmeme",
-      "title": "A look at a crude campaign of cyberattacks by Russia-linked hacktivist groups that have caused physical damage in NATO-aligned countries over the past two year…",
-      "blurb": "Ryan Gallagher / Bloomberg : A look at a crude campaign of cyberattacks by Russia-linked hacktivist groups that have caused physical damage in NATO-aligned countries over the past two years…",
-      "image": null,
-      "url": "https://www.techmeme.com/261101/p7#a261101p7",
-      "publishedAt": "2026-11-01T06:00:01.000Z",
+      "id": "thenewstack:https://thenewstack.io/ai-inference-kubernetes-observability/",
+      "source": "thenewstack",
+      "title": "Busy GPUs can hide slow AI inference on Kubernetes",
+      "blurb": "A Kubernetes cluster can be healthy while the AI service running on it disappoints users. A model might return its The post Busy GPUs can hide slow AI inference on Kubernetes appeared first…",
+      "image": "https://cdn.thenewstack.io/media/2026/10/f9cd7390-getty-images-kct0zld_ufo-unsplash-1-1024x576.jpg",
+      "url": "https://thenewstack.io/ai-inference-kubernetes-observability/",
+      "publishedAt": "2026-10-30T19:56:41.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -7096,6 +7083,19 @@
         "category": "cs.AI",
         "authors": 8
       },
+      "alsoOn": []
+    },
+    {
+      "id": "techmeme:https://www.techmeme.com/261101/p7#a261101p7",
+      "source": "techmeme",
+      "title": "A look at a crude campaign of cyberattacks by Russia-linked hacktivist groups that have caused physical damage in NATO-aligned countries over the past two year…",
+      "blurb": "Ryan Gallagher / Bloomberg : A look at a crude campaign of cyberattacks by Russia-linked hacktivist groups that have caused physical damage in NATO-aligned countries over the past two years…",
+      "image": null,
+      "url": "https://www.techmeme.com/261101/p7#a261101p7",
+      "publishedAt": "2026-11-01T06:00:01.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -7239,19 +7239,6 @@
       "alsoOn": []
     },
     {
-      "id": "tc:https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/",
-      "source": "tc",
-      "title": "Last-minute Halloween costumes for tech nerds",
-      "blurb": "No Halloween costume? Just be a deceptively cute AI agent icon, a PHP vulnerability, or sleepy time Bryan Johnson.",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2170662558.jpg?resize=1200,800",
-      "url": "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/",
-      "publishedAt": "2026-10-30T21:26:59.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "mit:https://news.mit.edu/2026/reinforcing-value-of-human-understanding-at-mit-1023",
       "source": "mit",
       "title": "Reinforcing the value of human understanding at MIT",
@@ -7264,6 +7251,19 @@
       "meta": {
         "category": "History of MIT"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "tc:https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/",
+      "source": "tc",
+      "title": "Last-minute Halloween costumes for tech nerds",
+      "blurb": "No Halloween costume? Just be a deceptively cute AI agent icon, a PHP vulnerability, or sleepy time Bryan Johnson.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2170662558.jpg?resize=1200,800",
+      "url": "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/",
+      "publishedAt": "2026-10-30T21:26:59.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -7281,19 +7281,6 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF.png",
       "blurb": "DeepSeek-V4.1-Flash-1017 &middot; GSQ-RCO GGUFs *Non-uniform GGUF quantizations of a 763B-parameter, 384-expert MoE, produced with GSQ and RCO. -- Overview"
-    },
-    {
-      "id": "fastcompany:https://www.fastcompany.com/91632166/5-reasons-ai-evaluations-need-designers-unique-perspectives?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=6&partner=newsletter&campaign_date=11012026",
-      "source": "fastcompany",
-      "title": "5 reasons AI evaluations need designers’ unique perspectives",
-      "blurb": "Software developers and product managers shouldn’t be the only ones evaluating AI products.",
-      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/10/1-11.png",
-      "url": "https://www.fastcompany.com/91632166/5-reasons-ai-evaluations-need-designers-unique-perspectives?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=6&partner=newsletter&campaign_date=11012026",
-      "publishedAt": "2026-10-30T12:00:00.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
     },
     {
       "id": "platformer:https://www.platformer.news/machine-gods-manifesto-ai-realism/",
@@ -7316,6 +7303,19 @@
       "image": "https://substackcdn.com/image/fetch/$s_!1wO0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1266c18c-4898-4926-9de0-d2862f1469ef_2048x1267.png",
       "url": "https://www.exponentialview.co/p/monday-data-for-science-the-bottleneck",
       "publishedAt": "2026-10-26T15:25:11.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "fastcompany:https://www.fastcompany.com/91632166/5-reasons-ai-evaluations-need-designers-unique-perspectives?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=6&partner=newsletter&campaign_date=11012026",
+      "source": "fastcompany",
+      "title": "5 reasons AI evaluations need designers’ unique perspectives",
+      "blurb": "Software developers and product managers shouldn’t be the only ones evaluating AI products.",
+      "image": "https://images.fastcompany.com/image/upload/w_1280,q_auto,f_auto,fl_lossy/f_webp,q_auto,c_fit/wp-cms-2/2026/10/1-11.png",
+      "url": "https://www.fastcompany.com/91632166/5-reasons-ai-evaluations-need-designers-unique-perspectives?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=6&partner=newsletter&campaign_date=11012026",
+      "publishedAt": "2026-10-30T12:00:00.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -7940,19 +7940,6 @@
       "blurb": "Image-to-Video model with 33B parameters, built with Diffusers. Download, explore files and run it on Hugging Face."
     },
     {
-      "id": "tc:https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
-      "source": "tc",
-      "title": "Cracks are emerging in the AI spending boom",
-      "blurb": "Big Tech is pouring billions into AI infrastructure, but mounting debt, negative cash flow, and growing investor skepticism are raising questions about the sustainability of the AI spending…",
-      "image": "https://techcrunch.com/wp-content/uploads/2026/10/mick-haupt-7Kv1Elbagcc-unsplash.jpg?resize=1200,800",
-      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
-      "publishedAt": "2026-10-30T21:17:40.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "papers:2610.35138",
       "source": "papers",
       "title": "Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models",
@@ -7965,6 +7952,19 @@
       "meta": {
         "comments": 3
       },
+      "alsoOn": []
+    },
+    {
+      "id": "tc:https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+      "source": "tc",
+      "title": "Cracks are emerging in the AI spending boom",
+      "blurb": "Big Tech is pouring billions into AI infrastructure, but mounting debt, negative cash flow, and growing investor skepticism are raising questions about the sustainability of the AI spending…",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/10/mick-haupt-7Kv1Elbagcc-unsplash.jpg?resize=1200,800",
+      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+      "publishedAt": "2026-10-30T21:17:40.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -8133,7 +8133,7 @@
       "image": "https://opengraph.githubassets.com/1/jmanico/grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "publishedAt": "2026-10-28T12:09:26.000Z",
-      "score": 330,
+      "score": 331,
       "scoreLabel": "stars",
       "meta": {
         "repo": "jmanico/grim-prompter",
@@ -8446,12 +8446,25 @@
       "image": "https://opengraph.githubassets.com/1/0xS4N4TG/kinetograph",
       "url": "https://github.com/0xS4N4TG/kinetograph",
       "publishedAt": "2026-10-23T05:15:41.000Z",
-      "score": 430,
+      "score": 431,
       "scoreLabel": "stars",
       "meta": {
         "repo": "0xS4N4TG/kinetograph",
         "language": "TypeScript"
       },
+      "alsoOn": []
+    },
+    {
+      "id": "dcd:https://www.datacenterdynamics.com/en/news/spinncloud-rebrands-to-sparxity-announces-cluster-deployment-at-j%C3%BClich-center-in-germany/",
+      "source": "dcd",
+      "title": "SpiNNcloud rebrands to Sparxity, announces cluster deployment at Jülich center in Germany",
+      "blurb": "Company said rebrand reflects its vision to “only compute what matters”",
+      "image": null,
+      "url": "https://www.datacenterdynamics.com/en/news/spinncloud-rebrands-to-sparxity-announces-cluster-deployment-at-j%C3%BClich-center-in-germany/",
+      "publishedAt": "2026-10-30T16:30:48.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
       "alsoOn": []
     },
     {
@@ -8467,19 +8480,6 @@
       "meta": {
         "category": "Datacentres - UK"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "dcd:https://www.datacenterdynamics.com/en/news/spinncloud-rebrands-to-sparxity-announces-cluster-deployment-at-j%C3%BClich-center-in-germany/",
-      "source": "dcd",
-      "title": "SpiNNcloud rebrands to Sparxity, announces cluster deployment at Jülich center in Germany",
-      "blurb": "Company said rebrand reflects its vision to “only compute what matters”",
-      "image": null,
-      "url": "https://www.datacenterdynamics.com/en/news/spinncloud-rebrands-to-sparxity-announces-cluster-deployment-at-j%C3%BClich-center-in-germany/",
-      "publishedAt": "2026-10-30T16:30:48.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -8877,7 +8877,7 @@
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2610.38331.png",
       "url": "https://huggingface.co/papers/2610.38331",
       "publishedAt": "2026-10-27T20:00:00.000Z",
-      "score": 16,
+      "score": 17,
       "scoreLabel": "upvotes",
       "meta": {
         "comments": 3
@@ -9172,21 +9172,6 @@
       "alsoOn": []
     },
     {
-      "id": "verge:https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-      "source": "verge",
-      "title": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
-      "blurb": "Starbucks could eventually show you a personalized digital menu when you pull up to the drive-thru. During an earnings call on Thursday, Starbucks CEO Brian Niccol said the company is going…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2268681559.jpg?quality=90&strip=all&crop=0%2C10.727816900681%2C100%2C78.544366198639&w=1200",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-      "publishedAt": "2026-10-30T17:38:04.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "AI"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "hf:unsloth/flint-GGUF",
       "source": "hf",
       "title": "unsloth/flint-GGUF",
@@ -9201,6 +9186,21 @@
       "alsoOn": [],
       "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/unsloth/flint-GGUF.png",
       "blurb": "See further below for quant benchmarks. See below for Flint running in Unsloth Desktop with thinking controls: Flint Unsloth GGUF Benchmarks --"
+    },
+    {
+      "id": "verge:https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
+      "source": "verge",
+      "title": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
+      "blurb": "Starbucks could eventually show you a personalized digital menu when you pull up to the drive-thru. During an earnings call on Thursday, Starbucks CEO Brian Niccol said the company is going…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2268681559.jpg?quality=90&strip=all&crop=0%2C10.727816900681%2C100%2C78.544366198639&w=1200",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
+      "publishedAt": "2026-10-30T17:38:04.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "AI"
+      },
+      "alsoOn": []
     },
     {
       "id": "marktechpost:https://www.marktechpost.com/2026/10/30/ai-security-agents-claude-codex-mantis-cloudflare/",
@@ -10059,19 +10059,6 @@
       "alsoOn": []
     },
     {
-      "id": "exponentialview:https://www.exponentialview.co/p/ev-606",
-      "source": "exponentialview",
-      "title": "🔮 A world of many minds & the future of work",
-      "blurb": null,
-      "image": "https://substackcdn.com/image/fetch/$s_!6sk6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F415f7b05-8db1-4c9c-8ac6-39d8fc544abc_1778x966.png",
-      "url": "https://www.exponentialview.co/p/ev-606",
-      "publishedAt": "2026-10-18T03:46:33.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "nvidia:https://blogs.nvidia.com/blog/geforce-now-thursday-call-of-duty-modern-warfare-4/",
       "source": "nvidia",
       "title": "Cloud Deployment Incoming: ‘Call of Duty: Modern Warfare 4’ Arrives on GeForce NOW",
@@ -10079,6 +10066,19 @@
       "image": "https://blogs.nvidia.com/wp-content/uploads/2026/10/Call-Of-Duty-Modern-Warfare-4.jpg",
       "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-call-of-duty-modern-warfare-4/",
       "publishedAt": "2026-10-22T13:00:20.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "exponentialview:https://www.exponentialview.co/p/ev-606",
+      "source": "exponentialview",
+      "title": "🔮 A world of many minds & the future of work",
+      "blurb": null,
+      "image": "https://substackcdn.com/image/fetch/$s_!6sk6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F415f7b05-8db1-4c9c-8ac6-39d8fc544abc_1778x966.png",
+      "url": "https://www.exponentialview.co/p/ev-606",
+      "publishedAt": "2026-10-18T03:46:33.000Z",
       "score": null,
       "scoreLabel": null,
       "meta": {},
@@ -10687,19 +10687,6 @@
       "alsoOn": []
     },
     {
-      "id": "eetimes:https://www.eetimes.com/samsung-electronics-posts-80b-operating-profit-on-ai-memory-demand/",
-      "source": "eetimes",
-      "title": "Samsung Electronics Posts $80B Operating Profit on AI Memory Demand",
-      "blurb": "Samsung reported third-quarter operating profit of $80 billion, but rising component prices caused an operating loss in mobile. The post Samsung Electronics Posts $80B Operating Profit on…",
-      "image": "https://www.eetimes.com/wp-content/uploads/2024/10/SamsungHQ.jpg",
-      "url": "https://www.eetimes.com/samsung-electronics-posts-80b-operating-profit-on-ai-memory-demand/",
-      "publishedAt": "2026-10-29T16:20:34.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
-      "alsoOn": []
-    },
-    {
       "id": "lobsters:enjlpn",
       "source": "lobsters",
       "title": "Neural Networks Are Already Clean",
@@ -10728,6 +10715,19 @@
       "alsoOn": []
     },
     {
+      "id": "eetimes:https://www.eetimes.com/samsung-electronics-posts-80b-operating-profit-on-ai-memory-demand/",
+      "source": "eetimes",
+      "title": "Samsung Electronics Posts $80B Operating Profit on AI Memory Demand",
+      "blurb": "Samsung reported third-quarter operating profit of $80 billion, but rising component prices caused an operating loss in mobile. The post Samsung Electronics Posts $80B Operating Profit on…",
+      "image": "https://www.eetimes.com/wp-content/uploads/2024/10/SamsungHQ.jpg",
+      "url": "https://www.eetimes.com/samsung-electronics-posts-80b-operating-profit-on-ai-memory-demand/",
+      "publishedAt": "2026-10-29T16:20:34.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "wiredai:https://www.wired.com/story/software-verification-is-the-hot-new-answer-to-the-ai-safety-crisis/",
       "source": "wiredai",
       "title": "The ‘Pain in the Ass’ Math That Could Save Vibe Coding From Itself",
@@ -10743,6 +10743,19 @@
       "alsoOn": []
     },
     {
+      "id": "pytorch:https://pytorch.org/blog/accelerating-pytorch-on-amd-gpus-with-flydsl/",
+      "source": "pytorch",
+      "title": "Accelerating PyTorch on AMD GPUs with FlyDSL",
+      "blurb": "PyTorch users on AMD MI350-series GPUs can now use FlyDSL through existing operator APIs for dense and grouped GEMM, fused multi-head attention (FMHA/Attention), MXFP8/MXFP4 scaled GEMM…",
+      "image": "https://pytorch.org/wp-content/uploads/2026/10/All-PyTorch-Blog-_-Social-Images-3.png",
+      "url": "https://pytorch.org/blog/accelerating-pytorch-on-amd-gpus-with-flydsl/",
+      "publishedAt": "2026-10-21T17:45:40.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {},
+      "alsoOn": []
+    },
+    {
       "id": "verge:https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
       "source": "verge",
       "title": "Silicon Valley wants you to invest in miracles",
@@ -10755,19 +10768,6 @@
       "meta": {
         "category": "AI"
       },
-      "alsoOn": []
-    },
-    {
-      "id": "pytorch:https://pytorch.org/blog/accelerating-pytorch-on-amd-gpus-with-flydsl/",
-      "source": "pytorch",
-      "title": "Accelerating PyTorch on AMD GPUs with FlyDSL",
-      "blurb": "PyTorch users on AMD MI350-series GPUs can now use FlyDSL through existing operator APIs for dense and grouped GEMM, fused multi-head attention (FMHA/Attention), MXFP8/MXFP4 scaled GEMM…",
-      "image": "https://pytorch.org/wp-content/uploads/2026/10/All-PyTorch-Blog-_-Social-Images-3.png",
-      "url": "https://pytorch.org/blog/accelerating-pytorch-on-amd-gpus-with-flydsl/",
-      "publishedAt": "2026-10-21T17:45:40.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {},
       "alsoOn": []
     },
     {
@@ -11066,21 +11066,6 @@
       "alsoOn": []
     },
     {
-      "id": "verge:https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
-      "source": "verge",
-      "title": "Sam Altman sympathizes with mathematicians, but says OpenAI’s math onslaught won’t stop",
-      "blurb": "After months of bombarding mathematicians with a relentless stream of AI-generated results, OpenAI CEO Sam Altman says he sympathizes with researchers struggling to make sense of it all…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Vrg_illo_Sam_Altman_stock_trial.jpg?quality=90&strip=all&crop=0%2C12.339110464558%2C100%2C75.321779070884&w=1200",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
-      "publishedAt": "2026-10-30T13:01:14.000Z",
-      "score": null,
-      "scoreLabel": null,
-      "meta": {
-        "category": "AI"
-      },
-      "alsoOn": []
-    },
-    {
       "id": "sakana:https://sakana.ai/my-fish/",
       "source": "sakana",
       "title": "Sakana Chatが覚えていることを見てみよう：メモリを可視化する新機能「My Fish」",
@@ -11160,6 +11145,21 @@
       "score": null,
       "scoreLabel": null,
       "meta": {},
+      "alsoOn": []
+    },
+    {
+      "id": "verge:https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
+      "source": "verge",
+      "title": "Sam Altman sympathizes with mathematicians, but says OpenAI’s math onslaught won’t stop",
+      "blurb": "After months of bombarding mathematicians with a relentless stream of AI-generated results, OpenAI CEO Sam Altman says he sympathizes with researchers struggling to make sense of it all…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Vrg_illo_Sam_Altman_stock_trial.jpg?quality=90&strip=all&crop=0%2C12.339110464558%2C100%2C75.321779070884&w=1200",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
+      "publishedAt": "2026-10-30T13:01:14.000Z",
+      "score": null,
+      "scoreLabel": null,
+      "meta": {
+        "category": "AI"
+      },
       "alsoOn": []
     },
     {
