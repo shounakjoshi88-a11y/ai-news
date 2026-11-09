@@ -1,5 +1,7 @@
 # AI Wire
 
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 A single page showing what is happening in AI right now — announcements, papers, models,
 code, press, discussion, and the wider technology industry around all of it — from **eighty
 sources**, rebuilt every five minutes by a scheduled job. No server, no database, no API keys,
@@ -377,3 +379,9 @@ and dark. It also prints the palette as hex, which is where the sRGB fallbacks c
   asks it first and falls back to Substack. This was not hypothetical: across the editions
   kept in git history, Import AI was the only source that ever failed — three of five, always
   `403` — and it was the amber notice every time a reader saw one.
+
+---
+
+## License
+
+MIT - see [LICENSE](LICENSE).
